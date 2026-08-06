@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="1.5">
+  <style>
+    .region-node { fill: rgba(0, 242, 254, 0.15); stroke: #00f2fe; cursor: pointer; transition: all 0.3s; }
+    .region-node:hover { fill: #00f2fe; filter: drop-shadow(0 0 8px #00f2fe); }
+    .land-mass { fill: rgba(255, 255, 255, 0.04); stroke: rgba(255, 255, 255, 0.15); }
+  </style>
+  <g class="land-mass">
+    <!-- Simplified World Map Continents -->
+    <path d="M150 120 Q220 100 280 150 T220 280 T150 200 Z" /> <!-- North America -->
+    <path d="M280 300 Q320 290 350 360 T300 450 T260 380 Z" /> <!-- South America -->
+    <path d="M460 120 Q540 100 620 140 T580 220 T480 180 Z" /> <!-- Europe -->
+    <path d="M450 220 Q560 200 600 300 T520 420 T440 320 Z" /> <!-- Africa -->
+    <path d="M620 120 Q800 80 880 200 T750 350 T620 260 Z" /> <!-- Asia -->
+    <path d="M780 340 Q880 340 900 420 T800 440 Z" /> <!-- Australia -->
+  </g>
+  
+  <!-- Clickable Interactive Hotspot Nodes -->
+  <g id="mapHotspots">
+    <circle class="region-node" data-region="North America" cx="220" cy="180" r="16" />
+    <text x="220" y="184" text-anchor="middle" fill="#00f2fe" font-size="10" font-weight="bold">NA</text>
+
+    <circle class="region-node" data-region="Europe" cx="520" cy="150" r="16" />
+    <text x="520" y="154" text-anchor="middle" fill="#00f2fe" font-size="10" font-weight="bold">EU</text>
+
+    <circle class="region-node" data-region="Middle East" cx="590" cy="230" r="16" />
+    <text x="590" y="234" text-anchor="middle" fill="#00f2fe" font-size="10" font-weight="bold">ME</text>
+
+    <circle class="region-node" data-region="India" cx="710" cy="240" r="16" />
+    <text x="710" y="244" text-anchor="middle" fill="#00f2fe" font-size="10" font-weight="bold">IN</text>
+
+    <circle class="region-node" data-region="Asia-Pacific" cx="810" cy="220" r="16" />
+    <text x="810" y="224" text-anchor="middle" fill="#00f2fe" font-size="10" font-weight="bold">APAC</text>
+
+    <circle class="region-node" data-region="Africa" cx="520" cy="310" r="16" />
+    <text x="520" y="314" text-anchor="middle" fill="#00f2fe" font-size="10" font-weight="bold">AF</text>
+  </g>
+</svg>
