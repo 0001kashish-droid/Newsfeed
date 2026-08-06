@@ -1398,32 +1398,51 @@ if (shortcutHelpBtn) {
 function setupVoiceModulator() {
   if (!('speechSynthesis' in window)) return;
 
+  const audioPrevBtn = document.getElementById('audioPrevBtn');
+  const audioNextBtn = document.getElementById('audioNextBtn');
+  const handsFreeToggleBtn = document.getElementById('handsFreeToggleBtn');
+
+  if (handsFreeToggleBtn) {
+    handsFreeToggleBtn.addEventListener('click', () => {
+      state.audioState.handsFreeMode = !state.audioState.handsFreeMode;
+      if (state.audioState.handsFreeMode) {
+        handsFreeToggleBtn.classList.add('active');
+        handsFreeToggleBtn.textContent = '📻 Hands-Free: ON';
+      } else {
+        handsFreeToggleBtn.classList.remove('active');
+        handsFreeToggleBtn.textContent = '📻 Hands-Free: OFF';
+      }
+    });
+  }
+
   voiceModToggle.addEventListener('click', () => {
     voiceModDrawer.classList.toggle('open');
   });
 
   if (resetVoiceBtn) {
     resetVoiceBtn.addEventListener('click', () => {
-      rateSlider.value = 1.0;
+      rateSlider.value = 0.95;
       pitchSlider.value = 1.0;
-      state.audioState.rate = 1.0;
+      state.audioState.rate = 0.95;
       state.audioState.pitch = 1.0;
-      rateValLabel.textContent = "1.00x";
+      rateValLabel.textContent = "0.95x";
       pitchValLabel.textContent = "1.00x";
-      speedBadge.textContent = "1.0x";
-      if (state.audioState.isPlaying && state.audioState.currentText) {
-        speakArticle(state.audioState.currentText);
+      speedBadge.textContent = "0.95x";
+      if (state.audioState.isPlaying) {
+        playStoryAtIndex(state.audioState.currentIndex || 0);
       }
     });
   }
 
   const populateVoices = () => {
     const voices = window.speechSynthesis.getVoices();
+    if (!voiceSelect) return;
     voiceSelect.innerHTML = '';
     
+    // Sort neural/natural human voices to top
     const sorted = [...voices].sort((a, b) => {
-      const aNat = a.name.includes('Natural') || a.name.includes('Neural') || a.name.includes('Google');
-      const bNat = b.name.includes('Natural') || b.name.includes('Neural') || b.name.includes('Google');
+      const aNat = a.name.includes('Natural') || a.name.includes('Neural') || a.name.includes('Google') || a.name.includes('Samantha');
+      const bNat = b.name.includes('Natural') || b.name.includes('Neural') || b.name.includes('Google') || b.name.includes('Samantha');
       return bNat - aNat;
     });
 
@@ -1431,7 +1450,7 @@ function setupVoiceModulator() {
       const option = document.createElement('option');
       option.value = v.voiceURI;
       option.textContent = `${v.name} (${v.lang})`;
-      if (v.default || v.name.includes('Neural') || v.name.includes('Natural') || v.name.includes('Google US English')) {
+      if (!state.audioState.selectedVoiceURI && (v.name.includes('Natural') || v.name.includes('Neural') || v.name.includes('Google US English') || v.name.includes('Samantha'))) {
         option.selected = true;
         state.audioState.selectedVoiceURI = v.voiceURI;
       }
@@ -1439,24 +1458,28 @@ function setupVoiceModulator() {
     });
   };
 
-  populateVoices();
-  window.speechSynthesis.onvoiceschanged = populateVoices;
+  if ('speechSynthesis' in window) {
+    populateVoices();
+    window.speechSynthesis.onvoiceschanged = populateVoices;
+  }
 
-  voiceSelect.addEventListener('change', (e) => {
-    state.audioState.selectedVoiceURI = e.target.value;
-    if (state.audioState.isPlaying && state.audioState.currentText) {
-      speakArticle(state.audioState.currentText);
-    }
-  });
+  if (voiceSelect) {
+    voiceSelect.addEventListener('change', (e) => {
+      state.audioState.selectedVoiceURI = e.target.value;
+      if (state.audioState.isPlaying) {
+        playStoryAtIndex(state.audioState.currentIndex || 0);
+      }
+    });
+  }
 
   rateSlider.addEventListener('input', (e) => {
     const val = parseFloat(e.target.value);
     state.audioState.rate = val;
     rateValLabel.textContent = `${val.toFixed(2)}x`;
-    speedBadge.textContent = `${val.toFixed(1)}x`;
+    speedBadge.textContent = `${val.toFixed(2)}x`;
 
-    if (state.audioState.isPlaying && state.audioState.currentText) {
-      speakArticle(state.audioState.currentText);
+    if (state.audioState.isPlaying) {
+      playStoryAtIndex(state.audioState.currentIndex || 0);
     }
   });
 
@@ -1465,10 +1488,48 @@ function setupVoiceModulator() {
     state.audioState.pitch = val;
     pitchValLabel.textContent = `${val.toFixed(2)}x`;
 
-    if (state.audioState.isPlaying && state.audioState.currentText) {
-      speakArticle(state.audioState.currentText);
+    if (state.audioState.isPlaying) {
+      playStoryAtIndex(state.audioState.currentIndex || 0);
     }
   });
+
+  if (audioPrevBtn) {
+    audioPrevBtn.addEventListener('click', () => {
+      const activeList = getActiveFeedArticles();
+      if (!activeList.length) return;
+      const prevIdx = Math.max(0, (state.audioState.currentIndex || 0) - 1);
+      playStoryAtIndex(prevIdx);
+    });
+  }
+
+  if (audioNextBtn) {
+    audioNextBtn.addEventListener('click', () => {
+      const activeList = getActiveFeedArticles();
+      if (!activeList.length) return;
+      const nextIdx = Math.min(activeList.length - 1, (state.audioState.currentIndex || 0) + 1);
+      playStoryAtIndex(nextIdx);
+    });
+  }
+}
+
+function getActiveFeedArticles() {
+  if (state.searchQuery && state.searchQuery.trim().length > 0) {
+    return state.searchResults || [];
+  }
+  const cat = state.currentCategory || 'top10';
+  if (cat === 'top10') {
+    let list = state.articles;
+    if (state.currentRegion && state.currentRegion !== 'all') {
+      list = list.filter(a => a.region === state.currentRegion);
+    }
+    return list.slice(0, 10);
+  } else {
+    let list = state.articles.filter(a => a.category === cat);
+    if (state.currentRegion && state.currentRegion !== 'all') {
+      list = list.filter(a => a.region === state.currentRegion);
+    }
+    return list;
+  }
 }
 
 function getSelectedVoice() {
@@ -1478,54 +1539,104 @@ function getSelectedVoice() {
     const found = voices.find(v => v.voiceURI === state.audioState.selectedVoiceURI);
     if (found) return found;
   }
-  return voices.find(v => v.lang.startsWith('en') && (v.name.includes('Natural') || v.name.includes('Neural') || v.name.includes('Google'))) || voices[0];
+  return voices.find(v => v.lang.startsWith('en') && (v.name.includes('Natural') || v.name.includes('Neural') || v.name.includes('Google') || v.name.includes('Samantha'))) || voices[0];
 }
 
-function getNaturalHumanVoice() {
-  return getSelectedVoice();
-}
+// CONVERSATIONAL RADIO ANCHOR SCRIPT SYNTHESIZER
+function generateHumanBroadcastScript(article, index, total) {
+  if (!article) return 'No intelligence dispatches available.';
 
-// UNIFIED REAL-TIME INSTANT SPEECH SYNTHESIZER
-window.speakArticle = function(text) {
-  if ('speechSynthesis' in window) {
-    window.speechSynthesis.cancel();
+  const source = article.source || 'News Dispatches';
+  const region = article.region || 'Global';
+  const category = article.category || 'World';
+  const title = (article.title || '').trim();
 
-    state.audioState.currentText = text;
-
-    const cleanText = text.replace(/^[•✦]\s*/gm, '').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
-
-    const utterance = new SpeechSynthesisUtterance(cleanText);
-    const voice = getSelectedVoice();
-    if (voice) utterance.voice = voice;
-
-    utterance.rate = state.audioState.rate;
-    utterance.pitch = state.audioState.pitch;
-    utterance.volume = 1.0;
-
-    utterance.onstart = () => {
-      audioPlayBtn.textContent = '⏸';
-      if (eqContainer) eqContainer.classList.add('active');
-      state.audioState.isPlaying = true;
-    };
-
-    utterance.onend = () => {
-      audioPlayBtn.textContent = '▶';
-      audioTitle.textContent = 'Listen to Top 10 Briefing';
-      if (eqContainer) eqContainer.classList.remove('active');
-      state.audioState.isPlaying = false;
-    };
-
-    utterance.onerror = () => {
-      audioPlayBtn.textContent = '▶';
-      if (eqContainer) eqContainer.classList.remove('active');
-      state.audioState.isPlaying = false;
-    };
-
-    audioTitle.textContent = cleanText.slice(0, 32) + '...';
-    window.speechSynthesis.speak(utterance);
+  let desc = (article.description || '').trim();
+  // Strip trailing dots, ellipses, or cut-off symbols
+  desc = desc.replace(/[\.\s]*[\.…]+$/, '').trim();
+  const lastPeriod = Math.max(desc.lastIndexOf('.'), desc.lastIndexOf('?'), desc.lastIndexOf('!'));
+  if (lastPeriod > 40) {
+    desc = desc.slice(0, lastPeriod + 1);
+  } else if (desc && !desc.endsWith('.')) {
+    desc += '.';
   }
+
+  let text = `Story ${index + 1} of ${total}. `;
+  text += `From ${source}, tracking ${category} affairs in ${region}. `;
+  text += `${title}. `;
+  if (desc && desc !== title) {
+    text += `${desc} `;
+  }
+  text += `Full report available on ${source}.`;
+  return text;
+}
+
+// SMART CONVERSATIONAL RADIO BROADCASTER & CONTINUOUS AUTO-ADVANCE
+window.playStoryAtIndex = function(index) {
+  if (!('speechSynthesis' in window)) return;
+
+  const activeList = getActiveFeedArticles();
+  if (!activeList || !activeList.length) return;
+
+  const safeIdx = Math.max(0, Math.min(index, activeList.length - 1));
+  const art = activeList[safeIdx];
+  if (!art) return;
+
+  window.speechSynthesis.cancel();
+  state.audioState.currentIndex = safeIdx;
+
+  const scriptText = generateHumanBroadcastScript(art, safeIdx, activeList.length);
+  state.audioState.currentText = scriptText;
+
+  const utterance = new SpeechSynthesisUtterance(scriptText);
+  const voice = getSelectedVoice();
+  if (voice) utterance.voice = voice;
+
+  utterance.rate = state.audioState.rate || 0.95;
+  utterance.pitch = state.audioState.pitch || 1.0;
+  utterance.volume = 1.0;
+
+  utterance.onstart = () => {
+    if (audioPlayBtn) audioPlayBtn.textContent = '⏸';
+    if (eqContainer) eqContainer.classList.add('active');
+    if (audioTitle) audioTitle.textContent = `Story ${safeIdx + 1}/${activeList.length}: ${art.title}`;
+    state.audioState.isPlaying = true;
+    state.audioState.isPaused = false;
+
+    // Sync modal deck card if modal is open
+    if (state.modalState.isOpen) {
+      openExecutiveModal(safeIdx);
+    }
+  };
+
+  utterance.onend = () => {
+    state.audioState.isPlaying = false;
+    
+    // CONTINUOUS HANDS-FREE AUTO-ADVANCE
+    if (state.audioState.handsFreeMode && safeIdx + 1 < activeList.length) {
+      if (audioTitle) audioTitle.textContent = `Station Transitioning to Story ${safeIdx + 2}...`;
+      setTimeout(() => {
+        if (state.audioState.handsFreeMode) {
+          playStoryAtIndex(safeIdx + 1);
+        }
+      }, 1200);
+    } else {
+      if (audioPlayBtn) audioPlayBtn.textContent = '▶';
+      if (eqContainer) eqContainer.classList.remove('active');
+      if (audioTitle) audioTitle.textContent = 'Station Briefing Complete';
+    }
+  };
+
+  utterance.onerror = () => {
+    if (audioPlayBtn) audioPlayBtn.textContent = '▶';
+    if (eqContainer) eqContainer.classList.remove('active');
+    state.audioState.isPlaying = false;
+  };
+
+  window.speechSynthesis.speak(utterance);
 };
 
+// UNIFIED PLAY / PAUSE BUTTON
 audioPlayBtn.addEventListener('click', () => {
   if ('speechSynthesis' in window) {
     if (state.audioState.isPlaying) {
@@ -1533,16 +1644,16 @@ audioPlayBtn.addEventListener('click', () => {
       audioPlayBtn.textContent = '▶';
       if (eqContainer) eqContainer.classList.remove('active');
       state.audioState.isPlaying = false;
+      state.audioState.isPaused = true;
+    } else if (state.audioState.isPaused) {
+      window.speechSynthesis.resume();
+      audioPlayBtn.textContent = '⏸';
+      if (eqContainer) eqContainer.classList.add('active');
+      state.audioState.isPlaying = true;
+      state.audioState.isPaused = false;
     } else {
-      if (window.speechSynthesis.paused) {
-        window.speechSynthesis.resume();
-        audioPlayBtn.textContent = '⏸';
-        if (eqContainer) eqContainer.classList.add('active');
-        state.audioState.isPlaying = true;
-      } else {
-        const topArt = state.articles[0];
-        if (topArt) speakArticle(`${topArt.title}. ${topArt.annotation.what}`);
-      }
+      const currentIdx = state.audioState.currentIndex || 0;
+      playStoryAtIndex(currentIdx);
     }
   }
 });

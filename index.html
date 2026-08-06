@@ -263,14 +263,19 @@
     </div>
   </div>
 
-  <!-- HUMAN VOICE MODULATOR & ACOUSTIC EQUALIZER CONTROL BAR WIDGET -->
+  <!-- SMART CONVERSATIONAL AUDIO BROADCASTER & VOICE ASSISTANT -->
   <div class="audio-player-widget" id="audioWidget">
     <div class="audio-main-row">
-      <button class="audio-btn" id="audioPlayBtn" aria-label="Play audio digest">▶</button>
+      <!-- Media Transport Controls: Prev | Play/Pause | Next -->
+      <div style="display: flex; align-items: center; gap: 0.35rem;">
+        <button class="audio-btn-sm" id="audioPrevBtn" title="Previous Story (⏮)" aria-label="Previous story">⏮</button>
+        <button class="audio-btn" id="audioPlayBtn" title="Play / Pause Audio Digest (Space)" aria-label="Play audio digest">▶</button>
+        <button class="audio-btn-sm" id="audioNextBtn" title="Next Story (⏭)" aria-label="Next story">⏭</button>
+      </div>
       
       <div class="audio-info">
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
-          <span class="audio-label">🎙 NEURAL HUMAN VOICE</span>
+        <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+          <span class="audio-label">🎙 NEURAL BROADCASTER</span>
           <!-- Acoustic Equalizer Visualizer Bars -->
           <div class="eq-container" id="eqContainer">
             <span class="eq-bar"></span>
@@ -278,8 +283,13 @@
             <span class="eq-bar"></span>
             <span class="eq-bar"></span>
           </div>
+
+          <!-- Hands-Free Station Mode Badge -->
+          <button class="hands-free-pill active" id="handsFreeToggleBtn" title="Toggle Continuous Hands-Free Station Mode" aria-label="Toggle Hands-Free Mode">
+            📻 Hands-Free: ON
+          </button>
         </div>
-        <span class="audio-title" id="audioTitle">Listen to Top 10 Briefing</span>
+        <span class="audio-title" id="audioTitle">Tap Play for Smart Radio Briefing</span>
       </div>
 
       <!-- Settings Expand Button -->
