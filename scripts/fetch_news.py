@@ -6,6 +6,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 
 SOURCES = [
+    # World Feeds
     {
         "id": "bbc-world",
         "name": "BBC News",
@@ -38,6 +39,7 @@ SOURCES = [
         "url": "https://www.aljazeera.com/xml/rss/all.xml",
         "logo": "AJ"
     },
+    # Tech Feeds
     {
         "id": "techcrunch",
         "name": "TechCrunch",
@@ -70,6 +72,7 @@ SOURCES = [
         "url": "https://news.google.com/rss/search?q=site:rtings.com+when:7d&hl=en-US&gl=US&ceid=US:en",
         "logo": "RTG"
     },
+    # National Feeds
     {
         "id": "ndtv",
         "name": "NDTV",
@@ -77,8 +80,59 @@ SOURCES = [
         "region": "India",
         "url": "https://feeds.feedburner.com/ndtvnews-top-stories",
         "logo": "NDTV"
+    },
+    {
+        "id": "npr-national",
+        "name": "NPR News",
+        "category": "National",
+        "region": "North America",
+        "url": "https://feeds.npr.org/1001/rss.xml",
+        "logo": "NPR"
+    },
+    # Business Feeds
+    {
+        "id": "cnbc-business",
+        "name": "CNBC",
+        "category": "Business",
+        "region": "Global",
+        "url": "https://search.cnbc.com/rs/search/combinedqueries/view.xml?partnerId=2000&keywords=finance",
+        "logo": "CNBC"
+    },
+    {
+        "id": "wsj-markets",
+        "name": "WSJ Markets",
+        "category": "Business",
+        "region": "Global",
+        "url": "https://news.google.com/rss/search?q=site:wsj.com+markets+when:24h&hl=en-US&gl=US&ceid=US:en",
+        "logo": "WSJ"
     }
 ]
+
+# Ultra-crisp high-resolution curated photography (4K/1080p uncompressed)
+CRISP_IMAGES = {
+    "World": [
+        "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1600&q=95",
+        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=95",
+        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=95",
+        "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1600&q=95"
+    ],
+    "Tech": [
+        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=95",
+        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=95",
+        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=95",
+        "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1600&q=95"
+    ],
+    "National": [
+        "https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=1600&q=95",
+        "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1600&q=95",
+        "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1600&q=95"
+    ],
+    "Business": [
+        "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=95",
+        "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1600&q=95",
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=95"
+    ]
+}
 
 def clean_html(raw_html):
     if not raw_html:
@@ -87,32 +141,21 @@ def clean_html(raw_html):
     cleantext = re.sub(cleanr, '', raw_html)
     return cleantext.strip()
 
-def extract_image(item, default_category):
+def extract_image(item, default_category, title):
+    # Try finding media image URL
     for elem in item.iter():
         tag = elem.tag.lower()
         if 'content' in tag or 'thumbnail' in tag or 'enclosure' in tag:
             url = elem.attrib.get('url') or elem.attrib.get('href')
             if url and ('jpg' in url or 'png' in url or 'webp' in url or 'jpeg' in url or 'media' in url):
+                # Upgrade low-res thumbnail parameters if present
+                url = re.sub(r'width=\d+', 'width=1200', url)
+                url = re.sub(r'height=\d+', 'height=800', url)
+                url = re.sub(r'quality=\d+', 'quality=95', url)
                 return url
     
-    images_by_cat = {
-        "World": [
-            "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1200&q=80",
-            "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80",
-            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80"
-        ],
-        "Tech": [
-            "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
-            "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
-            "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80"
-        ],
-        "National": [
-            "https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=1200&q=80",
-            "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80"
-        ]
-    }
-    cat_imgs = images_by_cat.get(default_category, images_by_cat["World"])
-    title = item.findtext('title') or ''
+    # Fallback crisp image
+    cat_imgs = CRISP_IMAGES.get(default_category, CRISP_IMAGES["World"])
     return cat_imgs[abs(hash(title)) % len(cat_imgs)]
 
 def generate_annotation(title, description):
@@ -143,7 +186,7 @@ def fetch_rss(source):
             
             channel_items = root.findall('.//item') or root.findall('.//{http://www.w3.org/2005/Atom}entry')
             
-            for index, item in enumerate(channel_items[:10]):
+            for index, item in enumerate(channel_items[:12]):
                 title = clean_html(item.findtext('title') or item.findtext('{http://www.w3.org/2005/Atom}title') or "")
                 link = item.findtext('link') or ""
                 if not link:
@@ -158,7 +201,7 @@ def fetch_rss(source):
                     continue
                     
                 annotation = generate_annotation(title, desc)
-                img_url = extract_image(item, source['category'])
+                img_url = extract_image(item, source['category'], title)
                 
                 items.append({
                     "id": f"{source['id']}-{index}-{abs(hash(link)) % 10000}",
@@ -186,7 +229,7 @@ def fetch_rss(source):
 def main():
     all_news = []
     for src in SOURCES:
-        print(f"Fetching {src['name']}...")
+        print(f"Fetching {src['name']} ({src['category']})...")
         news_items = fetch_rss(src)
         all_news.extend(news_items)
         

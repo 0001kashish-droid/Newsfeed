@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>News Colossal — Global News Intelligence & Digest</title>
-  <meta name="description" content="Top 10 global news digest featuring world, national, and local headlines with crisp annotations, multi-source links, and live publisher feeds." />
+  <meta name="description" content="Top 10 global news digest featuring world, national, tech, and business headlines with crisp annotations, multi-source links, and live publisher feeds." />
   
   <!-- OpenGraph Social Tags -->
   <meta property="og:title" content="News Colossal — Global News Intelligence & Digest" />
@@ -97,9 +97,19 @@
       </div>
     </div>
 
-    <!-- Hero Spotlight Section -->
+    <!-- Smooth Transitioning Canvas Hero Spotlight Section -->
     <section class="hero-spotlight" id="heroSection">
-      <!-- Injected dynamically via JS -->
+      <div class="hero-card">
+        <canvas id="heroCanvas" class="hero-canvas"></canvas>
+        <div class="hero-overlay" id="heroOverlay">
+          <!-- Injected dynamically via JS canvas engine -->
+        </div>
+        <div class="hero-controls" id="heroControls">
+          <button id="heroPrevBtn" class="canvas-nav-btn" aria-label="Previous Slide">&lsaquo;</button>
+          <div class="hero-dots" id="heroDots"></div>
+          <button id="heroNextBtn" class="canvas-nav-btn" aria-label="Next Slide">&rsaquo;</button>
+        </div>
+      </div>
     </section>
 
     <!-- Interactive World Map Filter Drawer Trigger -->
@@ -116,7 +126,7 @@
     </section>
 
     <!-- Primary News Feed Grid -->
-    <section>
+    <section id="contentGridSection">
       <div class="section-header">
         <h2 class="section-title" id="gridTitle">Top 10 Global News Digest</h2>
         <span style="font-size: 0.85rem; color: var(--text-muted);" id="syncTimeLabel">Updated real-time</span>
@@ -164,7 +174,7 @@
   <footer style="border-top: 1px solid var(--border-color); margin-top: 4rem; padding: 2.5rem 0; color: var(--text-muted); font-size: 0.85rem; background: var(--bg-surface);">
     <div class="container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
       <div>
-        <p><strong>News Colossal</strong> — Aggregating verified open RSS feeds from BBC, Reuters, NYT, TechCrunch, The Verge, Al Jazeera, RTINGS, & CNET.</p>
+        <p><strong>News Colossal</strong> — Aggregating verified open RSS feeds from BBC, Reuters, NYT, TechCrunch, The Verge, Al Jazeera, RTINGS, CNET, CNBC, & NDTV.</p>
         <p style="font-size: 0.78rem; margin-top: 0.3rem;">All article rights belong to their respective original publishers.</p>
       </div>
       <div style="display: flex; gap: 1rem;">

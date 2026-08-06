@@ -8,12 +8,13 @@ const state = {
   searchQuery: '',
   bookmarks: JSON.parse(localStorage.getItem('nc_bookmarks') || '[]'),
   theme: localStorage.getItem('nc_theme') || 'dark',
+  heroIndex: 0,
+  heroTimer: null,
   audioState: { isPlaying: false, utterance: null, currentIndex: 0 }
 };
 
 // DOM Elements
 const newsGrid = document.getElementById('newsGrid');
-const heroSection = document.getElementById('heroSection');
 const gridTitle = document.getElementById('gridTitle');
 const tickerTrack = document.getElementById('tickerTrack');
 const syncTimeLabel = document.getElementById('syncTimeLabel');
@@ -24,7 +25,6 @@ const modalBackdrop = document.getElementById('modalBackdrop');
 const modalContent = document.getElementById('modalContent');
 const modalCloseBtn = document.getElementById('modalCloseBtn');
 const drawerBackdrop = document.getElementById('drawerBackdrop');
-const drawerContent = document.getElementById('drawerContent');
 const drawerCloseBtn = document.getElementById('drawerCloseBtn');
 const savedList = document.getElementById('savedList');
 const bookmarkCount = document.getElementById('bookmarkCount');
@@ -33,10 +33,26 @@ const refreshBtn = document.getElementById('refreshBtn');
 const audioPlayBtn = document.getElementById('audioPlayBtn');
 const audioTitle = document.getElementById('audioTitle');
 const svgMapContainer = document.getElementById('svgMapContainer');
+const contentGridSection = document.getElementById('contentGridSection');
+
+// Canvas Elements
+const heroCanvas = document.getElementById('heroCanvas');
+const heroCtx = heroCanvas ? heroCanvas.getContext('2d') : null;
+const heroOverlay = document.getElementById('heroOverlay');
+const heroDots = document.getElementById('heroDots');
+const heroPrevBtn = document.getElementById('heroPrevBtn');
+const heroNextBtn = document.getElementById('heroNextBtn');
+
+let canvasImages = [];
+let animProgress = 1.0;
+let animFrameId = null;
+let currentImgObj = null;
+let nextImgObj = null;
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
+  setupCanvasResize();
   loadData();
   setupEventListeners();
   loadSvgMap();
@@ -75,6 +91,7 @@ function setupMapInteractivity() {
       regionSelect.value = region;
       state.currentRegion = region;
       filterAndRender();
+      scrollToContent();
     });
   });
 }
@@ -95,9 +112,11 @@ async function loadData() {
     console.warn('Local news.json missing, triggering fallback client fetch:', err);
     await fetchClientFallback();
   }
+  preloadHeroImages();
   filterAndRender();
   renderTicker();
   updateBookmarkBadge();
+  startHeroTimer();
 }
 
 // Client Multi-Proxy Fallback
@@ -117,7 +136,7 @@ async function fetchClientFallback() {
         category: 'World',
         region: 'Global',
         pubDate: item.pubDate,
-        imageUrl: item.thumbnail || 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1200&q=80',
+        imageUrl: item.thumbnail || 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1600&q=95',
         annotation: {
           what: item.title,
           why: 'Key breaking geopolitical news story.'
@@ -134,17 +153,183 @@ async function fetchClientFallback() {
   }
 }
 
-// Filtering & Rendering
+// Smooth Transitioning Canvas Hero Engine
+function setupCanvasResize() {
+  if (!heroCanvas) return;
+  function resize() {
+    const rect = heroCanvas.parentElement.getBoundingClientRect();
+    heroCanvas.width = rect.width * (window.devicePixelRatio || 1);
+    heroCanvas.height = rect.height * (window.devicePixelRatio || 1);
+    renderCanvasFrame();
+  }
+  window.addEventListener('resize', resize);
+  resize();
+}
+
+function preloadHeroImages() {
+  const top10 = state.articles.slice(0, 10);
+  canvasImages = top10.map(art => {
+    const img = new Image();
+    img.crossOrigin = 'Anonymous';
+    img.src = art.imageUrl;
+    return img;
+  });
+}
+
+function transitionHeroSlide(targetIndex) {
+  if (state.articles.length === 0) return;
+  const top10 = state.articles.slice(0, 10);
+  const prevIndex = state.heroIndex;
+  state.heroIndex = (targetIndex + top10.length) % top10.length;
+
+  currentImgObj = canvasImages[prevIndex] || null;
+  nextImgObj = canvasImages[state.heroIndex] || null;
+
+  animProgress = 0.0;
+  animateCanvasTransition();
+  renderHeroOverlayText(top10[state.heroIndex]);
+  renderHeroDots();
+}
+
+function animateCanvasTransition() {
+  if (animProgress < 1.0) {
+    animProgress += 0.05; // 20 frames transition
+    renderCanvasFrame();
+    animFrameId = requestAnimationFrame(animateCanvasTransition);
+  } else {
+    animProgress = 1.0;
+    renderCanvasFrame();
+  }
+}
+
+function renderCanvasFrame() {
+  if (!heroCtx || !heroCanvas) return;
+  const w = heroCanvas.width;
+  const h = heroCanvas.height;
+
+  heroCtx.clearRect(0, 0, w, h);
+
+  // Draw current image
+  if (currentImgObj && currentImgObj.complete) {
+    drawScaledImage(heroCtx, currentImgObj, w, h, 1.0 - animProgress);
+  }
+
+  // Draw next image over with alpha transition
+  if (nextImgObj && nextImgObj.complete && animProgress > 0) {
+    drawScaledImage(heroCtx, nextImgObj, w, h, animProgress);
+  } else if (!currentImgObj && state.articles.length > 0) {
+    const fallbackImg = canvasImages[0];
+    if (fallbackImg && fallbackImg.complete) {
+      drawScaledImage(heroCtx, fallbackImg, w, h, 1.0);
+    }
+  }
+
+  // Ambient Gradient Glow Overlay on Canvas
+  const gradient = heroCtx.createLinearGradient(0, h * 0.3, 0, h);
+  gradient.addColorStop(0, 'rgba(11, 15, 25, 0.0)');
+  gradient.addColorStop(1, 'rgba(11, 15, 25, 0.95)');
+  heroCtx.fillStyle = gradient;
+  heroCtx.fillRect(0, 0, w, h);
+}
+
+function drawScaledImage(ctx, img, cw, ch, alpha) {
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  const imgRatio = img.width / img.height;
+  const canvasRatio = cw / ch;
+  let dw, dh, dx, dy;
+
+  if (imgRatio > canvasRatio) {
+    dh = ch;
+    dw = ch * imgRatio;
+    dx = (cw - dw) / 2;
+    dy = 0;
+  } else {
+    dw = cw;
+    dh = cw / imgRatio;
+    dx = 0;
+    dy = (ch - dh) / 2;
+  }
+
+  ctx.drawImage(img, dx, dy, dw, dh);
+  ctx.restore();
+}
+
+function renderHeroOverlayText(article) {
+  if (!article || !heroOverlay) return;
+  heroOverlay.innerHTML = `
+    <div class="hero-badge-row">
+      <span class="tag-badge">TOP 10 SPOTLIGHT #${state.heroIndex + 1}</span>
+      <span class="source-tag">✦ ${article.source} &bull; ${article.readTime}</span>
+    </div>
+    <h1 class="hero-title">${escapeHtml(article.title)}</h1>
+    <p class="hero-desc">${escapeHtml(article.description)}</p>
+    <div class="hero-actions">
+      <button onclick="openModal('${article.id}')" class="btn-primary">
+        <span>Read Crisp Annotation</span> &rarr;
+      </button>
+      <a href="${article.link}" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+        Visit Original Source ↗
+      </a>
+    </div>
+  `;
+}
+
+function renderHeroDots() {
+  if (!heroDots) return;
+  const count = Math.min(10, state.articles.length);
+  heroDots.innerHTML = Array(count).fill(0).map((_, i) => `
+    <div class="dot ${i === state.heroIndex ? 'active' : ''}" onclick="transitionHeroSlide(${i}); resetHeroTimer();"></div>
+  `).join('');
+}
+
+function startHeroTimer() {
+  if (state.heroTimer) clearInterval(state.heroTimer);
+  state.heroTimer = setInterval(() => {
+    transitionHeroSlide(state.heroIndex + 1);
+  }, 5000);
+}
+
+function resetHeroTimer() {
+  startHeroTimer();
+}
+
+if (heroPrevBtn) {
+  heroPrevBtn.addEventListener('click', () => {
+    transitionHeroSlide(state.heroIndex - 1);
+    resetHeroTimer();
+  });
+}
+if (heroNextBtn) {
+  heroNextBtn.addEventListener('click', () => {
+    transitionHeroSlide(state.heroIndex + 1);
+    resetHeroTimer();
+  });
+}
+
+// Category Tab Filtering & Smooth Landing
 function filterAndRender() {
   let list = [...state.articles];
 
-  // Category filter
+  // Category filter mapping
   if (state.currentCategory === 'top10') {
     list = list.slice(0, 10);
     gridTitle.textContent = 'Top 10 Global News Digest';
+  } else if (state.currentCategory.toLowerCase() === 'world') {
+    list = list.filter(a => a.category.toLowerCase() === 'world');
+    gridTitle.textContent = 'World News Coverage';
+  } else if (state.currentCategory.toLowerCase() === 'tech') {
+    list = list.filter(a => a.category.toLowerCase() === 'tech');
+    gridTitle.textContent = 'Technology & Electronics Intelligence';
+  } else if (state.currentCategory.toLowerCase() === 'national') {
+    list = list.filter(a => a.category.toLowerCase() === 'national');
+    gridTitle.textContent = 'National News Focus';
+  } else if (state.currentCategory.toLowerCase() === 'business') {
+    list = list.filter(a => a.category.toLowerCase() === 'business');
+    gridTitle.textContent = 'Business & Financial Markets';
   } else {
     list = list.filter(a => a.category.toLowerCase() === state.currentCategory.toLowerCase());
-    gridTitle.textContent = `${state.currentCategory} Coverage`;
+    gridTitle.textContent = `${state.currentCategory} News`;
   }
 
   // Region filter
@@ -164,38 +349,19 @@ function filterAndRender() {
 
   state.filteredArticles = list;
 
-  renderHeroSpotlight(state.articles[0]);
   renderGrid(list);
+
+  if (canvasImages.length > 0 && state.articles.length > 0) {
+    transitionHeroSlide(state.heroIndex);
+  }
 }
 
-// Render Hero Spotlight
-function renderHeroSpotlight(article) {
-  if (!article) {
-    heroSection.innerHTML = '';
-    return;
+function scrollToContent() {
+  if (contentGridSection) {
+    const yOffset = -90;
+    const y = contentGridSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
   }
-  const isSaved = isBookmarked(article.id);
-  heroSection.innerHTML = `
-    <div class="hero-card">
-      <img src="${article.imageUrl}" alt="${escapeHtml(article.title)}" class="hero-img" />
-      <div class="hero-overlay">
-        <div class="hero-badge-row">
-          <span class="tag-badge">TOP SPOTLIGHT</span>
-          <span class="source-tag">✦ ${article.source} &bull; ${article.readTime}</span>
-        </div>
-        <h1 class="hero-title">${escapeHtml(article.title)}</h1>
-        <p class="hero-desc">${escapeHtml(article.description)}</p>
-        <div class="hero-actions">
-          <button onclick="openModal('${article.id}')" class="btn-primary">
-            <span>Read Crisp Annotation</span> &rarr;
-          </button>
-          <a href="${article.link}" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-            Visit Original Source ↗
-          </a>
-        </div>
-      </div>
-    </div>
-  `;
 }
 
 // Render Main Grid
@@ -203,7 +369,7 @@ function renderGrid(articles) {
   if (articles.length === 0) {
     newsGrid.innerHTML = `
       <div style="grid-column: 1/-1; text-align: center; padding: 4rem 1rem; color: var(--text-muted);">
-        <p style="font-size: 1.2rem;">No matching articles found for your criteria.</p>
+        <p style="font-size: 1.2rem;">No matching articles found for '${escapeHtml(state.currentCategory)}'.</p>
         <button onclick="resetFilters()" class="btn-primary" style="margin-top: 1rem;">Reset All Filters</button>
       </div>
     `;
@@ -256,7 +422,7 @@ function renderTicker() {
       <strong>[${art.source}]</strong> ${escapeHtml(art.title)}
     </a>
   `).join(' &bull; ');
-  tickerTrack.innerHTML = itemsHTML + ' &bull; ' + itemsHTML; // duplicate for infinite scrolling loop
+  tickerTrack.innerHTML = itemsHTML + ' &bull; ' + itemsHTML;
 }
 
 // Skeletons
@@ -287,7 +453,7 @@ window.openModal = function(id) {
       </div>
     </div>
 
-    <img src="${art.imageUrl}" alt="${escapeHtml(art.title)}" style="width: 100%; height: 260px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1rem;" />
+    <img src="${art.imageUrl}" alt="${escapeHtml(art.title)}" style="width: 100%; height: 280px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1rem; image-rendering: -webkit-optimize-contrast;" />
 
     <div class="modal-annotation-block">
       <h4>✦ Crisp Executive Annotation</h4>
@@ -411,7 +577,6 @@ audioPlayBtn.addEventListener('click', () => {
         audioPlayBtn.textContent = '⏸';
         state.audioState.isPlaying = true;
       } else {
-        // Read Top 1 Article Annotation
         const topArt = state.articles[0];
         if (topArt) speakArticle(`${topArt.title}. ${topArt.annotation.what}`);
       }
@@ -419,31 +584,29 @@ audioPlayBtn.addEventListener('click', () => {
   }
 });
 
-// Event Listeners & Keyboard Shortcuts
+// Event Listeners & Tab Switching Fix
 function setupEventListeners() {
-  // Tabs
   navTabs.addEventListener('click', (e) => {
     if (e.target.classList.contains('tab-btn')) {
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
       e.target.classList.add('active');
       state.currentCategory = e.target.getAttribute('data-category');
       filterAndRender();
+      scrollToContent();
     }
   });
 
-  // Region
   regionSelect.addEventListener('change', (e) => {
     state.currentRegion = e.target.value;
     filterAndRender();
+    scrollToContent();
   });
 
-  // Search input
   searchInput.addEventListener('input', (e) => {
     state.searchQuery = e.target.value;
     filterAndRender();
   });
 
-  // Refresh btn
   refreshBtn.addEventListener('click', () => {
     refreshBtn.style.transform = 'rotate(360deg)';
     refreshBtn.style.transition = 'transform 0.5s ease';
@@ -452,7 +615,6 @@ function setupEventListeners() {
     });
   });
 
-  // Global Keyboard Shortcuts
   document.addEventListener('keydown', (e) => {
     if (e.key === '/' && document.activeElement !== searchInput) {
       e.preventDefault();
@@ -476,7 +638,6 @@ function resetFilters() {
   filterAndRender();
 }
 
-// Helpers
 function escapeHtml(str) {
   if (!str) return '';
   return str.replace(/[&<>"']/g, function(m) {
