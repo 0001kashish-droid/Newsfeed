@@ -1,4 +1,4 @@
-// News Colossal Application Engine
+// News Colossal Application Engine — Experimental Continuous Canvas Edition
 
 const state = {
   articles: [],
@@ -9,8 +9,21 @@ const state = {
   bookmarks: JSON.parse(localStorage.getItem('nc_bookmarks') || '[]'),
   theme: localStorage.getItem('nc_theme') || 'dark',
   heroIndex: 0,
+  heroPlaying: true,
   heroTimer: null,
-  audioState: { isPlaying: false, utterance: null, currentIndex: 0 }
+  progressInterval: null,
+  progressValue: 0,
+  
+  // Continuous Canvas Modal Reader State
+  modalState: {
+    articles: [],
+    currentIndex: 0,
+    isPlaying: true,
+    timer: null,
+    progress: 0
+  },
+  
+  audioState: { isPlaying: false, utterance: null }
 };
 
 // DOM Elements
@@ -24,6 +37,8 @@ const navTabs = document.getElementById('navTabs');
 const modalBackdrop = document.getElementById('modalBackdrop');
 const modalContent = document.getElementById('modalContent');
 const modalCloseBtn = document.getElementById('modalCloseBtn');
+const modalCanvas = document.getElementById('modalCanvas');
+const modalProgressBar = document.getElementById('modalProgressBar');
 const drawerBackdrop = document.getElementById('drawerBackdrop');
 const drawerCloseBtn = document.getElementById('drawerCloseBtn');
 const savedList = document.getElementById('savedList');
@@ -38,14 +53,15 @@ const contentGridSection = document.getElementById('contentGridSection');
 // Canvas Elements
 const heroCanvas = document.getElementById('heroCanvas');
 const heroCtx = heroCanvas ? heroCanvas.getContext('2d') : null;
+const canvasProgressBar = document.getElementById('canvasProgressBar');
 const heroOverlay = document.getElementById('heroOverlay');
 const heroDots = document.getElementById('heroDots');
 const heroPrevBtn = document.getElementById('heroPrevBtn');
 const heroNextBtn = document.getElementById('heroNextBtn');
+const heroPlayPauseBtn = document.getElementById('heroPlayPauseBtn');
 
-let canvasImages = [];
+let canvasImages = {};
 let animProgress = 1.0;
-let animFrameId = null;
 let currentImgObj = null;
 let nextImgObj = null;
 
@@ -112,11 +128,22 @@ async function loadData() {
     console.warn('Local news.json missing, triggering fallback client fetch:', err);
     await fetchClientFallback();
   }
-  preloadHeroImages();
+  preloadAllImages();
   filterAndRender();
   renderTicker();
   updateBookmarkBadge();
-  startHeroTimer();
+}
+
+// Preload all article images into memory
+function preloadAllImages() {
+  state.articles.forEach(art => {
+    if (!canvasImages[art.id]) {
+      const img = new Image();
+      img.crossOrigin = 'Anonymous';
+      img.src = art.imageUrl;
+      canvasImages[art.id] = img;
+    }
+  });
 }
 
 // Client Multi-Proxy Fallback
@@ -153,7 +180,7 @@ async function fetchClientFallback() {
   }
 }
 
-// Smooth Transitioning Canvas Hero Engine
+// Smooth Canvas Spotlight Engine
 function setupCanvasResize() {
   if (!heroCanvas) return;
   function resize() {
@@ -166,36 +193,31 @@ function setupCanvasResize() {
   resize();
 }
 
-function preloadHeroImages() {
-  const top10 = state.articles.slice(0, 10);
-  canvasImages = top10.map(art => {
-    const img = new Image();
-    img.crossOrigin = 'Anonymous';
-    img.src = art.imageUrl;
-    return img;
-  });
-}
-
 function transitionHeroSlide(targetIndex) {
-  if (state.articles.length === 0) return;
-  const top10 = state.articles.slice(0, 10);
+  const pool = state.filteredArticles.length > 0 ? state.filteredArticles : state.articles;
+  if (pool.length === 0) return;
+  
   const prevIndex = state.heroIndex;
-  state.heroIndex = (targetIndex + top10.length) % top10.length;
+  state.heroIndex = (targetIndex + pool.length) % pool.length;
 
-  currentImgObj = canvasImages[prevIndex] || null;
-  nextImgObj = canvasImages[state.heroIndex] || null;
+  const prevArt = pool[prevIndex];
+  const nextArt = pool[state.heroIndex];
+
+  currentImgObj = prevArt ? canvasImages[prevArt.id] : null;
+  nextImgObj = nextArt ? canvasImages[nextArt.id] : null;
 
   animProgress = 0.0;
   animateCanvasTransition();
-  renderHeroOverlayText(top10[state.heroIndex]);
+  renderHeroOverlayText(nextArt);
   renderHeroDots();
+  resetProgressBar();
 }
 
 function animateCanvasTransition() {
   if (animProgress < 1.0) {
-    animProgress += 0.05; // 20 frames transition
+    animProgress += 0.06;
     renderCanvasFrame();
-    animFrameId = requestAnimationFrame(animateCanvasTransition);
+    requestAnimationFrame(animateCanvasTransition);
   } else {
     animProgress = 1.0;
     renderCanvasFrame();
@@ -209,25 +231,18 @@ function renderCanvasFrame() {
 
   heroCtx.clearRect(0, 0, w, h);
 
-  // Draw current image
   if (currentImgObj && currentImgObj.complete) {
     drawScaledImage(heroCtx, currentImgObj, w, h, 1.0 - animProgress);
   }
 
-  // Draw next image over with alpha transition
   if (nextImgObj && nextImgObj.complete && animProgress > 0) {
     drawScaledImage(heroCtx, nextImgObj, w, h, animProgress);
-  } else if (!currentImgObj && state.articles.length > 0) {
-    const fallbackImg = canvasImages[0];
-    if (fallbackImg && fallbackImg.complete) {
-      drawScaledImage(heroCtx, fallbackImg, w, h, 1.0);
-    }
   }
 
-  // Ambient Gradient Glow Overlay on Canvas
+  // Ambient Glow Gradient
   const gradient = heroCtx.createLinearGradient(0, h * 0.3, 0, h);
   gradient.addColorStop(0, 'rgba(11, 15, 25, 0.0)');
-  gradient.addColorStop(1, 'rgba(11, 15, 25, 0.95)');
+  gradient.addColorStop(1, 'rgba(11, 15, 25, 0.96)');
   heroCtx.fillStyle = gradient;
   heroCtx.fillRect(0, 0, w, h);
 }
@@ -259,17 +274,17 @@ function renderHeroOverlayText(article) {
   if (!article || !heroOverlay) return;
   heroOverlay.innerHTML = `
     <div class="hero-badge-row">
-      <span class="tag-badge">TOP 10 SPOTLIGHT #${state.heroIndex + 1}</span>
+      <span class="tag-badge">${article.category} SPOTLIGHT #${state.heroIndex + 1}</span>
       <span class="source-tag">✦ ${article.source} &bull; ${article.readTime}</span>
     </div>
     <h1 class="hero-title">${escapeHtml(article.title)}</h1>
     <p class="hero-desc">${escapeHtml(article.description)}</p>
     <div class="hero-actions">
       <button onclick="openModal('${article.id}')" class="btn-primary">
-        <span>Read Crisp Annotation</span> &rarr;
+        <span>Continuous Canvas Reader</span> &rarr;
       </button>
       <a href="${article.link}" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-        Visit Original Source ↗
+        Visit Source ↗
       </a>
     </div>
   `;
@@ -277,41 +292,54 @@ function renderHeroOverlayText(article) {
 
 function renderHeroDots() {
   if (!heroDots) return;
-  const count = Math.min(10, state.articles.length);
+  const pool = state.filteredArticles.length > 0 ? state.filteredArticles : state.articles;
+  const count = Math.min(10, pool.length);
   heroDots.innerHTML = Array(count).fill(0).map((_, i) => `
-    <div class="dot ${i === state.heroIndex ? 'active' : ''}" onclick="transitionHeroSlide(${i}); resetHeroTimer();"></div>
+    <div class="dot ${i === state.heroIndex ? 'active' : ''}" onclick="transitionHeroSlide(${i});"></div>
   `).join('');
+}
+
+function resetProgressBar() {
+  state.progressValue = 0;
+  if (canvasProgressBar) canvasProgressBar.style.width = '0%';
 }
 
 function startHeroTimer() {
   if (state.heroTimer) clearInterval(state.heroTimer);
-  state.heroTimer = setInterval(() => {
-    transitionHeroSlide(state.heroIndex + 1);
-  }, 5000);
+  if (state.progressInterval) clearInterval(state.progressInterval);
+
+  state.progressInterval = setInterval(() => {
+    if (!state.heroPlaying) return;
+    state.progressValue += 2; // 50 ticks = 5000ms
+    if (canvasProgressBar) canvasProgressBar.style.width = `${state.progressValue}%`;
+    if (state.progressValue >= 100) {
+      resetProgressBar();
+      transitionHeroSlide(state.heroIndex + 1);
+    }
+  }, 100);
 }
 
-function resetHeroTimer() {
-  startHeroTimer();
+if (heroPlayPauseBtn) {
+  heroPlayPauseBtn.addEventListener('click', () => {
+    state.heroPlaying = !state.heroPlaying;
+    heroPlayPauseBtn.textContent = state.heroPlaying ? '⏸' : '▶';
+  });
 }
-
 if (heroPrevBtn) {
   heroPrevBtn.addEventListener('click', () => {
     transitionHeroSlide(state.heroIndex - 1);
-    resetHeroTimer();
   });
 }
 if (heroNextBtn) {
   heroNextBtn.addEventListener('click', () => {
     transitionHeroSlide(state.heroIndex + 1);
-    resetHeroTimer();
   });
 }
 
-// Category Tab Filtering & Smooth Landing
+// Category Tab Filtering & Landing
 function filterAndRender() {
   let list = [...state.articles];
 
-  // Category filter mapping
   if (state.currentCategory === 'top10') {
     list = list.slice(0, 10);
     gridTitle.textContent = 'Top 10 Global News Digest';
@@ -351,9 +379,10 @@ function filterAndRender() {
 
   renderGrid(list);
 
-  if (canvasImages.length > 0 && state.articles.length > 0) {
-    transitionHeroSlide(state.heroIndex);
-  }
+  // Update top canvas spotlight to switch dataset to currently selected tab!
+  state.heroIndex = 0;
+  transitionHeroSlide(0);
+  startHeroTimer();
 }
 
 function scrollToContent() {
@@ -439,21 +468,52 @@ function renderSkeletons() {
   `).join('');
 }
 
-// Modal Reader
+// CONTINUOUS CANVAS READER MODAL ENGINE (Experimental Feature)
 window.openModal = function(id) {
-  const art = state.articles.find(a => a.id === id);
+  const pool = state.filteredArticles.length > 0 ? state.filteredArticles : state.articles;
+  const index = pool.findIndex(a => a.id === id);
+  if (index === -1) return;
+
+  state.modalState.articles = pool;
+  state.modalState.currentIndex = index;
+  state.modalState.isPlaying = true;
+  state.modalState.progress = 0;
+
+  renderModalCanvasSlide();
+  startModalTimer();
+  modalBackdrop.classList.add('active');
+};
+
+function renderModalCanvasSlide() {
+  const mState = state.modalState;
+  const art = mState.articles[mState.currentIndex];
   if (!art) return;
 
+  // Draw canvas image in modal background
+  const imgObj = canvasImages[art.id];
+  if (modalCanvas && imgObj && imgObj.complete) {
+    const mCtx = modalCanvas.getContext('2d');
+    modalCanvas.width = modalCanvas.parentElement.clientWidth || 800;
+    modalCanvas.height = modalCanvas.parentElement.clientHeight || 600;
+    drawScaledImage(mCtx, imgObj, modalCanvas.width, modalCanvas.height, 0.4);
+  }
+
   modalContent.innerHTML = `
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+      <span class="tag-badge">${art.category} STORY #${mState.currentIndex + 1} OF ${mState.articles.length}</span>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <button onclick="navigateModal(-1)" class="canvas-nav-btn" title="Previous Story">&lsaquo;</button>
+        <button onclick="toggleModalPlay()" class="canvas-nav-btn" id="modalPlayToggleBtn">${mState.isPlaying ? '⏸' : '▶'}</button>
+        <button onclick="navigateModal(1)" class="canvas-nav-btn" title="Next Story">&rsaquo;</button>
+      </div>
+    </div>
+
     <div class="modal-header">
-      <span class="tag-badge">${art.category}</span>
       <h2 class="modal-title">${escapeHtml(art.title)}</h2>
       <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">
         Published by <strong>${art.source}</strong> &bull; ${art.readTime}
       </div>
     </div>
-
-    <img src="${art.imageUrl}" alt="${escapeHtml(art.title)}" style="width: 100%; height: 280px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1rem; image-rendering: -webkit-optimize-contrast;" />
 
     <div class="modal-annotation-block">
       <h4>✦ Crisp Executive Annotation</h4>
@@ -467,7 +527,7 @@ window.openModal = function(id) {
 
     <!-- Multi-source perspective chips -->
     <div class="sources-matrix">
-      <h4>Explore Perspective Across Related Credible Outlets:</h4>
+      <h4>Explore Perspective Across Related Outlets:</h4>
       <div class="sources-chips">
         ${art.relatedSources.map(s => `
           <a href="${s.url}" target="_blank" rel="noopener noreferrer" class="source-chip">
@@ -477,22 +537,57 @@ window.openModal = function(id) {
       </div>
     </div>
 
-    <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+    <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
       <a href="${art.link}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="flex: 1; justify-content: center;">
         Read Full Story on ${art.source} ↗
       </a>
+      <button onclick="navigateModal(1)" class="btn-secondary">
+        Next Story &rarr;
+      </button>
       <button onclick="speakArticle('${escapeJs(art.title)}. ${escapeJs(art.annotation.what)}')" class="btn-secondary">
-        🔊 Listen Audio
+        🔊 Listen
       </button>
     </div>
   `;
+}
 
-  modalBackdrop.classList.add('active');
+function startModalTimer() {
+  if (state.modalState.timer) clearInterval(state.modalState.timer);
+  state.modalState.progress = 0;
+
+  state.modalState.timer = setInterval(() => {
+    if (!state.modalState.isPlaying) return;
+    state.modalState.progress += 1.5; // 7 seconds per slide
+    if (modalProgressBar) modalProgressBar.style.width = `${state.modalState.progress}%`;
+    if (state.modalState.progress >= 100) {
+      navigateModal(1);
+    }
+  }, 100);
+}
+
+window.navigateModal = function(step) {
+  const mState = state.modalState;
+  if (mState.articles.length === 0) return;
+  mState.currentIndex = (mState.currentIndex + step + mState.articles.length) % mState.articles.length;
+  mState.progress = 0;
+  if (modalProgressBar) modalProgressBar.style.width = '0%';
+  renderModalCanvasSlide();
 };
 
-modalCloseBtn.addEventListener('click', () => modalBackdrop.classList.remove('active'));
+window.toggleModalPlay = function() {
+  state.modalState.isPlaying = !state.modalState.isPlaying;
+  const btn = document.getElementById('modalPlayToggleBtn');
+  if (btn) btn.textContent = state.modalState.isPlaying ? '⏸' : '▶';
+};
+
+function closeModal() {
+  modalBackdrop.classList.remove('active');
+  if (state.modalState.timer) clearInterval(state.modalState.timer);
+}
+
+modalCloseBtn.addEventListener('click', closeModal);
 modalBackdrop.addEventListener('click', (e) => {
-  if (e.target === modalBackdrop) modalBackdrop.classList.remove('active');
+  if (e.target === modalBackdrop) closeModal();
 });
 
 // Bookmarks Manager
@@ -584,7 +679,7 @@ audioPlayBtn.addEventListener('click', () => {
   }
 });
 
-// Event Listeners & Tab Switching Fix
+// Event Listeners & Tab Switching
 function setupEventListeners() {
   navTabs.addEventListener('click', (e) => {
     if (e.target.classList.contains('tab-btn')) {
@@ -621,7 +716,7 @@ function setupEventListeners() {
       searchInput.focus();
     }
     if (e.key === 'Escape') {
-      modalBackdrop.classList.remove('active');
+      closeModal();
       drawerBackdrop.classList.remove('active');
     }
   });

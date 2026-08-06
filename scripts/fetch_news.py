@@ -108,7 +108,7 @@ SOURCES = [
     }
 ]
 
-# Ultra-crisp high-resolution curated photography (4K/1080p uncompressed)
+# Ultra-HD curated photography (4K/1080p uncompressed)
 CRISP_IMAGES = {
     "World": [
         "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1600&q=95",
@@ -141,20 +141,46 @@ def clean_html(raw_html):
     cleantext = re.sub(cleanr, '', raw_html)
     return cleantext.strip()
 
+def upscale_image_url(url):
+    if not url:
+        return url
+    
+    # BBC iChef high-res replacement (/240/, /320/, /480/ -> /1024/)
+    url = re.sub(r'ichef\.bbci\.co\.uk/news/\d+/', 'ichef.bbci.co.uk/news/1024/', url)
+    
+    # Reuters & general width params
+    url = re.sub(r'w=\d+', 'w=1200', url)
+    url = re.sub(r'width=\d+', 'width=1200', url)
+    url = re.sub(r'h=\d+', 'h=800', url)
+    url = re.sub(r'height=\d+', 'height=800', url)
+    url = re.sub(r'quality=\d+', 'quality=95', url)
+    url = re.sub(r'q=\d+', 'q=95', url)
+    
+    # NYT replacement
+    url = url.replace('thumbStandard', 'superJumbo')
+    url = url.replace('mediumThreeByTwo210', 'superJumbo')
+    url = url.replace('articleLarge', 'superJumbo')
+    
+    # NDTV & generic thumbnail replacements
+    url = re.sub(r'\d+x\d+', '1200x800', url)
+    return url
+
 def extract_image(item, default_category, title):
-    # Try finding media image URL
+    # Search all nodes for media thumbnail or enclosure
     for elem in item.iter():
         tag = elem.tag.lower()
-        if 'content' in tag or 'thumbnail' in tag or 'enclosure' in tag:
+        if 'content' in tag or 'thumbnail' in tag or 'enclosure' in tag or 'group' in tag:
             url = elem.attrib.get('url') or elem.attrib.get('href')
-            if url and ('jpg' in url or 'png' in url or 'webp' in url or 'jpeg' in url or 'media' in url):
-                # Upgrade low-res thumbnail parameters if present
-                url = re.sub(r'width=\d+', 'width=1200', url)
-                url = re.sub(r'height=\d+', 'height=800', url)
-                url = re.sub(r'quality=\d+', 'quality=95', url)
-                return url
+            if url and ('jpg' in url or 'png' in url or 'webp' in url or 'jpeg' in url or 'media' in url or 'ichef' in url):
+                return upscale_image_url(url)
     
-    # Fallback crisp image
+    # Check img tags in description HTML
+    desc = item.findtext('description') or item.findtext('{http://www.w3.org/2005/Atom}summary') or ""
+    img_match = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', desc)
+    if img_match:
+        return upscale_image_url(img_match.group(1))
+
+    # Fallback ultra-crisp image
     cat_imgs = CRISP_IMAGES.get(default_category, CRISP_IMAGES["World"])
     return cat_imgs[abs(hash(title)) % len(cat_imgs)]
 
@@ -244,7 +270,7 @@ def main():
     os.makedirs("data", exist_ok=True)
     with open("data/news.json", "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
-    print("Saved to data/news.json successfully!")
+    print("Saved HD dataset to data/news.json successfully!")
 
 if __name__ == "__main__":
     main()

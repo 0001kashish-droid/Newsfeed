@@ -45,7 +45,7 @@
     <div class="container header-inner">
       <a href="#" class="logo-box" aria-label="News Colossal Home">
         <div class="logo-icon">NC</div>
-        <div class="logo-text">News<span>Colossal</span></div>
+        <div class="logo-text">News<span>Colossal</span> <small style="font-size: 0.65rem; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); padding: 0.1rem 0.4rem; border-radius: 4px; vertical-align: middle;">EXPERIMENTAL CANVAS</small></div>
       </a>
 
       <!-- Search Input -->
@@ -97,14 +97,19 @@
       </div>
     </div>
 
-    <!-- Smooth Transitioning Canvas Hero Spotlight Section -->
+    <!-- Continuous Canvas Spotlight Section -->
     <section class="hero-spotlight" id="heroSection">
       <div class="hero-card">
+        <!-- Canvas Progress Bar -->
+        <div class="canvas-progress-bar" id="canvasProgressBar"></div>
         <canvas id="heroCanvas" class="hero-canvas"></canvas>
+        
         <div class="hero-overlay" id="heroOverlay">
           <!-- Injected dynamically via JS canvas engine -->
         </div>
+
         <div class="hero-controls" id="heroControls">
+          <button id="heroPlayPauseBtn" class="canvas-nav-btn" title="Pause / Play Slideshow">⏸</button>
           <button id="heroPrevBtn" class="canvas-nav-btn" aria-label="Previous Slide">&lsaquo;</button>
           <div class="hero-dots" id="heroDots"></div>
           <button id="heroNextBtn" class="canvas-nav-btn" aria-label="Next Slide">&rsaquo;</button>
@@ -138,12 +143,16 @@
     </section>
   </main>
 
-  <!-- Crisp Annotation Reader Modal -->
+  <!-- Continuous Transitioning Canvas Reader Modal -->
   <div class="modal-backdrop" id="modalBackdrop">
-    <div class="modal-box" id="modalBox">
+    <div class="modal-box modal-box-canvas" id="modalBox">
+      <!-- Modal Canvas Background -->
+      <canvas id="modalCanvas" class="modal-canvas"></canvas>
+      <div class="modal-progress-bar" id="modalProgressBar"></div>
       <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
-      <div id="modalContent">
-        <!-- Dynamically injected modal content -->
+      
+      <div class="modal-canvas-content" id="modalContent">
+        <!-- Dynamically injected modal continuous reader content -->
       </div>
     </div>
   </div>
