@@ -88,7 +88,7 @@ SOURCES = [
         "url": "https://news.google.com/rss/search?q=site:rtings.com+when:7d&hl=en-US&gl=US&ceid=US:en",
         "logo": "RTG"
     },
-    # National & India Feeds (100% Real HD Images)
+    # National & India Feeds
     {
         "id": "hindustan-times",
         "name": "Hindustan Times",
@@ -140,22 +140,23 @@ SOURCES = [
     }
 ]
 
+# Ultra 4K Curated Photography for Fallbacks
 CRISP_IMAGES = {
     "World": [
-        "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1600&q=95",
-        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=95"
+        "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=2000&q=98",
+        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=98"
     ],
     "Tech": [
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=95",
-        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=95"
+        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2000&q=98",
+        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2000&q=98"
     ],
     "National": [
-        "https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=1600&q=95",
-        "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1600&q=95"
+        "https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=2000&q=98",
+        "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=2000&q=98"
     ],
     "Business": [
-        "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=95",
-        "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1600&q=95"
+        "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=2000&q=98",
+        "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=2000&q=98"
     ]
 }
 
@@ -174,19 +175,29 @@ def upscale_image_url(url):
     elif not url.startswith('http'):
         return url
     
-    # Specific upscale rules ONLY for providers that support width replacement parameters
+    # 1. BBC iChef Upscaler (/240/, /standard/240/, /standard/320/ -> /standard/1024/)
     if 'bbci.co.uk' in url:
+        url = re.sub(r'/standard/\d+/', '/standard/1024/', url)
         url = re.sub(r'ichef\.bbci\.co\.uk/news/\d+/', 'ichef.bbci.co.uk/news/1024/', url)
-    elif 'reuters.com' in url or 'techcrunch.com' in url or 'theverge.com' in url or 'cnet.com' in url:
-        url = re.sub(r'w=\d+', 'w=1200', url)
-        url = re.sub(r'width=\d+', 'width=1200', url)
-        url = re.sub(r'h=\d+', 'h=800', url)
-        url = re.sub(r'height=\d+', 'height=800', url)
+    
+    # 2. NYT Upscaler
+    elif 'nyt.com' in url or 'nytimes.com' in url:
+        url = url.replace('thumbStandard', 'superJumbo')
+        url = url.replace('mediumThreeByTwo210', 'superJumbo')
+        url = url.replace('articleLarge', 'superJumbo')
+        
+    # 3. Reuters / TechCrunch / Verge / CNET query params
+    elif 'reuters' in url or 'techcrunch' in url or 'theverge' in url or 'cnet' in url or 'wp-content' in url:
+        url = re.sub(r'w=\d+', 'w=1600', url)
+        url = re.sub(r'width=\d+', 'width=1600', url)
+        url = re.sub(r'h=\d+', 'h=900', url)
+        url = re.sub(r'height=\d+', 'height=900', url)
+        url = re.sub(r'resize=\d+,\d+', 'resize=1600,900', url)
         
     return url
 
 def extract_image(item, default_category, title):
-    # Check all XML media attributes
+    # Check all XML media elements
     for elem in item.iter():
         tag = elem.tag.lower()
         if 'content' in tag or 'thumbnail' in tag or 'enclosure' in tag or 'group' in tag:
@@ -194,7 +205,7 @@ def extract_image(item, default_category, title):
             if url and ('jpg' in url or 'png' in url or 'webp' in url or 'jpeg' in url or 'media' in url or 'ichef' in url or 'images' in url or 'ht-img' in url):
                 return upscale_image_url(url)
     
-    # Check img src tags in description HTML
+    # Check img tags in description
     desc = item.findtext('description') or item.findtext('{http://www.w3.org/2005/Atom}summary') or ""
     img_match = re.search(r'src=["\']([^"\']+\.(?:jpg|png|jpeg|webp)[^"\']*)["\']', desc, re.IGNORECASE)
     if img_match:
@@ -289,7 +300,7 @@ def main():
     os.makedirs("data", exist_ok=True)
     with open("data/news.json", "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
-    print("Saved dataset to data/news.json successfully!")
+    print("Saved HD dataset to data/news.json successfully!")
 
 if __name__ == "__main__":
     main()
