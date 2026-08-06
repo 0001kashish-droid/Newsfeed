@@ -97,7 +97,7 @@
       </div>
     </div>
 
-    <!-- Canvas Spotlight Section -->
+    <!-- Canvas Hero Spotlight Section -->
     <section class="hero-spotlight" id="heroSection">
       <div class="hero-card">
         <div class="canvas-progress-bar" id="canvasProgressBar"></div>
@@ -142,12 +142,32 @@
     </section>
   </main>
 
-  <!-- Executive Canvas Reader Modal -->
+  <!-- Ultra-Premium 3D Executive Canvas Deck Modal -->
   <div class="modal-backdrop" id="modalBackdrop">
     <div class="modal-card-box" id="modalBox">
-      <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
-      <div id="modalContent">
-        <!-- Dynamically injected executive modal content -->
+      <!-- Fixed Sticky Modal Header Bar -->
+      <div class="modal-header-bar">
+        <div class="modal-header-left">
+          <button onclick="navigateModal(-1)" class="modal-nav-chip" title="Previous Story (Left Arrow)">
+            &lsaquo; Prev
+          </button>
+          <span class="modal-counter-badge" id="modalCounterBadge">Story 1 of 10</span>
+          <button onclick="navigateModal(1)" class="modal-nav-chip" title="Next Story (Right Arrow)">
+            Next &rsaquo;
+          </button>
+        </div>
+        <div class="modal-header-right">
+          <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+        </div>
+      </div>
+
+      <!-- Floating Side Arrow Controls for 1-Click Deck Navigation -->
+      <button onclick="navigateModal(-1)" class="deck-chevron deck-chevron-left" title="Previous Story">&lsaquo;</button>
+      <button onclick="navigateModal(1)" class="deck-chevron deck-chevron-right" title="Next Story">&rsaquo;</button>
+
+      <!-- Scrollable Inner Story Body -->
+      <div class="modal-body-scroll" id="modalContent">
+        <!-- Dynamically injected executive story content -->
       </div>
     </div>
   </div>
@@ -163,7 +183,7 @@
         <!-- Saved items injected here -->
       </div>
     </div>
-  </div>
+  </footer>
 
   <!-- Audio Briefing Player Widget -->
   <div class="audio-player-widget" id="audioWidget">

@@ -1,4 +1,4 @@
-// News Colossal Application Engine — Executive Canvas Edition
+// News Colossal Application Engine — Ultra-Premium Executive Canvas Edition
 
 const state = {
   articles: [],
@@ -14,7 +14,7 @@ const state = {
   progressInterval: null,
   progressValue: 0,
   
-  // Executive Modal Navigation State
+  // Executive Deck Navigation State
   modalState: {
     articles: [],
     currentIndex: 0
@@ -23,7 +23,7 @@ const state = {
   audioState: { isPlaying: false, utterance: null }
 };
 
-const DEFAULT_FALLBACK_IMG = "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1600&q=95";
+const DEFAULT_FALLBACK_IMG = "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=2000&q=98";
 
 // DOM Elements
 const newsGrid = document.getElementById('newsGrid');
@@ -36,6 +36,7 @@ const navTabs = document.getElementById('navTabs');
 const modalBackdrop = document.getElementById('modalBackdrop');
 const modalContent = document.getElementById('modalContent');
 const modalCloseBtn = document.getElementById('modalCloseBtn');
+const modalCounterBadge = document.getElementById('modalCounterBadge');
 const drawerBackdrop = document.getElementById('drawerBackdrop');
 const drawerCloseBtn = document.getElementById('drawerCloseBtn');
 const savedList = document.getElementById('savedList');
@@ -473,7 +474,7 @@ function renderSkeletons() {
   `).join('');
 }
 
-// EXECUTIVE MODAL CAROUSEL ENGINE
+// ULTRA-PREMIUM DECK MODAL ENGINE
 window.openModal = function(id) {
   const pool = state.filteredArticles.length > 0 ? state.filteredArticles : state.articles;
   const index = pool.findIndex(a => a.id === id);
@@ -493,38 +494,44 @@ function renderExecutiveModal() {
   const art = pool[currIdx];
   if (!art) return;
 
+  if (modalCounterBadge) {
+    modalCounterBadge.textContent = `Story ${currIdx + 1} of ${total}`;
+  }
+
   modalContent.innerHTML = `
-    <!-- Top HD Image Banner -->
-    <div style="position: relative; width: 100%; height: 260px; overflow: hidden; background: #0b0f19;">
-      <img src="${art.imageUrl}" alt="${escapeHtml(art.title)}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.onerror=null; this.src='${DEFAULT_FALLBACK_IMG}';" />
-      <div style="position: absolute; inset: 0; background: linear-gradient(0deg, var(--bg-surface) 0%, transparent 100%);"></div>
-      <span class="tag-badge" style="position: absolute; top: 1rem; left: 1rem;">${art.category} (${art.region})</span>
+    <!-- Top HD Cover Media Banner -->
+    <div style="position: relative; width: 100%; height: 290px; overflow: hidden; background: #0b0f19;">
+      <img src="${art.imageUrl}" alt="${escapeHtml(art.title)}" style="width: 100%; height: 100%; object-fit: cover; filter: contrast(1.05) saturate(1.08);" onerror="this.onerror=null; this.src='${DEFAULT_FALLBACK_IMG}';" />
+      <div style="position: absolute; inset: 0; background: linear-gradient(0deg, var(--bg-surface) 0%, rgba(19, 27, 46, 0.4) 60%, transparent 100%);"></div>
+      
+      <div style="position: absolute; bottom: 1rem; left: 1.5rem; right: 1.5rem; display: flex; align-items: center; justify-content: space-between;">
+        <span class="tag-badge">${art.category} (${art.region})</span>
+        <span style="font-size: 0.82rem; color: #cbd5e1; background: rgba(11, 15, 25, 0.75); backdrop-filter: blur(8px); padding: 0.25rem 0.75rem; border-radius: var(--radius-full); border: 1px solid var(--border-color);">
+          ✦ ${art.source} &bull; ${art.readTime}
+        </span>
+      </div>
     </div>
 
-    <!-- Main Article Body -->
-    <div style="padding: 1.5rem 2rem 2rem 2rem;">
-      <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem;">
-        Published by <strong>${art.source}</strong> &bull; ${art.readTime}
+    <!-- Article Content Details -->
+    <div style="padding: 1.8rem 2.2rem 2.5rem 2.2rem;">
+      <h2 style="font-family: var(--font-heading); font-size: 1.7rem; font-weight: 800; line-height: 1.3; margin-bottom: 1.2rem; color: var(--text-primary);">${escapeHtml(art.title)}</h2>
+
+      <div style="background: var(--bg-surface-elevated); border-left: 4px solid var(--accent-cyan); padding: 1rem 1.25rem; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin-bottom: 1.5rem;">
+        <h4 style="color: var(--accent-cyan); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.6rem;">✦ Crisp Executive Annotation Breakdown</h4>
+        <div style="display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.5;">
+          <div><strong style="color: var(--text-primary);">• What Happened:</strong> ${escapeHtml(art.annotation.what)}</div>
+          <div><strong style="color: var(--text-primary);">• Impact & Context:</strong> ${escapeHtml(art.annotation.why)}</div>
+        </div>
       </div>
 
-      <h2 style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; line-height: 1.3; margin-bottom: 1.2rem; color: #fff;">${escapeHtml(art.title)}</h2>
+      <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.65; margin-bottom: 1.6rem;">${escapeHtml(art.description)}</p>
 
-      <div class="modal-annotation-block">
-        <h4 style="color: var(--accent-cyan); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.6rem;">✦ Crisp Executive Annotation</h4>
-        <ul class="modal-bullet-list">
-          <li><strong>What Happened:</strong> ${escapeHtml(art.annotation.what)}</li>
-          <li><strong>Impact & Context:</strong> ${escapeHtml(art.annotation.why)}</li>
-        </ul>
-      </div>
-
-      <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">${escapeHtml(art.description)}</p>
-
-      <!-- Multi-source chips -->
-      <div class="sources-matrix" style="margin-bottom: 1.5rem;">
-        <h4>Explore Perspective Across Related Outlets:</h4>
-        <div class="sources-chips">
+      <!-- Multi-source perspective chips -->
+      <div style="margin-bottom: 1.8rem; background: rgba(0, 242, 254, 0.05); border: 1px solid var(--border-highlight); padding: 1rem 1.2rem; border-radius: var(--radius-md);">
+        <h4 style="font-size: 0.82rem; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 0.6rem;">Cross-Explore Coverage Across Trusted Outlets:</h4>
+        <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
           ${art.relatedSources.map(s => `
-            <a href="${s.url}" target="_blank" rel="noopener noreferrer" class="source-chip">
+            <a href="${s.url}" target="_blank" rel="noopener noreferrer" style="background: var(--bg-surface); border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.4rem 0.85rem; border-radius: var(--radius-full); font-size: 0.82rem; text-decoration: none; font-weight: 600; transition: all var(--transition-fast);">
               <span>${s.name} Coverage</span> ↗
             </a>
           `).join('')}
@@ -532,22 +539,18 @@ function renderExecutiveModal() {
       </div>
 
       <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
-        <a href="${art.link}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="flex: 1; justify-content: center;">
+        <a href="${art.link}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="flex: 1; justify-content: center; padding: 0.75rem 1.5rem;">
           Read Full Story on ${art.source} ↗
         </a>
-        <button onclick="speakArticle('${escapeJs(art.title)}. ${escapeJs(art.annotation.what)}')" class="btn-secondary">
+        <button onclick="speakArticle('${escapeJs(art.title)}. ${escapeJs(art.annotation.what)}')" class="btn-secondary" style="padding: 0.75rem 1.25rem;">
           🔊 Listen Audio
         </button>
       </div>
     </div>
-
-    <!-- Bottom Carousel Navigation Bar -->
-    <div class="modal-nav-bar">
-      <button onclick="navigateModal(-1)" class="btn-secondary" style="padding: 0.45rem 1rem; font-size: 0.85rem;">&lsaquo; Previous Story</button>
-      <span style="font-size: 0.88rem; font-weight: 700; color: var(--accent-cyan);">Story ${currIdx + 1} of ${total}</span>
-      <button onclick="navigateModal(1)" class="btn-secondary" style="padding: 0.45rem 1rem; font-size: 0.85rem;">Next Story &rsaquo;</button>
-    </div>
   `;
+
+  // Auto-scroll modal body to top when story changes
+  modalContent.scrollTop = 0;
 }
 
 window.navigateModal = function(step) {
