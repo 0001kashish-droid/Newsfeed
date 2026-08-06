@@ -1117,10 +1117,10 @@ body {
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.82);
   backdrop-filter: blur(32px) saturate(220%);
   -webkit-backdrop-filter: blur(32px) saturate(220%);
-  z-index: 200;
+  z-index: 3000 !important; /* Elevated above all floating bottom audio widgets (z-index 500) */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1132,6 +1132,75 @@ body {
 .modal-backdrop.active {
   opacity: 1;
   pointer-events: auto;
+}
+
+/* Dedicated Mobile Deck Header Bar (Clean, Non-Overlapping on Mobile) */
+.mobile-deck-header {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 1rem;
+  background: var(--bg-surface-elevated);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 100;
+  flex-shrink: 0;
+}
+.mobile-deck-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.mobile-deck-counter {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-full);
+}
+.mobile-deck-tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+  border: 1px solid currentColor;
+}
+.mobile-deck-header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.mobile-deck-bookmark {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+}
+.mobile-deck-bookmark.saved {
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+  color: #000;
+  border-color: transparent;
+}
+.mobile-deck-close {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .deck-modal-card {

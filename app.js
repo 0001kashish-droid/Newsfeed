@@ -1154,21 +1154,33 @@ function renderExecutiveModal() {
     <!-- Reading Progress Bar — whisper-thin -->
     <div class="deck-progress-bar" id="deckProgressBar"></div>
 
-    <!-- Apple Liquid Glass Floating Counter Pill -->
-    <div class="liquid-glass-nav-container">
+    <!-- DEDICATED MOBILE DECK HEADER BAR (Clean, Non-Overlapping on Mobile) -->
+    <div class="mobile-deck-header">
+      <div class="mobile-deck-header-left">
+        <span class="mobile-deck-counter">${currIdx + 1} / ${total}</span>
+        <span class="mobile-deck-tag" style="color: ${themeColor}; border-color: ${themeColor};">${art.category}</span>
+      </div>
+      <div class="mobile-deck-header-right">
+        <button class="mobile-deck-bookmark ${saved ? 'saved' : ''}" onclick="toggleBookmark('${art.id}', event); renderExecutiveModal();" aria-label="Save story">
+          ${saved ? '★ Saved' : '☆ Save'}
+        </button>
+        <button class="mobile-deck-close" onclick="closeModal()" aria-label="Close modal">&times;</button>
+      </div>
+    </div>
+
+    <!-- DESKTOP FLOATING CONTROLS (Hidden on Mobile via CSS) -->
+    <div class="liquid-glass-nav-container desktop-only-control">
       <div class="liquid-glass-reflection-glow"></div>
       <div class="liquid-glass-pill">
         <span class="liquid-glass-counter">${currIdx + 1} / ${total}</span>
       </div>
     </div>
 
-    <!-- Liquid Glass Subtle Bookmark Button -->
-    <button class="liquid-glass-bookmark ${saved ? 'saved' : ''}" onclick="toggleBookmark('${art.id}', event); renderExecutiveModal();" aria-label="Save story for later" title="Save story for later">
+    <button class="liquid-glass-bookmark desktop-only-control ${saved ? 'saved' : ''}" onclick="toggleBookmark('${art.id}', event); renderExecutiveModal();" aria-label="Save story for later" title="Save story for later">
       ${saved ? '★ Saved' : '☆ Save'}
     </button>
 
-    <!-- Apple Liquid Glass Close Button -->
-    <button class="liquid-glass-close" onclick="closeModal()" aria-label="Close modal">&times;</button>
+    <button class="liquid-glass-close desktop-only-control" onclick="closeModal()" aria-label="Close modal">&times;</button>
 
     <div class="deck-scroll-body" id="deckScrollBody">
       <!-- Parallax Cover -->
@@ -1180,8 +1192,8 @@ function renderExecutiveModal() {
         <div style="position: absolute; inset: 0; background: linear-gradient(0deg, var(--bg-surface) 0%, rgba(15, 21, 35, 0.3) 60%, rgba(0,0,0,0.55) 100%); pointer-events: none;"></div>
         
         <!-- Banner Overlay — Source & Category -->
-        <div style="position: absolute; bottom: 1.2rem; left: 1.8rem; right: 1.8rem; display: flex; align-items: center; justify-content: space-between; z-index: 50;">
-          <span class="tag-badge" style="border-color: ${themeColor}; color: ${themeColor}; background: rgba(0, 242, 254, 0.1); backdrop-filter: blur(12px);">${art.category}</span>
+        <div class="deck-cover-banner" style="position: absolute; bottom: 1.2rem; left: 1.8rem; right: 1.8rem; display: flex; align-items: center; justify-content: space-between; z-index: 50;">
+          <span class="tag-badge desktop-only-control" style="border-color: ${themeColor}; color: ${themeColor}; background: rgba(0, 242, 254, 0.1); backdrop-filter: blur(12px);">${art.category}</span>
           
           <div style="display: flex; align-items: center; gap: 0.5rem; z-index: 60;">
             <span style="font-size: 0.78rem; color: #cbd5e1; background: rgba(7, 9, 14, 0.8); backdrop-filter: blur(12px); padding: 0.3rem 0.75rem; border-radius: var(--radius-full); border: 1px solid rgba(255,255,255,0.12); font-weight: 600;">
