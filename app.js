@@ -1,4 +1,4 @@
-// News Colossal Application Engine — Experimental Continuous Canvas Edition
+// News Colossal Application Engine — 3D Canvas Card Stack Edition
 
 const state = {
   articles: [],
@@ -14,17 +14,17 @@ const state = {
   progressInterval: null,
   progressValue: 0,
   
-  // Continuous Canvas Modal Reader State
-  modalState: {
+  // 3D Card Stack Modal State
+  stackState: {
     articles: [],
     currentIndex: 0,
-    isPlaying: true,
-    timer: null,
-    progress: 0
+    isPlaying: false
   },
   
   audioState: { isPlaying: false, utterance: null }
 };
+
+const DEFAULT_FALLBACK_IMG = "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1600&q=95";
 
 // DOM Elements
 const newsGrid = document.getElementById('newsGrid');
@@ -37,8 +37,6 @@ const navTabs = document.getElementById('navTabs');
 const modalBackdrop = document.getElementById('modalBackdrop');
 const modalContent = document.getElementById('modalContent');
 const modalCloseBtn = document.getElementById('modalCloseBtn');
-const modalCanvas = document.getElementById('modalCanvas');
-const modalProgressBar = document.getElementById('modalProgressBar');
 const drawerBackdrop = document.getElementById('drawerBackdrop');
 const drawerCloseBtn = document.getElementById('drawerCloseBtn');
 const savedList = document.getElementById('savedList');
@@ -139,6 +137,7 @@ function preloadAllImages() {
     if (!canvasImages[art.id]) {
       const img = new Image();
       img.crossOrigin = 'Anonymous';
+      img.onerror = () => { img.src = DEFAULT_FALLBACK_IMG; };
       img.src = art.imageUrl;
       canvasImages[art.id] = img;
     }
@@ -162,7 +161,7 @@ async function fetchClientFallback() {
         category: 'World',
         region: 'Global',
         pubDate: item.pubDate,
-        imageUrl: item.thumbnail || 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1600&q=95',
+        imageUrl: item.thumbnail || DEFAULT_FALLBACK_IMG,
         annotation: {
           what: item.title,
           why: 'Key breaking geopolitical news story.'
@@ -279,7 +278,7 @@ function renderHeroOverlayText(article) {
     <p class="hero-desc">${escapeHtml(article.description)}</p>
     <div class="hero-actions">
       <button onclick="openModal('${article.id}')" class="btn-primary">
-        <span>Continuous Canvas Reader</span> &rarr;
+        <span>3D Card Stack Preview</span> &rarr;
       </button>
       <a href="${article.link}" target="_blank" rel="noopener noreferrer" class="btn-secondary">
         Visit Source ↗
@@ -334,7 +333,7 @@ if (heroNextBtn) {
   });
 }
 
-// Category & Region Filtering Engine (Robust Pipeline)
+// Category & Region Filtering Engine
 function filterAndRender() {
   let list = [...state.articles];
 
@@ -385,7 +384,7 @@ function filterAndRender() {
 
   renderGrid(list);
 
-  // Update top canvas spotlight to switch dataset to currently filtered list!
+  // Update top canvas spotlight
   state.heroIndex = 0;
   transitionHeroSlide(0);
   startHeroTimer();
@@ -399,7 +398,7 @@ function scrollToContent() {
   }
 }
 
-// Render Main Grid
+// Render Main Grid with OnError Fallback
 function renderGrid(articles) {
   if (articles.length === 0) {
     const regionName = state.currentRegion === 'all' ? '' : ` in ${state.currentRegion}`;
@@ -417,7 +416,7 @@ function renderGrid(articles) {
     return `
       <article class="news-card">
         <div class="card-thumb-box">
-          <img src="${art.imageUrl}" alt="${escapeHtml(art.title)}" class="card-thumb" loading="lazy" />
+          <img src="${art.imageUrl}" alt="${escapeHtml(art.title)}" class="card-thumb" loading="lazy" onerror="this.onerror=null; this.src='${DEFAULT_FALLBACK_IMG}';" />
           <span class="card-category">${art.category}</span>
           <button class="bookmark-btn ${saved ? 'saved' : ''}" onclick="toggleBookmark('${art.id}', event)" title="Save Article">
             ${saved ? '★' : '☆'}
@@ -475,120 +474,92 @@ function renderSkeletons() {
   `).join('');
 }
 
-// CONTINUOUS CANVAS READER MODAL ENGINE
+// 3D CARD STACK CANVAS PREVIEW ENGINE
 window.openModal = function(id) {
   const pool = state.filteredArticles.length > 0 ? state.filteredArticles : state.articles;
   const index = pool.findIndex(a => a.id === id);
   if (index === -1) return;
 
-  state.modalState.articles = pool;
-  state.modalState.currentIndex = index;
-  state.modalState.isPlaying = true;
-  state.modalState.progress = 0;
+  state.stackState.articles = pool;
+  state.stackState.currentIndex = index;
 
-  renderModalCanvasSlide();
-  startModalTimer();
+  render3DCardStack();
   modalBackdrop.classList.add('active');
 };
 
-function renderModalCanvasSlide() {
-  const mState = state.modalState;
-  const art = mState.articles[mState.currentIndex];
-  if (!art) return;
+function render3DCardStack() {
+  const pool = state.stackState.articles;
+  const currIdx = state.stackState.currentIndex;
+  const total = pool.length;
 
-  const imgObj = canvasImages[art.id];
-  if (modalCanvas && imgObj && imgObj.complete) {
-    const mCtx = modalCanvas.getContext('2d');
-    modalCanvas.width = modalCanvas.parentElement.clientWidth || 800;
-    modalCanvas.height = modalCanvas.parentElement.clientHeight || 600;
-    drawScaledImage(mCtx, imgObj, modalCanvas.width, modalCanvas.height, 0.4);
-  }
+  const prevIdx = (currIdx - 1 + total) % total;
+  const nextIdx = (currIdx + 1) % total;
+
+  const currArt = pool[currIdx];
+  const prevArt = pool[prevIdx];
+  const nextArt = pool[nextIdx];
 
   modalContent.innerHTML = `
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
-      <span class="tag-badge">${art.category} STORY #${mState.currentIndex + 1} OF ${mState.articles.length}</span>
-      <div style="display: flex; align-items: center; gap: 0.5rem;">
-        <button onclick="navigateModal(-1)" class="canvas-nav-btn" title="Previous Story">&lsaquo;</button>
-        <button onclick="toggleModalPlay()" class="canvas-nav-btn" id="modalPlayToggleBtn">${mState.isPlaying ? '⏸' : '▶'}</button>
-        <button onclick="navigateModal(1)" class="canvas-nav-btn" title="Next Story">&rsaquo;</button>
+    <div class="card-stack-viewport">
+      <!-- Previous Card Stack -->
+      <div class="stacked-card prev" onclick="navigateStack(-1)">
+        <div style="font-size: 0.75rem; color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 0.3rem;">&lsaquo; PREVIOUS STORY</div>
+        <h4 style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; max-height: 2.8em; overflow: hidden;">${escapeHtml(prevArt.title)}</h4>
       </div>
-    </div>
 
-    <div class="modal-header">
-      <h2 class="modal-title">${escapeHtml(art.title)}</h2>
-      <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">
-        Published by <strong>${art.source}</strong> &bull; ${art.readTime}
-      </div>
-    </div>
+      <!-- Active Center Card -->
+      <div class="stacked-card active">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.8rem;">
+          <span class="tag-badge">${currArt.category} STORY #${currIdx + 1} OF ${total}</span>
+          <span style="font-size: 0.82rem; color: var(--text-muted);">${currArt.source} &bull; ${currArt.readTime}</span>
+        </div>
 
-    <div class="modal-annotation-block">
-      <h4>✦ Crisp Executive Annotation</h4>
-      <ul class="modal-bullet-list">
-        <li><strong>What Happened:</strong> ${escapeHtml(art.annotation.what)}</li>
-        <li><strong>Impact & Context:</strong> ${escapeHtml(art.annotation.why)}</li>
-      </ul>
-    </div>
+        <img src="${currArt.imageUrl}" alt="${escapeHtml(currArt.title)}" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1rem;" onerror="this.onerror=null; this.src='${DEFAULT_FALLBACK_IMG}';" />
 
-    <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">${escapeHtml(art.description)}</p>
+        <h2 style="font-family: var(--font-heading); font-size: 1.45rem; font-weight: 800; line-height: 1.3; margin-bottom: 0.8rem; color: #fff;">${escapeHtml(currArt.title)}</h2>
 
-    <!-- Multi-source perspective chips -->
-    <div class="sources-matrix">
-      <h4>Explore Perspective Across Related Outlets:</h4>
-      <div class="sources-chips">
-        ${art.relatedSources.map(s => `
-          <a href="${s.url}" target="_blank" rel="noopener noreferrer" class="source-chip">
-            <span>${s.name} Coverage</span> ↗
+        <div class="modal-annotation-block" style="margin: 0.8rem 0;">
+          <h4 style="color: var(--accent-cyan); font-size: 0.75rem; text-transform: uppercase; margin-bottom: 0.4rem;">✦ Crisp Executive Annotation (${currArt.region})</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.4;">${escapeHtml(currArt.annotation.what)}</p>
+        </div>
+
+        <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.5; margin-bottom: 1rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${escapeHtml(currArt.description)}</p>
+
+        <div style="display: flex; gap: 0.8rem; align-items: center;">
+          <a href="${currArt.link}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="flex: 1; justify-content: center; padding: 0.55rem 1rem; font-size: 0.85rem;">
+            Read Full Article ↗
           </a>
-        `).join('')}
+          <button onclick="speakArticle('${escapeJs(currArt.title)}. ${escapeJs(currArt.annotation.what)}')" class="btn-secondary" style="padding: 0.55rem 1rem; font-size: 0.85rem;">
+            🔊 Listen
+          </button>
+        </div>
+      </div>
+
+      <!-- Next Card Stack -->
+      <div class="stacked-card next" onclick="navigateStack(1)">
+        <div style="font-size: 0.75rem; color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 0.3rem;">NEXT STORY &rsaquo;</div>
+        <h4 style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; max-height: 2.8em; overflow: hidden;">${escapeHtml(nextArt.title)}</h4>
       </div>
     </div>
 
-    <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-      <a href="${art.link}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="flex: 1; justify-content: center;">
-        Read Full Story on ${art.source} ↗
-      </a>
-      <button onclick="navigateModal(1)" class="btn-secondary">
-        Next Story &rarr;
-      </button>
-      <button onclick="speakArticle('${escapeJs(art.title)}. ${escapeJs(art.annotation.what)}')" class="btn-secondary">
-        🔊 Listen
-      </button>
+    <!-- Bottom Stack Navigation Bar -->
+    <div class="card-stack-controls">
+      <button onclick="navigateStack(-1)" class="btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.85rem;">&lsaquo; Previous Story</button>
+      <span style="font-size: 0.85rem; font-weight: 700; color: var(--accent-cyan);">${currIdx + 1} / ${total}</span>
+      <button onclick="navigateStack(1)" class="btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.85rem;">Next Story &rsaquo;</button>
     </div>
   `;
 }
 
-function startModalTimer() {
-  if (state.modalState.timer) clearInterval(state.modalState.timer);
-  state.modalState.progress = 0;
-
-  state.modalState.timer = setInterval(() => {
-    if (!state.modalState.isPlaying) return;
-    state.modalState.progress += 1.5;
-    if (modalProgressBar) modalProgressBar.style.width = `${state.modalState.progress}%`;
-    if (state.modalState.progress >= 100) {
-      navigateModal(1);
-    }
-  }, 100);
-}
-
-window.navigateModal = function(step) {
-  const mState = state.modalState;
-  if (mState.articles.length === 0) return;
-  mState.currentIndex = (mState.currentIndex + step + mState.articles.length) % mState.articles.length;
-  mState.progress = 0;
-  if (modalProgressBar) modalProgressBar.style.width = '0%';
-  renderModalCanvasSlide();
-};
-
-window.toggleModalPlay = function() {
-  state.modalState.isPlaying = !state.modalState.isPlaying;
-  const btn = document.getElementById('modalPlayToggleBtn');
-  if (btn) btn.textContent = state.modalState.isPlaying ? '⏸' : '▶';
+window.navigateStack = function(step) {
+  const pool = state.stackState.articles;
+  if (pool.length === 0) return;
+  state.stackState.currentIndex = (state.stackState.currentIndex + step + pool.length) % pool.length;
+  render3DCardStack();
 };
 
 function closeModal() {
   modalBackdrop.classList.remove('active');
-  if (state.modalState.timer) clearInterval(state.modalState.timer);
 }
 
 modalCloseBtn.addEventListener('click', closeModal);
@@ -717,6 +688,12 @@ function setupEventListeners() {
   });
 
   document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+      if (modalBackdrop.classList.contains('active')) navigateStack(-1);
+    }
+    if (e.key === 'ArrowRight') {
+      if (modalBackdrop.classList.contains('active')) navigateStack(1);
+    }
     if (e.key === '/' && document.activeElement !== searchInput) {
       e.preventDefault();
       searchInput.focus();

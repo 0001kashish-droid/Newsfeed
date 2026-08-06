@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 
 SOURCES = [
-    # World & Geopolitics
+    # World Feeds
     {
         "id": "bbc-world",
         "name": "BBC News",
@@ -88,14 +88,22 @@ SOURCES = [
         "url": "https://news.google.com/rss/search?q=site:rtings.com+when:7d&hl=en-US&gl=US&ceid=US:en",
         "logo": "RTG"
     },
-    # National & Regional Feeds
+    # National & India Feeds
     {
-        "id": "ndtv",
-        "name": "NDTV",
+        "id": "google-india",
+        "name": "Times of India / NDTV",
         "category": "National",
         "region": "India",
-        "url": "https://feeds.feedburner.com/ndtvnews-top-stories",
-        "logo": "NDTV"
+        "url": "https://news.google.com/rss/search?q=site:ndtv.com+OR+site:thehindu.com+OR+site:timesofindia.indiatimes.com+when:24h&hl=en-IN&gl=IN&ceid=IN:en",
+        "logo": "IND"
+    },
+    {
+        "id": "the-hindu",
+        "name": "The Hindu",
+        "category": "National",
+        "region": "India",
+        "url": "https://www.thehindu.com/news/national/feeder/default.rss",
+        "logo": "TH"
     },
     {
         "id": "npr-national",
@@ -124,7 +132,7 @@ SOURCES = [
     }
 ]
 
-# Ultra-HD photography
+# Ultra-HD Photography
 CRISP_IMAGES = {
     "World": [
         "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1600&q=95",
@@ -160,6 +168,10 @@ def clean_html(raw_html):
 def upscale_image_url(url):
     if not url:
         return url
+    if url.startswith('//'):
+        url = 'https:' + url
+    elif not url.startswith('http'):
+        return url
     
     url = re.sub(r'ichef\.bbci\.co\.uk/news/\d+/', 'ichef.bbci.co.uk/news/1024/', url)
     url = re.sub(r'w=\d+', 'w=1200', url)
@@ -181,7 +193,7 @@ def extract_image(item, default_category, title):
         tag = elem.tag.lower()
         if 'content' in tag or 'thumbnail' in tag or 'enclosure' in tag or 'group' in tag:
             url = elem.attrib.get('url') or elem.attrib.get('href')
-            if url and ('jpg' in url or 'png' in url or 'webp' in url or 'jpeg' in url or 'media' in url or 'ichef' in url):
+            if url and ('jpg' in url or 'png' in url or 'webp' in url or 'jpeg' in url or 'media' in url or 'ichef' in url or 'images' in url):
                 return upscale_image_url(url)
     
     desc = item.findtext('description') or item.findtext('{http://www.w3.org/2005/Atom}summary') or ""
@@ -197,7 +209,7 @@ def generate_annotation(title, description):
     sentences = [s.strip() for s in re.split(r'(?<=[.!?]) +', clean_desc) if len(s.strip()) > 10]
     
     bullet1 = sentences[0] if sentences else title
-    bullet2 = sentences[1] if len(sentences) > 1 else "Key regional development with wide-ranging impact across policy, industry, and public interest."
+    bullet2 = sentences[1] if len(sentences) > 1 else "Key global development with wide-ranging impact across policy, industry, and public interest."
     
     if len(bullet1) > 160:
         bullet1 = bullet1[:157] + "..."
@@ -253,7 +265,7 @@ def fetch_rss(source):
                     "relatedSources": [
                         {"name": "BBC News", "url": "https://www.bbc.com/news"},
                         {"name": "Reuters", "url": "https://www.reuters.com"},
-                        {"name": "Al Jazeera", "url": "https://www.aljazeera.com"}
+                        {"name": "The Hindu", "url": "https://www.thehindu.com"}
                     ]
                 })
     except Exception as e:

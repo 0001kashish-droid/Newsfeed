@@ -4,7 +4,7 @@
   --bg-main: #0b0f19;
   --bg-surface: #131b2e;
   --bg-surface-elevated: #1a243b;
-  --bg-glass: rgba(19, 27, 46, 0.85);
+  --bg-glass: rgba(19, 27, 46, 0.88);
   --border-color: rgba(255, 255, 255, 0.12);
   --border-highlight: rgba(0, 242, 254, 0.4);
   
@@ -360,7 +360,7 @@ body {
   border-color: var(--accent-cyan);
 }
 
-/* Smooth Transitioning Canvas Hero Spotlight Section */
+/* Canvas Hero Spotlight Section */
 .hero-spotlight {
   margin-bottom: 2.5rem;
 }
@@ -496,7 +496,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* Hero Canvas Overlay Controls */
 .hero-controls {
   position: absolute;
   top: 1.5rem;
@@ -515,8 +514,8 @@ body {
   background: rgba(255,255,255,0.12);
   border: none;
   color: white;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -572,7 +571,7 @@ body {
   border-radius: 2px;
 }
 
-/* Top 10 Colossal & General Grid (Ultra-HD Crisp Thumbnails) */
+/* Ultra-HD Grid & Crisp Cards */
 .news-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -596,7 +595,6 @@ body {
   box-shadow: var(--shadow-md);
 }
 
-/* Ultra-Crisp Thumbnail Container */
 .card-thumb-box {
   position: relative;
   width: 100%;
@@ -687,7 +685,6 @@ body {
   overflow: hidden;
 }
 
-/* Crisp Annotation Box */
 .annotation-box {
   background: var(--bg-surface-elevated);
   border-left: 3px solid var(--accent-cyan);
@@ -749,17 +746,17 @@ body {
   color: var(--text-primary);
 }
 
-/* Continuous Transitioning Canvas Reader Modal */
+/* 3D CARD STACK CANVAS PREVIEW MODAL STYLES */
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(16px);
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(20px);
   z-index: 200;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 1rem;
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--transition-smooth);
@@ -769,23 +766,17 @@ body {
   pointer-events: auto;
 }
 .modal-box-canvas {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-highlight);
-  border-radius: var(--radius-lg);
-  max-width: 840px;
+  background: transparent;
+  border: none;
+  max-width: 900px;
   width: 100%;
   max-height: 90vh;
-  overflow: hidden;
   position: relative;
-  box-shadow: var(--shadow-lg);
-  transform: scale(0.95);
-  transition: transform var(--transition-smooth);
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.modal-backdrop.active .modal-box-canvas {
-  transform: scale(1);
-}
+
 .modal-canvas {
   position: absolute;
   inset: 0;
@@ -793,123 +784,73 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  border-radius: var(--radius-lg);
+  opacity: 0.3;
 }
-.modal-progress-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 4px;
-  width: 0%;
-  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
-  z-index: 30;
-  transition: width 0.1s linear;
-}
-.modal-canvas-content {
+
+.card-stack-viewport {
   position: relative;
   z-index: 10;
-  background: linear-gradient(0deg, rgba(11, 15, 25, 0.98) 0%, rgba(11, 15, 25, 0.85) 50%, rgba(11, 15, 25, 0.6) 100%);
-  padding: 2.2rem;
-  overflow-y: auto;
-  max-height: 90vh;
-}
-.modal-close {
-  position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
-  background: rgba(11, 15, 25, 0.8);
-  border: 1px solid var(--border-color);
-  color: var(--text-primary);
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
+  width: 100%;
+  height: 620px;
+  perspective: 1200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  z-index: 40;
-}
-.modal-close:hover {
-  background: var(--accent-cyan);
-  color: #000;
 }
 
-.modal-header {
-  margin-bottom: 1.2rem;
+.stacked-card {
+  position: absolute;
+  width: 100%;
+  max-width: 660px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-highlight);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-style: preserve-3d;
+  opacity: 0;
+  pointer-events: none;
 }
-.modal-title {
-  font-family: var(--font-heading);
-  font-size: 1.7rem;
-  font-weight: 800;
-  line-height: 1.3;
-  margin-top: 0.5rem;
-  color: #ffffff;
+
+.stacked-card.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0) translateZ(0) rotateY(0deg);
+  z-index: 3;
 }
-.modal-annotation-block {
+
+.stacked-card.prev {
+  opacity: 0.45;
+  pointer-events: auto;
+  transform: translateX(-40%) translateZ(-120px) rotateY(18deg);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.stacked-card.next {
+  opacity: 0.45;
+  pointer-events: auto;
+  transform: translateX(40%) translateZ(-120px) rotateY(-18deg);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.card-stack-controls {
+  position: absolute;
+  bottom: -4rem;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   background: var(--bg-surface-elevated);
   border: 1px solid var(--border-highlight);
-  border-radius: var(--radius-md);
-  padding: 1.25rem;
-  margin: 1.5rem 0;
-}
-.modal-annotation-block h4 {
-  color: var(--accent-cyan);
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.8rem;
-}
-.modal-bullet-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-.modal-bullet-list li {
-  position: relative;
-  padding-left: 1.5rem;
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-}
-.modal-bullet-list li::before {
-  content: '✦';
-  position: absolute;
-  left: 0;
-  color: var(--accent-cyan);
-}
-
-/* Related Sources Matrix */
-.sources-matrix {
-  margin-top: 1.5rem;
-}
-.sources-matrix h4 {
-  font-size: 0.88rem;
-  color: var(--text-muted);
-  margin-bottom: 0.75rem;
-}
-.sources-chips {
-  display: flex;
-  gap: 0.6rem;
-  flex-wrap: wrap;
-}
-.source-chip {
-  background: var(--bg-surface-elevated);
-  border: 1px solid var(--border-color);
-  color: var(--text-primary);
-  padding: 0.4rem 0.8rem;
+  padding: 0.6rem 1.4rem;
   border-radius: var(--radius-full);
-  font-size: 0.8rem;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  transition: all var(--transition-fast);
-}
-.source-chip:hover {
-  border-color: var(--accent-cyan);
-  color: var(--accent-cyan);
 }
 
-/* Floating Audio Briefing Player Widget */
+/* Audio Player */
 .audio-player-widget {
   position: fixed;
   bottom: 1.5rem;
@@ -1007,6 +948,9 @@ body {
   }
   .hero-overlay {
     padding: 1.5rem;
+  }
+  .stacked-card.prev, .stacked-card.next {
+    display: none;
   }
   .audio-player-widget {
     bottom: 1rem;
