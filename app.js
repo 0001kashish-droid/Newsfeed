@@ -1,4 +1,4 @@
-// News Colossal Application Engine — 3D Canvas Card Stack Edition
+// News Colossal Application Engine — Executive Canvas Edition
 
 const state = {
   articles: [],
@@ -14,11 +14,10 @@ const state = {
   progressInterval: null,
   progressValue: 0,
   
-  // 3D Card Stack Modal State
-  stackState: {
+  // Executive Modal Navigation State
+  modalState: {
     articles: [],
-    currentIndex: 0,
-    isPlaying: false
+    currentIndex: 0
   },
   
   audioState: { isPlaying: false, utterance: null }
@@ -278,7 +277,7 @@ function renderHeroOverlayText(article) {
     <p class="hero-desc">${escapeHtml(article.description)}</p>
     <div class="hero-actions">
       <button onclick="openModal('${article.id}')" class="btn-primary">
-        <span>3D Card Stack Preview</span> &rarr;
+        <span>Read Crisp Annotation</span> &rarr;
       </button>
       <a href="${article.link}" target="_blank" rel="noopener noreferrer" class="btn-secondary">
         Visit Source ↗
@@ -474,88 +473,88 @@ function renderSkeletons() {
   `).join('');
 }
 
-// 3D CARD STACK CANVAS PREVIEW ENGINE
+// EXECUTIVE MODAL CAROUSEL ENGINE
 window.openModal = function(id) {
   const pool = state.filteredArticles.length > 0 ? state.filteredArticles : state.articles;
   const index = pool.findIndex(a => a.id === id);
   if (index === -1) return;
 
-  state.stackState.articles = pool;
-  state.stackState.currentIndex = index;
+  state.modalState.articles = pool;
+  state.modalState.currentIndex = index;
 
-  render3DCardStack();
+  renderExecutiveModal();
   modalBackdrop.classList.add('active');
 };
 
-function render3DCardStack() {
-  const pool = state.stackState.articles;
-  const currIdx = state.stackState.currentIndex;
+function renderExecutiveModal() {
+  const pool = state.modalState.articles;
+  const currIdx = state.modalState.currentIndex;
   const total = pool.length;
-
-  const prevIdx = (currIdx - 1 + total) % total;
-  const nextIdx = (currIdx + 1) % total;
-
-  const currArt = pool[currIdx];
-  const prevArt = pool[prevIdx];
-  const nextArt = pool[nextIdx];
+  const art = pool[currIdx];
+  if (!art) return;
 
   modalContent.innerHTML = `
-    <div class="card-stack-viewport">
-      <!-- Previous Card Stack -->
-      <div class="stacked-card prev" onclick="navigateStack(-1)">
-        <div style="font-size: 0.75rem; color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 0.3rem;">&lsaquo; PREVIOUS STORY</div>
-        <h4 style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; max-height: 2.8em; overflow: hidden;">${escapeHtml(prevArt.title)}</h4>
+    <!-- Top HD Image Banner -->
+    <div style="position: relative; width: 100%; height: 260px; overflow: hidden; background: #0b0f19;">
+      <img src="${art.imageUrl}" alt="${escapeHtml(art.title)}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.onerror=null; this.src='${DEFAULT_FALLBACK_IMG}';" />
+      <div style="position: absolute; inset: 0; background: linear-gradient(0deg, var(--bg-surface) 0%, transparent 100%);"></div>
+      <span class="tag-badge" style="position: absolute; top: 1rem; left: 1rem;">${art.category} (${art.region})</span>
+    </div>
+
+    <!-- Main Article Body -->
+    <div style="padding: 1.5rem 2rem 2rem 2rem;">
+      <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+        Published by <strong>${art.source}</strong> &bull; ${art.readTime}
       </div>
 
-      <!-- Active Center Card -->
-      <div class="stacked-card active">
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.8rem;">
-          <span class="tag-badge">${currArt.category} STORY #${currIdx + 1} OF ${total}</span>
-          <span style="font-size: 0.82rem; color: var(--text-muted);">${currArt.source} &bull; ${currArt.readTime}</span>
-        </div>
+      <h2 style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; line-height: 1.3; margin-bottom: 1.2rem; color: #fff;">${escapeHtml(art.title)}</h2>
 
-        <img src="${currArt.imageUrl}" alt="${escapeHtml(currArt.title)}" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1rem;" onerror="this.onerror=null; this.src='${DEFAULT_FALLBACK_IMG}';" />
+      <div class="modal-annotation-block">
+        <h4 style="color: var(--accent-cyan); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.6rem;">✦ Crisp Executive Annotation</h4>
+        <ul class="modal-bullet-list">
+          <li><strong>What Happened:</strong> ${escapeHtml(art.annotation.what)}</li>
+          <li><strong>Impact & Context:</strong> ${escapeHtml(art.annotation.why)}</li>
+        </ul>
+      </div>
 
-        <h2 style="font-family: var(--font-heading); font-size: 1.45rem; font-weight: 800; line-height: 1.3; margin-bottom: 0.8rem; color: #fff;">${escapeHtml(currArt.title)}</h2>
+      <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">${escapeHtml(art.description)}</p>
 
-        <div class="modal-annotation-block" style="margin: 0.8rem 0;">
-          <h4 style="color: var(--accent-cyan); font-size: 0.75rem; text-transform: uppercase; margin-bottom: 0.4rem;">✦ Crisp Executive Annotation (${currArt.region})</h4>
-          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.4;">${escapeHtml(currArt.annotation.what)}</p>
-        </div>
-
-        <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.5; margin-bottom: 1rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${escapeHtml(currArt.description)}</p>
-
-        <div style="display: flex; gap: 0.8rem; align-items: center;">
-          <a href="${currArt.link}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="flex: 1; justify-content: center; padding: 0.55rem 1rem; font-size: 0.85rem;">
-            Read Full Article ↗
-          </a>
-          <button onclick="speakArticle('${escapeJs(currArt.title)}. ${escapeJs(currArt.annotation.what)}')" class="btn-secondary" style="padding: 0.55rem 1rem; font-size: 0.85rem;">
-            🔊 Listen
-          </button>
+      <!-- Multi-source chips -->
+      <div class="sources-matrix" style="margin-bottom: 1.5rem;">
+        <h4>Explore Perspective Across Related Outlets:</h4>
+        <div class="sources-chips">
+          ${art.relatedSources.map(s => `
+            <a href="${s.url}" target="_blank" rel="noopener noreferrer" class="source-chip">
+              <span>${s.name} Coverage</span> ↗
+            </a>
+          `).join('')}
         </div>
       </div>
 
-      <!-- Next Card Stack -->
-      <div class="stacked-card next" onclick="navigateStack(1)">
-        <div style="font-size: 0.75rem; color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 0.3rem;">NEXT STORY &rsaquo;</div>
-        <h4 style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; max-height: 2.8em; overflow: hidden;">${escapeHtml(nextArt.title)}</h4>
+      <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+        <a href="${art.link}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="flex: 1; justify-content: center;">
+          Read Full Story on ${art.source} ↗
+        </a>
+        <button onclick="speakArticle('${escapeJs(art.title)}. ${escapeJs(art.annotation.what)}')" class="btn-secondary">
+          🔊 Listen Audio
+        </button>
       </div>
     </div>
 
-    <!-- Bottom Stack Navigation Bar -->
-    <div class="card-stack-controls">
-      <button onclick="navigateStack(-1)" class="btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.85rem;">&lsaquo; Previous Story</button>
-      <span style="font-size: 0.85rem; font-weight: 700; color: var(--accent-cyan);">${currIdx + 1} / ${total}</span>
-      <button onclick="navigateStack(1)" class="btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.85rem;">Next Story &rsaquo;</button>
+    <!-- Bottom Carousel Navigation Bar -->
+    <div class="modal-nav-bar">
+      <button onclick="navigateModal(-1)" class="btn-secondary" style="padding: 0.45rem 1rem; font-size: 0.85rem;">&lsaquo; Previous Story</button>
+      <span style="font-size: 0.88rem; font-weight: 700; color: var(--accent-cyan);">Story ${currIdx + 1} of ${total}</span>
+      <button onclick="navigateModal(1)" class="btn-secondary" style="padding: 0.45rem 1rem; font-size: 0.85rem;">Next Story &rsaquo;</button>
     </div>
   `;
 }
 
-window.navigateStack = function(step) {
-  const pool = state.stackState.articles;
+window.navigateModal = function(step) {
+  const pool = state.modalState.articles;
   if (pool.length === 0) return;
-  state.stackState.currentIndex = (state.stackState.currentIndex + step + pool.length) % pool.length;
-  render3DCardStack();
+  state.modalState.currentIndex = (state.modalState.currentIndex + step + pool.length) % pool.length;
+  renderExecutiveModal();
 };
 
 function closeModal() {
@@ -689,10 +688,10 @@ function setupEventListeners() {
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft') {
-      if (modalBackdrop.classList.contains('active')) navigateStack(-1);
+      if (modalBackdrop.classList.contains('active')) navigateModal(-1);
     }
     if (e.key === 'ArrowRight') {
-      if (modalBackdrop.classList.contains('active')) navigateStack(1);
+      if (modalBackdrop.classList.contains('active')) navigateModal(1);
     }
     if (e.key === '/' && document.activeElement !== searchInput) {
       e.preventDefault();

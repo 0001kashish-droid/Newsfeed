@@ -746,17 +746,17 @@ body {
   color: var(--text-primary);
 }
 
-/* 3D CARD STACK CANVAS PREVIEW MODAL STYLES */
+/* EXECUTIVE CANVAS MODAL STYLES */
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.88);
+  background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(20px);
   z-index: 200;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 1.5rem;
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--transition-smooth);
@@ -765,89 +765,52 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
-.modal-box-canvas {
-  background: transparent;
-  border: none;
-  max-width: 900px;
-  width: 100%;
-  max-height: 90vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.modal-canvas {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-  border-radius: var(--radius-lg);
-  opacity: 0.3;
-}
-
-.card-stack-viewport {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  height: 620px;
-  perspective: 1200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.stacked-card {
-  position: absolute;
-  width: 100%;
-  max-width: 660px;
+.modal-card-box {
   background: var(--bg-surface);
   border: 1px solid var(--border-highlight);
   border-radius: var(--radius-lg);
-  padding: 2rem;
+  max-width: 780px;
+  width: 100%;
+  max-height: 88vh;
+  overflow-y: auto;
+  position: relative;
   box-shadow: var(--shadow-lg);
-  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-  transform-style: preserve-3d;
-  opacity: 0;
-  pointer-events: none;
+  transform: scale(0.95);
+  transition: transform var(--transition-smooth);
+  padding: 0;
 }
-
-.stacked-card.active {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateX(0) translateZ(0) rotateY(0deg);
-  z-index: 3;
+.modal-backdrop.active .modal-card-box {
+  transform: scale(1);
 }
-
-.stacked-card.prev {
-  opacity: 0.45;
-  pointer-events: auto;
-  transform: translateX(-40%) translateZ(-120px) rotateY(18deg);
-  z-index: 1;
-  cursor: pointer;
-}
-
-.stacked-card.next {
-  opacity: 0.45;
-  pointer-events: auto;
-  transform: translateX(40%) translateZ(-120px) rotateY(-18deg);
-  z-index: 1;
-  cursor: pointer;
-}
-
-.card-stack-controls {
+.modal-close {
   position: absolute;
-  bottom: -4rem;
-  z-index: 30;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: rgba(11, 15, 25, 0.85);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 50;
+  transition: all var(--transition-fast);
+}
+.modal-close:hover {
+  background: var(--accent-cyan);
+  color: #000;
+}
+
+.modal-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: var(--bg-surface-elevated);
-  border: 1px solid var(--border-highlight);
-  padding: 0.6rem 1.4rem;
-  border-radius: var(--radius-full);
+  padding: 0.8rem 1.5rem;
+  border-top: 1px solid var(--border-color);
 }
 
 /* Audio Player */
@@ -948,9 +911,6 @@ body {
   }
   .hero-overlay {
     padding: 1.5rem;
-  }
-  .stacked-card.prev, .stacked-card.next {
-    display: none;
   }
   .audio-player-widget {
     bottom: 1rem;
