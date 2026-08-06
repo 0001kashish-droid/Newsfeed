@@ -1,4 +1,4 @@
-// News Colossal Application Engine — Ultra-Premium Integrated Deck Edition
+// News Colossal Application Engine — Apple Liquid Glass Edition
 
 const state = {
   articles: [],
@@ -24,6 +24,18 @@ const state = {
 };
 
 const DEFAULT_FALLBACK_IMG = "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=2000&q=98";
+
+// Color mapping for Liquid Glass dynamic ambient reflection
+const CATEGORY_COLORS = {
+  "World": "#00f2fe",
+  "Tech": "#a855f7",
+  "National": "#f59e0b",
+  "Business": "#10b981"
+};
+
+function getNewsColor(category) {
+  return CATEGORY_COLORS[category] || "#00f2fe";
+}
 
 // DOM Elements
 const newsGrid = document.getElementById('newsGrid');
@@ -236,8 +248,8 @@ function renderCanvasFrame() {
   }
 
   const gradient = heroCtx.createLinearGradient(0, h * 0.3, 0, h);
-  gradient.addColorStop(0, 'rgba(11, 15, 25, 0.0)');
-  gradient.addColorStop(1, 'rgba(11, 15, 25, 0.96)');
+  gradient.addColorStop(0, 'rgba(7, 9, 14, 0.0)');
+  gradient.addColorStop(1, 'rgba(7, 9, 14, 0.96)');
   heroCtx.fillStyle = gradient;
   heroCtx.fillRect(0, 0, w, h);
 }
@@ -472,7 +484,7 @@ function renderSkeletons() {
   `).join('');
 }
 
-// NEXT-GEN INTEGRATED DECK MODAL ENGINE
+// APPLE LIQUID GLASS DECK ENGINE
 window.openModal = function(id) {
   const pool = state.filteredArticles.length > 0 ? state.filteredArticles : state.articles;
   const index = pool.findIndex(a => a.id === id);
@@ -492,51 +504,56 @@ function renderExecutiveModal() {
   const art = pool[currIdx];
   if (!art) return;
 
+  const themeColor = getNewsColor(art.category);
+
   modalContent.innerHTML = `
-    <!-- Floating Glassmorphic Deck Pill Nav -->
-    <div class="deck-floating-nav">
-      <button class="deck-nav-btn" onclick="navigateModal(-1)" title="Previous Story (Left Arrow)">&lsaquo;</button>
-      <span class="deck-nav-counter">Story ${currIdx + 1} of ${total}</span>
-      <button class="deck-nav-btn" onclick="navigateModal(1)" title="Next Story (Right Arrow)">&rsaquo;</button>
+    <!-- Apple Liquid Glass Floating Navigation Pill with News Color Reflection -->
+    <div class="liquid-glass-nav-container" style="--news-theme-color: ${themeColor}">
+      <div class="liquid-glass-reflection-glow"></div>
+      <div class="liquid-glass-pill">
+        <button class="liquid-glass-btn" onclick="navigateModal(-1)" title="Previous Story (Left Arrow)">&lsaquo;</button>
+        <span class="liquid-glass-counter">Story ${currIdx + 1} of ${total}</span>
+        <button class="liquid-glass-btn" onclick="navigateModal(1)" title="Next Story (Right Arrow)">&rsaquo;</button>
+      </div>
     </div>
 
-    <!-- Floating Close Button -->
-    <button class="deck-close-btn" onclick="closeModal()" aria-label="Close modal">&times;</button>
+    <!-- Apple Liquid Glass Floating Close Button -->
+    <button class="liquid-glass-close" onclick="closeModal()" aria-label="Close modal">&times;</button>
 
     <div class="deck-scroll-body">
-      <!-- Top HD Cover Media Banner -->
-      <div style="position: relative; width: 100%; height: 320px; overflow: hidden; background: #0b0f19;">
-        <img src="${art.imageUrl}" alt="${escapeHtml(art.title)}" style="width: 100%; height: 100%; object-fit: cover; filter: contrast(1.05) saturate(1.08);" onerror="this.onerror=null; this.src='${DEFAULT_FALLBACK_IMG}';" />
-        <div style="position: absolute; inset: 0; background: linear-gradient(0deg, var(--bg-surface) 0%, rgba(19, 27, 46, 0.4) 65%, rgba(0,0,0,0.6) 100%);"></div>
+      <!-- Top HD Cover Media Banner with Specular Overlay -->
+      <div style="position: relative; width: 100%; height: 340px; overflow: hidden; background: #07090e;">
+        <img src="${art.imageUrl}" alt="${escapeHtml(art.title)}" style="width: 100%; height: 100%; object-fit: cover; filter: contrast(1.06) saturate(1.08);" onerror="this.onerror=null; this.src='${DEFAULT_FALLBACK_IMG}';" />
+        <div style="position: absolute; inset: 0; background: linear-gradient(0deg, var(--bg-surface) 0%, rgba(15, 21, 35, 0.4) 65%, rgba(0,0,0,0.65) 100%);"></div>
         
-        <div style="position: absolute; bottom: 1.25rem; left: 1.8rem; right: 1.8rem; display: flex; align-items: center; justify-content: space-between;">
-          <span class="tag-badge">${art.category} (${art.region})</span>
-          <span style="font-size: 0.85rem; color: #cbd5e1; background: rgba(11, 15, 25, 0.82); backdrop-filter: blur(10px); padding: 0.3rem 0.85rem; border-radius: var(--radius-full); border: 1px solid var(--border-color); font-weight: 600;">
+        <div style="position: absolute; bottom: 1.4rem; left: 2rem; right: 2rem; display: flex; align-items: center; justify-content: space-between;">
+          <span class="tag-badge" style="border-color: ${themeColor}; color: ${themeColor}; background: rgba(0, 242, 254, 0.12); backdrop-filter: blur(12px);">${art.category} (${art.region})</span>
+          <span style="font-size: 0.85rem; color: #cbd5e1; background: rgba(7, 9, 14, 0.78); backdrop-filter: blur(12px); padding: 0.35rem 0.9rem; border-radius: var(--radius-full); border: 1px solid var(--border-color); font-weight: 600;">
             ✦ ${art.source} &bull; ${art.readTime}
           </span>
         </div>
       </div>
 
-      <!-- Article Content Details -->
-      <div style="padding: 2rem 2.5rem 2.8rem 2.5rem;">
-        <h2 style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 800; line-height: 1.3; margin-bottom: 1.4rem; color: var(--text-primary);">${escapeHtml(art.title)}</h2>
+      <!-- Article Content Body -->
+      <div style="padding: 2.2rem 2.8rem 3rem 2.8rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 1.85rem; font-weight: 800; line-height: 1.3; margin-bottom: 1.5rem; color: var(--text-primary);">${escapeHtml(art.title)}</h2>
 
-        <div style="background: var(--bg-surface-elevated); border-left: 4px solid var(--accent-cyan); padding: 1.1rem 1.4rem; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin-bottom: 1.6rem;">
-          <h4 style="color: var(--accent-cyan); font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.6rem;">✦ Crisp Executive Annotation Breakdown</h4>
-          <div style="display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.55;">
+        <div style="background: var(--bg-surface-elevated); border-left: 4px solid ${themeColor}; padding: 1.25rem 1.5rem; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin-bottom: 1.8rem; box-shadow: var(--shadow-sm);">
+          <h4 style="color: ${themeColor}; font-size: 0.82rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.7rem;">✦ Crisp Executive Annotation Breakdown</h4>
+          <div style="display: flex; flex-direction: column; gap: 0.7rem; font-size: 0.96rem; color: var(--text-secondary); line-height: 1.6;">
             <div><strong style="color: var(--text-primary);">• What Happened:</strong> ${escapeHtml(art.annotation.what)}</div>
             <div><strong style="color: var(--text-primary);">• Impact & Context:</strong> ${escapeHtml(art.annotation.why)}</div>
           </div>
         </div>
 
-        <p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.7; margin-bottom: 1.8rem;">${escapeHtml(art.description)}</p>
+        <p style="color: var(--text-secondary); font-size: 1.02rem; line-height: 1.75; margin-bottom: 2rem;">${escapeHtml(art.description)}</p>
 
         <!-- Multi-source perspective chips -->
-        <div style="margin-bottom: 2rem; background: rgba(0, 242, 254, 0.05); border: 1px solid var(--border-highlight); padding: 1.1rem 1.3rem; border-radius: var(--radius-md);">
-          <h4 style="font-size: 0.82rem; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 0.7rem;">Cross-Explore Perspectives Across Credible Outlets:</h4>
-          <div style="display: flex; gap: 0.65rem; flex-wrap: wrap;">
+        <div style="margin-bottom: 2.2rem; background: rgba(0, 242, 254, 0.04); border: 1px solid var(--border-highlight); padding: 1.2rem 1.4rem; border-radius: var(--radius-md);">
+          <h4 style="font-size: 0.84rem; font-weight: 700; color: ${themeColor}; text-transform: uppercase; margin-bottom: 0.75rem;">Cross-Explore Perspectives Across Credible Outlets:</h4>
+          <div style="display: flex; gap: 0.7rem; flex-wrap: wrap;">
             ${art.relatedSources.map(s => `
-              <a href="${s.url}" target="_blank" rel="noopener noreferrer" style="background: var(--bg-surface); border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.45rem 0.95rem; border-radius: var(--radius-full); font-size: 0.85rem; text-decoration: none; font-weight: 600; transition: all var(--transition-fast);">
+              <a href="${s.url}" target="_blank" rel="noopener noreferrer" style="background: var(--bg-surface); border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.45rem 1rem; border-radius: var(--radius-full); font-size: 0.85rem; text-decoration: none; font-weight: 600; transition: all var(--transition-fast);">
                 <span>${s.name} Coverage</span> ↗
               </a>
             `).join('')}
@@ -544,16 +561,20 @@ function renderExecutiveModal() {
         </div>
 
         <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
-          <a href="${art.link}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="flex: 1; justify-content: center; padding: 0.8rem 1.6rem;">
+          <a href="${art.link}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="flex: 1; justify-content: center; padding: 0.85rem 1.8rem;">
             Read Full Story on ${art.source} ↗
           </a>
-          <button onclick="speakArticle('${escapeJs(art.title)}. ${escapeJs(art.annotation.what)}')" class="btn-secondary" style="padding: 0.8rem 1.4rem;">
+          <button onclick="speakArticle('${escapeJs(art.title)}. ${escapeJs(art.annotation.what)}')" class="btn-secondary" style="padding: 0.85rem 1.5rem;">
             🔊 Listen Audio
           </button>
         </div>
       </div>
     </div>
   `;
+
+  // Reset scroll to top smoothly
+  const body = modalContent.querySelector('.deck-scroll-body');
+  if (body) body.scrollTop = 0;
 }
 
 window.navigateModal = function(step) {
