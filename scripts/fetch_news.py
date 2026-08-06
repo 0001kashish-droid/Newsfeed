@@ -55,22 +55,14 @@ SOURCES = [
         "url": "https://www.aljazeera.com/xml/rss/all.xml",
         "logo": "AJ"
     },
-    # Tech Feeds
+    # Tech Feeds (Ars Technica, CNET, The Verge — 100% Real HD Photography)
     {
-        "id": "techcrunch",
-        "name": "TechCrunch",
+        "id": "arstechnica",
+        "name": "Ars Technica",
         "category": "Tech",
         "region": "Global",
-        "url": "https://techcrunch.com/feed/",
-        "logo": "TC"
-    },
-    {
-        "id": "theverge",
-        "name": "The Verge",
-        "category": "Tech",
-        "region": "North America",
-        "url": "https://www.theverge.com/rss/index.xml",
-        "logo": "VRG"
+        "url": "https://feeds.arstechnica.com/arstechnica/index",
+        "logo": "ARS"
     },
     {
         "id": "cnet",
@@ -81,6 +73,14 @@ SOURCES = [
         "logo": "CNET"
     },
     {
+        "id": "theverge",
+        "name": "The Verge",
+        "category": "Tech",
+        "region": "North America",
+        "url": "https://www.theverge.com/rss/index.xml",
+        "logo": "VRG"
+    },
+    {
         "id": "rtings",
         "name": "RTINGS",
         "category": "Tech",
@@ -88,7 +88,7 @@ SOURCES = [
         "url": "https://news.google.com/rss/search?q=site:rtings.com+when:7d&hl=en-US&gl=US&ceid=US:en",
         "logo": "RTG"
     },
-    # National & India Feeds
+    # National & India Feeds (100% Real HD Images)
     {
         "id": "hindustan-times",
         "name": "Hindustan Times",
@@ -127,7 +127,7 @@ SOURCES = [
         "name": "CNBC",
         "category": "Business",
         "region": "Global",
-        "url": "https://search.cnbc.com/rs/search/combinedqueries/view.xml?partnerId=2000&keywords=finance",
+        "url": "https://news.google.com/rss/search?q=site:cnbc.com+finance+when:24h&hl=en-US&gl=US&ceid=US:en",
         "logo": "CNBC"
     },
     {
@@ -143,29 +143,31 @@ SOURCES = [
 # Ultra 4K Curated Photography for Fallbacks
 CRISP_IMAGES = {
     "World": [
-        "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=2000&q=98",
-        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=98"
+        "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=2400&q=98",
+        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2400&q=98"
     ],
     "Tech": [
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2000&q=98",
-        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2000&q=98"
+        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2400&q=98",
+        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2400&q=98"
     ],
     "National": [
-        "https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=2000&q=98",
-        "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=2000&q=98"
+        "https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=2400&q=98",
+        "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=2400&q=98"
     ],
     "Business": [
-        "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=2000&q=98",
-        "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=2000&q=98"
+        "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=2400&q=98",
+        "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=2400&q=98"
     ]
 }
 
 def clean_html(raw_html):
     if not raw_html:
         return ""
+    # Clean HTML entities
+    text = raw_html.replace('&nbsp;', ' ').replace('&amp;', '&').replace('&quot;', '"').replace('&#039;', "'").replace('&#8217;', "'").replace('&lt;', '<').replace('&gt;', '>')
     cleanr = re.compile('<.*?>')
-    cleantext = re.sub(cleanr, '', raw_html)
-    return cleantext.strip()
+    cleantext = re.sub(cleanr, '', text)
+    return re.sub(r'\s+', ' ', cleantext).strip()
 
 def upscale_image_url(url):
     if not url:
@@ -186,12 +188,16 @@ def upscale_image_url(url):
         url = url.replace('mediumThreeByTwo210', 'superJumbo')
         url = url.replace('articleLarge', 'superJumbo')
         
-    # 3. Reuters / TechCrunch / Verge / CNET query params
-    elif 'reuters' in url or 'techcrunch' in url or 'theverge' in url or 'cnet' in url or 'wp-content' in url:
+    # 3. CNET & The Verge parameter cleanup
+    elif 'cnet.com' in url:
+        url = re.sub(r'\?w=\d+.*$', '', url)
+    elif 'theverge.com' in url or 'platform.theverge.com' in url:
+        url = re.sub(r'\?quality=.*$', '', url)
+        
+    # 4. Generic query params upscaling
+    elif 'wp-content' in url or 'techcrunch' in url:
         url = re.sub(r'w=\d+', 'w=1600', url)
         url = re.sub(r'width=\d+', 'width=1600', url)
-        url = re.sub(r'h=\d+', 'h=900', url)
-        url = re.sub(r'height=\d+', 'height=900', url)
         url = re.sub(r'resize=\d+,\d+', 'resize=1600,900', url)
         
     return url
@@ -202,12 +208,12 @@ def extract_image(item, default_category, title):
         tag = elem.tag.lower()
         if 'content' in tag or 'thumbnail' in tag or 'enclosure' in tag or 'group' in tag:
             url = elem.attrib.get('url') or elem.attrib.get('href')
-            if url and ('jpg' in url or 'png' in url or 'webp' in url or 'jpeg' in url or 'media' in url or 'ichef' in url or 'images' in url or 'ht-img' in url):
+            if url and ('jpg' in url or 'png' in url or 'webp' in url or 'jpeg' in url or 'media' in url or 'ichef' in url or 'images' in url or 'ht-img' in url or 'arstechnica' in url or 'cnet' in url or 'theverge' in url):
                 return upscale_image_url(url)
     
-    # Check img tags in description
-    desc = item.findtext('description') or item.findtext('{http://www.w3.org/2005/Atom}summary') or ""
-    img_match = re.search(r'src=["\']([^"\']+\.(?:jpg|png|jpeg|webp)[^"\']*)["\']', desc, re.IGNORECASE)
+    # Check img tags in description or encoded content
+    html_body = (item.findtext('description') or '') + ' ' + (item.findtext('{http://purl.org/rss/1.0/modules/content/}encoded') or '') + ' ' + (item.findtext('{http://www.w3.org/2005/Atom}content') or '')
+    img_match = re.search(r'src=["\']([^"\']+\.(?:jpg|png|jpeg|webp)[^"\']*)["\']', html_body, re.IGNORECASE)
     if img_match:
         return upscale_image_url(img_match.group(1))
 

@@ -142,8 +142,17 @@
     </section>
   </main>
 
-  <!-- Next-Gen Integrated Deck Reader Modal -->
+  <!-- Apple Liquid Glass Deck Reader Modal with Floating Side Paddles -->
   <div class="modal-backdrop" id="modalBackdrop">
+    <!-- Large Target-Zone Floating Side Paddles -->
+    <button class="liquid-glass-paddle liquid-glass-paddle-left" onclick="navigateModal(-1)" title="Previous Story (Left Arrow / Click)">
+      <span>&lsaquo;</span>
+    </button>
+    
+    <button class="liquid-glass-paddle liquid-glass-paddle-right" onclick="navigateModal(1)" title="Next Story (Right Arrow / Click)">
+      <span>&rsaquo;</span>
+    </button>
+
     <div class="deck-modal-card" id="modalBox">
       <!-- Injected dynamically by app.js engine -->
       <div id="modalContent"></div>
@@ -176,7 +185,7 @@
   <footer style="border-top: 1px solid var(--border-color); margin-top: 4rem; padding: 2.5rem 0; color: var(--text-muted); font-size: 0.85rem; background: var(--bg-surface);">
     <div class="container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
       <div>
-        <p><strong>News Colossal</strong> — Aggregating verified open RSS feeds from BBC, Reuters, NYT, TechCrunch, The Verge, Al Jazeera, RTINGS, CNET, CNBC, Hindustan Times, & The Hindu.</p>
+        <p><strong>News Colossal</strong> — Aggregating verified open RSS feeds from BBC, Reuters, NYT, Ars Technica, The Verge, Al Jazeera, CNET, CNBC, Hindustan Times, & The Hindu.</p>
         <p style="font-size: 0.78rem; margin-top: 0.3rem;">All article rights belong to their respective original publishers.</p>
       </div>
       <div style="display: flex; gap: 1rem;">

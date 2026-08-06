@@ -1,4 +1,4 @@
-// News Colossal Application Engine — Apple Liquid Glass Edition
+// News Colossal Application Engine — Apple Liquid Glass Side Paddles & Touch Swipe Edition
 
 const state = {
   articles: [],
@@ -17,13 +17,15 @@ const state = {
   // Executive Deck Navigation State
   modalState: {
     articles: [],
-    currentIndex: 0
+    currentIndex: 0,
+    touchStartX: 0,
+    touchEndX: 0
   },
   
   audioState: { isPlaying: false, utterance: null }
 };
 
-const DEFAULT_FALLBACK_IMG = "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=2000&q=98";
+const DEFAULT_FALLBACK_IMG = "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=2400&q=98";
 
 // Color mapping for Liquid Glass dynamic ambient reflection
 const CATEGORY_COLORS = {
@@ -484,7 +486,7 @@ function renderSkeletons() {
   `).join('');
 }
 
-// APPLE LIQUID GLASS DECK ENGINE
+// APPLE LIQUID GLASS DECK ENGINE WITH TOUCH SWIPE & SIDE PADDLES
 window.openModal = function(id) {
   const pool = state.filteredArticles.length > 0 ? state.filteredArticles : state.articles;
   const index = pool.findIndex(a => a.id === id);
@@ -506,27 +508,32 @@ function renderExecutiveModal() {
 
   const themeColor = getNewsColor(art.category);
 
+  // Update dynamic news reflection color on modal backdrop & side paddles
+  modalBackdrop.style.setProperty('--news-theme-color', themeColor);
+
   modalContent.innerHTML = `
-    <!-- Apple Liquid Glass Floating Navigation Pill with News Color Reflection -->
-    <div class="liquid-glass-nav-container" style="--news-theme-color: ${themeColor}">
+    <!-- Apple Liquid Glass Floating Counter Pill -->
+    <div class="liquid-glass-nav-container">
       <div class="liquid-glass-reflection-glow"></div>
       <div class="liquid-glass-pill">
-        <button class="liquid-glass-btn" onclick="navigateModal(-1)" title="Previous Story (Left Arrow)">&lsaquo;</button>
         <span class="liquid-glass-counter">Story ${currIdx + 1} of ${total}</span>
-        <button class="liquid-glass-btn" onclick="navigateModal(1)" title="Next Story (Right Arrow)">&rsaquo;</button>
       </div>
     </div>
 
-    <!-- Apple Liquid Glass Floating Close Button -->
+    <!-- Apple Liquid Glass Close Button -->
     <button class="liquid-glass-close" onclick="closeModal()" aria-label="Close modal">&times;</button>
 
-    <div class="deck-scroll-body">
-      <!-- Top HD Cover Media Banner with Specular Overlay -->
+    <div class="deck-scroll-body" id="deckScrollBody">
+      <!-- Top HD Cover Media Banner with Cover Tap Zones -->
       <div style="position: relative; width: 100%; height: 340px; overflow: hidden; background: #07090e;">
+        <!-- Left & Right Cover Banner Tap Zones -->
+        <div class="cover-tap-zone cover-tap-zone-left" onclick="navigateModal(-1)" title="Tap to go to previous story"></div>
+        <div class="cover-tap-zone cover-tap-zone-right" onclick="navigateModal(1)" title="Tap to go to next story"></div>
+
         <img src="${art.imageUrl}" alt="${escapeHtml(art.title)}" style="width: 100%; height: 100%; object-fit: cover; filter: contrast(1.06) saturate(1.08);" onerror="this.onerror=null; this.src='${DEFAULT_FALLBACK_IMG}';" />
-        <div style="position: absolute; inset: 0; background: linear-gradient(0deg, var(--bg-surface) 0%, rgba(15, 21, 35, 0.4) 65%, rgba(0,0,0,0.65) 100%);"></div>
+        <div style="position: absolute; inset: 0; background: linear-gradient(0deg, var(--bg-surface) 0%, rgba(15, 21, 35, 0.4) 65%, rgba(0,0,0,0.65) 100%); pointer-events: none;"></div>
         
-        <div style="position: absolute; bottom: 1.4rem; left: 2rem; right: 2rem; display: flex; align-items: center; justify-content: space-between;">
+        <div style="position: absolute; bottom: 1.4rem; left: 2rem; right: 2rem; display: flex; align-items: center; justify-content: space-between; pointer-events: none;">
           <span class="tag-badge" style="border-color: ${themeColor}; color: ${themeColor}; background: rgba(0, 242, 254, 0.12); backdrop-filter: blur(12px);">${art.category} (${art.region})</span>
           <span style="font-size: 0.85rem; color: #cbd5e1; background: rgba(7, 9, 14, 0.78); backdrop-filter: blur(12px); padding: 0.35rem 0.9rem; border-radius: var(--radius-full); border: 1px solid var(--border-color); font-weight: 600;">
             ✦ ${art.source} &bull; ${art.readTime}
@@ -572,9 +579,34 @@ function renderExecutiveModal() {
     </div>
   `;
 
+  // Attach Touch Swipe Events
+  const scrollContainer = document.getElementById('deckScrollBody');
+  if (scrollContainer) {
+    scrollContainer.addEventListener('touchstart', (e) => {
+      state.modalState.touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    scrollContainer.addEventListener('touchend', (e) => {
+      state.modalState.touchEndX = e.changedTouches[0].screenX;
+      handleSwipeGesture();
+    }, { passive: true });
+  }
+
   // Reset scroll to top smoothly
-  const body = modalContent.querySelector('.deck-scroll-body');
-  if (body) body.scrollTop = 0;
+  if (scrollContainer) scrollContainer.scrollTop = 0;
+}
+
+function handleSwipeGesture() {
+  const diff = state.modalState.touchEndX - state.modalState.touchStartX;
+  if (Math.abs(diff) > 50) {
+    if (diff < 0) {
+      // Swiped left -> Next story
+      navigateModal(1);
+    } else {
+      // Swiped right -> Previous story
+      navigateModal(-1);
+    }
+  }
 }
 
 window.navigateModal = function(step) {
