@@ -1,4 +1,4 @@
-// News Colossal Application Engine — Ultra-Premium Executive Canvas Edition
+// News Colossal Application Engine — Ultra-Premium Integrated Deck Edition
 
 const state = {
   articles: [],
@@ -35,8 +35,6 @@ const regionSelect = document.getElementById('regionSelect');
 const navTabs = document.getElementById('navTabs');
 const modalBackdrop = document.getElementById('modalBackdrop');
 const modalContent = document.getElementById('modalContent');
-const modalCloseBtn = document.getElementById('modalCloseBtn');
-const modalCounterBadge = document.getElementById('modalCounterBadge');
 const drawerBackdrop = document.getElementById('drawerBackdrop');
 const drawerCloseBtn = document.getElementById('drawerCloseBtn');
 const savedList = document.getElementById('savedList');
@@ -474,7 +472,7 @@ function renderSkeletons() {
   `).join('');
 }
 
-// ULTRA-PREMIUM DECK MODAL ENGINE
+// NEXT-GEN INTEGRATED DECK MODAL ENGINE
 window.openModal = function(id) {
   const pool = state.filteredArticles.length > 0 ? state.filteredArticles : state.articles;
   const index = pool.findIndex(a => a.id === id);
@@ -494,63 +492,68 @@ function renderExecutiveModal() {
   const art = pool[currIdx];
   if (!art) return;
 
-  if (modalCounterBadge) {
-    modalCounterBadge.textContent = `Story ${currIdx + 1} of ${total}`;
-  }
-
   modalContent.innerHTML = `
-    <!-- Top HD Cover Media Banner -->
-    <div style="position: relative; width: 100%; height: 290px; overflow: hidden; background: #0b0f19;">
-      <img src="${art.imageUrl}" alt="${escapeHtml(art.title)}" style="width: 100%; height: 100%; object-fit: cover; filter: contrast(1.05) saturate(1.08);" onerror="this.onerror=null; this.src='${DEFAULT_FALLBACK_IMG}';" />
-      <div style="position: absolute; inset: 0; background: linear-gradient(0deg, var(--bg-surface) 0%, rgba(19, 27, 46, 0.4) 60%, transparent 100%);"></div>
-      
-      <div style="position: absolute; bottom: 1rem; left: 1.5rem; right: 1.5rem; display: flex; align-items: center; justify-content: space-between;">
-        <span class="tag-badge">${art.category} (${art.region})</span>
-        <span style="font-size: 0.82rem; color: #cbd5e1; background: rgba(11, 15, 25, 0.75); backdrop-filter: blur(8px); padding: 0.25rem 0.75rem; border-radius: var(--radius-full); border: 1px solid var(--border-color);">
-          ✦ ${art.source} &bull; ${art.readTime}
-        </span>
-      </div>
+    <!-- Floating Glassmorphic Deck Pill Nav -->
+    <div class="deck-floating-nav">
+      <button class="deck-nav-btn" onclick="navigateModal(-1)" title="Previous Story (Left Arrow)">&lsaquo;</button>
+      <span class="deck-nav-counter">Story ${currIdx + 1} of ${total}</span>
+      <button class="deck-nav-btn" onclick="navigateModal(1)" title="Next Story (Right Arrow)">&rsaquo;</button>
     </div>
 
-    <!-- Article Content Details -->
-    <div style="padding: 1.8rem 2.2rem 2.5rem 2.2rem;">
-      <h2 style="font-family: var(--font-heading); font-size: 1.7rem; font-weight: 800; line-height: 1.3; margin-bottom: 1.2rem; color: var(--text-primary);">${escapeHtml(art.title)}</h2>
+    <!-- Floating Close Button -->
+    <button class="deck-close-btn" onclick="closeModal()" aria-label="Close modal">&times;</button>
 
-      <div style="background: var(--bg-surface-elevated); border-left: 4px solid var(--accent-cyan); padding: 1rem 1.25rem; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin-bottom: 1.5rem;">
-        <h4 style="color: var(--accent-cyan); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.6rem;">✦ Crisp Executive Annotation Breakdown</h4>
-        <div style="display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.5;">
-          <div><strong style="color: var(--text-primary);">• What Happened:</strong> ${escapeHtml(art.annotation.what)}</div>
-          <div><strong style="color: var(--text-primary);">• Impact & Context:</strong> ${escapeHtml(art.annotation.why)}</div>
+    <div class="deck-scroll-body">
+      <!-- Top HD Cover Media Banner -->
+      <div style="position: relative; width: 100%; height: 320px; overflow: hidden; background: #0b0f19;">
+        <img src="${art.imageUrl}" alt="${escapeHtml(art.title)}" style="width: 100%; height: 100%; object-fit: cover; filter: contrast(1.05) saturate(1.08);" onerror="this.onerror=null; this.src='${DEFAULT_FALLBACK_IMG}';" />
+        <div style="position: absolute; inset: 0; background: linear-gradient(0deg, var(--bg-surface) 0%, rgba(19, 27, 46, 0.4) 65%, rgba(0,0,0,0.6) 100%);"></div>
+        
+        <div style="position: absolute; bottom: 1.25rem; left: 1.8rem; right: 1.8rem; display: flex; align-items: center; justify-content: space-between;">
+          <span class="tag-badge">${art.category} (${art.region})</span>
+          <span style="font-size: 0.85rem; color: #cbd5e1; background: rgba(11, 15, 25, 0.82); backdrop-filter: blur(10px); padding: 0.3rem 0.85rem; border-radius: var(--radius-full); border: 1px solid var(--border-color); font-weight: 600;">
+            ✦ ${art.source} &bull; ${art.readTime}
+          </span>
         </div>
       </div>
 
-      <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.65; margin-bottom: 1.6rem;">${escapeHtml(art.description)}</p>
+      <!-- Article Content Details -->
+      <div style="padding: 2rem 2.5rem 2.8rem 2.5rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 800; line-height: 1.3; margin-bottom: 1.4rem; color: var(--text-primary);">${escapeHtml(art.title)}</h2>
 
-      <!-- Multi-source perspective chips -->
-      <div style="margin-bottom: 1.8rem; background: rgba(0, 242, 254, 0.05); border: 1px solid var(--border-highlight); padding: 1rem 1.2rem; border-radius: var(--radius-md);">
-        <h4 style="font-size: 0.82rem; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 0.6rem;">Cross-Explore Coverage Across Trusted Outlets:</h4>
-        <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
-          ${art.relatedSources.map(s => `
-            <a href="${s.url}" target="_blank" rel="noopener noreferrer" style="background: var(--bg-surface); border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.4rem 0.85rem; border-radius: var(--radius-full); font-size: 0.82rem; text-decoration: none; font-weight: 600; transition: all var(--transition-fast);">
-              <span>${s.name} Coverage</span> ↗
-            </a>
-          `).join('')}
+        <div style="background: var(--bg-surface-elevated); border-left: 4px solid var(--accent-cyan); padding: 1.1rem 1.4rem; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin-bottom: 1.6rem;">
+          <h4 style="color: var(--accent-cyan); font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.6rem;">✦ Crisp Executive Annotation Breakdown</h4>
+          <div style="display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.55;">
+            <div><strong style="color: var(--text-primary);">• What Happened:</strong> ${escapeHtml(art.annotation.what)}</div>
+            <div><strong style="color: var(--text-primary);">• Impact & Context:</strong> ${escapeHtml(art.annotation.why)}</div>
+          </div>
         </div>
-      </div>
 
-      <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
-        <a href="${art.link}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="flex: 1; justify-content: center; padding: 0.75rem 1.5rem;">
-          Read Full Story on ${art.source} ↗
-        </a>
-        <button onclick="speakArticle('${escapeJs(art.title)}. ${escapeJs(art.annotation.what)}')" class="btn-secondary" style="padding: 0.75rem 1.25rem;">
-          🔊 Listen Audio
-        </button>
+        <p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.7; margin-bottom: 1.8rem;">${escapeHtml(art.description)}</p>
+
+        <!-- Multi-source perspective chips -->
+        <div style="margin-bottom: 2rem; background: rgba(0, 242, 254, 0.05); border: 1px solid var(--border-highlight); padding: 1.1rem 1.3rem; border-radius: var(--radius-md);">
+          <h4 style="font-size: 0.82rem; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 0.7rem;">Cross-Explore Perspectives Across Credible Outlets:</h4>
+          <div style="display: flex; gap: 0.65rem; flex-wrap: wrap;">
+            ${art.relatedSources.map(s => `
+              <a href="${s.url}" target="_blank" rel="noopener noreferrer" style="background: var(--bg-surface); border: 1px solid var(--border-color); color: var(--text-primary); padding: 0.45rem 0.95rem; border-radius: var(--radius-full); font-size: 0.85rem; text-decoration: none; font-weight: 600; transition: all var(--transition-fast);">
+                <span>${s.name} Coverage</span> ↗
+              </a>
+            `).join('')}
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+          <a href="${art.link}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="flex: 1; justify-content: center; padding: 0.8rem 1.6rem;">
+            Read Full Story on ${art.source} ↗
+          </a>
+          <button onclick="speakArticle('${escapeJs(art.title)}. ${escapeJs(art.annotation.what)}')" class="btn-secondary" style="padding: 0.8rem 1.4rem;">
+            🔊 Listen Audio
+          </button>
+        </div>
       </div>
     </div>
   `;
-
-  // Auto-scroll modal body to top when story changes
-  modalContent.scrollTop = 0;
 }
 
 window.navigateModal = function(step) {
@@ -560,11 +563,10 @@ window.navigateModal = function(step) {
   renderExecutiveModal();
 };
 
-function closeModal() {
+window.closeModal = function() {
   modalBackdrop.classList.remove('active');
-}
+};
 
-modalCloseBtn.addEventListener('click', closeModal);
 modalBackdrop.addEventListener('click', (e) => {
   if (e.target === modalBackdrop) closeModal();
 });
