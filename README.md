@@ -1,73 +1,57 @@
-# News Colossal — Live Real-Time News Command Center & Digest
+# 🌐 News Colossal — High-Signal Global News Command Center & Executive Digest
 
-[![Live Site](https://img.shields.org/badge/Live_Site-GitHub_Pages-00f2fe?style=for-the-badge&logo=github)](https://0001kashish-droid.github.io/Newsfeed/)
-[![RSS Automation](https://img.shields.org/badge/RSS_Sync-GitHub_Actions-3b82f6?style=for-the-badge&logo=githubactions)](.github/workflows/fetch-news.yml)
-[![Design System](https://img.shields.org/badge/UI/UX-Apple_Liquid_Glass-a855f7?style=for-the-badge)](style.css)
-
-> **"Cutting through the noise of modern news platforms to bring you clarity, executive focus, and high-fidelity intelligence."**
+> **News Colossal** is an ultra-premium, real-time news aggregation command center designed to eliminate digital noise, clickbait, and information overload. Built with **Apple VisionOS Liquid Specular Glass Aesthetics**, **3D Holographic Geospatial Hotspots**, **Smart Fuzzy Semantic Search**, and **Neural Human Speech Synthesis**.
 
 ---
 
-## 🎯 Why News Colossal Was Built
+## 🎯 Why News Colossal Was Built & Core Signal Curation Philosophy
 
-In today's digital landscape, modern news platforms are overwhelmed with **information overload, sensational clickbait, invasive pop-up ads, paywalls, and distracting visual clutter**. Readers spend more time dodging ads and filtering noise than gaining meaningful insight into major global developments.
+In today's digital news landscape, readers are bombarded with tabloid gossip, clickbait headlines, viral social media drama, and promotional noise. **News Colossal was engineered with a single core mandate: Deliver high-impact macro intelligence across global continents while ruthlessly excluding low-value noise.**
 
-**News Colossal** was engineered to solve this exact problem:
-
-1. **Focus Over Noise**: Distills massive RSS news streams into a curated **Top 10 Colossal Digest** spanning World, Technology, National, and Business headlines.
-2. **Crisp Executive Annotations**: Every story includes a 2-bullet executive breakdown (**✦ What Happened** & **✦ Impact & Context**) so you grasp the core takeaways in seconds.
-3. **Multi-Source Credibility**: Provides one-click cross-verification across trusted publishers (*BBC, Reuters, NYT, Ars Technica, The Verge, Al Jazeera, Hindustan Times, The Hindu, NPR, WSJ*).
-4. **Natural Human Voice Synthesizer**: Converts written digests into conversational audio briefings using neural human-like speech synthesis.
-5. **Apple Liquid Glass Interface**: An ultra-premium, distraction-free glassmorphic interface with dynamic category color reflections, zero ads, and fluid side navigation paddles.
-
----
-
-## ✨ Key Features
-
-- **🌐 Live 30-Minute RSS Automation**: Powered by GitHub Actions serverless cron workflows (`fetch_news.py`) running every 30 minutes to fetch live headlines without CORS restrictions.
-- **💎 Apple Liquid Glass Navigation**: Floating side paddles (**64×140px target zones**) and a top Liquid Glass pill with dynamic news category color reflections (*Cyan for World, Purple for Tech, Amber for National, Emerald for Business*).
-- **📱 Touch & Keyboard Fluidity**: Full touch swipe gesture support (`touchstart` / `touchend`) on mobile, left/right cover banner tap zones, and keyboard arrow hotkeys (`←` / `→`).
-- **🖼 100% Real High-Definition Media**: Automatically upscales thumbnail streams (BBC 1024px, NYT SuperJumbo, Ars Technica 1152px, HT 1600px) with CSS contrast sharpening.
-- **🗣 Natural Human Audio Synthesizer**: Integrated Web Speech API audio engine filtering for neural, conversational human voice models (*Google US English, Microsoft Ava, Natural, Samantha, Karen*).
-- **☀️ Light Mode Default**: Clean high-contrast light mode by default with instant toggle to Dark Cyberpunk mode.
+### 🛑 Excluded Content Criteria (Noise / "Crap" Exclusion Filter)
+Every incoming RSS headline is evaluated through an automated Noise-Reduction Signal Engine. Articles matching any of the following criteria are **strictly rejected**:
+1. **Tabloid Gossip & Celebrity Drama**: Celebrity relationship updates, influencer social media feuds, viral TikTok trends, and reality TV summaries.
+2. **Micro-Local Blotter & Isolated Incidents**: Routine municipal traffic updates, minor isolated crimes, or local incidents carrying zero macro significance.
+3. **Promotional Content & Advertorials**: Corporate press releases disguised as news, sponsored product endorsements, and marketing announcements.
+4. **Astrology & Clickbait Fragment Stubs**: Horoscopes, lottery draw numbers, listicles, and single-sentence snippet stubs lacking analytical context.
 
 ---
 
-## 🛠 Tech Stack
-
-- **Frontend**: HTML5, Vanilla JavaScript (ES6+), CSS Glassmorphism Engine
-- **Automation Pipeline**: Python 3, GitHub Actions Cron (`fetch-news.yml`), ElementTree XML Parser
-- **Deployment**: GitHub Pages (`main` branch origin)
-- **APIs & Data**: Native Web Speech API, LocalStorage Bookmarks API, HTML5 Canvas 2D Crossfade Engine
-
----
-
-## 🚀 Live Production URL
-
-👉 **[https://0001kashish-droid.github.io/Newsfeed/](https://0001kashish-droid.github.io/Newsfeed/)**
+### ✦ Prioritized High-Signal Intelligence Criteria
+Articles included across our **5 Global Continent Hotspots** must fulfill at least one core intelligence benchmark:
+- 🌐 **Geopolitical & Diplomatic Affairs**: International treaties, summits, national security, major elections, and trade policy updates.
+- 📈 **Macroeconomic & Financial Impact**: Central bank rate decisions, market trends, global inflation reports, supply chain shifts, and major corporate earnings.
+- 🚀 **High-Tech & Scientific Breakthroughs**: Artificial intelligence models (AI/LLMs), space exploration (SpaceX/NASA), semiconductor developments, and clean energy breakthroughs.
+- 🌍 **Regional Macro Events**: Infrastructure projects, climate initiatives, and key legislative decisions across **Asia-Pacific**, **Middle East**, **Europe**, **North America**, and **India**.
 
 ---
 
-## 💻 Local Development Setup
+## ✨ Features & Technology Architecture
 
-To run News Colossal locally on your machine:
+- **3D Holographic Geospatial Intelligence Globe**: Interactive 3D vector canvas displaying live continent node networks and radar pulse indicators across **India**, **Europe**, **North America**, **Asia-Pacific**, and **Middle East**.
+- **Zero Empty State Fallback Brain**: Dynamic regional matrix ensuring every regional hotspot query returns high-signal stories.
+- **Apple VisionOS Frosted Glass Reader Deck**: Executive reader modal overlay with fluid touch-swipe navigation (`←` / `→`) and full, unclipped analytical context.
+- **Subtle Direct Source Links**: Non-intrusive `Source ↗` pill buttons on both grid cards and reader deck for 1-click jumps to **BBC**, **Ars Technica**, **South China Morning Post**, and **Hindustan Times**.
+- **Smart Fuzzy Semantic Search Engine**: Tokenized concept expansion map allowing instant searches across topics like `spacex`, `ai`, `stocks`, `india`, and `biden` with typo tolerance.
+- **Neural Human Speech Synthesizer**: Natural acoustic voice modulator with real-time speed (`0.6x`–`1.6x`) and vocal pitch controls.
+- **Real-Time IP Location Clock**: Clean single-vector SVG header clock displaying live date & time formatted to the user's timezone.
+- **Specular Reading Progress Line**: Header progress bar tracking exact page scroll depth in real-time.
+
+---
+
+## 🛠 Local Setup & Running
 
 ```bash
-# 1. Clone repository
+# Clone repository
 git clone https://github.com/0001kashish-droid/Newsfeed.git
 cd Newsfeed
 
-# 2. Fetch fresh live RSS headlines
-python scripts/fetch_news.py
-
-# 3. Start local development HTTP server
-python -m http.server 8080
+# Start local HTTP server
+python -m http.server 8888 --bind 127.0.0.1
 ```
-
-Open `http://localhost:8080` in your web browser.
+Open **[http://127.0.0.1:8888](http://127.0.0.1:8888)** in your web browser.
 
 ---
 
-## 📄 License & Attribution
-
-News Colossal aggregates public open RSS XML feeds. All article rights, trademarks, and content belong to their respective original publishers (BBC, Reuters, NYT, Ars Technica, The Verge, Al Jazeera, Hindustan Times, The Hindu, NPR, WSJ, CNBC).
+## 📄 License & Publisher Rights
+All news content, headlines, and visuals belong to their respective original publishers (**BBC News**, **Ars Technica**, **South China Morning Post**, **Hindustan Times**, **Al Jazeera**). News Colossal operates as a non-commercial news aggregator and reading interface.
