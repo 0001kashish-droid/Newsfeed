@@ -1,10 +1,30 @@
 # 🌐 News Colossal — High-Signal Global News Command Center & Executive Digest
 
-> **News Colossal** is an ultra-premium, real-time news aggregation command center designed to eliminate digital noise, clickbait, and information overload. Built with **Apple VisionOS Liquid Specular Glass Aesthetics**, **3D Holographic Geospatial Hotspots**, **Smart Fuzzy Semantic Search**, and **Neural Human Speech Synthesis**.
+> **News Colossal** is an ultra-premium, real-time news aggregation command center designed to eliminate digital noise, clickbait, and information overload. Built with **Apple VisionOS Liquid Specular Glass Aesthetics**, **3D Holographic Geospatial Hotspots**, **Smart Fuzzy Semantic Search**, **Native Mobile Touch Gestures**, and **Neural Human Speech Synthesis**.
 
 ---
 
-## 🎯 Why News Colossal Was Built & Core Signal Curation Philosophy
+### 🚀 Live Application & Repository Links
+- 🌐 **Public Live App (GitHub Pages)**: [https://0001kashish-droid.github.io/Newsfeed/](https://0001kashish-droid.github.io/Newsfeed/)
+- 💻 **GitHub Repository**: [https://github.com/0001kashish-droid/Newsfeed](https://github.com/0001kashish-droid/Newsfeed)
+- ⚡ **Local Development Server**: `http://127.0.0.1:9000`
+
+---
+
+## 🌟 v2.0 Production Release Highlights
+
+- 🎯 **Strict Category Isolation Engine**: Category tabs (`Tech`, `Business`, `World`, `National`) enforce **100% strict topic relevance**. World/Political news stories are **never** permitted inside specialized feeds like `Tech` or `Business`.
+- 📊 **3D Hotspot Map & Grid Harmony**: Interactive 3D geospatial continent statistics dynamically adapt to the active category filter (e.g. displaying exact Tech stories per region with 100% mathematical precision).
+- 📱 **Native iOS & Android Touch Swipe Engine**: 1-finger horizontal gesture detection (`←` / `→`) on deck reader modals with live rubber-band visual translation (`translateX(...)`).
+- 🔄 **Mobile Touch Pull-to-Refresh Banner**: Native touch pull-down gesture on phone screens with a liquid-glass banner (`#pullToRefreshBanner`) and live rotating sync spinner (`↻`).
+- ✕ **1-Tap Search Clear & Smart Reset**: Seamless reset mechanics that clear search text, restore default categories, and fetch fresh live feeds in a single tap.
+- 🔖 **Subtle Liquid Glass Bookmark Button**: Floating header bookmark pill (`.liquid-glass-bookmark`) for 1-tap story saving (`★ Saved` / `☆ Save`).
+- 📜 **Native High-Contrast WebKit Scrollbars**: Restored 10px theme-colored scrollbars (`scrollbar-width: thin;`) ensuring 100% scroll reliability across all browsers and operating systems.
+- ✍️ **100% Sentence Completeness Engine**: Automated text cleaner that strips trailing ellipses (`...`) and cut-off fragments, ensuring all deck text terminates cleanly on a complete sentence with a period (`.`).
+
+---
+
+## 🎯 Why News Colossal Was Built & Curation Philosophy
 
 In today's digital news landscape, readers are bombarded with tabloid gossip, clickbait headlines, viral social media drama, and promotional noise. **News Colossal was engineered with a single core mandate: Deliver high-impact macro intelligence across global continents while ruthlessly excluding low-value noise.**
 
@@ -26,32 +46,35 @@ Articles included across our **5 Global Continent Hotspots** must fulfill at lea
 
 ---
 
-## ✨ Features & Technology Architecture
+## 🏢 Publisher Source Diversity (19 Global Outlets)
 
-- **3D Holographic Geospatial Intelligence Globe**: Interactive 3D vector canvas displaying live continent node networks and radar pulse indicators across **India**, **Europe**, **North America**, **Asia-Pacific**, and **Middle East**.
-- **Zero Empty State Fallback Brain**: Dynamic regional matrix ensuring every regional hotspot query returns high-signal stories.
-- **Apple VisionOS Frosted Glass Reader Deck**: Executive reader modal overlay with fluid touch-swipe navigation (`←` / `→`) and full, unclipped analytical context.
-- **Subtle Direct Source Links**: Non-intrusive `Source ↗` pill buttons on both grid cards and reader deck for 1-click jumps to **BBC**, **Ars Technica**, **South China Morning Post**, and **Hindustan Times**.
-- **Smart Fuzzy Semantic Search Engine**: Tokenized concept expansion map allowing instant searches across topics like `spacex`, `ai`, `stocks`, `india`, and `biden` with typo tolerance.
-- **Neural Human Speech Synthesizer**: Natural acoustic voice modulator with real-time speed (`0.6x`–`1.6x`) and vocal pitch controls.
-- **Real-Time IP Location Clock**: Clean single-vector SVG header clock displaying live date & time formatted to the user's timezone.
-- **Specular Reading Progress Line**: Header progress bar tracking exact page scroll depth in real-time.
+News Colossal aggregates live news across 19 credible international publications with an automated two-pass fair balancer that caps any single source brand at **6.6% dominance**:
+
+- **Global & International**: *The New York Times*, *The Guardian*, *BBC News*, *Associated Press*
+- **Asia-Pacific**: *South China Morning Post*, *SCMP Tech*, *SCMP Business*, *BBC Asia*, *The Guardian Asia*
+- **Middle East**: *Al Jazeera*, *BBC Middle East*
+- **Europe**: *BBC Europe*, *The Guardian Europe*, *BBC Tech*, *BBC Business*
+- **North America**: *Ars Technica*, *TechCrunch*, *CNBC*, *NPR*, *NYT Business*, *BBC US*
+- **India**: *The Hindu*, *Hindustan Times*, *HT Tech*, *HT Business*
 
 ---
 
-## 🛠 Local Setup & Running
+## 🛠 Local Setup & Automated Verification
 
 ```bash
 # Clone repository
 git clone https://github.com/0001kashish-droid/Newsfeed.git
 cd Newsfeed
 
+# Run full 6-layer automated production audit suite
+python production_hard_audit.py
+
 # Start local HTTP server
-python -m http.server 8888 --bind 127.0.0.1
+python -m http.server 9000 --bind 127.0.0.1
 ```
-Open **[http://127.0.0.1:8888](http://127.0.0.1:8888)** in your web browser.
+Open **[http://127.0.0.1:9000](http://127.0.0.1:9000)** in your web browser.
 
 ---
 
 ## 📄 License & Publisher Rights
-All news content, headlines, and visuals belong to their respective original publishers (**BBC News**, **Ars Technica**, **South China Morning Post**, **Hindustan Times**, **Al Jazeera**). News Colossal operates as a non-commercial news aggregator and reading interface.
+All news content, headlines, and visuals belong to their respective original publishers (**The New York Times**, **BBC News**, **South China Morning Post**, **Ars Technica**, **TechCrunch**, **Al Jazeera**, **Hindustan Times**, **The Hindu**). News Colossal operates as a non-commercial news aggregator and reading interface.
