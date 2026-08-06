@@ -140,17 +140,14 @@ SOURCES = [
     }
 ]
 
-# High quality fallback photos if no image is supplied by RSS
 CRISP_IMAGES = {
     "World": [
         "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1600&q=95",
-        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=95",
-        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=95"
+        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=95"
     ],
     "Tech": [
         "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=95",
-        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=95",
-        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=95"
+        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=95"
     ],
     "National": [
         "https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=1600&q=95",
@@ -177,23 +174,19 @@ def upscale_image_url(url):
     elif not url.startswith('http'):
         return url
     
-    url = re.sub(r'ichef\.bbci\.co\.uk/news/\d+/', 'ichef.bbci.co.uk/news/1024/', url)
-    url = re.sub(r'w=\d+', 'w=1200', url)
-    url = re.sub(r'width=\d+', 'width=1200', url)
-    url = re.sub(r'h=\d+', 'h=800', url)
-    url = re.sub(r'height=\d+', 'height=800', url)
-    url = re.sub(r'quality=\d+', 'quality=95', url)
-    url = re.sub(r'q=\d+', 'q=95', url)
-    
-    url = url.replace('thumbStandard', 'superJumbo')
-    url = url.replace('mediumThreeByTwo210', 'superJumbo')
-    url = url.replace('articleLarge', 'superJumbo')
-    
-    url = re.sub(r'\d+x\d+', '1200x800', url)
+    # Specific upscale rules ONLY for providers that support width replacement parameters
+    if 'bbci.co.uk' in url:
+        url = re.sub(r'ichef\.bbci\.co\.uk/news/\d+/', 'ichef.bbci.co.uk/news/1024/', url)
+    elif 'reuters.com' in url or 'techcrunch.com' in url or 'theverge.com' in url or 'cnet.com' in url:
+        url = re.sub(r'w=\d+', 'w=1200', url)
+        url = re.sub(r'width=\d+', 'width=1200', url)
+        url = re.sub(r'h=\d+', 'h=800', url)
+        url = re.sub(r'height=\d+', 'height=800', url)
+        
     return url
 
 def extract_image(item, default_category, title):
-    # Check all XML elements for image URLs
+    # Check all XML media attributes
     for elem in item.iter():
         tag = elem.tag.lower()
         if 'content' in tag or 'thumbnail' in tag or 'enclosure' in tag or 'group' in tag:
@@ -201,7 +194,7 @@ def extract_image(item, default_category, title):
             if url and ('jpg' in url or 'png' in url or 'webp' in url or 'jpeg' in url or 'media' in url or 'ichef' in url or 'images' in url or 'ht-img' in url):
                 return upscale_image_url(url)
     
-    # Check img src tags in description
+    # Check img src tags in description HTML
     desc = item.findtext('description') or item.findtext('{http://www.w3.org/2005/Atom}summary') or ""
     img_match = re.search(r'src=["\']([^"\']+\.(?:jpg|png|jpeg|webp)[^"\']*)["\']', desc, re.IGNORECASE)
     if img_match:
