@@ -1,4 +1,4 @@
-// News Colossal Application Engine — Apple Liquid Glass Side Paddles & Touch Swipe Edition
+// News Colossal Application Engine — Light Mode & Natural Voice Edition
 
 const state = {
   articles: [],
@@ -7,7 +7,7 @@ const state = {
   currentRegion: 'all',
   searchQuery: '',
   bookmarks: JSON.parse(localStorage.getItem('nc_bookmarks') || '[]'),
-  theme: localStorage.getItem('nc_theme') || 'dark',
+  theme: localStorage.getItem('nc_theme') || 'light', // Default to Light Mode
   heroIndex: 0,
   heroPlaying: true,
   heroTimer: null,
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadSvgMap();
 });
 
-// Theme Management
+// Theme Management (Defaults to Light Mode)
 function initTheme() {
   document.documentElement.setAttribute('data-theme', state.theme);
 }
@@ -572,7 +572,7 @@ function renderExecutiveModal() {
             Read Full Story on ${art.source} ↗
           </a>
           <button onclick="speakArticle('${escapeJs(art.title)}. ${escapeJs(art.annotation.what)}')" class="btn-secondary" style="padding: 0.85rem 1.5rem;">
-            🔊 Listen Audio
+            🔊 Listen Natural Audio
           </button>
         </div>
       </div>
@@ -673,14 +673,51 @@ function renderSavedList() {
   `).join('');
 }
 
-// Web Speech API Audio Player
+// NATURAL HUMAN VOICE SYNTHESIZER ENGINE
+function getNaturalHumanVoice() {
+  if (!('speechSynthesis' in window)) return null;
+  const voices = window.speechSynthesis.getVoices();
+  
+  // Prioritize high-definition neural human voice synthesis models
+  const naturalVoices = voices.find(v => 
+    v.lang.startsWith('en') && (
+      v.name.includes('Neural') || 
+      v.name.includes('Natural') || 
+      v.name.includes('Google US English') || 
+      v.name.includes('Google UK English Female') || 
+      v.name.includes('Microsoft Ava') || 
+      v.name.includes('Microsoft Andrew') || 
+      v.name.includes('Samantha') || 
+      v.name.includes('Karen') || 
+      v.name.includes('Daniel') || 
+      v.name.includes('Serena')
+    )
+  );
+  return naturalVoices || voices.find(v => v.lang.startsWith('en')) || voices[0];
+}
+
+// Load voices async when available
+if ('speechSynthesis' in window) {
+  window.speechSynthesis.onvoiceschanged = () => {
+    getNaturalHumanVoice();
+  };
+}
+
 window.speakArticle = function(text) {
   if ('speechSynthesis' in window) {
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.rate = 1.0;
-    utterance.pitch = 1.0;
-    audioTitle.textContent = text.slice(0, 30) + '...';
+    
+    const voice = getNaturalHumanVoice();
+    if (voice) {
+      utterance.voice = voice;
+    }
+    
+    utterance.rate = 1.0;  // Natural conversational speed
+    utterance.pitch = 1.0; // Human vocal tone balance
+    utterance.volume = 1.0;
+    
+    audioTitle.textContent = text.slice(0, 32) + '...';
     audioPlayBtn.textContent = '⏸';
     state.audioState.isPlaying = true;
     
