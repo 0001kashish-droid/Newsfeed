@@ -134,7 +134,6 @@ async function loadData() {
   updateBookmarkBadge();
 }
 
-// Preload all article images into memory
 function preloadAllImages() {
   state.articles.forEach(art => {
     if (!canvasImages[art.id]) {
@@ -239,7 +238,6 @@ function renderCanvasFrame() {
     drawScaledImage(heroCtx, nextImgObj, w, h, animProgress);
   }
 
-  // Ambient Glow Gradient
   const gradient = heroCtx.createLinearGradient(0, h * 0.3, 0, h);
   gradient.addColorStop(0, 'rgba(11, 15, 25, 0.0)');
   gradient.addColorStop(1, 'rgba(11, 15, 25, 0.96)');
@@ -274,7 +272,7 @@ function renderHeroOverlayText(article) {
   if (!article || !heroOverlay) return;
   heroOverlay.innerHTML = `
     <div class="hero-badge-row">
-      <span class="tag-badge">${article.category} SPOTLIGHT #${state.heroIndex + 1}</span>
+      <span class="tag-badge">${article.category} SPOTLIGHT #${state.heroIndex + 1} (${article.region})</span>
       <span class="source-tag">✦ ${article.source} &bull; ${article.readTime}</span>
     </div>
     <h1 class="hero-title">${escapeHtml(article.title)}</h1>
@@ -310,7 +308,7 @@ function startHeroTimer() {
 
   state.progressInterval = setInterval(() => {
     if (!state.heroPlaying) return;
-    state.progressValue += 2; // 50 ticks = 5000ms
+    state.progressValue += 2;
     if (canvasProgressBar) canvasProgressBar.style.width = `${state.progressValue}%`;
     if (state.progressValue >= 100) {
       resetProgressBar();
@@ -336,36 +334,44 @@ if (heroNextBtn) {
   });
 }
 
-// Category Tab Filtering & Landing
+// Category & Region Filtering Engine (Robust Pipeline)
 function filterAndRender() {
   let list = [...state.articles];
 
+  // 1. Region Filtering FIRST
+  if (state.currentRegion !== 'all') {
+    const targetReg = state.currentRegion.toLowerCase();
+    if (targetReg === 'global') {
+      list = list.filter(a => a.region.toLowerCase() === 'global' || a.region.toLowerCase() === 'world');
+    } else {
+      list = list.filter(a => a.region.toLowerCase() === targetReg);
+    }
+  }
+
+  // 2. Category Filtering SECOND
+  const regionLabel = state.currentRegion === 'all' ? '' : ` (${state.currentRegion})`;
+  
   if (state.currentCategory === 'top10') {
     list = list.slice(0, 10);
-    gridTitle.textContent = 'Top 10 Global News Digest';
+    gridTitle.textContent = `Top 10 News Digest${regionLabel}`;
   } else if (state.currentCategory.toLowerCase() === 'world') {
     list = list.filter(a => a.category.toLowerCase() === 'world');
-    gridTitle.textContent = 'World News Coverage';
+    gridTitle.textContent = `World News Coverage${regionLabel}`;
   } else if (state.currentCategory.toLowerCase() === 'tech') {
     list = list.filter(a => a.category.toLowerCase() === 'tech');
-    gridTitle.textContent = 'Technology & Electronics Intelligence';
+    gridTitle.textContent = `Technology & Electronics${regionLabel}`;
   } else if (state.currentCategory.toLowerCase() === 'national') {
     list = list.filter(a => a.category.toLowerCase() === 'national');
-    gridTitle.textContent = 'National News Focus';
+    gridTitle.textContent = `National News Focus${regionLabel}`;
   } else if (state.currentCategory.toLowerCase() === 'business') {
     list = list.filter(a => a.category.toLowerCase() === 'business');
-    gridTitle.textContent = 'Business & Financial Markets';
+    gridTitle.textContent = `Business & Markets${regionLabel}`;
   } else {
     list = list.filter(a => a.category.toLowerCase() === state.currentCategory.toLowerCase());
-    gridTitle.textContent = `${state.currentCategory} News`;
+    gridTitle.textContent = `${state.currentCategory} News${regionLabel}`;
   }
 
-  // Region filter
-  if (state.currentRegion !== 'all') {
-    list = list.filter(a => a.region.toLowerCase() === state.currentRegion.toLowerCase());
-  }
-
-  // Search filter
+  // 3. Search Filter THIRD
   if (state.searchQuery.trim() !== '') {
     const q = state.searchQuery.toLowerCase();
     list = list.filter(a => 
@@ -379,7 +385,7 @@ function filterAndRender() {
 
   renderGrid(list);
 
-  // Update top canvas spotlight to switch dataset to currently selected tab!
+  // Update top canvas spotlight to switch dataset to currently filtered list!
   state.heroIndex = 0;
   transitionHeroSlide(0);
   startHeroTimer();
@@ -396,9 +402,10 @@ function scrollToContent() {
 // Render Main Grid
 function renderGrid(articles) {
   if (articles.length === 0) {
+    const regionName = state.currentRegion === 'all' ? '' : ` in ${state.currentRegion}`;
     newsGrid.innerHTML = `
       <div style="grid-column: 1/-1; text-align: center; padding: 4rem 1rem; color: var(--text-muted);">
-        <p style="font-size: 1.2rem;">No matching articles found for '${escapeHtml(state.currentCategory)}'.</p>
+        <p style="font-size: 1.2rem;">No matching articles found for '${escapeHtml(state.currentCategory)}'${regionName}.</p>
         <button onclick="resetFilters()" class="btn-primary" style="margin-top: 1rem;">Reset All Filters</button>
       </div>
     `;
@@ -425,7 +432,7 @@ function renderGrid(articles) {
 
           <!-- Crisp Annotation Preview -->
           <div class="annotation-box">
-            <div class="annotation-title">✦ Crisp Annotation</div>
+            <div class="annotation-title">✦ Crisp Annotation (${art.region})</div>
             <p class="annotation-bullet">${escapeHtml(art.annotation.what)}</p>
           </div>
 
@@ -468,7 +475,7 @@ function renderSkeletons() {
   `).join('');
 }
 
-// CONTINUOUS CANVAS READER MODAL ENGINE (Experimental Feature)
+// CONTINUOUS CANVAS READER MODAL ENGINE
 window.openModal = function(id) {
   const pool = state.filteredArticles.length > 0 ? state.filteredArticles : state.articles;
   const index = pool.findIndex(a => a.id === id);
@@ -489,7 +496,6 @@ function renderModalCanvasSlide() {
   const art = mState.articles[mState.currentIndex];
   if (!art) return;
 
-  // Draw canvas image in modal background
   const imgObj = canvasImages[art.id];
   if (modalCanvas && imgObj && imgObj.complete) {
     const mCtx = modalCanvas.getContext('2d');
@@ -557,7 +563,7 @@ function startModalTimer() {
 
   state.modalState.timer = setInterval(() => {
     if (!state.modalState.isPlaying) return;
-    state.modalState.progress += 1.5; // 7 seconds per slide
+    state.modalState.progress += 1.5;
     if (modalProgressBar) modalProgressBar.style.width = `${state.modalState.progress}%`;
     if (state.modalState.progress >= 100) {
       navigateModal(1);

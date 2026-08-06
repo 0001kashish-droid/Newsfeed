@@ -6,13 +6,29 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 
 SOURCES = [
-    # World Feeds
+    # World & Geopolitics
     {
         "id": "bbc-world",
         "name": "BBC News",
         "category": "World",
         "region": "Global",
         "url": "https://feeds.bbci.co.uk/news/rss.xml",
+        "logo": "BBC"
+    },
+    {
+        "id": "bbc-europe",
+        "name": "BBC Europe",
+        "category": "World",
+        "region": "Europe",
+        "url": "https://feeds.bbci.co.uk/news/world/europe/rss.xml",
+        "logo": "BBC"
+    },
+    {
+        "id": "bbc-asia",
+        "name": "BBC Asia-Pacific",
+        "category": "World",
+        "region": "Asia-Pacific",
+        "url": "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
         "logo": "BBC"
     },
     {
@@ -52,7 +68,7 @@ SOURCES = [
         "id": "theverge",
         "name": "The Verge",
         "category": "Tech",
-        "region": "Global",
+        "region": "North America",
         "url": "https://www.theverge.com/rss/index.xml",
         "logo": "VRG"
     },
@@ -68,11 +84,11 @@ SOURCES = [
         "id": "rtings",
         "name": "RTINGS",
         "category": "Tech",
-        "region": "Global",
+        "region": "North America",
         "url": "https://news.google.com/rss/search?q=site:rtings.com+when:7d&hl=en-US&gl=US&ceid=US:en",
         "logo": "RTG"
     },
-    # National Feeds
+    # National & Regional Feeds
     {
         "id": "ndtv",
         "name": "NDTV",
@@ -102,13 +118,13 @@ SOURCES = [
         "id": "wsj-markets",
         "name": "WSJ Markets",
         "category": "Business",
-        "region": "Global",
+        "region": "North America",
         "url": "https://news.google.com/rss/search?q=site:wsj.com+markets+when:24h&hl=en-US&gl=US&ceid=US:en",
         "logo": "WSJ"
     }
 ]
 
-# Ultra-HD curated photography (4K/1080p uncompressed)
+# Ultra-HD photography
 CRISP_IMAGES = {
     "World": [
         "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1600&q=95",
@@ -145,10 +161,7 @@ def upscale_image_url(url):
     if not url:
         return url
     
-    # BBC iChef high-res replacement (/240/, /320/, /480/ -> /1024/)
     url = re.sub(r'ichef\.bbci\.co\.uk/news/\d+/', 'ichef.bbci.co.uk/news/1024/', url)
-    
-    # Reuters & general width params
     url = re.sub(r'w=\d+', 'w=1200', url)
     url = re.sub(r'width=\d+', 'width=1200', url)
     url = re.sub(r'h=\d+', 'h=800', url)
@@ -156,17 +169,14 @@ def upscale_image_url(url):
     url = re.sub(r'quality=\d+', 'quality=95', url)
     url = re.sub(r'q=\d+', 'q=95', url)
     
-    # NYT replacement
     url = url.replace('thumbStandard', 'superJumbo')
     url = url.replace('mediumThreeByTwo210', 'superJumbo')
     url = url.replace('articleLarge', 'superJumbo')
     
-    # NDTV & generic thumbnail replacements
     url = re.sub(r'\d+x\d+', '1200x800', url)
     return url
 
 def extract_image(item, default_category, title):
-    # Search all nodes for media thumbnail or enclosure
     for elem in item.iter():
         tag = elem.tag.lower()
         if 'content' in tag or 'thumbnail' in tag or 'enclosure' in tag or 'group' in tag:
@@ -174,13 +184,11 @@ def extract_image(item, default_category, title):
             if url and ('jpg' in url or 'png' in url or 'webp' in url or 'jpeg' in url or 'media' in url or 'ichef' in url):
                 return upscale_image_url(url)
     
-    # Check img tags in description HTML
     desc = item.findtext('description') or item.findtext('{http://www.w3.org/2005/Atom}summary') or ""
     img_match = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', desc)
     if img_match:
         return upscale_image_url(img_match.group(1))
 
-    # Fallback ultra-crisp image
     cat_imgs = CRISP_IMAGES.get(default_category, CRISP_IMAGES["World"])
     return cat_imgs[abs(hash(title)) % len(cat_imgs)]
 
@@ -189,7 +197,7 @@ def generate_annotation(title, description):
     sentences = [s.strip() for s in re.split(r'(?<=[.!?]) +', clean_desc) if len(s.strip()) > 10]
     
     bullet1 = sentences[0] if sentences else title
-    bullet2 = sentences[1] if len(sentences) > 1 else "Key global development with wide-ranging impact across policy, industry, and public interest."
+    bullet2 = sentences[1] if len(sentences) > 1 else "Key regional development with wide-ranging impact across policy, industry, and public interest."
     
     if len(bullet1) > 160:
         bullet1 = bullet1[:157] + "..."
@@ -255,7 +263,7 @@ def fetch_rss(source):
 def main():
     all_news = []
     for src in SOURCES:
-        print(f"Fetching {src['name']} ({src['category']})...")
+        print(f"Fetching {src['name']} ({src['category']} - {src['region']})...")
         news_items = fetch_rss(src)
         all_news.extend(news_items)
         
@@ -270,7 +278,7 @@ def main():
     os.makedirs("data", exist_ok=True)
     with open("data/news.json", "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
-    print("Saved HD dataset to data/news.json successfully!")
+    print("Saved dataset to data/news.json successfully!")
 
 if __name__ == "__main__":
     main()
