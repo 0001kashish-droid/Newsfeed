@@ -990,7 +990,7 @@ function renderGrid(articles) {
     const delay = Math.min(idx * 0.06, 0.6).toFixed(2);
     return `
       <!-- Tapping / clicking card background opens Executive Deck Preview -->
-      <article class="news-card" data-id="${art.id}" style="animation-delay: ${delay}s;" onclick="openModal('${art.id}')">
+      <article class="news-card" data-id="${art.id}" style="animation-delay: ${delay}s; --card-index: ${idx};" onclick="openModal('${art.id}')">
         <div class="card-sheen"></div>
         <div class="card-thumb-box">
           <img src="${(art.imageUrl && !art.imageUrl.includes('photo-1526304640581-d334cdbbf45e')) ? art.imageUrl : getTopicImageUrl(art.title, art.category, art.region)}" alt="${escapeHtml(art.title)}" class="card-thumb" loading="lazy" onerror="this.onerror=null; this.src=getTopicImageUrl('${escapeJs(art.title)}', '${escapeJs(art.category)}', '${escapeJs(art.region)}');" />
@@ -1206,8 +1206,8 @@ function renderExecutiveModal() {
         </div>
       </div>
 
-      <!-- Article Content Body — Editorial -->
-      <div class="deck-content-fade" style="padding: 1.8rem 2.2rem 5rem 2.2rem;">
+      <!-- Article Content Body — Editorial (responsive padding via CSS class) -->
+      <div class="deck-content-fade deck-content-body">
 
         <!-- Whisper Meta Line with time-ago -->
         <div style="display: flex; align-items: center; gap: 0.45rem; margin-bottom: 0.8rem; opacity: 0.5; font-size: 0.76rem; font-weight: 600; color: var(--text-muted); letter-spacing: 0.03em;">
@@ -1220,7 +1220,7 @@ function renderExecutiveModal() {
         </div>
 
         <!-- Headline -->
-        <h2 style="font-family: var(--font-heading); font-size: 1.85rem; font-weight: 800; line-height: 1.3; margin-bottom: 1.2rem; color: var(--text-primary);">${escapeHtml(art.title)}</h2>
+        <h2 style="font-family: var(--font-heading); font-size: 1.85rem; font-weight: 800; line-height: 1.3; margin-bottom: 1.2rem; color: var(--text-primary); font-feature-settings: 'kern' 1, 'liga' 1;">${escapeHtml(art.title)}</h2>
 
         <!-- Thin Accent Divider -->
         <div style="width: 44px; height: 3px; border-radius: 2px; background: ${themeColor}; margin-bottom: 1.4rem; opacity: 0.8;"></div>
@@ -1272,6 +1272,7 @@ function renderExecutiveModal() {
   const progressBar = document.getElementById('deckProgressBar');
 
   if (scrollContainer) {
+    let glowTimeout = null;
     scrollContainer.addEventListener('scroll', () => {
       const scrollTop = scrollContainer.scrollTop;
 
@@ -1283,6 +1284,18 @@ function renderExecutiveModal() {
         const scrollHeight = scrollContainer.scrollHeight - scrollContainer.clientHeight;
         const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
         progressBar.style.width = `${progress.toFixed(1)}%`;
+
+        // Scroll-linked progress glow
+        progressBar.classList.add('active-glow');
+        clearTimeout(glowTimeout);
+        glowTimeout = setTimeout(() => progressBar.classList.remove('active-glow'), 600);
+
+        // Fade out bottom gradient when near bottom
+        if (progress > 92) {
+          scrollContainer.style.setProperty('--scroll-fade-opacity', '0');
+        } else {
+          scrollContainer.style.setProperty('--scroll-fade-opacity', '1');
+        }
       }
     }, { passive: true });
 

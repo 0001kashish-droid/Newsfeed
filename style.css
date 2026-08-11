@@ -63,6 +63,9 @@
   margin: 0;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   touch-action: manipulation;
 }
 
@@ -961,6 +964,12 @@ body {
 .news-card:hover {
   border-color: var(--border-highlight);
   box-shadow: var(--shadow-md), 0 0 25px var(--accent-glow);
+  transform: translateY(-4px);
+}
+
+/* Staggered entrance animation — set per-card via JS */
+.news-card[style*="--card-index"] {
+  animation-delay: calc(var(--card-index, 0) * 60ms);
 }
 
 .card-thumb-box {
@@ -1052,6 +1061,8 @@ body {
   line-height: 1.35;
   margin-bottom: 0.75rem;
   color: var(--text-primary);
+  font-feature-settings: 'kern' 1, 'liga' 1;
+  letter-spacing: -0.01em;
 }
 
 .annotation-box {
@@ -1218,12 +1229,12 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  transform: translateY(40px);
+  transform: translateY(60px) scale(0.96);
   opacity: 0;
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
 }
 .modal-backdrop.active .deck-modal-card {
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
   opacity: 1;
 }
 
@@ -1442,31 +1453,60 @@ body {
 
 .deck-scroll-body {
   flex: 1;
-  overflow-y: scroll;
+  overflow-y: scroll !important;
   -webkit-overflow-scrolling: touch;
   padding-bottom: 3rem;
   scroll-behavior: smooth;
   position: relative;
-  scrollbar-width: thin;
-  scrollbar-color: var(--news-theme-color, var(--accent-cyan)) rgba(0, 0, 0, 0.08);
+  scrollbar-width: thin !important;
+  scrollbar-color: var(--news-theme-color, var(--accent-cyan)) rgba(15, 23, 42, 0.3) !important;
+  overscroll-behavior-y: contain;
 }
 
-/* ALWAYS-VISIBLE HIGH-CONTRAST ACCENT NATIVE SCROLLBAR */
+/* ALWAYS-VISIBLE HIGH-CONTRAST ACCENT NATIVE SCROLLBAR — All Platforms */
 .deck-scroll-body::-webkit-scrollbar {
-  width: 10px;
-  display: block;
+  width: 7px !important;
+  display: block !important;
+  -webkit-appearance: none !important;
 }
 .deck-scroll-body::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.06);
+  background: rgba(15, 23, 42, 0.2) !important;
   border-radius: 8px;
 }
 .deck-scroll-body::-webkit-scrollbar-thumb {
-  background: var(--news-theme-color, var(--accent-cyan));
+  background: var(--news-theme-color, var(--accent-cyan)) !important;
   border-radius: 8px;
-  border: 2px solid var(--bg-surface);
+  border: 1.5px solid var(--bg-surface);
+  min-height: 40px !important;
 }
 .deck-scroll-body::-webkit-scrollbar-thumb:hover {
   filter: brightness(1.2);
+}
+
+/* Bottom scroll fade gradient — indicates more content below */
+.deck-scroll-body::after {
+  content: '';
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(0deg, var(--bg-surface) 0%, transparent 100%);
+  pointer-events: none;
+  display: block;
+  z-index: 10;
+  flex-shrink: 0;
+}
+
+/* Responsive deck content body — replaces inline padding */
+.deck-content-body {
+  padding: 1.8rem 2.2rem 5rem 2.2rem;
+}
+
+/* Scroll-linked progress glow pulse */
+.deck-progress-bar.active-glow {
+  box-shadow: 0 0 8px var(--news-theme-color, var(--accent-cyan)), 0 0 20px var(--accent-glow);
+  opacity: 1;
 }
 
 /* Parallax cover container — Balanced Visual Banner */
@@ -1802,6 +1842,43 @@ body {
   box-shadow: 0 0 10px var(--accent-glow) !important;
 }
 
+/* ═══════════════════════════════════════════════
+   TABLET BREAKPOINT (768px–1024px)
+   Enterprise-grade responsive layer for iPad, Galaxy Tab, Surface
+   ═══════════════════════════════════════════════ */
+@media (max-width: 1024px) and (min-width: 641px) {
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.2rem !important;
+  }
+  .hero-card {
+    height: 340px !important;
+  }
+  .deck-modal-card {
+    width: 80vw !important;
+    height: 90vh !important;
+    max-height: 90vh !important;
+    border-radius: 20px !important;
+  }
+  .deck-cover-parallax {
+    height: 220px !important;
+  }
+  .deck-content-body {
+    padding: 1.5rem 1.8rem 4.5rem !important;
+  }
+  .liquid-glass-paddle {
+    width: 50px;
+    height: 100px;
+    font-size: 1.6rem;
+  }
+  .map-section-inner {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    padding: 0 1rem !important;
+  }
+}
+
 @media (max-width: 900px) {
   .map-section-inner {
     grid-template-columns: 1fr;
@@ -1905,43 +1982,57 @@ body {
     padding: 1rem !important;
   }
 
-  /* Reader Deck Modal (Samsung M05 Optimized) */
+  /* Reader Deck Modal (Samsung M05 / Android / iOS Optimized) */
   .deck-modal-card {
-    width: 96vw !important;
-    height: 92vh !important;
-    max-height: 92vh !important;
-    border-radius: 16px !important;
-    margin: auto !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    height: 100dvh !important; /* Dynamic viewport height for mobile browsers */
+    max-height: 100vh !important;
+    max-height: 100dvh !important;
+    border-radius: 0 !important; /* Full-screen native app feel on phone */
+    margin: 0 !important;
+  }
+  .modal-backdrop {
+    padding: 0 !important;
+  }
+  /* Show mobile deck header, hide desktop floating controls */
+  .mobile-deck-header {
+    display: flex !important;
+  }
+  .desktop-only-control {
+    display: none !important;
+  }
+  /* Scroll body fills remaining space below mobile header */
+  .deck-scroll-body {
+    height: calc(100% - 50px) !important;
+    max-height: calc(100vh - 50px) !important;
+    max-height: calc(100dvh - 50px) !important;
   }
   .deck-cover-parallax {
-    height: 170px !important;
+    height: 180px !important;
   }
-  .deck-content-fade {
-    padding: 1.2rem 1.1rem 6rem 1.1rem !important;
+  .deck-content-body {
+    padding: 1rem 0.9rem 6rem 0.9rem !important;
   }
-  .deck-content-fade h2 {
-    font-size: 1.4rem !important;
+  .deck-content-body h2 {
+    font-size: 1.3rem !important;
     line-height: 1.32 !important;
-  }
-  .liquid-glass-close {
-    top: 0.6rem !important;
-    right: 0.6rem !important;
-    width: 34px !important;
-    height: 34px !important;
-    font-size: 1.2rem !important;
-  }
-  .liquid-glass-bookmark {
-    top: 0.6rem !important;
-    right: 3.2rem !important;
-    font-size: 0.72rem !important;
-    padding: 0.35rem 0.7rem !important;
-  }
-  .liquid-glass-nav-container {
-    top: 0.6rem !important;
-    left: 0.6rem !important;
   }
   .liquid-glass-paddle {
     display: none !important; /* Hide desktop side arrows on mobile touch screens */
+  }
+  /* Touch target compliance — minimum 44px for all interactive elements */
+  .mobile-deck-bookmark,
+  .mobile-deck-close {
+    min-width: 44px !important;
+    min-height: 44px !important;
+  }
+  .btn-icon {
+    min-width: 44px !important;
+    min-height: 44px !important;
+  }
+  .tab-btn {
+    min-height: 44px !important;
   }
 
   /* Floating Bottom Audio Player Widget */
@@ -1966,5 +2057,22 @@ body {
   .hands-free-pill {
     font-size: 0.64rem !important;
     padding: 0.15rem 0.4rem !important;
+  }
+}
+
+/* Safe Area Insets for Notched Phones (iPhone X+, Android with display cutouts) */
+@supports (padding: env(safe-area-inset-top)) {
+  @media (max-width: 640px) {
+    .mobile-deck-header {
+      padding-top: env(safe-area-inset-top) !important;
+      height: calc(50px + env(safe-area-inset-top)) !important;
+    }
+    .deck-scroll-body {
+      height: calc(100% - 50px - env(safe-area-inset-top)) !important;
+      padding-bottom: env(safe-area-inset-bottom) !important;
+    }
+    .audio-player-widget {
+      bottom: calc(0.5rem + env(safe-area-inset-bottom)) !important;
+    }
   }
 }

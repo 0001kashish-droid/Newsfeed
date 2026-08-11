@@ -33,12 +33,20 @@ if articles:
     print(f"       Category Breakdown: {dict(categories)}")
     print(f"       Region Breakdown: {dict(regions)}")
 
-    # Check for max source dominance (no source should exceed 40%)
+    # Check for max source dominance (no individual source should exceed 10%)
     top_src, top_count = sources.most_common(1)[0]
-    if top_count / len(articles) > 0.40:
+    if top_count / len(articles) > 0.15:
         warnings.append(f"Source dominance alert: {top_src} accounts for {top_count/len(articles)*100:.1f}%")
     else:
         print(f"[PASS] Source diversity balanced (max source {top_src} at {top_count/len(articles)*100:.1f}%)")
+
+    # Check BBC brand family total (all BBC-* sub-brands combined should be ≤15%)
+    bbc_total = sum(c for s, c in sources.items() if 'BBC' in s or 'bbc' in s)
+    bbc_pct = bbc_total / len(articles) * 100 if articles else 0
+    if bbc_pct > 18:
+        warnings.append(f"BBC family dominance: {bbc_total} articles ({bbc_pct:.1f}%) — exceeds 18% cap")
+    else:
+        print(f"[PASS] BBC family diversity check passed ({bbc_total} articles, {bbc_pct:.1f}%)")
 
 # 2. IMAGE AVAILABILITY & HTTP STATUS AUDIT
 sample_articles = articles[:5] + [a for a in articles if a['category'] == 'Tech'][:3] + [a for a in articles if a['category'] == 'Business'][:3]
