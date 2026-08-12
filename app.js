@@ -1967,3 +1967,62 @@ function escapeJs(str) {
   if (!str) return '';
   return str.replace(/'/g, "\\'").replace(/"/g, '\\"');
 }
+
+// ==========================================================================
+// MONETIZATION MODALS ENGINE (DAILY DIGEST & SUPPORT)
+// ==========================================================================
+document.addEventListener('DOMContentLoaded', () => {
+  const newsBtn = document.getElementById('newsletterHeaderBtn');
+  const suppBtn = document.getElementById('supportHeaderBtn');
+
+  if (newsBtn) newsBtn.addEventListener('click', openNewsletterModal);
+  if (suppBtn) suppBtn.addEventListener('click', openSupportModal);
+
+  // ESC key to close monetization modals
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMonetizeModals();
+  });
+});
+
+function openNewsletterModal() {
+  const modal = document.getElementById('newsletterModal');
+  if (modal) modal.classList.add('active');
+}
+
+function openSupportModal() {
+  const modal = document.getElementById('supportModal');
+  if (modal) modal.classList.add('active');
+}
+
+function closeMonetizeModals() {
+  const m1 = document.getElementById('newsletterModal');
+  const m2 = document.getElementById('supportModal');
+  if (m1) m1.classList.remove('active');
+  if (m2) m2.classList.remove('active');
+}
+
+function handleNewsletterSubmit(e) {
+  e.preventDefault();
+  const input = document.getElementById('newsletterEmailInput');
+  const msg = document.getElementById('newsletterMsg');
+  if (!input || !input.value) return;
+
+  const email = input.value.trim();
+  let subs = JSON.parse(localStorage.getItem('nc_newsletter_subscribers') || '[]');
+  if (!subs.includes(email)) {
+    subs.push(email);
+    localStorage.setItem('nc_newsletter_subscribers', JSON.stringify(subs));
+  }
+
+  if (msg) {
+    msg.className = 'monetize-status-msg success';
+    msg.textContent = '✦ Subscribed! You will receive daily executive summaries at 8:00 AM.';
+  }
+  input.value = '';
+
+  setTimeout(() => {
+    closeMonetizeModals();
+    if (msg) msg.textContent = '';
+  }, 2500);
+}
+
