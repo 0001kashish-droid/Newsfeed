@@ -1,0 +1,43 @@
+name: Daily Digest & Feed Refresh Pipeline
+
+# Runs every day at 2:00 AM UTC (7:30 AM IST)
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch: # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  generate-digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install feedparser requests
+
+      - name: Refresh RSS feed data
+        run: python update_all_realtime_data.py
+        working-directory: ./
+        continue-on-error: true
+
+      - name: Generate daily newsletter digest
+        run: python generate_daily_newsletter.py
+        working-directory: ./
+
+      - name: Commit & push fresh data
+        run: |
+          git config user.name "News Colossal Bot"
+          git config user.email "bot@newscolossal.com"
+          git add data/news.json
+          git add -f newsletters/ || true
+          git diff --staged --quiet || git commit -m "🤖 Auto-refresh: $(date +'%Y-%m-%d %H:%M') UTC feed data + digest"
+          git push

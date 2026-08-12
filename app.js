@@ -1851,6 +1851,7 @@ function setupEventListeners() {
     if (e.key === 'Escape') {
       closeModal();
       closeShortcutModal();
+      closeMonetizeModals();
       drawerBackdrop.classList.remove('active');
     }
   });
@@ -1971,6 +1972,8 @@ function escapeJs(str) {
 // ==========================================================================
 // MONETIZATION MODALS ENGINE (DAILY DIGEST & SUPPORT)
 // ==========================================================================
+let _monetizeTimeout = null;
+
 document.addEventListener('DOMContentLoaded', () => {
   const newsBtn = document.getElementById('newsletterHeaderBtn');
   const suppBtn = document.getElementById('supportHeaderBtn');
@@ -1978,15 +1981,34 @@ document.addEventListener('DOMContentLoaded', () => {
   if (newsBtn) newsBtn.addEventListener('click', openNewsletterModal);
   if (suppBtn) suppBtn.addEventListener('click', openSupportModal);
 
-  // ESC key to close monetization modals
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeMonetizeModals();
+  // Overlay click-to-close (click on dark background dismisses modal)
+  ['newsletterModal', 'supportModal'].forEach(id => {
+    const overlay = document.getElementById(id);
+    if (overlay) {
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closeMonetizeModals();
+      });
+    }
   });
+
+  // Update subscriber count badge on load
+  updateSubCountBadge();
 });
+
+function isMonetizeModalOpen() {
+  const m1 = document.getElementById('newsletterModal');
+  const m2 = document.getElementById('supportModal');
+  return (m1 && m1.classList.contains('active')) || (m2 && m2.classList.contains('active'));
+}
 
 function openNewsletterModal() {
   const modal = document.getElementById('newsletterModal');
-  if (modal) modal.classList.add('active');
+  if (modal) {
+    modal.classList.add('active');
+    // Focus the email input for accessibility
+    const input = document.getElementById('newsletterEmailInput');
+    if (input) setTimeout(() => input.focus(), 300);
+  }
 }
 
 function openSupportModal() {
@@ -1995,10 +2017,13 @@ function openSupportModal() {
 }
 
 function closeMonetizeModals() {
+  if (!isMonetizeModalOpen()) return; // Guard: only close if actually open
   const m1 = document.getElementById('newsletterModal');
   const m2 = document.getElementById('supportModal');
   if (m1) m1.classList.remove('active');
   if (m2) m2.classList.remove('active');
+  // Cancel any pending timeout
+  if (_monetizeTimeout) { clearTimeout(_monetizeTimeout); _monetizeTimeout = null; }
 }
 
 function handleNewsletterSubmit(e) {
@@ -2008,21 +2033,54 @@ function handleNewsletterSubmit(e) {
   if (!input || !input.value) return;
 
   const email = input.value.trim();
-  let subs = JSON.parse(localStorage.getItem('nc_newsletter_subscribers') || '[]');
-  if (!subs.includes(email)) {
-    subs.push(email);
-    localStorage.setItem('nc_newsletter_subscribers', JSON.stringify(subs));
+  if (!email || !email.includes('@') || !email.includes('.')) {
+    if (msg) {
+      msg.className = 'monetize-status-msg';
+      msg.style.color = '#ef4444';
+      msg.textContent = 'Please enter a valid email address.';
+    }
+    return;
   }
+
+  let subs = JSON.parse(localStorage.getItem('nc_newsletter_subscribers') || '[]');
+  if (subs.includes(email)) {
+    if (msg) {
+      msg.className = 'monetize-status-msg';
+      msg.style.color = '#f59e0b';
+      msg.textContent = 'You are already subscribed!';
+    }
+    return;
+  }
+
+  subs.push(email);
+  localStorage.setItem('nc_newsletter_subscribers', JSON.stringify(subs));
 
   if (msg) {
     msg.className = 'monetize-status-msg success';
-    msg.textContent = '✦ Subscribed! You will receive daily executive summaries at 8:00 AM.';
+    msg.style.color = '';
+    msg.textContent = '✦ Subscribed! You will receive daily executive summaries.';
   }
   input.value = '';
+  updateSubCountBadge();
 
-  setTimeout(() => {
+  _monetizeTimeout = setTimeout(() => {
     closeMonetizeModals();
-    if (msg) msg.textContent = '';
+    if (msg) { msg.textContent = ''; msg.style.color = ''; }
+    _monetizeTimeout = null;
   }, 2500);
 }
+
+function updateSubCountBadge() {
+  const subs = JSON.parse(localStorage.getItem('nc_newsletter_subscribers') || '[]');
+  const badge = document.getElementById('subCountBadge');
+  if (badge) {
+    if (subs.length > 0) {
+      badge.textContent = subs.length;
+      badge.style.display = 'inline';
+    } else {
+      badge.style.display = 'none';
+    }
+  }
+}
+
 

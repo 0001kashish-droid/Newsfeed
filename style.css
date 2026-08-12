@@ -2085,6 +2085,7 @@ body {
   align-items: center;
   gap: 0.4rem;
   padding: 0.45rem 0.85rem;
+  min-height: 36px;
   border-radius: var(--radius-full);
   background: rgba(0, 242, 254, 0.08);
   border: 1px solid rgba(0, 242, 254, 0.25);
@@ -2119,26 +2120,40 @@ body {
   box-shadow: 0 4px 16px rgba(245, 158, 11, 0.25);
 }
 
+/* Light theme adaptation for monetize buttons */
+[data-theme="light"] .liquid-glass-monetize-btn {
+  background: rgba(2, 132, 199, 0.08);
+  border-color: rgba(2, 132, 199, 0.25);
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.1);
+}
+[data-theme="light"] .liquid-glass-monetize-btn:hover {
+  background: rgba(2, 132, 199, 0.15);
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.2);
+}
+[data-theme="light"] .liquid-glass-monetize-btn.support-pill {
+  background: rgba(217, 119, 6, 0.08);
+  border-color: rgba(217, 119, 6, 0.25);
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.1);
+}
+
 @media (max-width: 768px) {
-  .monetize-btn-text {
-    display: none;
-  }
+  .monetize-btn-text { display: none; }
   .liquid-glass-monetize-btn {
-    padding: 0.4rem 0.6rem;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0.5rem;
+    justify-content: center;
   }
 }
 
 /* Monetization Glass Overlay & Modal */
 .monetize-modal-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(7, 9, 14, 0.75);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  z-index: 10000;
+  z-index: 9500;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2146,8 +2161,11 @@ body {
   pointer-events: none;
   transition: opacity 0.3s ease;
   padding: 1.5rem;
+  cursor: pointer;
 }
-
+[data-theme="light"] .monetize-modal-overlay {
+  background: rgba(0, 0, 0, 0.45);
+}
 .monetize-modal-overlay.active {
   opacity: 1;
   pointer-events: auto;
@@ -2157,186 +2175,139 @@ body {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
-  width: 100%;
-  max-width: 460px;
+  width: 100%; max-width: 460px;
   padding: 2.2rem 2rem;
   position: relative;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
   text-align: center;
   transform: scale(0.94);
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: default;
 }
-
+[data-theme="light"] .monetize-modal-card {
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
 .monetize-modal-overlay.active .monetize-modal-card {
   transform: scale(1);
 }
 
 .monetize-modal-close {
-  position: absolute;
-  top: 1rem;
-  right: 1.2rem;
-  background: transparent;
-  border: none;
+  position: absolute; top: 1rem; right: 1.2rem;
+  background: transparent; border: none;
   color: var(--text-muted);
-  font-size: 1.5rem;
-  cursor: pointer;
-  width: 32px;
-  height: 32px;
+  font-size: 1.5rem; cursor: pointer;
+  width: 36px; height: 36px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; align-items: center; justify-content: center;
   transition: background 0.2s ease;
 }
-
 .monetize-modal-close:hover {
   background: var(--bg-surface-elevated);
   color: var(--text-primary);
 }
 
-.monetize-icon {
-  font-size: 2.8rem;
-  margin-bottom: 0.8rem;
-  line-height: 1;
-}
-
+.monetize-icon { font-size: 2.8rem; margin-bottom: 0.8rem; line-height: 1; }
 .monetize-title {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--text-primary);
-  margin-bottom: 0.6rem;
+  font-size: 1.5rem; font-weight: 800;
+  color: var(--text-primary); margin-bottom: 0.6rem;
 }
-
 .monetize-desc {
-  font-size: 0.88rem;
-  color: var(--text-muted);
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
+  font-size: 0.88rem; color: var(--text-muted);
+  line-height: 1.5; margin-bottom: 1.5rem;
 }
 
-.monetize-input-group {
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
+.monetize-input-group { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
 .monetize-input {
-  flex: 1;
+  flex: 1; min-width: 0;
   background: var(--bg-surface-elevated);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 0.75rem 1rem;
   color: var(--text-primary);
-  font-size: 0.88rem;
-  outline: none;
+  font-size: 0.88rem; outline: none;
   transition: border-color 0.2s ease;
 }
-
-.monetize-input:focus {
-  border-color: var(--accent-cyan);
-}
+.monetize-input:focus { border-color: var(--accent-cyan); }
 
 .monetize-submit-btn {
-  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
-  border: none;
-  color: #07090e;
-  font-weight: 800;
-  font-size: 0.88rem;
+  background: linear-gradient(135deg, var(--accent-cyan) 0%, #4facfe 100%);
+  border: none; color: #fff;
+  font-weight: 800; font-size: 0.88rem;
   padding: 0.75rem 1.25rem;
   border-radius: var(--radius-md);
   cursor: pointer;
   transition: opacity 0.2s ease, transform 0.2s ease;
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-flex; align-items: center; justify-content: center;
+  white-space: nowrap;
 }
+[data-theme="dark"] .monetize-submit-btn { color: #07090e; }
+.monetize-submit-btn:hover { opacity: 0.92; transform: translateY(-1px); }
 
-.monetize-submit-btn:hover {
-  opacity: 0.92;
-  transform: translateY(-1px);
-}
-
-.monetize-status-msg {
-  font-size: 0.82rem;
-  margin-top: 0.5rem;
-  min-height: 1.2rem;
-}
-
-.monetize-status-msg.success {
-  color: #10b981;
-  font-weight: 700;
-}
+.monetize-status-msg { font-size: 0.82rem; margin-top: 0.5rem; min-height: 1.2rem; }
+.monetize-status-msg.success { color: #10b981; font-weight: 700; }
 
 .monetize-footer-note {
-  margin-top: 1.4rem;
-  font-size: 0.8rem;
+  margin-top: 1.4rem; font-size: 0.8rem;
   color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.35rem;
+  display: flex; align-items: center; justify-content: center; gap: 0.35rem;
 }
+.monetize-link { color: var(--accent-cyan); text-decoration: none; font-weight: 700; }
+.monetize-link:hover { text-decoration: underline; }
 
-.monetize-link {
-  color: var(--accent-cyan);
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.monetize-link:hover {
-  text-decoration: underline;
+.monetize-sub-count {
+  background: var(--accent-cyan); color: #07090e;
+  font-size: 0.65rem; font-weight: 800;
+  padding: 0.1rem 0.4rem; border-radius: var(--radius-full);
+  margin-left: 0.2rem;
 }
 
 /* Tip Grid */
 .monetize-tip-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.75rem;
-  margin-bottom: 1.4rem;
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem; margin-bottom: 1.4rem;
 }
-
 .tip-card {
   background: var(--bg-surface-elevated);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  padding: 0.9rem 0.5rem;
-  text-decoration: none;
+  padding: 0.9rem 0.5rem; text-decoration: none;
   color: var(--text-primary);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.3rem;
+  display: flex; flex-direction: column; align-items: center; gap: 0.3rem;
   transition: all 0.2s ease;
 }
-
 .tip-card:hover {
-  border-color: #f59e0b;
-  transform: translateY(-2px);
+  border-color: #f59e0b; transform: translateY(-2px);
   background: rgba(245, 158, 11, 0.08);
 }
-
 .tip-card.highlight {
   border-color: rgba(245, 158, 11, 0.5);
   background: rgba(245, 158, 11, 0.06);
 }
-
-.tip-amount {
-  font-size: 1.2rem;
-  font-weight: 800;
-  color: #f59e0b;
-}
-
-.tip-label {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  font-weight: 600;
-}
-
+.tip-amount { font-size: 1.2rem; font-weight: 800; color: #f59e0b; }
+.tip-label { font-size: 0.75rem; color: var(--text-muted); font-weight: 600; }
 .tip-direct-btn {
   width: 100%;
   background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
   color: #fff;
+}
+
+/* Mobile Responsive Monetization Modals */
+@media (max-width: 480px) {
+  .monetize-modal-overlay { padding: 1rem; align-items: flex-end; }
+  .monetize-modal-card {
+    padding: 1.6rem 1.2rem;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    max-width: 100%;
+  }
+  .monetize-icon { font-size: 2.2rem; }
+  .monetize-title { font-size: 1.25rem; }
+  .monetize-desc { font-size: 0.82rem; margin-bottom: 1.2rem; }
+  .monetize-input-group { flex-direction: column; }
+  .monetize-submit-btn { width: 100%; justify-content: center; }
+  .tip-card { padding: 0.7rem 0.3rem; }
+  .tip-amount { font-size: 1rem; }
+  .tip-label { font-size: 0.68rem; }
 }
 

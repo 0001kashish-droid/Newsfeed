@@ -92,7 +92,7 @@
       <!-- Action Controls -->
       <div class="header-actions">
         <button id="newsletterHeaderBtn" class="liquid-glass-monetize-btn" title="Subscribe to Free Daily Executive Digest" aria-label="Daily Digest Subscription">
-          <span>📧</span> <span class="monetize-btn-text">Daily Digest</span>
+          <span>📧</span> <span class="monetize-btn-text">Daily Digest</span><span id="subCountBadge" class="monetize-sub-count" style="display:none;"></span>
         </button>
 
         <button id="supportHeaderBtn" class="liquid-glass-monetize-btn support-pill" title="Support News Colossal (Ad-Free)" aria-label="Support News Colossal">
@@ -335,16 +335,16 @@
   </div>
 
   <!-- Daily Digest Newsletter Subscription Glass Modal -->
-  <div class="monetize-modal-overlay" id="newsletterModal">
+  <div class="monetize-modal-overlay" id="newsletterModal" role="dialog" aria-modal="true" aria-labelledby="newsletterTitle">
     <div class="monetize-modal-card">
-      <button class="monetize-modal-close" onclick="closeMonetizeModals()">&times;</button>
+      <button class="monetize-modal-close" onclick="closeMonetizeModals()" aria-label="Close modal">&times;</button>
       <div class="monetize-icon">📧</div>
-      <h3 class="monetize-title">Daily Executive Digest</h3>
+      <h3 class="monetize-title" id="newsletterTitle">Daily Executive Digest</h3>
       <p class="monetize-desc">Get the Top 5 noise-free macro stories delivered straight to your inbox every morning at 8:00 AM. 100% free forever.</p>
       
       <form id="newsletterForm" onsubmit="handleNewsletterSubmit(event)">
         <div class="monetize-input-group">
-          <input type="email" id="newsletterEmailInput" placeholder="Enter your email address..." required class="monetize-input" />
+          <input type="email" id="newsletterEmailInput" placeholder="Enter your email address..." required class="monetize-input" aria-label="Email address for newsletter" />
           <button type="submit" class="monetize-submit-btn">Subscribe Free ↗</button>
         </div>
       </form>
@@ -358,11 +358,11 @@
   </div>
 
   <!-- Support / Tip Glass Modal -->
-  <div class="monetize-modal-overlay" id="supportModal">
+  <div class="monetize-modal-overlay" id="supportModal" role="dialog" aria-modal="true" aria-labelledby="supportTitle">
     <div class="monetize-modal-card">
-      <button class="monetize-modal-close" onclick="closeMonetizeModals()">&times;</button>
+      <button class="monetize-modal-close" onclick="closeMonetizeModals()" aria-label="Close modal">&times;</button>
       <div class="monetize-icon">☕</div>
-      <h3 class="monetize-title">Support News Colossal</h3>
+      <h3 class="monetize-title" id="supportTitle">Support News Colossal</h3>
       <p class="monetize-desc">News Colossal is an independent, 100% ad-free global news command center. If you enjoy our fast visual platform, consider supporting our server & hosting costs!</p>
       
       <div class="monetize-tip-grid">
