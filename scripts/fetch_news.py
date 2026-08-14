@@ -4,141 +4,58 @@ import re
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
+import random
 
 SOURCES = [
-    # World Feeds
-    {
-        "id": "bbc-world",
-        "name": "BBC News",
-        "category": "World",
-        "region": "Global",
-        "url": "https://feeds.bbci.co.uk/news/rss.xml",
-        "logo": "BBC"
-    },
-    {
-        "id": "bbc-europe",
-        "name": "BBC Europe",
-        "category": "World",
-        "region": "Europe",
-        "url": "https://feeds.bbci.co.uk/news/world/europe/rss.xml",
-        "logo": "BBC"
-    },
-    {
-        "id": "bbc-asia",
-        "name": "BBC Asia-Pacific",
-        "category": "World",
-        "region": "Asia-Pacific",
-        "url": "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
-        "logo": "BBC"
-    },
-    {
-        "id": "reuters-world",
-        "name": "Reuters",
-        "category": "World",
-        "region": "Global",
-        "url": "https://news.google.com/rss/search?q=site:reuters.com+when:24h&hl=en-US&gl=US&ceid=US:en",
-        "logo": "RTR"
-    },
-    {
-        "id": "nyt-world",
-        "name": "New York Times",
-        "category": "World",
-        "region": "North America",
-        "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
-        "logo": "NYT"
-    },
-    {
-        "id": "aljazeera",
-        "name": "Al Jazeera",
-        "category": "World",
-        "region": "Middle East",
-        "url": "https://www.aljazeera.com/xml/rss/all.xml",
-        "logo": "AJ"
-    },
-    # Tech Feeds (Ars Technica, CNET, The Verge — 100% Real HD Photography)
-    {
-        "id": "arstechnica",
-        "name": "Ars Technica",
-        "category": "Tech",
-        "region": "Global",
-        "url": "https://feeds.arstechnica.com/arstechnica/index",
-        "logo": "ARS"
-    },
-    {
-        "id": "cnet",
-        "name": "CNET",
-        "category": "Tech",
-        "region": "Global",
-        "url": "https://www.cnet.com/rss/news/",
-        "logo": "CNET"
-    },
-    {
-        "id": "theverge",
-        "name": "The Verge",
-        "category": "Tech",
-        "region": "North America",
-        "url": "https://www.theverge.com/rss/index.xml",
-        "logo": "VRG"
-    },
-    {
-        "id": "rtings",
-        "name": "RTINGS",
-        "category": "Tech",
-        "region": "North America",
-        "url": "https://news.google.com/rss/search?q=site:rtings.com+when:7d&hl=en-US&gl=US&ceid=US:en",
-        "logo": "RTG"
-    },
-    # National & India Feeds (100% Real HD Images)
-    {
-        "id": "hindustan-times",
-        "name": "Hindustan Times",
-        "category": "National",
-        "region": "India",
-        "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml",
-        "logo": "HT"
-    },
-    {
-        "id": "indian-express",
-        "name": "Indian Express",
-        "category": "National",
-        "region": "India",
-        "url": "https://indianexpress.com/feed/",
-        "logo": "IX"
-    },
-    {
-        "id": "the-hindu",
-        "name": "The Hindu",
-        "category": "National",
-        "region": "India",
-        "url": "https://www.thehindu.com/news/national/feeder/default.rss",
-        "logo": "TH"
-    },
-    {
-        "id": "npr-national",
-        "name": "NPR News",
-        "category": "National",
-        "region": "North America",
-        "url": "https://feeds.npr.org/1001/rss.xml",
-        "logo": "NPR"
-    },
-    # Business Feeds
-    {
-        "id": "cnbc-business",
-        "name": "CNBC",
-        "category": "Business",
-        "region": "Global",
-        "url": "https://news.google.com/rss/search?q=site:cnbc.com+finance+when:24h&hl=en-US&gl=US&ceid=US:en",
-        "logo": "CNBC"
-    },
-    {
-        "id": "wsj-markets",
-        "name": "WSJ Markets",
-        "category": "Business",
-        "region": "North America",
-        "url": "https://news.google.com/rss/search?q=site:wsj.com+markets+when:24h&hl=en-US&gl=US&ceid=US:en",
-        "logo": "WSJ"
-    }
+    # ===================== WORLD / GLOBAL =====================
+    {"id": "bbc-world",      "name": "BBC News",       "category": "World", "region": "Global",        "url": "https://feeds.bbci.co.uk/news/rss.xml",                                                   "logo": "BBC"},
+    {"id": "reuters-world",  "name": "Reuters",        "category": "World", "region": "Global",        "url": "https://news.google.com/rss/search?q=site:reuters.com+when:24h&hl=en-US&gl=US&ceid=US:en", "logo": "RTR"},
+    {"id": "guardian-world", "name": "The Guardian",   "category": "World", "region": "Global",        "url": "https://www.theguardian.com/world/rss",                                                   "logo": "TG"},
+
+    # ===================== ASIA-PACIFIC =====================
+    {"id": "bbc-asia",       "name": "BBC Asia",       "category": "World", "region": "Asia-Pacific",  "url": "https://feeds.bbci.co.uk/news/world/asia/rss.xml",                                        "logo": "BBC"},
+    {"id": "guardian-asia",  "name": "The Guardian",   "category": "World", "region": "Asia-Pacific",  "url": "https://www.theguardian.com/world/asia-pacific/rss",                                      "logo": "TG"},
+    {"id": "scmp-asia",      "name": "SCMP",           "category": "World", "region": "Asia-Pacific",  "url": "https://www.scmp.com/rss/91/feed",                                                        "logo": "SCMP"},
+    {"id": "nyt-asia",       "name": "New York Times", "category": "World", "region": "Asia-Pacific",  "url": "https://rss.nytimes.com/services/xml/rss/nyt/AsiaPacific.xml",                            "logo": "NYT"},
+
+    # ===================== EUROPE =====================
+    {"id": "bbc-europe",     "name": "BBC Europe",     "category": "World", "region": "Europe",        "url": "https://feeds.bbci.co.uk/news/world/europe/rss.xml",                                      "logo": "BBC"},
+    {"id": "guardian-eu",    "name": "The Guardian",   "category": "World", "region": "Europe",        "url": "https://www.theguardian.com/world/europe-news/rss",                                       "logo": "TG"},
+    {"id": "france24-eu",    "name": "France 24",      "category": "World", "region": "Europe",        "url": "https://www.france24.com/en/europe/rss",                                                  "logo": "F24"},
+    {"id": "dw-eu",          "name": "DW News",        "category": "World", "region": "Europe",        "url": "https://rss.dw.com/rdf/rss-en-eu",                                                        "logo": "DW"},
+
+    # ===================== MIDDLE EAST =====================
+    {"id": "aljazeera",      "name": "Al Jazeera",     "category": "World", "region": "Middle East",   "url": "https://www.aljazeera.com/xml/rss/all.xml",                                               "logo": "AJ"},
+    {"id": "bbc-mideast",    "name": "BBC Middle East","category": "World", "region": "Middle East",   "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",                                 "logo": "BBC"},
+    {"id": "france24-me",    "name": "France 24",      "category": "World", "region": "Middle East",   "url": "https://www.france24.com/en/middle-east/rss",                                             "logo": "F24"},
+
+    # ===================== NORTH AMERICA =====================
+    {"id": "nyt-world",      "name": "New York Times", "category": "World", "region": "North America", "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",                                  "logo": "NYT"},
+    {"id": "npr-national",   "name": "NPR News",       "category": "National","region": "North America","url": "https://feeds.npr.org/1001/rss.xml",                                                    "logo": "NPR"},
+    {"id": "bbc-us",         "name": "BBC US",         "category": "National","region": "North America","url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml",                              "logo": "BBC"},
+
+    # ===================== INDIA =====================
+    {"id": "hindustan-times","name": "Hindustan Times", "category": "National","region": "India",       "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml",                         "logo": "HT"},
+    {"id": "indian-express", "name": "Indian Express",  "category": "National","region": "India",       "url": "https://indianexpress.com/feed/",                                                        "logo": "IX"},
+    {"id": "the-hindu",      "name": "The Hindu",       "category": "National","region": "India",       "url": "https://www.thehindu.com/news/national/feeder/default.rss",                               "logo": "TH"},
+
+    # ===================== TECH =====================
+    {"id": "arstechnica",    "name": "Ars Technica",    "category": "Tech",  "region": "Global",        "url": "https://feeds.arstechnica.com/arstechnica/index",                                        "logo": "ARS"},
+    {"id": "cnet",           "name": "CNET",            "category": "Tech",  "region": "Global",        "url": "https://www.cnet.com/rss/news/",                                                         "logo": "CNET"},
+    {"id": "theverge",       "name": "The Verge",       "category": "Tech",  "region": "North America", "url": "https://www.theverge.com/rss/index.xml",                                                 "logo": "VRG"},
+    {"id": "techcrunch",     "name": "TechCrunch",      "category": "Tech",  "region": "North America", "url": "https://techcrunch.com/feed/",                                                           "logo": "TC"},
+
+    # ===================== BUSINESS =====================
+    {"id": "cnbc-business",  "name": "CNBC",            "category": "Business","region": "Global",      "url": "https://news.google.com/rss/search?q=site:cnbc.com+finance+when:24h&hl=en-US&gl=US&ceid=US:en","logo": "CNBC"},
+    {"id": "wsj-markets",    "name": "WSJ Markets",     "category": "Business","region": "North America","url": "https://news.google.com/rss/search?q=site:wsj.com+markets+when:24h&hl=en-US&gl=US&ceid=US:en","logo": "WSJ"},
+    {"id": "ht-business",    "name": "Hindustan Times",  "category": "Business","region": "India",      "url": "https://www.hindustantimes.com/feeds/rss/business/rssfeed.xml",                           "logo": "HT"},
 ]
+
+# Brand family mapping for diversity caps
+BRAND_FAMILIES = {
+    "BBC News": "BBC", "BBC Asia": "BBC", "BBC Europe": "BBC", "BBC Middle East": "BBC", "BBC US": "BBC",
+    "The Guardian": "Guardian",
+}
 
 # Ultra 4K Curated Photography for Fallbacks
 CRISP_IMAGES = {
@@ -193,10 +110,9 @@ def upscale_image_url(url):
         url = re.sub(r'\?w=\d+.*$', '', url)
     elif 'theverge.com' in url or 'platform.theverge.com' in url:
         url = re.sub(r'\?quality=.*$', '', url)
-        
-    # 4. Generic query params upscaling
-    elif 'wp-content' in url or 'techcrunch' in url:
-        url = re.sub(r'w=\d+', 'w=1600', url)
+    
+    # 4. Generic cleanup
+    if 'width=' in url:
         url = re.sub(r'width=\d+', 'width=1600', url)
         url = re.sub(r'resize=\d+,\d+', 'resize=1600,900', url)
         
@@ -237,18 +153,37 @@ def generate_annotation(title, description):
         "why": bullet2
     }
 
+# Context-aware related sources per region
+REGION_SOURCE_POOL = {
+    'Global':        [('Reuters', 'https://www.reuters.com'), ('The Guardian', 'https://www.theguardian.com'), ('BBC News', 'https://www.bbc.com/news'), ('AP News', 'https://apnews.com')],
+    'Asia-Pacific':  [('SCMP', 'https://www.scmp.com'), ('BBC Asia', 'https://www.bbc.com/news/world/asia'), ('The Guardian', 'https://www.theguardian.com/world/asia-pacific'), ('NYT', 'https://www.nytimes.com')],
+    'Middle East':   [('Al Jazeera', 'https://www.aljazeera.com'), ('BBC Middle East', 'https://www.bbc.com/news/world/middle_east'), ('France 24', 'https://www.france24.com')],
+    'Europe':        [('The Guardian', 'https://www.theguardian.com/world/europe-news'), ('BBC Europe', 'https://www.bbc.com/news/world/europe'), ('DW News', 'https://www.dw.com'), ('France 24', 'https://www.france24.com')],
+    'North America': [('NPR', 'https://www.npr.org'), ('NYT', 'https://www.nytimes.com'), ('BBC US', 'https://www.bbc.com/news/world/us-and-canada')],
+    'India':         [('The Hindu', 'https://www.thehindu.com'), ('Hindustan Times', 'https://www.hindustantimes.com'), ('Indian Express', 'https://indianexpress.com')],
+}
+
+def get_related_sources(article_source, article_region):
+    """Pick 2-3 related sources from the same region, excluding the article's own source."""
+    pool = REGION_SOURCE_POOL.get(article_region, REGION_SOURCE_POOL['Global'])
+    filtered = [s for s in pool if s[0] != article_source and s[0] not in article_source]
+    if len(filtered) < 2:
+        filtered = pool[:3]  # Fallback
+    selected = random.sample(filtered, min(3, len(filtered)))
+    return [{"name": s[0], "url": s[1]} for s in selected]
+
 def fetch_rss(source):
     items = []
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) NewsColossalBot/1.0'}
     req = urllib.request.Request(source['url'], headers=headers)
     try:
-        with urllib.request.urlopen(req, timeout=8) as resp:
+        with urllib.request.urlopen(req, timeout=10) as resp:
             content = resp.read()
             root = ET.fromstring(content)
             
             channel_items = root.findall('.//item') or root.findall('.//{http://www.w3.org/2005/Atom}entry')
             
-            for index, item in enumerate(channel_items[:12]):
+            for index, item in enumerate(channel_items[:10]):
                 title = clean_html(item.findtext('title') or item.findtext('{http://www.w3.org/2005/Atom}title') or "")
                 link = item.findtext('link') or ""
                 if not link:
@@ -278,15 +213,59 @@ def fetch_rss(source):
                     "imageUrl": img_url,
                     "annotation": annotation,
                     "readTime": f"{max(2, len(title.split()) // 4)} min read",
-                    "relatedSources": [
-                        {"name": "BBC News", "url": "https://www.bbc.com/news"},
-                        {"name": "Reuters", "url": "https://www.reuters.com"},
-                        {"name": "Hindustan Times", "url": "https://www.hindustantimes.com"}
-                    ]
+                    "relatedSources": get_related_sources(source['name'], source['region'])
                 })
     except Exception as e:
-        print(f"Error fetching {source['name']}: {e}")
+        print(f"  [WARN] Error fetching {source['name']}: {e}")
     return items
+
+
+def balance_source_diversity(all_articles):
+    """Enforce source diversity: cap per source per region, then interleave."""
+    MAX_PER_SOURCE_PER_REGION = 6
+    MAX_PER_BRAND_FAMILY = 18
+
+    # Phase 1: Cap per source per region
+    region_source_counts = {}
+    capped = []
+    for art in all_articles:
+        key = (art['region'], art['source'])
+        region_source_counts[key] = region_source_counts.get(key, 0) + 1
+        if region_source_counts[key] <= MAX_PER_SOURCE_PER_REGION:
+            capped.append(art)
+
+    # Phase 2: Cap per brand family globally
+    brand_counts = {}
+    brand_capped = []
+    for art in capped:
+        brand = BRAND_FAMILIES.get(art['source'], art['source'])
+        brand_counts[brand] = brand_counts.get(brand, 0) + 1
+        if brand_counts[brand] <= MAX_PER_BRAND_FAMILY:
+            brand_capped.append(art)
+
+    # Phase 3: Interleave sources within each region (avoid clustering)
+    by_region = {}
+    for art in brand_capped:
+        by_region.setdefault(art['region'], []).append(art)
+
+    interleaved = []
+    for region, articles in by_region.items():
+        # Group by source
+        source_groups = {}
+        for art in articles:
+            source_groups.setdefault(art['source'], []).append(art)
+        
+        # Round-robin interleave
+        queues = list(source_groups.values())
+        random.shuffle(queues)
+        idx = 0
+        while any(q for q in queues):
+            for q in queues:
+                if q:
+                    interleaved.append(q.pop(0))
+    
+    return interleaved
+
 
 def main():
     all_news = []
@@ -294,19 +273,34 @@ def main():
         print(f"Fetching {src['name']} ({src['category']} - {src['region']})...")
         news_items = fetch_rss(src)
         all_news.extend(news_items)
-        
-    print(f"Total articles fetched: {len(all_news)}")
+        print(f"  -> Got {len(news_items)} articles")
+    
+    print(f"\nRaw total: {len(all_news)}")
+    
+    # Apply diversity balancing
+    balanced = balance_source_diversity(all_news)
+    print(f"After diversity balancing: {len(balanced)}")
+    
+    # Print diversity audit
+    from collections import Counter
+    for region in sorted(set(a['region'] for a in balanced)):
+        region_arts = [a for a in balanced if a['region'] == region]
+        counts = Counter(a['source'] for a in region_arts)
+        sources_str = ", ".join(f"{s}:{c}" for s, c in counts.most_common())
+        print(f"  {region}: {len(region_arts)} articles [{sources_str}]")
     
     output = {
         "lastUpdated": datetime.now(timezone.utc).isoformat(),
-        "total": len(all_news),
-        "articles": all_news
+        "total": len(balanced),
+        "articles": balanced
     }
     
     os.makedirs("data", exist_ok=True)
     with open("data/news.json", "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
-    print("Saved HD dataset to data/news.json successfully!")
+    print(f"\nSaved {len(balanced)} articles to data/news.json successfully!")
 
 if __name__ == "__main__":
     main()
+
+
