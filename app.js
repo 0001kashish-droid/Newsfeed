@@ -472,7 +472,7 @@ async function loadData(forceBustCache = false) {
     console.warn('Local news.json missing, triggering fallback client fetch:', err);
     await fetchClientFallback();
   }
-  preloadAllImages();
+  preloadHeroImages();
   filterAndRender();
   renderTicker();
   updateBookmarkBadge();
@@ -514,15 +514,30 @@ function showToastNotification(message) {
   }, 2800);
 }
 
-function preloadAllImages() {
-  state.articles.forEach(art => {
-    if (!canvasImages[art.id]) {
-      const img = new Image();
-      img.crossOrigin = 'Anonymous';
-      img.onerror = () => { img.src = DEFAULT_FALLBACK_IMG; };
-      img.src = art.imageUrl;
-      canvasImages[art.id] = img;
-    }
+function ensureImageLoaded(art) {
+  if (!art) return null;
+  if (!canvasImages[art.id]) {
+    const img = new Image();
+    img.crossOrigin = 'Anonymous';
+    img.decoding = 'async';
+    img.onerror = () => { img.src = DEFAULT_FALLBACK_IMG; };
+    img.src = art.imageUrl || DEFAULT_FALLBACK_IMG;
+    canvasImages[art.id] = img;
+  }
+  return canvasImages[art.id];
+}
+
+function preloadHeroImages() {
+  const pool = state.filteredArticles.length > 0 ? state.filteredArticles : state.articles;
+  if (pool.length === 0) return;
+  const indices = [
+    state.heroIndex,
+    (state.heroIndex + 1) % pool.length,
+    (state.heroIndex - 1 + pool.length) % pool.length
+  ];
+  indices.forEach(idx => {
+    const art = pool[idx];
+    if (art) ensureImageLoaded(art);
   });
 }
 
@@ -586,14 +601,15 @@ function transitionHeroSlide(targetIndex) {
   const prevArt = pool[prevIndex];
   const nextArt = pool[state.heroIndex];
 
-  currentImgObj = prevArt ? canvasImages[prevArt.id] : null;
-  nextImgObj = nextArt ? canvasImages[nextArt.id] : null;
+  currentImgObj = ensureImageLoaded(prevArt);
+  nextImgObj = ensureImageLoaded(nextArt);
 
   animProgress = 0.0;
   animateCanvasTransition();
   renderHeroOverlayText(nextArt);
   renderHeroDots();
   resetProgressBar();
+  preloadHeroImages();
 }
 
 function animateCanvasTransition() {
@@ -972,6 +988,54 @@ function scrollToContent() {
   }
 }
 
+function createCardHTML(art, idx) {
+  const saved = isBookmarked(art.id);
+  const delay = Math.min(idx * 0.04, 0.4).toFixed(2);
+  const imgUrl = (art.imageUrl && !art.imageUrl.includes('photo-1526304640581-d334cdbbf45e'))
+    ? art.imageUrl
+    : getTopicImageUrl(art.title, art.category, art.region);
+
+  return `
+    <article class="news-card" data-id="${art.id}" style="animation-delay: ${delay}s; --card-index: ${idx};" onclick="openModal('${art.id}')">
+      <div class="card-sheen"></div>
+      <div class="card-thumb-box">
+        <img src="${imgUrl}" alt="${escapeHtml(art.title)}" class="card-thumb" width="640" height="360" loading="lazy" decoding="async" onerror="this.onerror=null; this.src=getTopicImageUrl('${escapeJs(art.title)}', '${escapeJs(art.category)}', '${escapeJs(art.region)}');" />
+        <span class="card-category">${art.category}</span>
+        <button class="bookmark-btn ${saved ? 'saved' : ''}" onclick="toggleBookmark('${art.id}', event)" title="Save Article" aria-label="Save Article">
+          ${saved ? '★' : '☆'}
+        </button>
+      </div>
+
+      <div class="card-content">
+        <div class="card-meta">
+          <span class="card-source">${art.sourceLogo} &bull; ${art.source}</span>
+          <span>${art.readTime}</span>
+        </div>
+        <h3 class="card-title">${escapeHtml(art.title)}</h3>
+
+        <!-- Crisp Annotation Preview -->
+        <div class="annotation-box">
+          <div class="annotation-title">✦ Crisp Annotation (${art.region})</div>
+          <p class="annotation-bullet">${escapeHtml(art.annotation ? art.annotation.what : art.title)}</p>
+        </div>
+
+        <!-- Dual Prominent Action Buttons: Deck Preview + Direct Source Link -->
+        <div class="card-footer" style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-top: auto; padding-top: 0.8rem; border-top: 1px solid var(--border-color);">
+          <button onclick="event.stopPropagation(); openModal('${art.id}');" class="btn-primary" style="padding: 0.45rem 0.95rem; font-size: 0.8rem;" title="Open Frosted Glass Executive Reader Deck" aria-label="Open Deck Preview">
+            ✦ Deck Preview
+          </button>
+          <a href="${art.link}" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 0.45rem 0.95rem; font-size: 0.8rem; color: var(--text-primary); border: 1px solid var(--border-color);" onclick="event.stopPropagation()" title="Read Full Story directly on ${art.source}" aria-label="Read full story on source">
+            Source ↗
+          </a>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+let _gridScrollObserver = null;
+let _currentRenderedCount = 0;
+
 // RENDER MAIN GRID WITH DUAL BUTTONS (DECK PREVIEW & DIRECT SOURCE LINK)
 function renderGrid(articles) {
   if (articles.length === 0) {
@@ -985,55 +1049,58 @@ function renderGrid(articles) {
     return;
   }
 
-  newsGrid.innerHTML = articles.map((art, idx) => {
-    const saved = isBookmarked(art.id);
-    const delay = Math.min(idx * 0.06, 0.6).toFixed(2);
-    return `
-      <!-- Tapping / clicking card background opens Executive Deck Preview -->
-      <article class="news-card" data-id="${art.id}" style="animation-delay: ${delay}s; --card-index: ${idx};" onclick="openModal('${art.id}')">
-        <div class="card-sheen"></div>
-        <div class="card-thumb-box">
-          <img src="${(art.imageUrl && !art.imageUrl.includes('photo-1526304640581-d334cdbbf45e')) ? art.imageUrl : getTopicImageUrl(art.title, art.category, art.region)}" alt="${escapeHtml(art.title)}" class="card-thumb" loading="lazy" onerror="this.onerror=null; this.src=getTopicImageUrl('${escapeJs(art.title)}', '${escapeJs(art.category)}', '${escapeJs(art.region)}');" />
-          <span class="card-category">${art.category}</span>
-          <button class="bookmark-btn ${saved ? 'saved' : ''}" onclick="toggleBookmark('${art.id}', event)" title="Save Article">
-            ${saved ? '★' : '☆'}
-          </button>
-        </div>
+  if (_gridScrollObserver) {
+    _gridScrollObserver.disconnect();
+    _gridScrollObserver = null;
+  }
 
-        <div class="card-content">
-          <div class="card-meta">
-            <span class="card-source">${art.sourceLogo} &bull; ${art.source}</span>
-            <span>${art.readTime}</span>
-          </div>
-          <h3 class="card-title">${escapeHtml(art.title)}</h3>
+  const existingSentinel = document.getElementById('gridScrollSentinel');
+  if (existingSentinel) existingSentinel.remove();
 
-          <!-- Crisp Annotation Preview -->
-          <div class="annotation-box">
-            <div class="annotation-title">✦ Crisp Annotation (${art.region})</div>
-            <p class="annotation-bullet">${escapeHtml(art.annotation.what)}</p>
-          </div>
+  // Instant First Paint batch (24 stories), dynamically loads subsequent batches on scroll
+  const INITIAL_BATCH = 24;
+  _currentRenderedCount = Math.min(articles.length, INITIAL_BATCH);
 
-          <!-- Dual Prominent Action Buttons: Deck Preview + Direct Source Link -->
-          <div class="card-footer" style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-top: auto; padding-top: 0.8rem; border-top: 1px solid var(--border-color);">
-            <button onclick="event.stopPropagation(); openModal('${art.id}');" class="btn-primary" style="padding: 0.45rem 0.95rem; font-size: 0.8rem;" title="Open Frosted Glass Executive Reader Deck">
-              ✦ Deck Preview
-            </button>
-            <a href="${art.link}" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 0.45rem 0.95rem; font-size: 0.8rem; color: var(--text-primary); border: 1px solid var(--border-color);" onclick="event.stopPropagation()" title="Read Full Story directly on ${art.source}">
-              Source ↗
-            </a>
-          </div>
-        </div>
-      </article>
-    `;
-  }).join('');
-
+  newsGrid.innerHTML = articles.slice(0, _currentRenderedCount).map((art, idx) => createCardHTML(art, idx)).join('');
   attach3DTiltListeners();
+
+  if (_currentRenderedCount < articles.length) {
+    const sentinel = document.createElement('div');
+    sentinel.id = 'gridScrollSentinel';
+    sentinel.style.cssText = 'grid-column: 1/-1; height: 30px; margin: 1rem 0; opacity: 0; pointer-events: none;';
+    newsGrid.after(sentinel);
+
+    _gridScrollObserver = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting && _currentRenderedCount < articles.length) {
+        const nextBatch = articles.slice(_currentRenderedCount, _currentRenderedCount + 16);
+        const startIndex = _currentRenderedCount;
+        _currentRenderedCount += nextBatch.length;
+
+        const tempContainer = document.createElement('div');
+        tempContainer.innerHTML = nextBatch.map((art, idx) => createCardHTML(art, startIndex + idx)).join('');
+        while (tempContainer.firstChild) {
+          newsGrid.appendChild(tempContainer.firstChild);
+        }
+
+        attach3DTiltListeners();
+
+        if (_currentRenderedCount >= articles.length) {
+          sentinel.remove();
+          _gridScrollObserver.disconnect();
+          _gridScrollObserver = null;
+        }
+      }
+    }, { rootMargin: '500px' });
+
+    _gridScrollObserver.observe(sentinel);
+  }
 }
 
 // 3D CURSOR TILT & SPECULAR SHEEN PHYSICS ENGINE
 function attach3DTiltListeners() {
-  const cards = newsGrid.querySelectorAll('.news-card');
+  const cards = newsGrid.querySelectorAll('.news-card:not([data-tilt-ready])');
   cards.forEach(card => {
+    card.setAttribute('data-tilt-ready', 'true');
     card.addEventListener('mousemove', (e) => {
       const rect = card.getBoundingClientRect();
       const x = e.clientX - rect.left;
@@ -1853,6 +1920,15 @@ function setupEventListeners() {
       closeShortcutModal();
       closeMonetizeModals();
       drawerBackdrop.classList.remove('active');
+    }
+  });
+
+  // Battery and CPU optimization: pause hero timer when tab is hidden
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      if (state.progressInterval) clearInterval(state.progressInterval);
+    } else {
+      if (state.heroPlaying) startHeroTimer();
     }
   });
 }

@@ -60,7 +60,7 @@ BRAND_FAMILIES = {
 # Ultra 4K Curated Photography for Fallbacks
 CRISP_IMAGES = {
     "World": [
-        "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=2400&q=98",
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2400&q=98",
         "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2400&q=98"
     ],
     "Tech": [
