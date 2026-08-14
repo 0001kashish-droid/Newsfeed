@@ -2,11 +2,16 @@ name: Auto-Sync News Feed
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # Runs every 30 minutes
-  workflow_dispatch: # Allows manual trigger from GitHub UI
+    - cron: '*/30 * * * *'  # Runs every 30 minutes
+  workflow_dispatch:         # Allows manual trigger from GitHub UI
 
 permissions:
   contents: write
+
+# Prevent concurrent runs that could cause push conflicts
+concurrency:
+  group: news-pipeline
+  cancel-in-progress: true
 
 jobs:
   sync-news:
@@ -14,6 +19,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -22,10 +30,19 @@ jobs:
 
       - name: Fetch Live News RSS Feeds
         run: python scripts/fetch_news.py
+        continue-on-error: false
 
       - name: Commit and Push Updated Feed
         run: |
           git config --global user.name 'NewsColossal Bot'
           git config --global user.email 'bot@newscolossal.internal'
           git add data/news.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-sync live news feeds [skip ci]" && git push)
+          # Only commit and push if there are actual changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: auto-sync live news feeds [skip ci]"
+            # Pull latest remote changes first to avoid push conflicts
+            git pull --rebase origin main
+            git push origin main
+          fi
