@@ -36,7 +36,8 @@ def generate_newsletter():
             
         md_output += f"🔗 [Read full story on {art.get('source', 'Unknown')}]({art.get('link', '#')})\n\n---\n\n"
 
-    md_output += f"*Generated automatically by News Colossal Intelligence Engine.*"
+    md_output += f"*Generated automatically by News Colossal Intelligence Engine.*\n\n"
+    md_output += f"☕ [Support on Ko-fi](https://ko-fi.com/kashishbhushan) | 📰 [Read on Substack](https://kashishbhushan.substack.com)\n"
 
     newsletters_dir = os.path.join(os.path.dirname(__file__), 'newsletters')
     os.makedirs(newsletters_dir, exist_ok=True)
