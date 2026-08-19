@@ -1880,6 +1880,24 @@ body {
 }
 
 @media (max-width: 900px) {
+  .header-inner {
+    flex-wrap: wrap !important;
+    gap: 0.6rem !important;
+  }
+  .regional-clock-pill {
+    display: none !important;
+  }
+  .search-wrapper {
+    order: 5 !important;
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 0.35rem !important;
+    display: block !important;
+  }
+  .search-shortcut {
+    display: none !important;
+  }
   .map-section-inner {
     grid-template-columns: 1fr;
   }
@@ -1901,6 +1919,7 @@ body {
   .header-inner {
     padding: 0.5rem 0.8rem !important;
     gap: 0.5rem !important;
+    flex-wrap: wrap !important;
   }
   .brand-title {
     font-size: 1.2rem !important;
@@ -1909,9 +1928,23 @@ body {
     display: none !important; /* Hide clock on small screens to avoid header clutter */
   }
   .search-wrapper {
-    order: 5;
+    order: 5 !important;
+    flex: 1 1 100% !important;
     width: 100% !important;
     max-width: 100% !important;
+    margin-top: 0.35rem !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .search-input {
+    width: 100% !important;
+    padding: 0.6rem 2.2rem 0.6rem 2.5rem !important;
+    font-size: 0.88rem !important;
+    border-radius: var(--radius-full) !important;
+  }
+  .search-shortcut {
+    display: none !important; /* Hide keyboard shortcut on mobile touch screens */
   }
   .header-actions {
     gap: 0.35rem !important;

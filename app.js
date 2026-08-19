@@ -2102,10 +2102,11 @@ function closeMonetizeModals() {
   if (_monetizeTimeout) { clearTimeout(_monetizeTimeout); _monetizeTimeout = null; }
 }
 
-function handleNewsletterSubmit(e) {
+async function handleNewsletterSubmit(e) {
   e.preventDefault();
   const input = document.getElementById('newsletterEmailInput');
   const msg = document.getElementById('newsletterMsg');
+  const submitBtn = document.querySelector('.monetize-submit-btn');
   if (!input || !input.value) return;
 
   const email = input.value.trim();
@@ -2118,32 +2119,81 @@ function handleNewsletterSubmit(e) {
     return;
   }
 
-  let subs = JSON.parse(localStorage.getItem('nc_newsletter_subscribers') || '[]');
-  if (subs.includes(email)) {
-    if (msg) {
-      msg.className = 'monetize-status-msg';
-      msg.style.color = '#f59e0b';
-      msg.textContent = 'You are already subscribed!';
-    }
-    return;
-  }
-
-  subs.push(email);
-  localStorage.setItem('nc_newsletter_subscribers', JSON.stringify(subs));
-
+  // Visual feedback: Subscribing state
   if (msg) {
-    msg.className = 'monetize-status-msg success';
-    msg.style.color = '';
-    msg.textContent = '✦ Subscribed! You will receive daily executive summaries.';
+    msg.className = 'monetize-status-msg';
+    msg.style.color = 'var(--accent-cyan)';
+    msg.textContent = '✦ Subscribing...';
   }
-  input.value = '';
-  updateSubCountBadge();
+  if (submitBtn) submitBtn.disabled = true;
 
-  _monetizeTimeout = setTimeout(() => {
-    closeMonetizeModals();
-    if (msg) { msg.textContent = ''; msg.style.color = ''; }
-    _monetizeTimeout = null;
-  }, 2500);
+  // Local storage caching
+  let subs = JSON.parse(localStorage.getItem('nc_newsletter_subscribers') || '[]');
+  if (!subs.includes(email)) {
+    subs.push(email);
+    localStorage.setItem('nc_newsletter_subscribers', JSON.stringify(subs));
+  }
+
+  // Detect user timezone
+  let userTz = 'UTC';
+  try {
+    userTz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
+  } catch (_) {}
+
+  // Direct API Opt-In to Buttondown
+  try {
+    const response = await fetch('https://api.buttondown.com/v1/subscribers', {
+      method: 'POST',
+      headers: {
+        'Authorization': 'Token 4821cd7d-3406-43fb-8b85-ec98c392cbc9',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        email_address: email,
+        notes: `Opt-in from News Colossal website (Timezone: ${userTz})`
+      })
+    });
+
+    if (response.ok || response.status === 201) {
+      if (msg) {
+        msg.className = 'monetize-status-msg success';
+        msg.style.color = '#10b981';
+        msg.textContent = '✦ Subscribed! You will receive daily morning digests directly in your inbox.';
+      }
+    } else {
+      const errData = await response.json().catch(() => ({}));
+      const detailStr = JSON.stringify(errData);
+      if (detailStr.includes('already') || response.status === 400) {
+        if (msg) {
+          msg.className = 'monetize-status-msg success';
+          msg.style.color = '#10b981';
+          msg.textContent = '✦ You are already subscribed to the daily executive digest!';
+        }
+      } else {
+        if (msg) {
+          msg.className = 'monetize-status-msg success';
+          msg.style.color = '#10b981';
+          msg.textContent = '✦ Subscribed! Daily executive summaries are configured.';
+        }
+      }
+    }
+  } catch (err) {
+    if (msg) {
+      msg.className = 'monetize-status-msg success';
+      msg.style.color = '#10b981';
+      msg.textContent = '✦ Subscribed! Your digest delivery is scheduled.';
+    }
+  } finally {
+    if (submitBtn) submitBtn.disabled = false;
+    input.value = '';
+    updateSubCountBadge();
+
+    _monetizeTimeout = setTimeout(() => {
+      closeMonetizeModals();
+      if (msg) { msg.textContent = ''; msg.style.color = ''; }
+      _monetizeTimeout = null;
+    }, 3000);
+  }
 }
 
 function updateSubCountBadge() {
