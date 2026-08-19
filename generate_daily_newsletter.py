@@ -85,7 +85,7 @@ def generate_newsletter(send_email=True):
     md_output += f"### 🚀 Explore News Colossal Overarching Features\n\n"
     md_output += f"- 🌐 **[Live 3D News Command Center](https://0001kashish-droid.github.io/Newsfeed/)** — Full real-time global briefing with interactive category filters and hands-free audio.\n"
     md_output += f"- ☕ **[Support on Ko-fi](https://ko-fi.com/kashishbhushan)** — Fuel ad-free independent news aggregation.\n"
-    md_output += f"- 📰 **[Substack Web Archive](https://kashishbhushan.substack.com)** — Read past editions and share with colleagues.\n\n"
+    md_output += f"- 📰 **[Web Archive](https://buttondown.com/0001kashish)** — Read past editions and share with colleagues.\n\n"
     md_output += f"---\n\n"
     md_output += f"*You are receiving this because you subscribed to News Colossal Daily Digest.*"
 
