@@ -46,9 +46,9 @@ SOURCES = [
     {"id": "techcrunch",     "name": "TechCrunch",      "category": "Tech",  "region": "North America", "url": "https://techcrunch.com/feed/",                                                           "logo": "TC"},
 
     # ===================== BUSINESS =====================
-    {"id": "cnbc-business",  "name": "CNBC",            "category": "Business","region": "Global",      "url": "https://news.google.com/rss/search?q=site:cnbc.com+finance+when:24h&hl=en-US&gl=US&ceid=US:en","logo": "CNBC"},
-    {"id": "wsj-markets",    "name": "WSJ Markets",     "category": "Business","region": "North America","url": "https://news.google.com/rss/search?q=site:wsj.com+markets+when:24h&hl=en-US&gl=US&ceid=US:en","logo": "WSJ"},
-    {"id": "ht-business",    "name": "Hindustan Times",  "category": "Business","region": "India",      "url": "https://www.hindustantimes.com/feeds/rss/business/rssfeed.xml",                           "logo": "HT"},
+    {"id": "bbc-business",   "name": "BBC Business",    "category": "Business","region": "Global",      "url": "https://feeds.bbci.co.uk/news/business/rss.xml",                                         "logo": "BBC"},
+    {"id": "nyt-business",   "name": "NYT Business",    "category": "Business","region": "North America","url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",                             "logo": "NYT"},
+    {"id": "ht-business",    "name": "HT Business",     "category": "Business","region": "India",       "url": "https://www.hindustantimes.com/feeds/rss/business/rssfeed.xml",                          "logo": "HT"},
 ]
 
 # Brand family mapping for diversity caps

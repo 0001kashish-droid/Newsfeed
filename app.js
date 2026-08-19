@@ -2140,43 +2140,48 @@ async function handleNewsletterSubmit(e) {
     userTz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'UTC';
   } catch (_) {}
 
-  // Direct API Opt-In to Buttondown
+  // Direct Opt-In to Buttondown via public embed form
   try {
-    const response = await fetch('https://api.buttondown.com/v1/subscribers', {
-      method: 'POST',
-      headers: {
-        'Authorization': 'Token 4821cd7d-3406-43fb-8b85-ec98c392cbc9',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        email_address: email,
-        notes: `Opt-in from News Colossal website (Timezone: ${userTz})`
-      })
-    });
-
-    if (response.ok || response.status === 201) {
-      if (msg) {
-        msg.className = 'monetize-status-msg success';
-        msg.style.color = '#10b981';
-        msg.textContent = '✦ Subscribed! You will receive daily morning digests directly in your inbox.';
-      }
-    } else {
-      const errData = await response.json().catch(() => ({}));
-      const detailStr = JSON.stringify(errData);
-      if (detailStr.includes('already') || response.status === 400) {
-        if (msg) {
-          msg.className = 'monetize-status-msg success';
-          msg.style.color = '#10b981';
-          msg.textContent = '✦ You are already subscribed to the daily executive digest!';
-        }
-      } else {
-        if (msg) {
-          msg.className = 'monetize-status-msg success';
-          msg.style.color = '#10b981';
-          msg.textContent = '✦ Subscribed! Daily executive summaries are configured.';
-        }
-      }
+    // Create a hidden iframe to prevent page navigation
+    let iframe = document.getElementById('bd-hidden-iframe');
+    if (!iframe) {
+      iframe = document.createElement('iframe');
+      iframe.name = 'bd-hidden-iframe';
+      iframe.id = 'bd-hidden-iframe';
+      iframe.style.display = 'none';
+      document.body.appendChild(iframe);
     }
+
+    // Create a form targeting the iframe
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = 'https://buttondown.com/api/emails/embed-subscribe/0001kashish';
+    form.target = 'bd-hidden-iframe';
+    
+    // Add email input
+    const emailInput = document.createElement('input');
+    emailInput.type = 'email';
+    emailInput.name = 'email';
+    emailInput.value = email;
+    form.appendChild(emailInput);
+    
+    document.body.appendChild(form);
+    form.submit();
+    setTimeout(() => { document.body.removeChild(form); }, 500);
+
+    // Give visual success immediately (optimistic UI)
+    if (msg) {
+      msg.className = 'monetize-status-msg success';
+      msg.style.color = '#10b981';
+      msg.textContent = '✦ Subscribed! You will receive daily morning digests directly in your inbox.';
+    }
+    input.value = '';
+    
+    _monetizeTimeout = setTimeout(() => {
+      closeMonetizeModals();
+      if (msg) msg.className = 'monetize-status-msg';
+    }, 3000);
+
   } catch (err) {
     if (msg) {
       msg.className = 'monetize-status-msg success';
