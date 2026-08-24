@@ -1770,7 +1770,10 @@ function isBookmarked(id) {
 }
 
 function updateBookmarkBadge() {
-  bookmarkCount.textContent = state.bookmarks.length;
+  state.bookmarks = state.bookmarks.filter(id => !!id);
+  const count = state.bookmarks.length;
+  bookmarkCount.textContent = count;
+  bookmarkCount.style.display = count > 0 ? 'flex' : 'none';
 }
 
 document.getElementById('bookmarksBtn').addEventListener('click', () => {
@@ -2206,8 +2209,9 @@ function updateSubCountBadge() {
   const badge = document.getElementById('subCountBadge');
   if (badge) {
     if (subs.length > 0) {
-      badge.textContent = subs.length;
-      badge.style.display = 'inline';
+      badge.innerHTML = '&#10003;';
+      badge.style.display = 'inline-flex';
+      badge.title = 'You are subscribed';
     } else {
       badge.style.display = 'none';
     }
