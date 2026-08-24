@@ -1770,7 +1770,14 @@ function isBookmarked(id) {
 }
 
 function updateBookmarkBadge() {
+  // Filter out null/undefined entries
   state.bookmarks = state.bookmarks.filter(id => !!id);
+  // Purge stale bookmarks whose articles are no longer in the loaded feed
+  if (state.articles && state.articles.length > 0) {
+    const validIds = new Set(state.articles.map(a => a.id));
+    state.bookmarks = state.bookmarks.filter(id => validIds.has(id));
+    localStorage.setItem('nc_bookmarks', JSON.stringify(state.bookmarks));
+  }
   const count = state.bookmarks.length;
   bookmarkCount.textContent = count;
   bookmarkCount.style.display = count > 0 ? 'flex' : 'none';
