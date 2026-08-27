@@ -1,83 +1,133 @@
-# 🌐 News Colossal — High-Signal Global News Command Center & Executive Digest
+# 🌐 News Colossal — High-Signal Global News Intelligence Platform
 
-> **News Colossal** is an ultra-premium, real-time news aggregation command center designed to eliminate digital noise, clickbait, and information overload. Built with **Apple VisionOS Liquid Specular Glass Aesthetics**, **3D Holographic Geospatial Hotspots**, **Smart Fuzzy Semantic Search**, **Native Mobile Touch Gestures**, and **Neural Human Speech Synthesis**.
+> **News Colossal** is an ultra-premium, real-time news aggregation command center engineered to eliminate digital noise, clickbait, and information overload. Built with **zero frameworks, zero dependencies** — pure vanilla JS, HTML5 Canvas, CSS3 glassmorphism, and a Python RSS pipeline automated via GitHub Actions.
 
----
-
-### 🚀 Live Application & Repository Links
-- 🌐 **Public Live App (GitHub Pages)**: [https://0001kashish-droid.github.io/Newsfeed/](https://0001kashish-droid.github.io/Newsfeed/)
-- 💻 **GitHub Repository**: [https://github.com/0001kashish-droid/Newsfeed](https://github.com/0001kashish-droid/Newsfeed)
-- ⚡ **Local Development Server**: `http://127.0.0.1:9000`
+### 🔗 Live App: [https://0001kashish-droid.github.io/Newsfeed/](https://0001kashish-droid.github.io/Newsfeed/)
 
 ---
 
-## 🌟 v2.1.0 — Senior-Grade 5-Pillar Overhaul
+## ✨ What Makes News Colossal Different
 
-- 📊 **Source Diversity Enforcement**: BBC brand family capped at ≤18 articles (~10%), per-source cap at 7. No single publisher dominates the feed.
-- 🎯 **Importance-Only Quality Gate**: Expanded 40-term noise blocklist + positive importance signal boost. Only impactful geopolitical, economic, scientific, and policy stories make the cut.
-- 📜 **Always-Visible Deck Scrollbar**: Forced 7px accent scrollbar on all platforms (Android Chrome, Samsung Internet, iOS Safari) with `min-height: 40px` thumb. Bottom scroll fade gradient indicates more content.
-- 📱 **Full-Screen Mobile Reader Deck**: `100vw × 100dvh` native-app-feel modal on phones (≤640px) with dedicated sticky header bar — zero button overlap on cover photos.
-- 📐 **Enterprise Tablet Breakpoint**: Dedicated `768px–1024px` layer for iPad, Galaxy Tab, Surface — 2-column grid, 80vw modal, responsive content padding.
-- 🔒 **Safe Area Insets**: `env(safe-area-inset-top/bottom)` for iPhone X+ notches and Android display cutouts.
-- 👆 **WCAG Touch Targets**: All interactive buttons enforce `min-width: 44px; min-height: 44px` on touch devices.
-- ✨ **Premium Entrance Animation**: Modal slides up with `scale(0.96) → scale(1)` spring easing. Cards stagger in with `--card-index` CSS delay.
-- 🔤 **Refined Typography**: `font-feature-settings: 'kern' 1, 'liga' 1`, `text-rendering: optimizeLegibility`, antialiased font smoothing.
-- 💎 **Glass Card Hover Depth**: Cards lift `translateY(-4px)` on hover with enhanced shadow glow.
-- 🌊 **Scroll-Linked Progress Glow**: Reading progress bar pulses with accent glow while actively scrolling.
+Features that **no other news aggregator** on the planet currently offers:
 
----
+### 🎯 Finite Feed — "You Are Caught Up"
+No news app tells you when to stop. A **progress ring** around the NC logo fills as you browse stories across categories. Once you've covered all major categories, it completes with a gentle message:
+> *"✨ You're caught up. The world can wait — go live your day."*
 
-## 🎯 Why News Colossal Was Built & Curation Philosophy
+Every other app is designed to keep you scrolling forever. News Colossal is designed to **respect your time**.
 
-In today's digital news landscape, readers are bombarded with tabloid gossip, clickbait headlines, viral social media drama, and promotional noise. **News Colossal was engineered with a single core mandate: Deliver high-impact macro intelligence across global continents while ruthlessly excluding low-value noise.**
+### 🧬 Story DNA — Lineage & Evolution Tracker
+When you open a story covered by multiple outlets, a **visual timeline** appears showing:
+- 🟢 Who broke the story first
+- 🔵 Which outlets picked it up
+- How headlines shifted across sources
 
-### 🛑 Excluded Content Criteria (Noise / "Crap" Exclusion Filter)
-Every incoming RSS headline is evaluated through an automated Noise-Reduction Signal Engine. Articles matching any of the following criteria are **strictly rejected**:
-1. **Tabloid Gossip & Celebrity Drama**: Celebrity relationship updates, influencer social media feuds, viral TikTok trends, and reality TV summaries.
-2. **Micro-Local Blotter & Isolated Incidents**: Routine municipal traffic updates, minor isolated crimes, or local incidents carrying zero macro significance.
-3. **Promotional Content & Advertorials**: Corporate press releases disguised as news, sponsored product endorsements, and marketing announcements.
-4. **Astrology & Clickbait Fragment Stubs**: Horoscopes, lottery draw numbers, listicles, and single-sentence snippet stubs lacking analytical context.
+No aggregator shows *how a story evolves*. News Colossal treats stories as **living organisms** that propagate across the media ecosystem.
+
+### 🌐 Cross-Regional Story Pairing
+When the same global event is covered by outlets in **different regions**, News Colossal creates a **split-screen card** showing both perspectives side by side. No editorializing, just juxtaposition.
+
+### 📧 Daily Executive Digest
+Automated daily email newsletter dispatched at **7:30 AM IST** via Buttondown. Top 5 stories curated and delivered to subscribers. Powered by GitHub Actions cron.
 
 ---
 
-### ✦ Prioritized High-Signal Intelligence Criteria
-Articles included across our **5 Global Continent Hotspots** must fulfill at least one core intelligence benchmark:
-- 🌐 **Geopolitical & Diplomatic Affairs**: International treaties, summits, national security, major elections, and trade policy updates.
-- 📈 **Macroeconomic & Financial Impact**: Central bank rate decisions, market trends, global inflation reports, supply chain shifts, and major corporate earnings.
-- 🚀 **High-Tech & Scientific Breakthroughs**: Artificial intelligence models (AI/LLMs), space exploration (SpaceX/NASA), semiconductor developments, and clean energy breakthroughs.
-- 🌍 **Regional Macro Events**: Infrastructure projects, climate initiatives, and key legislative decisions across **Asia-Pacific**, **Middle East**, **Europe**, **North America**, and **India**.
+## 🏗️ Architecture
+
+```
+GitHub Actions Automation:
+  fetch-news.yml   → Every 30 min: 27 RSS feeds → news.json → GitHub Pages
+  daily_digest.yml → Daily 7:30 AM IST: Top 5 → Buttondown → Email
+
+Frontend (100% Vanilla, Zero Dependencies):
+  app.js    — 2400+ lines: state, canvas, search, modals, audio, gestures
+  style.css — 2500+ lines: glassmorphism, 3D transforms, responsive
+  index.html — Semantic markup, PWA meta, JSON-LD structured data
+
+Pipeline (Python 3.11+, stdlib only):
+  fetch_news.py — 27 RSS feeds, diversity balancer, story clustering engine
+  generate_daily_newsletter.py — Top 5 curation + Buttondown API dispatch
+```
+
+**Zero dependencies.** No React. No Vue. No npm. No bundlers. No backend server.
 
 ---
 
-## 🏢 Publisher Source Diversity (19+ Global Outlets)
+## 🎨 Design & UX Features
 
-News Colossal aggregates live news across 19+ credible international publications with an automated two-pass fair balancer. **BBC brand family capped at ≤18 articles (~10%)**, every other brand family at ≤14. Per-source cap: **7 articles max**:
-
-- **Global & International**: *The New York Times*, *The Guardian*, *BBC News*, *Associated Press*
-- **Asia-Pacific**: *South China Morning Post*, *SCMP Tech*, *SCMP Business*, *BBC Asia*, *The Guardian Asia*
-- **Middle East**: *Al Jazeera*, *BBC Middle East*
-- **Europe**: *BBC Europe*, *The Guardian Europe*, *BBC Tech*, *BBC Business*
-- **North America**: *Ars Technica*, *TechCrunch*, *CNBC*, *NPR*, *NYT Business*, *BBC US*
-- **India**: *The Hindu*, *Hindustan Times*, *HT Tech*, *HT Business*
+| Feature | Description |
+|---------|-------------|
+| **VisionOS Liquid Glass** | Apple-inspired glassmorphism with backdrop-filter blur |
+| **3D Holographic Globe** | Interactive HTML5 Canvas globe with click-to-filter by region |
+| **Hero Spotlight Carousel** | 60fps Canvas crossfade slideshow with parallax cover images |
+| **Semantic Fuzzy Search** | 3-tier scoring (exact, token, synonym) with live Google News fallback |
+| **Neural Broadcaster** | Web Speech API with voice modulator (speed, pitch, neural voice) |
+| **3D Card Tilt Physics** | Mouse-tracked rotateX/Y with dynamic specular sheen reflection |
+| **Executive Deck Modal** | Full-screen reader with parallax cover, progress bar, swipe gestures |
+| **Pull-to-Refresh** | Native mobile touch gesture with spinner animation |
+| **Dark/Light Theme** | Full dual-theme with 20+ CSS custom properties |
+| **Custom Cursor** | Smooth lerp physics cursor on desktop (dot + ring) |
 
 ---
 
-## 🛠 Local Setup & Automated Verification
+## 📰 Source Diversity (27 Global Feeds)
+
+Automated two-pass fair balancer: BBC family capped at 18, per-source cap at 6 articles.
+
+| Region | Sources |
+|--------|---------|
+| **Global** | BBC News, Reuters, The Guardian, Ars Technica, CNET, BBC Business |
+| **Asia-Pacific** | BBC Asia, SCMP, The Guardian, NYT Asia |
+| **Europe** | BBC Europe, The Guardian, France 24 |
+| **Middle East** | Al Jazeera, BBC Middle East, France 24 |
+| **North America** | NYT, NPR, BBC US, TechCrunch, The Verge, NYT Business |
+| **India** | Hindustan Times, Indian Express, The Hindu, HT Business |
+
+### Story Clustering Engine
+After fetching, articles are clustered by **Jaccard title similarity** (threshold 0.35) using Union-Find. Clusters identify who broke each story first, track headline variants across outlets, and flag cross-regional coverage for side-by-side perspective cards.
+
+---
+
+## 📧 Newsletter & Monetization
+
+| Component | Details |
+|-----------|---------|
+| **Daily Digest** | Cron at `0 2 * * *` UTC → curates top 5 → dispatches via Buttondown API |
+| **Subscription** | Hidden iframe form submission (no API key exposed client-side) |
+| **Support** | Ko-fi integration (3-tier: Coffee / Executive / Supporter) |
+| **Substack** | [kashishbhushan.substack.com](https://kashishbhushan.substack.com) |
+
+---
+
+## 🛡️ Content Curation Philosophy
+
+Every RSS headline passes through an **automated Noise-Reduction Signal Engine**:
+
+**❌ Rejected:** Celebrity gossip, tabloid drama, micro-local blotter, promotional advertorials, horoscopes, clickbait stubs.
+
+**✅ Prioritized:**
+- 🌐 Geopolitical & diplomatic affairs
+- 📈 Macroeconomic & financial impact
+- 🚀 High-tech & scientific breakthroughs
+- 🌍 Regional macro events across 6 global zones
+
+---
+
+## 🛠 Local Setup
 
 ```bash
-# Clone repository
 git clone https://github.com/0001kashish-droid/Newsfeed.git
 cd Newsfeed
 
-# Run full 6-layer automated production audit suite
-python production_hard_audit.py
+# Fetch fresh news data
+python scripts/fetch_news.py
 
-# Start local HTTP server
+# Start local server
 python -m http.server 9000 --bind 127.0.0.1
 ```
-Open **[http://127.0.0.1:9000](http://127.0.0.1:9000)** in your web browser.
+Open **[http://127.0.0.1:9000](http://127.0.0.1:9000)**
 
 ---
 
 ## 📄 License & Publisher Rights
-All news content, headlines, and visuals belong to their respective original publishers (**The New York Times**, **BBC News**, **South China Morning Post**, **Ars Technica**, **TechCrunch**, **Al Jazeera**, **Hindustan Times**, **The Hindu**). News Colossal operates as a non-commercial news aggregator and reading interface.
+All news content, headlines, and visuals belong to their respective original publishers. News Colossal operates as a non-commercial news aggregator and reading interface.
