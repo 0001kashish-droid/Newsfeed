@@ -4,7 +4,7 @@ import urllib.request
 import urllib.error
 from datetime import datetime
 
-BUTTONDOWN_API_KEY = os.environ.get('BUTTONDOWN_API_KEY', '')
+BUTTONDOWN_API_KEY = os.environ.get('BUTTONDOWN_API_KEY', '4821cd7d-3406-43fb-8b85-ec98c392cbc9')
 
 def send_via_buttondown(subject, markdown_body):
     """Sends the daily digest to all subscribers via the Buttondown REST API."""

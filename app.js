@@ -996,7 +996,7 @@ function createCardHTML(art, idx) {
     : getTopicImageUrl(art.title, art.category, art.region);
 
   return `
-    <article class="news-card" data-id="${art.id}" style="animation-delay: ${delay}s; --card-index: ${idx};" onclick="openModal('${art.id}')">
+    <article class="news-card" data-id="${art.id}" data-article-id="${art.id}" style="animation-delay: ${delay}s; --card-index: ${idx};" onclick="openModal('${art.id}')">
       <div class="card-sheen"></div>
       <div class="card-thumb-box">
         <img src="${imgUrl}" alt="${escapeHtml(art.title)}" class="card-thumb" width="640" height="360" loading="lazy" decoding="async" onerror="this.onerror=null; this.src=getTopicImageUrl('${escapeJs(art.title)}', '${escapeJs(art.category)}', '${escapeJs(art.region)}');" />
@@ -1061,7 +1061,31 @@ function renderGrid(articles) {
   const INITIAL_BATCH = 24;
   _currentRenderedCount = Math.min(articles.length, INITIAL_BATCH);
 
-  newsGrid.innerHTML = articles.slice(0, _currentRenderedCount).map((art, idx) => createCardHTML(art, idx)).join('');
+  // Collect paired stories for injection (deduplicate by cluster)
+  const _pairedCards = [];
+  const _seenClusters = new Set();
+  articles.forEach(art => {
+    if (art.pairedStory && art.perspectives && art.perspectives.length >= 2 && typeof createPairedCardHTML === 'function') {
+      const clusterKey = art.perspectives.map(p => p.source).sort().join('|');
+      if (!_seenClusters.has(clusterKey)) {
+        _seenClusters.add(clusterKey);
+        _pairedCards.push(art);
+      }
+    }
+  });
+
+  // Build grid HTML with paired cards injected every 6 regular cards
+  let gridHTML = '';
+  let pairedIdx = 0;
+  const batch = articles.slice(0, _currentRenderedCount);
+  for (let i = 0; i < batch.length; i++) {
+    gridHTML += createCardHTML(batch[i], i);
+    if ((i + 1) % 6 === 0 && pairedIdx < _pairedCards.length) {
+      gridHTML += createPairedCardHTML(_pairedCards[pairedIdx]);
+      pairedIdx++;
+    }
+  }
+  newsGrid.innerHTML = gridHTML;
   attach3DTiltListeners();
 
   if (_currentRenderedCount < articles.length) {
@@ -1305,6 +1329,9 @@ function renderExecutiveModal() {
 
         <!-- Hairline -->
         <div style="height: 1px; background: var(--border-color); margin-bottom: 1.4rem; opacity: 0.6;"></div>
+
+        <!-- Story DNA Lineage Timeline -->
+        ${typeof renderStoryDNA === 'function' ? renderStoryDNA(art) : ''}
 
         <!-- Related Sources -->
         <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
@@ -2226,3 +2253,188 @@ function updateSubCountBadge() {
 }
 
 
+
+
+// ============================================================
+// FEATURE: FINITE FEED — "You Are Caught Up" Reading Tracker
+// ============================================================
+(function initFiniteFeed() {
+  const COMPLETION_THRESHOLD = { minCategories: 4, minArticlesPerCat: 2 };
+  const readingProgress = { categoriesSeen: {}, completed: false };
+
+  function getSessionKey() {
+    return 'nc_reading_' + new Date().toISOString().slice(0, 10);
+  }
+
+  function loadProgress() {
+    try {
+      const saved = sessionStorage.getItem(getSessionKey());
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        readingProgress.categoriesSeen = parsed.categoriesSeen || {};
+        readingProgress.completed = parsed.completed || false;
+      }
+    } catch (e) {}
+  }
+
+  function saveProgress() {
+    try {
+      sessionStorage.setItem(getSessionKey(), JSON.stringify(readingProgress));
+    } catch (e) {}
+  }
+
+  function updateProgressRing() {
+    const ring = document.getElementById('logoRingFill');
+    if (!ring) return;
+    
+    const allCats = ['World', 'Tech', 'National', 'Business'];
+    let catsCovered = 0;
+    for (const cat of allCats) {
+      if ((readingProgress.categoriesSeen[cat] || 0) >= COMPLETION_THRESHOLD.minArticlesPerCat) {
+        catsCovered++;
+      }
+    }
+    
+    const progress = Math.min(catsCovered / COMPLETION_THRESHOLD.minCategories, 1);
+    const circumference = 131.95;
+    ring.style.strokeDashoffset = circumference * (1 - progress);
+    
+    const wrap = ring.closest('.logo-ring-wrap');
+    if (progress >= 1 && !readingProgress.completed) {
+      readingProgress.completed = true;
+      saveProgress();
+      if (wrap) wrap.classList.add('caught-up');
+      showCaughtUpToast();
+    }
+  }
+
+  function showCaughtUpToast() {
+    let toast = document.querySelector('.caught-up-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.className = 'caught-up-toast';
+      toast.innerHTML = '<h4>\u2728 You\u2019re Caught Up</h4><p>You\u2019ve seen today\u2019s essential stories across all major categories. The world can wait \u2014 go live your day.</p>';
+      document.body.appendChild(toast);
+    }
+    setTimeout(() => toast.classList.add('visible'), 100);
+    setTimeout(() => toast.classList.remove('visible'), 7000);
+  }
+
+  function trackCardView(article) {
+    if (!article || !article.category || readingProgress.completed) return;
+    const cat = article.category;
+    readingProgress.categoriesSeen[cat] = (readingProgress.categoriesSeen[cat] || 0) + 1;
+    saveProgress();
+    updateProgressRing();
+  }
+
+  // Observe card visibility
+  loadProgress();
+  
+  const cardObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const cardId = entry.target.getAttribute('data-article-id');
+        if (cardId && state.articles) {
+          const art = state.articles.find(a => a.id === cardId);
+          if (art) trackCardView(art);
+        }
+        cardObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  // Re-observe cards whenever grid renders
+  const origFilterAndRender = window.filterAndRender || filterAndRender;
+  const patchedFilterAndRender = function() {
+    origFilterAndRender.apply(this, arguments);
+    setTimeout(() => {
+      document.querySelectorAll('.news-card[data-article-id]').forEach(card => {
+        cardObserver.observe(card);
+      });
+      updateProgressRing();
+    }, 200);
+  };
+  // Patch filterAndRender globally
+  if (typeof filterAndRender === 'function') {
+    const _origFAR = filterAndRender;
+    filterAndRender = function() {
+      _origFAR.apply(this, arguments);
+      setTimeout(() => {
+        document.querySelectorAll('.news-card[data-article-id]').forEach(card => {
+          cardObserver.observe(card);
+        });
+        updateProgressRing();
+      }, 200);
+    };
+  }
+
+  // Also track tab clicks
+  document.querySelectorAll('.nav-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      setTimeout(updateProgressRing, 500);
+    });
+  });
+
+  // Initial render
+  setTimeout(updateProgressRing, 1000);
+})();
+
+
+// ============================================================
+// FEATURE: STORY DNA — Lineage Timeline in Deck Modal
+// ============================================================
+window.renderStoryDNA = function(article) {
+  if (!article || !article.storyCluster || article.storyCluster.size < 2) return '';
+  
+  const cluster = article.storyCluster;
+  const sources = cluster.sources || [];
+  
+  let nodesHTML = sources.map((s, i) => {
+    const isFirst = i === 0;
+    const truncTitle = s.title.length > 60 ? s.title.substring(0, 57) + '...' : s.title;
+    return '<div class="dna-node">' +
+      '<div class="dna-dot"></div>' +
+      (isFirst ? '<div class="dna-badge-first">Broke First</div>' : '') +
+      '<div class="dna-source">' + escapeHtml(s.source) + '</div>' +
+      '<div class="dna-headline">' + escapeHtml(truncTitle) + '</div>' +
+    '</div>';
+  }).join('');
+  
+  return '<div class="story-dna-section">' +
+    '<div class="story-dna-title">' +
+      '<span>\uD83E\uDDEC</span> Story DNA \u2014 ' + cluster.size + ' sources covering this event' +
+    '</div>' +
+    '<div class="dna-timeline">' + nodesHTML + '</div>' +
+  '</div>';
+};
+
+
+// ============================================================
+// FEATURE: CROSS-REGIONAL PAIRING — Split-Screen Cards
+// ============================================================
+window.createPairedCardHTML = function(article) {
+  if (!article || !article.pairedStory || !article.perspectives || article.perspectives.length < 2) return '';
+  
+  const p = article.perspectives;
+  const REGION_EMOJI = {
+    'Global': '\uD83C\uDF0D', 'Asia-Pacific': '\uD83C\uDF0F', 'Europe': '\uD83C\uDF0D',
+    'Middle East': '\uD83C\uDF0D', 'North America': '\uD83C\uDF0E', 'India': '\uD83C\uDDEE\uD83C\uDDF3'
+  };
+  
+  let perspectivesHTML = '';
+  for (let i = 0; i < Math.min(p.length, 2); i++) {
+    const persp = p[i];
+    const emoji = REGION_EMOJI[persp.region] || '\uD83C\uDF10';
+    perspectivesHTML += '<div class="paired-perspective" onclick="openModal(\'' + escapeHtml(article.id) + '\')">' +
+      '<div class="region-flag">' + emoji + ' ' + escapeHtml(persp.region) + '</div>' +
+      '<div class="source-name">' + escapeHtml(persp.source) + '</div>' +
+      '<div class="perspective-title">' + escapeHtml(persp.title) + '</div>' +
+    '</div>';
+  }
+  
+  return '<div class="paired-story-card" data-article-id="' + article.id + '">' +
+    '<div class="paired-story-badge">\uD83C\uDF10 Same Event, Different Worlds</div>' +
+    '<div class="paired-perspectives">' + perspectivesHTML + '</div>' +
+  '</div>';
+};

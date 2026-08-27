@@ -265,6 +265,140 @@ def balance_source_diversity(all_articles):
                     interleaved.append(q.pop(0))
     
     return interleaved
+def tokenize(text):
+    """Extract meaningful lowercase tokens from text, removing stopwords."""
+    STOPWORDS = {'the','a','an','and','or','but','in','on','at','to','for','of','is','are','was','were',
+                 'has','have','had','be','been','being','will','would','could','should','may','might',
+                 'do','does','did','not','no','so','if','up','out','by','with','from','as','into',
+                 'its','it','this','that','than','then','what','when','where','who','how','all','each',
+                 'new','says','said','over','after','about','also','more','most','just','now','can',
+                 'very','like','get','us','uk','via','amid'}
+    words = re.findall(r'[a-z0-9]+', text.lower())
+    return [w for w in words if len(w) > 2 and w not in STOPWORDS]
+
+def jaccard_similarity(tokens_a, tokens_b):
+    """Compute Jaccard similarity between two token sets."""
+    set_a, set_b = set(tokens_a), set(tokens_b)
+    intersection = set_a & set_b
+    union = set_a | set_b
+    return len(intersection) / len(union) if union else 0.0
+
+def cluster_stories(articles, threshold=0.35):
+    """Cluster articles about the same event using Jaccard title similarity."""
+    # Tokenize all titles
+    tokens_cache = {}
+    for i, art in enumerate(articles):
+        tokens_cache[i] = tokenize(art['title'])
+    
+    # Union-Find
+    parent = list(range(len(articles)))
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+    def union(a, b):
+        ra, rb = find(a), find(b)
+        if ra != rb:
+            parent[ra] = rb
+    
+    # Compare within same category only
+    from collections import defaultdict
+    cat_groups = defaultdict(list)
+    for i, art in enumerate(articles):
+        cat_groups[art['category']].append(i)
+    
+    for cat, indices in cat_groups.items():
+        for i in range(len(indices)):
+            for j in range(i + 1, len(indices)):
+                idx_a, idx_b = indices[i], indices[j]
+                sim = jaccard_similarity(tokens_cache[idx_a], tokens_cache[idx_b])
+                if sim >= threshold:
+                    union(idx_a, idx_b)
+    
+    # Build clusters
+    clusters = defaultdict(list)
+    for i in range(len(articles)):
+        clusters[find(i)].append(i)
+    
+    # Enrich articles with cluster data
+    from datetime import datetime as dt
+    
+    def parse_date_safe(date_str):
+        """Try multiple date formats."""
+        for fmt in ['%a, %d %b %Y %H:%M:%S %Z', '%a, %d %b %Y %H:%M:%S %z',
+                     '%Y-%m-%dT%H:%M:%S.%fZ', '%Y-%m-%dT%H:%M:%S%z',
+                     '%Y-%m-%dT%H:%M:%SZ', '%Y-%m-%d %H:%M:%S']:
+            try:
+                parsed = dt.strptime(date_str, fmt)
+                return parsed.replace(tzinfo=None) if parsed.tzinfo else parsed
+            except (ValueError, TypeError):
+                continue
+        return dt.now()
+    
+    for root, member_indices in clusters.items():
+        if len(member_indices) < 2:
+            # Singleton - no cluster
+            articles[member_indices[0]]['storyCluster'] = None
+            articles[member_indices[0]]['pairedStory'] = False
+            articles[member_indices[0]]['perspectives'] = []
+            continue
+        
+        # Sort by date (earliest first)
+        members = sorted(member_indices, key=lambda i: parse_date_safe(articles[i].get('pubDate', '')))
+        
+        first_art = articles[members[0]]
+        sources_list = []
+        headline_variants = []
+        regions_seen = set()
+        perspectives = []
+        
+        for idx in members:
+            art = articles[idx]
+            sources_list.append({
+                'source': art['source'],
+                'region': art['region'],
+                'title': art['title'],
+                'pubDate': art.get('pubDate', '')
+            })
+            if art['title'] not in headline_variants:
+                headline_variants.append(art['title'])
+            regions_seen.add(art['region'])
+        
+        is_cross_regional = len(regions_seen) >= 2
+        
+        if is_cross_regional:
+            # Build perspectives: one per region (pick first article from each region)
+            region_done = set()
+            for idx in members:
+                art = articles[idx]
+                if art['region'] not in region_done:
+                    perspectives.append({
+                        'region': art['region'],
+                        'source': art['source'],
+                        'title': art['title'],
+                        'sourceLogo': art.get('sourceLogo', ''),
+                        'annotation': art.get('annotation', {})
+                    })
+                    region_done.add(art['region'])
+        
+        cluster_data = {
+            'size': len(member_indices),
+            'firstReported': {
+                'source': first_art['source'],
+                'pubDate': first_art.get('pubDate', '')
+            },
+            'sources': sources_list,
+            'headlineVariants': headline_variants,
+            'crossRegional': is_cross_regional
+        }
+        
+        for idx in members:
+            articles[idx]['storyCluster'] = cluster_data
+            articles[idx]['pairedStory'] = is_cross_regional
+            articles[idx]['perspectives'] = perspectives if is_cross_regional else []
+    
+    return articles
 
 
 def main():
@@ -281,6 +415,24 @@ def main():
     balanced = balance_source_diversity(all_news)
     print(f"After diversity balancing: {len(balanced)}")
     
+    # Story clustering for DNA lineage & cross-regional pairing
+    balanced = cluster_stories(balanced)
+    
+    # Print clustering audit
+    clustered = [a for a in balanced if a.get('storyCluster')]
+    paired = [a for a in balanced if a.get('pairedStory')]
+    print(f"\nStory Clustering: {len(clustered)} articles in multi-source clusters")
+    print(f"Cross-Regional Pairs: {len(paired)} articles with multi-region perspectives")
+    
+    # Print cluster details
+    seen_clusters = set()
+    for art in balanced:
+        cl = art.get('storyCluster')
+        if cl and id(cl) not in seen_clusters:
+            seen_clusters.add(id(cl))
+            regions = set(s['region'] for s in cl['sources'])
+            print(f"  Cluster ({cl['size']} articles, {len(regions)} regions): {cl['headlineVariants'][0][:80]}...")
+            
     # Print diversity audit
     from collections import Counter
     for region in sorted(set(a['region'] for a in balanced)):

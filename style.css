@@ -2344,3 +2344,257 @@ body {
   .tip-label { font-size: 0.68rem; }
 }
 
+
+
+/* ========== FINITE FEED: Progress Ring & Caught-Up Toast ========== */
+.logo-ring-wrap {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.logo-ring-wrap .logo-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-full);
+}
+.logo-progress-ring {
+  position: absolute;
+  inset: 0;
+  transform: rotate(-90deg);
+  pointer-events: none;
+  z-index: 2;
+}
+.logo-ring-track {
+  stroke: var(--border-color);
+  opacity: 0.5;
+}
+.logo-ring-fill {
+  stroke: var(--accent-cyan);
+  transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 0 6px var(--accent-glow));
+}
+.logo-ring-wrap.caught-up .logo-ring-fill {
+  stroke: #10b981;
+  filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.6));
+}
+.logo-ring-wrap.caught-up .logo-icon {
+  animation: caught-up-pulse 1.5s ease-in-out;
+}
+@keyframes caught-up-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
+
+/* Caught-up toast notification */
+.caught-up-toast {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(24px) saturate(200%);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 1.2rem 2rem;
+  z-index: 10000;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  max-width: 440px;
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.2);
+}
+.caught-up-toast.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.caught-up-toast h4 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #10b981;
+  margin-bottom: 0.35rem;
+}
+.caught-up-toast p {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+
+/* ========== STORY DNA: Lineage Timeline ========== */
+.story-dna-section {
+  margin-top: 1.5rem;
+  padding: 1.2rem 1.4rem;
+  background: var(--bg-surface-elevated);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+.story-dna-title {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-cyan);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dna-timeline {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scrollbar-width: thin;
+}
+.dna-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+  flex-shrink: 0;
+  position: relative;
+}
+.dna-node::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--border-color));
+  z-index: 0;
+}
+.dna-node:last-child::after {
+  display: none;
+}
+.dna-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid var(--accent-cyan);
+  background: var(--bg-main);
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+.dna-node:first-child .dna-dot {
+  background: #10b981;
+  border-color: #10b981;
+}
+.dna-source {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 0.5rem;
+  text-align: center;
+  max-width: 110px;
+  line-height: 1.3;
+}
+.dna-headline {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+  text-align: center;
+  max-width: 110px;
+  line-height: 1.3;
+  font-style: italic;
+}
+.dna-badge-first {
+  font-size: 0.6rem;
+  font-weight: 800;
+  color: #10b981;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.2rem;
+}
+
+/* ========== CROSS-REGIONAL PAIRING: Split Cards ========== */
+.paired-story-card {
+  grid-column: 1 / -1;
+  background: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-highlight);
+  overflow: hidden;
+  box-shadow: var(--shadow-md), 0 0 20px var(--accent-glow);
+  position: relative;
+}
+.paired-story-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.7rem;
+  border-radius: var(--radius-full);
+  z-index: 2;
+}
+.paired-perspectives {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+.paired-perspective {
+  padding: 1.4rem;
+  position: relative;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+.paired-perspective:hover {
+  background: var(--bg-surface-elevated);
+}
+.paired-perspective:first-child {
+  border-right: 1px solid var(--border-color);
+}
+.paired-perspective .region-flag {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-cyan);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.paired-perspective .source-name {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+}
+.paired-perspective .perspective-title {
+  font-family: var(--font-heading);
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--text-primary);
+}
+
+@media (max-width: 640px) {
+  .paired-perspectives {
+    grid-template-columns: 1fr;
+  }
+  .paired-perspective:first-child {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+}

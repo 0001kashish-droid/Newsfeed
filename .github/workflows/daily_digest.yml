@@ -31,7 +31,7 @@ jobs:
 
       - name: Generate daily newsletter digest
         env:
-          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY || '4821cd7d-3406-43fb-8b85-ec98c392cbc9' }}
         run: python generate_daily_newsletter.py
         working-directory: ./
 
