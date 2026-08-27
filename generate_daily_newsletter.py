@@ -4,7 +4,11 @@ import urllib.request
 import urllib.error
 from datetime import datetime
 
-BUTTONDOWN_API_KEY = os.environ.get('BUTTONDOWN_API_KEY', '4821cd7d-3406-43fb-8b85-ec98c392cbc9')
+BUTTONDOWN_API_KEY = os.environ.get('BUTTONDOWN_API_KEY', '')
+if not BUTTONDOWN_API_KEY:
+    print("[ERROR] BUTTONDOWN_API_KEY not set. Add it as a GitHub Actions secret.")
+    print("  Go to: Repo → Settings → Secrets → Actions → New repository secret")
+    exit(1)
 
 def send_via_buttondown(subject, markdown_body):
     """Sends the daily digest to all subscribers via the Buttondown REST API."""
