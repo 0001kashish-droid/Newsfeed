@@ -6,47 +6,47 @@
 
 ---
 
-### 1. Watch: Tracing the deadly path of the Nepal-Tibet flash flood
+### 1. Watch: Why rescuers fear new barrier lake could cause another Nepal-Tibet flood
 **Publisher:** BBC News | **Category:** World | **Region:** Global
 
-**✦ What Happened:** BBC Verify traces the path of the destructive Nepal-Tibet flash flood using verified video.
+**✦ What Happened:** Laura Bicker explains how a lake which formed after the recent landslide near the Nepal-Tibet border is raising fears of a second flood.
 
 **✦ Why It Matters:** Key global development with wide-ranging impact across policy, industry, and public interest.
 
-🔗 [Read full report on BBC News](https://www.bbc.co.uk/news/videos/cp80m87pez3o?at_medium=RSS&at_campaign=rss) • [View on News Colossal](https://0001kashish-droid.github.io/Newsfeed/)
+🔗 [Read full report on BBC News](https://www.bbc.co.uk/news/videos/cj06j16vpr5o?at_medium=RSS&at_campaign=rss) • [View on News Colossal](https://0001kashish-droid.github.io/Newsfeed/)
 
 ---
 
-### 2. 1 in 6 VPNs Track Your Location, According to New Report From Proton
+### 2. Only a Few Days Left to Get Signalis and Big Walk on PlayStation Plus
 **Publisher:** CNET | **Category:** Tech | **Region:** Global
 
-**✦ What Happened:** According to the report, 64 VPN apps on Apple’s App Store and Google Play contain trackers that collect your sensitive data; the exact opposite of what a VPN...
+**✦ What Happened:** You only have a few more days to experience cosmic dread, zombies and one Big Walk on PlayStation Plus at no additional charge.
 
 **✦ Why It Matters:** Key global development with wide-ranging impact across policy, industry, and public interest.
 
-🔗 [Read full report on CNET](https://www.cnet.com/tech/services-and-software/proton-vpn-report-location-tracking-privacy/) • [View on News Colossal](https://0001kashish-droid.github.io/Newsfeed/)
+🔗 [Read full report on CNET](https://www.cnet.com/tech/gaming/signalis-and-dying-light-2-dominate-playstation-plus-free-games-this-month/) • [View on News Colossal](https://0001kashish-droid.github.io/Newsfeed/)
 
 ---
 
-### 3. Military veterans told they owe thousands of pounds over clerical error
-**Publisher:** BBC Business | **Category:** Business | **Region:** Global
+### 3. What could Meta’s US settlement mean around the world – and what now for other claims against firm?
+**Publisher:** The Guardian | **Category:** World | **Region:** Global
 
-**✦ What Happened:** Hundreds of former UK service personnel have had their pensions cut after being overpaid.
+**✦ What Happened:** Other governments could seek similar concessions, while separate legal action is pending in places ranging from Kenya to the NetherlandsIn October 2021, Abrh...
 
-**✦ Why It Matters:** Key global development with wide-ranging impact across policy, industry, and public interest.
+**✦ Why It Matters:** This was in the middle of the country’s civil war.For weeks, Facebook’s algorithm had actively promoted posts calling for the academic to be murdered, accord...
 
-🔗 [Read full report on BBC Business](https://www.bbc.co.uk/news/articles/c5y4512mlxdo?at_medium=RSS&at_campaign=rss) • [View on News Colossal](https://0001kashish-droid.github.io/Newsfeed/)
+🔗 [Read full report on The Guardian](https://www.theguardian.com/technology/2026/aug/28/meta-facebook-us-lawsuit-settlement-world-impact) • [View on News Colossal](https://0001kashish-droid.github.io/Newsfeed/)
 
 ---
 
-### 4. US nears deal to secure long-term access to Venezuela's oil reserves, sources say - Reuters
+### 4. Ugandan King Oyo Nyimba, once world's youngest monarch, dies at 34 - Reuters
 **Publisher:** Reuters | **Category:** World | **Region:** Global
 
-**✦ What Happened:** US nears deal to secure long-term access to Venezuela's oil reserves, sources say Reuters
+**✦ What Happened:** Ugandan King Oyo Nyimba, once world's youngest monarch, dies at 34 Reuters
 
 **✦ Why It Matters:** Key global development with wide-ranging impact across policy, industry, and public interest.
 
-🔗 [Read full report on Reuters](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPRF95WlhaYmlURFBLWldzTDhQdnQ5Zk1ad09Pd0kyOXNtNUxIOFA5cEU0T1VVR3dWMUYzRWxJbWRBVXFUZlVLNmpxZ0tPWThJTDRob3RsSHYzZUNCWVVuZE9fYlZSSVZ0NS1uTkwtRVVBa29oc2hhZGFYQlBsenJhNG1KOGY0U1ktZy1Ic1NHUklUVVFBTDlEUzZSZEd6V2JtM0JjbWpWaWNQckQ3RHUxY2NSTkNzdnRyMElVOUVUSUh4cU0?oc=5) • [View on News Colossal](https://0001kashish-droid.github.io/Newsfeed/)
+🔗 [Read full report on Reuters](https://news.google.com/rss/articles/CBMirgFBVV95cUxQYWhTek5LX1pzampoMXpSNFQ5NzhUM0VUN0pkSDlxX3M0b0drM3h3ZHBSbzE0Slh4Wk15aFphRkFJV0pmLVExNElKOFo2ajhIcHoyRXR0V0pCcW1zMmVCMTdMazFIMTg5QjF1SVRrY2FvNU9KWElsQUNtWDNwVDZYbldYcUlfX3NMUWJkV190WjNLUEJFUzYyalNuc1VUM2RVZ0RLSDg2aWRPemgtaEE?oc=5) • [View on News Colossal](https://0001kashish-droid.github.io/Newsfeed/)
 
 ---
 
