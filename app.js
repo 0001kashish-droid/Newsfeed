@@ -2029,10 +2029,14 @@ window.openSavedArticle = function(id) {
 };
 
 window.openSavedPodcast = function(id, link) {
-  drawerBackdrop.classList.remove('active');
-  
+  const targetLink = link || (state.atomicDossier[id] && state.atomicDossier[id].link) || ((state.podcasts || []).find(p => p.id === id) || {}).link;
+  if (targetLink && targetLink !== '#') {
+    window.open(targetLink, '_blank');
+    return;
+  }
   const cardElem = document.querySelector(`.thought-card[data-id="${id}"]`);
   if (cardElem) {
+    drawerBackdrop.classList.remove('active');
     cardElem.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
     cardElem.style.borderColor = '#a855f7';
     cardElem.style.boxShadow = '0 0 30px rgba(168, 85, 247, 0.6)';
@@ -2040,8 +2044,6 @@ window.openSavedPodcast = function(id, link) {
       cardElem.style.borderColor = '';
       cardElem.style.boxShadow = '';
     }, 2000);
-  } else if (link) {
-    window.open(link, '_blank');
   }
 };
 
@@ -2097,6 +2099,18 @@ function renderSavedList() {
     const typeClass = isPodcast ? 'podcast' : 'article';
     const cardSignalClass = isPodcast ? 'podcast-signal' : 'article-signal';
     
+    // Resolve live link if missing from snapshot
+    let targetLink = item.link || '';
+    if (!targetLink || targetLink === '#') {
+      if (isPodcast) {
+        const pod = (state.podcasts || []).find(p => p.id === item.id);
+        if (pod && pod.link) targetLink = pod.link;
+      } else {
+        const art = (state.articles || []).find(a => a.id === item.id);
+        if (art && art.link) targetLink = art.link;
+      }
+    }
+
     // Format saved date
     let dateStr = '';
     if (item.savedAt) {
@@ -2108,11 +2122,13 @@ function renderSavedList() {
       ? `<div class="atomic-topics-row">${item.topics.map(t => `<span class="atomic-topic-tag">#${escapeHtml(t)}</span>`).join('')}</div>`
       : '';
 
-    const clickAction = isPodcast
-      ? `openSavedPodcast('${item.id}', '${escapeJs(item.link)}')`
+    const titleClickAction = isPodcast
+      ? `window.open('${escapeJs(targetLink)}', '_blank')`
       : `openSavedArticle('${item.id}')`;
 
-    const ctaText = isPodcast ? 'Watch Episode ↗' : 'Read Full Story ↗';
+    const ctaButtonHTML = isPodcast
+      ? `<a class="atomic-cta-btn" href="${escapeHtml(targetLink)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">Watch Episode ↗</a>`
+      : `<button class="atomic-cta-btn" onclick="openSavedArticle('${item.id}')">Read Full Story ↗</button>`;
 
     return `
       <article class="atomic-recall-card ${cardSignalClass}">
@@ -2127,7 +2143,7 @@ function renderSavedList() {
           </div>
         </div>
 
-        <h4 class="atomic-card-title" onclick="${clickAction}">${escapeHtml(item.title)}</h4>
+        <h4 class="atomic-card-title" onclick="${titleClickAction}" title="${isPodcast ? 'Watch Episode on YouTube' : 'Read Story'}">${escapeHtml(item.title)}</h4>
 
         <div class="atomic-thesis-box">
           <div class="atomic-thesis-badge">
@@ -2139,9 +2155,7 @@ function renderSavedList() {
         ${topicsHTML}
 
         <div class="atomic-card-footer">
-          <button class="atomic-cta-btn" onclick="${clickAction}">
-            ${ctaText}
-          </button>
+          ${ctaButtonHTML}
           <button class="atomic-remove-btn" onclick="toggleBookmark('${item.id}', event)">
             Remove
           </button>
