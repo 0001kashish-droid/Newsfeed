@@ -32,11 +32,15 @@ jobs:
         run: python scripts/fetch_news.py
         continue-on-error: false
 
+      - name: Fetch Podcast Intelligence
+        run: python scripts/fetch_podcasts.py
+        continue-on-error: true
+
       - name: Commit and Push Updated Feed
         run: |
           git config --global user.name 'NewsColossal Bot'
           git config --global user.email 'bot@newscolossal.internal'
-          git add data/news.json
+          git add data/news.json data/podcasts.json
           # Only commit and push if there are actual changes
           if git diff --staged --quiet; then
             echo "No changes to commit"
