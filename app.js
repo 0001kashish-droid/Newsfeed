@@ -3,10 +3,14 @@
 const state = {
   articles: [],
   filteredArticles: [],
+  podcasts: [],
+  podcastsLastUpdated: null,
   currentCategory: 'top10',
   currentRegion: 'all',
   searchQuery: '',
   bookmarks: JSON.parse(localStorage.getItem('nc_bookmarks') || '[]'),
+  atomicDossier: JSON.parse(localStorage.getItem('nc_atomic_dossier') || '{}'),
+  savedSearchQuery: '',
   theme: localStorage.getItem('nc_theme') || 'light', // Default to Imperial Light Mode
   heroIndex: 0,
   heroPlaying: true,
@@ -475,6 +479,7 @@ async function loadData(forceBustCache = false) {
   preloadHeroImages();
   filterAndRender();
   renderTicker();
+  backfillAtomicDossier();
   updateBookmarkBadge();
   updateGlobeStats();
   setTimeout(updateTabIndicator, 100);
@@ -1777,19 +1782,122 @@ audioPlayBtn.addEventListener('click', () => {
   }
 });
 
-// Bookmarks Manager & Interactive Redirection Engine
+// ============================================================
+// ATOMIC RECALL DOSSIER — ENTERPRISE BOOKMARK ENGINE
+// ============================================================
+
+function backfillAtomicDossier() {
+  let changed = false;
+  state.bookmarks.forEach(id => {
+    if (!state.atomicDossier[id]) {
+      const art = (state.articles || []).find(a => a.id === id);
+      if (art) {
+        state.atomicDossier[id] = {
+          id: art.id,
+          type: 'article',
+          title: art.title,
+          source: art.source,
+          sourceLogo: art.sourceLogo || 'NC',
+          link: art.link,
+          category: art.category || 'General',
+          region: art.region || 'Global',
+          savedAt: new Date().toISOString(),
+          atomicThesis: (art.annotation && art.annotation.what) ? art.annotation.what : (art.summary || art.title),
+          topics: [art.category, art.region].filter(Boolean),
+          readTime: art.readTime || '3 min read',
+          imageUrl: art.imageUrl || ''
+        };
+        changed = true;
+      } else {
+        const pod = (state.podcasts || []).find(p => p.id === id);
+        if (pod) {
+          state.atomicDossier[id] = {
+            id: pod.id,
+            type: 'podcast',
+            title: pod.title,
+            source: pod.podcast,
+            sourceLogo: pod.podcastLogo || 'POD',
+            link: pod.link,
+            category: pod.category || 'Podcast',
+            region: 'Global',
+            savedAt: new Date().toISOString(),
+            atomicThesis: pod.theme || pod.insight || pod.title,
+            topics: pod.topics || [pod.category || 'Ideas'],
+            guest: pod.guest || '',
+            duration: pod.duration || '',
+            imageUrl: pod.imageUrl || ''
+          };
+          changed = true;
+        }
+      }
+    }
+  });
+  if (changed) {
+    localStorage.setItem('nc_atomic_dossier', JSON.stringify(state.atomicDossier));
+  }
+}
+
 window.toggleBookmark = function(id, e) {
   if (e) e.stopPropagation();
   const index = state.bookmarks.indexOf(id);
   if (index >= 0) {
     state.bookmarks.splice(index, 1);
+    delete state.atomicDossier[id];
   } else {
     state.bookmarks.push(id);
+    // Construct rich Atomic Snapshot immediately
+    const art = (state.articles || []).find(a => a.id === id);
+    if (art) {
+      state.atomicDossier[id] = {
+        id: art.id,
+        type: 'article',
+        title: art.title,
+        source: art.source,
+        sourceLogo: art.sourceLogo || 'NC',
+        link: art.link,
+        category: art.category || 'General',
+        region: art.region || 'Global',
+        savedAt: new Date().toISOString(),
+        atomicThesis: (art.annotation && art.annotation.what) ? art.annotation.what : (art.summary || art.title),
+        topics: [art.category, art.region].filter(Boolean),
+        readTime: art.readTime || '3 min read',
+        imageUrl: art.imageUrl || ''
+      };
+    } else {
+      const pod = (state.podcasts || []).find(p => p.id === id);
+      if (pod) {
+        state.atomicDossier[id] = {
+          id: pod.id,
+          type: 'podcast',
+          title: pod.title,
+          source: pod.podcast,
+          sourceLogo: pod.podcastLogo || 'POD',
+          link: pod.link,
+          category: pod.category || 'Podcast',
+          region: 'Global',
+          savedAt: new Date().toISOString(),
+          atomicThesis: pod.theme || pod.insight || pod.title,
+          topics: pod.topics || [pod.category || 'Ideas'],
+          guest: pod.guest || '',
+          duration: pod.duration || '',
+          imageUrl: pod.imageUrl || ''
+        };
+      }
+    }
   }
+
   localStorage.setItem('nc_bookmarks', JSON.stringify(state.bookmarks));
+  localStorage.setItem('nc_atomic_dossier', JSON.stringify(state.atomicDossier));
   updateBookmarkBadge();
   filterAndRender();
   renderSavedList();
+  if (state.podcasts && state.podcasts.length > 0) {
+    renderThoughtPulse({
+      lastUpdated: state.podcastsLastUpdated,
+      total: state.podcasts.length,
+      episodes: state.podcasts
+    });
+  }
 };
 
 function isBookmarked(id) {
@@ -1797,20 +1905,96 @@ function isBookmarked(id) {
 }
 
 function updateBookmarkBadge() {
-  // Filter out null/undefined entries
   state.bookmarks = state.bookmarks.filter(id => !!id);
-  // Purge stale bookmarks whose articles are no longer in the loaded feed
-  if (state.articles && state.articles.length > 0) {
-    const validIds = new Set(state.articles.map(a => a.id));
-    state.bookmarks = state.bookmarks.filter(id => validIds.has(id));
-    localStorage.setItem('nc_bookmarks', JSON.stringify(state.bookmarks));
-  }
   const count = state.bookmarks.length;
-  bookmarkCount.textContent = count;
-  bookmarkCount.style.display = count > 0 ? 'flex' : 'none';
+  
+  if (bookmarkCount) {
+    bookmarkCount.textContent = count;
+    bookmarkCount.style.display = count > 0 ? 'flex' : 'none';
+  }
+  
+  const savedCountBadge = document.getElementById('savedCountBadge');
+  if (savedCountBadge) {
+    savedCountBadge.textContent = `${count} ${count === 1 ? 'Signal' : 'Signals'}`;
+  }
 }
 
+// Search & Filter within Saved Intelligence
+window.handleSavedSearch = function(query) {
+  state.savedSearchQuery = (query || '').trim().toLowerCase();
+  const clearBtn = document.getElementById('clearSavedSearchBtn');
+  if (clearBtn) {
+    clearBtn.style.display = state.savedSearchQuery ? 'block' : 'none';
+  }
+  renderSavedList();
+};
+
+window.clearSavedSearch = function() {
+  state.savedSearchQuery = '';
+  const searchInput = document.getElementById('savedSearchInput');
+  if (searchInput) searchInput.value = '';
+  const clearBtn = document.getElementById('clearSavedSearchBtn');
+  if (clearBtn) clearBtn.style.display = 'none';
+  renderSavedList();
+};
+
+// 1-Click Clean Markdown Exporter
+window.exportSavedAsMarkdown = function() {
+  backfillAtomicDossier();
+  const items = state.bookmarks.map(id => state.atomicDossier[id]).filter(Boolean);
+  if (items.length === 0) {
+    showToastNotification('No saved signals to export.');
+    return;
+  }
+  
+  let md = `# News Colossal — Saved Intelligence Dossier\n*Exported on ${new Date().toLocaleDateString('en-US', { dateStyle: 'full' })}*\n\n`;
+  
+  const podcasts = items.filter(i => i.type === 'podcast');
+  const articles = items.filter(i => i.type !== 'podcast');
+
+  if (podcasts.length > 0) {
+    md += `## 🎙️ Podcast Intelligence (${podcasts.length})\n\n`;
+    podcasts.forEach(p => {
+      md += `### [${p.title}](${p.link})\n`;
+      md += `**Source:** ${p.source}${p.guest ? ` • **Guest:** ${p.guest}` : ''} • **Category:** ${p.category}${p.duration ? ` • **Duration:** ${p.duration}` : ''}\n\n`;
+      if (p.atomicThesis) md += `> **Atomic Essence:** ${p.atomicThesis}\n\n`;
+      if (p.topics && p.topics.length) md += `*Topics:* ${p.topics.map(t => `#${t}`).join(' ')}\n\n`;
+      md += `---\n\n`;
+    });
+  }
+
+  if (articles.length > 0) {
+    md += `## 📰 Strategic News & Analysis (${articles.length})\n\n`;
+    articles.forEach(a => {
+      md += `### [${a.title}](${a.link})\n`;
+      md += `**Source:** ${a.source} • **Category:** ${a.category} • **Region:** ${a.region}\n\n`;
+      if (a.atomicThesis) md += `> **Atomic Essence:** ${a.atomicThesis}\n\n`;
+      if (a.topics && a.topics.length) md += `*Topics:* ${a.topics.map(t => `#${t}`).join(' ')}\n\n`;
+      md += `---\n\n`;
+    });
+  }
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(md).then(() => {
+      showToastNotification(`📋 Copied ${items.length} saved signals as clean Markdown!`);
+    }).catch(() => fallbackCopy(md, items.length));
+  } else {
+    fallbackCopy(md, items.length);
+  }
+
+  function fallbackCopy(text, count) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    showToastNotification(`📋 Copied ${count} saved signals as clean Markdown!`);
+  }
+};
+
 document.getElementById('bookmarksBtn').addEventListener('click', () => {
+  backfillAtomicDossier();
   renderSavedList();
   drawerBackdrop.classList.add('active');
 });
@@ -1832,29 +2016,153 @@ window.openSavedArticle = function(id) {
       cardElem.style.borderColor = '';
       cardElem.style.boxShadow = '';
     }, 2000);
+    openModal(id);
+  } else {
+    // If article rotated off active feed, open direct link
+    const item = state.atomicDossier[id];
+    if (item && item.link) {
+      window.open(item.link, '_blank');
+    } else {
+      openModal(id);
+    }
   }
+};
 
-  openModal(id);
+window.openSavedPodcast = function(id, link) {
+  const targetLink = link || (state.atomicDossier[id] && state.atomicDossier[id].link) || ((state.podcasts || []).find(p => p.id === id) || {}).link;
+  if (targetLink && targetLink !== '#') {
+    window.open(targetLink, '_blank');
+    return;
+  }
+  const cardElem = document.querySelector(`.thought-card[data-id="${id}"]`);
+  if (cardElem) {
+    drawerBackdrop.classList.remove('active');
+    cardElem.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+    cardElem.style.borderColor = '#a855f7';
+    cardElem.style.boxShadow = '0 0 30px rgba(168, 85, 247, 0.6)';
+    setTimeout(() => {
+      cardElem.style.borderColor = '';
+      cardElem.style.boxShadow = '';
+    }, 2000);
+  }
 };
 
 function renderSavedList() {
-  const savedArticles = state.articles.filter(a => state.bookmarks.includes(a.id));
-  if (savedArticles.length === 0) {
-    savedList.innerHTML = '<p style="color: var(--text-muted); text-align: center;">No saved articles yet. Click ☆ on any card to bookmark.</p>';
+  backfillAtomicDossier();
+  const rawItems = state.bookmarks.map(id => state.atomicDossier[id]).filter(Boolean);
+
+  // Update counter pill
+  const savedCountBadge = document.getElementById('savedCountBadge');
+  if (savedCountBadge) {
+    savedCountBadge.textContent = `${rawItems.length} ${rawItems.length === 1 ? 'Signal' : 'Signals'}`;
+  }
+
+  if (rawItems.length === 0) {
+    savedList.innerHTML = `
+      <div class="atomic-empty-state">
+        <span class="atomic-empty-icon">✦</span>
+        <h4 class="atomic-empty-title">No Saved Signals</h4>
+        <p class="atomic-empty-desc">Click the ☆ star on any strategic news card or podcast episode to capture its atomic essence.</p>
+      </div>
+    `;
     return;
   }
-  savedList.innerHTML = savedArticles.map(art => `
-    <div class="saved-item-card" onclick="openSavedArticle('${art.id}')" title="Click to view story modal & jump to card">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem;">
-        <h4 style="font-size: 0.95rem; font-weight: 700; line-height: 1.35; color: var(--text-primary); flex: 1;">${escapeHtml(art.title)}</h4>
-        <span style="font-size: 0.72rem; color: var(--accent-cyan); font-weight: 800; text-transform: uppercase;">View &rarr;</span>
+
+  // Filter if search query is active
+  let items = rawItems;
+  if (state.savedSearchQuery) {
+    const q = state.savedSearchQuery;
+    items = rawItems.filter(item => {
+      const matchTitle = (item.title || '').toLowerCase().includes(q);
+      const matchThesis = (item.atomicThesis || '').toLowerCase().includes(q);
+      const matchSource = (item.source || '').toLowerCase().includes(q);
+      const matchGuest = (item.guest || '').toLowerCase().includes(q);
+      const matchTopics = (item.topics || []).some(t => t.toLowerCase().includes(q));
+      return matchTitle || matchThesis || matchSource || matchGuest || matchTopics;
+    });
+  }
+
+  if (items.length === 0 && state.savedSearchQuery) {
+    savedList.innerHTML = `
+      <div class="atomic-empty-state">
+        <span class="atomic-empty-icon">🔍</span>
+        <h4 class="atomic-empty-title">No Matching Signals</h4>
+        <p class="atomic-empty-desc">No saved intelligence matches "<strong>${escapeHtml(state.savedSearchQuery)}</strong>".</p>
       </div>
-      <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; margin-top: 0.6rem;">
-        <span style="color: var(--text-muted); font-weight: 600;">${art.source} &bull; ${art.category}</span>
-        <button onclick="toggleBookmark('${art.id}', event)" style="background: none; border: none; color: #ef4444; cursor: pointer; font-weight: 700;">Remove</button>
-      </div>
-    </div>
-  `).join('');
+    `;
+    return;
+  }
+
+  savedList.innerHTML = items.map(item => {
+    const isPodcast = item.type === 'podcast';
+    const typeLabel = isPodcast ? '🎙️ PODCAST' : '📰 STRATEGY';
+    const typeClass = isPodcast ? 'podcast' : 'article';
+    const cardSignalClass = isPodcast ? 'podcast-signal' : 'article-signal';
+    
+    // Resolve live link if missing from snapshot
+    let targetLink = item.link || '';
+    if (!targetLink || targetLink === '#') {
+      if (isPodcast) {
+        const pod = (state.podcasts || []).find(p => p.id === item.id);
+        if (pod && pod.link) targetLink = pod.link;
+      } else {
+        const art = (state.articles || []).find(a => a.id === item.id);
+        if (art && art.link) targetLink = art.link;
+      }
+    }
+
+    // Format saved date
+    let dateStr = '';
+    if (item.savedAt) {
+      const d = new Date(item.savedAt);
+      dateStr = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    }
+
+    const topicsHTML = (item.topics && item.topics.length)
+      ? `<div class="atomic-topics-row">${item.topics.map(t => `<span class="atomic-topic-tag">#${escapeHtml(t)}</span>`).join('')}</div>`
+      : '';
+
+    const titleClickAction = isPodcast
+      ? `window.open('${escapeJs(targetLink)}', '_blank')`
+      : `openSavedArticle('${item.id}')`;
+
+    const ctaButtonHTML = isPodcast
+      ? `<a class="atomic-cta-btn" href="${escapeHtml(targetLink)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">Watch Episode ↗</a>`
+      : `<button class="atomic-cta-btn" onclick="openSavedArticle('${item.id}')">Read Full Story ↗</button>`;
+
+    return `
+      <article class="atomic-recall-card ${cardSignalClass}">
+        <div class="atomic-card-header">
+          <div class="atomic-source-wrap">
+            <span class="atomic-source-logo">${escapeHtml(item.sourceLogo || 'NC')}</span>
+            <span class="atomic-source-name">${escapeHtml(item.source)}</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.4rem;">
+            <span class="atomic-type-pill ${typeClass}">${typeLabel}</span>
+            ${dateStr ? `<span style="color: var(--text-muted); font-size: 0.65rem;">${dateStr}</span>` : ''}
+          </div>
+        </div>
+
+        <h4 class="atomic-card-title" onclick="${titleClickAction}" title="${isPodcast ? 'Watch Episode on YouTube' : 'Read Story'}">${escapeHtml(item.title)}</h4>
+
+        <div class="atomic-thesis-box">
+          <div class="atomic-thesis-badge">
+            <span>✦</span> ATOMIC ESSENCE
+          </div>
+          <p class="atomic-thesis-text">${escapeHtml(item.atomicThesis)}</p>
+        </div>
+
+        ${topicsHTML}
+
+        <div class="atomic-card-footer">
+          ${ctaButtonHTML}
+          <button class="atomic-remove-btn" onclick="toggleBookmark('${item.id}', event)">
+            Remove
+          </button>
+        </div>
+      </article>
+    `;
+  }).join('');
 }
 
 // Ticker
@@ -2448,7 +2756,11 @@ window.createPairedCardHTML = function(article) {
     .then(r => r.ok ? r.json() : Promise.reject('No podcast data'))
     .then(data => {
       if (!data.episodes || data.episodes.length === 0) return;
+      state.podcasts = data.episodes;
+      state.podcastsLastUpdated = data.lastUpdated;
+      backfillAtomicDossier();
       renderThoughtPulse(data);
+      updateBookmarkBadge();
     })
     .catch(() => { /* Silently skip if no podcast data */ });
 })();
@@ -2471,33 +2783,37 @@ function renderThoughtPulse(data) {
   // Render cards
   carousel.innerHTML = data.episodes.map(ep => {
     const isFlagship = ep.tier === 'flagship';
-    const guestLabel = ep.guest ? `<span style="font-weight:600;color:var(--text-primary);">${ep.guest}</span> · ` : '';
+    const saved = isBookmarked(ep.id);
+    const guestLabel = ep.guest ? `<span style="font-weight:600;color:var(--text-primary);">${escapeHtml(ep.guest)}</span> · ` : '';
     const topicsHTML = (ep.topics && ep.topics.length)
-      ? `<div class="thought-card-topics">${ep.topics.map(t => `<span class="thought-topic-pill">#${t}</span>`).join('')}</div>`
+      ? `<div class="thought-card-topics">${ep.topics.map(t => `<span class="thought-topic-pill">#${escapeHtml(t)}</span>`).join('')}</div>`
       : '';
     const themeHTML = ep.theme
-      ? `<div class="thought-card-theme-box"><span class="thought-theme-label">Dominant Theme</span><p class="thought-card-theme">${ep.theme}</p></div>`
-      : (ep.insight ? `<p class="thought-card-insight">“${ep.insight}”</p>` : '');
+      ? `<div class="thought-card-theme-box"><span class="thought-theme-label">Dominant Theme</span><p class="thought-card-theme">${escapeHtml(ep.theme)}</p></div>`
+      : (ep.insight ? `<p class="thought-card-insight">“${escapeHtml(ep.insight)}”</p>` : '');
 
     return `
-      <article class="thought-card ${isFlagship ? 'flagship' : ''}" onclick="window.open('${ep.link}','_blank')">
+      <article class="thought-card ${isFlagship ? 'flagship' : ''}" data-id="${ep.id}" onclick="window.open('${escapeJs(ep.link)}','_blank')">
         <div class="thought-card-thumb-wrap">
-          <img class="thought-card-thumb" src="${ep.imageUrl}" alt="${ep.title}" loading="lazy"
+          <img class="thought-card-thumb" src="${ep.imageUrl}" alt="${escapeHtml(ep.title)}" loading="lazy"
                onerror="this.src='https://i.ytimg.com/vi/${ep.id.replace('tp_','')}/hqdefault.jpg'">
-          ${ep.duration ? `<span class="thought-card-duration">${ep.duration}</span>` : ''}
+          ${ep.duration ? `<span class="thought-card-duration">${escapeHtml(ep.duration)}</span>` : ''}
           ${isFlagship ? '<span class="thought-card-tier-badge">Featured</span>' : ''}
+          <button class="thought-bookmark-btn ${saved ? 'saved' : ''}" onclick="toggleBookmark('${ep.id}', event)" title="${saved ? 'Remove Bookmark' : 'Bookmark Podcast'}" aria-label="Bookmark Podcast">
+            ${saved ? '★' : '☆'}
+          </button>
         </div>
         <div class="thought-card-body">
           <div class="thought-card-source">
-            <div class="thought-card-logo">${ep.podcastLogo}</div>
-            <span class="thought-card-podcast-name">${ep.podcast}</span>
+            <div class="thought-card-logo">${escapeHtml(ep.podcastLogo)}</div>
+            <span class="thought-card-podcast-name">${escapeHtml(ep.podcast)}</span>
           </div>
-          <h3 class="thought-card-title">${ep.title}</h3>
+          <h3 class="thought-card-title">${escapeHtml(ep.title)}</h3>
           ${themeHTML}
           ${topicsHTML}
           <div class="thought-card-meta">
-            <span class="thought-card-category">${ep.category}</span>
-            <span>${guestLabel}${ep.pubDate || ''}</span>
+            <span class="thought-card-category">${escapeHtml(ep.category)}</span>
+            <span>${guestLabel}${escapeHtml(ep.pubDate || '')}</span>
           </div>
         </div>
       </article>

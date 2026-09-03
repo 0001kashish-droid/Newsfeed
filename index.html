@@ -289,15 +289,34 @@
     </div>
   </div>
 
-  <!-- Bookmarks Slide-over Drawer -->
+  <!-- Bookmarks Slide-over Drawer (Atomic Recall Engine) -->
   <div class="drawer-backdrop" id="drawerBackdrop">
     <div class="drawer-content" id="drawerContent">
-      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.8rem;">
-        <h3 style="font-family: var(--font-heading); font-size: 1.3rem; font-weight: 800;">Saved Articles</h3>
-        <button id="drawerCloseBtn" style="background: none; border: none; color: var(--text-primary); font-size: 1.5rem; cursor: pointer;">&times;</button>
+      <div class="drawer-header">
+        <div>
+          <span class="drawer-pretitle">✦ ATOMIC RECALL DOSSIER</span>
+          <h3 class="drawer-title">Saved Intelligence</h3>
+        </div>
+        <button id="drawerCloseBtn" class="drawer-close-btn" aria-label="Close saved drawer">&times;</button>
       </div>
-      <div id="savedList" style="display: flex; flex-direction: column; gap: 1rem;">
-        <!-- Saved items injected here -->
+
+      <!-- Quick Action & Search Toolbar -->
+      <div class="drawer-toolbar">
+        <div class="saved-search-box">
+          <span class="saved-search-icon">🔍</span>
+          <input type="text" id="savedSearchInput" class="saved-search-input" placeholder="Search saved themes, topics, or sources..." aria-label="Search saved intelligence" oninput="handleSavedSearch(this.value)" />
+          <button id="clearSavedSearchBtn" class="saved-search-clear" onclick="clearSavedSearch()" style="display:none;" aria-label="Clear search">&times;</button>
+        </div>
+        <div class="drawer-actions-row">
+          <span id="savedCountBadge" class="saved-count-pill">0 Signals</span>
+          <button id="exportMarkdownBtn" class="export-markdown-btn" onclick="exportSavedAsMarkdown()" title="Export all saved intelligence as clean Markdown">
+            <span>📋</span> Copy as Markdown
+          </button>
+        </div>
+      </div>
+
+      <div id="savedList" class="saved-list-container">
+        <!-- Atomic Recall cards injected here -->
       </div>
     </div>
   </div>
