@@ -1398,17 +1398,19 @@ function renderExecutiveModal() {
       }
     }, { passive: true });
 
+    scrollContainer.classList.add('deck-card-entering');
     scrollContainer.scrollTop = 0;
   }
 
-  // Setup mobile 1-finger horizontal touch swipe gestures
+  // Setup mobile 1-finger horizontal touch swipe gestures (singleton registration)
   setupMobileDeckSwipe();
 }
 
 // ADVANCED CROSS-PLATFORM MOBILE TOUCH SWIPE ENGINE (iOS & Android)
 function setupMobileDeckSwipe() {
   const card = document.querySelector('.deck-modal-card');
-  if (!card) return;
+  if (!card || card.dataset.swipeInitialized) return;
+  card.dataset.swipeInitialized = 'true';
 
   let startX = 0;
   let startY = 0;
@@ -1433,8 +1435,8 @@ function setupMobileDeckSwipe() {
     const diffX = currentX - startX;
     const diffY = currentY - startY;
 
-    // Provide visual rubber-band preview if gesture is predominantly horizontal
-    if (Math.abs(diffX) > Math.abs(diffY) * 1.2 && Math.abs(diffX) > 15) {
+    // Provide visual rubber-band preview only if gesture is predominantly horizontal
+    if (Math.abs(diffX) > Math.abs(diffY) * 1.5 && Math.abs(diffX) > 20) {
       card.style.transform = `translateX(${diffX * 0.35}px)`;
       card.style.transition = 'none';
     }
@@ -1448,16 +1450,16 @@ function setupMobileDeckSwipe() {
     const diffY = currentY - startY;
 
     // Restore smooth card positioning animation
-    card.style.transition = 'transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)';
+    card.style.transition = 'transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)';
     card.style.transform = 'translateY(0) translateX(0)';
 
-    // Confirm horizontal swipe intent (min 40px horizontal diff, diffX > 1.2x diffY)
-    if (Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY) * 1.2) {
+    // Confirm horizontal swipe intent (min 45px horizontal diff, diffX > 1.5x diffY)
+    if (Math.abs(diffX) > 45 && Math.abs(diffX) > Math.abs(diffY) * 1.5) {
       if (diffX < 0) {
-        // Swiped left -> Next story
+        // Swiped left -> Next story (strictly sequential)
         navigateModal(1);
       } else {
-        // Swiped right -> Previous story
+        // Swiped right -> Previous story (strictly sequential)
         navigateModal(-1);
       }
     }
@@ -1488,11 +1490,19 @@ function getTimeAgo(dateStr) {
   } catch (e) { return ''; }
 }
 
+let isModalNavigating = false;
 window.navigateModal = function(step) {
+  if (isModalNavigating) return;
   const pool = state.modalState.articles;
-  if (pool.length === 0) return;
+  if (!pool || pool.length === 0) return;
+
+  isModalNavigating = true;
   state.modalState.currentIndex = (state.modalState.currentIndex + step + pool.length) % pool.length;
   renderExecutiveModal();
+
+  setTimeout(() => {
+    isModalNavigating = false;
+  }, 280);
 };
 
 window.closeModal = function() {
