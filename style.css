@@ -1777,38 +1777,399 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
+/* ==========================================================================
+   ATOMIC RECALL INTELLIGENCE DRAWER — ENTERPRISE DOSSIER ENGINE
+   ========================================================================== */
 .drawer-content {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   width: 100%;
-  max-width: 420px;
+  max-width: 460px;
   background: var(--bg-surface);
-  backdrop-filter: blur(32px);
+  backdrop-filter: blur(36px);
+  -webkit-backdrop-filter: blur(36px);
   border-left: 1px solid var(--border-color);
-  padding: 2rem 1.5rem;
+  padding: 1.75rem 1.4rem;
   z-index: 190;
   transform: translateX(100%);
   transition: transform var(--transition-smooth);
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.25);
 }
 .drawer-backdrop.active .drawer-content {
   transform: translateX(0);
 }
 
-.saved-item-card {
+.drawer-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.drawer-pretitle {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent-cyan);
+  margin-bottom: 0.2rem;
+}
+
+.drawer-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.drawer-close-btn {
   background: var(--bg-surface-elevated);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  padding: 1.1rem;
+  color: var(--text-primary);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: all 0.2s ease;
 }
-.saved-item-card:hover {
+.drawer-close-btn:hover {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: #ef4444;
+  color: #ef4444;
+  transform: rotate(90deg);
+}
+
+/* Toolbar: Fast Search & Actions */
+.drawer-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.saved-search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.saved-search-icon {
+  position: absolute;
+  left: 0.75rem;
+  font-size: 0.85rem;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.saved-search-input {
+  width: 100%;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0.55rem 2rem 0.55rem 2.2rem;
+  font-size: 0.82rem;
+  color: var(--text-primary);
+  outline: none;
+  transition: all 0.2s ease;
+}
+.saved-search-input:focus {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 12px var(--accent-glow);
+}
+
+.saved-search-clear {
+  position: absolute;
+  right: 0.6rem;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+.saved-search-clear:hover {
+  color: var(--text-primary);
+}
+
+.drawer-actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.saved-count-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  letter-spacing: 0.3px;
+}
+
+.export-markdown-btn {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s ease;
+}
+.export-markdown-btn:hover {
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+  background: rgba(2, 132, 199, 0.08);
+}
+
+.saved-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  flex: 1;
+}
+
+/* Atomic Recall Card */
+.atomic-recall-card {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.atomic-recall-card.article-signal {
+  border-left: 3.5px solid var(--accent-cyan);
+}
+.atomic-recall-card.article-signal:hover {
   border-color: var(--accent-cyan);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px var(--accent-glow);
+  box-shadow: 0 8px 24px var(--accent-glow);
+}
+
+.atomic-recall-card.podcast-signal {
+  border-left: 3.5px solid #a855f7;
+}
+.atomic-recall-card.podcast-signal:hover {
+  border-color: #a855f7;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.3);
+}
+
+.atomic-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  gap: 0.5rem;
+}
+
+.atomic-source-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.atomic-source-logo {
+  font-weight: 800;
+  font-size: 0.62rem;
+  padding: 2px 6px;
+  border-radius: 5px;
+  background: var(--accent-cyan);
+  color: #fff;
+  letter-spacing: 0.2px;
+}
+.atomic-recall-card.podcast-signal .atomic-source-logo {
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+}
+
+.atomic-source-name {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.atomic-type-pill {
+  font-size: 0.62rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+.atomic-type-pill.article {
+  background: rgba(2, 132, 199, 0.12);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(2, 132, 199, 0.25);
+}
+.atomic-type-pill.podcast {
+  background: rgba(168, 85, 247, 0.12);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.25);
+}
+
+.atomic-card-title {
+  font-family: var(--font-heading);
+  font-size: 0.96rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--text-primary);
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.atomic-card-title:hover {
+  color: var(--accent-cyan);
+}
+.atomic-recall-card.podcast-signal .atomic-card-title:hover {
+  color: #a855f7;
+}
+
+/* The Atomic Essence / Core Thesis Box */
+.atomic-thesis-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.65rem 0.8rem;
+}
+
+.atomic-thesis-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: var(--accent-cyan);
+  margin-bottom: 0.3rem;
+}
+.atomic-recall-card.podcast-signal .atomic-thesis-badge {
+  color: #a855f7;
+}
+
+.atomic-thesis-text {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Topics Row */
+.atomic-topics-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.atomic-topic-tag {
+  font-size: 0.62rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 12px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+}
+
+/* Footer Actions */
+.atomic-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.3rem;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.75rem;
+}
+
+.atomic-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--accent-cyan);
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  transition: opacity 0.2s ease;
+}
+.atomic-recall-card.podcast-signal .atomic-cta-btn {
+  color: #a855f7;
+}
+.atomic-cta-btn:hover {
+  opacity: 0.75;
+}
+
+.atomic-remove-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.atomic-remove-btn:hover {
+  color: #ef4444;
+}
+
+/* Empty State */
+.atomic-empty-state {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+.atomic-empty-icon {
+  font-size: 2.2rem;
+  opacity: 0.6;
+}
+.atomic-empty-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+.atomic-empty-desc {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 280px;
 }
 
 /* ==========================================================================
