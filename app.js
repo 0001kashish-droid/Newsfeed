@@ -2472,6 +2472,13 @@ function renderThoughtPulse(data) {
   carousel.innerHTML = data.episodes.map(ep => {
     const isFlagship = ep.tier === 'flagship';
     const guestLabel = ep.guest ? `<span style="font-weight:600;color:var(--text-primary);">${ep.guest}</span> · ` : '';
+    const topicsHTML = (ep.topics && ep.topics.length)
+      ? `<div class="thought-card-topics">${ep.topics.map(t => `<span class="thought-topic-pill">#${t}</span>`).join('')}</div>`
+      : '';
+    const themeHTML = ep.theme
+      ? `<div class="thought-card-theme-box"><span class="thought-theme-label">Dominant Theme</span><p class="thought-card-theme">${ep.theme}</p></div>`
+      : (ep.insight ? `<p class="thought-card-insight">“${ep.insight}”</p>` : '');
+
     return `
       <article class="thought-card ${isFlagship ? 'flagship' : ''}" onclick="window.open('${ep.link}','_blank')">
         <div class="thought-card-thumb-wrap">
@@ -2486,7 +2493,8 @@ function renderThoughtPulse(data) {
             <span class="thought-card-podcast-name">${ep.podcast}</span>
           </div>
           <h3 class="thought-card-title">${ep.title}</h3>
-          ${ep.insight ? `<p class="thought-card-insight">“${ep.insight}”</p>` : ''}
+          ${themeHTML}
+          ${topicsHTML}
           <div class="thought-card-meta">
             <span class="thought-card-category">${ep.category}</span>
             <span>${guestLabel}${ep.pubDate || ''}</span>

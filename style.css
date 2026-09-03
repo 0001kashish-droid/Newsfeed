@@ -2713,16 +2713,17 @@ body {
 .thought-card-logo {
   width: 28px;
   height: 28px;
-  border-radius: 50%;
-  background: var(--accent-color);
-  color: #fff;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #0284c7, #6366f1);
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.55rem;
+  font-size: 0.65rem;
   font-weight: 800;
   flex-shrink: 0;
-  letter-spacing: -0.3px;
+  letter-spacing: 0.2px;
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.25);
 }
 
 .thought-card-podcast-name {
@@ -2741,21 +2742,56 @@ body {
   color: var(--text-primary);
   margin-bottom: 0.5rem;
   display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.thought-card-theme-box {
+  background: var(--bg-surface-elevated);
+  border-left: 3px solid #a855f7;
+  padding: 0.55rem 0.75rem;
+  border-radius: 0 8px 8px 0;
+  margin: 0.45rem 0 0.65rem 0;
+}
+
+.thought-theme-label {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #a855f7;
+  margin-bottom: 0.2rem;
+}
+
+.thought-card-theme {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin: 0;
+  display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.thought-card-insight {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  line-height: 1.5;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  font-style: italic;
-  margin-bottom: 0.6rem;
+.thought-card-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.thought-topic-pill {
+  font-size: 0.64rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.22);
+  padding: 2px 7px;
+  border-radius: 12px;
+  letter-spacing: 0.2px;
 }
 
 .thought-card-meta {
