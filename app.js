@@ -3,6 +3,8 @@
 const state = {
   articles: [],
   filteredArticles: [],
+  podcasts: [],
+  podcastsLastUpdated: null,
   currentCategory: 'top10',
   currentRegion: 'all',
   searchQuery: '',
@@ -1790,6 +1792,13 @@ window.toggleBookmark = function(id, e) {
   updateBookmarkBadge();
   filterAndRender();
   renderSavedList();
+  if (state.podcasts && state.podcasts.length > 0) {
+    renderThoughtPulse({
+      lastUpdated: state.podcastsLastUpdated,
+      total: state.podcasts.length,
+      episodes: state.podcasts
+    });
+  }
 };
 
 function isBookmarked(id) {
@@ -1799,10 +1808,16 @@ function isBookmarked(id) {
 function updateBookmarkBadge() {
   // Filter out null/undefined entries
   state.bookmarks = state.bookmarks.filter(id => !!id);
-  // Purge stale bookmarks whose articles are no longer in the loaded feed
-  if (state.articles && state.articles.length > 0) {
-    const validIds = new Set(state.articles.map(a => a.id));
-    state.bookmarks = state.bookmarks.filter(id => validIds.has(id));
+  // Purge stale bookmarks whose articles or podcasts are no longer in the loaded feed
+  const validArticleIds = new Set((state.articles || []).map(a => a.id));
+  const validPodcastIds = new Set((state.podcasts || []).map(p => p.id));
+  
+  if (validArticleIds.size > 0 || validPodcastIds.size > 0) {
+    state.bookmarks = state.bookmarks.filter(id => {
+      // Don't purge podcast bookmarks if podcasts haven't finished loading yet
+      if (id.startsWith('tp_') && validPodcastIds.size === 0) return true;
+      return validArticleIds.has(id) || validPodcastIds.has(id);
+    });
     localStorage.setItem('nc_bookmarks', JSON.stringify(state.bookmarks));
   }
   const count = state.bookmarks.length;
@@ -1837,24 +1852,79 @@ window.openSavedArticle = function(id) {
   openModal(id);
 };
 
+window.openSavedPodcast = function(id, link) {
+  drawerBackdrop.classList.remove('active');
+  
+  const cardElem = document.querySelector(`.thought-card[data-id="${id}"]`);
+  if (cardElem) {
+    cardElem.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+    cardElem.style.borderColor = '#a855f7';
+    cardElem.style.boxShadow = '0 0 30px rgba(168, 85, 247, 0.6)';
+    setTimeout(() => {
+      cardElem.style.borderColor = '';
+      cardElem.style.boxShadow = '';
+    }, 2000);
+  } else if (link) {
+    window.open(link, '_blank');
+  }
+};
+
 function renderSavedList() {
-  const savedArticles = state.articles.filter(a => state.bookmarks.includes(a.id));
-  if (savedArticles.length === 0) {
-    savedList.innerHTML = '<p style="color: var(--text-muted); text-align: center;">No saved articles yet. Click ☆ on any card to bookmark.</p>';
+  const savedArticles = (state.articles || []).filter(a => state.bookmarks.includes(a.id));
+  const savedPodcasts = (state.podcasts || []).filter(p => state.bookmarks.includes(p.id));
+
+  if (savedArticles.length === 0 && savedPodcasts.length === 0) {
+    savedList.innerHTML = '<p style="color: var(--text-muted); text-align: center; padding: 2rem 0;">No saved intelligence yet.<br><small style="font-size: 0.8rem; margin-top: 0.5rem; display: inline-block;">Click ☆ on any article or podcast to bookmark.</small></p>';
     return;
   }
-  savedList.innerHTML = savedArticles.map(art => `
-    <div class="saved-item-card" onclick="openSavedArticle('${art.id}')" title="Click to view story modal & jump to card">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem;">
-        <h4 style="font-size: 0.95rem; font-weight: 700; line-height: 1.35; color: var(--text-primary); flex: 1;">${escapeHtml(art.title)}</h4>
-        <span style="font-size: 0.72rem; color: var(--accent-cyan); font-weight: 800; text-transform: uppercase;">View &rarr;</span>
+
+  let html = '';
+
+  // 1. Saved Podcasts Section
+  if (savedPodcasts.length > 0) {
+    html += `
+      <div style="font-size: 0.78rem; font-weight: 800; color: #a855f7; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.4rem;">
+        <span>🎙️</span> Saved Podcasts (${savedPodcasts.length})
       </div>
-      <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; margin-top: 0.6rem;">
-        <span style="color: var(--text-muted); font-weight: 600;">${art.source} &bull; ${art.category}</span>
-        <button onclick="toggleBookmark('${art.id}', event)" style="background: none; border: none; color: #ef4444; cursor: pointer; font-weight: 700;">Remove</button>
+    `;
+    html += savedPodcasts.map(pod => `
+      <div class="saved-item-card saved-podcast-item" onclick="openSavedPodcast('${pod.id}', '${escapeJs(pod.link)}')" title="Click to focus on podcast card & watch">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem;">
+          <h4 style="font-size: 0.92rem; font-weight: 700; line-height: 1.35; color: var(--text-primary); flex: 1;">${escapeHtml(pod.title)}</h4>
+          <span style="font-size: 0.72rem; color: #a855f7; font-weight: 800; text-transform: uppercase; white-space: nowrap;">Watch &rarr;</span>
+        </div>
+        ${pod.theme ? `<p style="font-size: 0.78rem; color: var(--text-secondary); margin: 0.4rem 0 0.5rem 0; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${escapeHtml(pod.theme)}</p>` : ''}
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; margin-top: 0.4rem;">
+          <span style="color: var(--text-muted); font-weight: 600;">${escapeHtml(pod.podcast)} &bull; ${escapeHtml(pod.category || 'Podcast')}</span>
+          <button onclick="toggleBookmark('${pod.id}', event)" style="background: none; border: none; color: #ef4444; cursor: pointer; font-weight: 700;">Remove</button>
+        </div>
       </div>
-    </div>
-  `).join('');
+    `).join('');
+  }
+
+  // 2. Saved Articles Section
+  if (savedArticles.length > 0) {
+    const margin = savedPodcasts.length > 0 ? 'margin: 1.25rem 0 0.6rem 0;' : 'margin-bottom: 0.6rem;';
+    html += `
+      <div style="font-size: 0.78rem; font-weight: 800; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.6px; ${margin} display: flex; align-items: center; gap: 0.4rem;">
+        <span>📰</span> Saved Articles (${savedArticles.length})
+      </div>
+    `;
+    html += savedArticles.map(art => `
+      <div class="saved-item-card" onclick="openSavedArticle('${art.id}')" title="Click to view story modal & jump to card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem;">
+          <h4 style="font-size: 0.95rem; font-weight: 700; line-height: 1.35; color: var(--text-primary); flex: 1;">${escapeHtml(art.title)}</h4>
+          <span style="font-size: 0.72rem; color: var(--accent-cyan); font-weight: 800; text-transform: uppercase;">View &rarr;</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; margin-top: 0.6rem;">
+          <span style="color: var(--text-muted); font-weight: 600;">${art.source} &bull; ${art.category}</span>
+          <button onclick="toggleBookmark('${art.id}', event)" style="background: none; border: none; color: #ef4444; cursor: pointer; font-weight: 700;">Remove</button>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  savedList.innerHTML = html;
 }
 
 // Ticker
@@ -2448,7 +2518,10 @@ window.createPairedCardHTML = function(article) {
     .then(r => r.ok ? r.json() : Promise.reject('No podcast data'))
     .then(data => {
       if (!data.episodes || data.episodes.length === 0) return;
+      state.podcasts = data.episodes;
+      state.podcastsLastUpdated = data.lastUpdated;
       renderThoughtPulse(data);
+      updateBookmarkBadge();
     })
     .catch(() => { /* Silently skip if no podcast data */ });
 })();
@@ -2471,33 +2544,37 @@ function renderThoughtPulse(data) {
   // Render cards
   carousel.innerHTML = data.episodes.map(ep => {
     const isFlagship = ep.tier === 'flagship';
-    const guestLabel = ep.guest ? `<span style="font-weight:600;color:var(--text-primary);">${ep.guest}</span> · ` : '';
+    const saved = isBookmarked(ep.id);
+    const guestLabel = ep.guest ? `<span style="font-weight:600;color:var(--text-primary);">${escapeHtml(ep.guest)}</span> · ` : '';
     const topicsHTML = (ep.topics && ep.topics.length)
-      ? `<div class="thought-card-topics">${ep.topics.map(t => `<span class="thought-topic-pill">#${t}</span>`).join('')}</div>`
+      ? `<div class="thought-card-topics">${ep.topics.map(t => `<span class="thought-topic-pill">#${escapeHtml(t)}</span>`).join('')}</div>`
       : '';
     const themeHTML = ep.theme
-      ? `<div class="thought-card-theme-box"><span class="thought-theme-label">Dominant Theme</span><p class="thought-card-theme">${ep.theme}</p></div>`
-      : (ep.insight ? `<p class="thought-card-insight">“${ep.insight}”</p>` : '');
+      ? `<div class="thought-card-theme-box"><span class="thought-theme-label">Dominant Theme</span><p class="thought-card-theme">${escapeHtml(ep.theme)}</p></div>`
+      : (ep.insight ? `<p class="thought-card-insight">“${escapeHtml(ep.insight)}”</p>` : '');
 
     return `
-      <article class="thought-card ${isFlagship ? 'flagship' : ''}" onclick="window.open('${ep.link}','_blank')">
+      <article class="thought-card ${isFlagship ? 'flagship' : ''}" data-id="${ep.id}" onclick="window.open('${escapeJs(ep.link)}','_blank')">
         <div class="thought-card-thumb-wrap">
-          <img class="thought-card-thumb" src="${ep.imageUrl}" alt="${ep.title}" loading="lazy"
+          <img class="thought-card-thumb" src="${ep.imageUrl}" alt="${escapeHtml(ep.title)}" loading="lazy"
                onerror="this.src='https://i.ytimg.com/vi/${ep.id.replace('tp_','')}/hqdefault.jpg'">
-          ${ep.duration ? `<span class="thought-card-duration">${ep.duration}</span>` : ''}
+          ${ep.duration ? `<span class="thought-card-duration">${escapeHtml(ep.duration)}</span>` : ''}
           ${isFlagship ? '<span class="thought-card-tier-badge">Featured</span>' : ''}
+          <button class="thought-bookmark-btn ${saved ? 'saved' : ''}" onclick="toggleBookmark('${ep.id}', event)" title="${saved ? 'Remove Bookmark' : 'Bookmark Podcast'}" aria-label="Bookmark Podcast">
+            ${saved ? '★' : '☆'}
+          </button>
         </div>
         <div class="thought-card-body">
           <div class="thought-card-source">
-            <div class="thought-card-logo">${ep.podcastLogo}</div>
-            <span class="thought-card-podcast-name">${ep.podcast}</span>
+            <div class="thought-card-logo">${escapeHtml(ep.podcastLogo)}</div>
+            <span class="thought-card-podcast-name">${escapeHtml(ep.podcast)}</span>
           </div>
-          <h3 class="thought-card-title">${ep.title}</h3>
+          <h3 class="thought-card-title">${escapeHtml(ep.title)}</h3>
           ${themeHTML}
           ${topicsHTML}
           <div class="thought-card-meta">
-            <span class="thought-card-category">${ep.category}</span>
-            <span>${guestLabel}${ep.pubDate || ''}</span>
+            <span class="thought-card-category">${escapeHtml(ep.category)}</span>
+            <span>${guestLabel}${escapeHtml(ep.pubDate || '')}</span>
           </div>
         </div>
       </article>
