@@ -2438,3 +2438,69 @@ window.createPairedCardHTML = function(article) {
     '<div class="paired-perspectives">' + perspectivesHTML + '</div>' +
   '</div>';
 };
+
+
+/* ============================================================
+   THOUGHT PULSE — Podcast Intelligence Renderer
+   ============================================================ */
+(function initThoughtPulse() {
+  fetch('data/podcasts.json')
+    .then(r => r.ok ? r.json() : Promise.reject('No podcast data'))
+    .then(data => {
+      if (!data.episodes || data.episodes.length === 0) return;
+      renderThoughtPulse(data);
+    })
+    .catch(() => { /* Silently skip if no podcast data */ });
+})();
+
+function renderThoughtPulse(data) {
+  const section = document.getElementById('thoughtPulseSection');
+  const carousel = document.getElementById('thoughtPulseCarousel');
+  const syncLabel = document.getElementById('podcastSyncLabel');
+  if (!section || !carousel) return;
+
+  // Show the section
+  section.style.display = 'block';
+
+  // Update sync label
+  if (data.lastUpdated && syncLabel) {
+    const d = new Date(data.lastUpdated);
+    syncLabel.textContent = `${data.total} episodes · Updated ${d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`;
+  }
+
+  // Render cards
+  carousel.innerHTML = data.episodes.map(ep => {
+    const isFlagship = ep.tier === 'flagship';
+    const guestLabel = ep.guest ? `<span style="font-weight:600;color:var(--text-primary);">${ep.guest}</span> · ` : '';
+    const topicsHTML = (ep.topics && ep.topics.length)
+      ? `<div class="thought-card-topics">${ep.topics.map(t => `<span class="thought-topic-pill">#${t}</span>`).join('')}</div>`
+      : '';
+    const themeHTML = ep.theme
+      ? `<div class="thought-card-theme-box"><span class="thought-theme-label">Dominant Theme</span><p class="thought-card-theme">${ep.theme}</p></div>`
+      : (ep.insight ? `<p class="thought-card-insight">“${ep.insight}”</p>` : '');
+
+    return `
+      <article class="thought-card ${isFlagship ? 'flagship' : ''}" onclick="window.open('${ep.link}','_blank')">
+        <div class="thought-card-thumb-wrap">
+          <img class="thought-card-thumb" src="${ep.imageUrl}" alt="${ep.title}" loading="lazy"
+               onerror="this.src='https://i.ytimg.com/vi/${ep.id.replace('tp_','')}/hqdefault.jpg'">
+          ${ep.duration ? `<span class="thought-card-duration">${ep.duration}</span>` : ''}
+          ${isFlagship ? '<span class="thought-card-tier-badge">Featured</span>' : ''}
+        </div>
+        <div class="thought-card-body">
+          <div class="thought-card-source">
+            <div class="thought-card-logo">${ep.podcastLogo}</div>
+            <span class="thought-card-podcast-name">${ep.podcast}</span>
+          </div>
+          <h3 class="thought-card-title">${ep.title}</h3>
+          ${themeHTML}
+          ${topicsHTML}
+          <div class="thought-card-meta">
+            <span class="thought-card-category">${ep.category}</span>
+            <span>${guestLabel}${ep.pubDate || ''}</span>
+          </div>
+        </div>
+      </article>
+    `;
+  }).join('');
+}
