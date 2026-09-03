@@ -2592,9 +2592,6 @@ function updateSubCountBadge() {
   }
 
   function updateProgressRing() {
-    const ring = document.getElementById('logoRingFill');
-    if (!ring) return;
-    
     const allCats = ['World', 'Tech', 'National', 'Business'];
     let catsCovered = 0;
     for (const cat of allCats) {
@@ -2604,15 +2601,15 @@ function updateSubCountBadge() {
     }
     
     const progress = Math.min(catsCovered / COMPLETION_THRESHOLD.minCategories, 1);
-    const circumference = 131.95;
-    ring.style.strokeDashoffset = circumference * (1 - progress);
+    const scrollLine = document.getElementById('headerScrollLine');
     
-    const wrap = ring.closest('.logo-ring-wrap');
     if (progress >= 1 && !readingProgress.completed) {
       readingProgress.completed = true;
       saveProgress();
-      if (wrap) wrap.classList.add('caught-up');
+      if (scrollLine) scrollLine.classList.add('caught-up');
       showCaughtUpToast();
+    } else if (readingProgress.completed && scrollLine) {
+      scrollLine.classList.add('caught-up');
     }
   }
 

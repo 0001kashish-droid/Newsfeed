@@ -369,8 +369,16 @@ body {
   left: 0;
   height: 2.5px;
   width: 0%;
-  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
-  transition: width 0.1s linear;
+  background: linear-gradient(90deg, var(--accent-cyan) 0%, #6366f1 60%, #a855f7 100%);
+  box-shadow: 0 0 10px var(--accent-glow), 0 0 3px var(--accent-cyan);
+  transition: width 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 105;
+  pointer-events: none;
+}
+
+.header-scroll-line.caught-up {
+  background: linear-gradient(90deg, #10b981 0%, #34d399 50%, #059669 100%) !important;
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.8), 0 0 4px #10b981 !important;
 }
 
 .header-inner {
@@ -390,20 +398,47 @@ body {
 .logo-box:hover {
   transform: scale(1.02);
 }
+
+/* Pristine VisionOS Diamond-Cut Emblem */
+.logo-emblem {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
 .logo-icon {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
-  border-radius: var(--radius-sm);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 50%, #1e40af 100%);
+  border-radius: var(--radius-full);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
   font-family: var(--font-heading);
-  color: white;
-  font-size: 1.25rem;
-  box-shadow: 0 4px 20px var(--accent-glow);
+  color: #ffffff;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 3px 12px rgba(2, 132, 199, 0.35), inset 0 1px 1.5px rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
+
+[data-theme="dark"] .logo-icon {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #3b82f6 100%);
+  box-shadow: 0 4px 18px rgba(14, 165, 233, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.logo-box:hover .logo-icon {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.7);
+}
+
 .logo-text {
   font-family: var(--font-heading);
   font-weight: 800;
@@ -2784,53 +2819,7 @@ body {
 
 
 
-/* ========== FINITE FEED: Progress Ring & Caught-Up Toast ========== */
-.logo-ring-wrap {
-  position: relative;
-  width: 42px;
-  height: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.logo-ring-wrap .logo-icon {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  border-radius: var(--radius-full);
-}
-.logo-progress-ring {
-  position: absolute;
-  inset: 0;
-  transform: rotate(-90deg);
-  pointer-events: none;
-  z-index: 2;
-}
-.logo-ring-track {
-  stroke: var(--border-color);
-  opacity: 0.5;
-}
-.logo-ring-fill {
-  stroke: var(--accent-cyan);
-  transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-  filter: drop-shadow(0 0 6px var(--accent-glow));
-}
-.logo-ring-wrap.caught-up .logo-ring-fill {
-  stroke: #10b981;
-  filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.6));
-}
-.logo-ring-wrap.caught-up .logo-icon {
-  animation: caught-up-pulse 1.5s ease-in-out;
-}
-@keyframes caught-up-pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.12); }
-}
+/* ========== FINITE FEED: Specular Horizon Completion & Caught-Up Toast ========== */
 
 /* Caught-up toast notification */
 .caught-up-toast {
