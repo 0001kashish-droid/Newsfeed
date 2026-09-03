@@ -2592,9 +2592,6 @@ function updateSubCountBadge() {
   }
 
   function updateProgressRing() {
-    const ring = document.getElementById('logoRingFill');
-    if (!ring) return;
-    
     const allCats = ['World', 'Tech', 'National', 'Business'];
     let catsCovered = 0;
     for (const cat of allCats) {
@@ -2604,15 +2601,15 @@ function updateSubCountBadge() {
     }
     
     const progress = Math.min(catsCovered / COMPLETION_THRESHOLD.minCategories, 1);
-    const circumference = 131.95;
-    ring.style.strokeDashoffset = circumference * (1 - progress);
+    const scrollLine = document.getElementById('headerScrollLine');
     
-    const wrap = ring.closest('.logo-ring-wrap');
     if (progress >= 1 && !readingProgress.completed) {
       readingProgress.completed = true;
       saveProgress();
-      if (wrap) wrap.classList.add('caught-up');
+      if (scrollLine) scrollLine.classList.add('caught-up');
       showCaughtUpToast();
+    } else if (readingProgress.completed && scrollLine) {
+      scrollLine.classList.add('caught-up');
     }
   }
 
@@ -2742,7 +2739,13 @@ window.createPairedCardHTML = function(article) {
   }
   
   return '<div class="paired-story-card" data-article-id="' + article.id + '">' +
-    '<div class="paired-story-badge">\uD83C\uDF10 Same Event, Different Worlds</div>' +
+    '<div class="paired-story-header">' +
+      '<div class="paired-header-left">' +
+        '<span class="paired-badge-glow">✦</span>' +
+        '<span class="paired-header-title">CROSS-REGIONAL INTELLIGENCE</span>' +
+      '</div>' +
+      '<span class="paired-header-pill">2 Perspectives Compared</span>' +
+    '</div>' +
     '<div class="paired-perspectives">' + perspectivesHTML + '</div>' +
   '</div>';
 };
