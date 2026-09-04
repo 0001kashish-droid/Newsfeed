@@ -1170,6 +1170,11 @@ window.openModal = function(id) {
   }
 
   document.body.classList.add('modal-open');
+  const card = document.querySelector('.deck-modal-card');
+  if (card) {
+    card.style.transform = '';
+    card.style.transition = '';
+  }
   renderExecutiveModal();
   modalBackdrop.classList.add('active');
 };
@@ -1257,7 +1262,7 @@ function renderExecutiveModal() {
         <span class="mobile-deck-tag" style="color: ${themeColor}; border-color: ${themeColor};">${art.category}</span>
       </div>
       <div class="mobile-deck-header-right">
-        <button class="mobile-deck-bookmark ${saved ? 'saved' : ''}" onclick="toggleBookmark('${art.id}', event); renderExecutiveModal();" aria-label="Save story">
+        <button class="mobile-deck-bookmark ${saved ? 'saved' : ''}" onclick="toggleModalBookmark('${art.id}', event);" aria-label="Save story">
           ${saved ? '★ Saved' : '☆ Save'}
         </button>
         <button class="mobile-deck-close" onclick="closeModal()" aria-label="Close modal">&times;</button>
@@ -1272,7 +1277,7 @@ function renderExecutiveModal() {
       </div>
     </div>
 
-    <button class="liquid-glass-bookmark desktop-only-control ${saved ? 'saved' : ''}" onclick="toggleBookmark('${art.id}', event); renderExecutiveModal();" aria-label="Save story for later" title="Save story for later">
+    <button class="liquid-glass-bookmark desktop-only-control ${saved ? 'saved' : ''}" onclick="toggleModalBookmark('${art.id}', event);" aria-label="Save story for later" title="Save story for later">
       ${saved ? '★ Saved' : '☆ Save'}
     </button>
 
@@ -1399,6 +1404,10 @@ function renderExecutiveModal() {
     }, { passive: true });
 
     scrollContainer.classList.add('deck-card-entering');
+    scrollContainer.addEventListener('animationend', function handler() {
+      scrollContainer.classList.remove('deck-card-entering');
+      scrollContainer.removeEventListener('animationend', handler);
+    });
     scrollContainer.scrollTop = 0;
   }
 
@@ -1451,7 +1460,10 @@ function setupMobileDeckSwipe() {
 
     // Restore smooth card positioning animation
     card.style.transition = 'transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)';
-    card.style.transform = 'translateY(0) translateX(0)';
+    card.style.transform = '';
+    setTimeout(() => {
+      card.style.transition = '';
+    }, 300);
 
     // Confirm horizontal swipe intent (min 45px horizontal diff, diffX > 1.5x diffY)
     if (Math.abs(diffX) > 45 && Math.abs(diffX) > Math.abs(diffY) * 1.5) {
@@ -1490,6 +1502,23 @@ function getTimeAgo(dateStr) {
   } catch (e) { return ''; }
 }
 
+// INLINE SPEAK ARTICLE — Bridge for modal "Listen" button to Speech Synthesis
+window.speakArticle = function(text) {
+  if (!('speechSynthesis' in window) || !text) return;
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.rate = 1.0;
+  utterance.pitch = 1.0;
+  utterance.lang = 'en-US';
+  // Use a natural voice when available
+  const voices = window.speechSynthesis.getVoices();
+  const preferred = voices.find(v => v.lang.startsWith('en') && v.name.includes('Google')) ||
+                    voices.find(v => v.lang.startsWith('en') && !v.localService) ||
+                    voices.find(v => v.lang.startsWith('en'));
+  if (preferred) utterance.voice = preferred;
+  window.speechSynthesis.speak(utterance);
+};
+
 let isModalNavigating = false;
 window.navigateModal = function(step) {
   if (isModalNavigating) return;
@@ -1508,6 +1537,27 @@ window.navigateModal = function(step) {
 window.closeModal = function() {
   document.body.classList.remove('modal-open');
   modalBackdrop.classList.remove('active');
+  const card = document.querySelector('.deck-modal-card');
+  if (card) {
+    card.style.transform = '';
+    card.style.transition = '';
+  }
+};
+
+window.toggleModalBookmark = function(id, event) {
+  if (event) event.stopPropagation();
+  toggleBookmark(id, event);
+  const saved = isBookmarked(id);
+  const mobileBtn = document.querySelector('.mobile-deck-bookmark');
+  if (mobileBtn) {
+    mobileBtn.classList.toggle('saved', saved);
+    mobileBtn.innerHTML = saved ? '★ Saved' : '☆ Save';
+  }
+  const desktopBtn = document.querySelector('.liquid-glass-bookmark');
+  if (desktopBtn) {
+    desktopBtn.classList.toggle('saved', saved);
+    desktopBtn.innerHTML = saved ? '★ Saved' : '☆ Save';
+  }
 };
 
 window.closeShortcutModal = function() {
@@ -2007,15 +2057,23 @@ document.getElementById('bookmarksBtn').addEventListener('click', () => {
   backfillAtomicDossier();
   renderSavedList();
   drawerBackdrop.classList.add('active');
+  document.body.classList.add('drawer-open');
 });
-drawerCloseBtn.addEventListener('click', () => drawerBackdrop.classList.remove('active'));
+drawerCloseBtn.addEventListener('click', () => {
+  drawerBackdrop.classList.remove('active');
+  document.body.classList.remove('drawer-open');
+});
 drawerBackdrop.addEventListener('click', (e) => {
-  if (e.target === drawerBackdrop) drawerBackdrop.classList.remove('active');
+  if (e.target === drawerBackdrop) {
+    drawerBackdrop.classList.remove('active');
+    document.body.classList.remove('drawer-open');
+  }
 });
 
 // INTERACTIVE BOOKMARK REDIRECTION
 window.openSavedArticle = function(id) {
   drawerBackdrop.classList.remove('active');
+  document.body.classList.remove('drawer-open');
   
   const cardElem = document.querySelector(`.news-card[data-id="${id}"]`);
   if (cardElem) {

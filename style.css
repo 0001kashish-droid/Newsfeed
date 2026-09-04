@@ -80,6 +80,21 @@
   }
 }
 
+/* Body scroll lock during full-screen overlays */
+body.modal-open,
+body.drawer-open {
+  overflow: hidden !important;
+  touch-action: none;
+}
+
+/* Hide audio player beneath full-screen overlays to prevent z-index conflicts */
+body.modal-open .audio-player-widget,
+body.drawer-open .audio-player-widget {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
 body.modal-open .custom-cursor-dot,
 body.modal-open .custom-cursor-ring {
   display: none !important;
@@ -1350,6 +1365,13 @@ body {
   transform: translateY(-50%) scale(0.94);
 }
 
+/* On tablets and mobile screens (<=1024px), suppress desktop side paddles */
+@media (max-width: 1024px) {
+  .liquid-glass-paddle {
+    display: none !important;
+  }
+}
+
 /* APPLE LIQUID GLASS FLOATING NAV PILL (COUNTER) */
 .liquid-glass-nav-container {
   position: absolute;
@@ -1533,19 +1555,13 @@ body {
   flex-shrink: 0;
 }
 
-/* Smooth deck card entrance transition */
+/* Smooth deck card entrance transition — opacity only to avoid colliding with touch swipe transform */
 @keyframes deck-fade-in {
-  0% {
-    opacity: 0.88;
-    transform: translateY(4px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0% { opacity: 0.85; }
+  100% { opacity: 1; }
 }
 .deck-card-entering {
-  animation: deck-fade-in 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: deck-fade-in 0.2s ease-out forwards;
 }
 
 /* Responsive deck content body — replaces inline padding */
@@ -2287,10 +2303,6 @@ body {
   .deck-content-body {
     padding: 1.5rem 1.8rem 4.5rem !important;
   }
-  /* On touch/tablet screens, suppress desktop side paddles that obstruct reading */
-  .liquid-glass-paddle {
-    display: none !important;
-  }
   .filter-bar {
     flex-wrap: nowrap !important;
     gap: 0.75rem !important;
@@ -2346,14 +2358,11 @@ body {
   .map-section-inner {
     grid-template-columns: 1fr;
   }
-  .liquid-glass-paddle {
-    display: none !important;
-  }
 }
 
 @media (max-width: 640px) {
-  /* Body Bottom Clearance for Floating Audio Player */
-  body {
+  /* Body Bottom Clearance for Floating Audio Player — scoped to exclude overlays */
+  body:not(.modal-open):not(.drawer-open) {
     padding-bottom: 5.5rem !important;
   }
 
@@ -2503,11 +2512,12 @@ body {
   .desktop-only-control {
     display: none !important;
   }
-  /* Scroll body fills remaining space below mobile header */
+  /* Scroll body fills remaining space below mobile header via flexbox */
   .deck-scroll-body {
-    height: calc(100% - 50px) !important;
-    max-height: calc(100vh - 50px) !important;
-    max-height: calc(100dvh - 50px) !important;
+    flex: 1 1 0% !important;
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
   }
   .deck-cover-parallax {
     height: 180px !important;
@@ -2518,9 +2528,6 @@ body {
   .deck-content-body h2 {
     font-size: 1.3rem !important;
     line-height: 1.32 !important;
-  }
-  .liquid-glass-paddle {
-    display: none !important; /* Hide desktop side arrows on mobile touch screens */
   }
   /* Touch target compliance — minimum 44px for all interactive elements */
   .mobile-deck-bookmark,
@@ -3142,6 +3149,9 @@ body {
   font-weight: 800;
   letter-spacing: -0.01em;
   color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .thought-pulse-title::before {
