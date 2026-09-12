@@ -1,6 +1,6 @@
 # 🌐 News Colossal — High-Signal Global News Intelligence Platform
 
-> **News Colossal** is an ultra-premium, real-time news aggregation command center engineered to eliminate digital noise, clickbait, and information overload. Built with pure vanilla JS, HTML5 Canvas, and CSS3 glassmorphism.
+> **News Colossal** is an ultra-premium, real-time news aggregation command center engineered to eliminate digital noise/cacophony, clickbait, and information overload. Built with pure vanilla JS, HTML5 Canvas, and CSS3 glassmorphism.
 
 ### 🔗 Live App: [https://0001kashish-droid.github.io/Newsfeed/](https://0001kashish-droid.github.io/Newsfeed/)
 
