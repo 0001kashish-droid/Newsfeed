@@ -1090,7 +1090,69 @@ function renderGrid(articles) {
       pairedIdx++;
     }
   }
+  // LIQUID MORPHING TRANSITION: Capture old card positions for FLIP animation
+  const oldCards = newsGrid.querySelectorAll('.news-card[data-id]');
+  const oldPositions = new Map();
+  const oldScrollY = window.scrollY;
+  oldCards.forEach(card => {
+    const id = card.getAttribute('data-id');
+    const rect = card.getBoundingClientRect();
+    // Save absolute document position to survive scroll jumps
+    oldPositions.set(id, { top: rect.top + oldScrollY, left: rect.left, width: rect.width, height: rect.height });
+  });
+
+  newsGrid.classList.add('morphing-active');
   newsGrid.innerHTML = gridHTML;
+
+  // FLIP Phase: Animate persisted cards from old position, crystallize new cards
+  requestAnimationFrame(() => {
+    const newCards = newsGrid.querySelectorAll('.news-card[data-id]');
+    newCards.forEach(card => {
+      const id = card.getAttribute('data-id');
+      if (oldPositions.has(id)) {
+        // Persisted card: FLIP from old to new position
+        const oldPos = oldPositions.get(id);
+        const newRect = card.getBoundingClientRect();
+        
+        // Calculate absolute deltas
+        const newAbsoluteTop = newRect.top + window.scrollY;
+        const deltaX = oldPos.left - newRect.left;
+        const deltaY = oldPos.top - newAbsoluteTop;
+        
+        // Suppress the default CSS entrance animation
+        card.style.animation = 'none';
+
+        if (Math.abs(deltaX) > 1 || Math.abs(deltaY) > 1) {
+          card.style.zIndex = '20';
+          
+          // Use Web Animations API (WAAPI) for bulletproof FLIP
+          const flipAnimation = card.animate([
+            { transform: `translate(${deltaX}px, ${deltaY}px)` },
+            { transform: 'translate(0px, 0px)' }
+          ], {
+            duration: 750,
+            easing: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
+            fill: 'both' // Ensures it stays at final state until cleared
+          });
+
+          flipAnimation.onfinish = () => {
+            card.style.zIndex = '';
+            // Clear the animation fill so natural CSS takes over
+            flipAnimation.cancel();
+          };
+        }
+      } else if (oldPositions.size > 0) {
+        // New card: dramatic crystallize entrance (staggered)
+        card.classList.add('morph-entering');
+        card.addEventListener('animationend', function handler() {
+          card.classList.remove('morph-entering');
+          card.removeEventListener('animationend', handler);
+        });
+      }
+    });
+    setTimeout(() => newsGrid.classList.remove('morphing-active'), 800);
+  });
+
   attach3DTiltListeners();
 
   if (_currentRenderedCount < articles.length) {
@@ -1727,6 +1789,8 @@ function getSelectedVoice() {
 }
 
 // CONVERSATIONAL RADIO ANCHOR SCRIPT SYNTHESIZER
+// EXECUTIVE AUDIO DOSSIER — Structured broadcast intelligence
+let _lastBroadcastCategory = '';
 function generateHumanBroadcastScript(article, index, total) {
   if (!article) return 'No intelligence dispatches available.';
 
@@ -1736,7 +1800,6 @@ function generateHumanBroadcastScript(article, index, total) {
   const title = (article.title || '').trim();
 
   let desc = (article.description || '').trim();
-  // Strip trailing dots, ellipses, or cut-off symbols
   desc = desc.replace(/[\.\s]*[\.…]+$/, '').trim();
   const lastPeriod = Math.max(desc.lastIndexOf('.'), desc.lastIndexOf('?'), desc.lastIndexOf('!'));
   if (lastPeriod > 40) {
@@ -1745,26 +1808,63 @@ function generateHumanBroadcastScript(article, index, total) {
     desc += '.';
   }
 
-  let text = `Story ${index + 1} of ${total}. `;
-  text += `From ${source}, tracking ${category} affairs in ${region}. `;
+  let text = '';
+
+  // EXECUTIVE AUDIO DOSSIER: Structured opening for first story
+  if (index === 0) {
+    const now = new Date();
+    const hour = now.getHours();
+    const greeting = hour < 12 ? 'Good morning' : hour < 17 ? 'Good afternoon' : 'Good evening';
+    const dateStr = now.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+    text += `${greeting}. Today is ${dateStr}. `;
+    text += `Here is your News Colossal Executive Briefing. ${total} stories selected for your attention. `;
+    text += `... `;
+  }
+
+  // Category section transitions
+  if (index === 0 || (index > 0 && article.category !== _lastBroadcastCategory)) {
+    const categoryIntros = {
+      'World': 'In critical global developments. ',
+      'Tech': 'Now turning to technology and innovation. ',
+      'Business': 'In business and market intelligence. ',
+      'National': 'In national affairs. '
+    };
+    text += categoryIntros[category] || `In ${category} developments. `;
+    _lastBroadcastCategory = category;
+  }
+
+  text += `Story ${index + 1} of ${total}. `;
+  text += `From ${source}, covering ${region}. `;
   text += `${title}. `;
   if (desc && desc !== title) {
     text += `${desc} `;
   }
-  text += `Full report available on ${source}.`;
+
+  // EXECUTIVE AUDIO DOSSIER: Structured closing for last story
+  if (index === total - 1) {
+    text += `... That concludes your News Colossal Executive Briefing. `;
+    text += `${total} stories were analyzed from verified global sources. `;
+    text += `Stay informed. Stay ahead.`;
+  } else {
+    text += `Full report available on ${source}.`;
+  }
+
   return text;
 }
 
 // SMART CONVERSATIONAL RADIO BROADCASTER & CONTINUOUS AUTO-ADVANCE
 window.playStoryAtIndex = function(index) {
   if (!('speechSynthesis' in window)) return;
-
   const activeList = getActiveFeedArticles();
-  if (!activeList || !activeList.length) return;
-
+  if (!activeList || activeList.length === 0) return;
+  
+  // Bound check
   const safeIdx = Math.max(0, Math.min(index, activeList.length - 1));
   const art = activeList[safeIdx];
-  if (!art) return;
+  
+  if (safeIdx === 0) {
+    _lastBroadcastCategory = ''; // FIX: Reset state on new session
+  }
 
   window.speechSynthesis.cancel();
   state.audioState.currentIndex = safeIdx;
@@ -2891,3 +2991,177 @@ function renderThoughtPulse(data) {
     `;
   }).join('');
 }
+
+// ============================================================
+// 60-SECOND FLASH BRIEFING ENGINE
+// Full-screen auto-advancing news flashcards
+// ============================================================
+(function initFlashBriefing() {
+  const overlay = document.getElementById('flashBriefingOverlay');
+  const cardArea = document.getElementById('flashCardArea');
+  const progressFill = document.getElementById('flashProgressFill');
+  const counter = document.getElementById('flashCounter');
+  const timerFill = document.getElementById('flashTimerFill');
+  const pauseBtn = document.getElementById('flashPauseBtn');
+  const closeBtn = document.getElementById('flashCloseBtn');
+  const triggerBtn = document.getElementById('flashBriefingBtn');
+
+  if (!overlay || !triggerBtn) return;
+
+  let flashState = {
+    articles: [],
+    currentIndex: 0,
+    isPaused: false,
+    secondsLeft: 6,
+    intervalId: null
+  };
+
+  const CARD_DURATION = 6;
+  const FB_COLORS = {
+    World: { bg: 'rgba(0,242,254,0.12)', color: '#00f2fe', border: 'rgba(0,242,254,0.3)' },
+    Tech: { bg: 'rgba(168,85,247,0.12)', color: '#a855f7', border: 'rgba(168,85,247,0.3)' },
+    National: { bg: 'rgba(245,158,11,0.12)', color: '#f59e0b', border: 'rgba(245,158,11,0.3)' },
+    Business: { bg: 'rgba(16,185,129,0.12)', color: '#10b981', border: 'rgba(16,185,129,0.3)' }
+  };
+
+  function getUrgencyClass(i) {
+    if (i < 3) return 'urgency-high';
+    if (i < 7) return 'urgency-medium';
+    return 'urgency-low';
+  }
+
+  function renderFlashCard(index) {
+    const art = flashState.articles[index];
+    if (!art) return;
+    const catStyle = FB_COLORS[art.category] || FB_COLORS.World;
+    const raw = art.annotation ? (art.annotation.what || art.description || '') : (art.description || '');
+    const clean = raw.replace(/[\s.]*[.…]+$/, '').trim();
+    const sentence = clean.split(/(?<=[.!?])\s/)[0] || clean;
+
+    const existing = cardArea.querySelector('.flash-card');
+    if (existing) {
+      existing.classList.add('exiting');
+      setTimeout(() => existing.remove(), 350);
+    }
+
+    setTimeout(() => {
+      cardArea.innerHTML = `
+        <div class="flash-card">
+          <div class="flash-card-urgency ${getUrgencyClass(index)}"></div>
+          <span class="flash-card-category" style="background:${catStyle.bg};color:${catStyle.color};border:1px solid ${catStyle.border};">${art.category}</span>
+          <h2 class="flash-card-headline">${art.title}</h2>
+          <p class="flash-card-summary">${sentence}</p>
+          <div class="flash-card-source">
+            <span class="flash-card-source-logo">${art.sourceLogo || art.source.charAt(0)}</span>
+            <span>${art.source}</span>
+            ${art.readTime ? '<span>&middot;</span><span>' + art.readTime + '</span>' : ''}
+          </div>
+        </div>
+      `;
+    }, existing ? 200 : 0);
+
+    const total = flashState.articles.length;
+    counter.textContent = `${index + 1} / ${total}`;
+    progressFill.style.width = `${((index + 1) / total) * 100}%`;
+  }
+
+  function startTimer() {
+    flashState.secondsLeft = CARD_DURATION;
+    timerFill.style.transition = 'none';
+    timerFill.style.strokeDashoffset = '100';
+    void timerFill.offsetWidth;
+    timerFill.style.transition = `stroke-dashoffset ${CARD_DURATION}s linear`;
+    timerFill.style.strokeDashoffset = '0';
+
+    clearInterval(flashState.intervalId);
+    flashState.intervalId = setInterval(() => {
+      if (flashState.isPaused) return;
+      flashState.secondsLeft--;
+      if (flashState.secondsLeft <= 0) advanceCard();
+    }, 1000);
+  }
+
+  function advanceCard() {
+    clearInterval(flashState.intervalId);
+    flashState.currentIndex++;
+    if (flashState.currentIndex >= flashState.articles.length) {
+      closeFlashBriefing();
+      return;
+    }
+    renderFlashCard(flashState.currentIndex);
+    startTimer();
+  }
+
+  function openFlashBriefing() {
+    const pool = (state.filteredArticles && state.filteredArticles.length > 0) ? state.filteredArticles : state.articles;
+    flashState.articles = pool.slice(0, 10);
+    flashState.currentIndex = 0;
+    flashState.isPaused = false;
+    if (flashState.articles.length === 0) return;
+
+    document.body.classList.add('modal-open');
+    overlay.classList.add('active');
+    pauseBtn.textContent = '⏸';
+    renderFlashCard(0);
+    startTimer();
+  }
+
+  function closeFlashBriefing() {
+    clearInterval(flashState.intervalId);
+    flashState.isPaused = false;
+    overlay.classList.remove('active');
+    document.body.classList.remove('modal-open');
+    cardArea.innerHTML = '';
+    timerFill.style.transition = 'none';
+    timerFill.style.strokeDashoffset = '100';
+  }
+
+  function togglePause() {
+    flashState.isPaused = !flashState.isPaused;
+    pauseBtn.textContent = flashState.isPaused ? '▶' : '⏸';
+    
+    if (flashState.isPaused) {
+      // Freeze the CSS transition by capturing current offset
+      const currentOffset = window.getComputedStyle(timerFill).getPropertyValue('stroke-dashoffset');
+      timerFill.style.transition = 'none';
+      timerFill.style.strokeDashoffset = currentOffset;
+    } else {
+      // Resume the transition using remaining seconds
+      void timerFill.offsetWidth;
+      timerFill.style.transition = `stroke-dashoffset ${flashState.secondsLeft}s linear`;
+      timerFill.style.strokeDashoffset = '0';
+    }
+  }
+
+  triggerBtn.addEventListener('click', openFlashBriefing);
+  closeBtn.addEventListener('click', closeFlashBriefing);
+  pauseBtn.addEventListener('click', togglePause);
+
+  document.addEventListener('keydown', (e) => {
+    if (!overlay.classList.contains('active')) return;
+    if (e.key === 'Escape') { closeFlashBriefing(); }
+    else if (e.key === ' ') { e.preventDefault(); togglePause(); }
+    else if (e.key === 'ArrowRight') { advanceCard(); }
+    else if (e.key === 'ArrowLeft' && flashState.currentIndex > 0) {
+      clearInterval(flashState.intervalId);
+      flashState.currentIndex--;
+      renderFlashCard(flashState.currentIndex);
+      startTimer();
+    }
+  });
+
+  let fbStartX = 0;
+  overlay.addEventListener('touchstart', (e) => { fbStartX = e.touches[0].clientX; }, { passive: true });
+  overlay.addEventListener('touchend', (e) => {
+    const diffX = e.changedTouches[0].clientX - fbStartX;
+    if (Math.abs(diffX) > 60) {
+      if (diffX < 0) advanceCard();
+      else if (flashState.currentIndex > 0) {
+        clearInterval(flashState.intervalId);
+        flashState.currentIndex--;
+        renderFlashCard(flashState.currentIndex);
+        startTimer();
+      }
+    }
+  }, { passive: true });
+})();
