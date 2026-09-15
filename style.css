@@ -3792,5 +3792,31 @@ body {
   .flash-card-headline { font-size: 1.5rem; }
   .flash-card-summary { font-size: 0.95rem; }
   .flash-briefing-card-area { padding: 1rem; }
+  
+  /* Fix Canvas Hero Slider alignment & overflow on mobile */
+  .hero-controls {
+    top: auto !important;
+    bottom: 1.25rem !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    width: 92% !important;
+    max-width: 320px !important;
+    justify-content: space-between !important;
+    padding: 0.5rem 0.6rem !important;
+  }
+  .canvas-nav-btn {
+    width: 32px !important;
+    height: 32px !important;
+    flex-shrink: 0 !important;
+  }
+  .hero-dots {
+    flex-wrap: nowrap !important;
+    gap: 0.35rem !important;
+    justify-content: center !important;
+  }
+  .dot {
+    flex-shrink: 0 !important;
+  }
 }
 
