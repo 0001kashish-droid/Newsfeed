@@ -2460,7 +2460,7 @@ body {
 
   /* Hero & Article Cards Layout */
   .hero-card {
-    height: 300px !important;
+    height: 380px !important;
   }
   .hero-title {
     font-size: 1.22rem !important;
@@ -2478,6 +2478,7 @@ body {
   }
   .hero-overlay {
     padding: 1.1rem !important;
+    padding-bottom: 4.5rem !important; /* Push content up to make room for slider controls */
   }
   .news-grid {
     grid-template-columns: 1fr !important;
@@ -3796,7 +3797,7 @@ body {
   /* Fix Canvas Hero Slider alignment & overflow on mobile */
   .hero-controls {
     top: auto !important;
-    bottom: 1.25rem !important;
+    bottom: 0.75rem !important;
     left: 50% !important;
     right: auto !important;
     transform: translateX(-50%) !important;
