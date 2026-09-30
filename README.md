@@ -54,21 +54,19 @@ Aggregating live, high-signal intelligence across credible international publica
 
 ---
 
-## 🚀 Local Deployment
+## 🚀 Quickstart & Setup
 
-No node_modules. No complex bundlers. Just pure web technology and Python automation.
+No node_modules. No complex bundlers. Just pure web standards and Python automation.
 
-`ash
+```bash
 git clone https://github.com/0001kashish-droid/Newsfeed.git
 cd Newsfeed
 
 # Trigger the Intelligence Engine (Requires Python 3.11+)
 python scripts/fetch_news.py
+```
 
-# Serve the UI locally
-python -m http.server 8000
-`
-Open **[http://localhost:8000](http://localhost:8000)**
+Serve with any static web server or deploy directly to GitHub Pages.
 
 ---
 
