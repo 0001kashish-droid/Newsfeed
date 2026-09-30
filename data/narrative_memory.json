@@ -1,6 +1,159 @@
 {
-    "last_updated": "2026-09-30T10:38:58.450180+00:00",
+    "last_updated": "2026-09-30T16:40:54.514906+00:00",
     "arcs": [
+        {
+            "arc_id": "0ccd26fe-0717-43e7-9356-00331e9cc33d",
+            "title": "Romania’s political crisis intensifies as Parliame...",
+            "keywords": [
+                "romania’s",
+                "political",
+                "crisis",
+                "intensifies",
+                "parliament",
+                "rejects",
+                "pro-eu"
+            ],
+            "entity_signature": "RO:EU:Parliament",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-09-30T16:40:54.510541+00:00",
+            "last_seen": "2026-09-30T16:40:54.510541+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Romania’s political crisis intensifies as Parliament rejects pro-EU PM"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "42bef234-55df-467f-b615-d3c5e8675e21",
+            "title": "No imminent threat to NATO territory from Russia, ...",
+            "keywords": [
+                "imminent",
+                "threat",
+                "nato",
+                "territory",
+                "from",
+                "russia,",
+                "rutte",
+                "says",
+                "reuters"
+            ],
+            "entity_signature": "RU:Mark Rutte:NATO:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-09-30T16:40:54.510541+00:00",
+            "last_seen": "2026-09-30T16:40:54.510541+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "No imminent threat to NATO territory from Russia, Rutte says - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "6260d344-83ea-4516-8a0e-13902cca861a",
+            "title": "Macron says UK’s return to EU would be ‘excellent ...",
+            "keywords": [
+                "macron",
+                "says",
+                "uk’s",
+                "return",
+                "would",
+                "‘excellent",
+                "news’"
+            ],
+            "entity_signature": "UK:EU:ES:Emmanuel Macron",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-09-30T16:40:54.510541+00:00",
+            "last_seen": "2026-09-30T16:40:54.510541+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Macron says UK’s return to EU would be ‘excellent news’"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "0d552c97-b826-48dd-bb97-6ccd0067b8ac",
+            "title": "Netanyahu says Israel is preparing for other ‘pote...",
+            "keywords": [
+                "netanyahu",
+                "says",
+                "israel",
+                "preparing",
+                "other",
+                "‘potential",
+                "threats’",
+                "after",
+                "pilot",
+                "tried"
+            ],
+            "entity_signature": "IL:SA:Benjamin Netanyahu",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-09-30T16:40:54.510541+00:00",
+            "last_seen": "2026-09-30T16:40:54.510541+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Netanyahu says Israel is preparing for other ‘potential threats’ after pilot tried to crash plane"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "6f607c75-6586-457b-a8ab-4020ffeeef57",
+            "title": "Russia says European arms factories supplying Ukra...",
+            "keywords": [
+                "russia",
+                "says",
+                "european",
+                "arms",
+                "factories",
+                "supplying",
+                "ukraine",
+                "potential",
+                "military",
+                "targets"
+            ],
+            "entity_signature": "RU:EU:UA:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-09-30T16:40:54.510541+00:00",
+            "last_seen": "2026-09-30T16:40:54.510541+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russia says European arms factories supplying Ukraine are potential military targets for Moscow - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
         {
             "arc_id": "48ab73d0-790f-4ca0-a111-1bc5fa286431",
             "title": "Iran says it expects US response Tuesday on plan t...",
