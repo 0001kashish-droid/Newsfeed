@@ -441,6 +441,44 @@ def main():
         sources_str = ", ".join(f"{s}:{c}" for s, c in counts.most_common())
         print(f"  {region}: {len(region_arts)} articles [{sources_str}]")
     
+    # ── EDITORIAL INTELLIGENCE ENGINE ──────────────────────────────
+    # Run the 4-layer intelligence pipeline: intake → scoring → meta → curation
+    try:
+        from intelligence.engine import run_editorial_intelligence
+        
+        # Load podcast data if available (for cross-media resonance)
+        podcasts = None
+        podcasts_path = os.path.join("data", "podcasts.json")
+        if os.path.exists(podcasts_path):
+            try:
+                with open(podcasts_path, "r", encoding="utf-8") as pf:
+                    podcasts_data = json.load(pf)
+                    podcasts = podcasts_data.get("episodes", [])
+                    print(f"\nLoaded {len(podcasts)} podcast episodes for resonance linking")
+            except Exception as pe:
+                print(f"\n[WARN] Could not load podcasts.json: {pe}")
+        
+        balanced, podcasts_out, report = run_editorial_intelligence(
+            balanced, podcasts=podcasts
+        )
+        
+        # If podcasts were enriched with resonant_news links, save them back
+        if podcasts_out:
+            podcasts_output = {
+                "lastUpdated": datetime.now(timezone.utc).isoformat(),
+                "total": len(podcasts_out),
+                "episodes": podcasts_out,
+            }
+            with open(podcasts_path, "w", encoding="utf-8") as pf:
+                json.dump(podcasts_output, pf, indent=2, ensure_ascii=False)
+            print(f"Updated podcasts.json with {report.get('curation', {}).get('podcast_resonances', 0)} resonance links")
+        
+    except Exception as ie:
+        print(f"\n[WARN] Intelligence engine error (non-fatal): {ie}")
+        import traceback
+        traceback.print_exc()
+        print("Continuing with standard output...")
+    
     output = {
         "lastUpdated": datetime.now(timezone.utc).isoformat(),
         "total": len(balanced),
