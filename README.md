@@ -1,86 +1,83 @@
-# 🌐 News Colossal — High-Signal Global News Intelligence Platform
+<div align="center">
+  <h1>📰 News Colossal</h1>
+  <p><b>An ultra-premium, AI-driven global news intelligence platform and executive command center.</b></p>
+  
+  [![Live Deployment](https://img.shields.io/badge/Live_Deployment-Active-success?style=for-the-badge&logo=github)](https://0001kashish-droid.github.io/Newsfeed/)
+  [![Intelligence Engine](https://img.shields.io/badge/Editorial_AI-4--Layer-blue?style=for-the-badge&logo=python)](#)
+  [![Build](https://img.shields.io/badge/Vanilla-JS_|_CSS3_|_HTML5-f0db4f?style=for-the-badge&logo=javascript)](#)
 
-> **News Colossal** is an ultra-premium, real-time news aggregation command center engineered to eliminate digital noise/cacophony, clickbait, and information overload. Built with pure vanilla JS, HTML5 Canvas, and CSS3 glassmorphism.
-
-### 🔗 Live App: [https://0001kashish-droid.github.io/Newsfeed/](https://0001kashish-droid.github.io/Newsfeed/)
-
----
-
-## ✨ What Makes News Colossal Different
-
-Features that **no other news aggregator** currently offers:
-
-### 🎯 Finite Feed — "You Are Caught Up"
-A **progress ring** around the NC logo fills as you browse stories across categories. Once you've covered all major categories, it completes with a gentle message, respecting your time rather than optimizing for infinite scrolling.
-
-### 🧬 Story DNA — Lineage & Evolution Tracker
-When you open a story covered by multiple outlets, a **visual timeline** appears showing who broke the story first, which outlets picked it up, and how headlines shifted.
-
-### 🌐 Cross-Regional Story Pairing
-When the same global event is covered by outlets in **different regions**, News Colossal creates a **split-screen card** showing both perspectives side by side.
-
-### 📧 Daily Executive Digest
-Automated daily email newsletter dispatched at **7:30 AM IST**. Top 5 stories curated and delivered directly to your inbox.
+  <p>
+    Engineered to eliminate digital noise, algorithmic clickbait, and information overload. <br>
+    News Colossal transforms raw global RSS feeds into a curated, editorially intelligent cinematic experience.
+  </p>
+</div>
 
 ---
 
-## 🎨 Design & UX Features
+## ⚡ The 4-Layer Editorial Intelligence Engine (NEW)
+
+News Colossal doesn't just aggregate—it *thinks*. The backend runs a completely autonomous Python-based intelligence engine every 30 minutes, auditing thousands of global articles.
+
+- 🛡️ **Layer 1: Noise Filter & Entity Intake** - Ruthlessly drops tabloids, live-blogs, and duplicates. Extracts deep entity graphs.
+- 🧠 **Layer 2: The 8-Editor Panel** - Articles are scored across 8 cognitive axes: *Velocity, Rarity, Narrative, Quality, Density, Bridge, Cognitive Type, and Temporal Impact*.
+- 🦢 **Layer 3: Meta-Intelligence** - Automatically detects and flags **[BLACK SWAN]** anomalies, **[CONTRARIAN]** viewpoints, and **[EXCLUSIVE]** original reporting.
+- ⚖️ **Layer 4: Cognitive Diet Curation** - Balances the feed between Strategic, Humanitarian, and Technical news to prevent doom-scrolling, then dynamically tracks narrative arcs over weeks.
+
+## 🎧 Podcast Resonance & Thought Pulse (NEW)
+Your favorite deep-dive podcasts (Lex Fridman, Huberman, All-In, etc.) are cross-referenced with live breaking news using NLP entity-matching. News cards feature a **[🎧 RESONATES IN PODCAST]** badge if a podcast offers deep-dive context on the current event.
+
+---
+
+## 🌌 Unrivaled UX & VisionOS UI
 
 | Feature | Description |
 |---------|-------------|
-| **VisionOS Liquid Glass** | Apple-inspired glassmorphism with backdrop-filter blur |
-| **3D Holographic Globe** | Interactive HTML5 Canvas globe with click-to-filter by region |
-| **Hero Spotlight Carousel** | 60fps Canvas crossfade slideshow with parallax cover images |
-| **Semantic Fuzzy Search** | 3-tier scoring (exact, token, synonym) |
-| **Neural Broadcaster** | Web Speech API with voice modulator |
-| **3D Card Tilt Physics** | Mouse-tracked rotateX/Y with dynamic specular sheen reflection |
-| **Executive Deck Modal** | Full-screen reader with parallax cover, progress bar, swipe gestures |
-| **Pull-to-Refresh** | Native mobile touch gesture with spinner animation |
-| **Dark/Light Theme** | Full dual-theme with 20+ CSS custom properties |
-| **Custom Cursor** | Smooth lerp physics cursor on desktop |
+| **3D Holographic Globe** | Interactive HTML5 Canvas globe with click-to-filter regional navigation. |
+| **VisionOS Liquid Glass** | Apple-inspired glassmorphism with backdrop-filter blur and cinematic night mode. |
+| **3D Card Tilt Physics** | Mouse-tracked rotateX/Y specular sheen physics engine makes cards feel physical. |
+| **Executive Reader Deck** | Full-screen frosted glass modal with parallax covers, reading progress, and typography. |
+| **Finite Feed Philosophy** | A progress ring fills as you read. Once caught up, it tells you. No infinite scrolling. |
+| **Cross-Regional Pairing** | Split-screen cards that compare headlines from two different geopolitical regions on the same event. |
+| **Story DNA Timeline** | Tracks the provenance of breaking news—see who broke it first and how the narrative evolved. |
+| **Neural Broadcaster** | Built-in Web Speech API audio dossier generator with voice modulation. |
 
 ---
 
-## 📰 Source Diversity
+## 🌐 Global Source Diversity
 
-Aggregating live news across 27+ credible international publications:
+Aggregating live, high-signal intelligence across credible international publications:
 
-- **Global:** BBC News, Reuters, The Guardian, Ars Technica, CNET, BBC Business
-- **Asia-Pacific:** BBC Asia, SCMP, The Guardian, NYT Asia
-- **Europe:** BBC Europe, The Guardian, France 24
-- **Middle East:** Al Jazeera, BBC Middle East, France 24
-- **North America:** NYT, NPR, BBC US, TechCrunch, The Verge, NYT Business
-- **India:** Hindustan Times, Indian Express, The Hindu, HT Business
+- **Global/Macro:** Reuters, The Economist, BBC News, Bloomberg
+- **Geopolitics:** Al Jazeera, SCMP, France 24, DW News, The Guardian
+- **Technology:** Ars Technica, TechCrunch, The Verge, a16z
+- **India/Asia:** The Hindu, Indian Express, Hindustan Times, BBC Asia
 
 ---
 
-## 🛡️ Content Curation Philosophy
+## 🚀 Local Deployment
 
-**❌ Rejected:** Celebrity gossip, tabloid drama, micro-local blotter, promotional advertorials, horoscopes, clickbait stubs.
+No node_modules. No complex bundlers. Just pure web technology and Python automation.
 
-**✅ Prioritized:**
-- 🌐 Geopolitical & diplomatic affairs
-- 📈 Macroeconomic & financial impact
-- 🚀 High-tech & scientific breakthroughs
-- 🌍 Regional macro events across 6 global zones
-
----
-
-## 🛠 Local Setup
-
-```bash
+`ash
 git clone https://github.com/0001kashish-droid/Newsfeed.git
 cd Newsfeed
 
-# Fetch fresh news data (Requires Python 3.11+)
+# Trigger the Intelligence Engine (Requires Python 3.11+)
 python scripts/fetch_news.py
 
-# Start local server
-python -m http.server 9000 --bind 127.0.0.1
-```
-Open **[http://127.0.0.1:9000](http://127.0.0.1:9000)**
+# Serve the UI locally
+python -m http.server 8000
+`
+Open **[http://localhost:8000](http://localhost:8000)**
 
 ---
 
-## 📄 License & Publisher Rights
-All news content, headlines, and visuals belong to their respective original publishers. News Colossal operates as a non-commercial news aggregator and reading interface.
+## 📬 Automated Daily Executive Digest
+News Colossal operates a GitHub Action cron job that dispatches a beautifully formatted Markdown/HTML newsletter via the Buttondown API at **7:30 AM IST** daily, delivering the top 5 highest-scored strategic intelligence stories directly to your inbox.
+
+---
+
+<div align="center">
+  <sub>Built with 🖤 by Kashish Bhushan</sub><br>
+  <sub>All news content, headlines, and visuals belong to their respective original publishers.</sub>
+</div>
