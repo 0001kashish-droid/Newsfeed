@@ -1000,6 +1000,17 @@ function createCardHTML(art, idx) {
     ? art.imageUrl
     : getTopicImageUrl(art.title, art.category, art.region);
 
+  let intelBadges = '';
+  if (art.meta) {
+    if (art.meta.is_black_swan) intelBadges += '<span class="intel-badge black-swan" title="Anomalous event with high impact">🦢 Black Swan</span>';
+    if (art.meta.is_contrarian) intelBadges += '<span class="intel-badge contrarian" title="Contradicts prevailing narrative">⚡ Contrarian</span>';
+    if (art.meta.is_exclusive) intelBadges += '<span class="intel-badge exclusive" title="Original reporting">💎 Exclusive</span>';
+  }
+  if (art.resonant_podcast) {
+    intelBadges += `<span class="intel-badge podcast" title="Listen to related podcast">🎧 Resonates in Podcast</span>`;
+  }
+  const badgesHTML = intelBadges ? `<div class="intel-badge-row">${intelBadges}</div>` : '';
+
   return `
     <article class="news-card" data-id="${art.id}" data-article-id="${art.id}" style="animation-delay: ${delay}s; --card-index: ${idx};" onclick="openModal('${art.id}')">
       <div class="card-sheen"></div>
@@ -1012,6 +1023,7 @@ function createCardHTML(art, idx) {
       </div>
 
       <div class="card-content">
+        ${badgesHTML}
         <div class="card-meta">
           <span class="card-source">${art.sourceLogo} &bull; ${art.source}</span>
           <span>${art.readTime}</span>
