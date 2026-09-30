@@ -12,21 +12,36 @@ import re
 from datetime import datetime, timezone
 
 PODCAST_SOURCES = [
+    # Thinkers & Deep Dives
     {'name': 'Lex Fridman Podcast', 'handle': '@lexfridman', 'logo': 'LF', 'tier': 'flagship'},
     {'name': 'TED', 'handle': '@TED', 'logo': 'TED', 'tier': 'flagship'},
     {'name': 'Huberman Lab', 'handle': '@hubermanlab', 'logo': 'HL', 'tier': 'flagship'},
+    {'name': 'Tim Ferriss', 'handle': '@timferriss', 'logo': 'TF', 'tier': 'standard'},
+    {'name': 'Freakonomics', 'handle': '@freakonomicsradio', 'logo': 'FRK', 'tier': 'flagship'},
+    
+    # Global Geopolitics & News
     {'name': 'The Economist', 'handle': '@TheEconomist', 'logo': 'TE', 'tier': 'flagship'},
+    {'name': 'Council on Foreign Relations', 'handle': '@CFR_org', 'logo': 'CFR', 'tier': 'flagship'},
+    {'name': 'CSIS', 'handle': '@CSIS', 'logo': 'CSIS', 'tier': 'standard'},
+    {'name': 'BBC Podcasts', 'handle': '@BBCPodcasts', 'logo': 'BBC', 'tier': 'flagship'},
+    {'name': 'NPR', 'handle': '@NPR', 'logo': 'NPR', 'tier': 'standard'},
+    {'name': 'PBS NewsHour', 'handle': '@PBSNewsHour', 'logo': 'PBS', 'tier': 'standard'},
+    
+    # Business, Finance & Tech
+    {'name': 'WSJ Podcasts', 'handle': '@WSJPodcasts', 'logo': 'WSJ', 'tier': 'flagship'},
     {'name': 'Bloomberg Originals', 'handle': '@BloombergOriginals', 'logo': 'BB', 'tier': 'flagship'},
     {'name': 'Financial Times', 'handle': '@FinancialTimes', 'logo': 'FT', 'tier': 'standard'},
     {'name': 'Harvard Business Review', 'handle': '@HarvardBusinessReview', 'logo': 'HBR', 'tier': 'standard'},
     {'name': 'McKinsey', 'handle': '@McKinsey', 'logo': 'McK', 'tier': 'standard'},
     {'name': 'a16z', 'handle': '@a16z', 'logo': 'a16z', 'tier': 'standard'},
-    {'name': 'Diary of a CEO', 'handle': '@TheDiaryOfACEO', 'logo': 'DC', 'tier': 'flagship'},
     {'name': 'All-In Podcast', 'handle': '@AllInPodOfficial', 'logo': 'AIP', 'tier': 'standard'},
-    {'name': 'Tim Ferriss', 'handle': '@timferriss', 'logo': 'TF', 'tier': 'standard'},
     {'name': 'Acquired', 'handle': '@AcquiredFM', 'logo': 'ACQ', 'tier': 'standard'},
+    
+    # Science & Academia
+    {'name': 'Nature', 'handle': '@naturevideo', 'logo': 'NAT', 'tier': 'standard'},
     {'name': 'World Economic Forum', 'handle': '@wef', 'logo': 'WEF', 'tier': 'standard'},
     {'name': 'Stanford', 'handle': '@stanford', 'logo': 'SU', 'tier': 'standard'},
+    {'name': 'Diary of a CEO', 'handle': '@TheDiaryOfACEO', 'logo': 'DC', 'tier': 'standard'}
 ]
 
 CATEGORY_KEYWORDS = {
@@ -345,7 +360,20 @@ def main():
         return 9999
     all_episodes.sort(key=sort_key)
 
-    all_episodes = all_episodes[:30]
+    # Cap episodes per source to prevent domination
+    capped_episodes = []
+    source_counts = {}
+    for ep in all_episodes:
+        src_name = ep.get('podcast', '')
+        count = source_counts.get(src_name, 0)
+        if count < 3: # Max 3 episodes per source
+            capped_episodes.append(ep)
+            source_counts[src_name] = count + 1
+        
+        if len(capped_episodes) >= 30:
+            break
+            
+    all_episodes = capped_episodes
 
     print(f"\nTotal: {len(all_episodes)} episodes")
 
