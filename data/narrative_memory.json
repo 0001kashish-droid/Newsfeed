@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-09-30T04:31:30.851421+00:00",
+    "last_updated": "2026-09-30T10:38:58.450180+00:00",
     "arcs": [
         {
             "arc_id": "48ab73d0-790f-4ca0-a111-1bc5fa286431",
@@ -21,9 +21,10 @@
                 "Middle East"
             ],
             "first_seen": "2026-09-30T04:03:11.646214+00:00",
-            "last_seen": "2026-09-30T04:31:30.844226+00:00",
-            "chapter_count": 2,
+            "last_seen": "2026-09-30T10:38:58.447319+00:00",
+            "chapter_count": 3,
             "chapter_titles": [
+                "Iran says it expects US response Tuesday on plan to reopen Strait of Hormuz",
                 "Iran says it expects US response Tuesday on plan to reopen Strait of Hormuz",
                 "Iran says it expects US response Tuesday on plan to reopen Strait of Hormuz"
             ],
@@ -31,6 +32,132 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "France 24"
+            ]
+        },
+        {
+            "arc_id": "097531f6-d23d-4fdb-9411-bfe6fb67842e",
+            "title": "Move to rejoin EU among options for UK, says Burnh...",
+            "keywords": [
+                "move",
+                "rejoin",
+                "among",
+                "options",
+                "says",
+                "burnham"
+            ],
+            "entity_signature": "EU:UK:BBC",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-09-30T10:38:58.447319+00:00",
+            "last_seen": "2026-09-30T10:38:58.447319+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Move to rejoin EU among options for UK, says Burnham",
+                "Move to rejoin EU among options for UK, says Burnham"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "BBC News",
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "ae6b5011-9ef4-4916-bcf4-58c33a4da197",
+            "title": "Belgium’s defence minister warns of ‘dark winter f...",
+            "keywords": [
+                "belgium’s",
+                "defence",
+                "minister",
+                "warns",
+                "‘dark",
+                "winter",
+                "europe’",
+                "with",
+                "more",
+                "‘hybrid"
+            ],
+            "entity_signature": "BE:EU:RU:Volodymyr Zelenskyy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-09-30T10:38:58.447319+00:00",
+            "last_seen": "2026-09-30T10:38:58.447319+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Belgium’s defence minister warns of ‘dark winter for Europe’ with more ‘hybrid warfare’ from Russia - Europe live"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "39be5154-20bb-4ff5-9805-df0e2241655c",
+            "title": "South Africa summons US ambassador again over 'und...",
+            "keywords": [
+                "south",
+                "africa",
+                "summons",
+                "ambassador",
+                "again",
+                "over",
+                "'undiplomatic",
+                "conduct,'",
+                "official",
+                "says"
+            ],
+            "entity_signature": "ZA:US:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-09-30T10:38:58.447319+00:00",
+            "last_seen": "2026-09-30T10:38:58.447319+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "South Africa summons US ambassador again over 'undiplomatic conduct,' official says - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "33d7734d-1dee-40f2-affb-a02326cbbc9c",
+            "title": "Israel-bound flight diverted to Saudi Arabia after...",
+            "keywords": [
+                "israel-bound",
+                "flight",
+                "diverted",
+                "saudi",
+                "arabia",
+                "after",
+                "brawl",
+                "between",
+                "pilots,",
+                "israeli"
+            ],
+            "entity_signature": "IL:SA:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-09-30T10:38:58.447319+00:00",
+            "last_seen": "2026-09-30T10:38:58.447319+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Israel-bound flight diverted to Saudi Arabia after brawl between pilots, Israeli official says - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7,
+            "sources_involved": [
+                "Reuters"
             ]
         },
         {
