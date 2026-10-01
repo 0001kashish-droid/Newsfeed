@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-09-30T21:14:02.084533+00:00",
+    "last_updated": "2026-10-01T00:41:42.551996+00:00",
     "arcs": [
         {
             "arc_id": "6260d344-83ea-4516-8a0e-13902cca861a",
@@ -19,9 +19,10 @@
                 "Europe"
             ],
             "first_seen": "2026-09-30T16:40:54.510541+00:00",
-            "last_seen": "2026-09-30T21:14:02.080480+00:00",
-            "chapter_count": 2,
+            "last_seen": "2026-10-01T00:41:42.546476+00:00",
+            "chapter_count": 3,
             "chapter_titles": [
+                "Macron says UK’s return to EU would be ‘excellent news’",
                 "Macron says UK’s return to EU would be ‘excellent news’",
                 "Macron says UK’s return to EU would be ‘excellent news’"
             ],
@@ -52,9 +53,10 @@
                 "Middle East"
             ],
             "first_seen": "2026-09-30T16:40:54.510541+00:00",
-            "last_seen": "2026-09-30T21:14:02.080480+00:00",
-            "chapter_count": 2,
+            "last_seen": "2026-10-01T00:41:42.546476+00:00",
+            "chapter_count": 3,
             "chapter_titles": [
+                "Netanyahu says Israel is preparing for other ‘potential threats’ after pilot tried to crash plane",
                 "Netanyahu says Israel is preparing for other ‘potential threats’ after pilot tried to crash plane",
                 "Netanyahu says Israel is preparing for other ‘potential threats’ after pilot tried to crash plane"
             ],
@@ -62,6 +64,69 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "France 24"
+            ]
+        },
+        {
+            "arc_id": "6e35d273-c47c-4619-a7de-426c994ca7d1",
+            "title": "Macron says ‘welcome back’ to Burnham suggestion U...",
+            "keywords": [
+                "macron",
+                "says",
+                "‘welcome",
+                "back’",
+                "burnham",
+                "suggestion",
+                "could",
+                "rejoin"
+            ],
+            "entity_signature": "UK:EU:FR:Emmanuel Macron",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-09-30T21:14:02.080480+00:00",
+            "last_seen": "2026-10-01T00:41:42.546476+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Macron says ‘welcome back’ to Burnham suggestion UK could rejoin EU",
+                "Macron says ‘welcome back’ to Burnham suggestion UK could rejoin EU"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "792a1c6d-5bff-4fde-815f-54000b1dad4b",
+            "title": "Iran war live: Trump hints US could strike Iran, w...",
+            "keywords": [
+                "iran",
+                "live:",
+                "trump",
+                "hints",
+                "could",
+                "strike",
+                "iran,",
+                "warns",
+                "time",
+                "coming"
+            ],
+            "entity_signature": "IR:US:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-01T00:41:42.546476+00:00",
+            "last_seen": "2026-10-01T00:41:42.546476+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Iran war live: Trump hints US could strike Iran, warns time coming"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
             ]
         },
         {
@@ -95,36 +160,6 @@
             "sources_involved": [
                 "BBC News",
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "6e35d273-c47c-4619-a7de-426c994ca7d1",
-            "title": "Macron says ‘welcome back’ to Burnham suggestion U...",
-            "keywords": [
-                "macron",
-                "says",
-                "‘welcome",
-                "back’",
-                "burnham",
-                "suggestion",
-                "could",
-                "rejoin"
-            ],
-            "entity_signature": "UK:EU:FR:Emmanuel Macron",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-09-30T21:14:02.080480+00:00",
-            "last_seen": "2026-09-30T21:14:02.080480+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Macron says ‘welcome back’ to Burnham suggestion UK could rejoin EU"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
             ]
         },
         {
