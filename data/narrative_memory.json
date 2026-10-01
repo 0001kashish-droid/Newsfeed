@@ -1,6 +1,191 @@
 {
-    "last_updated": "2026-10-01T14:14:54.509279+00:00",
+    "last_updated": "2026-10-01T19:41:52.475506+00:00",
     "arcs": [
+        {
+            "arc_id": "0747aebe-90ff-4818-a189-0ec8e91a25af",
+            "title": "Israel's Netanyahu says co-pilot tried to crash Te...",
+            "keywords": [
+                "israel's",
+                "netanyahu",
+                "says",
+                "co-pilot",
+                "tried",
+                "crash",
+                "aviv-bound",
+                "plane"
+            ],
+            "entity_signature": "IL:SA:Benjamin Netanyahu",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-01T14:14:54.502310+00:00",
+            "last_seen": "2026-10-01T19:41:52.469182+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Israel's Netanyahu says co-pilot tried to crash Tel Aviv-bound plane",
+                "Israel's Netanyahu says co-pilot tried to crash Tel Aviv-bound plane"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "16ce47e5-2448-41bd-8cfe-0428c1748bc5",
+            "title": "Netanyahu says Flydubai flight attacker 'underwent...",
+            "keywords": [
+                "netanyahu",
+                "says",
+                "flydubai",
+                "flight",
+                "attacker",
+                "'underwent",
+                "islamist",
+                "radical",
+                "indoctrination'"
+            ],
+            "entity_signature": "IL:Benjamin Netanyahu:WHO",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-01T19:41:52.469182+00:00",
+            "last_seen": "2026-10-01T19:41:52.469182+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Netanyahu says Flydubai flight attacker 'underwent Islamist radical indoctrination'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "757cffcc-f3cb-4082-8c19-0a39fbad824b",
+            "title": "Merz warns of more Russian hybrid attacks as he re...",
+            "keywords": [
+                "merz",
+                "warns",
+                "more",
+                "russian",
+                "hybrid",
+                "attacks",
+                "reaffirms",
+                "support",
+                "ukraine",
+                "reuters"
+            ],
+            "entity_signature": "RU:UA:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-01T19:41:52.469182+00:00",
+            "last_seen": "2026-10-01T19:41:52.469182+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Merz warns of more Russian hybrid attacks as he reaffirms support for Ukraine - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "af632965-e359-4d37-8f2d-2b355ef14ea9",
+            "title": "US Supreme Court agrees to take up Trump’s ICE det...",
+            "keywords": [
+                "supreme",
+                "court",
+                "agrees",
+                "take",
+                "trump’s",
+                "detention",
+                "policy"
+            ],
+            "entity_signature": "US:Donald Trump:Supreme Court",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-01T19:41:52.469182+00:00",
+            "last_seen": "2026-10-01T19:41:52.469182+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US Supreme Court agrees to take up Trump’s ICE detention policy"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "892e7a47-e56f-4d06-addc-319c1eaa9a7d",
+            "title": "Russia's Putin says continuation of international ...",
+            "keywords": [
+                "russia's",
+                "putin",
+                "says",
+                "continuation",
+                "international",
+                "conflicts",
+                "highly",
+                "likely",
+                "world",
+                "changes"
+            ],
+            "entity_signature": "RU:Vladimir Putin:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-01T19:41:52.469182+00:00",
+            "last_seen": "2026-10-01T19:41:52.469182+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russia's Putin says continuation of international conflicts is highly likely as world changes - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "2ee304c7-2f52-473f-a5f3-3097baf5eb8b",
+            "title": "Russian dissident Garry Kasparov says US warned hi...",
+            "keywords": [
+                "russian",
+                "dissident",
+                "garry",
+                "kasparov",
+                "says",
+                "warned",
+                "danger",
+                "life"
+            ],
+            "entity_signature": "RU:US:Vladimir Putin",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-01T19:41:52.469182+00:00",
+            "last_seen": "2026-10-01T19:41:52.469182+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russian dissident Garry Kasparov says US warned him of danger to his life"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
         {
             "arc_id": "6260d344-83ea-4516-8a0e-13902cca861a",
             "title": "Macron says UK’s return to EU would be ‘excellent ...",
@@ -129,36 +314,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "0747aebe-90ff-4818-a189-0ec8e91a25af",
-            "title": "Israel's Netanyahu says co-pilot tried to crash Te...",
-            "keywords": [
-                "israel's",
-                "netanyahu",
-                "says",
-                "co-pilot",
-                "tried",
-                "crash",
-                "aviv-bound",
-                "plane"
-            ],
-            "entity_signature": "IL:SA:Benjamin Netanyahu",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-01T14:14:54.502310+00:00",
-            "last_seen": "2026-10-01T14:14:54.502310+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Israel's Netanyahu says co-pilot tried to crash Tel Aviv-bound plane"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
             ]
         },
         {
