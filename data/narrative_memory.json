@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-01T06:54:47.930313+00:00",
+    "last_updated": "2026-10-01T14:14:54.509279+00:00",
     "arcs": [
         {
             "arc_id": "6260d344-83ea-4516-8a0e-13902cca861a",
@@ -19,13 +19,141 @@
                 "Europe"
             ],
             "first_seen": "2026-09-30T16:40:54.510541+00:00",
-            "last_seen": "2026-10-01T06:54:47.924273+00:00",
-            "chapter_count": 4,
+            "last_seen": "2026-10-01T14:14:54.502310+00:00",
+            "chapter_count": 5,
             "chapter_titles": [
                 "Macron says UK’s return to EU would be ‘excellent news’",
                 "Macron says UK’s return to EU would be ‘excellent news’",
                 "Macron says UK’s return to EU would be ‘excellent news’",
+                "Macron says UK’s return to EU would be ‘excellent news’",
                 "Macron says UK’s return to EU would be ‘excellent news’"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "f48669a7-dc6f-44ae-b8b4-7c31b25acff2",
+            "title": "Too early to say what motive for Dubai-Tel Aviv fl...",
+            "keywords": [
+                "early",
+                "what",
+                "motive",
+                "dubai-tel",
+                "aviv",
+                "flight",
+                "attack",
+                "was,",
+                "israeli",
+                "says"
+            ],
+            "entity_signature": "IL:SA:Benjamin Netanyahu:WHO",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-01T06:54:47.924273+00:00",
+            "last_seen": "2026-10-01T14:14:54.502310+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Too early to say what motive for Dubai-Tel Aviv flight attack was, Israeli PM says",
+                "Too early to say if Iran involved in Dubai-Tel Aviv flight attack, Israeli PM says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "d9f4afac-67d8-4575-b09a-acb5b731b38e",
+            "title": "Poland would welcome UK back into EU ‘with open ar...",
+            "keywords": [
+                "poland",
+                "would",
+                "welcome",
+                "back",
+                "into",
+                "‘with",
+                "open",
+                "arms’,",
+                "foreign",
+                "minister"
+            ],
+            "entity_signature": "PL:UK:EU",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-01T14:14:54.502310+00:00",
+            "last_seen": "2026-10-01T14:14:54.502310+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Poland would welcome UK back into EU ‘with open arms’, foreign minister says – Europe live"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "ae10c03c-64dc-4c2c-91f8-7e431cbf59e1",
+            "title": "Trump says he regrets nominating Supreme Court Jus...",
+            "keywords": [
+                "trump",
+                "says",
+                "regrets",
+                "nominating",
+                "supreme",
+                "court",
+                "justices",
+                "gorsuch,",
+                "barrett",
+                "kavanaugh"
+            ],
+            "entity_signature": "Donald Trump:Supreme Court:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-01T14:14:54.502310+00:00",
+            "last_seen": "2026-10-01T14:14:54.502310+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump says he regrets nominating Supreme Court Justices Gorsuch, Barrett and Kavanaugh - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "0747aebe-90ff-4818-a189-0ec8e91a25af",
+            "title": "Israel's Netanyahu says co-pilot tried to crash Te...",
+            "keywords": [
+                "israel's",
+                "netanyahu",
+                "says",
+                "co-pilot",
+                "tried",
+                "crash",
+                "aviv-bound",
+                "plane"
+            ],
+            "entity_signature": "IL:SA:Benjamin Netanyahu",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-01T14:14:54.502310+00:00",
+            "last_seen": "2026-10-01T14:14:54.502310+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Israel's Netanyahu says co-pilot tried to crash Tel Aviv-bound plane"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
@@ -98,38 +226,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "f48669a7-dc6f-44ae-b8b4-7c31b25acff2",
-            "title": "Too early to say what motive for Dubai-Tel Aviv fl...",
-            "keywords": [
-                "early",
-                "what",
-                "motive",
-                "dubai-tel",
-                "aviv",
-                "flight",
-                "attack",
-                "was,",
-                "israeli",
-                "says"
-            ],
-            "entity_signature": "IL:SA:Benjamin Netanyahu:WHO",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-01T06:54:47.924273+00:00",
-            "last_seen": "2026-10-01T06:54:47.924273+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Too early to say what motive for Dubai-Tel Aviv flight attack was, Israeli PM says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC News"
             ]
         },
         {
