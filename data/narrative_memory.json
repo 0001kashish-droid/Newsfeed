@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-01T19:41:52.475506+00:00",
+    "last_updated": "2026-10-01T23:42:32.343836+00:00",
     "arcs": [
         {
             "arc_id": "0747aebe-90ff-4818-a189-0ec8e91a25af",
@@ -20,9 +20,10 @@
                 "Middle East"
             ],
             "first_seen": "2026-10-01T14:14:54.502310+00:00",
-            "last_seen": "2026-10-01T19:41:52.469182+00:00",
-            "chapter_count": 2,
+            "last_seen": "2026-10-01T23:42:32.336918+00:00",
+            "chapter_count": 3,
             "chapter_titles": [
+                "Israel's Netanyahu says co-pilot tried to crash Tel Aviv-bound plane",
                 "Israel's Netanyahu says co-pilot tried to crash Tel Aviv-bound plane",
                 "Israel's Netanyahu says co-pilot tried to crash Tel Aviv-bound plane"
             ],
@@ -52,15 +53,110 @@
                 "Global"
             ],
             "first_seen": "2026-10-01T19:41:52.469182+00:00",
-            "last_seen": "2026-10-01T19:41:52.469182+00:00",
-            "chapter_count": 1,
+            "last_seen": "2026-10-01T23:42:32.336918+00:00",
+            "chapter_count": 2,
             "chapter_titles": [
+                "Netanyahu says Flydubai flight attacker 'underwent Islamist radical indoctrination'",
                 "Netanyahu says Flydubai flight attacker 'underwent Islamist radical indoctrination'"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "BBC News"
+            ]
+        },
+        {
+            "arc_id": "2ee304c7-2f52-473f-a5f3-3097baf5eb8b",
+            "title": "Russian dissident Garry Kasparov says US warned hi...",
+            "keywords": [
+                "russian",
+                "dissident",
+                "garry",
+                "kasparov",
+                "says",
+                "warned",
+                "danger",
+                "life"
+            ],
+            "entity_signature": "RU:US:Vladimir Putin",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-01T19:41:52.469182+00:00",
+            "last_seen": "2026-10-01T23:42:32.336918+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Russian dissident Garry Kasparov says US warned him of danger to his life",
+                "Russian dissident Garry Kasparov says US warned him of danger to his life"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "714de931-2618-4cb7-8924-3b7b513cbcc1",
+            "title": "US says Europe should ready fuel supplies as Trump...",
+            "keywords": [
+                "says",
+                "europe",
+                "should",
+                "ready",
+                "fuel",
+                "supplies",
+                "trump",
+                "threatens",
+                "diesel"
+            ],
+            "entity_signature": "US:EU:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-01T23:42:32.336918+00:00",
+            "last_seen": "2026-10-01T23:42:32.336918+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "US says Europe should ready fuel supplies as Trump threatens diesel ban",
+                "US says Europe should ready fuel supplies as Trump threatens diesel ban"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "BBC News",
+                "BBC Business"
+            ]
+        },
+        {
+            "arc_id": "8b7c6898-d049-4c5a-ab84-4592abb66148",
+            "title": "Greer says no specific timeline set for enforcing ...",
+            "keywords": [
+                "greer",
+                "says",
+                "specific",
+                "timeline",
+                "enforcing",
+                "us-china",
+                "board",
+                "trade"
+            ],
+            "entity_signature": "US:CN:Xi Jinping",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-01T23:42:32.336918+00:00",
+            "last_seen": "2026-10-01T23:42:32.336918+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Greer says no specific timeline set for enforcing US-China Board of Trade"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
             ]
         },
         {
@@ -154,36 +250,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "2ee304c7-2f52-473f-a5f3-3097baf5eb8b",
-            "title": "Russian dissident Garry Kasparov says US warned hi...",
-            "keywords": [
-                "russian",
-                "dissident",
-                "garry",
-                "kasparov",
-                "says",
-                "warned",
-                "danger",
-                "life"
-            ],
-            "entity_signature": "RU:US:Vladimir Putin",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-01T19:41:52.469182+00:00",
-            "last_seen": "2026-10-01T19:41:52.469182+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Russian dissident Garry Kasparov says US warned him of danger to his life"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
             ]
         },
         {
