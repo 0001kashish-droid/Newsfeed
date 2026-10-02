@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-02T10:39:40.704583+00:00",
+    "last_updated": "2026-10-02T16:30:42.411311+00:00",
     "arcs": [
         {
             "arc_id": "714de931-2618-4cb7-8924-3b7b513cbcc1",
@@ -21,21 +21,56 @@
                 "Global"
             ],
             "first_seen": "2026-10-01T23:42:32.336918+00:00",
-            "last_seen": "2026-10-02T10:39:40.695499+00:00",
-            "chapter_count": 5,
+            "last_seen": "2026-10-02T16:30:42.401844+00:00",
+            "chapter_count": 7,
             "chapter_titles": [
                 "US says Europe should ready fuel supplies as Trump threatens diesel ban",
                 "US says Europe should ready fuel supplies as Trump threatens diesel ban",
                 "US presses Europe to release 'immediately' diesel reserves as Trump threatens export ban",
                 "US pressures Europe over diesel reserves as Trump threatens export ban",
+                "US presses Europe to release diesel reserves 'immediately' as Trump threatens export ban",
+                "Europe agrees to release stocked diesel oil, Trump says - Reuters",
                 "US presses Europe to release diesel reserves 'immediately' as Trump threatens export ban"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.5,
             "sources_involved": [
+                "BBC Business",
                 "France 24",
-                "BBC News",
-                "BBC Business"
+                "Reuters",
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "4045a16e-3c11-40c8-9288-57e3d44c7af4",
+            "title": "US Coast Guard says it intercepted ship carrying f...",
+            "keywords": [
+                "coast",
+                "guard",
+                "says",
+                "intercepted",
+                "ship",
+                "carrying",
+                "fuel",
+                "cuba"
+            ],
+            "entity_signature": "US:CU:MX",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-02T16:30:42.401844+00:00",
+            "last_seen": "2026-10-02T16:30:42.401844+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "US Coast Guard says it intercepted ship carrying fuel to Cuba",
+                "Coast Guard Says It Stopped Ships Carrying Fuel to Cuba"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "New York Times",
+                "The Guardian"
             ]
         },
         {
