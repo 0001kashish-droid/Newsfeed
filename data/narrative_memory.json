@@ -1,6 +1,76 @@
 {
-    "last_updated": "2026-10-02T04:21:17.581589+00:00",
+    "last_updated": "2026-10-02T10:39:40.704583+00:00",
     "arcs": [
+        {
+            "arc_id": "714de931-2618-4cb7-8924-3b7b513cbcc1",
+            "title": "US says Europe should ready fuel supplies as Trump...",
+            "keywords": [
+                "says",
+                "europe",
+                "should",
+                "ready",
+                "fuel",
+                "supplies",
+                "trump",
+                "threatens",
+                "diesel"
+            ],
+            "entity_signature": "US:EU:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-01T23:42:32.336918+00:00",
+            "last_seen": "2026-10-02T10:39:40.695499+00:00",
+            "chapter_count": 5,
+            "chapter_titles": [
+                "US says Europe should ready fuel supplies as Trump threatens diesel ban",
+                "US says Europe should ready fuel supplies as Trump threatens diesel ban",
+                "US presses Europe to release 'immediately' diesel reserves as Trump threatens export ban",
+                "US pressures Europe over diesel reserves as Trump threatens export ban",
+                "US presses Europe to release diesel reserves 'immediately' as Trump threatens export ban"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "France 24",
+                "BBC News",
+                "BBC Business"
+            ]
+        },
+        {
+            "arc_id": "2ee304c7-2f52-473f-a5f3-3097baf5eb8b",
+            "title": "Russian dissident Garry Kasparov says US warned hi...",
+            "keywords": [
+                "russian",
+                "dissident",
+                "garry",
+                "kasparov",
+                "says",
+                "warned",
+                "danger",
+                "life"
+            ],
+            "entity_signature": "RU:US:Vladimir Putin",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-01T19:41:52.469182+00:00",
+            "last_seen": "2026-10-02T10:39:40.695499+00:00",
+            "chapter_count": 4,
+            "chapter_titles": [
+                "Russian dissident Garry Kasparov says US warned him of danger to his life",
+                "Russian dissident Garry Kasparov says US warned him of danger to his life",
+                "Russian dissident Garry Kasparov says US warned him of danger to his life",
+                "Russian dissident Garry Kasparov says US warned him of danger to his life"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
         {
             "arc_id": "0747aebe-90ff-4818-a189-0ec8e91a25af",
             "title": "Israel's Netanyahu says co-pilot tried to crash Te...",
@@ -32,74 +102,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "France 24"
-            ]
-        },
-        {
-            "arc_id": "714de931-2618-4cb7-8924-3b7b513cbcc1",
-            "title": "US says Europe should ready fuel supplies as Trump...",
-            "keywords": [
-                "says",
-                "europe",
-                "should",
-                "ready",
-                "fuel",
-                "supplies",
-                "trump",
-                "threatens",
-                "diesel"
-            ],
-            "entity_signature": "US:EU:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-01T23:42:32.336918+00:00",
-            "last_seen": "2026-10-02T04:21:17.572122+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "US says Europe should ready fuel supplies as Trump threatens diesel ban",
-                "US says Europe should ready fuel supplies as Trump threatens diesel ban",
-                "US presses Europe to release 'immediately' diesel reserves as Trump threatens export ban",
-                "US pressures Europe over diesel reserves as Trump threatens export ban"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "BBC Business",
-                "BBC News",
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "2ee304c7-2f52-473f-a5f3-3097baf5eb8b",
-            "title": "Russian dissident Garry Kasparov says US warned hi...",
-            "keywords": [
-                "russian",
-                "dissident",
-                "garry",
-                "kasparov",
-                "says",
-                "warned",
-                "danger",
-                "life"
-            ],
-            "entity_signature": "RU:US:Vladimir Putin",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-01T19:41:52.469182+00:00",
-            "last_seen": "2026-10-02T04:21:17.572122+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Russian dissident Garry Kasparov says US warned him of danger to his life",
-                "Russian dissident Garry Kasparov says US warned him of danger to his life",
-                "Russian dissident Garry Kasparov says US warned him of danger to his life"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
             ]
         },
         {
@@ -638,7 +640,7 @@
                 "Iran says it expects US response Tuesday on plan to reopen Strait of Hormuz",
                 "Iran says it expects US response Tuesday on plan to reopen Strait of Hormuz"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.15,
             "sources_involved": [
                 "France 24"
@@ -667,7 +669,7 @@
                 "Move to rejoin EU among options for UK, says Burnham",
                 "Move to rejoin EU among options for UK, says Burnham"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.5,
             "sources_involved": [
                 "BBC News",
@@ -700,7 +702,7 @@
             "chapter_titles": [
                 "Belgium’s defence minister warns of ‘dark winter for Europe’ with more ‘hybrid warfare’ from Russia - Europe live"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "The Guardian"
@@ -732,7 +734,7 @@
             "chapter_titles": [
                 "South Africa summons US ambassador again over 'undiplomatic conduct,' official says - Reuters"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Reuters"
@@ -764,7 +766,7 @@
             "chapter_titles": [
                 "Israel-bound flight diverted to Saudi Arabia after brawl between pilots, Israeli official says - Reuters"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.7,
             "sources_involved": [
                 "Reuters"
@@ -797,7 +799,7 @@
                 "Trump asked Xi Jinping if China would like to buy US weapons, American ambassador says",
                 "Trump asked Xi Jinping if China would like to buy US weapons, American ambassador says"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.15,
             "sources_involved": [
                 "The Guardian"
