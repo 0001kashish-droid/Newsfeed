@@ -10,6 +10,10 @@
     Engineered to eliminate digital noise, algorithmic clickbait, and information overload. <br>
     News Colossal transforms raw global RSS feeds into a curated, editorially intelligent cinematic experience.
   </p>
+
+  <p>
+    🌐 <b>Live Web Application:</b> <a href="https://0001kashish-droid.github.io/Newsfeed/"><b>https://0001kashish-droid.github.io/Newsfeed/</b></a>
+  </p>
 </div>
 
 ---
@@ -56,6 +60,13 @@ Aggregating live, high-signal intelligence across credible international publica
 
 ## 🚀 Quickstart & Setup
 
+### 🌐 Live Deployment
+Experience the live intelligence platform directly in your browser:  
+👉 **[https://0001kashish-droid.github.io/Newsfeed/](https://0001kashish-droid.github.io/Newsfeed/)**
+
+---
+
+### 💻 Local Execution
 No node_modules. No complex bundlers. Just pure web standards and Python automation.
 
 ```bash
