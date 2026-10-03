@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-03T00:37:14.999995+00:00",
+    "last_updated": "2026-10-03T06:04:20.395211+00:00",
     "arcs": [
         {
             "arc_id": "7d591e60-3cf6-40e2-bc4b-9c388c90b6b4",
@@ -21,15 +21,109 @@
                 "Global"
             ],
             "first_seen": "2026-10-03T00:37:14.992433+00:00",
-            "last_seen": "2026-10-03T00:37:14.992433+00:00",
-            "chapter_count": 1,
+            "last_seen": "2026-10-03T06:04:20.384092+00:00",
+            "chapter_count": 2,
             "chapter_titles": [
+                "Brazil’s Lula says only he can stop rise of fascism under Bolsonaro’s son",
                 "Brazil’s Lula says only he can stop rise of fascism under Bolsonaro’s son"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
             "sources_involved": [
                 "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "7bd0b6a4-a673-4cc9-8cc6-84124c62c830",
+            "title": "WHO warns of ‘devastating consequences’ due to del...",
+            "keywords": [
+                "warns",
+                "‘devastating",
+                "consequences’",
+                "delayed",
+                "entry",
+                "into",
+                "gaza"
+            ],
+            "entity_signature": "PS:IL:WHO",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-03T06:04:20.384092+00:00",
+            "last_seen": "2026-10-03T06:04:20.384092+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "WHO warns of ‘devastating consequences’ due to delayed aid entry into Gaza"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "e912c14e-8d77-49d9-9e8a-db12ae2e7a27",
+            "title": "Trump says he did not 'jump the gun' on South Kore...",
+            "keywords": [
+                "trump",
+                "says",
+                "'jump",
+                "gun'",
+                "south",
+                "korea",
+                "alaska",
+                "investment",
+                "announcement",
+                "reuters"
+            ],
+            "entity_signature": "KR:Donald Trump:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-03T06:04:20.384092+00:00",
+            "last_seen": "2026-10-03T06:04:20.384092+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump says he did not 'jump the gun' on South Korea Alaska LNG investment announcement - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "00d4e7ae-12eb-4f1a-bdce-b37b56f95aed",
+            "title": "Apple says it will flag AI requests for Mac data a...",
+            "keywords": [
+                "apple",
+                "says",
+                "will",
+                "flag",
+                "requests",
+                "data",
+                "after",
+                "meta's",
+                "muse",
+                "draws"
+            ],
+            "entity_signature": "Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-03T06:04:20.384092+00:00",
+            "last_seen": "2026-10-03T06:04:20.384092+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Apple says it will flag AI requests for Mac data after Meta's Muse draws complaints - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
             ]
         },
         {
@@ -551,7 +645,7 @@
             "chapter_titles": [
                 "Iran war live: Trump hints US could strike Iran, warns time coming"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Al Jazeera"
