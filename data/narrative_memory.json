@@ -1,6 +1,37 @@
 {
-    "last_updated": "2026-10-02T21:10:33.613243+00:00",
+    "last_updated": "2026-10-03T00:37:14.999995+00:00",
     "arcs": [
+        {
+            "arc_id": "7d591e60-3cf6-40e2-bc4b-9c388c90b6b4",
+            "title": "Brazil’s Lula says only he can stop rise of fascis...",
+            "keywords": [
+                "brazil’s",
+                "lula",
+                "says",
+                "only",
+                "stop",
+                "rise",
+                "fascism",
+                "under",
+                "bolsonaro’s"
+            ],
+            "entity_signature": "BR:Luiz Inácio Lula da Silva:Jair Bolsonaro",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-03T00:37:14.992433+00:00",
+            "last_seen": "2026-10-03T00:37:14.992433+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Brazil’s Lula says only he can stop rise of fascism under Bolsonaro’s son"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
         {
             "arc_id": "714de931-2618-4cb7-8924-3b7b513cbcc1",
             "title": "US says Europe should ready fuel supplies as Trump...",
@@ -552,7 +583,7 @@
                 "UK PM says ‘strong indications’ Iran involved in bomb scare at US-run airbase",
                 "UK believes Iran involved in RAF Fairford incident, PM says"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.4,
             "sources_involved": [
                 "BBC News",
