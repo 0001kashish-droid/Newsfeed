@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-03T22:18:49.128966+00:00",
+    "last_updated": "2026-10-04T01:50:10.339618+00:00",
     "arcs": [
         {
             "arc_id": "bb00b6ec-b99f-47ba-a40f-fa63387e161a",
@@ -22,15 +22,49 @@
                 "Global"
             ],
             "first_seen": "2026-10-03T22:18:49.117275+00:00",
-            "last_seen": "2026-10-03T22:18:49.117275+00:00",
-            "chapter_count": 1,
+            "last_seen": "2026-10-04T01:50:10.329505+00:00",
+            "chapter_count": 2,
             "chapter_titles": [
-                "EXCLUSIVE: Ukraine will hit Russian refineries in response to Moscow's 'new doctrine' of airstrikes, Zelenskiy says - Reuters"
+                "EXCLUSIVE: Ukraine will hit Russian refineries in response to Moscow's 'new doctrine' of airstrikes, Zelenskiy says - Reuters",
+                "EXCLUSIVE: Ukraine will hit Russian refineries in response to Moscow's 'new doctrine' of airstrikes, Zelenskiy says - reuters.com"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Reuters"
+            ]
+        },
+        {
+            "arc_id": "792a1c6d-5bff-4fde-815f-54000b1dad4b",
+            "title": "Iran war live: Trump hints US could strike Iran, w...",
+            "keywords": [
+                "iran",
+                "live:",
+                "trump",
+                "hints",
+                "could",
+                "strike",
+                "iran,",
+                "warns",
+                "time",
+                "coming"
+            ],
+            "entity_signature": "IR:US:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-01T00:41:42.546476+00:00",
+            "last_seen": "2026-10-04T01:50:10.329505+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Iran war live: Trump hints US could strike Iran, warns time coming",
+                "Iran war live: Yemeni forces strike Sanaa as Trump warns Tehran of hard way"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
             ]
         },
         {
@@ -357,7 +391,7 @@
                 "Netanyahu says Flydubai flight attacker 'underwent Islamist radical indoctrination'",
                 "Netanyahu says Flydubai flight attacker 'underwent Islamist radical indoctrination'"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "BBC News"
@@ -387,7 +421,7 @@
             "chapter_titles": [
                 "Greer says no specific timeline set for enforcing US-China Board of Trade"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
@@ -681,38 +715,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "792a1c6d-5bff-4fde-815f-54000b1dad4b",
-            "title": "Iran war live: Trump hints US could strike Iran, w...",
-            "keywords": [
-                "iran",
-                "live:",
-                "trump",
-                "hints",
-                "could",
-                "strike",
-                "iran,",
-                "warns",
-                "time",
-                "coming"
-            ],
-            "entity_signature": "IR:US:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-01T00:41:42.546476+00:00",
-            "last_seen": "2026-10-01T00:41:42.546476+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Iran war live: Trump hints US could strike Iran, warns time coming"
-            ],
-            "importance_trend": "fading",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
             ]
         },
         {
