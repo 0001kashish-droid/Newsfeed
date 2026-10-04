@@ -1,6 +1,105 @@
 {
-    "last_updated": "2026-10-04T07:49:16.077404+00:00",
+    "last_updated": "2026-10-04T13:44:18.135420+00:00",
     "arcs": [
+        {
+            "arc_id": "289251d1-3c10-4e5a-a3db-06abef0209ff",
+            "title": "Germany's Merz visits Kyiv as Russia steps up atta...",
+            "keywords": [
+                "germany's",
+                "merz",
+                "visits",
+                "kyiv",
+                "russia",
+                "steps",
+                "attacks",
+                "ukrainian",
+                "cities"
+            ],
+            "entity_signature": "DE:UA:RU",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-04T13:44:18.123110+00:00",
+            "last_seen": "2026-10-04T13:44:18.123110+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Germany's Merz visits Kyiv as Russia steps up attacks on Ukrainian cities",
+                "Russia hits Kyiv bridge as Germany’s Merz visits Ukraine’s capital",
+                "Live: New Russian strikes hit Kyiv bridge as Germany's Merz visits"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 1.0,
+            "sources_involved": [
+                "Al Jazeera",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "6dd20bde-70ae-43db-a430-556f08e249d9",
+            "title": "Russians Snap Up Chinese E.V.s as Ukrainian Attack...",
+            "keywords": [
+                "russians",
+                "snap",
+                "chinese",
+                "e.v.s",
+                "ukrainian",
+                "attacks",
+                "make",
+                "fuel",
+                "scarce"
+            ],
+            "entity_signature": "RU:CN:UA",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-04T13:44:18.123110+00:00",
+            "last_seen": "2026-10-04T13:44:18.123110+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Russians Snap Up Chinese E.V.s as Ukrainian Attacks Make Fuel Scarce",
+                "Russians Snap Up Chinese E.V.s as Ukrainian Attacks Make Fuel Scarce"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NYT Business",
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "e3034724-14b8-454c-afb6-fa7135f62961",
+            "title": "French education minister says up to 500 schools w...",
+            "keywords": [
+                "french",
+                "education",
+                "minister",
+                "says",
+                "schools",
+                "will",
+                "remain",
+                "partially",
+                "fully",
+                "closed"
+            ],
+            "entity_signature": "FR:EU:UA",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-04T13:44:18.123110+00:00",
+            "last_seen": "2026-10-04T13:44:18.123110+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "French education minister says up to 500 schools will remain partially or fully closed on Monday after student protests – Europe live"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
         {
             "arc_id": "bb00b6ec-b99f-47ba-a40f-fa63387e161a",
             "title": "EXCLUSIVE: Ukraine will hit Russian refineries in ...",
@@ -326,7 +425,7 @@
                 "Russian dissident Garry Kasparov says US warned him of danger to his life",
                 "Russian dissident Garry Kasparov says US warned him of danger to his life"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.15,
             "sources_involved": [
                 "BBC Europe"
