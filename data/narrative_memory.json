@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-04T13:44:18.135420+00:00",
+    "last_updated": "2026-10-04T18:00:03.587969+00:00",
     "arcs": [
         {
             "arc_id": "289251d1-3c10-4e5a-a3db-06abef0209ff",
@@ -21,12 +21,13 @@
                 "Europe"
             ],
             "first_seen": "2026-10-04T13:44:18.123110+00:00",
-            "last_seen": "2026-10-04T13:44:18.123110+00:00",
-            "chapter_count": 3,
+            "last_seen": "2026-10-04T18:00:03.576079+00:00",
+            "chapter_count": 4,
             "chapter_titles": [
                 "Germany's Merz visits Kyiv as Russia steps up attacks on Ukrainian cities",
                 "Russia hits Kyiv bridge as Germany’s Merz visits Ukraine’s capital",
-                "Live: New Russian strikes hit Kyiv bridge as Germany's Merz visits"
+                "Live: New Russian strikes hit Kyiv bridge as Germany's Merz visits",
+                "Germany's Merz visits Kyiv as Russia steps up attacks on Ukrainian cities"
             ],
             "importance_trend": "rising",
             "peak_velocity": 1.0,
@@ -55,17 +56,19 @@
                 "North America"
             ],
             "first_seen": "2026-10-04T13:44:18.123110+00:00",
-            "last_seen": "2026-10-04T13:44:18.123110+00:00",
-            "chapter_count": 2,
+            "last_seen": "2026-10-04T18:00:03.576079+00:00",
+            "chapter_count": 4,
             "chapter_titles": [
+                "Russians Snap Up Chinese E.V.s as Ukrainian Attacks Make Fuel Scarce",
+                "Russians Snap Up Chinese E.V.s as Ukrainian Attacks Make Fuel Scarce",
                 "Russians Snap Up Chinese E.V.s as Ukrainian Attacks Make Fuel Scarce",
                 "Russians Snap Up Chinese E.V.s as Ukrainian Attacks Make Fuel Scarce"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
             "sources_involved": [
-                "NYT Business",
-                "New York Times"
+                "New York Times",
+                "NYT Business"
             ]
         },
         {
@@ -89,15 +92,109 @@
                 "Europe"
             ],
             "first_seen": "2026-10-04T13:44:18.123110+00:00",
-            "last_seen": "2026-10-04T13:44:18.123110+00:00",
-            "chapter_count": 1,
+            "last_seen": "2026-10-04T18:00:03.576079+00:00",
+            "chapter_count": 2,
             "chapter_titles": [
+                "French education minister says up to 500 schools will remain partially or fully closed on Monday after student protests – Europe live",
                 "French education minister says up to 500 schools will remain partially or fully closed on Monday after student protests – Europe live"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "ab377d9d-f4cd-4462-a052-657a008186f6",
+            "title": "Live: US wants to hold trilateral Ukraine talks wi...",
+            "keywords": [
+                "live:",
+                "wants",
+                "hold",
+                "trilateral",
+                "ukraine",
+                "talks",
+                "with",
+                "russia",
+                "october,",
+                "zelensky"
+            ],
+            "entity_signature": "US:UA:RU:Volodymyr Zelenskyy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-04T18:00:03.576079+00:00",
+            "last_seen": "2026-10-04T18:00:03.576079+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Live: US wants to hold trilateral Ukraine talks with Russia by end of October, Zelensky says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "169f1f40-2943-4b89-a7ef-cef9157f1a2d",
+            "title": "Ukraine believes Russia shared jet-drone technolog...",
+            "keywords": [
+                "ukraine",
+                "believes",
+                "russia",
+                "shared",
+                "jet-drone",
+                "technology",
+                "with",
+                "north",
+                "korea,",
+                "says"
+            ],
+            "entity_signature": "UA:RU:KP:Volodymyr Zelenskyy",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-04T18:00:03.576079+00:00",
+            "last_seen": "2026-10-04T18:00:03.576079+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ukraine believes Russia shared jet-drone technology with North Korea, says Zelensky"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "5f38de55-9830-4bf5-8921-1517a2d46ad2",
+            "title": "Russia says it hit Kyiv bridge, two vessels in Bla...",
+            "keywords": [
+                "russia",
+                "says",
+                "kyiv",
+                "bridge,",
+                "vessels",
+                "black",
+                "reuters.com"
+            ],
+            "entity_signature": "RU:UA:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-04T18:00:03.576079+00:00",
+            "last_seen": "2026-10-04T18:00:03.576079+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russia says it hit Kyiv bridge, two vessels in Black Sea - reuters.com"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
             ]
         },
         {
