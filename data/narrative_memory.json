@@ -1,6 +1,134 @@
 {
-    "last_updated": "2026-10-05T15:07:16.848809+00:00",
+    "last_updated": "2026-10-05T22:07:16.071531+00:00",
     "arcs": [
+        {
+            "arc_id": "6067c9d5-0e43-42a3-bcff-7a933376b859",
+            "title": "Trump says US will help Russia after Siberia plagu...",
+            "keywords": [
+                "trump",
+                "says",
+                "will",
+                "help",
+                "russia",
+                "after",
+                "siberia",
+                "plague",
+                "institute",
+                "death"
+            ],
+            "entity_signature": "US:RU:Donald Trump:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-05T22:07:16.056000+00:00",
+            "last_seen": "2026-10-05T22:07:16.056000+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Trump says US will help Russia after Siberia plague institute death - Reuters",
+                "Trump says US ready to aid Russia with plague outbreak in Siberia"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7,
+            "sources_involved": [
+                "Reuters",
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "f464479a-3ba3-431b-8dbc-8f858b417441",
+            "title": "US bombers moved from UK airbase due to Iran-linke...",
+            "keywords": [
+                "bombers",
+                "moved",
+                "from",
+                "airbase",
+                "iran-linked",
+                "threats,",
+                "trump",
+                "says"
+            ],
+            "entity_signature": "US:UK:IR:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-05T22:07:16.056000+00:00",
+            "last_seen": "2026-10-05T22:07:16.056000+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "US bombers moved from UK airbase due to Iran-linked threats, Trump says",
+                "Trump says 'threat' led US to pull bombers from RAF Fairford"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC News",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "327d6295-472a-4976-aa08-ff8b03c53497",
+            "title": "Norway plans temporary ban on smart glasses in som...",
+            "keywords": [
+                "norway",
+                "plans",
+                "temporary",
+                "smart",
+                "glasses",
+                "some",
+                "public",
+                "places"
+            ],
+            "entity_signature": "NO:UK:US",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-05T22:07:16.056000+00:00",
+            "last_seen": "2026-10-05T22:07:16.056000+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Norway plans temporary ban on smart glasses in some public places"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "5b745eea-fec4-44a4-b06a-b28637c6004d",
+            "title": "US closely monitoring case of lab worker who ‘poss...",
+            "keywords": [
+                "closely",
+                "monitoring",
+                "case",
+                "worker",
+                "‘possibly’",
+                "died",
+                "plague",
+                "siberia,",
+                "says",
+                "rubio"
+            ],
+            "entity_signature": "US:RU:WHO",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-05T22:07:16.056000+00:00",
+            "last_seen": "2026-10-05T22:07:16.056000+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
         {
             "arc_id": "0fa22c08-be6f-4c1c-8ec4-7455d20bba28",
             "title": "Romania says two dead after fire on ship, Ukraine ...",
@@ -370,7 +498,7 @@
             "chapter_titles": [
                 "Indian proposal for Ukraine truce ‘most comprehensive’, says Ukrainian foreign minister Andrii Sybiha"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Hindustan Times"
