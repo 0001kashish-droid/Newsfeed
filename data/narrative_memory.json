@@ -1,6 +1,38 @@
 {
-    "last_updated": "2026-10-05T06:02:46.845401+00:00",
+    "last_updated": "2026-10-05T15:07:16.848809+00:00",
     "arcs": [
+        {
+            "arc_id": "0fa22c08-be6f-4c1c-8ec4-7455d20bba28",
+            "title": "Romania says two dead after fire on ship, Ukraine ...",
+            "keywords": [
+                "romania",
+                "says",
+                "dead",
+                "after",
+                "fire",
+                "ship,",
+                "ukraine",
+                "blames",
+                "russian",
+                "drones"
+            ],
+            "entity_signature": "RO:UA:RU:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-05T15:07:16.840696+00:00",
+            "last_seen": "2026-10-05T15:07:16.840696+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Romania says two dead after fire on ship, Ukraine blames Russian drones - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
         {
             "arc_id": "6dd20bde-70ae-43db-a430-556f08e249d9",
             "title": "Russians Snap Up Chinese E.V.s as Ukrainian Attack...",
@@ -370,7 +402,7 @@
                 "Brazil’s Lula says only he can stop rise of fascism under Bolsonaro’s son",
                 "Brazil’s Lula says only he can stop rise of fascism under Bolsonaro’s son"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.15,
             "sources_involved": [
                 "The Guardian"
@@ -399,7 +431,7 @@
             "chapter_titles": [
                 "WHO warns of ‘devastating consequences’ due to delayed aid entry into Gaza"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Al Jazeera"
@@ -431,7 +463,7 @@
             "chapter_titles": [
                 "Trump says he did not 'jump the gun' on South Korea Alaska LNG investment announcement - Reuters"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.15,
             "sources_involved": [
                 "Reuters"
@@ -463,7 +495,7 @@
             "chapter_titles": [
                 "Apple says it will flag AI requests for Mac data after Meta's Muse draws complaints - Reuters"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.15,
             "sources_involved": [
                 "Reuters"
