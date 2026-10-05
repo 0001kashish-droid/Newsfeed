@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-05T00:04:15.896917+00:00",
+    "last_updated": "2026-10-05T06:02:46.845401+00:00",
     "arcs": [
         {
             "arc_id": "6dd20bde-70ae-43db-a430-556f08e249d9",
@@ -21,9 +21,11 @@
                 "North America"
             ],
             "first_seen": "2026-10-04T13:44:18.123110+00:00",
-            "last_seen": "2026-10-05T00:04:15.883130+00:00",
-            "chapter_count": 8,
+            "last_seen": "2026-10-05T06:02:46.837647+00:00",
+            "chapter_count": 10,
             "chapter_titles": [
+                "Russians Snap Up Chinese E.V.s as Ukrainian Attacks Make Fuel Scarce",
+                "Russians Snap Up Chinese E.V.s as Ukrainian Attacks Make Fuel Scarce",
                 "Russians Snap Up Chinese E.V.s as Ukrainian Attacks Make Fuel Scarce",
                 "Russians Snap Up Chinese E.V.s as Ukrainian Attacks Make Fuel Scarce",
                 "Russians Snap Up Chinese E.V.s as Ukrainian Attacks Make Fuel Scarce",
@@ -60,12 +62,13 @@
                 "Europe"
             ],
             "first_seen": "2026-10-04T13:44:18.123110+00:00",
-            "last_seen": "2026-10-05T00:04:15.883130+00:00",
-            "chapter_count": 6,
+            "last_seen": "2026-10-05T06:02:46.837647+00:00",
+            "chapter_count": 7,
             "chapter_titles": [
                 "Germany's Merz visits Kyiv as Russia steps up attacks on Ukrainian cities",
                 "Russia hits Kyiv bridge as Germany’s Merz visits Ukraine’s capital",
                 "Live: New Russian strikes hit Kyiv bridge as Germany's Merz visits",
+                "Germany's Merz visits Kyiv as Russia steps up attacks on Ukrainian cities",
                 "Germany's Merz visits Kyiv as Russia steps up attacks on Ukrainian cities",
                 "Germany's Merz visits Kyiv as Russia steps up attacks on Ukrainian cities",
                 "Germany's Merz visits Kyiv as Russia steps up attacks on Ukrainian cities"
@@ -73,8 +76,8 @@
             "importance_trend": "rising",
             "peak_velocity": 1.0,
             "sources_involved": [
-                "Al Jazeera",
-                "France 24"
+                "France 24",
+                "Al Jazeera"
             ]
         },
         {
@@ -98,9 +101,10 @@
                 "Europe"
             ],
             "first_seen": "2026-10-04T13:44:18.123110+00:00",
-            "last_seen": "2026-10-05T00:04:15.883130+00:00",
-            "chapter_count": 4,
+            "last_seen": "2026-10-05T06:02:46.837647+00:00",
+            "chapter_count": 5,
             "chapter_titles": [
+                "French education minister says up to 500 schools will remain partially or fully closed on Monday after student protests – Europe live",
                 "French education minister says up to 500 schools will remain partially or fully closed on Monday after student protests – Europe live",
                 "French education minister says up to 500 schools will remain partially or fully closed on Monday after student protests – Europe live",
                 "French education minister says up to 500 schools will remain partially or fully closed on Monday after student protests – Europe live",
@@ -133,10 +137,11 @@
                 "Europe"
             ],
             "first_seen": "2026-10-04T18:00:03.576079+00:00",
-            "last_seen": "2026-10-05T00:04:15.883130+00:00",
-            "chapter_count": 3,
+            "last_seen": "2026-10-05T06:02:46.837647+00:00",
+            "chapter_count": 4,
             "chapter_titles": [
                 "Live: US wants to hold trilateral Ukraine talks with Russia by end of October, Zelensky says",
+                "US wants to hold trilateral Ukraine talks with Russia by end of October, Zelensky says",
                 "US wants to hold trilateral Ukraine talks with Russia by end of October, Zelensky says",
                 "US wants to hold trilateral Ukraine talks with Russia by end of October, Zelensky says"
             ],
@@ -144,6 +149,38 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "France 24"
+            ]
+        },
+        {
+            "arc_id": "836f850a-d0a9-459d-a879-cb2bf55d8601",
+            "title": "Ball in UK’s court: EU ambassador says Brussels wi...",
+            "keywords": [
+                "ball",
+                "uk’s",
+                "court:",
+                "ambassador",
+                "says",
+                "brussels",
+                "will",
+                "‘ready",
+                "engage‘",
+                "after"
+            ],
+            "entity_signature": "UK:EU:BE:WHO",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-05T06:02:46.837647+00:00",
+            "last_seen": "2026-10-05T06:02:46.837647+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ball in UK’s court: EU ambassador says Brussels will be ‘ready to engage‘ after country decides what it wants"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
             ]
         },
         {
