@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-06T09:13:35.438256+00:00",
+    "last_updated": "2026-10-06T16:07:34.672167+00:00",
     "arcs": [
         {
             "arc_id": "6067c9d5-0e43-42a3-bcff-7a933376b859",
@@ -22,20 +22,120 @@
                 "Global"
             ],
             "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-06T09:13:35.421751+00:00",
-            "chapter_count": 4,
+            "last_seen": "2026-10-06T16:07:34.654926+00:00",
+            "chapter_count": 7,
             "chapter_titles": [
                 "Trump says US will help Russia after Siberia plague institute death - Reuters",
                 "Trump says US ready to aid Russia with plague outbreak in Siberia",
                 "Trump says US will help Russia after Siberia plague institute death - Reuters",
-                "US 'watching closely' after plague researcher dies in Russia"
+                "US 'watching closely' after plague researcher dies in Russia",
+                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
+                "US 'watching closely' after plague researcher dies in Russia",
+                "Watch: How Russia responded to US after plague researcher death"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.7,
             "sources_involved": [
-                "Reuters",
+                "Al Jazeera",
+                "BBC News",
                 "BBC Europe",
-                "Al Jazeera"
+                "Reuters",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "4282e364-6446-443e-8105-4ad7a352bff1",
+            "title": "Houthis claim attacks on Riyadh airport as Saudi-l...",
+            "keywords": [
+                "houthis",
+                "claim",
+                "attacks",
+                "riyadh",
+                "airport",
+                "saudi-led",
+                "forces",
+                "strike",
+                "yemen"
+            ],
+            "entity_signature": "SA:IR:PK",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-06T02:24:11.640373+00:00",
+            "last_seen": "2026-10-06T16:07:34.654926+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
+                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
+                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "48671d48-be32-4bfc-8d8f-7c22ba68b364",
+            "title": "'We were naive' about Hamas, Israeli ex-hostage Sh...",
+            "keywords": [
+                "were",
+                "naive'",
+                "about",
+                "hamas,",
+                "israeli",
+                "ex-hostage",
+                "shoshan",
+                "haran",
+                "says"
+            ],
+            "entity_signature": "PS:IL:FR",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-06T16:07:34.654926+00:00",
+            "last_seen": "2026-10-06T16:07:34.654926+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "cffd0e03-71ea-4f71-a71c-6dc0b00c2844",
+            "title": "US Senator Murphy says Pentagon denied him access ...",
+            "keywords": [
+                "senator",
+                "murphy",
+                "says",
+                "pentagon",
+                "denied",
+                "access",
+                "base",
+                "qatar",
+                "reuters"
+            ],
+            "entity_signature": "US:Pentagon:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-06T16:07:34.654926+00:00",
+            "last_seen": "2026-10-06T16:07:34.654926+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US Senator Murphy says Pentagon denied him access to US base in Qatar - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
             ]
         },
         {
@@ -102,38 +202,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "4282e364-6446-443e-8105-4ad7a352bff1",
-            "title": "Houthis claim attacks on Riyadh airport as Saudi-l...",
-            "keywords": [
-                "houthis",
-                "claim",
-                "attacks",
-                "riyadh",
-                "airport",
-                "saudi-led",
-                "forces",
-                "strike",
-                "yemen"
-            ],
-            "entity_signature": "SA:IR:PK",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-06T02:24:11.640373+00:00",
-            "last_seen": "2026-10-06T09:13:35.421751+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
-                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
             ]
         },
         {
