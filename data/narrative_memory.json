@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-05T22:07:16.071531+00:00",
+    "last_updated": "2026-10-06T02:24:11.656767+00:00",
     "arcs": [
         {
             "arc_id": "6067c9d5-0e43-42a3-bcff-7a933376b859",
@@ -22,17 +22,18 @@
                 "Global"
             ],
             "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-05T22:07:16.056000+00:00",
-            "chapter_count": 2,
+            "last_seen": "2026-10-06T02:24:11.640373+00:00",
+            "chapter_count": 3,
             "chapter_titles": [
                 "Trump says US will help Russia after Siberia plague institute death - Reuters",
-                "Trump says US ready to aid Russia with plague outbreak in Siberia"
+                "Trump says US ready to aid Russia with plague outbreak in Siberia",
+                "Trump says US will help Russia after Siberia plague institute death - Reuters"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.7,
             "sources_involved": [
-                "Reuters",
-                "Al Jazeera"
+                "Al Jazeera",
+                "Reuters"
             ]
         },
         {
@@ -54,17 +55,18 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-05T22:07:16.056000+00:00",
-            "chapter_count": 2,
+            "last_seen": "2026-10-06T02:24:11.640373+00:00",
+            "chapter_count": 3,
             "chapter_titles": [
                 "US bombers moved from UK airbase due to Iran-linked threats, Trump says",
+                "Trump says 'threat' led US to pull bombers from RAF Fairford",
                 "Trump says 'threat' led US to pull bombers from RAF Fairford"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
             "sources_involved": [
-                "BBC News",
-                "SCMP"
+                "SCMP",
+                "BBC News"
             ]
         },
         {
@@ -86,9 +88,10 @@
                 "Europe"
             ],
             "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-05T22:07:16.056000+00:00",
-            "chapter_count": 1,
+            "last_seen": "2026-10-06T02:24:11.640373+00:00",
+            "chapter_count": 2,
             "chapter_titles": [
+                "Norway plans temporary ban on smart glasses in some public places",
                 "Norway plans temporary ban on smart glasses in some public places"
             ],
             "importance_trend": "rising",
@@ -118,15 +121,78 @@
                 "Europe"
             ],
             "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-05T22:07:16.056000+00:00",
-            "chapter_count": 1,
+            "last_seen": "2026-10-06T02:24:11.640373+00:00",
+            "chapter_count": 2,
             "chapter_titles": [
+                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
                 "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
             "sources_involved": [
                 "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "3a5f99fa-ae88-4229-acd4-031db4f5e474",
+            "title": "EXCLUSIVE: Cuba and US maintain 'channels of commu...",
+            "keywords": [
+                "exclusive:",
+                "cuba",
+                "maintain",
+                "'channels",
+                "communication'",
+                "negotiations,",
+                "diplomat",
+                "says",
+                "reuters"
+            ],
+            "entity_signature": "CU:US:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-06T02:24:11.640373+00:00",
+            "last_seen": "2026-10-06T02:24:11.640373+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "EXCLUSIVE: Cuba and US maintain 'channels of communication' but no negotiations, diplomat says - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "4282e364-6446-443e-8105-4ad7a352bff1",
+            "title": "Houthis claim attacks on Riyadh airport as Saudi-l...",
+            "keywords": [
+                "houthis",
+                "claim",
+                "attacks",
+                "riyadh",
+                "airport",
+                "saudi-led",
+                "forces",
+                "strike",
+                "yemen"
+            ],
+            "entity_signature": "SA:IR:PK",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-06T02:24:11.640373+00:00",
+            "last_seen": "2026-10-06T02:24:11.640373+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
             ]
         },
         {
@@ -433,7 +499,7 @@
                 "EXCLUSIVE: Ukraine will hit Russian refineries in response to Moscow's 'new doctrine' of airstrikes, Zelenskiy says - Reuters",
                 "EXCLUSIVE: Ukraine will hit Russian refineries in response to Moscow's 'new doctrine' of airstrikes, Zelenskiy says - reuters.com"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Reuters"
@@ -466,7 +532,7 @@
                 "Iran war live: Trump hints US could strike Iran, warns time coming",
                 "Iran war live: Yemeni forces strike Sanaa as Trump warns Tehran of hard way"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Al Jazeera"
