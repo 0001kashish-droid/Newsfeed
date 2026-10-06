@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-06T16:07:34.672167+00:00",
+    "last_updated": "2026-10-06T21:06:50.574013+00:00",
     "arcs": [
         {
             "arc_id": "6067c9d5-0e43-42a3-bcff-7a933376b859",
@@ -22,8 +22,8 @@
                 "Global"
             ],
             "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-06T16:07:34.654926+00:00",
-            "chapter_count": 7,
+            "last_seen": "2026-10-06T21:06:50.560476+00:00",
+            "chapter_count": 8,
             "chapter_titles": [
                 "Trump says US will help Russia after Siberia plague institute death - Reuters",
                 "Trump says US ready to aid Russia with plague outbreak in Siberia",
@@ -31,16 +31,17 @@
                 "US 'watching closely' after plague researcher dies in Russia",
                 "Plague epidemic risk in Russia low after death of lab technician, WHO says",
                 "US 'watching closely' after plague researcher dies in Russia",
-                "Watch: How Russia responded to US after plague researcher death"
+                "Watch: How Russia responded to US after plague researcher death",
+                "US 'watching closely' after plague researcher dies in Russia"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.7,
             "sources_involved": [
-                "Al Jazeera",
                 "BBC News",
+                "Al Jazeera",
+                "The Guardian",
                 "BBC Europe",
-                "Reuters",
-                "The Guardian"
+                "Reuters"
             ]
         },
         {
@@ -63,9 +64,10 @@
                 "Middle East"
             ],
             "first_seen": "2026-10-06T02:24:11.640373+00:00",
-            "last_seen": "2026-10-06T16:07:34.654926+00:00",
-            "chapter_count": 3,
+            "last_seen": "2026-10-06T21:06:50.560476+00:00",
+            "chapter_count": 4,
             "chapter_titles": [
+                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
                 "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
                 "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
                 "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen"
@@ -74,6 +76,41 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "France 24"
+            ]
+        },
+        {
+            "arc_id": "5b745eea-fec4-44a4-b06a-b28637c6004d",
+            "title": "US closely monitoring case of lab worker who ‘poss...",
+            "keywords": [
+                "closely",
+                "monitoring",
+                "case",
+                "worker",
+                "‘possibly’",
+                "died",
+                "plague",
+                "siberia,",
+                "says",
+                "rubio"
+            ],
+            "entity_signature": "US:RU:WHO",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-05T22:07:16.056000+00:00",
+            "last_seen": "2026-10-06T21:06:50.560476+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
+                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
+                "US CDC says it’s ‘aware of and closely monitoring’ Russian plague case"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Al Jazeera",
+                "The Guardian"
             ]
         },
         {
@@ -96,15 +133,80 @@
                 "Middle East"
             ],
             "first_seen": "2026-10-06T16:07:34.654926+00:00",
-            "last_seen": "2026-10-06T16:07:34.654926+00:00",
-            "chapter_count": 1,
+            "last_seen": "2026-10-06T21:06:50.560476+00:00",
+            "chapter_count": 2,
             "chapter_titles": [
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
                 "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "France 24"
+            ]
+        },
+        {
+            "arc_id": "d6a73af9-064a-403e-a395-6285b4ab7431",
+            "title": "Ukraine's Zelenskiy says intelligence shows Russia...",
+            "keywords": [
+                "ukraine's",
+                "zelenskiy",
+                "says",
+                "intelligence",
+                "shows",
+                "russia",
+                "preparing",
+                "massive",
+                "attack",
+                "reuters"
+            ],
+            "entity_signature": "UA:RU:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-06T21:06:50.560476+00:00",
+            "last_seen": "2026-10-06T21:06:50.560476+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ukraine's Zelenskiy says intelligence shows Russia is preparing massive attack - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "3a25593b-15c5-43bd-bfb5-584e59165c2f",
+            "title": "Trump says Iran could ‘take out’ Los Angeles or Sa...",
+            "keywords": [
+                "trump",
+                "says",
+                "iran",
+                "could",
+                "‘take",
+                "out’",
+                "angeles",
+                "diego,",
+                "drawing",
+                "backlash"
+            ],
+            "entity_signature": "IR:US:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-06T21:06:50.560476+00:00",
+            "last_seen": "2026-10-06T21:06:50.560476+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump says Iran could ‘take out’ Los Angeles or San Diego, drawing backlash"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "SCMP"
             ]
         },
         {
@@ -197,39 +299,6 @@
                 "Norway plans temporary ban on smart glasses in some public places",
                 "Norway plans temporary ban on smart glasses in some public places",
                 "Norway plans temporary ban on smart glasses in some public places"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "5b745eea-fec4-44a4-b06a-b28637c6004d",
-            "title": "US closely monitoring case of lab worker who ‘poss...",
-            "keywords": [
-                "closely",
-                "monitoring",
-                "case",
-                "worker",
-                "‘possibly’",
-                "died",
-                "plague",
-                "siberia,",
-                "says",
-                "rubio"
-            ],
-            "entity_signature": "US:RU:WHO",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-06T02:24:11.640373+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
-                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
@@ -539,7 +608,7 @@
             "chapter_titles": [
                 "Russia says it hit Kyiv bridge, two vessels in Black Sea - reuters.com"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.15,
             "sources_involved": [
                 "Reuters"
