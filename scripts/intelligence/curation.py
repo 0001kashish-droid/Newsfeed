@@ -27,8 +27,11 @@ _TOKEN_RE = re.compile(r'[a-z0-9]+')
 
 def _tokenize(text):
     """Extract meaningful lowercase tokens, removing stopwords."""
-    return [w for w in _TOKEN_RE.findall(text.lower())
-            if len(w) > 2 and w not in _STOPWORDS]
+    raw = (text or '').lower()
+    raw = re.sub(r'(?<!\w)a\.i\.(?!\w)', 'ai', raw)
+    raw = re.sub(r'(?<!\w)e\.v\.(?!\w)', 'ev', raw)
+    return [w for w in _TOKEN_RE.findall(raw)
+            if (len(w) > 2 or w in {'ai', 'ev'}) and w not in _STOPWORDS]
 
 
 # ---------------------------------------------------------------------------
@@ -147,6 +150,15 @@ def thread_narratives(articles, memory):
 
     for art in articles:
         matched_arc_id = art.get('_matched_arc_id')
+        if not matched_arc_id and memory.get('arcs'):
+            try:
+                from intelligence.memory import match_article_to_arc
+                fallback_arc, _ = match_article_to_arc(art, memory.get('arcs', []))
+                if fallback_arc:
+                    matched_arc_id = fallback_arc.get('arc_id')
+            except Exception:
+                pass
+
         if matched_arc_id and matched_arc_id in arcs_by_id:
             arc = arcs_by_id[matched_arc_id]
             # Calculate day number
@@ -215,16 +227,17 @@ def cross_link_resonance(articles, podcasts, threshold=0.30):
         podcast_tokens[ep.get('id', '')] = set(_tokenize(combined))
         # Extract simple entity-like tokens from topics
         podcast_entities[ep.get('id', '')] = set(
-            t.lower() for t in ep_topics if len(t) > 2
+            t.lower() for t in (ep_topics or []) if (len(t) > 2 or t.lower() in {'ai', 'ev'})
         )
 
     # Tokenize all article titles + annotation
     article_tokens = {}
     for art in articles:
-        title = art.get('title', '')
-        annotation = art.get('annotation', {})
+        title = art.get('title') or ''
+        annotation = art.get('annotation') or {}
         what = annotation.get('what', '') if isinstance(annotation, dict) else ''
-        combined = f"{title} {what}"
+        desc = art.get('description') or ''
+        combined = f"{title} {what} {desc}"
         article_tokens[art.get('id', '')] = set(_tokenize(combined))
 
     # Find resonances
@@ -253,16 +266,20 @@ def cross_link_resonance(articles, podcasts, threshold=0.30):
             # Entity/topic bonus
             ep_ents = podcast_entities.get(ep_id, set())
             art_domains = set()
-            entities = art.get('entities', {})
+            entities = art.get('entities')
             if isinstance(entities, dict):
                 for ent_list in [entities.get('domains', []),
                                  entities.get('actions', [])]:
-                    art_domains.update(str(d).lower() for d in ent_list)
+                    if isinstance(ent_list, list):
+                        art_domains.update(str(d).lower() for d in ent_list if d)
 
-            entity_overlap = len(ep_ents & art_domains) / max(len(ep_ents | art_domains), 1)
+            entity_overlap = len(ep_ents & art_domains) / max(len(ep_ents | art_domains), 1) if (ep_ents or art_domains) else 0.0
 
-            # Combined score (weighted)
-            combined_score = jaccard * 0.6 + entity_overlap * 0.4
+            # Combined score (weighted): require jaccard > 0 to prevent false positives on disjoint stories
+            if jaccard > 0:
+                combined_score = jaccard * 0.6 + entity_overlap * 0.4
+            else:
+                combined_score = 0.0
 
             if combined_score > best_score and combined_score >= threshold:
                 best_score = combined_score
@@ -272,14 +289,18 @@ def cross_link_resonance(articles, podcasts, threshold=0.30):
             art['resonant_podcast'] = {
                 'id': best_match.get('id', ''),
                 'title': best_match.get('title', ''),
+                'episode_title': best_match.get('title', ''),
                 'podcast': best_match.get('podcast', ''),
+                'podcast_title': best_match.get('podcast', ''),
                 'link': best_match.get('link', ''),
-                'relevance': round(best_score, 3)
+                'youtube_url': best_match.get('link', ''),
+                'relevance': round(best_score, 3),
+                'resonance_score': round(best_score, 3)
             }
             resonance_count += 1
 
             # Bidirectional: add to podcast's resonant_news
-            if 'resonant_news' not in best_match:
+            if 'resonant_news' not in best_match or not isinstance(best_match['resonant_news'], list):
                 best_match['resonant_news'] = []
             if len(best_match['resonant_news']) < 5:  # Cap at 5 per podcast
                 best_match['resonant_news'].append({
@@ -287,14 +308,17 @@ def cross_link_resonance(articles, podcasts, threshold=0.30):
                     'title': art.get('title', ''),
                     'source': art.get('source', ''),
                     'link': art.get('link', ''),
-                    'relevance': round(best_score, 3)
+                    'url': art.get('link', ''),
+                    'relevance': round(best_score, 3),
+                    'resonance_score': round(best_score, 3)
                 })
         else:
             art['resonant_podcast'] = None
 
     # Ensure all podcasts have the field
     for ep in podcasts:
-        ep.setdefault('resonant_news', [])
+        if not isinstance(ep.get('resonant_news'), list):
+            ep['resonant_news'] = []
 
     # Audit
     print(f"\n  Podcast <-> News Resonance:")

@@ -28,13 +28,13 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Fetch Live News RSS Feeds
-        run: python scripts/fetch_news.py
-        continue-on-error: false
-
       - name: Fetch Podcast Intelligence
         run: python scripts/fetch_podcasts.py
         continue-on-error: true
+
+      - name: Fetch Live News RSS Feeds
+        run: python scripts/fetch_news.py
+        continue-on-error: false
 
       - name: Commit and Push Updated Feed
         run: |

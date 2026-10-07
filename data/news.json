@@ -106,15 +106,43 @@
       "readTime": "2 min read",
       "relatedSources": [
         {
-          "name": "Al Jazeera",
-          "url": "https://www.aljazeera.com"
+          "name": "NYT",
+          "url": "https://www.nytimes.com"
         },
         {
-          "name": "BBC Middle East",
-          "url": "https://www.bbc.com/news/world/middle_east"
+          "name": "BBC Asia",
+          "url": "https://www.bbc.com/news/world/asia"
+        },
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com"
         }
       ],
-      "storyCluster": null,
+      "storyCluster": {
+        "size": 2,
+        "firstReported": {
+          "source": "The Guardian",
+          "pubDate": "Wed, 07 Oct 2026 04:00:34 GMT"
+        },
+        "sources": [
+          {
+            "source": "The Guardian",
+            "region": "Asia-Pacific",
+            "title": "EU negotiators head to China hoping to curb cheap imports of hybrid electric cars",
+            "pubDate": "Wed, 07 Oct 2026 04:00:34 GMT"
+          },
+          {
+            "source": "The Guardian",
+            "region": "Europe",
+            "title": "EU negotiators head to China hoping to curb cheap imports of hybrid electric cars",
+            "pubDate": "Wed, 07 Oct 2026 04:00:34 GMT"
+          }
+        ],
+        "headlineVariants": [
+          "EU negotiators head to China hoping to curb cheap imports of hybrid electric cars"
+        ],
+        "crossRegional": false
+      },
       "pairedStory": false,
       "perspectives": [],
       "noise_penalty": 0.0,
@@ -145,7 +173,7 @@
         "entity_density": 0.06
       },
       "is_duplicate": false,
-      "duplicate_count": 0,
+      "duplicate_count": 1,
       "scores": {
         "velocity": 0.15,
         "rarity": 0.6833974731559347,
@@ -157,11 +185,12 @@
         "composite": 0.6665
       },
       "cognitive_type": "strategic",
-      "importance_score": 6.57,
+      "importance_score": 6.77,
       "meta": {
-        "is_black_swan": true,
-        "black_swan_reason": "Unusual entity combination + high rarity + crisis signal",
-        "source_authority": 0.6
+        "provenance_rank": 1,
+        "is_original_reporter": true,
+        "has_richest_reporting": true,
+        "source_authority": 0.75
       },
       "rank": 2,
       "narrative_arc": {
@@ -636,7 +665,7 @@
         "what": "The Spanish Supreme Court canceled an arrest warrant for Carles Puigdemont, who has been living in self-imposed exile in Belgium.",
         "why": "Key global development with wide-ranging impact across policy, industry, and public interest."
       },
-      "readTime": "2 min read",
+      "readTime": "3 min read",
       "relatedSources": [
         {
           "name": "NPR",
@@ -1064,8 +1093,8 @@
           "url": "https://www.nytimes.com"
         },
         {
-          "name": "BBC US",
-          "url": "https://www.bbc.com/news/world/us-and-canada"
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com"
         }
       ],
       "storyCluster": null,
@@ -1092,7 +1121,7 @@
       "duplicate_count": 0,
       "scores": {
         "velocity": 0.25,
-        "rarity": 1.0,
+        "rarity": 0.8609548659855547,
         "narrative": 0.2,
         "quality": 0.85,
         "density": 0.8,
@@ -1206,7 +1235,17 @@
         "total_chapters": 0,
         "importance_trend": null
       },
-      "resonant_podcast": null
+      "resonant_podcast": {
+        "id": "tp_EJB6z-IZdVk",
+        "title": "On the ground with UN peacekeepers as Lebanon-Israel mission nears its end",
+        "episode_title": "On the ground with UN peacekeepers as Lebanon-Israel mission nears its end",
+        "podcast": "PBS NewsHour",
+        "podcast_title": "PBS NewsHour",
+        "link": "https://www.youtube.com/watch?v=EJB6z-IZdVk",
+        "youtube_url": "https://www.youtube.com/watch?v=EJB6z-IZdVk",
+        "relevance": 0.413,
+        "resonance_score": 0.413
+      }
     },
     {
       "id": "reuters-world-3-4114",
@@ -1223,7 +1262,7 @@
         "what": "US forces face curfew, alcohol ban in Japan's Okinawa after murder case Reuters",
         "why": "Key global development with wide-ranging impact across policy, industry, and public interest."
       },
-      "readTime": "3 min read",
+      "readTime": "2 min read",
       "relatedSources": [
         {
           "name": "BBC News",
@@ -1246,8 +1285,8 @@
       "entities": {
         "countries": [
           {
-            "code": "US",
-            "name": "United States"
+            "code": "ES",
+            "name": "Spain"
           },
           {
             "code": "JP",
@@ -2272,11 +2311,11 @@
           }
         ],
         "leaders": [],
-        "organizations": [],
-        "companies": [],
-        "actions": [],
-        "domains": [
-          "geopolitics"
+        "organizations": [
+          {
+            "name": "WHO",
+            "matched": "who"
+          }
         ],
         "entity_count": 1,
         "entity_density": 0.0204
@@ -2331,8 +2370,264 @@
       "relatedSources": [
         {
           "name": "The Guardian",
-          "url": "https://www.theguardian.com/world/europe-news"
+          "url": "https://www.theguardian.com/world/asia-pacific"
         },
+        {
+          "name": "BBC Asia",
+          "url": "https://www.bbc.com/news/world/asia"
+        },
+        {
+          "name": "NYT",
+          "url": "https://www.nytimes.com"
+        }
+      ],
+      "storyCluster": null,
+      "pairedStory": false,
+      "perspectives": [],
+      "noise_penalty": 0.0,
+      "noise_flags": [],
+      "entities": {
+        "countries": [
+          {
+            "code": "EU",
+            "name": "European Union"
+          },
+          {
+            "code": "CN",
+            "name": "China"
+          },
+          {
+            "code": "BE",
+            "name": "Belgium"
+          }
+        ],
+        "leaders": [],
+        "organizations": [],
+        "companies": [],
+        "actions": [
+          "diplomacy",
+          "economy"
+        ],
+        "domains": [
+          "economics"
+        ],
+        "entity_count": 3,
+        "entity_density": 0.0652
+      },
+      "is_duplicate": false,
+      "duplicate_count": 0,
+      "scores": {
+        "velocity": 0.25,
+        "rarity": 0.5941345535409894,
+        "narrative": 0.6,
+        "quality": 0.5,
+        "density": 1.0,
+        "bridge": 0.35,
+        "temporal": 1.0,
+        "composite": 0.6163
+      },
+      "cognitive_type": "strategic",
+      "importance_score": 5.51,
+      "meta": {
+        "source_authority": 0.65
+      },
+      "rank": 12,
+      "narrative_arc": {
+        "arc_id": null,
+        "arc_title": null,
+        "day_number": 0,
+        "total_chapters": 0,
+        "importance_trend": null
+      },
+      "resonant_podcast": null
+    },
+    {
+      "id": "theverge-1-1388",
+      "title": "Xbox has secured GTA 6 streaming rights",
+      "link": "https://www.theverge.com/report/1005859/microsoft-xbox-gta-6-streaming-rights",
+      "description": "Xbox CEO Asha Sharma told employees that Microsoft is getting ready to do something around Grand Theft Auto VI that \"no other platform holder is doing\" during an employee all-hands this morning.",
+      "source": "The Verge",
+      "sourceLogo": "VRG",
+      "category": "Tech",
+      "region": "North America",
+      "pubDate": "2026-10-07T01:35:38-04:00",
+      "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gta6.jpg",
+      "annotation": {
+        "what": "Xbox CEO Asha Sharma told employees that Microsoft is getting ready to do something around Grand Theft Auto VI that \"no other platform holder is doing\" durin...",
+        "why": "According to sources familiar with Microsoft's plans, Sharma's brief teaser was actually about Xbox managing to land a deal for game streaming rights [&#8230;]"
+      },
+      "readTime": "2 min read",
+      "relatedSources": [
+        {
+          "name": "NYT",
+          "url": "https://www.nytimes.com"
+        },
+        {
+          "name": "NPR",
+          "url": "https://www.npr.org"
+        },
+        {
+          "name": "BBC US",
+          "url": "https://www.bbc.com/news/world/us-and-canada"
+        }
+      ],
+      "storyCluster": null,
+      "pairedStory": false,
+      "perspectives": [],
+      "noise_penalty": 0.0,
+      "noise_flags": [],
+      "entities": {
+        "countries": [],
+        "leaders": [],
+        "organizations": [],
+        "companies": [
+          {
+            "name": "Microsoft",
+            "matched": "microsoft"
+          }
+        ],
+        "actions": [],
+        "domains": [],
+        "entity_count": 1,
+        "entity_density": 0.025
+      },
+      "is_duplicate": false,
+      "duplicate_count": 0,
+      "scores": {
+        "velocity": 0.25,
+        "rarity": 1.0,
+        "narrative": 0.2,
+        "quality": 0.75,
+        "density": 0.8,
+        "bridge": 0.1,
+        "temporal": 1.0,
+        "composite": 0.5975
+      },
+      "cognitive_type": "general",
+      "importance_score": 5.51,
+      "meta": {
+        "is_exclusive": true,
+        "exclusive_signal": "Only source covering this event",
+        "source_authority": 0.5
+      },
+      "rank": 13,
+      "narrative_arc": {
+        "arc_id": null,
+        "arc_title": null,
+        "day_number": 0,
+        "total_chapters": 0,
+        "importance_trend": null
+      },
+      "resonant_podcast": null
+    },
+    {
+      "id": "ht-business-4-3527",
+      "title": "Pope Leo XIV brings Anthropic down a peg, AI costs spike, and Meta annoys Apple",
+      "link": "https://www.hindustantimes.com/business/pope-leo-xiv-brings-anthropic-down-a-peg-ai-costs-spike-and-meta-annoys-apple-101791260158939.html",
+      "description": "The biggest AI conversations, decoded. 07 October 2026.",
+      "source": "HT Business",
+      "sourceLogo": "HT",
+      "category": "Business",
+      "region": "India",
+      "pubDate": "Wed, 07 Oct 2026 08:01:15 +0530",
+      "imageUrl": "https://www.hindustantimes.com/ht-img/img/2026/10/06/1600x900/logo/Apple_macOS_Disk_Access_1791267335037_L5Wt_1791267345890_wQ15_d87a0bf4-fcac-4309-a2ea-69069a74913e_N5CK.png",
+      "annotation": {
+        "what": "The biggest AI conversations, decoded.",
+        "why": "07 October 2026"
+      },
+      "readTime": "3 min read",
+      "relatedSources": [
+        {
+          "name": "Hindustan Times",
+          "url": "https://www.hindustantimes.com"
+        },
+        {
+          "name": "Indian Express",
+          "url": "https://indianexpress.com"
+        },
+        {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com"
+        }
+      ],
+      "storyCluster": null,
+      "pairedStory": false,
+      "perspectives": [],
+      "noise_penalty": 0.0,
+      "noise_flags": [],
+      "entities": {
+        "countries": [],
+        "leaders": [],
+        "organizations": [],
+        "companies": [
+          {
+            "name": "Anthropic",
+            "matched": "anthropic"
+          },
+          {
+            "name": "Meta",
+            "matched": "meta"
+          },
+          {
+            "name": "Apple",
+            "matched": "apple"
+          }
+        ],
+        "actions": [
+          "technology"
+        ],
+        "domains": [
+          "technology"
+        ],
+        "entity_count": 3,
+        "entity_density": 0.1304
+      },
+      "is_duplicate": false,
+      "duplicate_count": 0,
+      "scores": {
+        "velocity": 0.15,
+        "rarity": 0.8927788596852082,
+        "narrative": 0.6,
+        "quality": 0.55,
+        "density": 1.0,
+        "bridge": 0.2,
+        "temporal": 0.7,
+        "composite": 0.5666
+      },
+      "cognitive_type": "technical",
+      "importance_score": 5.5,
+      "meta": {
+        "is_black_swan": true,
+        "black_swan_reason": "Unusual entity combination + high rarity + crisis signal",
+        "source_authority": 0.5
+      },
+      "rank": 14,
+      "narrative_arc": {
+        "arc_id": null,
+        "arc_title": null,
+        "day_number": 0,
+        "total_chapters": 0,
+        "importance_trend": null
+      },
+      "resonant_podcast": null
+    },
+    {
+      "id": "guardian-eu-0-6892",
+      "title": "Naval drone hits oil tanker off Russian resort city Sochi, triggering massive blaze",
+      "link": "https://www.theguardian.com/world/2026/oct/07/ukraine-drone-hits-oil-tanker-russia-sochi",
+      "description": "Russian officials said a Liberian-flagged tanker was attacked and a crew of 23 Indian nationals rescuedAn oil tanker off Russia’s Black Sea coast was struck by a naval drone, triggering a huge fire and black smoke cloud that blanketed parts of the resort city.",
+      "source": "The Guardian",
+      "sourceLogo": "TG",
+      "category": "World",
+      "region": "Europe",
+      "pubDate": "Wed, 07 Oct 2026 04:39:01 GMT",
+      "imageUrl": "https://i.guim.co.uk/img/media/e1a3c6de50355221e869fb103e151ab467b3dcd3/502_288_912_730/master/912.jpg?width=1600&quality=85&auto=format&fit=max&s=869bb3d8ed265503be69d41627b60205",
+      "annotation": {
+        "what": "Russian officials said a Liberian-flagged tanker was attacked and a crew of 23 Indian nationals rescuedAn oil tanker off Russia’s Black Sea coast was struck ...",
+        "why": "Continue reading..."
+      },
+      "readTime": "3 min read",
+      "relatedSources": [
         {
           "name": "DW News",
           "url": "https://www.dw.com"
@@ -2399,13 +2694,27 @@
       },
       "rank": 26,
       "narrative_arc": {
-        "arc_id": null,
-        "arc_title": null,
-        "day_number": 0,
-        "total_chapters": 0,
-        "importance_trend": null
+        "arc_id": "716aba2c-2c22-4feb-a713-703429cb6ab8",
+        "arc_title": "Trump says will speak with Putin over Russia's rep...",
+        "day_number": 1,
+        "total_chapters": 2,
+        "importance_trend": "rising",
+        "previous_headlines": [
+          "Trump says will speak with Putin over Russia's reported plague death",
+          "Plague epidemic risk in Russia low after death of lab technician, WHO says"
+        ]
       },
-      "resonant_podcast": null
+      "resonant_podcast": {
+        "id": "tp_HT84KnkoNn0",
+        "title": "Rwanda is a world leader in using drones for healthcare. But drones can't do it all",
+        "episode_title": "Rwanda is a world leader in using drones for healthcare. But drones can't do it all",
+        "podcast": "NPR",
+        "podcast_title": "NPR",
+        "link": "https://www.youtube.com/watch?v=HT84KnkoNn0",
+        "youtube_url": "https://www.youtube.com/watch?v=HT84KnkoNn0",
+        "relevance": 0.234,
+        "resonance_score": 0.234
+      }
     },
     {
       "id": "france24-me-1-2947",
@@ -5527,7 +5836,7 @@
       "cognitive_type": "general",
       "importance_score": 4.56,
       "meta": {
-        "source_authority": 0.5
+        "source_authority": 0.6
       },
       "rank": 62,
       "narrative_arc": {
@@ -5630,7 +5939,7 @@
         "what": "The police are investigating how about 3,000 nonexistent residents were added to official data for Toyama.",
         "why": "Key global development with wide-ranging impact across policy, industry, and public interest."
       },
-      "readTime": "3 min read",
+      "readTime": "2 min read",
       "relatedSources": [
         {
           "name": "BBC Asia",
@@ -6130,6 +6439,10 @@
         {
           "name": "Indian Express",
           "url": "https://indianexpress.com"
+        },
+        {
+          "name": "Hindustan Times",
+          "url": "https://www.hindustantimes.com"
         }
       ],
       "storyCluster": null,
@@ -6162,7 +6475,7 @@
       "cognitive_type": "general",
       "importance_score": 4.44,
       "meta": {
-        "source_authority": 0.6
+        "source_authority": 0.65
       },
       "rank": 70,
       "narrative_arc": {
@@ -6319,14 +6632,19 @@
       "noise_penalty": 0.0,
       "noise_flags": [],
       "entities": {
-        "countries": [],
+        "countries": [
+          {
+            "code": "US",
+            "name": "United States"
+          }
+        ],
         "leaders": [],
         "organizations": [],
         "companies": [],
         "actions": [],
         "domains": [],
-        "entity_count": 0,
-        "entity_density": 0.0
+        "entity_count": 1,
+        "entity_density": 0.027
       },
       "is_duplicate": false,
       "duplicate_count": 0,
@@ -10079,12 +10397,163 @@
       "readTime": "3 min read",
       "relatedSources": [
         {
-          "name": "BBC Middle East",
-          "url": "https://www.bbc.com/news/world/middle_east"
+          "name": "NYT",
+          "url": "https://www.nytimes.com"
         },
+        {
+          "name": "BBC US",
+          "url": "https://www.bbc.com/news/world/us-and-canada"
+        },
+        {
+          "name": "NPR",
+          "url": "https://www.npr.org"
+        }
+      ],
+      "storyCluster": null,
+      "pairedStory": false,
+      "perspectives": [],
+      "noise_penalty": 0.0,
+      "noise_flags": [],
+      "entities": {
+        "countries": [
+          {
+            "code": "RU",
+            "name": "Russia"
+          }
+        ],
+        "leaders": [],
+        "organizations": [],
+        "companies": [],
+        "actions": [
+          "technology"
+        ],
+        "domains": [],
+        "entity_count": 1,
+        "entity_density": 0.0312
+      },
+      "is_duplicate": false,
+      "duplicate_count": 0,
+      "scores": {
+        "velocity": 0.15,
+        "rarity": 0.7153233374283072,
+        "narrative": 0.2,
+        "quality": 0.5,
+        "density": 0.8,
+        "bridge": 0.1,
+        "temporal": 0.4,
+        "composite": 0.3878
+      },
+      "cognitive_type": "technical",
+      "importance_score": 3.65,
+      "meta": {
+        "source_authority": 0.8
+      },
+      "rank": 105,
+      "narrative_arc": {
+        "arc_id": null,
+        "arc_title": null,
+        "day_number": 0,
+        "total_chapters": 0,
+        "importance_trend": null
+      },
+      "resonant_podcast": null
+    },
+    {
+      "id": "bbc-asia-3-7405",
+      "title": "Many Nepalis swept away in the floods aren't officially dead, leaving families in limbo",
+      "link": "https://www.bbc.co.uk/news/articles/ck054zm1701qo?at_medium=RSS&at_campaign=rss",
+      "description": "Relatives are finding themselves with no compensation and facing an administrative nightmare.",
+      "source": "BBC Asia",
+      "sourceLogo": "BBC",
+      "category": "World",
+      "region": "Asia-Pacific",
+      "pubDate": "Tue, 06 Oct 2026 22:17:56 GMT",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/c0a0/live/10176170-c19d-11f1-8fa2-19a1e9b6288f.jpg",
+      "annotation": {
+        "what": "Relatives are finding themselves with no compensation and facing an administrative nightmare.",
+        "why": "Key global development with wide-ranging impact across policy, industry, and public interest."
+      },
+      "readTime": "3 min read",
+      "relatedSources": [
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/asia-pacific"
+        },
+        {
+          "name": "NYT",
+          "url": "https://www.nytimes.com"
+        },
+        {
+          "name": "SCMP",
+          "url": "https://www.scmp.com"
+        }
+      ],
+      "storyCluster": null,
+      "pairedStory": false,
+      "perspectives": [],
+      "noise_penalty": 0.0,
+      "noise_flags": [],
+      "entities": {
+        "countries": [],
+        "leaders": [],
+        "organizations": [],
+        "companies": [],
+        "actions": [],
+        "domains": [],
+        "entity_count": 0,
+        "entity_density": 0.0
+      },
+      "is_duplicate": false,
+      "duplicate_count": 0,
+      "scores": {
+        "velocity": 0.15,
+        "rarity": 1.0,
+        "narrative": 0.2,
+        "quality": 0.4,
+        "density": 0.2,
+        "bridge": 0.1,
+        "temporal": 0.8,
+        "composite": 0.427
+      },
+      "cognitive_type": "general",
+      "importance_score": 3.63,
+      "meta": {
+        "source_authority": 0.5
+      },
+      "rank": 106,
+      "narrative_arc": {
+        "arc_id": null,
+        "arc_title": null,
+        "day_number": 0,
+        "total_chapters": 0,
+        "importance_trend": null
+      },
+      "resonant_podcast": null
+    },
+    {
+      "id": "france24-me-5-3462",
+      "title": "Saudi-backed Yemeni forces expel the Houthis from several areas around key strait, officials say",
+      "link": "https://www.france24.com/en/saudi-backed-yemeni-forces-expel-the-houthis-from-several-areas-around-key-strait-officials-say",
+      "description": "Saudi-backed Yemeni government forces staged a lightning advance on ​Monday to retake the coast around the Bab el-Mandeb Strait up to the city of Mocha, the government said, pushing the Iran-backed Houthis out of most of the areas they seized last month.",
+      "source": "France 24",
+      "sourceLogo": "F24",
+      "category": "World",
+      "region": "Middle East",
+      "pubDate": "Mon, 05 Oct 2026 19:17:05 GMT",
+      "imageUrl": "https://s.france24.com/media/display/06e24072-c0f1-11f1-8ede-dd51fcab6130/w:1024/p:16x9/capture-4580563926ac3f725bc3d82-10617721.jpg",
+      "annotation": {
+        "what": "Saudi-backed Yemeni government forces staged a lightning advance on ​Monday to retake the coast around the Bab el-Mandeb Strait up to the city of Mocha, the ...",
+        "why": "FRANCE 24's Monte Francis reports."
+      },
+      "readTime": "3 min read",
+      "relatedSources": [
         {
           "name": "Al Jazeera",
           "url": "https://www.aljazeera.com"
+        },
+        {
+          "name": "BBC Middle East",
+          "url": "https://www.bbc.com/news/world/middle_east"
         }
       ],
       "storyCluster": null,
@@ -11273,7 +11742,7 @@
         "velocity": 0.3,
         "rarity": 0.21083498593109162,
         "narrative": 0.2,
-        "quality": 0.4,
+        "quality": 0.6,
         "density": 0.4,
         "bridge": 0.1,
         "temporal": 0.6,
@@ -11431,7 +11900,152 @@
       "meta": {
         "source_authority": 0.5
       },
-      "rank": 137,
+      "rank": 119,
+      "narrative_arc": {
+        "arc_id": null,
+        "arc_title": null,
+        "day_number": 0,
+        "total_chapters": 0,
+        "importance_trend": null
+      },
+      "resonant_podcast": null
+    },
+    {
+      "id": "npr-national-2-2165",
+      "title": "Cornell names former acting U.S. attorney general to review rape case",
+      "link": "https://www.npr.org/2026/10/06/nx-s1-5992799/cornell-yates-rape-case-updates-review",
+      "description": "Cornell University names Sally Yates, former acting U.S. attorney general and career federal prosecutor, to lead an independent review into how the school handled a former student's rape allegations.",
+      "source": "NPR News",
+      "sourceLogo": "NPR",
+      "category": "National",
+      "region": "North America",
+      "pubDate": "Tue, 06 Oct 2026 14:31:45 -0400",
+      "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4446x3114+0+0/resize/4446x3114!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F20%2Fb3%2F8116ad26463b8f38098cbcea2522%2Fap26279617987696.jpg",
+      "annotation": {
+        "what": "Cornell University names Sally Yates, former acting U.S.",
+        "why": "attorney general and career federal prosecutor, to lead an independent review into how the school handled a former student's rape allegations."
+      },
+      "readTime": "2 min read",
+      "relatedSources": [
+        {
+          "name": "BBC US",
+          "url": "https://www.bbc.com/news/world/us-and-canada"
+        },
+        {
+          "name": "NYT",
+          "url": "https://www.nytimes.com"
+        }
+      ],
+      "storyCluster": null,
+      "pairedStory": false,
+      "perspectives": [],
+      "noise_penalty": 0.0,
+      "noise_flags": [],
+      "entities": {
+        "countries": [],
+        "leaders": [],
+        "organizations": [],
+        "companies": [],
+        "actions": [],
+        "domains": [],
+        "entity_count": 0,
+        "entity_density": 0.0
+      },
+      "is_duplicate": false,
+      "duplicate_count": 0,
+      "scores": {
+        "velocity": 0.15,
+        "rarity": 0.6059307438159849,
+        "narrative": 0.2,
+        "quality": 0.5,
+        "density": 0.2,
+        "bridge": 0.1,
+        "temporal": 0.6,
+        "composite": 0.3547
+      },
+      "cognitive_type": "general",
+      "importance_score": 3.02,
+      "meta": {
+        "source_authority": 0.5
+      },
+      "rank": 120,
+      "narrative_arc": {
+        "arc_id": null,
+        "arc_title": null,
+        "day_number": 0,
+        "total_chapters": 0,
+        "importance_trend": null
+      },
+      "resonant_podcast": null
+    },
+    {
+      "id": "bbc-europe-0-1123",
+      "title": "Tear gas in Paris and Marseille as school protests grow across France",
+      "link": "https://www.bbc.co.uk/news/articles/c8x23706pvz3o?at_medium=RSS&at_campaign=rss",
+      "description": "Crowds of mainly teenagers called for more resources for schools and an end to what they called police repression.",
+      "source": "BBC Europe",
+      "sourceLogo": "BBC",
+      "category": "World",
+      "region": "Europe",
+      "pubDate": "Tue, 06 Oct 2026 18:03:19 GMT",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/8aed/live/289aad70-c1ab-11f1-8fa2-19a1e9b6288f.jpg",
+      "annotation": {
+        "what": "Crowds of mainly teenagers called for more resources for schools and an end to what they called police repression.",
+        "why": "Key global development with wide-ranging impact across policy, industry, and public interest."
+      },
+      "readTime": "3 min read",
+      "relatedSources": [
+        {
+          "name": "DW News",
+          "url": "https://www.dw.com"
+        },
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/europe-news"
+        },
+        {
+          "name": "France 24",
+          "url": "https://www.france24.com"
+        }
+      ],
+      "storyCluster": null,
+      "pairedStory": false,
+      "perspectives": [],
+      "noise_penalty": 0.0,
+      "noise_flags": [],
+      "entities": {
+        "countries": [
+          {
+            "code": "FR",
+            "name": "France"
+          }
+        ],
+        "leaders": [],
+        "organizations": [],
+        "companies": [],
+        "actions": [],
+        "domains": [],
+        "entity_count": 1,
+        "entity_density": 0.0323
+      },
+      "is_duplicate": false,
+      "duplicate_count": 1,
+      "scores": {
+        "velocity": 0.15,
+        "rarity": 0.4161463021015233,
+        "narrative": 0.2,
+        "quality": 0.4,
+        "density": 0.4,
+        "bridge": 0.1,
+        "temporal": 0.6,
+        "composite": 0.3369
+      },
+      "cognitive_type": "general",
+      "importance_score": 2.86,
+      "meta": {
+        "source_authority": 0.5
+      },
+      "rank": 121,
       "narrative_arc": {
         "arc_id": null,
         "arc_title": null,

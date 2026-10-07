@@ -303,4 +303,5 @@ def run_intake(articles: List[Dict[str, Any]]) -> Tuple[List[Dict[str, Any]], Di
         print(f"{k}: {v}")
     print("--------------------------------")
     
-    return deduped, stats
+    final_articles = [art for art in deduped if not art.get('is_duplicate')]
+    return final_articles, stats

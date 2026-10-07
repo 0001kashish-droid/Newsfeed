@@ -888,7 +888,7 @@ async function fetchLiveGoogleNews(query) {
 
 // CROSS-DIMENSIONAL REGION x CATEGORY INTELLIGENCE MATRIX (STRICT RELEVANCE ENGINE)
 async function filterAndRender() {
-  let list = [...state.articles];
+  let list = state.articles.filter(a => !a.is_duplicate);
   const targetReg = state.currentRegion.toLowerCase();
   const targetCat = state.currentCategory.toLowerCase();
 
@@ -1405,6 +1405,33 @@ function renderExecutiveModal() {
         <div style="border-left: 3px solid ${themeColor}; padding-left: 1.1rem; margin-bottom: 1.6rem; background: ${themeColor}08; padding-top: 0.6rem; padding-bottom: 0.6rem; border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
           <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: ${themeColor}; display: block; margin-bottom: 0.2rem;">Executive Context</span>
           <p style="font-size: 0.96rem; color: var(--text-secondary); line-height: 1.65; margin: 0;">${escapeHtml(cleanWhy)}</p>
+        </div>
+        <!-- Narrative Arc Indicator (if part of an active arc) -->
+        ${(art.narrative_arc && art.narrative_arc.arc_id) ? `
+        <div class="liquid-glass-narrative-box" style="margin-bottom: 1.4rem; padding: 0.8rem 1.1rem; border-radius: var(--radius-md); background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.25); display: flex; align-items: center; gap: 0.75rem;">
+          <span style="font-size: 1.25rem;">📖</span>
+          <div>
+            <span style="font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #60a5fa; display: block;">Ongoing Narrative Arc · Day ${art.narrative_arc.day_number || 1}</span>
+            <span style="font-size: 0.92rem; font-weight: 700; color: var(--text-primary);">${escapeHtml(art.narrative_arc.arc_title || 'Developing Story')}</span>
+            <span style="font-size: 0.76rem; color: var(--text-muted); display: block;">Tracked across ${art.narrative_arc.total_chapters || 1} updates</span>
+          </div>
+        </div>
+        ` : ''}
+
+        <!-- Resonant Podcast Deep-Dive Callout -->
+        ${art.resonant_podcast ? `
+        <div class="liquid-glass-resonance-box" style="margin-bottom: 1.5rem; padding: 1rem 1.2rem; border-radius: var(--radius-md); background: rgba(168, 85, 247, 0.08); border: 1px solid rgba(168, 85, 247, 0.25); display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <span style="font-size: 1.4rem;">🎧</span>
+            <div>
+              <span style="font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #a855f7; display: block;">Resonates in Deep-Dive Podcast</span>
+              <span style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary);">${escapeHtml(art.resonant_podcast.title || art.resonant_podcast.episode_title || art.resonant_podcast.podcast)}</span>
+              <span style="font-size: 0.8rem; color: var(--text-muted); display: block;">${escapeHtml(art.resonant_podcast.podcast || art.resonant_podcast.podcast_title || '')}</span>
+            </div>
+          </div>
+          <a href="${art.resonant_podcast.link || art.resonant_podcast.youtube_url || '#'}" target="_blank" rel="noopener noreferrer" style="font-size: 0.8rem; font-weight: 700; padding: 0.45rem 1rem; border-radius: var(--radius-full); background: rgba(168, 85, 247, 0.2); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.4); text-decoration: none; transition: all 0.2s ease;">
+            Listen Episode ↗
+          </a>
         </div>
         ` : ''}
 
@@ -2975,6 +3002,15 @@ function renderThoughtPulse(data) {
       ? `<div class="thought-card-theme-box"><span class="thought-theme-label">Dominant Theme</span><p class="thought-card-theme">${escapeHtml(ep.theme)}</p></div>`
       : (ep.insight ? `<p class="thought-card-insight">“${escapeHtml(ep.insight)}”</p>` : '');
 
+    const resonantNewsHTML = (ep.resonant_news && ep.resonant_news.length)
+      ? `<div class="thought-card-resonant-news" style="margin-top: 0.6rem; padding-top: 0.6rem; border-top: 1px dashed var(--border-color); font-size: 0.74rem; display: flex; align-items: center; gap: 0.4rem;">
+           <span style="color: #c084fc; font-weight: 700;">📰 Resonates with:</span>
+           <span style="color: var(--text-primary); text-decoration: underline; cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 220px;" onclick="event.stopPropagation(); openModal('${escapeJs(ep.resonant_news[0].id)}');">
+             ${escapeHtml(ep.resonant_news[0].title)}
+           </span>
+         </div>`
+      : '';
+
     return `
       <article class="thought-card ${isFlagship ? 'flagship' : ''}" data-id="${ep.id}" onclick="window.open('${escapeJs(ep.link)}','_blank')">
         <div class="thought-card-thumb-wrap">
@@ -2994,6 +3030,7 @@ function renderThoughtPulse(data) {
           <h3 class="thought-card-title">${escapeHtml(ep.title)}</h3>
           ${themeHTML}
           ${topicsHTML}
+          ${resonantNewsHTML}
           <div class="thought-card-meta">
             <span class="thought-card-category">${escapeHtml(ep.category)}</span>
             <span>${guestLabel}${escapeHtml(ep.pubDate || '')}</span>

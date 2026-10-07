@@ -97,11 +97,6 @@ def run_editorial_intelligence(articles, podcasts=None, memory_path=None):
 
     articles = run_meta_intelligence(articles)
 
-    # -- LAYER 4: CURATION ----------------------------------------------
-    articles, podcasts_out, curation_stats = run_curation(
-        articles, podcasts=podcasts, memory=memory
-    )
-
     # -- UPDATE NARRATIVE MEMORY ----------------------------------------
     print("\n" + "=" * 60)
     print("NARRATIVE MEMORY UPDATE")
@@ -114,6 +109,11 @@ def run_editorial_intelligence(articles, podcasts=None, memory_path=None):
     arc_count = len(memory.get('arcs', []))
     print(f"\n  Memory updated: {arc_count} narrative arcs tracked")
     print(f"  Memory saved to: {memory_path}")
+
+    # -- LAYER 4: CURATION ----------------------------------------------
+    articles, podcasts_out, curation_stats = run_curation(
+        articles, podcasts=podcasts, memory=memory
+    )
 
     # -- FINAL REPORT ---------------------------------------------------
     elapsed = time.time() - start_time

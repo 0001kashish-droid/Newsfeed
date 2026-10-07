@@ -60,7 +60,37 @@ def match_article_to_arc(article: dict, arcs: list, threshold: float = 0.4) -> t
     Returns: (matched_arc_or_None, match_confidence_float)
     """
     article_title_words = set(word.lower() for word in article.get('title', '').split() if len(word) > 2)
-    article_entities = set(article.get('entities', []))
+    
+    # Flatten categorized entity dictionary into a set of normalized names & codes
+    article_entities = set()
+    ent_dict = article.get('entities')
+    if isinstance(ent_dict, dict):
+        countries = ent_dict.get('countries') or []
+        if isinstance(countries, (list, tuple, set)):
+            for c in countries:
+                if isinstance(c, dict):
+                    if c.get('code'): article_entities.add(str(c['code']).lower())
+                    if c.get('name'): article_entities.add(str(c['name']).lower())
+                elif c:
+                    article_entities.add(str(c).lower())
+        other_items = []
+        for key in ('leaders', 'organizations', 'companies'):
+            val = ent_dict.get(key)
+            if isinstance(val, (list, tuple, set)):
+                other_items.extend(val)
+            elif isinstance(val, dict):
+                other_items.append(val)
+            elif val:
+                other_items.append(val)
+        for item in other_items:
+            if isinstance(item, dict):
+                if item.get('name'): article_entities.add(str(item['name']).lower())
+                if item.get('matched'): article_entities.add(str(item['matched']).lower())
+            elif item:
+                article_entities.add(str(item).lower())
+    elif isinstance(ent_dict, (list, set, tuple)):
+        article_entities = set(str(e).lower() for e in ent_dict if e)
+
     article_category = article.get('category', '')
     
     best_match = None
@@ -74,9 +104,10 @@ def match_article_to_arc(article: dict, arcs: list, threshold: float = 0.4) -> t
         keyword_score = keyword_overlap / max(1, len(article_title_words))
         
         # 2. Entity overlap
-        arc_entities = set(arc.get('entity_signature', '').split(':'))
-        entity_overlap = len(article_entities.intersection(arc_entities))
-        entity_score = entity_overlap / max(1, len(article_entities))
+        arc_sig = arc.get('entity_signature', '').lower().replace('+', ':')
+        arc_entities = set(k.strip() for k in arc_sig.split(':') if k.strip())
+        entity_overlap = len(article_entities.intersection(arc_entities)) if arc_entities else 0
+        entity_score = entity_overlap / max(1, len(article_entities)) if article_entities else 0.0
         
         # 3. Category + keyword overlap
         cat_match = (article_category and article_category == arc.get('category', ''))
@@ -108,6 +139,7 @@ def update_memory(memory: dict, articles: list) -> dict:
         matched_arc, confidence = match_article_to_arc(article, arcs)
         
         if matched_arc:
+            article['_matched_arc_id'] = matched_arc.get('arc_id')
             matched_arc['last_seen'] = now_iso
             matched_arc['chapter_count'] = matched_arc.get('chapter_count', 0) + 1
             if 'chapter_titles' not in matched_arc:
@@ -142,8 +174,9 @@ def update_memory(memory: dict, articles: list) -> dict:
                     for o in entities.get('organizations', [])[:2]:
                         sig_parts.append(o.get('name', str(o)) if isinstance(o, dict) else str(o))
                 
+                new_arc_id = str(uuid.uuid4())
                 new_arc = {
-                    "arc_id": str(uuid.uuid4()),
+                    "arc_id": new_arc_id,
                     "title": title[:50] + "..." if len(title) > 50 else title,
                     "keywords": [w.lower() for w in title.split() if len(w) > 3][:10],
                     "entity_signature": ":".join(sig_parts[:5]),
@@ -158,6 +191,7 @@ def update_memory(memory: dict, articles: list) -> dict:
                     "sources_involved": [article.get('source', '')] if article.get('source') else []
                 }
                 arcs.append(new_arc)
+                article['_matched_arc_id'] = new_arc_id
                 updated_arcs_today.add(new_arc['arc_id'])
                 
     # Update importance trend

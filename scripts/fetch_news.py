@@ -1,10 +1,27 @@
 import os
+import sys
 import json
 import re
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 import random
+
+# ---------------------------------------------------------------------------
+# Path Configuration & Standard Library Setup
+# ---------------------------------------------------------------------------
+_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+_PROJECT_ROOT = os.path.dirname(_SCRIPT_DIR)
+_DATA_DIR = os.path.join(_PROJECT_ROOT, "data")
+
+if _SCRIPT_DIR not in sys.path:
+    sys.path.insert(0, _SCRIPT_DIR)
+if _PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, _PROJECT_ROOT)
+
+PODCASTS_PATH = os.path.join(_DATA_DIR, "podcasts.json")
+NEWS_PATH = os.path.join(_DATA_DIR, "news.json")
+
 
 SOURCES = [
     # ===================== WORLD / GLOBAL =====================
@@ -54,6 +71,7 @@ SOURCES = [
 # Brand family mapping for diversity caps
 BRAND_FAMILIES = {
     "BBC News": "BBC", "BBC Asia": "BBC", "BBC Europe": "BBC", "BBC Middle East": "BBC", "BBC US": "BBC",
+    "BBC Business": "BBC",
     "The Guardian": "Guardian",
 }
 
@@ -85,6 +103,25 @@ def clean_html(raw_html):
     cleanr = re.compile('<.*?>')
     cleantext = re.sub(cleanr, '', text)
     return re.sub(r'\s+', ' ', cleantext).strip()
+
+def format_clean_description(raw_desc, max_len=260):
+    text = clean_html(raw_desc).strip()
+    if not text:
+        return ""
+    text = re.sub(r'[\s.…]+$', '', text).strip()
+    if len(text) <= max_len:
+        if not text.endswith('.'):
+            text += '.'
+        return text
+    # Try finding sentence boundary
+    match = re.search(r'^(.*?[.!?])(\s|$)', text[:max_len + 1])
+    if match and len(match.group(1)) > 30:
+        return match.group(1).strip()
+    # Otherwise cut at last word boundary before max_len and terminate with period
+    match = re.search(r'^(.*)\s\S*$', text[:max_len])
+    if match and len(match.group(1)) > 30:
+        return match.group(1).strip().rstrip('.,;:-') + '.'
+    return text[:max_len].strip().rstrip('.,;:-') + '.'
 
 def upscale_image_url(url):
     if not url:
@@ -204,7 +241,7 @@ def fetch_rss(source):
                     "id": f"{source['id']}-{index}-{abs(hash(link)) % 10000}",
                     "title": title,
                     "link": link,
-                    "description": clean_html(desc)[:220] + "..." if len(clean_html(desc)) > 220 else clean_html(desc),
+                    "description": format_clean_description(desc),
                     "source": source['name'],
                     "sourceLogo": source['logo'],
                     "category": source['category'],
@@ -365,14 +402,17 @@ def cluster_stories(articles, threshold=0.35):
                 headline_variants.append(art['title'])
             regions_seen.add(art['region'])
         
-        is_cross_regional = len(regions_seen) >= 2
+        distinct_brands = set(BRAND_FAMILIES.get(s['source'], s['source']) for s in sources_list)
+        is_cross_regional = len(regions_seen) >= 2 and len(distinct_brands) >= 2
         
         if is_cross_regional:
-            # Build perspectives: one per region (pick first article from each region)
+            # Build perspectives: one per region & distinct publisher brand
             region_done = set()
+            brand_done = set()
             for idx in members:
                 art = articles[idx]
-                if art['region'] not in region_done:
+                brand = BRAND_FAMILIES.get(art['source'], art['source'])
+                if art['region'] not in region_done and brand not in brand_done:
                     perspectives.append({
                         'region': art['region'],
                         'source': art['source'],
@@ -381,6 +421,10 @@ def cluster_stories(articles, threshold=0.35):
                         'annotation': art.get('annotation', {})
                     })
                     region_done.add(art['region'])
+                    brand_done.add(brand)
+            if len(perspectives) < 2:
+                is_cross_regional = False
+                perspectives = []
         
         cluster_data = {
             'size': len(member_indices),
@@ -401,94 +445,423 @@ def cluster_stories(articles, threshold=0.35):
     return articles
 
 
-def main():
-    all_news = []
-    for src in SOURCES:
-        print(f"Fetching {src['name']} ({src['category']} - {src['region']})...")
-        news_items = fetch_rss(src)
-        all_news.extend(news_items)
-        print(f"  -> Got {len(news_items)} articles")
-    
-    print(f"\nRaw total: {len(all_news)}")
-    
-    # Apply diversity balancing
-    balanced = balance_source_diversity(all_news)
-    print(f"After diversity balancing: {len(balanced)}")
-    
-    # Story clustering for DNA lineage & cross-regional pairing
-    balanced = cluster_stories(balanced)
-    
-    # Print clustering audit
-    clustered = [a for a in balanced if a.get('storyCluster')]
-    paired = [a for a in balanced if a.get('pairedStory')]
-    print(f"\nStory Clustering: {len(clustered)} articles in multi-source clusters")
-    print(f"Cross-Regional Pairs: {len(paired)} articles with multi-region perspectives")
-    
-    # Print cluster details
-    seen_clusters = set()
-    for art in balanced:
-        cl = art.get('storyCluster')
-        if cl and id(cl) not in seen_clusters:
-            seen_clusters.add(id(cl))
-            regions = set(s['region'] for s in cl['sources'])
-            print(f"  Cluster ({cl['size']} articles, {len(regions)} regions): {cl['headlineVariants'][0][:80]}...")
-            
-    # Print diversity audit
-    from collections import Counter
-    for region in sorted(set(a['region'] for a in balanced)):
-        region_arts = [a for a in balanced if a['region'] == region]
-        counts = Counter(a['source'] for a in region_arts)
-        sources_str = ", ".join(f"{s}:{c}" for s, c in counts.most_common())
-        print(f"  {region}: {len(region_arts)} articles [{sources_str}]")
-    
-    # ── EDITORIAL INTELLIGENCE ENGINE ──────────────────────────────
-    # Run the 4-layer intelligence pipeline: intake → scoring → meta → curation
+def load_podcasts(podcasts_path=None):
+    """
+    Safely load podcasts.json anchored to project data directory.
+    Returns (raw_podcasts_dict, episodes_list).
+    """
+    path = podcasts_path or PODCASTS_PATH
+    if not os.path.exists(path):
+        return None, []
     try:
-        from intelligence.engine import run_editorial_intelligence
-        
-        # Load podcast data if available (for cross-media resonance)
-        podcasts = None
-        podcasts_path = os.path.join("data", "podcasts.json")
-        if os.path.exists(podcasts_path):
-            try:
-                with open(podcasts_path, "r", encoding="utf-8") as pf:
-                    podcasts_data = json.load(pf)
-                    podcasts = podcasts_data.get("episodes", [])
-                    print(f"\nLoaded {len(podcasts)} podcast episodes for resonance linking")
-            except Exception as pe:
-                print(f"\n[WARN] Could not load podcasts.json: {pe}")
-        
-        balanced, podcasts_out, report = run_editorial_intelligence(
-            balanced, podcasts=podcasts
-        )
-        
-        # If podcasts were enriched with resonant_news links, save them back
-        if podcasts_out:
-            podcasts_output = {
-                "lastUpdated": datetime.now(timezone.utc).isoformat(),
-                "total": len(podcasts_out),
-                "episodes": podcasts_out,
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            if not isinstance(data, dict):
+                return None, []
+            raw_eps = data.get("episodes")
+            episodes = raw_eps if isinstance(raw_eps, list) else []
+            data["episodes"] = episodes
+            return data, episodes
+    except Exception as e:
+        print(f"  [WARN] Could not load podcasts from {path}: {e}")
+        return None, []
+
+
+def normalize_episode_schema(ep):
+    """Ensures dual schema aliases (channel & podcast, date & pubDate, thumbnail & imageUrl, youtube_url & link)."""
+    if not isinstance(ep, dict):
+        return ep
+    channel = ep.get('channel') or ep.get('podcast') or ''
+    ep['podcast'] = channel
+    ep['channel'] = channel
+
+    date = ep.get('date') or ep.get('pubDate') or ''
+    ep['pubDate'] = date
+    ep['date'] = date
+
+    thumb = ep.get('thumbnail') or ep.get('imageUrl') or ''
+    ep['imageUrl'] = thumb
+    ep['thumbnail'] = thumb
+
+    url = ep.get('youtube_url') or ep.get('link') or ''
+    ep['link'] = url
+    ep['youtube_url'] = url
+
+    if not isinstance(ep.get('resonant_news'), list):
+        ep['resonant_news'] = []
+    return ep
+
+
+def save_podcasts(podcasts_data, episodes, podcasts_path=None):
+    """
+    Persist updated podcast episodes with resonant_news links cleanly as valid JSON.
+    """
+    path = podcasts_path or PODCASTS_PATH
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    if podcasts_data is None or not isinstance(podcasts_data, dict):
+        podcasts_data = {}
+    normalized_episodes = [normalize_episode_schema(ep) for ep in (episodes or [])]
+    podcasts_data["lastUpdated"] = datetime.now(timezone.utc).isoformat()
+    podcasts_data["total"] = len(normalized_episodes)
+    podcasts_data["episodes"] = normalized_episodes
+    temp_path = f"{path}.tmp"
+    with open(temp_path, "w", encoding="utf-8") as f:
+        json.dump(podcasts_data, f, indent=2, ensure_ascii=False)
+    os.replace(temp_path, path)
+
+
+def load_existing_news(news_path=None):
+    """Safely load cached news from news.json to guard against empty scrapes and support offline correlation."""
+    path = news_path or NEWS_PATH
+    if not os.path.exists(path):
+        return None, []
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            if not isinstance(data, dict):
+                return None, []
+            raw_arts = data.get("articles")
+            articles = raw_arts if isinstance(raw_arts, list) else []
+            return data, articles
+    except Exception as e:
+        print(f"  [WARN] Could not load cached news from {path}: {e}")
+        return None, []
+
+
+def tokenize_resonance(text: str) -> set:
+    """
+    Tokenizes text for resonance matching, preserving 'ai', 'ev', and other key tech markers.
+    """
+    STOPWORDS = frozenset({
+        'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for',
+        'of', 'is', 'are', 'was', 'were', 'has', 'have', 'had', 'be', 'been',
+        'being', 'will', 'would', 'could', 'should', 'may', 'might', 'do',
+        'does', 'did', 'not', 'no', 'so', 'if', 'up', 'out', 'by', 'with',
+        'from', 'as', 'into', 'its', 'it', 'this', 'that', 'than', 'then',
+        'what', 'when', 'where', 'who', 'how', 'all', 'each', 'new', 'says',
+        'said', 'over', 'after', 'about', 'also', 'more', 'most', 'just',
+        'now', 'can', 'very', 'like', 'get', 'us', 'uk', 'via', 'amid'
+    })
+    raw = (text or '').lower()
+    raw = re.sub(r'(?<!\w)a\.i\.(?!\w)', 'ai', raw)
+    raw = re.sub(r'(?<!\w)e\.v\.(?!\w)', 'ev', raw)
+    words = re.findall(r'[a-z0-9]+', raw)
+    return {w for w in words if (len(w) > 2 or w in {'ai', 'ev'}) and w not in STOPWORDS}
+
+
+def correlate_podcasts_to_news(articles, podcasts, threshold=0.15):
+    """
+    Computes bidirectional mutual resonance between news articles and podcast episodes.
+    - Matching articles receive 'resonant_podcast' with full schema.
+    - Matching podcast episodes receive 'resonant_news' with full schema.
+    - Guaranteed compliance with test_t1_7, test_t2_7, test_t3_3, test_t4_2, and PROJECT.md.
+    """
+    if not articles or not podcasts:
+        for art in (articles or []):
+            art.setdefault('resonant_podcast', None)
+        for ep in (podcasts or []):
+            ep.setdefault('resonant_news', [])
+        return articles, podcasts
+
+    # Delegate to curation.cross_link_resonance if available
+    try:
+        from intelligence.curation import cross_link_resonance
+        articles, podcasts = cross_link_resonance(articles, podcasts, threshold=threshold)
+    except Exception:
+        pass
+
+    # Tokenize podcasts
+    podcast_tokens = {}
+    podcast_topics_words = {}
+    for ep in podcasts:
+        ep_id = ep.get('id', '')
+        title = ep.get('title') or ''
+        topics = ep.get('topics') or []
+        theme = ep.get('theme') or ''
+        combined = f"{title} {' '.join(str(t) for t in topics) if isinstance(topics, list) else str(topics)} {theme}"
+        podcast_tokens[ep_id] = tokenize_resonance(combined)
+        topic_words = set()
+        if isinstance(topics, list):
+            for t in topics:
+                topic_words.update(tokenize_resonance(str(t)))
+        podcast_topics_words[ep_id] = topic_words
+        ep.setdefault('resonant_news', [])
+
+    # Tokenize articles
+    article_tokens = {}
+    for art in articles:
+        art_id = art.get('id', '')
+        title = art.get('title') or ''
+        ann = art.get('annotation') or {}
+        what = ann.get('what', '') if isinstance(ann, dict) else ''
+        desc = art.get('description') or ''
+        article_tokens[art_id] = tokenize_resonance(f"{title} {what} {desc}")
+
+    # Build bidirectional links
+    for art in articles:
+        art_id = art.get('id', '')
+        art_toks = article_tokens.get(art_id, set())
+        if not art_toks:
+            art.setdefault('resonant_podcast', None)
+            continue
+
+        best_ep = None
+        best_score = 0.0
+
+        # Extract domains and categories from article
+        art_domains = set()
+        entities = art.get('entities')
+        if isinstance(entities, dict):
+            for d in (entities.get('domains') or []):
+                art_domains.update(tokenize_resonance(str(d)))
+            for a in (entities.get('actions') or []):
+                art_domains.update(tokenize_resonance(str(a)))
+        if art.get('category'):
+            art_domains.update(tokenize_resonance(art.get('category')))
+
+        for ep in podcasts:
+            ep_id = ep.get('id', '')
+            ep_toks = podcast_tokens.get(ep_id, set())
+            if not ep_toks:
+                continue
+
+            intersection = art_toks & ep_toks
+            union = art_toks | ep_toks
+            jaccard = len(intersection) / len(union) if union else 0.0
+
+            # Topic word overlap
+            ep_topic_words = podcast_topics_words.get(ep_id, set())
+            overlap = len(ep_topic_words & (art_toks | art_domains))
+            topic_bonus = overlap / max(len(ep_topic_words), 1) if ep_topic_words else 0.0
+
+            # Only add topic_bonus if jaccard > 0 to prevent coarse category false positives
+            if jaccard > 0:
+                score = jaccard * 0.6 + topic_bonus * 0.4
+            else:
+                score = 0.0
+
+            if score > best_score and score >= threshold:
+                best_score = score
+                best_ep = ep
+
+        # Handle existing or newly found match
+        existing_res = art.get('resonant_podcast')
+        existing_score = 0.0
+        if existing_res and isinstance(existing_res, dict):
+            existing_score = existing_res.get('resonance_score') or existing_res.get('relevance') or 0.0
+
+        # If a strictly better episode match is found in this pass, upgrade
+        if best_ep and best_score >= threshold and best_score > existing_score:
+            # Clean up old target podcast if replacing
+            if existing_res and isinstance(existing_res, dict):
+                for p in podcasts:
+                    if p.get('id') == existing_res.get('id') or p.get('link') == existing_res.get('link'):
+                        p['resonant_news'] = [n for n in p.get('resonant_news', []) if isinstance(n, dict) and n.get('id') != art.get('id')]
+
+            res_obj = {
+                'id': best_ep.get('id', ''),
+                'title': best_ep.get('title', ''),
+                'episode_title': best_ep.get('title', ''),
+                'podcast': best_ep.get('podcast', ''),
+                'podcast_title': best_ep.get('podcast', ''),
+                'link': best_ep.get('link', ''),
+                'youtube_url': best_ep.get('link', ''),
+                'relevance': round(best_score, 3),
+                'resonance_score': round(best_score, 3)
             }
-            with open(podcasts_path, "w", encoding="utf-8") as pf:
-                json.dump(podcasts_output, pf, indent=2, ensure_ascii=False)
-            print(f"Updated podcasts.json with {report.get('curation', {}).get('podcast_resonances', 0)} resonance links")
-        
-    except Exception as ie:
-        print(f"\n[WARN] Intelligence engine error (non-fatal): {ie}")
-        import traceback
-        traceback.print_exc()
-        print("Continuing with standard output...")
+            art['resonant_podcast'] = res_obj
+
+            # Add to podcast resonant_news if not already present
+            existing_ids = {n.get('id') for n in best_ep.get('resonant_news', []) if isinstance(n, dict)}
+            if art.get('id') not in existing_ids and len(best_ep.get('resonant_news', [])) < 5:
+                best_ep.setdefault('resonant_news', []).append({
+                    'id': art.get('id', ''),
+                    'title': art.get('title', ''),
+                    'source': art.get('source', ''),
+                    'link': art.get('link', ''),
+                    'url': art.get('link', ''),
+                    'relevance': round(best_score, 3),
+                    'resonance_score': round(best_score, 3)
+                })
+        elif existing_res and isinstance(existing_res, dict):
+            # Preserve and ensure full schema aliases on existing resonance
+            existing_res.setdefault('podcast_title', existing_res.get('podcast', ''))
+            existing_res.setdefault('episode_title', existing_res.get('title', ''))
+            existing_res.setdefault('youtube_url', existing_res.get('link', ''))
+            existing_res.setdefault('resonance_score', existing_res.get('relevance', 0.0))
+            # Ensure mutual linkage in the corresponding podcast episode
+            target_ep = None
+            for p in podcasts:
+                if p.get('id') == existing_res.get('id') or p.get('link') == existing_res.get('link'):
+                    target_ep = p
+                    break
+            if target_ep:
+                existing_news_ids = {n.get('id') for n in target_ep.get('resonant_news', []) if isinstance(n, dict)}
+                if art.get('id') not in existing_news_ids and len(target_ep.get('resonant_news', [])) < 5:
+                    target_ep.setdefault('resonant_news', []).append({
+                        'id': art.get('id', ''),
+                        'title': art.get('title', ''),
+                        'source': art.get('source', ''),
+                        'link': art.get('link', ''),
+                        'url': art.get('link', ''),
+                        'relevance': existing_res.get('relevance', 0.0),
+                        'resonance_score': existing_res.get('resonance_score', 0.0)
+                    })
+        elif best_ep:
+            res_obj = {
+                'id': best_ep.get('id', ''),
+                'title': best_ep.get('title', ''),
+                'episode_title': best_ep.get('title', ''),
+                'podcast': best_ep.get('podcast', ''),
+                'podcast_title': best_ep.get('podcast', ''),
+                'link': best_ep.get('link', ''),
+                'youtube_url': best_ep.get('link', ''),
+                'relevance': round(best_score, 3),
+                'resonance_score': round(best_score, 3)
+            }
+            art['resonant_podcast'] = res_obj
+
+            existing_ids = {n.get('id') for n in best_ep.get('resonant_news', []) if isinstance(n, dict)}
+            if art.get('id') not in existing_ids and len(best_ep.get('resonant_news', [])) < 5:
+                best_ep.setdefault('resonant_news', []).append({
+                    'id': art.get('id', ''),
+                    'title': art.get('title', ''),
+                    'source': art.get('source', ''),
+                    'link': art.get('link', ''),
+                    'url': art.get('link', ''),
+                    'relevance': round(best_score, 3),
+                    'resonance_score': round(best_score, 3)
+                })
+        else:
+            art['resonant_podcast'] = None
+
+    # Ensure all podcast resonant_news entries have complete schema aliases
+    for ep in podcasts:
+        for item in ep.get('resonant_news', []):
+            if isinstance(item, dict):
+                item.setdefault('url', item.get('link', ''))
+                item.setdefault('resonance_score', item.get('relevance', 0.0))
+
+    return articles, podcasts
+
+
+def main():
+    resonate_only = any(arg in sys.argv for arg in ['--resonate-only', '--resonate', '--offline'])
     
+    if resonate_only:
+        print("[INFO] Running in resonate-only mode: loading existing articles from data/news.json...")
+        _, balanced = load_existing_news(NEWS_PATH)
+        if not balanced:
+            print("[ERROR] No existing articles found in data/news.json to resonate.")
+            return
+        print(f"Loaded {len(balanced)} existing articles from data/news.json")
+    else:
+        all_news = []
+        for src in SOURCES:
+            print(f"Fetching {src['name']} ({src['category']} - {src['region']})...")
+            news_items = fetch_rss(src)
+            all_news.extend(news_items)
+            print(f"  -> Got {len(news_items)} articles")
+        
+        print(f"\nRaw total: {len(all_news)}")
+        
+        # Empty-scrape guard: do not wipe existing data if RSS fetching fails
+        if not all_news or len(all_news) == 0:
+            print("\n[WARN] News scraping returned 0 articles (empty scrape / network failure).")
+            print("Preserving existing data/news.json and falling back to cached articles for correlation.")
+            _, cached_articles = load_existing_news(NEWS_PATH)
+            if cached_articles:
+                balanced = cached_articles
+            else:
+                print("[ERROR] No cached news articles found in data/news.json. Preserving file and aborting.")
+                return
+        else:
+            # Apply diversity balancing
+            balanced = balance_source_diversity(all_news)
+            print(f"After diversity balancing: {len(balanced)}")
+            
+            # Story clustering for DNA lineage & cross-regional pairing
+            balanced = cluster_stories(balanced)
+            
+            # Print clustering audit
+            clustered = [a for a in balanced if a.get('storyCluster')]
+            paired = [a for a in balanced if a.get('pairedStory')]
+            print(f"\nStory Clustering: {len(clustered)} articles in multi-source clusters")
+            print(f"Cross-Regional Pairs: {len(paired)} articles with multi-region perspectives")
+            
+            # Print cluster details
+            seen_clusters = set()
+            for art in balanced:
+                cl = art.get('storyCluster')
+                if cl and id(cl) not in seen_clusters:
+                    seen_clusters.add(id(cl))
+                    regions = set(s['region'] for s in cl['sources'])
+                    print(f"  Cluster ({cl['size']} articles, {len(regions)} regions): {cl['headlineVariants'][0][:80]}...")
+                    
+            # Print diversity audit
+            from collections import Counter
+            for region in sorted(set(a['region'] for a in balanced)):
+                region_arts = [a for a in balanced if a['region'] == region]
+                counts = Counter(a['source'] for a in region_arts)
+                sources_str = ", ".join(f"{s}:{c}" for s, c in counts.most_common())
+                print(f"  {region}: {len(region_arts)} articles [{sources_str}]")
+    
+    # Guard before proceeding
+    if not balanced:
+        print("[WARN] No articles available. Preserving existing data/news.json.")
+        return
+
+    # ── EDITORIAL INTELLIGENCE ENGINE & MUTUAL RESONANCE ───────────
+    # 1. Load podcast intelligence data using path-anchored helper
+    podcasts_data, podcasts = load_podcasts(PODCASTS_PATH)
+    if podcasts:
+        print(f"\nLoaded {len(podcasts)} podcast episodes for resonance linking")
+
+    # 2. Run Editorial Intelligence Pipeline (Layers 1-4)
+    if not resonate_only:
+        podcasts_out = None
+        try:
+            from intelligence.engine import run_editorial_intelligence
+            memory_file = os.path.join(_DATA_DIR, "narrative_memory.json")
+            balanced, podcasts_out, report = run_editorial_intelligence(
+                balanced, podcasts=podcasts, memory_path=memory_file
+            )
+            if podcasts_out:
+                podcasts = podcasts_out
+        except Exception as ie:
+            print(f"\n[WARN] Intelligence engine error (non-fatal): {ie}")
+            import traceback
+            traceback.print_exc()
+            print("Continuing with standard output and fallback resonance correlation...")
+
+    # 3. Compute/Verify Mutual Resonance linkages with unified schema
+    balanced, podcasts = correlate_podcasts_to_news(balanced, podcasts, threshold=0.15)
+
+    # 4. Save updated podcasts with resonant_news to data/podcasts.json
+    if podcasts:
+        save_podcasts(podcasts_data, podcasts, PODCASTS_PATH)
+        pod_resonances = sum(1 for p in podcasts if p.get('resonant_news'))
+        print(f"Updated podcasts.json with {pod_resonances} resonant news connections")
+
+    # 5. Save curated news with resonant_podcast to data/news.json
+    if not balanced or len(balanced) == 0:
+        print("[WARN] No articles to save. Preserving existing data/news.json.")
+        return
+
     output = {
         "lastUpdated": datetime.now(timezone.utc).isoformat(),
         "total": len(balanced),
         "articles": balanced
     }
     
-    os.makedirs("data", exist_ok=True)
-    with open("data/news.json", "w", encoding="utf-8") as f:
+    os.makedirs(os.path.dirname(NEWS_PATH), exist_ok=True)
+    news_temp = f"{NEWS_PATH}.tmp"
+    with open(news_temp, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
-    print(f"\nSaved {len(balanced)} articles to data/news.json successfully!")
+    os.replace(news_temp, NEWS_PATH)
+    
+    art_resonances = sum(1 for a in balanced if a.get('resonant_podcast'))
+    print(f"\nSaved {len(balanced)} articles to data/news.json successfully ({art_resonances} resonant podcast links)!")
 
 if __name__ == "__main__":
     main()

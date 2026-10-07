@@ -11,6 +11,14 @@ import os
 import re
 from datetime import datetime, timezone
 
+# ---------------------------------------------------------------------------
+# Path Configuration & Standard Library Setup
+# ---------------------------------------------------------------------------
+_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+_PROJECT_ROOT = os.path.dirname(_SCRIPT_DIR)
+_DATA_DIR = os.path.join(_PROJECT_ROOT, "data")
+PODCASTS_PATH = os.path.join(_DATA_DIR, "podcasts.json")
+
 PODCAST_SOURCES = [
     # Thinkers & Deep Dives
     {'name': 'Lex Fridman Podcast', 'handle': '@lexfridman', 'logo': 'LF', 'tier': 'flagship'},
@@ -320,24 +328,88 @@ def scrape_channel(source):
                 'id': f'tp_{vid_id}',
                 'title': title,
                 'podcast': source['name'],
+                'channel': source['name'],
                 'podcastLogo': source['logo'],
                 'tier': source['tier'],
                 'guest': intel['guest'],
                 'topics': intel['topics'],
                 'theme': intel['theme'],
                 'imageUrl': thumb_url,
+                'thumbnail': thumb_url,
                 'link': link,
+                'youtube_url': link,
                 'pubDate': published,
+                'date': published,
                 'duration': duration,
                 'views': views,
                 'category': category,
+                'resonant_news': [],
             })
         break
 
     return episodes
 
 
+def normalize_episode_schema(ep):
+    """Ensures dual schema aliases (channel & podcast, date & pubDate, thumbnail & imageUrl, youtube_url & link)."""
+    if not isinstance(ep, dict):
+        return ep
+    channel = ep.get('channel') or ep.get('podcast') or ''
+    ep['podcast'] = channel
+    ep['channel'] = channel
+
+    date = ep.get('date') or ep.get('pubDate') or ''
+    ep['pubDate'] = date
+    ep['date'] = date
+
+    thumb = ep.get('thumbnail') or ep.get('imageUrl') or ''
+    ep['imageUrl'] = thumb
+    ep['thumbnail'] = thumb
+
+    url = ep.get('youtube_url') or ep.get('link') or ''
+    ep['link'] = url
+    ep['youtube_url'] = url
+
+    if not isinstance(ep.get('resonant_news'), list):
+        ep['resonant_news'] = []
+    return ep
+
+
+def load_existing_podcasts(podcasts_path=None):
+    """Load existing podcasts.json to preserve existing resonant_news mappings and episode history."""
+    path = podcasts_path or PODCASTS_PATH
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            if isinstance(data, dict):
+                raw_eps = data.get('episodes')
+                data['episodes'] = raw_eps if isinstance(raw_eps, list) else []
+                return data
+    except Exception as e:
+        print(f"[WARN] Could not load existing podcasts from {path}: {e}")
+    return {}
+
+
 def main():
+    podcasts_path = PODCASTS_PATH
+
+    # 1. Load existing podcasts.json to preserve prior resonant_news linkages
+    existing_data = load_existing_podcasts(podcasts_path)
+    existing_episodes = (existing_data.get('episodes') or []) if isinstance(existing_data, dict) else []
+
+    existing_resonant = {}
+    for ep in existing_episodes:
+        if isinstance(ep, dict):
+            res_news = ep.get('resonant_news', [])
+            if res_news:
+                if ep.get('id'):
+                    existing_resonant[ep['id']] = res_news
+                if ep.get('link'):
+                    existing_resonant[ep['link']] = res_news
+
+    # 2. Scrape live channels
     all_episodes = []
     for src in PODCAST_SOURCES:
         print(f"Fetching {src['name']}...")
@@ -348,7 +420,34 @@ def main():
         except Exception as e:
             print(f"  [ERROR] {src['name']}: {e}")
 
-    # Sort newest first
+    # 3. Guard against empty scrapes: do NOT overwrite existing data with empty list
+    if not all_episodes or len(all_episodes) == 0:
+        print("\n[WARN] Podcast scraping returned 0 episodes (empty scrape).")
+        print("Preserving existing data/podcasts.json to prevent data loss.")
+        return
+
+    # 4. Preserve existing resonant_news mappings for refreshed episodes
+    for ep in all_episodes:
+        ep_id = ep.get('id', '')
+        ep_link = ep.get('link', '')
+        if ep_id in existing_resonant:
+            ep['resonant_news'] = existing_resonant[ep_id]
+        elif ep_link in existing_resonant:
+            ep['resonant_news'] = existing_resonant[ep_link]
+        else:
+            ep.setdefault('resonant_news', [])
+
+    # 5. Preserve un-refreshed episodes from existing data if not re-scraped
+    scraped_ids = {ep.get('id') for ep in all_episodes if ep.get('id')}
+    for ex_ep in existing_episodes:
+        if isinstance(ex_ep, dict):
+            ex_id = ex_ep.get('id')
+            if ex_id and ex_id not in scraped_ids:
+                ex_ep.setdefault('resonant_news', [])
+                all_episodes.append(ex_ep)
+                scraped_ids.add(ex_id)
+
+    # 6. Sort newest first
     priority = {'hour': 0, 'day': 1, 'week': 2, 'month': 3, 'year': 4}
     def sort_key(ep):
         pub = ep.get('pubDate', '').lower()
@@ -360,7 +459,7 @@ def main():
         return 9999
     all_episodes.sort(key=sort_key)
 
-    # Cap episodes per source to prevent domination
+    # 7. Cap episodes per source to prevent domination
     capped_episodes = []
     source_counts = {}
     for ep in all_episodes:
@@ -373,18 +472,25 @@ def main():
         if len(capped_episodes) >= 30:
             break
             
-    all_episodes = capped_episodes
+    all_episodes = [normalize_episode_schema(ep) for ep in capped_episodes]
 
     print(f"\nTotal: {len(all_episodes)} episodes")
+
+    # Final guard before writing: never wipe podcasts.json with empty list
+    if not all_episodes or len(all_episodes) == 0:
+        print("[WARN] Post-processing resulted in empty episode list. Preserving existing data/podcasts.json.")
+        return
 
     output = {
         'lastUpdated': datetime.now(timezone.utc).isoformat(),
         'total': len(all_episodes),
         'episodes': all_episodes,
     }
-    os.makedirs('data', exist_ok=True)
-    with open('data/podcasts.json', 'w', encoding='utf-8') as f:
+    os.makedirs(os.path.dirname(podcasts_path), exist_ok=True)
+    temp_path = f"{podcasts_path}.tmp"
+    with open(temp_path, 'w', encoding='utf-8') as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
+    os.replace(temp_path, podcasts_path)
     print(f"\nSaved {len(all_episodes)} episodes with topics and themes to data/podcasts.json")
 
 
