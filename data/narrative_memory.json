@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-07T07:14:34.711175+00:00",
+    "last_updated": "2026-10-07T14:14:27.563938+00:00",
     "arcs": [
         {
             "arc_id": "6067c9d5-0e43-42a3-bcff-7a933376b859",
@@ -22,8 +22,8 @@
                 "Global"
             ],
             "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-07T07:14:34.612024+00:00",
-            "chapter_count": 16,
+            "last_seen": "2026-10-07T14:14:27.543907+00:00",
+            "chapter_count": 19,
             "chapter_titles": [
                 "Trump says US will help Russia after Siberia plague institute death - Reuters",
                 "Trump says US ready to aid Russia with plague outbreak in Siberia",
@@ -40,18 +40,21 @@
                 "Plague epidemic risk in Russia low after death of lab technician, WHO says",
                 "Trump says will speak with Putin over Russia's reported plague death",
                 "Gold slips as dollar gains; investors await Fed minutes for rate clues - Reuters",
+                "Trump says will speak with Putin over Russia's reported plague death",
+                "Fed minutes could detail rate-hike decision, policy path - Reuters",
+                "Trump to speak to Putin about plague lab worker's death in Russia",
                 "Trump says will speak with Putin over Russia's reported plague death"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.7,
             "sources_involved": [
-                "The Guardian",
-                "France 24",
                 "Al Jazeera",
+                "SCMP",
+                "France 24",
                 "BBC News",
+                "The Guardian",
                 "BBC Europe",
-                "Reuters",
-                "SCMP"
+                "Reuters"
             ]
         },
         {
@@ -75,8 +78,8 @@
                 "Europe"
             ],
             "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-07T07:14:34.612024+00:00",
-            "chapter_count": 8,
+            "last_seen": "2026-10-07T14:14:27.543907+00:00",
+            "chapter_count": 10,
             "chapter_titles": [
                 "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
                 "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
@@ -85,17 +88,207 @@
                 "Actress Eva Marie Saint, who won an Oscar for 'On the Waterfront,' dies at 102",
                 "Sebastian Maniscalco’s SiriusXM channel is hurting up-and-coming talent, comics say",
                 "Silicon Valley’s AI wunderkind launches Underdog, the most private Instinct/Muse competitor yet",
-                "CBI files closure report in Pocso court over death of 17-yr-old NEET aspirant in Bihar"
+                "CBI files closure report in Pocso court over death of 17-yr-old NEET aspirant in Bihar",
+                "Who will win the 2026 Nobel Prize in economics?",
+                "Ajmer jail in-charge arrested after 2 months for taking female inmates to clean flat"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
             "sources_involved": [
-                "The Guardian",
-                "The Verge",
                 "Al Jazeera",
-                "TechCrunch",
+                "The Verge",
+                "Hindustan Times",
                 "NPR News",
+                "The Guardian",
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "bdca5029-0d4f-4394-a2b4-9cbe3186cd64",
+            "title": "How Netanyahu survived the political fallout from ...",
+            "keywords": [
+                "netanyahu",
+                "survived",
+                "political",
+                "fallout",
+                "from",
+                "october",
+                "attacks"
+            ],
+            "entity_signature": "PS:IL:Benjamin Netanyahu",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-07T06:52:47.305533+00:00",
+            "last_seen": "2026-10-07T14:14:27.543907+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "How Netanyahu survived the political fallout from the October 7 attacks"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "af632965-e359-4d37-8f2d-2b355ef14ea9",
+            "title": "US Supreme Court agrees to take up Trump’s ICE det...",
+            "keywords": [
+                "supreme",
+                "court",
+                "agrees",
+                "take",
+                "trump’s",
+                "detention",
+                "policy"
+            ],
+            "entity_signature": "US:Donald Trump:Supreme Court",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-01T19:41:52.469182+00:00",
+            "last_seen": "2026-10-07T14:14:27.543907+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "US Supreme Court agrees to take up Trump’s ICE detention policy",
+                "‘Not conducive’: Centre opposes Balwant Rajoana’s death commutation plea in Supreme Court"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera",
                 "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "0345871a-6097-408b-8198-71187772a5f0",
+            "title": "Russia says it properly informed WHO of plague ins...",
+            "keywords": [
+                "russia",
+                "says",
+                "properly",
+                "informed",
+                "plague",
+                "institute",
+                "worker's",
+                "death,",
+                "blasts",
+                "media"
+            ],
+            "entity_signature": "RU:WHO:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-07T14:14:27.543907+00:00",
+            "last_seen": "2026-10-07T14:14:27.543907+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russia says it properly informed WHO of plague institute worker's death, blasts media coverage - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "f1c4f5f4-8556-4887-ae66-146684962a40",
+            "title": "Ukraine says Russia bombed apartment block as birt...",
+            "keywords": [
+                "ukraine",
+                "says",
+                "russia",
+                "bombed",
+                "apartment",
+                "block",
+                "birthday",
+                "gift",
+                "putin"
+            ],
+            "entity_signature": "UA:RU:Vladimir Putin:Volodymyr Zelenskyy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-07T14:14:27.543907+00:00",
+            "last_seen": "2026-10-07T14:14:27.543907+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ukraine says Russia bombed apartment block as birthday gift for Putin"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "8a4e3cf5-b66e-4dab-a91e-a32196ddc15c",
+            "title": "'Time doesn't heal': Parents of October 7 attacks ...",
+            "keywords": [
+                "'time",
+                "doesn't",
+                "heal':",
+                "parents",
+                "october",
+                "attacks",
+                "victim",
+                "aner",
+                "shapira"
+            ],
+            "entity_signature": "IL:PS:FR:WHO",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-07T14:14:27.543907+00:00",
+            "last_seen": "2026-10-07T14:14:27.543907+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "d41a85fe-bfb1-4a29-8f24-2edcc54923a1",
+            "title": "Mozilla says Microsoft still steers Windows users ...",
+            "keywords": [
+                "mozilla",
+                "says",
+                "microsoft",
+                "still",
+                "steers",
+                "windows",
+                "users",
+                "towards",
+                "edge,",
+                "except"
+            ],
+            "entity_signature": "EU:IN:US",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-07T14:14:27.543907+00:00",
+            "last_seen": "2026-10-07T14:14:27.543907+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
             ]
         },
         {
@@ -200,36 +393,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "bdca5029-0d4f-4394-a2b4-9cbe3186cd64",
-            "title": "How Netanyahu survived the political fallout from ...",
-            "keywords": [
-                "netanyahu",
-                "survived",
-                "political",
-                "fallout",
-                "from",
-                "october",
-                "attacks"
-            ],
-            "entity_signature": "PS:IL:Benjamin Netanyahu",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-07T06:52:47.305533+00:00",
-            "last_seen": "2026-10-07T07:14:34.612024+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "How Netanyahu survived the political fallout from the October 7 attacks"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
             ]
         },
         {
@@ -1259,35 +1422,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "af632965-e359-4d37-8f2d-2b355ef14ea9",
-            "title": "US Supreme Court agrees to take up Trump’s ICE det...",
-            "keywords": [
-                "supreme",
-                "court",
-                "agrees",
-                "take",
-                "trump’s",
-                "detention",
-                "policy"
-            ],
-            "entity_signature": "US:Donald Trump:Supreme Court",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-01T19:41:52.469182+00:00",
-            "last_seen": "2026-10-01T19:41:52.469182+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "US Supreme Court agrees to take up Trump’s ICE detention policy"
-            ],
-            "importance_trend": "fading",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
             ]
         },
         {
