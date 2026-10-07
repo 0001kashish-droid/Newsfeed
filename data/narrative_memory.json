@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-07T14:14:27.563938+00:00",
+    "last_updated": "2026-10-07T20:04:05.557346+00:00",
     "arcs": [
         {
             "arc_id": "6067c9d5-0e43-42a3-bcff-7a933376b859",
@@ -22,8 +22,8 @@
                 "Global"
             ],
             "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-07T14:14:27.543907+00:00",
-            "chapter_count": 19,
+            "last_seen": "2026-10-07T20:04:05.536265+00:00",
+            "chapter_count": 23,
             "chapter_titles": [
                 "Trump says US will help Russia after Siberia plague institute death - Reuters",
                 "Trump says US ready to aid Russia with plague outbreak in Siberia",
@@ -43,18 +43,119 @@
                 "Trump says will speak with Putin over Russia's reported plague death",
                 "Fed minutes could detail rate-hike decision, policy path - Reuters",
                 "Trump to speak to Putin about plague lab worker's death in Russia",
-                "Trump says will speak with Putin over Russia's reported plague death"
+                "Trump says will speak with Putin over Russia's reported plague death",
+                "Christa Pike 'angry and confused' about Tennessee's failed execution effort, lawyers say - Reuters",
+                "Trump administration plans to charge international students $70,000 for work authorization - Reuters",
+                "Trump says he'll fire advisers LaCivita, Blair 'if there's a conflict' - Reuters",
+                "Trump to speak to Putin about plague lab worker's death in Russia"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.7,
             "sources_involved": [
-                "Al Jazeera",
+                "BBC News",
                 "SCMP",
                 "France 24",
-                "BBC News",
+                "Reuters",
                 "The Guardian",
                 "BBC Europe",
-                "Reuters"
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "f1c4f5f4-8556-4887-ae66-146684962a40",
+            "title": "Ukraine says Russia bombed apartment block as birt...",
+            "keywords": [
+                "ukraine",
+                "says",
+                "russia",
+                "bombed",
+                "apartment",
+                "block",
+                "birthday",
+                "gift",
+                "putin"
+            ],
+            "entity_signature": "UA:RU:Vladimir Putin:Volodymyr Zelenskyy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-07T14:14:27.543907+00:00",
+            "last_seen": "2026-10-07T20:04:05.536265+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Ukraine says Russia bombed apartment block as birthday gift for Putin",
+                "Ukraine says Russia bombed apartment block as birthday gift for Putin"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "8a4e3cf5-b66e-4dab-a91e-a32196ddc15c",
+            "title": "'Time doesn't heal': Parents of October 7 attacks ...",
+            "keywords": [
+                "'time",
+                "doesn't",
+                "heal':",
+                "parents",
+                "october",
+                "attacks",
+                "victim",
+                "aner",
+                "shapira"
+            ],
+            "entity_signature": "IL:PS:FR:WHO",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-07T14:14:27.543907+00:00",
+            "last_seen": "2026-10-07T20:04:05.536265+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira",
+                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "d41a85fe-bfb1-4a29-8f24-2edcc54923a1",
+            "title": "Mozilla says Microsoft still steers Windows users ...",
+            "keywords": [
+                "mozilla",
+                "says",
+                "microsoft",
+                "still",
+                "steers",
+                "windows",
+                "users",
+                "towards",
+                "edge,",
+                "except"
+            ],
+            "entity_signature": "EU:IN:US",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-07T14:14:27.543907+00:00",
+            "last_seen": "2026-10-07T20:04:05.536265+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
             ]
         },
         {
@@ -195,100 +296,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "f1c4f5f4-8556-4887-ae66-146684962a40",
-            "title": "Ukraine says Russia bombed apartment block as birt...",
-            "keywords": [
-                "ukraine",
-                "says",
-                "russia",
-                "bombed",
-                "apartment",
-                "block",
-                "birthday",
-                "gift",
-                "putin"
-            ],
-            "entity_signature": "UA:RU:Vladimir Putin:Volodymyr Zelenskyy",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-07T14:14:27.543907+00:00",
-            "last_seen": "2026-10-07T14:14:27.543907+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Ukraine says Russia bombed apartment block as birthday gift for Putin"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "8a4e3cf5-b66e-4dab-a91e-a32196ddc15c",
-            "title": "'Time doesn't heal': Parents of October 7 attacks ...",
-            "keywords": [
-                "'time",
-                "doesn't",
-                "heal':",
-                "parents",
-                "october",
-                "attacks",
-                "victim",
-                "aner",
-                "shapira"
-            ],
-            "entity_signature": "IL:PS:FR:WHO",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-07T14:14:27.543907+00:00",
-            "last_seen": "2026-10-07T14:14:27.543907+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "d41a85fe-bfb1-4a29-8f24-2edcc54923a1",
-            "title": "Mozilla says Microsoft still steers Windows users ...",
-            "keywords": [
-                "mozilla",
-                "says",
-                "microsoft",
-                "still",
-                "steers",
-                "windows",
-                "users",
-                "towards",
-                "edge,",
-                "except"
-            ],
-            "entity_signature": "EU:IN:US",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-07T14:14:27.543907+00:00",
-            "last_seen": "2026-10-07T14:14:27.543907+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
             ]
         },
         {
@@ -747,7 +754,7 @@
             "chapter_titles": [
                 "Romania says two dead after fire on ship, Ukraine blames Russian drones - Reuters"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Reuters"
