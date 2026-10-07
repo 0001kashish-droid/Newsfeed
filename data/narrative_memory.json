@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-07T00:54:42.020829+00:00",
+    "last_updated": "2026-10-07T06:52:47.316880+00:00",
     "arcs": [
         {
             "arc_id": "6067c9d5-0e43-42a3-bcff-7a933376b859",
@@ -22,8 +22,8 @@
                 "Global"
             ],
             "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-07T00:54:42.002532+00:00",
-            "chapter_count": 12,
+            "last_seen": "2026-10-07T06:52:47.305533+00:00",
+            "chapter_count": 14,
             "chapter_titles": [
                 "Trump says US will help Russia after Siberia plague institute death - Reuters",
                 "Trump says US ready to aid Russia with plague outbreak in Siberia",
@@ -36,18 +36,215 @@
                 "Trump says he will speak to Putin over reported plague death in Russia",
                 "Trump says will speak to Putin on plague, after death of Russian lab tech",
                 "Plague epidemic risk in Russia low after death of lab technician, WHO says",
-                "US 'watching closely' after plague researcher dies in Russia"
+                "US 'watching closely' after plague researcher dies in Russia",
+                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
+                "Trump says will speak with Putin over Russia's reported plague death"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.7,
             "sources_involved": [
-                "Al Jazeera",
                 "The Guardian",
                 "Reuters",
                 "SCMP",
                 "France 24",
                 "BBC News",
+                "Al Jazeera",
                 "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "48671d48-be32-4bfc-8d8f-7c22ba68b364",
+            "title": "'We were naive' about Hamas, Israeli ex-hostage Sh...",
+            "keywords": [
+                "were",
+                "naive'",
+                "about",
+                "hamas,",
+                "israeli",
+                "ex-hostage",
+                "shoshan",
+                "haran",
+                "says"
+            ],
+            "entity_signature": "PS:IL:FR",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-06T16:07:34.654926+00:00",
+            "last_seen": "2026-10-07T06:52:47.305533+00:00",
+            "chapter_count": 4,
+            "chapter_titles": [
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "3a25593b-15c5-43bd-bfb5-584e59165c2f",
+            "title": "Trump says Iran could ‘take out’ Los Angeles or Sa...",
+            "keywords": [
+                "trump",
+                "says",
+                "iran",
+                "could",
+                "‘take",
+                "out’",
+                "angeles",
+                "diego,",
+                "drawing",
+                "backlash"
+            ],
+            "entity_signature": "IR:US:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-06T21:06:50.560476+00:00",
+            "last_seen": "2026-10-07T06:52:47.305533+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Trump says Iran could ‘take out’ Los Angeles or San Diego, drawing backlash",
+                "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders",
+                "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "SCMP",
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "757cffcc-f3cb-4082-8c19-0a39fbad824b",
+            "title": "Merz warns of more Russian hybrid attacks as he re...",
+            "keywords": [
+                "merz",
+                "warns",
+                "more",
+                "russian",
+                "hybrid",
+                "attacks",
+                "reaffirms",
+                "support",
+                "ukraine",
+                "reuters"
+            ],
+            "entity_signature": "RU:UA:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-01T19:41:52.469182+00:00",
+            "last_seen": "2026-10-07T06:52:47.305533+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Merz warns of more Russian hybrid attacks as he reaffirms support for Ukraine - Reuters",
+                "Fresh wave of Russian attacks on Ukraine kills two in Kyiv - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "adc8dac1-72c1-4dc0-980e-774e4d56d213",
+            "title": "Russia says it launched 'massive' strikes on Kyiv,...",
+            "keywords": [
+                "russia",
+                "says",
+                "launched",
+                "'massive'",
+                "strikes",
+                "kyiv,",
+                "other",
+                "areas",
+                "ukraine",
+                "reuters"
+            ],
+            "entity_signature": "RU:UA:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-07T06:52:47.305533+00:00",
+            "last_seen": "2026-10-07T06:52:47.305533+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russia says it launched 'massive' strikes on Kyiv, other areas of Ukraine - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "bdca5029-0d4f-4394-a2b4-9cbe3186cd64",
+            "title": "How Netanyahu survived the political fallout from ...",
+            "keywords": [
+                "netanyahu",
+                "survived",
+                "political",
+                "fallout",
+                "from",
+                "october",
+                "attacks"
+            ],
+            "entity_signature": "PS:IL:Benjamin Netanyahu",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-07T06:52:47.305533+00:00",
+            "last_seen": "2026-10-07T06:52:47.305533+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "How Netanyahu survived the political fallout from the October 7 attacks"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "da1cea47-0f36-442e-b809-fbdc288ed639",
+            "title": "Russian barrage hits Kyiv hours after Zelensky war...",
+            "keywords": [
+                "russian",
+                "barrage",
+                "hits",
+                "kyiv",
+                "hours",
+                "after",
+                "zelensky",
+                "warns",
+                "impending",
+                "attack"
+            ],
+            "entity_signature": "RU:UA:Volodymyr Zelenskyy",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-07T06:52:47.305533+00:00",
+            "last_seen": "2026-10-07T06:52:47.305533+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russian barrage hits Kyiv hours after Zelensky warns of impending attack"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
             ]
         },
         {
@@ -83,73 +280,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "France 24"
-            ]
-        },
-        {
-            "arc_id": "48671d48-be32-4bfc-8d8f-7c22ba68b364",
-            "title": "'We were naive' about Hamas, Israeli ex-hostage Sh...",
-            "keywords": [
-                "were",
-                "naive'",
-                "about",
-                "hamas,",
-                "israeli",
-                "ex-hostage",
-                "shoshan",
-                "haran",
-                "says"
-            ],
-            "entity_signature": "PS:IL:FR",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-06T16:07:34.654926+00:00",
-            "last_seen": "2026-10-07T00:54:42.002532+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
-                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
-                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "3a25593b-15c5-43bd-bfb5-584e59165c2f",
-            "title": "Trump says Iran could ‘take out’ Los Angeles or Sa...",
-            "keywords": [
-                "trump",
-                "says",
-                "iran",
-                "could",
-                "‘take",
-                "out’",
-                "angeles",
-                "diego,",
-                "drawing",
-                "backlash"
-            ],
-            "entity_signature": "IR:US:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-06T21:06:50.560476+00:00",
-            "last_seen": "2026-10-07T00:54:42.002532+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Trump says Iran could ‘take out’ Los Angeles or San Diego, drawing backlash",
-                "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "New York Times",
-                "SCMP"
             ]
         },
         {
@@ -445,7 +575,7 @@
                 "Russians Snap Up Chinese E.V.s as Ukrainian Attacks Make Fuel Scarce",
                 "Russians Snap Up Chinese E.V.s as Ukrainian Attacks Make Fuel Scarce"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.15,
             "sources_involved": [
                 "NYT Business",
@@ -483,7 +613,7 @@
                 "Germany's Merz visits Kyiv as Russia steps up attacks on Ukrainian cities",
                 "Germany's Merz visits Kyiv as Russia steps up attacks on Ukrainian cities"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 1.0,
             "sources_involved": [
                 "France 24",
@@ -520,7 +650,7 @@
                 "French education minister says up to 500 schools will remain partially or fully closed on Monday after student protests – Europe live",
                 "French education minister says up to 500 schools will remain partially or fully closed on Monday after student protests – Europe live"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "The Guardian"
@@ -555,7 +685,7 @@
                 "US wants to hold trilateral Ukraine talks with Russia by end of October, Zelensky says",
                 "US wants to hold trilateral Ukraine talks with Russia by end of October, Zelensky says"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.15,
             "sources_involved": [
                 "France 24"
@@ -587,7 +717,7 @@
             "chapter_titles": [
                 "Ball in UK’s court: EU ambassador says Brussels will be ‘ready to engage‘ after country decides what it wants"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "The Guardian"
@@ -1080,38 +1210,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "757cffcc-f3cb-4082-8c19-0a39fbad824b",
-            "title": "Merz warns of more Russian hybrid attacks as he re...",
-            "keywords": [
-                "merz",
-                "warns",
-                "more",
-                "russian",
-                "hybrid",
-                "attacks",
-                "reaffirms",
-                "support",
-                "ukraine",
-                "reuters"
-            ],
-            "entity_signature": "RU:UA:Reuters",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-01T19:41:52.469182+00:00",
-            "last_seen": "2026-10-01T19:41:52.469182+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Merz warns of more Russian hybrid attacks as he reaffirms support for Ukraine - Reuters"
-            ],
-            "importance_trend": "fading",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
             ]
         },
         {
