@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-06T21:06:50.574013+00:00",
+    "last_updated": "2026-10-07T00:54:42.020829+00:00",
     "arcs": [
         {
             "arc_id": "6067c9d5-0e43-42a3-bcff-7a933376b859",
@@ -22,8 +22,8 @@
                 "Global"
             ],
             "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-06T21:06:50.560476+00:00",
-            "chapter_count": 8,
+            "last_seen": "2026-10-07T00:54:42.002532+00:00",
+            "chapter_count": 12,
             "chapter_titles": [
                 "Trump says US will help Russia after Siberia plague institute death - Reuters",
                 "Trump says US ready to aid Russia with plague outbreak in Siberia",
@@ -32,16 +32,22 @@
                 "Plague epidemic risk in Russia low after death of lab technician, WHO says",
                 "US 'watching closely' after plague researcher dies in Russia",
                 "Watch: How Russia responded to US after plague researcher death",
+                "US 'watching closely' after plague researcher dies in Russia",
+                "Trump says he will speak to Putin over reported plague death in Russia",
+                "Trump says will speak to Putin on plague, after death of Russian lab tech",
+                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
                 "US 'watching closely' after plague researcher dies in Russia"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.7,
             "sources_involved": [
-                "BBC News",
                 "Al Jazeera",
                 "The Guardian",
-                "BBC Europe",
-                "Reuters"
+                "Reuters",
+                "SCMP",
+                "France 24",
+                "BBC News",
+                "BBC Europe"
             ]
         },
         {
@@ -64,9 +70,10 @@
                 "Middle East"
             ],
             "first_seen": "2026-10-06T02:24:11.640373+00:00",
-            "last_seen": "2026-10-06T21:06:50.560476+00:00",
-            "chapter_count": 4,
+            "last_seen": "2026-10-07T00:54:42.002532+00:00",
+            "chapter_count": 5,
             "chapter_titles": [
+                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
                 "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
                 "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
                 "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
@@ -76,6 +83,105 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "France 24"
+            ]
+        },
+        {
+            "arc_id": "48671d48-be32-4bfc-8d8f-7c22ba68b364",
+            "title": "'We were naive' about Hamas, Israeli ex-hostage Sh...",
+            "keywords": [
+                "were",
+                "naive'",
+                "about",
+                "hamas,",
+                "israeli",
+                "ex-hostage",
+                "shoshan",
+                "haran",
+                "says"
+            ],
+            "entity_signature": "PS:IL:FR",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-06T16:07:34.654926+00:00",
+            "last_seen": "2026-10-07T00:54:42.002532+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "3a25593b-15c5-43bd-bfb5-584e59165c2f",
+            "title": "Trump says Iran could ‘take out’ Los Angeles or Sa...",
+            "keywords": [
+                "trump",
+                "says",
+                "iran",
+                "could",
+                "‘take",
+                "out’",
+                "angeles",
+                "diego,",
+                "drawing",
+                "backlash"
+            ],
+            "entity_signature": "IR:US:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-06T21:06:50.560476+00:00",
+            "last_seen": "2026-10-07T00:54:42.002532+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Trump says Iran could ‘take out’ Los Angeles or San Diego, drawing backlash",
+                "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "New York Times",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "1a505122-117e-4e14-9589-922ccc046f86",
+            "title": "EXCLUSIVE: In interview, US Vice President Vance s...",
+            "keywords": [
+                "exclusive:",
+                "interview,",
+                "vice",
+                "president",
+                "vance",
+                "says",
+                "iran",
+                "must",
+                "nuclear",
+                "enrichment"
+            ],
+            "entity_signature": "US:IR:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-07T00:54:42.002532+00:00",
+            "last_seen": "2026-10-07T00:54:42.002532+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "EXCLUSIVE: In interview, US Vice President Vance says Iran must cut nuclear enrichment to end war - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
             ]
         },
         {
@@ -114,38 +220,6 @@
             ]
         },
         {
-            "arc_id": "48671d48-be32-4bfc-8d8f-7c22ba68b364",
-            "title": "'We were naive' about Hamas, Israeli ex-hostage Sh...",
-            "keywords": [
-                "were",
-                "naive'",
-                "about",
-                "hamas,",
-                "israeli",
-                "ex-hostage",
-                "shoshan",
-                "haran",
-                "says"
-            ],
-            "entity_signature": "PS:IL:FR",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-06T16:07:34.654926+00:00",
-            "last_seen": "2026-10-06T21:06:50.560476+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
-                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
             "arc_id": "d6a73af9-064a-403e-a395-6285b4ab7431",
             "title": "Ukraine's Zelenskiy says intelligence shows Russia...",
             "keywords": [
@@ -175,38 +249,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "3a25593b-15c5-43bd-bfb5-584e59165c2f",
-            "title": "Trump says Iran could ‘take out’ Los Angeles or Sa...",
-            "keywords": [
-                "trump",
-                "says",
-                "iran",
-                "could",
-                "‘take",
-                "out’",
-                "angeles",
-                "diego,",
-                "drawing",
-                "backlash"
-            ],
-            "entity_signature": "IR:US:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-06T21:06:50.560476+00:00",
-            "last_seen": "2026-10-06T21:06:50.560476+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump says Iran could ‘take out’ Los Angeles or San Diego, drawing backlash"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "SCMP"
             ]
         },
         {
@@ -578,7 +620,7 @@
                 "Ukraine believes Russia shared jet-drone technology with North Korea, says Zelensky",
                 "Ukraine believes Russia shared jet-drone technology with North Korea, says Zelenskiy - Reuters"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Reuters",
