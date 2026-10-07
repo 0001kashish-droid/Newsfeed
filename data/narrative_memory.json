@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-07T06:52:47.316880+00:00",
+    "last_updated": "2026-10-07T07:14:34.711175+00:00",
     "arcs": [
         {
             "arc_id": "6067c9d5-0e43-42a3-bcff-7a933376b859",
@@ -22,8 +22,8 @@
                 "Global"
             ],
             "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-07T06:52:47.305533+00:00",
-            "chapter_count": 14,
+            "last_seen": "2026-10-07T07:14:34.612024+00:00",
+            "chapter_count": 16,
             "chapter_titles": [
                 "Trump says US will help Russia after Siberia plague institute death - Reuters",
                 "Trump says US ready to aid Russia with plague outbreak in Siberia",
@@ -38,18 +38,64 @@
                 "Plague epidemic risk in Russia low after death of lab technician, WHO says",
                 "US 'watching closely' after plague researcher dies in Russia",
                 "Plague epidemic risk in Russia low after death of lab technician, WHO says",
+                "Trump says will speak with Putin over Russia's reported plague death",
+                "Gold slips as dollar gains; investors await Fed minutes for rate clues - Reuters",
                 "Trump says will speak with Putin over Russia's reported plague death"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.7,
             "sources_involved": [
                 "The Guardian",
-                "Reuters",
-                "SCMP",
                 "France 24",
-                "BBC News",
                 "Al Jazeera",
-                "BBC Europe"
+                "BBC News",
+                "BBC Europe",
+                "Reuters",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "5b745eea-fec4-44a4-b06a-b28637c6004d",
+            "title": "US closely monitoring case of lab worker who ‘poss...",
+            "keywords": [
+                "closely",
+                "monitoring",
+                "case",
+                "worker",
+                "‘possibly’",
+                "died",
+                "plague",
+                "siberia,",
+                "says",
+                "rubio"
+            ],
+            "entity_signature": "US:RU:WHO",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-05T22:07:16.056000+00:00",
+            "last_seen": "2026-10-07T07:14:34.612024+00:00",
+            "chapter_count": 8,
+            "chapter_titles": [
+                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
+                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
+                "US CDC says it’s ‘aware of and closely monitoring’ Russian plague case",
+                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
+                "Actress Eva Marie Saint, who won an Oscar for 'On the Waterfront,' dies at 102",
+                "Sebastian Maniscalco’s SiriusXM channel is hurting up-and-coming talent, comics say",
+                "Silicon Valley’s AI wunderkind launches Underdog, the most private Instinct/Muse competitor yet",
+                "CBI files closure report in Pocso court over death of 17-yr-old NEET aspirant in Bihar"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian",
+                "The Verge",
+                "Al Jazeera",
+                "TechCrunch",
+                "NPR News",
+                "Hindustan Times"
             ]
         },
         {
@@ -72,9 +118,10 @@
                 "Middle East"
             ],
             "first_seen": "2026-10-06T16:07:34.654926+00:00",
-            "last_seen": "2026-10-07T06:52:47.305533+00:00",
-            "chapter_count": 4,
+            "last_seen": "2026-10-07T07:14:34.612024+00:00",
+            "chapter_count": 5,
             "chapter_titles": [
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
                 "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
                 "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
                 "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
@@ -107,18 +154,148 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-10-06T21:06:50.560476+00:00",
-            "last_seen": "2026-10-07T06:52:47.305533+00:00",
-            "chapter_count": 3,
+            "last_seen": "2026-10-07T07:14:34.612024+00:00",
+            "chapter_count": 4,
             "chapter_titles": [
                 "Trump says Iran could ‘take out’ Los Angeles or San Diego, drawing backlash",
+                "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders",
                 "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders",
                 "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.3,
             "sources_involved": [
-                "SCMP",
-                "New York Times"
+                "New York Times",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "adc8dac1-72c1-4dc0-980e-774e4d56d213",
+            "title": "Russia says it launched 'massive' strikes on Kyiv,...",
+            "keywords": [
+                "russia",
+                "says",
+                "launched",
+                "'massive'",
+                "strikes",
+                "kyiv,",
+                "other",
+                "areas",
+                "ukraine",
+                "reuters"
+            ],
+            "entity_signature": "RU:UA:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-07T06:52:47.305533+00:00",
+            "last_seen": "2026-10-07T07:14:34.612024+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Russia says it launched 'massive' strikes on Kyiv, other areas of Ukraine - Reuters",
+                "Russia says it launched 'massive' strikes on Kyiv, other areas of Ukraine - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "bdca5029-0d4f-4394-a2b4-9cbe3186cd64",
+            "title": "How Netanyahu survived the political fallout from ...",
+            "keywords": [
+                "netanyahu",
+                "survived",
+                "political",
+                "fallout",
+                "from",
+                "october",
+                "attacks"
+            ],
+            "entity_signature": "PS:IL:Benjamin Netanyahu",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-07T06:52:47.305533+00:00",
+            "last_seen": "2026-10-07T07:14:34.612024+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "How Netanyahu survived the political fallout from the October 7 attacks"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "da1cea47-0f36-442e-b809-fbdc288ed639",
+            "title": "Russian barrage hits Kyiv hours after Zelensky war...",
+            "keywords": [
+                "russian",
+                "barrage",
+                "hits",
+                "kyiv",
+                "hours",
+                "after",
+                "zelensky",
+                "warns",
+                "impending",
+                "attack"
+            ],
+            "entity_signature": "RU:UA:Volodymyr Zelenskyy",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-07T06:52:47.305533+00:00",
+            "last_seen": "2026-10-07T07:14:34.612024+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Russian barrage hits Kyiv hours after Zelensky warns of impending attack",
+                "Russian barrage hits Kyiv hours after Zelensky warns of impending attack"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "33d7734d-1dee-40f2-affb-a02326cbbc9c",
+            "title": "Israel-bound flight diverted to Saudi Arabia after...",
+            "keywords": [
+                "israel-bound",
+                "flight",
+                "diverted",
+                "saudi",
+                "arabia",
+                "after",
+                "brawl",
+                "between",
+                "pilots,",
+                "israeli"
+            ],
+            "entity_signature": "IL:SA:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-09-30T10:38:58.447319+00:00",
+            "last_seen": "2026-10-07T07:14:34.612024+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Israel-bound flight diverted to Saudi Arabia after brawl between pilots, Israeli official says - Reuters",
+                "Asia shares weaker, oil up as investors weigh Saudi-Houthi escalation - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7,
+            "sources_involved": [
+                "Reuters"
             ]
         },
         {
@@ -152,99 +329,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "adc8dac1-72c1-4dc0-980e-774e4d56d213",
-            "title": "Russia says it launched 'massive' strikes on Kyiv,...",
-            "keywords": [
-                "russia",
-                "says",
-                "launched",
-                "'massive'",
-                "strikes",
-                "kyiv,",
-                "other",
-                "areas",
-                "ukraine",
-                "reuters"
-            ],
-            "entity_signature": "RU:UA:Reuters",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-07T06:52:47.305533+00:00",
-            "last_seen": "2026-10-07T06:52:47.305533+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Russia says it launched 'massive' strikes on Kyiv, other areas of Ukraine - Reuters"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "bdca5029-0d4f-4394-a2b4-9cbe3186cd64",
-            "title": "How Netanyahu survived the political fallout from ...",
-            "keywords": [
-                "netanyahu",
-                "survived",
-                "political",
-                "fallout",
-                "from",
-                "october",
-                "attacks"
-            ],
-            "entity_signature": "PS:IL:Benjamin Netanyahu",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-07T06:52:47.305533+00:00",
-            "last_seen": "2026-10-07T06:52:47.305533+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "How Netanyahu survived the political fallout from the October 7 attacks"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "da1cea47-0f36-442e-b809-fbdc288ed639",
-            "title": "Russian barrage hits Kyiv hours after Zelensky war...",
-            "keywords": [
-                "russian",
-                "barrage",
-                "hits",
-                "kyiv",
-                "hours",
-                "after",
-                "zelensky",
-                "warns",
-                "impending",
-                "attack"
-            ],
-            "entity_signature": "RU:UA:Volodymyr Zelenskyy",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-07T06:52:47.305533+00:00",
-            "last_seen": "2026-10-07T06:52:47.305533+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Russian barrage hits Kyiv hours after Zelensky warns of impending attack"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
             ]
         },
         {
@@ -312,41 +396,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "5b745eea-fec4-44a4-b06a-b28637c6004d",
-            "title": "US closely monitoring case of lab worker who ‘poss...",
-            "keywords": [
-                "closely",
-                "monitoring",
-                "case",
-                "worker",
-                "‘possibly’",
-                "died",
-                "plague",
-                "siberia,",
-                "says",
-                "rubio"
-            ],
-            "entity_signature": "US:RU:WHO",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-06T21:06:50.560476+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
-                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
-                "US CDC says it’s ‘aware of and closely monitoring’ Russian plague case"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Al Jazeera",
-                "The Guardian"
             ]
         },
         {
@@ -1688,38 +1737,6 @@
             ],
             "importance_trend": "fading",
             "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "33d7734d-1dee-40f2-affb-a02326cbbc9c",
-            "title": "Israel-bound flight diverted to Saudi Arabia after...",
-            "keywords": [
-                "israel-bound",
-                "flight",
-                "diverted",
-                "saudi",
-                "arabia",
-                "after",
-                "brawl",
-                "between",
-                "pilots,",
-                "israeli"
-            ],
-            "entity_signature": "IL:SA:Reuters",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-09-30T10:38:58.447319+00:00",
-            "last_seen": "2026-09-30T10:38:58.447319+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Israel-bound flight diverted to Saudi Arabia after brawl between pilots, Israeli official says - Reuters"
-            ],
-            "importance_trend": "fading",
-            "peak_velocity": 0.7,
             "sources_involved": [
                 "Reuters"
             ]
