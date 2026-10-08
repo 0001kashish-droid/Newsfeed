@@ -1,3 +1,4 @@
+import sys
 import json
 import urllib.request
 import re
@@ -134,3 +135,8 @@ if warnings:
     for w in warnings:
         print(f"      • {w}")
 print("=" * 65)
+
+if errors or warnings:
+    sys.exit(1)
+sys.exit(0)
+

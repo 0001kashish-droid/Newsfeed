@@ -6,6 +6,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 import random
+from collections import Counter
 
 # ---------------------------------------------------------------------------
 # Path Configuration & Standard Library Setup
@@ -108,20 +109,32 @@ def format_clean_description(raw_desc, max_len=260):
     text = clean_html(raw_desc).strip()
     if not text:
         return ""
+    # Strip trailing ellipsis, dots, and whitespace
     text = re.sub(r'[\s.…]+$', '', text).strip()
+    if not text:
+        return ""
+    
     if len(text) <= max_len:
+        # Strip trailing punctuation and ensure terminating period
+        text = text.rstrip(',;:-\t ')
         if not text.endswith('.'):
-            text += '.'
+            text = text.rstrip('?!') + '.'
         return text
-    # Try finding sentence boundary
-    match = re.search(r'^(.*?[.!?])(\s|$)', text[:max_len + 1])
-    if match and len(match.group(1)) > 30:
-        return match.group(1).strip()
-    # Otherwise cut at last word boundary before max_len and terminate with period
+    
+    # Try finding complete sentence boundaries within max_len (greedy match)
+    match = re.search(r'^(.*[.!?])(?:\s|$)', text[:max_len + 1])
+    if match and len(match.group(1).strip()) > 30:
+        candidate = match.group(1).strip().rstrip(',;:-\t ')
+        if not candidate.endswith('.'):
+            candidate = candidate.rstrip('?!') + '.'
+        return candidate
+    
+    # Otherwise truncate at last word boundary before max_len and terminate with period
     match = re.search(r'^(.*)\s\S*$', text[:max_len])
-    if match and len(match.group(1)) > 30:
-        return match.group(1).strip().rstrip('.,;:-') + '.'
-    return text[:max_len].strip().rstrip('.,;:-') + '.'
+    if match and len(match.group(1).strip()) > 30:
+        return match.group(1).strip().rstrip('.,;:!?-\t ') + '.'
+    
+    return text[:max_len].strip().rstrip('.,;:!?-\t ') + '.'
 
 def upscale_image_url(url):
     if not url:
@@ -257,10 +270,48 @@ def fetch_rss(source):
     return items
 
 
+def enforce_brand_family_cap(articles, max_ratio=0.18):
+    """Enforce dynamic brand family diversity cap (<= max_ratio) while preserving ordering."""
+    if not articles:
+        return []
+
+    max_per_brand = max(1, int(max_ratio * len(articles)))
+    brand_counts = {}
+    brand_capped = []
+    for art in articles:
+        brand = BRAND_FAMILIES.get(art['source'], art['source'])
+        brand_counts[brand] = brand_counts.get(brand, 0) + 1
+        if brand_counts[brand] <= max_per_brand:
+            brand_capped.append(art)
+
+    # Convergence pass: ensure no brand family exceeds max_ratio in the resulting feed
+    while len(brand_capped) >= 6:
+        allowed_cap = max(1, int(max_ratio * len(brand_capped)))
+        b_counts = Counter(BRAND_FAMILIES.get(a['source'], a['source']) for a in brand_capped)
+        violators = {b for b, c in b_counts.items() if c > allowed_cap}
+        if not violators:
+            break
+        pruned = []
+        running_counts = {}
+        for art in brand_capped:
+            b = BRAND_FAMILIES.get(art['source'], art['source'])
+            running_counts[b] = running_counts.get(b, 0)
+            if running_counts[b] < allowed_cap:
+                running_counts[b] += 1
+                pruned.append(art)
+        if len(pruned) == len(brand_capped):
+            break
+        brand_capped = pruned
+
+    return brand_capped
+
+
 def balance_source_diversity(all_articles):
-    """Enforce source diversity: cap per source per region, then interleave."""
+    """Enforce source diversity: cap per source per region, dynamic brand cap, then interleave."""
+    if not all_articles:
+        return []
+
     MAX_PER_SOURCE_PER_REGION = 6
-    MAX_PER_BRAND_FAMILY = 18
 
     # Phase 1: Cap per source per region
     region_source_counts = {}
@@ -271,14 +322,8 @@ def balance_source_diversity(all_articles):
         if region_source_counts[key] <= MAX_PER_SOURCE_PER_REGION:
             capped.append(art)
 
-    # Phase 2: Cap per brand family globally
-    brand_counts = {}
-    brand_capped = []
-    for art in capped:
-        brand = BRAND_FAMILIES.get(art['source'], art['source'])
-        brand_counts[brand] = brand_counts.get(brand, 0) + 1
-        if brand_counts[brand] <= MAX_PER_BRAND_FAMILY:
-            brand_capped.append(art)
+    # Phase 2: Dynamic cap per brand family globally (<= 18% cap)
+    brand_capped = enforce_brand_family_cap(capped, max_ratio=0.18)
 
     # Phase 3: Interleave sources within each region (avoid clustering)
     by_region = {}
@@ -295,7 +340,6 @@ def balance_source_diversity(all_articles):
         # Round-robin interleave
         queues = list(source_groups.values())
         random.shuffle(queues)
-        idx = 0
         while any(q for q in queues):
             for q in queues:
                 if q:
@@ -409,10 +453,11 @@ def cluster_stories(articles, threshold=0.35):
             # Build perspectives: one per region & distinct publisher brand
             region_done = set()
             brand_done = set()
+            source_done = set()
             for idx in members:
                 art = articles[idx]
                 brand = BRAND_FAMILIES.get(art['source'], art['source'])
-                if art['region'] not in region_done and brand not in brand_done:
+                if art['region'] not in region_done and art['source'] not in source_done and brand not in brand_done:
                     perspectives.append({
                         'region': art['region'],
                         'source': art['source'],
@@ -421,8 +466,19 @@ def cluster_stories(articles, threshold=0.35):
                         'annotation': art.get('annotation', {})
                     })
                     region_done.add(art['region'])
+                    source_done.add(art['source'])
                     brand_done.add(brand)
-            if len(perspectives) < 2:
+            
+            # Strict multi-factor validation:
+            # Must have >= 2 perspectives with >= 2 distinct sources, >= 2 distinct brands, >= 2 distinct regions
+            distinct_sources = set(p['source'] for p in perspectives)
+            distinct_persp_brands = set(BRAND_FAMILIES.get(p['source'], p['source']) for p in perspectives)
+            distinct_regions = set(p['region'] for p in perspectives)
+
+            if (len(perspectives) < 2 or 
+                len(distinct_sources) < 2 or 
+                len(distinct_persp_brands) < 2 or 
+                len(distinct_regions) < 2):
                 is_cross_regional = False
                 perspectives = []
         
@@ -673,7 +729,7 @@ def correlate_podcasts_to_news(articles, podcasts, threshold=0.15):
 
             # Add to podcast resonant_news if not already present
             existing_ids = {n.get('id') for n in best_ep.get('resonant_news', []) if isinstance(n, dict)}
-            if art.get('id') not in existing_ids and len(best_ep.get('resonant_news', [])) < 5:
+            if art.get('id') not in existing_ids:
                 best_ep.setdefault('resonant_news', []).append({
                     'id': art.get('id', ''),
                     'title': art.get('title', ''),
@@ -697,7 +753,7 @@ def correlate_podcasts_to_news(articles, podcasts, threshold=0.15):
                     break
             if target_ep:
                 existing_news_ids = {n.get('id') for n in target_ep.get('resonant_news', []) if isinstance(n, dict)}
-                if art.get('id') not in existing_news_ids and len(target_ep.get('resonant_news', [])) < 5:
+                if art.get('id') not in existing_news_ids:
                     target_ep.setdefault('resonant_news', []).append({
                         'id': art.get('id', ''),
                         'title': art.get('title', ''),
@@ -722,7 +778,7 @@ def correlate_podcasts_to_news(articles, podcasts, threshold=0.15):
             art['resonant_podcast'] = res_obj
 
             existing_ids = {n.get('id') for n in best_ep.get('resonant_news', []) if isinstance(n, dict)}
-            if art.get('id') not in existing_ids and len(best_ep.get('resonant_news', [])) < 5:
+            if art.get('id') not in existing_ids:
                 best_ep.setdefault('resonant_news', []).append({
                     'id': art.get('id', ''),
                     'title': art.get('title', ''),
@@ -735,12 +791,51 @@ def correlate_podcasts_to_news(articles, podcasts, threshold=0.15):
         else:
             art['resonant_podcast'] = None
 
-    # Ensure all podcast resonant_news entries have complete schema aliases
+    # Bidirectional reconciliation pass: ensure exact bidirectional alignment
+    art_map = {a.get('id'): a for a in articles}
+    pod_map = {p.get('id'): p for p in podcasts}
+    pod_url_map = {p.get('link'): p for p in podcasts}
+
     for ep in podcasts:
+        valid_news = []
         for item in ep.get('resonant_news', []):
-            if isinstance(item, dict):
+            if isinstance(item, dict) and item.get('id') in art_map:
                 item.setdefault('url', item.get('link', ''))
                 item.setdefault('resonance_score', item.get('relevance', 0.0))
+                art = art_map[item['id']]
+                if not art.get('resonant_podcast') or art['resonant_podcast'].get('id') != ep.get('id'):
+                    art['resonant_podcast'] = {
+                        'id': ep.get('id', ''),
+                        'title': ep.get('title', ''),
+                        'episode_title': ep.get('title', ''),
+                        'podcast': ep.get('podcast', ''),
+                        'podcast_title': ep.get('podcast', ''),
+                        'link': ep.get('link', ''),
+                        'youtube_url': ep.get('link', ''),
+                        'relevance': item.get('relevance', 0.0),
+                        'resonance_score': item.get('resonance_score', 0.0)
+                    }
+                valid_news.append(item)
+        ep['resonant_news'] = valid_news
+
+    for art in articles:
+        rp = art.get('resonant_podcast')
+        if rp and isinstance(rp, dict):
+            target_ep = pod_map.get(rp.get('id')) or pod_url_map.get(rp.get('link'))
+            if target_ep:
+                existing_news_ids = {n.get('id') for n in target_ep.get('resonant_news', []) if isinstance(n, dict)}
+                if art.get('id') not in existing_news_ids:
+                    target_ep.setdefault('resonant_news', []).append({
+                        'id': art.get('id', ''),
+                        'title': art.get('title', ''),
+                        'source': art.get('source', ''),
+                        'link': art.get('link', ''),
+                        'url': art.get('link', ''),
+                        'relevance': rp.get('relevance', 0.0),
+                        'resonance_score': rp.get('resonance_score', 0.0)
+                    })
+            else:
+                art['resonant_podcast'] = None
 
     return articles, podcasts
 
@@ -834,6 +929,10 @@ def main():
             traceback.print_exc()
             print("Continuing with standard output and fallback resonance correlation...")
 
+    # Defense-in-depth: duplicate suppression filter & post-curation brand diversity cap
+    balanced = [a for a in balanced if not a.get('is_duplicate')]
+    balanced = enforce_brand_family_cap(balanced, max_ratio=0.18)
+
     # 3. Compute/Verify Mutual Resonance linkages with unified schema
     balanced, podcasts = correlate_podcasts_to_news(balanced, podcasts, threshold=0.15)
 
@@ -847,6 +946,10 @@ def main():
     if not balanced or len(balanced) == 0:
         print("[WARN] No articles to save. Preserving existing data/news.json.")
         return
+
+    # Defense-in-depth: duplicate suppression filter & brand family diversity cap
+    balanced = [a for a in balanced if not a.get('is_duplicate')]
+    balanced = enforce_brand_family_cap(balanced, max_ratio=0.18)
 
     output = {
         "lastUpdated": datetime.now(timezone.utc).isoformat(),

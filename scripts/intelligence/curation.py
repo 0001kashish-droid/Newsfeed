@@ -137,13 +137,17 @@ def thread_narratives(articles, memory):
     For each article that matched a narrative arc during memory update,
     add human-readable arc context.
     """
-    if not memory or 'arcs' not in memory:
+    empty_arc_struct = {
+        'arc_id': None,
+        'arc_title': None,
+        'day_number': 0,
+        'total_chapters': 0,
+        'importance_trend': None
+    }
+
+    if not memory or not memory.get('arcs'):
         for art in articles:
-            art.setdefault('narrative_arc', {
-                'arc_id': None, 'arc_title': None,
-                'day_number': 0, 'total_chapters': 0,
-                'importance_trend': None
-            })
+            art['narrative_arc'] = dict(empty_arc_struct)
         return articles
 
     arcs_by_id = {arc['arc_id']: arc for arc in memory.get('arcs', [])}
@@ -163,10 +167,14 @@ def thread_narratives(articles, memory):
             arc = arcs_by_id[matched_arc_id]
             # Calculate day number
             try:
-                first = datetime.fromisoformat(arc['first_seen'].replace('Z', '+00:00'))
-                now = datetime.now(timezone.utc)
-                day_num = max(1, (now - first).days + 1)
-            except (ValueError, TypeError, KeyError):
+                first_seen = arc.get('first_seen')
+                if first_seen and isinstance(first_seen, str):
+                    first = datetime.fromisoformat(first_seen.replace('Z', '+00:00'))
+                    now = datetime.now(timezone.utc)
+                    day_num = max(1, (now - first).days + 1)
+                else:
+                    day_num = arc.get('chapter_count', 1)
+            except Exception:
                 day_num = arc.get('chapter_count', 1)
 
             art['narrative_arc'] = {
@@ -178,14 +186,10 @@ def thread_narratives(articles, memory):
                 'previous_headlines': arc.get('chapter_titles', [])[-3:]
             }
         else:
-            art.setdefault('narrative_arc', {
-                'arc_id': None, 'arc_title': None,
-                'day_number': 0, 'total_chapters': 0,
-                'importance_trend': None
-            })
+            art['narrative_arc'] = dict(empty_arc_struct)
 
     # Audit
-    threaded = [a for a in articles if a['narrative_arc']['arc_id'] is not None]
+    threaded = [a for a in articles if a.get('narrative_arc', {}).get('arc_id') is not None]
     print(f"\n  Narrative Threading:")
     print(f"    {len(threaded)} articles connected to ongoing arcs")
     if threaded:
@@ -302,7 +306,8 @@ def cross_link_resonance(articles, podcasts, threshold=0.30):
             # Bidirectional: add to podcast's resonant_news
             if 'resonant_news' not in best_match or not isinstance(best_match['resonant_news'], list):
                 best_match['resonant_news'] = []
-            if len(best_match['resonant_news']) < 5:  # Cap at 5 per podcast
+            existing_news_ids = {n.get('id') for n in best_match['resonant_news'] if isinstance(n, dict)}
+            if art.get('id') not in existing_news_ids:
                 best_match['resonant_news'].append({
                     'id': art.get('id', ''),
                     'title': art.get('title', ''),

@@ -115,6 +115,9 @@ def run_editorial_intelligence(articles, podcasts=None, memory_path=None):
         articles, podcasts=podcasts, memory=memory
     )
 
+    # Defense-in-depth: ensure duplicate suppression before final report and return
+    articles = [a for a in articles if not a.get('is_duplicate')]
+
     # -- FINAL REPORT ---------------------------------------------------
     elapsed = time.time() - start_time
 

@@ -17,7 +17,7 @@
         "what": "Pioneering computer scientist led the development of the software for Nasa's Apollo mission and was awarded the Presidential Medal of Freedom.",
         "why": "Key global development with wide-ranging impact across policy, industry, and public interest."
       },
-      "readTime": "3 min read",
+      "readTime": "4 min read",
       "relatedSources": [
         {
           "name": "Reuters",
@@ -104,6 +104,10 @@
       },
       "readTime": "3 min read",
       "relatedSources": [
+        {
+          "name": "BBC Europe",
+          "url": "https://www.bbc.com/news/world/europe"
+        },
         {
           "name": "The Guardian",
           "url": "https://www.theguardian.com"
@@ -925,15 +929,15 @@
         "importance_trend": null
       },
       "resonant_podcast": {
-        "id": "tp_WhwpZcT-Zkg",
-        "title": "Europe on edge from threats of Russia's growing escalation. Can NATO defend itself?",
-        "episode_title": "Europe on edge from threats of Russia's growing escalation. Can NATO defend itself?",
-        "podcast": "NPR",
-        "podcast_title": "NPR",
-        "link": "https://www.youtube.com/watch?v=WhwpZcT-Zkg",
-        "youtube_url": "https://www.youtube.com/watch?v=WhwpZcT-Zkg",
-        "relevance": 0.212,
-        "resonance_score": 0.212
+        "id": "tp_XliQ1SthAbs",
+        "title": "WAR WORLD THREE",
+        "episode_title": "WAR WORLD THREE",
+        "podcast": "Bloomberg Originals",
+        "podcast_title": "Bloomberg Originals",
+        "link": "https://www.youtube.com/watch?v=XliQ1SthAbs",
+        "youtube_url": "https://www.youtube.com/watch?v=XliQ1SthAbs",
+        "relevance": 0.416,
+        "resonance_score": 0.416
       }
     },
     {
@@ -1559,16 +1563,16 @@
       "readTime": "3 min read",
       "relatedSources": [
         {
+          "name": "NYT",
+          "url": "https://www.nytimes.com"
+        },
+        {
           "name": "BBC Asia",
           "url": "https://www.bbc.com/news/world/asia"
         },
         {
           "name": "SCMP",
           "url": "https://www.scmp.com"
-        },
-        {
-          "name": "NYT",
-          "url": "https://www.nytimes.com"
         }
       ],
       "storyCluster": null,
@@ -1616,11 +1620,11 @@
         "composite": 0.5481
       },
       "cognitive_type": "strategic",
-      "importance_score": 5.81,
+      "importance_score": 6.23,
       "meta": {
         "is_black_swan": true,
         "black_swan_reason": "Unusual entity combination + high rarity + crisis signal",
-        "source_authority": 0.75
+        "source_authority": 0.5
       },
       "rank": 16,
       "narrative_arc": {
@@ -1650,8 +1654,8 @@
       "readTime": "3 min read",
       "relatedSources": [
         {
-          "name": "BBC News",
-          "url": "https://www.bbc.com/news"
+          "name": "BBC Asia",
+          "url": "https://www.bbc.com/news/world/asia"
         },
         {
           "name": "AP News",
@@ -1675,12 +1679,101 @@
           }
         ],
         "leaders": [],
-        "organizations": [
-          {
-            "name": "Reuters",
-            "matched": "reuters"
-          }
+        "organizations": [],
+        "companies": [],
+        "actions": [
+          "conflict"
         ],
+        "domains": [
+          "geopolitics"
+        ],
+        "entity_count": 3,
+        "entity_density": 0.0545
+      },
+      "is_duplicate": false,
+      "duplicate_count": 0,
+      "scores": {
+        "velocity": 0.15,
+        "rarity": 0.6920629595699284,
+        "narrative": 0.2,
+        "quality": 0.65,
+        "density": 1.0,
+        "bridge": 0.35,
+        "temporal": 0.65,
+        "composite": 0.5025
+      },
+      "cognitive_type": "strategic",
+      "importance_score": 5.38,
+      "meta": {
+        "is_black_swan": true,
+        "black_swan_reason": "Unusual entity combination + high rarity + crisis signal",
+        "source_authority": 0.75
+      },
+      "_matched_arc_id": "da1cea47-0f36-442e-b809-fbdc288ed639",
+      "rank": 30,
+      "narrative_arc": {
+        "arc_id": "da1cea47-0f36-442e-b809-fbdc288ed639",
+        "arc_title": "Russian barrage hits Kyiv hours after Zelensky war...",
+        "day_number": 1,
+        "total_chapters": 36,
+        "importance_trend": "rising",
+        "previous_headlines": [
+          "Fuel from South Korea being shipped to Russia as Ukraine war grinds on",
+          "Ukraine says Russia bombed apartment block as birthday gift for Putin",
+          "Russia launches one of its biggest strikes on Ukraine, killing at least 21 civilians"
+        ]
+      },
+      "resonant_podcast": {
+        "id": "tp_XliQ1SthAbs",
+        "title": "WAR WORLD THREE",
+        "episode_title": "WAR WORLD THREE",
+        "podcast": "Bloomberg Originals",
+        "podcast_title": "Bloomberg Originals",
+        "link": "https://www.youtube.com/watch?v=XliQ1SthAbs",
+        "youtube_url": "https://www.youtube.com/watch?v=XliQ1SthAbs",
+        "relevance": 0.417,
+        "resonance_score": 0.417
+      }
+    },
+    {
+      "id": "bbc-world-2-946",
+      "title": "Royal Mail plans to cut 2,500 jobs",
+      "link": "https://www.bbc.co.uk/news/articles/cwvgdld13e3eo?at_medium=RSS&at_campaign=rss",
+      "description": "The postal service firm wants to cut head office and other non-frontline jobs by the end of 2027.",
+      "source": "BBC News",
+      "sourceLogo": "BBC",
+      "category": "World",
+      "region": "Global",
+      "pubDate": "Wed, 07 Oct 2026 12:25:46 GMT",
+      "imageUrl": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/f14c/live/dee1ef00-c235-11f1-be2f-0fbd447d6e43.jpg",
+      "annotation": {
+        "what": "The postal service firm wants to cut head office and other non-frontline jobs by the end of 2027.",
+        "why": "Key global development with wide-ranging impact across policy, industry, and public interest."
+      },
+      "readTime": "2 min read",
+      "relatedSources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com"
+        },
+        {
+          "name": "AP News",
+          "url": "https://apnews.com"
+        },
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com"
+        }
+      ],
+      "storyCluster": null,
+      "pairedStory": false,
+      "perspectives": [],
+      "noise_penalty": 0.0,
+      "noise_flags": [],
+      "entities": {
+        "countries": [],
+        "leaders": [],
+        "organizations": [],
         "companies": [],
         "actions": [
           "conflict"
@@ -2014,7 +2107,7 @@
         "exclusive_signal": "Only source covering this event",
         "source_authority": 0.6
       },
-      "rank": 21,
+      "rank": 32,
       "narrative_arc": {
         "arc_id": null,
         "arc_title": null,
@@ -5383,11 +5476,16 @@
       },
       "rank": 61,
       "narrative_arc": {
-        "arc_id": null,
-        "arc_title": null,
-        "day_number": 0,
-        "total_chapters": 0,
-        "importance_trend": null
+        "arc_id": "714de931-2618-4cb7-8924-3b7b513cbcc1",
+        "arc_title": "US says Europe should ready fuel supplies as Trump...",
+        "day_number": 6,
+        "total_chapters": 14,
+        "importance_trend": "rising",
+        "previous_headlines": [
+          "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+          "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+          "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU"
+        ]
       },
       "resonant_podcast": null
     },
@@ -5409,19 +5507,44 @@
       "readTime": "3 min read",
       "relatedSources": [
         {
-          "name": "The Guardian",
-          "url": "https://www.theguardian.com/world/europe-news"
-        },
-        {
           "name": "BBC Europe",
           "url": "https://www.bbc.com/news/world/europe"
+        },
+        {
+          "name": "The Guardian",
+          "url": "https://www.theguardian.com/world/europe-news"
         },
         {
           "name": "DW News",
           "url": "https://www.dw.com"
         }
       ],
-      "storyCluster": null,
+      "storyCluster": {
+        "size": 2,
+        "firstReported": {
+          "source": "France 24",
+          "pubDate": "Tue, 06 Oct 2026 22:51:48 GMT"
+        },
+        "sources": [
+          {
+            "source": "France 24",
+            "region": "Europe",
+            "title": "Trump says will speak with Putin over Russia's reported plague death",
+            "pubDate": "Tue, 06 Oct 2026 22:51:48 GMT"
+          },
+          {
+            "source": "BBC Europe",
+            "region": "Europe",
+            "title": "Trump to speak to Putin about plague lab worker's death in Russia",
+            "pubDate": "Wed, 07 Oct 2026 12:58:03 GMT"
+          }
+        ],
+        "headlineVariants": [
+          "Trump says will speak with Putin over Russia's reported plague death",
+          "Trump to speak to Putin about plague lab worker's death in Russia"
+        ],
+        "crossRegional": false
+      },
       "pairedStory": false,
       "perspectives": [],
       "noise_penalty": 0.0,
@@ -5465,11 +5588,16 @@
       },
       "rank": 62,
       "narrative_arc": {
-        "arc_id": null,
-        "arc_title": null,
-        "day_number": 0,
-        "total_chapters": 0,
-        "importance_trend": null
+        "arc_id": "48671d48-be32-4bfc-8d8f-7c22ba68b364",
+        "arc_title": "'We were naive' about Hamas, Israeli ex-hostage Sh...",
+        "day_number": 1,
+        "total_chapters": 47,
+        "importance_trend": "rising",
+        "previous_headlines": [
+          "Israeli papers commemorate October 7 attacks, three years on",
+          "Israel marks third anniversary of October 7 attack as election looms",
+          "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate"
+        ]
       },
       "resonant_podcast": null
     },
@@ -5512,11 +5640,10 @@
         "countries": [],
         "leaders": [],
         "organizations": [],
-        "companies": [
-          {
-            "name": "Amazon",
-            "matched": "amazon"
-          }
+        "companies": [],
+        "actions": [],
+        "domains": [
+          "governance"
         ],
         "actions": [
           "diplomacy"
@@ -5861,21 +5988,63 @@
       "readTime": "2 min read",
       "relatedSources": [
         {
-          "name": "NYT",
-          "url": "https://www.nytimes.com"
+          "name": "BBC Middle East",
+          "url": "https://www.bbc.com/news/world/middle_east"
         },
         {
-          "name": "The Guardian",
-          "url": "https://www.theguardian.com/world/asia-pacific"
-        },
-        {
-          "name": "BBC Asia",
-          "url": "https://www.bbc.com/news/world/asia"
+          "name": "France 24",
+          "url": "https://www.france24.com"
         }
       ],
-      "storyCluster": null,
-      "pairedStory": false,
-      "perspectives": [],
+      "storyCluster": {
+        "size": 2,
+        "firstReported": {
+          "source": "France 24",
+          "pubDate": "Wed, 07 Oct 2026 09:52:52 GMT"
+        },
+        "sources": [
+          {
+            "source": "France 24",
+            "region": "Europe",
+            "title": "Nobel Prize in Chemistry awarded to France's Henri Kagan, Japan's Kenso Soai",
+            "pubDate": "Wed, 07 Oct 2026 09:52:52 GMT"
+          },
+          {
+            "source": "Al Jazeera",
+            "region": "Middle East",
+            "title": "Henri Kagan, Kenso Soai win chemistry Nobel for ‘mirror image’ breakthrough",
+            "pubDate": "Wed, 07 Oct 2026 13:00:32 +0000"
+          }
+        ],
+        "headlineVariants": [
+          "Nobel Prize in Chemistry awarded to France's Henri Kagan, Japan's Kenso Soai",
+          "Henri Kagan, Kenso Soai win chemistry Nobel for ‘mirror image’ breakthrough"
+        ],
+        "crossRegional": true
+      },
+      "pairedStory": true,
+      "perspectives": [
+        {
+          "region": "Europe",
+          "source": "France 24",
+          "title": "Nobel Prize in Chemistry awarded to France's Henri Kagan, Japan's Kenso Soai",
+          "sourceLogo": "F24",
+          "annotation": {
+            "what": "Henri Kagan and Kenso Soai were jointly awarded the Nobel Prize in Chemistry for solving a 100-year-old chemical mystery, the Royal Swedish Academy of Scienc...",
+            "why": "Nobel Prize recipients receive a prize of 12 million Swedish kronor (about $1.2 million)."
+          }
+        },
+        {
+          "region": "Middle East",
+          "source": "Al Jazeera",
+          "title": "Henri Kagan, Kenso Soai win chemistry Nobel for ‘mirror image’ breakthrough",
+          "sourceLogo": "AJ",
+          "annotation": {
+            "what": "Scientists honoured for solving mystery of asymmetric molecules that has helped in manufacture of pharmaceuticals.",
+            "why": "Key global development with wide-ranging impact across policy, industry, and public interest."
+          }
+        }
+      ],
       "noise_penalty": 0.0,
       "noise_flags": [],
       "entities": {
@@ -5941,7 +6110,7 @@
         "what": "Constitute committee to ensure pharma firms don't indulge in unethical practices: SC to Centre",
         "why": "Key global development with wide-ranging impact across policy, industry, and public interest."
       },
-      "readTime": "3 min read",
+      "readTime": "2 min read",
       "relatedSources": [
         {
           "name": "Indian Express",
@@ -6765,7 +6934,7 @@
       "cognitive_type": "general",
       "importance_score": 4.07,
       "meta": {
-        "source_authority": 0.5
+        "source_authority": 0.6
       },
       "rank": 79,
       "narrative_arc": {
@@ -7398,8 +7567,8 @@
       "entities": {
         "countries": [
           {
-            "code": "US",
-            "name": "United States"
+            "code": "NZ",
+            "name": "New Zealand"
           }
         ],
         "leaders": [],
@@ -7408,7 +7577,7 @@
         "actions": [],
         "domains": [],
         "entity_count": 1,
-        "entity_density": 0.027
+        "entity_density": 0.0167
       },
       "is_duplicate": false,
       "duplicate_count": 0,
@@ -7475,16 +7644,11 @@
       "entities": {
         "countries": [
           {
-            "code": "IN",
-            "name": "India"
+            "code": "JP",
+            "name": "Japan"
           }
         ],
-        "leaders": [
-          {
-            "name": "Narendra Modi",
-            "matched": "narendra modi"
-          }
-        ],
+        "leaders": [],
         "organizations": [],
         "companies": [],
         "actions": [],
@@ -7581,7 +7745,7 @@
       "meta": {
         "source_authority": 0.5
       },
-      "rank": 89,
+      "rank": 112,
       "narrative_arc": {
         "arc_id": null,
         "arc_title": null,
@@ -8654,9 +8818,7 @@
         "organizations": [],
         "companies": [],
         "actions": [],
-        "domains": [
-          "governance"
-        ],
+        "domains": [],
         "entity_count": 0,
         "entity_density": 0.0
       },
@@ -9121,7 +9283,7 @@
         "composite": 0.3605
       },
       "cognitive_type": "technical",
-      "importance_score": 3.33,
+      "importance_score": 3.39,
       "meta": {
         "source_authority": 0.75
       },
@@ -9150,7 +9312,7 @@
         "what": "Getting in on the Prime Day action doesn’t have to result in an empty wallet.",
         "why": "Just as we found a couple handfuls of goodies that are under $25, there are plenty of deals during Amazon’s October sale that are $50 or less, many of which ..."
       },
-      "readTime": "2 min read",
+      "readTime": "3 min read",
       "relatedSources": [
         {
           "name": "NYT",

@@ -130,7 +130,17 @@ def enrich_entities(articles: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     for article in articles:
         title = article.get('title', '') or ''
         description = article.get('description', '') or ''
-        article['entities'] = extract_entities(title, description)
+        extracted = extract_entities(title, description)
+        if 'entities' in article and isinstance(article['entities'], dict):
+            merged = dict(article['entities'])
+            for k, v in extracted.items():
+                if k not in merged:
+                    merged[k] = v
+                elif isinstance(merged[k], list) and isinstance(v, list):
+                    merged[k] = merged[k] + [item for item in v if item not in merged[k]]
+            article['entities'] = merged
+        else:
+            article['entities'] = extracted
     return articles
 
 
@@ -167,15 +177,25 @@ def get_all_entities_set(entities: Dict[str, Any]) -> set:
     Flattens entity dict into a set of lowercased strings for overlap comparison.
     """
     all_ents = set()
-    if not entities:
+    if not entities or not isinstance(entities, dict):
         return all_ents
     for k, v in entities.items():
-        if isinstance(v, list):
-            all_ents.update([str(e).lower() for e in v])
+        if k in ('actions', 'domains', 'entity_count', 'entity_density', 'count', 'density'):
+            continue
+        if isinstance(v, (list, tuple, set)):
+            for e in v:
+                if isinstance(e, dict):
+                    val = e.get('name') or e.get('code') or e.get('matched') or e.get('text') or e.get('value')
+                    if val is not None and not isinstance(val, (dict, list, tuple, set)):
+                        all_ents.add(str(val).strip().lower())
+                elif e:
+                    all_ents.add(str(e).strip().lower())
+        elif isinstance(v, str):
+            all_ents.add(v.strip().lower())
     return all_ents
 
 
-def enhanced_dedup(articles: List[Dict[str, Any]], threshold: float = 0.35) -> List[Dict[str, Any]]:
+def enhanced_dedup(articles: List[Dict[str, Any]], threshold: float = 0.85) -> List[Dict[str, Any]]:
     """
     Deduplicates articles using Jaccard similarity on titles and entity signature overlap.
     """
@@ -201,13 +221,19 @@ def enhanced_dedup(articles: List[Dict[str, Any]], threshold: float = 0.35) -> L
             # 2. Check entity overlap
             rep_entities = get_all_entities_set(rep.get('entities', {}))
             entity_overlap_ratio = 0.0
+            intersection = set()
             if art_entities and rep_entities:
                 intersection = art_entities.intersection(rep_entities)
                 union = art_entities.union(rep_entities)
                 entity_overlap_ratio = len(intersection) / len(union)
                 
             is_dup_jaccard = (jaccard >= threshold)
-            is_dup_entity = (entity_overlap_ratio >= 0.8 and category == rep.get('category', '') and category != '')
+            is_dup_entity = (
+                entity_overlap_ratio >= 0.8 and 
+                len(intersection) >= 2 and 
+                category == rep.get('category', '') and 
+                category != ''
+            )
             
             if is_dup_jaccard or is_dup_entity:
                 cluster.append(article)
