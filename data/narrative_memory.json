@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-07T20:04:05.557346+00:00",
+    "last_updated": "2026-10-08T00:19:05.227215+00:00",
     "arcs": [
         {
             "arc_id": "6067c9d5-0e43-42a3-bcff-7a933376b859",
@@ -22,8 +22,8 @@
                 "Global"
             ],
             "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-07T20:04:05.536265+00:00",
-            "chapter_count": 23,
+            "last_seen": "2026-10-08T00:19:05.204415+00:00",
+            "chapter_count": 24,
             "chapter_titles": [
                 "Trump says US will help Russia after Siberia plague institute death - Reuters",
                 "Trump says US ready to aid Russia with plague outbreak in Siberia",
@@ -47,18 +47,323 @@
                 "Christa Pike 'angry and confused' about Tennessee's failed execution effort, lawyers say - Reuters",
                 "Trump administration plans to charge international students $70,000 for work authorization - Reuters",
                 "Trump says he'll fire advisers LaCivita, Blair 'if there's a conflict' - Reuters",
+                "Trump to speak to Putin about plague lab worker's death in Russia",
                 "Trump to speak to Putin about plague lab worker's death in Russia"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.7,
             "sources_involved": [
-                "BBC News",
+                "Al Jazeera",
                 "SCMP",
                 "France 24",
-                "Reuters",
-                "The Guardian",
                 "BBC Europe",
+                "Reuters",
+                "BBC News",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "5b745eea-fec4-44a4-b06a-b28637c6004d",
+            "title": "US closely monitoring case of lab worker who ‘poss...",
+            "keywords": [
+                "closely",
+                "monitoring",
+                "case",
+                "worker",
+                "‘possibly’",
+                "died",
+                "plague",
+                "siberia,",
+                "says",
+                "rubio"
+            ],
+            "entity_signature": "US:RU:WHO",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-05T22:07:16.056000+00:00",
+            "last_seen": "2026-10-08T00:19:05.204415+00:00",
+            "chapter_count": 11,
+            "chapter_titles": [
+                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
+                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
+                "US CDC says it’s ‘aware of and closely monitoring’ Russian plague case",
+                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
+                "Actress Eva Marie Saint, who won an Oscar for 'On the Waterfront,' dies at 102",
+                "Sebastian Maniscalco’s SiriusXM channel is hurting up-and-coming talent, comics say",
+                "Silicon Valley’s AI wunderkind launches Underdog, the most private Instinct/Muse competitor yet",
+                "CBI files closure report in Pocso court over death of 17-yr-old NEET aspirant in Bihar",
+                "Who will win the 2026 Nobel Prize in economics?",
+                "Ajmer jail in-charge arrested after 2 months for taking female inmates to clean flat",
+                "The WHO seeks more details on the death of a plague research lab employee in Russia"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Al Jazeera",
+                "NPR News",
+                "TechCrunch",
+                "The Verge",
+                "Hindustan Times",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "8a4e3cf5-b66e-4dab-a91e-a32196ddc15c",
+            "title": "'Time doesn't heal': Parents of October 7 attacks ...",
+            "keywords": [
+                "'time",
+                "doesn't",
+                "heal':",
+                "parents",
+                "october",
+                "attacks",
+                "victim",
+                "aner",
+                "shapira"
+            ],
+            "entity_signature": "IL:PS:FR:WHO",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-07T14:14:27.543907+00:00",
+            "last_seen": "2026-10-08T00:19:05.204415+00:00",
+            "chapter_count": 4,
+            "chapter_titles": [
+                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira",
+                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira",
+                "Christa Pike was nearly taken off life support before waking, lawyers say",
+                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24",
                 "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "bdca5029-0d4f-4394-a2b4-9cbe3186cd64",
+            "title": "How Netanyahu survived the political fallout from ...",
+            "keywords": [
+                "netanyahu",
+                "survived",
+                "political",
+                "fallout",
+                "from",
+                "october",
+                "attacks"
+            ],
+            "entity_signature": "PS:IL:Benjamin Netanyahu",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-07T06:52:47.305533+00:00",
+            "last_seen": "2026-10-08T00:19:05.204415+00:00",
+            "chapter_count": 4,
+            "chapter_titles": [
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "No longer the same Israel? October 7th and the future of the Jewish State"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "d41a85fe-bfb1-4a29-8f24-2edcc54923a1",
+            "title": "Mozilla says Microsoft still steers Windows users ...",
+            "keywords": [
+                "mozilla",
+                "says",
+                "microsoft",
+                "still",
+                "steers",
+                "windows",
+                "users",
+                "towards",
+                "edge,",
+                "except"
+            ],
+            "entity_signature": "EU:IN:US",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-07T14:14:27.543907+00:00",
+            "last_seen": "2026-10-08T00:19:05.204415+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "3a5f99fa-ae88-4229-acd4-031db4f5e474",
+            "title": "EXCLUSIVE: Cuba and US maintain 'channels of commu...",
+            "keywords": [
+                "exclusive:",
+                "cuba",
+                "maintain",
+                "'channels",
+                "communication'",
+                "negotiations,",
+                "diplomat",
+                "says",
+                "reuters"
+            ],
+            "entity_signature": "CU:US:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-06T02:24:11.640373+00:00",
+            "last_seen": "2026-10-08T00:19:05.204415+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "EXCLUSIVE: Cuba and US maintain 'channels of communication' but no negotiations, diplomat says - Reuters",
+                "US seizes $3 million in fuel shipments to Cuba as crackdown continues - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "1d0985cd-2704-4703-9bd5-0cdc729145a8",
+            "title": "Trump says he deserves Nobel Peace Prize but has d...",
+            "keywords": [
+                "trump",
+                "says",
+                "deserves",
+                "nobel",
+                "peace",
+                "prize",
+                "doubts",
+                "will"
+            ],
+            "entity_signature": "US:IR:UA:Donald Trump:WHO",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-08T00:19:05.204415+00:00",
+            "last_seen": "2026-10-08T00:19:05.204415+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump says he deserves Nobel Peace Prize but has doubts he will get it"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "0bea7c25-0a8b-488c-83c7-d9a9aca714f5",
+            "title": "Venezuela's Maduro to face new US charges over all...",
+            "keywords": [
+                "venezuela's",
+                "maduro",
+                "face",
+                "charges",
+                "over",
+                "alleged",
+                "torture",
+                "americans,",
+                "official",
+                "says"
+            ],
+            "entity_signature": "VE:US:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-08T00:19:05.204415+00:00",
+            "last_seen": "2026-10-08T00:19:05.204415+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Venezuela's Maduro to face new US charges over alleged torture of Americans, official says - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "5e033798-4df2-4364-ae62-063e0d32778c",
+            "title": "‘China already has spies’ at US AI labs, former An...",
+            "keywords": [
+                "‘china",
+                "already",
+                "spies’",
+                "labs,",
+                "former",
+                "anthropic",
+                "researcher",
+                "warns"
+            ],
+            "entity_signature": "CN:US",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-08T00:19:05.204415+00:00",
+            "last_seen": "2026-10-08T00:19:05.204415+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "‘China already has spies’ at US AI labs, former Anthropic researcher warns"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "6a08522c-b012-4bc4-b200-83974377870c",
+            "title": "WHO says it does not have ‘full picture’ from Russ...",
+            "keywords": [
+                "says",
+                "does",
+                "have",
+                "‘full",
+                "picture’",
+                "from",
+                "russia",
+                "following",
+                "suspected",
+                "plague"
+            ],
+            "entity_signature": "RU:WHO:UN",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-08T00:19:05.204415+00:00",
+            "last_seen": "2026-10-08T00:19:05.204415+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "WHO says it does not have ‘full picture’ from Russia following suspected plague death"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
             ]
         },
         {
@@ -91,148 +396,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "8a4e3cf5-b66e-4dab-a91e-a32196ddc15c",
-            "title": "'Time doesn't heal': Parents of October 7 attacks ...",
-            "keywords": [
-                "'time",
-                "doesn't",
-                "heal':",
-                "parents",
-                "october",
-                "attacks",
-                "victim",
-                "aner",
-                "shapira"
-            ],
-            "entity_signature": "IL:PS:FR:WHO",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-07T14:14:27.543907+00:00",
-            "last_seen": "2026-10-07T20:04:05.536265+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira",
-                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "d41a85fe-bfb1-4a29-8f24-2edcc54923a1",
-            "title": "Mozilla says Microsoft still steers Windows users ...",
-            "keywords": [
-                "mozilla",
-                "says",
-                "microsoft",
-                "still",
-                "steers",
-                "windows",
-                "users",
-                "towards",
-                "edge,",
-                "except"
-            ],
-            "entity_signature": "EU:IN:US",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-07T14:14:27.543907+00:00",
-            "last_seen": "2026-10-07T20:04:05.536265+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "5b745eea-fec4-44a4-b06a-b28637c6004d",
-            "title": "US closely monitoring case of lab worker who ‘poss...",
-            "keywords": [
-                "closely",
-                "monitoring",
-                "case",
-                "worker",
-                "‘possibly’",
-                "died",
-                "plague",
-                "siberia,",
-                "says",
-                "rubio"
-            ],
-            "entity_signature": "US:RU:WHO",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-07T14:14:27.543907+00:00",
-            "chapter_count": 10,
-            "chapter_titles": [
-                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
-                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
-                "US CDC says it’s ‘aware of and closely monitoring’ Russian plague case",
-                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
-                "Actress Eva Marie Saint, who won an Oscar for 'On the Waterfront,' dies at 102",
-                "Sebastian Maniscalco’s SiriusXM channel is hurting up-and-coming talent, comics say",
-                "Silicon Valley’s AI wunderkind launches Underdog, the most private Instinct/Muse competitor yet",
-                "CBI files closure report in Pocso court over death of 17-yr-old NEET aspirant in Bihar",
-                "Who will win the 2026 Nobel Prize in economics?",
-                "Ajmer jail in-charge arrested after 2 months for taking female inmates to clean flat"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Al Jazeera",
-                "The Verge",
-                "Hindustan Times",
-                "NPR News",
-                "The Guardian",
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "bdca5029-0d4f-4394-a2b4-9cbe3186cd64",
-            "title": "How Netanyahu survived the political fallout from ...",
-            "keywords": [
-                "netanyahu",
-                "survived",
-                "political",
-                "fallout",
-                "from",
-                "october",
-                "attacks"
-            ],
-            "entity_signature": "PS:IL:Benjamin Netanyahu",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-07T06:52:47.305533+00:00",
-            "last_seen": "2026-10-07T14:14:27.543907+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "How Netanyahu survived the political fallout from the October 7 attacks"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
             ]
         },
         {
@@ -695,37 +858,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "3a5f99fa-ae88-4229-acd4-031db4f5e474",
-            "title": "EXCLUSIVE: Cuba and US maintain 'channels of commu...",
-            "keywords": [
-                "exclusive:",
-                "cuba",
-                "maintain",
-                "'channels",
-                "communication'",
-                "negotiations,",
-                "diplomat",
-                "says",
-                "reuters"
-            ],
-            "entity_signature": "CU:US:Reuters",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-06T02:24:11.640373+00:00",
-            "last_seen": "2026-10-06T02:24:11.640373+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "EXCLUSIVE: Cuba and US maintain 'channels of communication' but no negotiations, diplomat says - Reuters"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Reuters"
             ]
         },
         {
