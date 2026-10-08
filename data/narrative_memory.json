@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-08T00:19:05.227215+00:00",
+    "last_updated": "2026-10-08T06:28:37.739810+00:00",
     "arcs": [
         {
             "arc_id": "6067c9d5-0e43-42a3-bcff-7a933376b859",
@@ -22,8 +22,8 @@
                 "Global"
             ],
             "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-08T00:19:05.204415+00:00",
-            "chapter_count": 24,
+            "last_seen": "2026-10-08T06:28:37.715857+00:00",
+            "chapter_count": 26,
             "chapter_titles": [
                 "Trump says US will help Russia after Siberia plague institute death - Reuters",
                 "Trump says US ready to aid Russia with plague outbreak in Siberia",
@@ -48,17 +48,19 @@
                 "Trump administration plans to charge international students $70,000 for work authorization - Reuters",
                 "Trump says he'll fire advisers LaCivita, Blair 'if there's a conflict' - Reuters",
                 "Trump to speak to Putin about plague lab worker's death in Russia",
+                "Trump to speak to Putin about plague lab worker's death in Russia",
+                "Hormuz transits at lowest in over two months after attacks, data shows - Reuters",
                 "Trump to speak to Putin about plague lab worker's death in Russia"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.7,
             "sources_involved": [
-                "Al Jazeera",
                 "SCMP",
                 "France 24",
-                "BBC Europe",
-                "Reuters",
                 "BBC News",
+                "Reuters",
+                "Al Jazeera",
+                "BBC Europe",
                 "The Guardian"
             ]
         },
@@ -83,8 +85,8 @@
                 "Europe"
             ],
             "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-08T00:19:05.204415+00:00",
-            "chapter_count": 11,
+            "last_seen": "2026-10-08T06:28:37.715857+00:00",
+            "chapter_count": 13,
             "chapter_titles": [
                 "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
                 "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
@@ -96,17 +98,186 @@
                 "CBI files closure report in Pocso court over death of 17-yr-old NEET aspirant in Bihar",
                 "Who will win the 2026 Nobel Prize in economics?",
                 "Ajmer jail in-charge arrested after 2 months for taking female inmates to clean flat",
+                "The WHO seeks more details on the death of a plague research lab employee in Russia",
+                "Sardinian village where more women reach 100 may be new centenarian ‘blue zone’",
                 "The WHO seeks more details on the death of a plague research lab employee in Russia"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
             "sources_involved": [
-                "Al Jazeera",
                 "NPR News",
-                "TechCrunch",
-                "The Verge",
                 "Hindustan Times",
+                "The Verge",
+                "TechCrunch",
+                "Al Jazeera",
                 "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "bdca5029-0d4f-4394-a2b4-9cbe3186cd64",
+            "title": "How Netanyahu survived the political fallout from ...",
+            "keywords": [
+                "netanyahu",
+                "survived",
+                "political",
+                "fallout",
+                "from",
+                "october",
+                "attacks"
+            ],
+            "entity_signature": "PS:IL:Benjamin Netanyahu",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-07T06:52:47.305533+00:00",
+            "last_seen": "2026-10-08T06:28:37.715857+00:00",
+            "chapter_count": 5,
+            "chapter_titles": [
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "No longer the same Israel? October 7th and the future of the Jewish State",
+                "No longer the same Israel? October 7th and the future of the Jewish State"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "d41a85fe-bfb1-4a29-8f24-2edcc54923a1",
+            "title": "Mozilla says Microsoft still steers Windows users ...",
+            "keywords": [
+                "mozilla",
+                "says",
+                "microsoft",
+                "still",
+                "steers",
+                "windows",
+                "users",
+                "towards",
+                "edge,",
+                "except"
+            ],
+            "entity_signature": "EU:IN:US",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-07T14:14:27.543907+00:00",
+            "last_seen": "2026-10-08T06:28:37.715857+00:00",
+            "chapter_count": 4,
+            "chapter_titles": [
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "33d7734d-1dee-40f2-affb-a02326cbbc9c",
+            "title": "Israel-bound flight diverted to Saudi Arabia after...",
+            "keywords": [
+                "israel-bound",
+                "flight",
+                "diverted",
+                "saudi",
+                "arabia",
+                "after",
+                "brawl",
+                "between",
+                "pilots,",
+                "israeli"
+            ],
+            "entity_signature": "IL:SA:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-09-30T10:38:58.447319+00:00",
+            "last_seen": "2026-10-08T06:28:37.715857+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Israel-bound flight diverted to Saudi Arabia after brawl between pilots, Israeli official says - Reuters",
+                "Asia shares weaker, oil up as investors weigh Saudi-Houthi escalation - Reuters",
+                "Yemen's Houthis say they attacked Riyadh airport with ballistic missile - Reuters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "6a08522c-b012-4bc4-b200-83974377870c",
+            "title": "WHO says it does not have ‘full picture’ from Russ...",
+            "keywords": [
+                "says",
+                "does",
+                "have",
+                "‘full",
+                "picture’",
+                "from",
+                "russia",
+                "following",
+                "suspected",
+                "plague"
+            ],
+            "entity_signature": "RU:WHO:UN",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-08T00:19:05.204415+00:00",
+            "last_seen": "2026-10-08T06:28:37.715857+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "WHO says it does not have ‘full picture’ from Russia following suspected plague death",
+                "WHO says it does not have ‘full picture’ from Russia following suspected plague death"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "5d04a700-d862-42a8-b230-b0b1fe2ce373",
+            "title": "North Korea decries medical aid, says ‘nothing to ...",
+            "keywords": [
+                "north",
+                "korea",
+                "decries",
+                "medical",
+                "aid,",
+                "says",
+                "‘nothing",
+                "give",
+                "receive’",
+                "from"
+            ],
+            "entity_signature": "KP:KR:Kim Jong Un:UN",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-08T06:28:37.715857+00:00",
+            "last_seen": "2026-10-08T06:28:37.715857+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "North Korea decries medical aid, says ‘nothing to give or receive’ from Seoul"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
             ]
         },
         {
@@ -142,72 +313,6 @@
             "sources_involved": [
                 "France 24",
                 "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "bdca5029-0d4f-4394-a2b4-9cbe3186cd64",
-            "title": "How Netanyahu survived the political fallout from ...",
-            "keywords": [
-                "netanyahu",
-                "survived",
-                "political",
-                "fallout",
-                "from",
-                "october",
-                "attacks"
-            ],
-            "entity_signature": "PS:IL:Benjamin Netanyahu",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-07T06:52:47.305533+00:00",
-            "last_seen": "2026-10-08T00:19:05.204415+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "No longer the same Israel? October 7th and the future of the Jewish State"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "d41a85fe-bfb1-4a29-8f24-2edcc54923a1",
-            "title": "Mozilla says Microsoft still steers Windows users ...",
-            "keywords": [
-                "mozilla",
-                "says",
-                "microsoft",
-                "still",
-                "steers",
-                "windows",
-                "users",
-                "towards",
-                "edge,",
-                "except"
-            ],
-            "entity_signature": "EU:IN:US",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-07T14:14:27.543907+00:00",
-            "last_seen": "2026-10-08T00:19:05.204415+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
             ]
         },
         {
@@ -332,38 +437,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "6a08522c-b012-4bc4-b200-83974377870c",
-            "title": "WHO says it does not have ‘full picture’ from Russ...",
-            "keywords": [
-                "says",
-                "does",
-                "have",
-                "‘full",
-                "picture’",
-                "from",
-                "russia",
-                "following",
-                "suspected",
-                "plague"
-            ],
-            "entity_signature": "RU:WHO:UN",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-08T00:19:05.204415+00:00",
-            "last_seen": "2026-10-08T00:19:05.204415+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "WHO says it does not have ‘full picture’ from Russia following suspected plague death"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
             ]
         },
         {
@@ -596,39 +669,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "33d7734d-1dee-40f2-affb-a02326cbbc9c",
-            "title": "Israel-bound flight diverted to Saudi Arabia after...",
-            "keywords": [
-                "israel-bound",
-                "flight",
-                "diverted",
-                "saudi",
-                "arabia",
-                "after",
-                "brawl",
-                "between",
-                "pilots,",
-                "israeli"
-            ],
-            "entity_signature": "IL:SA:Reuters",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-09-30T10:38:58.447319+00:00",
-            "last_seen": "2026-10-07T07:14:34.612024+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Israel-bound flight diverted to Saudi Arabia after brawl between pilots, Israeli official says - Reuters",
-                "Asia shares weaker, oil up as investors weigh Saudi-Houthi escalation - Reuters"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.7,
-            "sources_involved": [
-                "Reuters"
             ]
         },
         {
