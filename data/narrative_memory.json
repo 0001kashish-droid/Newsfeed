@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-09T19:17:05.848708+00:00",
+    "last_updated": "2026-10-09T23:24:27.617403+00:00",
     "arcs": [
         {
             "arc_id": "00d4e7ae-12eb-4f1a-bdce-b37b56f95aed",
@@ -22,8 +22,8 @@
                 "Global"
             ],
             "first_seen": "2026-10-03T06:04:20.384092+00:00",
-            "last_seen": "2026-10-09T19:17:05.829054+00:00",
-            "chapter_count": 93,
+            "last_seen": "2026-10-09T23:24:27.587222+00:00",
+            "chapter_count": 99,
             "chapter_titles": [
                 "Apple says it will flag AI requests for Mac data after Meta's Muse draws complaints - Reuters",
                 "Morning Bid: Who's the boss? - Reuters",
@@ -117,13 +117,19 @@
                 "Katie Zacharia picked as White House press secretary - Reuters",
                 "UAE says Omani flydubai co-pilot planned suicide attack on Tel Aviv flight - Reuters",
                 "Tornado hits Sicilian towns following summer heat-wave - Reuters",
-                "Trump to issue directive on diesel, sources say, after he promises 'big announcement' - Reuters"
+                "Trump to issue directive on diesel, sources say, after he promises 'big announcement' - Reuters",
+                "Zelenskiy says letting Russia sell diesel to US is 'investment in war' - Reuters",
+                "EXCLUSIVE: Erik Prince's forces suffer battlefield loss in Congo, former UFC fighter among wounded, sources say - Reuters",
+                "Anthropic AI model submits false homicide tip to Philadelphia police website - Reuters",
+                "Trump says Russia to immediately supply 300,000 tons of diesel fuel - Reuters",
+                "Strong Panama quake shakes nation, but avoids major destruction - Reuters",
+                "Trump selects Katie Zacharia as White House press secretary - Reuters"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
             "sources_involved": [
-                "Reuters",
-                "The Verge"
+                "The Verge",
+                "Reuters"
             ]
         },
         {
@@ -146,8 +152,8 @@
                 "Middle East"
             ],
             "first_seen": "2026-10-06T16:07:34.654926+00:00",
-            "last_seen": "2026-10-09T19:17:05.829054+00:00",
-            "chapter_count": 76,
+            "last_seen": "2026-10-09T23:24:27.587222+00:00",
+            "chapter_count": 83,
             "chapter_titles": [
                 "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
                 "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
@@ -224,16 +230,769 @@
                 "Israel Denounces the Decision to Award the Nobel Peace Prize to Navi Pillay",
                 "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
                 "Human Rights Lawyer Navi Pillay Is Awarded Nobel Peace Prize",
-                "Palestinian Authority Says Elections Are to Be Postponed"
+                "Palestinian Authority Says Elections Are to Be Postponed",
+                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
+                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
+                "Human Rights Lawyer Navi Pillay Is Awarded Nobel Peace Prize",
+                "Palestinian Authority Says Elections Are to Be Postponed",
+                "Israel Denounces the Decision to Award the Nobel Peace Prize to Navi Pillay"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
             "sources_involved": [
-                "BBC Middle East",
-                "NPR News",
                 "New York Times",
                 "BBC News",
+                "BBC Middle East",
+                "Al Jazeera",
+                "NPR News",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "da1cea47-0f36-442e-b809-fbdc288ed639",
+            "title": "Russian barrage hits Kyiv hours after Zelensky war...",
+            "keywords": [
+                "russian",
+                "barrage",
+                "hits",
+                "kyiv",
+                "hours",
+                "after",
+                "zelensky",
+                "warns",
+                "impending",
+                "attack"
+            ],
+            "entity_signature": "RU:UA:Volodymyr Zelenskyy",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-07T06:52:47.305533+00:00",
+            "last_seen": "2026-10-09T23:24:27.587222+00:00",
+            "chapter_count": 53,
+            "chapter_titles": [
+                "Russian barrage hits Kyiv hours after Zelensky warns of impending attack",
+                "Russian barrage hits Kyiv hours after Zelensky warns of impending attack",
+                "Russian barrage hits Kyiv hours after Zelensky warns of impending attack",
+                "At least two killed in fire caused by 'massive strikes' on Kyiv",
+                "Russian barrage hits Kyiv hours after Zelensky warns of impending attack",
+                "Russia launches one of its biggest strikes on Ukraine, killing at least 11",
+                "Russian barrage hits Kyiv hours after Zelensky warns of impending attack",
+                "Russia launches one of its biggest strikes on Ukraine, killing at least 11",
+                "Zelensky condemns 'vile' large-scale Russian attacks that killed 20",
+                "Russia launches one of its biggest strikes on Ukraine, killing at least 21 civilians",
+                "Ukraine says Russia bombed apartment block as birthday gift for Putin",
+                "Fuel from South Korea being shipped to Russia as Ukraine war grinds on",
+                "Zelensky condemns 'vile' large-scale Russian attacks that killed 20",
+                "Russia launches one of its biggest strikes on Ukraine, killing at least 21 civilians",
+                "Ukraine says Russia bombed apartment block as birthday gift for Putin",
+                "Ukraine Claws Back Land in the Donbas, Thwarting a Russian Push",
+                "Fuel from South Korea being shipped to Russia as Ukraine war grinds on",
+                "Zelensky condemns 'vile' large-scale Russian attacks that killed 20",
+                "Russia launches one of its biggest strikes on Ukraine, killing at least 21 civilians",
+                "Ukraine says Russia bombed apartment block as birthday gift for Putin",
+                "Ukraine Claws Back Land in the Donbas, Thwarting a Russian Push",
+                "Fuel from South Korea being shipped to Russia as Ukraine war grinds on",
+                "Zelensky condemns 'vile' large-scale Russian attacks that killed 20",
+                "Russia launches one of its biggest strikes on Ukraine, killing at least 21 civilians",
+                "Ukraine says Russia bombed apartment block as birthday gift for Putin",
+                "Ukraine Claws Back Land in the Donbas, Thwarting a Russian Push",
+                "Ukraine Claws Back Land in the Donbas, Thwarting a Russian Push",
+                "Zelensky condemns 'vile' large-scale Russian attacks that killed 20",
+                "Fuel from South Korea being shipped to Russia as Ukraine war grinds on",
+                "Ukraine says Russia bombed apartment block as birthday gift for Putin",
+                "Russia launches one of its biggest strikes on Ukraine, killing at least 21 civilians",
+                "Ukraine Claws Back Land in the Donbas, Thwarting a Russian Push",
+                "Zelensky condemns 'vile' large-scale Russian attacks that killed 20",
+                "Fuel from South Korea being shipped to Russia as Ukraine war grinds on",
+                "Ukraine says Russia bombed apartment block as birthday gift for Putin",
+                "Russia launches one of its biggest strikes on Ukraine, killing at least 21 civilians",
+                "Children killed while they slept as Russian missile kills 22 in block of flats",
+                "Russian strike on buses kills at least 30, say officials, as deadly attacks on Ukraine surge",
+                "Russian attack on bus kills at least 30 people near Ukraine frontline",
+                "Strike on Ukrainian public bus leaves 30 dead as blackouts worsen in Kyiv",
+                "Russian strike on buses kills at least 30, say officials, as deadly attacks on Ukraine surge",
+                "Russian attack on bus kills at least 30 people near Ukraine frontline",
+                "Russian strike on buses kills at least 30, say officials, as deadly attacks on Ukraine surge",
+                "Russian attack on bus kills at least 30 people near Ukraine frontline",
+                "Russian strike on buses kills at least 30, say officials, as deadly attacks on Ukraine surge",
+                "Russian attack on bus kills at least 30 people near Ukraine frontline",
+                "Russian strikes and approaching winter force some in Kyiv to pack bags and flee",
+                "Russian search engine Yandex struggles after Ukrainian strikes on data centres",
+                "Russian strikes and approaching winter force some in Kyiv to pack bags and flee",
+                "Lawsuits blame Fox News for deaths of journalists in Ukraine",
+                "Trump announces deal for Russian diesel as Zelensky criticises 'gift to Putin'",
+                "Russian search engine Yandex struggles after Ukrainian strikes on data centres",
+                "Russian strikes and approaching winter force some in Kyiv to pack bags and flee"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times",
+                "The Guardian",
+                "BBC Europe",
+                "SCMP",
+                "BBC News",
+                "NPR News",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "714de931-2618-4cb7-8924-3b7b513cbcc1",
+            "title": "US says Europe should ready fuel supplies as Trump...",
+            "keywords": [
+                "says",
+                "europe",
+                "should",
+                "ready",
+                "fuel",
+                "supplies",
+                "trump",
+                "threatens",
+                "diesel"
+            ],
+            "entity_signature": "US:EU:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-01T23:42:32.336918+00:00",
+            "last_seen": "2026-10-09T23:24:27.587222+00:00",
+            "chapter_count": 32,
+            "chapter_titles": [
+                "US says Europe should ready fuel supplies as Trump threatens diesel ban",
+                "US says Europe should ready fuel supplies as Trump threatens diesel ban",
+                "US presses Europe to release 'immediately' diesel reserves as Trump threatens export ban",
+                "US pressures Europe over diesel reserves as Trump threatens export ban",
+                "US presses Europe to release diesel reserves 'immediately' as Trump threatens export ban",
+                "Europe agrees to release stocked diesel oil, Trump says - Reuters",
+                "US presses Europe to release diesel reserves 'immediately' as Trump threatens export ban",
+                "Trump says Europe agreed to release ‘massive amount’ of diesel reserves",
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+                "Germany is right to rearm. But Europe has well-founded fears about that | Paul Taylor",
+                "Burnham committed to deeper EU cooperation, he tells Merz – Europe live",
+                "Germany is right to rearm. But Europe has well-founded fears about that | Paul Taylor",
+                "Germany is right to rearm. But Europe has well-founded fears about that | Paul Taylor",
+                "Trump envoys, European officials to discuss ‘new ideas’ for Ukraine peace in Miami",
+                "Germany is right to rearm. But Europe has well-founded fears about that | Paul Taylor",
+                "Trump envoys, European officials to discuss ‘new ideas’ for Ukraine peace in Miami",
+                "Germany is right to rearm. But Europe has well-founded fears about that | Paul Taylor",
+                "Trump envoys, European officials to discuss ‘new ideas’ for Ukraine peace in Miami",
+                "Why American investors love European defense startups",
+                "US slaps sanctions on ICC, hours after ex-judge wins Nobel",
+                "International Criminal Court faces 'test of resilience' as US imposes sweeping sanctions",
+                "Trump Sends Obamacare ‘Refund’ Checks Ahead of Midterm Elections",
+                "Why American investors love European defense startups",
+                "Trump picks Truth Social’s Katie Zacharia as White House press secretary",
+                "International Criminal Court faces 'test of resilience' as US imposes sweeping sanctions",
+                "US judge rules Trump administration’s use of voter data unlawful",
+                "Trump Sends Obamacare ‘Refund’ Checks Ahead of Midterm Elections"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "The Guardian",
+                "Reuters",
+                "NYT Business",
+                "SCMP",
+                "HT Business",
+                "BBC Business",
+                "BBC News",
+                "Al Jazeera",
+                "NPR News",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "6067c9d5-0e43-42a3-bcff-7a933376b859",
+            "title": "Trump says US will help Russia after Siberia plagu...",
+            "keywords": [
+                "trump",
+                "says",
+                "will",
+                "help",
+                "russia",
+                "after",
+                "siberia",
+                "plague",
+                "institute",
+                "death"
+            ],
+            "entity_signature": "US:RU:Donald Trump:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-05T22:07:16.056000+00:00",
+            "last_seen": "2026-10-09T23:24:27.587222+00:00",
+            "chapter_count": 28,
+            "chapter_titles": [
+                "Trump says US will help Russia after Siberia plague institute death - Reuters",
+                "Trump says US ready to aid Russia with plague outbreak in Siberia",
+                "Trump says US will help Russia after Siberia plague institute death - Reuters",
+                "US 'watching closely' after plague researcher dies in Russia",
+                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
+                "US 'watching closely' after plague researcher dies in Russia",
+                "Watch: How Russia responded to US after plague researcher death",
+                "US 'watching closely' after plague researcher dies in Russia",
+                "Trump says he will speak to Putin over reported plague death in Russia",
+                "Trump says will speak to Putin on plague, after death of Russian lab tech",
+                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
+                "US 'watching closely' after plague researcher dies in Russia",
+                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
+                "Trump says will speak with Putin over Russia's reported plague death",
+                "Gold slips as dollar gains; investors await Fed minutes for rate clues - Reuters",
+                "Trump says will speak with Putin over Russia's reported plague death",
+                "Fed minutes could detail rate-hike decision, policy path - Reuters",
+                "Trump to speak to Putin about plague lab worker's death in Russia",
+                "Trump says will speak with Putin over Russia's reported plague death",
+                "Christa Pike 'angry and confused' about Tennessee's failed execution effort, lawyers say - Reuters",
+                "Trump administration plans to charge international students $70,000 for work authorization - Reuters",
+                "Trump says he'll fire advisers LaCivita, Blair 'if there's a conflict' - Reuters",
+                "Trump to speak to Putin about plague lab worker's death in Russia",
+                "Trump to speak to Putin about plague lab worker's death in Russia",
+                "Hormuz transits at lowest in over two months after attacks, data shows - Reuters",
+                "Trump to speak to Putin about plague lab worker's death in Russia",
+                "Analysis: Trump's shock Russia deal highlights mounting pressure to curb fuel prices",
+                "Trump announces major diesel deal with Russia ahead of US midterm elections next month"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7,
+            "sources_involved": [
+                "The Guardian",
+                "Reuters",
+                "SCMP",
+                "BBC Europe",
+                "BBC News",
+                "Al Jazeera",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "3a25593b-15c5-43bd-bfb5-584e59165c2f",
+            "title": "Trump says Iran could ‘take out’ Los Angeles or Sa...",
+            "keywords": [
+                "trump",
+                "says",
+                "iran",
+                "could",
+                "‘take",
+                "out’",
+                "angeles",
+                "diego,",
+                "drawing",
+                "backlash"
+            ],
+            "entity_signature": "IR:US:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-06T21:06:50.560476+00:00",
+            "last_seen": "2026-10-09T23:24:27.587222+00:00",
+            "chapter_count": 27,
+            "chapter_titles": [
+                "Trump says Iran could ‘take out’ Los Angeles or San Diego, drawing backlash",
+                "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders",
+                "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders",
+                "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders",
+                "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders",
+                "How Trump’s Tariff War With Canada Ensnared the Can-Am Spyder",
+                "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders",
+                "How Trump’s Tariff War With Canada Ensnared the Can-Am Spyder",
+                "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders",
+                "How Trump’s Tariff War With Canada Ensnared the Can-Am Spyder",
+                "How a Small Business Got Entangled in U.S. Sanctions on Iranian Oil",
+                "White House defends Trump comment to let Iran 'take out' LA and San Diego",
+                "How a Small Business Got Entangled in U.S. Sanctions on Iranian Oil",
+                "White House defends Trump comment to let Iran 'take out' LA and San Diego",
+                "How a Small Business Got Entangled in U.S. Sanctions on Iranian Oil",
+                "White House defends Trump comment to let Iran 'take out' LA and San Diego",
+                "How a Small Business Got Entangled in U.S. Sanctions on Iranian Oil",
+                "White House defends Trump comment to let Iran 'take out' LA and San Diego",
+                "How a Small Business Got Entangled in U.S. Sanctions on Iranian Oil",
+                "White House defends Trump comment to let Iran 'take out' LA and San Diego",
+                "How a Small Business Got Entangled in U.S. Sanctions on Iranian Oil",
+                "White House defends Trump comment to let Iran 'take out' LA and San Diego",
+                "Trump says US will not attack Iran before November’s midterm elections",
+                "Trump says U.S. won't attack Iran before midterms. And, ICE agent shoots man in NYC",
+                "Trump says U.S. won't attack Iran before midterms. And, ICE agent shoots man in NYC",
+                "Trump says Iran war will be ‘over soon’, claims US stopped Tehran from getting nuclear weapon",
+                "Trump says Iran war will be ‘over soon’, claims US stopped Tehran from getting nuclear weapon"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "New York Times",
+                "Hindustan Times",
+                "NYT Business",
+                "SCMP",
+                "BBC Middle East",
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "2ee304c7-2f52-473f-a5f3-3097baf5eb8b",
+            "title": "Russian dissident Garry Kasparov says US warned hi...",
+            "keywords": [
+                "russian",
+                "dissident",
+                "garry",
+                "kasparov",
+                "says",
+                "warned",
+                "danger",
+                "life"
+            ],
+            "entity_signature": "RU:US:Vladimir Putin",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-01T19:41:52.469182+00:00",
+            "last_seen": "2026-10-09T23:24:27.587222+00:00",
+            "chapter_count": 20,
+            "chapter_titles": [
+                "Russian dissident Garry Kasparov says US warned him of danger to his life",
+                "Russian dissident Garry Kasparov says US warned him of danger to his life",
+                "Russian dissident Garry Kasparov says US warned him of danger to his life",
+                "Russian dissident Garry Kasparov says US warned him of danger to his life",
+                "Politkovskaya 'predicted' Russia's turn under Putin, editor says on 20th anniversary of her death",
+                "Trump to speak to Putin about plague lab worker's death in Russia",
+                "Politkovskaya 'predicted' Russia's turn under Putin, editor says on 20th anniversary of her death",
+                "Trump to speak to Putin about plague lab worker's death in Russia",
+                "Politkovskaya 'predicted' Russia's turn under Putin, editor says on 20th anniversary of her death",
+                "Trump to speak to Putin about plague lab worker's death in Russia",
+                "Politkovskaya 'predicted' Russia's turn under Putin, editor says on 20th anniversary of her death",
+                "Trump to speak to Putin about plague lab worker's death in Russia",
+                "Trump to speak to Putin about plague lab worker's death in Russia",
+                "Politkovskaya 'predicted' Russia's turn under Putin, editor says on 20th anniversary of her death",
+                "Trump to speak to Putin about plague lab worker's death in Russia",
+                "Politkovskaya 'predicted' Russia's turn under Putin, editor says on 20th anniversary of her death",
+                "Politkovskaya 'predicted' Russia's turn under Putin, editor says on 20th anniversary of her death",
+                "Putin pledges Russia’s support to end US-led war on Iran",
+                "Trump strikes diesel deal with Putin, reversing years of pressure on Russia over Ukraine war",
+                "Trump says U.S. to get diesel from Russia, relaxing pressure on Moscow to ease prices before midterms"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe",
+                "NPR News",
                 "France 24",
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "4282e364-6446-443e-8105-4ad7a352bff1",
+            "title": "Houthis claim attacks on Riyadh airport as Saudi-l...",
+            "keywords": [
+                "houthis",
+                "claim",
+                "attacks",
+                "riyadh",
+                "airport",
+                "saudi-led",
+                "forces",
+                "strike",
+                "yemen"
+            ],
+            "entity_signature": "SA:IR:PK",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-06T02:24:11.640373+00:00",
+            "last_seen": "2026-10-09T23:24:27.587222+00:00",
+            "chapter_count": 18,
+            "chapter_titles": [
+                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
+                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
+                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
+                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
+                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
+                "Saudi-backed Yemeni forces expel the Houthis from several areas around key strait, officials say",
+                "Saudi-backed Yemeni forces expel the Houthis from several areas around key strait, officials say",
+                "Saudi-backed Yemeni forces expel the Houthis from several areas around key strait, officials say",
+                "Yemen’s Houthis attack Aden airport as fighting intensifies",
+                "Yemen’s Houthis attack Aden airport as fighting intensifies",
+                "Yemen’s Houthis attack Aden airport as fighting intensifies",
+                "Yemen’s Houthis attack Aden airport as fighting intensifies",
+                "Yemen’s Houthis attack Aden airport as fighting intensifies",
+                "Yemen’s Houthis attack Aden airport as fighting intensifies",
+                "Explosions heard in Saudi capital Riyadh after deadly Houthi attacks on airports",
+                "Three Saudi nationals killed in Houthi attacks on Riyadh airport",
+                "Three Saudi nationals killed in Houthi attacks on Riyadh airport",
+                "Three Saudi nationals killed in Houthi attacks on Riyadh airport"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "SCMP",
+                "BBC Middle East",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "5d2baf58-6a80-4161-9958-1be7ba2fd42a",
+            "title": "UK PM says ‘strong indications’ Iran involved in b...",
+            "keywords": [
+                "says",
+                "‘strong",
+                "indications’",
+                "iran",
+                "involved",
+                "bomb",
+                "scare",
+                "us-run",
+                "airbase"
+            ],
+            "entity_signature": "UK:IR:US",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-09-30T21:14:02.080480+00:00",
+            "last_seen": "2026-10-09T23:24:27.587222+00:00",
+            "chapter_count": 17,
+            "chapter_titles": [
+                "UK PM says ‘strong indications’ Iran involved in bomb scare at US-run airbase",
+                "UK believes Iran involved in RAF Fairford incident, PM says",
+                "Police make seventh arrest over UK airbase incident",
+                "Police make seventh arrest over UK airbase incident",
+                "Police make seventh arrest over UK airbase incident",
+                "Two Latvian men arrested at UK base housing US and NATO intelligence hubs",
+                "2 Latvians Arrested after Breaching Perimeter of RAF Molesworth, UK Air Base Used by US",
+                "Two Latvian men arrested at UK base housing US and NATO intelligence hubs",
+                "2 Latvians Arrested after Breaching Perimeter of RAF Molesworth, UK Air Base Used by US",
+                "Two Latvian men arrested at UK base housing US and NATO intelligence hubs",
+                "2 Latvians Arrested after Breaching Perimeter of RAF Molesworth, UK Air Base Used by US",
+                "Why Amazon is laying off employees in India again?",
+                "Why Amazon is laying off employees in India again?",
+                "US unveils sanctions on ICC in move court condemns as 'assault on rule of law'",
+                "Why Amazon is laying off employees in India again?",
+                "US unveils sanctions on ICC in move court condemns as 'assault on rule of law'",
+                "Why Amazon is laying off employees in India again?"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "New York Times",
+                "SCMP",
+                "HT Business",
+                "BBC News",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "6f607c75-6586-457b-a8ab-4020ffeeef57",
+            "title": "Russia says European arms factories supplying Ukra...",
+            "keywords": [
+                "russia",
+                "says",
+                "european",
+                "arms",
+                "factories",
+                "supplying",
+                "ukraine",
+                "potential",
+                "military",
+                "targets"
+            ],
+            "entity_signature": "RU:EU:UA:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-09-30T16:40:54.510541+00:00",
+            "last_seen": "2026-10-09T23:24:27.587222+00:00",
+            "chapter_count": 13,
+            "chapter_titles": [
+                "Russia says European arms factories supplying Ukraine are potential military targets for Moscow - Reuters",
+                "Russia ‘pursuing strategy of terror’, EU’s von der Leyen says after deadly strikes on Ukraine – Europe live",
+                "Russia ‘pursuing strategy of terror’, EU’s von der Leyen says after deadly strikes on Ukraine – Europe live",
+                "Russia ‘pursuing strategy of terror’, EU’s von der Leyen says after deadly strikes on Ukraine – Europe live",
+                "Russia ‘pursuing strategy of terror’, EU’s von der Leyen says after deadly strikes on Ukraine – Europe live",
+                "Russia ‘pursuing strategy of terror’, EU’s von der Leyen says after deadly strikes on Ukraine – Europe live",
+                "Russia ‘pursuing strategy of terror’, EU’s von der Leyen says after deadly strikes on Ukraine – Europe live",
+                "Black sea and black ops: How exposed is Europe to Ukraine war spillover?",
+                "Black sea and black ops: How exposed is Europe to Ukraine war spillover?",
+                "Black Sea and black ops: How exposed is Europe to Ukraine war spillover?",
+                "As Putin Wages Shadow War, Europe Looks for a Way to Hit Back",
+                "As Putin Wages Shadow War, Europe Looks for a Way to Hit Back",
+                "As Putin Wages Shadow War, Europe Looks for a Way to Hit Back"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times",
+                "The Guardian",
+                "Reuters",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "5e033798-4df2-4364-ae62-063e0d32778c",
+            "title": "‘China already has spies’ at US AI labs, former An...",
+            "keywords": [
+                "‘china",
+                "already",
+                "spies’",
+                "labs,",
+                "former",
+                "anthropic",
+                "researcher",
+                "warns"
+            ],
+            "entity_signature": "CN:US",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-08T00:19:05.204415+00:00",
+            "last_seen": "2026-10-09T23:24:27.587222+00:00",
+            "chapter_count": 13,
+            "chapter_titles": [
+                "‘China already has spies’ at US AI labs, former Anthropic researcher warns",
+                "US AI firm Anthropic enables Chinese-language options for Claude chatbot",
+                "Did a US warship lose power while chasing a Chinese destroyer in the South China Sea?",
+                "It’s time for China to offer more than statements on Hormuz",
+                "US investigates 9 universities over alleged visa fraud, with focus on China",
+                "Flavio Bolsonaro says he would work with China and US as Brazil’s president",
+                "Anthropic claims Chinese AI firms secretly use Claude. Is it true?",
+                "China’s Pacific ties not part of ‘geopolitical rivalry’, Wang Yi tells island leaders",
+                "Why a ‘confrontational posture’ won’t help China in the Arctic",
+                "With war project, US tech ecosystem is beginning to look a lot like China’s",
+                "Meta is banning TikTok ads across its platforms",
+                "Anthropic claims Chinese AI firms secretly use Claude. Is it true?",
+                "Port of LA, key US point for China imports, has best-ever quarter despite trade uncertainty"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP",
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "7b3add8c-9f81-49d4-9cd0-b38e2e28065f",
+            "title": "US plans livestream of execution by firing squad",
+            "keywords": [
+                "plans",
+                "livestream",
+                "execution",
+                "firing",
+                "squad"
+            ],
+            "entity_signature": "US:BBC:AP",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-09T00:09:31.314731+00:00",
+            "last_seen": "2026-10-09T23:24:27.587222+00:00",
+            "chapter_count": 9,
+            "chapter_titles": [
+                "US plans livestream of execution by firing squad",
+                "Daily power demand rises to 290 MU in Andhra Pradesh, says Energy Minister Ravi Kumar",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US plans livestream of execution by firing squad",
+                "Survivor of US Army shooting supports gunman's execution but questions livestream",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US plans livestream of execution by firing squad",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US and Lebanon protecting wanted Syrian general, BBC finds"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu",
+                "The Verge",
+                "BBC News",
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "cffd0e03-71ea-4f71-a71c-6dc0b00c2844",
+            "title": "US Senator Murphy says Pentagon denied him access ...",
+            "keywords": [
+                "senator",
+                "murphy",
+                "says",
+                "pentagon",
+                "denied",
+                "access",
+                "base",
+                "qatar",
+                "reuters"
+            ],
+            "entity_signature": "US:Pentagon:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-06T16:07:34.654926+00:00",
+            "last_seen": "2026-10-09T23:24:27.587222+00:00",
+            "chapter_count": 7,
+            "chapter_titles": [
+                "US Senator Murphy says Pentagon denied him access to US base in Qatar - Reuters",
+                "US to live stream firing squad execution of military base shooter Nidal Hasan",
+                "Firing squad execution to be livestreamed, Pentagon says",
+                "Firing squad execution to be livestreamed, Pentagon says",
+                "‘Barbaric’: US lawmakers condemn plan to livestream Nidal Hasan’s execution",
+                "The U.S. last held a public execution in the 1930s. The Pentagon wants to change that",
+                "The U.S. last held a public execution in the 1930s. The Pentagon wants to change that"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters",
+                "SCMP",
+                "BBC News",
+                "BBC US",
+                "Al Jazeera",
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "6a08522c-b012-4bc4-b200-83974377870c",
+            "title": "WHO says it does not have ‘full picture’ from Russ...",
+            "keywords": [
+                "says",
+                "does",
+                "have",
+                "‘full",
+                "picture’",
+                "from",
+                "russia",
+                "following",
+                "suspected",
+                "plague"
+            ],
+            "entity_signature": "RU:WHO:UN",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-08T00:19:05.204415+00:00",
+            "last_seen": "2026-10-09T23:24:27.587222+00:00",
+            "chapter_count": 5,
+            "chapter_titles": [
+                "WHO says it does not have ‘full picture’ from Russia following suspected plague death",
+                "WHO says it does not have ‘full picture’ from Russia following suspected plague death",
+                "ICJ judge Navi Pillay wins Nobel peace prize for promoting international law",
+                "ICJ judge Navi Pillay wins Nobel peace prize for promoting international law",
+                "ICJ judge Navi Pillay wins Nobel peace prize for promoting international law"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "4045a16e-3c11-40c8-9288-57e3d44c7af4",
+            "title": "US Coast Guard says it intercepted ship carrying f...",
+            "keywords": [
+                "coast",
+                "guard",
+                "says",
+                "intercepted",
+                "ship",
+                "carrying",
+                "fuel",
+                "cuba"
+            ],
+            "entity_signature": "US:CU:MX",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-02T16:30:42.401844+00:00",
+            "last_seen": "2026-10-09T23:24:27.587222+00:00",
+            "chapter_count": 5,
+            "chapter_titles": [
+                "US Coast Guard says it intercepted ship carrying fuel to Cuba",
+                "Coast Guard Says It Stopped Ships Carrying Fuel to Cuba",
+                "US Coast Guard says it intercepted ship carrying fuel to Cuba",
+                "Men accused of shooting Australian surfer brothers and US friend dead in Mexico to learn fate as trial concludes",
+                "Powerful 7.6-magnitude earthquake hits Panama and triggers tsunami warnings"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "New York Times",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "7bd0b6a4-a673-4cc9-8cc6-84124c62c830",
+            "title": "WHO warns of ‘devastating consequences’ due to del...",
+            "keywords": [
+                "warns",
+                "‘devastating",
+                "consequences’",
+                "delayed",
+                "entry",
+                "into",
+                "gaza"
+            ],
+            "entity_signature": "PS:IL:WHO",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-03T06:04:20.384092+00:00",
+            "last_seen": "2026-10-09T23:24:27.587222+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "WHO warns of ‘devastating consequences’ due to delayed aid entry into Gaza",
+                "FlyDubai co-pilot planned suicide attack on Tel Aviv airport, inspired by 9/11, prosecutor says",
+                "FlyDubai co-pilot planned suicide attack on Tel Aviv airport, inspired by 9/11, prosecutor says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24",
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "0ccd26fe-0717-43e7-9356-00331e9cc33d",
+            "title": "Romania’s political crisis intensifies as Parliame...",
+            "keywords": [
+                "romania’s",
+                "political",
+                "crisis",
+                "intensifies",
+                "parliament",
+                "rejects",
+                "pro-eu"
+            ],
+            "entity_signature": "RO:EU:Parliament",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-09-30T16:40:54.510541+00:00",
+            "last_seen": "2026-10-09T23:24:27.587222+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Romania’s political crisis intensifies as Parliament rejects pro-EU PM",
+                "The EU is its own worst enemy"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP",
                 "Al Jazeera"
             ]
         },
@@ -346,520 +1105,6 @@
             ]
         },
         {
-            "arc_id": "da1cea47-0f36-442e-b809-fbdc288ed639",
-            "title": "Russian barrage hits Kyiv hours after Zelensky war...",
-            "keywords": [
-                "russian",
-                "barrage",
-                "hits",
-                "kyiv",
-                "hours",
-                "after",
-                "zelensky",
-                "warns",
-                "impending",
-                "attack"
-            ],
-            "entity_signature": "RU:UA:Volodymyr Zelenskyy",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-07T06:52:47.305533+00:00",
-            "last_seen": "2026-10-09T19:17:05.829054+00:00",
-            "chapter_count": 50,
-            "chapter_titles": [
-                "Russian barrage hits Kyiv hours after Zelensky warns of impending attack",
-                "Russian barrage hits Kyiv hours after Zelensky warns of impending attack",
-                "Russian barrage hits Kyiv hours after Zelensky warns of impending attack",
-                "At least two killed in fire caused by 'massive strikes' on Kyiv",
-                "Russian barrage hits Kyiv hours after Zelensky warns of impending attack",
-                "Russia launches one of its biggest strikes on Ukraine, killing at least 11",
-                "Russian barrage hits Kyiv hours after Zelensky warns of impending attack",
-                "Russia launches one of its biggest strikes on Ukraine, killing at least 11",
-                "Zelensky condemns 'vile' large-scale Russian attacks that killed 20",
-                "Russia launches one of its biggest strikes on Ukraine, killing at least 21 civilians",
-                "Ukraine says Russia bombed apartment block as birthday gift for Putin",
-                "Fuel from South Korea being shipped to Russia as Ukraine war grinds on",
-                "Zelensky condemns 'vile' large-scale Russian attacks that killed 20",
-                "Russia launches one of its biggest strikes on Ukraine, killing at least 21 civilians",
-                "Ukraine says Russia bombed apartment block as birthday gift for Putin",
-                "Ukraine Claws Back Land in the Donbas, Thwarting a Russian Push",
-                "Fuel from South Korea being shipped to Russia as Ukraine war grinds on",
-                "Zelensky condemns 'vile' large-scale Russian attacks that killed 20",
-                "Russia launches one of its biggest strikes on Ukraine, killing at least 21 civilians",
-                "Ukraine says Russia bombed apartment block as birthday gift for Putin",
-                "Ukraine Claws Back Land in the Donbas, Thwarting a Russian Push",
-                "Fuel from South Korea being shipped to Russia as Ukraine war grinds on",
-                "Zelensky condemns 'vile' large-scale Russian attacks that killed 20",
-                "Russia launches one of its biggest strikes on Ukraine, killing at least 21 civilians",
-                "Ukraine says Russia bombed apartment block as birthday gift for Putin",
-                "Ukraine Claws Back Land in the Donbas, Thwarting a Russian Push",
-                "Ukraine Claws Back Land in the Donbas, Thwarting a Russian Push",
-                "Zelensky condemns 'vile' large-scale Russian attacks that killed 20",
-                "Fuel from South Korea being shipped to Russia as Ukraine war grinds on",
-                "Ukraine says Russia bombed apartment block as birthday gift for Putin",
-                "Russia launches one of its biggest strikes on Ukraine, killing at least 21 civilians",
-                "Ukraine Claws Back Land in the Donbas, Thwarting a Russian Push",
-                "Zelensky condemns 'vile' large-scale Russian attacks that killed 20",
-                "Fuel from South Korea being shipped to Russia as Ukraine war grinds on",
-                "Ukraine says Russia bombed apartment block as birthday gift for Putin",
-                "Russia launches one of its biggest strikes on Ukraine, killing at least 21 civilians",
-                "Children killed while they slept as Russian missile kills 22 in block of flats",
-                "Russian strike on buses kills at least 30, say officials, as deadly attacks on Ukraine surge",
-                "Russian attack on bus kills at least 30 people near Ukraine frontline",
-                "Strike on Ukrainian public bus leaves 30 dead as blackouts worsen in Kyiv",
-                "Russian strike on buses kills at least 30, say officials, as deadly attacks on Ukraine surge",
-                "Russian attack on bus kills at least 30 people near Ukraine frontline",
-                "Russian strike on buses kills at least 30, say officials, as deadly attacks on Ukraine surge",
-                "Russian attack on bus kills at least 30 people near Ukraine frontline",
-                "Russian strike on buses kills at least 30, say officials, as deadly attacks on Ukraine surge",
-                "Russian attack on bus kills at least 30 people near Ukraine frontline",
-                "Russian strikes and approaching winter force some in Kyiv to pack bags and flee",
-                "Russian search engine Yandex struggles after Ukrainian strikes on data centres",
-                "Russian strikes and approaching winter force some in Kyiv to pack bags and flee",
-                "Lawsuits blame Fox News for deaths of journalists in Ukraine"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NPR News",
-                "New York Times",
-                "BBC Europe",
-                "SCMP",
-                "France 24",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "714de931-2618-4cb7-8924-3b7b513cbcc1",
-            "title": "US says Europe should ready fuel supplies as Trump...",
-            "keywords": [
-                "says",
-                "europe",
-                "should",
-                "ready",
-                "fuel",
-                "supplies",
-                "trump",
-                "threatens",
-                "diesel"
-            ],
-            "entity_signature": "US:EU:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-01T23:42:32.336918+00:00",
-            "last_seen": "2026-10-09T19:17:05.829054+00:00",
-            "chapter_count": 28,
-            "chapter_titles": [
-                "US says Europe should ready fuel supplies as Trump threatens diesel ban",
-                "US says Europe should ready fuel supplies as Trump threatens diesel ban",
-                "US presses Europe to release 'immediately' diesel reserves as Trump threatens export ban",
-                "US pressures Europe over diesel reserves as Trump threatens export ban",
-                "US presses Europe to release diesel reserves 'immediately' as Trump threatens export ban",
-                "Europe agrees to release stocked diesel oil, Trump says - Reuters",
-                "US presses Europe to release diesel reserves 'immediately' as Trump threatens export ban",
-                "Trump says Europe agreed to release ‘massive amount’ of diesel reserves",
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
-                "Germany is right to rearm. But Europe has well-founded fears about that | Paul Taylor",
-                "Burnham committed to deeper EU cooperation, he tells Merz – Europe live",
-                "Germany is right to rearm. But Europe has well-founded fears about that | Paul Taylor",
-                "Germany is right to rearm. But Europe has well-founded fears about that | Paul Taylor",
-                "Trump envoys, European officials to discuss ‘new ideas’ for Ukraine peace in Miami",
-                "Germany is right to rearm. But Europe has well-founded fears about that | Paul Taylor",
-                "Trump envoys, European officials to discuss ‘new ideas’ for Ukraine peace in Miami",
-                "Germany is right to rearm. But Europe has well-founded fears about that | Paul Taylor",
-                "Trump envoys, European officials to discuss ‘new ideas’ for Ukraine peace in Miami",
-                "Why American investors love European defense startups",
-                "US slaps sanctions on ICC, hours after ex-judge wins Nobel",
-                "International Criminal Court faces 'test of resilience' as US imposes sweeping sanctions",
-                "Trump Sends Obamacare ‘Refund’ Checks Ahead of Midterm Elections",
-                "Why American investors love European defense startups"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "NYT Business",
-                "Reuters",
-                "NPR News",
-                "BBC Business",
-                "SCMP",
-                "BBC News",
-                "France 24",
-                "HT Business",
-                "The Guardian",
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "3a25593b-15c5-43bd-bfb5-584e59165c2f",
-            "title": "Trump says Iran could ‘take out’ Los Angeles or Sa...",
-            "keywords": [
-                "trump",
-                "says",
-                "iran",
-                "could",
-                "‘take",
-                "out’",
-                "angeles",
-                "diego,",
-                "drawing",
-                "backlash"
-            ],
-            "entity_signature": "IR:US:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-06T21:06:50.560476+00:00",
-            "last_seen": "2026-10-09T19:17:05.829054+00:00",
-            "chapter_count": 26,
-            "chapter_titles": [
-                "Trump says Iran could ‘take out’ Los Angeles or San Diego, drawing backlash",
-                "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders",
-                "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders",
-                "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders",
-                "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders",
-                "How Trump’s Tariff War With Canada Ensnared the Can-Am Spyder",
-                "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders",
-                "How Trump’s Tariff War With Canada Ensnared the Can-Am Spyder",
-                "Trump Suggests Iran Could ‘Take Out’ L.A. or San Diego, Drawing Anger From California Leaders",
-                "How Trump’s Tariff War With Canada Ensnared the Can-Am Spyder",
-                "How a Small Business Got Entangled in U.S. Sanctions on Iranian Oil",
-                "White House defends Trump comment to let Iran 'take out' LA and San Diego",
-                "How a Small Business Got Entangled in U.S. Sanctions on Iranian Oil",
-                "White House defends Trump comment to let Iran 'take out' LA and San Diego",
-                "How a Small Business Got Entangled in U.S. Sanctions on Iranian Oil",
-                "White House defends Trump comment to let Iran 'take out' LA and San Diego",
-                "How a Small Business Got Entangled in U.S. Sanctions on Iranian Oil",
-                "White House defends Trump comment to let Iran 'take out' LA and San Diego",
-                "How a Small Business Got Entangled in U.S. Sanctions on Iranian Oil",
-                "White House defends Trump comment to let Iran 'take out' LA and San Diego",
-                "How a Small Business Got Entangled in U.S. Sanctions on Iranian Oil",
-                "White House defends Trump comment to let Iran 'take out' LA and San Diego",
-                "Trump says US will not attack Iran before November’s midterm elections",
-                "Trump says U.S. won't attack Iran before midterms. And, ICE agent shoots man in NYC",
-                "Trump says U.S. won't attack Iran before midterms. And, ICE agent shoots man in NYC",
-                "Trump says Iran war will be ‘over soon’, claims US stopped Tehran from getting nuclear weapon"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "BBC Middle East",
-                "NYT Business",
-                "Hindustan Times",
-                "NPR News",
-                "New York Times",
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "4282e364-6446-443e-8105-4ad7a352bff1",
-            "title": "Houthis claim attacks on Riyadh airport as Saudi-l...",
-            "keywords": [
-                "houthis",
-                "claim",
-                "attacks",
-                "riyadh",
-                "airport",
-                "saudi-led",
-                "forces",
-                "strike",
-                "yemen"
-            ],
-            "entity_signature": "SA:IR:PK",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-06T02:24:11.640373+00:00",
-            "last_seen": "2026-10-09T19:17:05.829054+00:00",
-            "chapter_count": 17,
-            "chapter_titles": [
-                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
-                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
-                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
-                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
-                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
-                "Saudi-backed Yemeni forces expel the Houthis from several areas around key strait, officials say",
-                "Saudi-backed Yemeni forces expel the Houthis from several areas around key strait, officials say",
-                "Saudi-backed Yemeni forces expel the Houthis from several areas around key strait, officials say",
-                "Yemen’s Houthis attack Aden airport as fighting intensifies",
-                "Yemen’s Houthis attack Aden airport as fighting intensifies",
-                "Yemen’s Houthis attack Aden airport as fighting intensifies",
-                "Yemen’s Houthis attack Aden airport as fighting intensifies",
-                "Yemen’s Houthis attack Aden airport as fighting intensifies",
-                "Yemen’s Houthis attack Aden airport as fighting intensifies",
-                "Explosions heard in Saudi capital Riyadh after deadly Houthi attacks on airports",
-                "Three Saudi nationals killed in Houthi attacks on Riyadh airport",
-                "Three Saudi nationals killed in Houthi attacks on Riyadh airport"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "SCMP",
-                "France 24",
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "5d2baf58-6a80-4161-9958-1be7ba2fd42a",
-            "title": "UK PM says ‘strong indications’ Iran involved in b...",
-            "keywords": [
-                "says",
-                "‘strong",
-                "indications’",
-                "iran",
-                "involved",
-                "bomb",
-                "scare",
-                "us-run",
-                "airbase"
-            ],
-            "entity_signature": "UK:IR:US",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-09-30T21:14:02.080480+00:00",
-            "last_seen": "2026-10-09T19:17:05.829054+00:00",
-            "chapter_count": 15,
-            "chapter_titles": [
-                "UK PM says ‘strong indications’ Iran involved in bomb scare at US-run airbase",
-                "UK believes Iran involved in RAF Fairford incident, PM says",
-                "Police make seventh arrest over UK airbase incident",
-                "Police make seventh arrest over UK airbase incident",
-                "Police make seventh arrest over UK airbase incident",
-                "Two Latvian men arrested at UK base housing US and NATO intelligence hubs",
-                "2 Latvians Arrested after Breaching Perimeter of RAF Molesworth, UK Air Base Used by US",
-                "Two Latvian men arrested at UK base housing US and NATO intelligence hubs",
-                "2 Latvians Arrested after Breaching Perimeter of RAF Molesworth, UK Air Base Used by US",
-                "Two Latvian men arrested at UK base housing US and NATO intelligence hubs",
-                "2 Latvians Arrested after Breaching Perimeter of RAF Molesworth, UK Air Base Used by US",
-                "Why Amazon is laying off employees in India again?",
-                "Why Amazon is laying off employees in India again?",
-                "US unveils sanctions on ICC in move court condemns as 'assault on rule of law'",
-                "Why Amazon is laying off employees in India again?"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "New York Times",
-                "SCMP",
-                "BBC News",
-                "France 24",
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "6f607c75-6586-457b-a8ab-4020ffeeef57",
-            "title": "Russia says European arms factories supplying Ukra...",
-            "keywords": [
-                "russia",
-                "says",
-                "european",
-                "arms",
-                "factories",
-                "supplying",
-                "ukraine",
-                "potential",
-                "military",
-                "targets"
-            ],
-            "entity_signature": "RU:EU:UA:Reuters",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-09-30T16:40:54.510541+00:00",
-            "last_seen": "2026-10-09T19:17:05.829054+00:00",
-            "chapter_count": 12,
-            "chapter_titles": [
-                "Russia says European arms factories supplying Ukraine are potential military targets for Moscow - Reuters",
-                "Russia ‘pursuing strategy of terror’, EU’s von der Leyen says after deadly strikes on Ukraine – Europe live",
-                "Russia ‘pursuing strategy of terror’, EU’s von der Leyen says after deadly strikes on Ukraine – Europe live",
-                "Russia ‘pursuing strategy of terror’, EU’s von der Leyen says after deadly strikes on Ukraine – Europe live",
-                "Russia ‘pursuing strategy of terror’, EU’s von der Leyen says after deadly strikes on Ukraine – Europe live",
-                "Russia ‘pursuing strategy of terror’, EU’s von der Leyen says after deadly strikes on Ukraine – Europe live",
-                "Russia ‘pursuing strategy of terror’, EU’s von der Leyen says after deadly strikes on Ukraine – Europe live",
-                "Black sea and black ops: How exposed is Europe to Ukraine war spillover?",
-                "Black sea and black ops: How exposed is Europe to Ukraine war spillover?",
-                "Black Sea and black ops: How exposed is Europe to Ukraine war spillover?",
-                "As Putin Wages Shadow War, Europe Looks for a Way to Hit Back",
-                "As Putin Wages Shadow War, Europe Looks for a Way to Hit Back"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian",
-                "Reuters",
-                "France 24",
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "5e033798-4df2-4364-ae62-063e0d32778c",
-            "title": "‘China already has spies’ at US AI labs, former An...",
-            "keywords": [
-                "‘china",
-                "already",
-                "spies’",
-                "labs,",
-                "former",
-                "anthropic",
-                "researcher",
-                "warns"
-            ],
-            "entity_signature": "CN:US",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-08T00:19:05.204415+00:00",
-            "last_seen": "2026-10-09T19:17:05.829054+00:00",
-            "chapter_count": 12,
-            "chapter_titles": [
-                "‘China already has spies’ at US AI labs, former Anthropic researcher warns",
-                "US AI firm Anthropic enables Chinese-language options for Claude chatbot",
-                "Did a US warship lose power while chasing a Chinese destroyer in the South China Sea?",
-                "It’s time for China to offer more than statements on Hormuz",
-                "US investigates 9 universities over alleged visa fraud, with focus on China",
-                "Flavio Bolsonaro says he would work with China and US as Brazil’s president",
-                "Anthropic claims Chinese AI firms secretly use Claude. Is it true?",
-                "China’s Pacific ties not part of ‘geopolitical rivalry’, Wang Yi tells island leaders",
-                "Why a ‘confrontational posture’ won’t help China in the Arctic",
-                "With war project, US tech ecosystem is beginning to look a lot like China’s",
-                "Meta is banning TikTok ads across its platforms",
-                "Anthropic claims Chinese AI firms secretly use Claude. Is it true?"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP",
-                "The Verge"
-            ]
-        },
-        {
-            "arc_id": "7b3add8c-9f81-49d4-9cd0-b38e2e28065f",
-            "title": "US plans livestream of execution by firing squad",
-            "keywords": [
-                "plans",
-                "livestream",
-                "execution",
-                "firing",
-                "squad"
-            ],
-            "entity_signature": "US:BBC:AP",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-09T00:09:31.314731+00:00",
-            "last_seen": "2026-10-09T19:17:05.829054+00:00",
-            "chapter_count": 8,
-            "chapter_titles": [
-                "US plans livestream of execution by firing squad",
-                "Daily power demand rises to 290 MU in Andhra Pradesh, says Energy Minister Ravi Kumar",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US plans livestream of execution by firing squad",
-                "Survivor of US Army shooting supports gunman's execution but questions livestream",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US plans livestream of execution by firing squad",
-                "US and Lebanon protecting wanted Syrian general, BBC finds"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu",
-                "The Verge",
-                "BBC News",
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "cffd0e03-71ea-4f71-a71c-6dc0b00c2844",
-            "title": "US Senator Murphy says Pentagon denied him access ...",
-            "keywords": [
-                "senator",
-                "murphy",
-                "says",
-                "pentagon",
-                "denied",
-                "access",
-                "base",
-                "qatar",
-                "reuters"
-            ],
-            "entity_signature": "US:Pentagon:Reuters",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-06T16:07:34.654926+00:00",
-            "last_seen": "2026-10-09T19:17:05.829054+00:00",
-            "chapter_count": 6,
-            "chapter_titles": [
-                "US Senator Murphy says Pentagon denied him access to US base in Qatar - Reuters",
-                "US to live stream firing squad execution of military base shooter Nidal Hasan",
-                "Firing squad execution to be livestreamed, Pentagon says",
-                "Firing squad execution to be livestreamed, Pentagon says",
-                "‘Barbaric’: US lawmakers condemn plan to livestream Nidal Hasan’s execution",
-                "The U.S. last held a public execution in the 1930s. The Pentagon wants to change that"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters",
-                "NPR News",
-                "SCMP",
-                "BBC News",
-                "BBC US",
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "6a08522c-b012-4bc4-b200-83974377870c",
-            "title": "WHO says it does not have ‘full picture’ from Russ...",
-            "keywords": [
-                "says",
-                "does",
-                "have",
-                "‘full",
-                "picture’",
-                "from",
-                "russia",
-                "following",
-                "suspected",
-                "plague"
-            ],
-            "entity_signature": "RU:WHO:UN",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-08T00:19:05.204415+00:00",
-            "last_seen": "2026-10-09T19:17:05.829054+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "WHO says it does not have ‘full picture’ from Russia following suspected plague death",
-                "WHO says it does not have ‘full picture’ from Russia following suspected plague death",
-                "ICJ judge Navi Pillay wins Nobel peace prize for promoting international law",
-                "ICJ judge Navi Pillay wins Nobel peace prize for promoting international law"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "1d0985cd-2704-4703-9bd5-0cdc729145a8",
             "title": "Trump says he deserves Nobel Peace Prize but has d...",
             "keywords": [
@@ -889,37 +1134,6 @@
             "sources_involved": [
                 "SCMP",
                 "New York Times"
-            ]
-        },
-        {
-            "arc_id": "7bd0b6a4-a673-4cc9-8cc6-84124c62c830",
-            "title": "WHO warns of ‘devastating consequences’ due to del...",
-            "keywords": [
-                "warns",
-                "‘devastating",
-                "consequences’",
-                "delayed",
-                "entry",
-                "into",
-                "gaza"
-            ],
-            "entity_signature": "PS:IL:WHO",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-03T06:04:20.384092+00:00",
-            "last_seen": "2026-10-09T19:17:05.829054+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "WHO warns of ‘devastating consequences’ due to delayed aid entry into Gaza",
-                "FlyDubai co-pilot planned suicide attack on Tel Aviv airport, inspired by 9/11, prosecutor says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24",
-                "Al Jazeera"
             ]
         },
         {
@@ -1008,55 +1222,6 @@
             ]
         },
         {
-            "arc_id": "2ee304c7-2f52-473f-a5f3-3097baf5eb8b",
-            "title": "Russian dissident Garry Kasparov says US warned hi...",
-            "keywords": [
-                "russian",
-                "dissident",
-                "garry",
-                "kasparov",
-                "says",
-                "warned",
-                "danger",
-                "life"
-            ],
-            "entity_signature": "RU:US:Vladimir Putin",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-01T19:41:52.469182+00:00",
-            "last_seen": "2026-10-09T00:09:31.314731+00:00",
-            "chapter_count": 18,
-            "chapter_titles": [
-                "Russian dissident Garry Kasparov says US warned him of danger to his life",
-                "Russian dissident Garry Kasparov says US warned him of danger to his life",
-                "Russian dissident Garry Kasparov says US warned him of danger to his life",
-                "Russian dissident Garry Kasparov says US warned him of danger to his life",
-                "Politkovskaya 'predicted' Russia's turn under Putin, editor says on 20th anniversary of her death",
-                "Trump to speak to Putin about plague lab worker's death in Russia",
-                "Politkovskaya 'predicted' Russia's turn under Putin, editor says on 20th anniversary of her death",
-                "Trump to speak to Putin about plague lab worker's death in Russia",
-                "Politkovskaya 'predicted' Russia's turn under Putin, editor says on 20th anniversary of her death",
-                "Trump to speak to Putin about plague lab worker's death in Russia",
-                "Politkovskaya 'predicted' Russia's turn under Putin, editor says on 20th anniversary of her death",
-                "Trump to speak to Putin about plague lab worker's death in Russia",
-                "Trump to speak to Putin about plague lab worker's death in Russia",
-                "Politkovskaya 'predicted' Russia's turn under Putin, editor says on 20th anniversary of her death",
-                "Trump to speak to Putin about plague lab worker's death in Russia",
-                "Politkovskaya 'predicted' Russia's turn under Putin, editor says on 20th anniversary of her death",
-                "Politkovskaya 'predicted' Russia's turn under Putin, editor says on 20th anniversary of her death",
-                "Putin pledges Russia’s support to end US-led war on Iran"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Al Jazeera",
-                "BBC Europe",
-                "France 24"
-            ]
-        },
-        {
             "arc_id": "d41a85fe-bfb1-4a29-8f24-2edcc54923a1",
             "title": "Mozilla says Microsoft still steers Windows users ...",
             "keywords": [
@@ -1093,40 +1258,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "HT Business"
-            ]
-        },
-        {
-            "arc_id": "4045a16e-3c11-40c8-9288-57e3d44c7af4",
-            "title": "US Coast Guard says it intercepted ship carrying f...",
-            "keywords": [
-                "coast",
-                "guard",
-                "says",
-                "intercepted",
-                "ship",
-                "carrying",
-                "fuel",
-                "cuba"
-            ],
-            "entity_signature": "US:CU:MX",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-02T16:30:42.401844+00:00",
-            "last_seen": "2026-10-09T00:09:31.314731+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "US Coast Guard says it intercepted ship carrying fuel to Cuba",
-                "Coast Guard Says It Stopped Ships Carrying Fuel to Cuba",
-                "US Coast Guard says it intercepted ship carrying fuel to Cuba",
-                "Men accused of shooting Australian surfer brothers and US friend dead in Mexico to learn fate as trial concludes"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "The Guardian",
-                "New York Times"
             ]
         },
         {
@@ -1354,69 +1485,6 @@
                 "France 24",
                 "BBC News",
                 "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "6067c9d5-0e43-42a3-bcff-7a933376b859",
-            "title": "Trump says US will help Russia after Siberia plagu...",
-            "keywords": [
-                "trump",
-                "says",
-                "will",
-                "help",
-                "russia",
-                "after",
-                "siberia",
-                "plague",
-                "institute",
-                "death"
-            ],
-            "entity_signature": "US:RU:Donald Trump:Reuters",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-08T06:28:37.715857+00:00",
-            "chapter_count": 26,
-            "chapter_titles": [
-                "Trump says US will help Russia after Siberia plague institute death - Reuters",
-                "Trump says US ready to aid Russia with plague outbreak in Siberia",
-                "Trump says US will help Russia after Siberia plague institute death - Reuters",
-                "US 'watching closely' after plague researcher dies in Russia",
-                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
-                "US 'watching closely' after plague researcher dies in Russia",
-                "Watch: How Russia responded to US after plague researcher death",
-                "US 'watching closely' after plague researcher dies in Russia",
-                "Trump says he will speak to Putin over reported plague death in Russia",
-                "Trump says will speak to Putin on plague, after death of Russian lab tech",
-                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
-                "US 'watching closely' after plague researcher dies in Russia",
-                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
-                "Trump says will speak with Putin over Russia's reported plague death",
-                "Gold slips as dollar gains; investors await Fed minutes for rate clues - Reuters",
-                "Trump says will speak with Putin over Russia's reported plague death",
-                "Fed minutes could detail rate-hike decision, policy path - Reuters",
-                "Trump to speak to Putin about plague lab worker's death in Russia",
-                "Trump says will speak with Putin over Russia's reported plague death",
-                "Christa Pike 'angry and confused' about Tennessee's failed execution effort, lawyers say - Reuters",
-                "Trump administration plans to charge international students $70,000 for work authorization - Reuters",
-                "Trump says he'll fire advisers LaCivita, Blair 'if there's a conflict' - Reuters",
-                "Trump to speak to Putin about plague lab worker's death in Russia",
-                "Trump to speak to Putin about plague lab worker's death in Russia",
-                "Hormuz transits at lowest in over two months after attacks, data shows - Reuters",
-                "Trump to speak to Putin about plague lab worker's death in Russia"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.7,
-            "sources_involved": [
-                "SCMP",
-                "France 24",
-                "BBC News",
-                "Reuters",
-                "Al Jazeera",
-                "BBC Europe",
-                "The Guardian"
             ]
         },
         {
@@ -1660,7 +1728,7 @@
                 "Ukraine says Russia bombed apartment block as birthday gift for Putin",
                 "Ukraine says Russia bombed apartment block as birthday gift for Putin"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.15,
             "sources_involved": [
                 "The Guardian"
@@ -2678,35 +2746,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "France 24"
-            ]
-        },
-        {
-            "arc_id": "0ccd26fe-0717-43e7-9356-00331e9cc33d",
-            "title": "Romania’s political crisis intensifies as Parliame...",
-            "keywords": [
-                "romania’s",
-                "political",
-                "crisis",
-                "intensifies",
-                "parliament",
-                "rejects",
-                "pro-eu"
-            ],
-            "entity_signature": "RO:EU:Parliament",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-09-30T16:40:54.510541+00:00",
-            "last_seen": "2026-09-30T16:40:54.510541+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Romania’s political crisis intensifies as Parliament rejects pro-EU PM"
-            ],
-            "importance_trend": "fading",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
             ]
         },
         {
