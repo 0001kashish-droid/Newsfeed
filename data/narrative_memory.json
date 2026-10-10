@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-10T15:32:48.974978+00:00",
+    "last_updated": "2026-10-10T19:49:26.785236+00:00",
     "arcs": [
         {
             "arc_id": "00d4e7ae-12eb-4f1a-bdce-b37b56f95aed",
@@ -22,8 +22,8 @@
                 "Global"
             ],
             "first_seen": "2026-10-03T06:04:20.384092+00:00",
-            "last_seen": "2026-10-10T15:32:48.946152+00:00",
-            "chapter_count": 116,
+            "last_seen": "2026-10-10T19:49:26.752115+00:00",
+            "chapter_count": 122,
             "chapter_titles": [
                 "Apple says it will flag AI requests for Mac data after Meta's Muse draws complaints - Reuters",
                 "Morning Bid: Who's the boss? - Reuters",
@@ -140,13 +140,19 @@
                 "Neither Putin nor Trump wanted to hang up first, Kremlin aide says after 'very friendly' call - Reuters",
                 "Germany sticks to Russia sanctions after Trump announcement on diesel - Reuters",
                 "Rosatom says it wins tribunal ruling in Finnish nuclear plant dispute - Reuters",
-                "Ethiopian forces regain control of border city after reported Eritrean incursion - Reuters"
+                "Ethiopian forces regain control of border city after reported Eritrean incursion - Reuters",
+                "Several wounded in Riyadh airport attack, operations suspended, Saudi aviation authority says - Reuters",
+                "Three injured in Poland's third youth stabbing attack in four days - Reuters",
+                "Pope Leo condemns death penalty as Trump mulls livestreamed execution - Reuters",
+                "Rayo-Athletic match abandoned after fans protest against club owner - Reuters",
+                "Neither Putin nor Trump wanted to hang up first, Kremlin aide says after 'very friendly' call - Reuters",
+                "Eritrea asks UN to intervene in standoff with Ethiopia - Reuters"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
             "sources_involved": [
-                "The Verge",
-                "Reuters"
+                "Reuters",
+                "The Verge"
             ]
         },
         {
@@ -169,8 +175,8 @@
                 "Middle East"
             ],
             "first_seen": "2026-10-06T16:07:34.654926+00:00",
-            "last_seen": "2026-10-10T15:32:48.946152+00:00",
-            "chapter_count": 104,
+            "last_seen": "2026-10-10T19:49:26.752115+00:00",
+            "chapter_count": 110,
             "chapter_titles": [
                 "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
                 "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
@@ -275,18 +281,24 @@
                 "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
                 "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
                 "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
-                "A year of ceasefire in Gaza through the lens of NPR's reporter"
+                "A year of ceasefire in Gaza through the lens of NPR's reporter",
+                "Palestinian leader Abbas postpones elections to September 2027",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Palestinians struggle to find food in Gaza a year after ceasefire",
+                "Palestinians still being killed in Gaza, one year into ‘ceasefire’",
+                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
+                "Photos: Thousands march across Europe to demand end to Israel’s war on Gaza"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
             "sources_involved": [
-                "BBC News",
                 "France 24",
                 "New York Times",
+                "NPR News",
+                "BBC News",
                 "Al Jazeera",
-                "SCMP",
                 "BBC Middle East",
-                "NPR News"
+                "SCMP"
             ]
         },
         {
@@ -310,8 +322,8 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-10-07T06:52:47.305533+00:00",
-            "last_seen": "2026-10-10T15:32:48.946152+00:00",
-            "chapter_count": 68,
+            "last_seen": "2026-10-10T19:49:26.752115+00:00",
+            "chapter_count": 73,
             "chapter_titles": [
                 "Russian barrage hits Kyiv hours after Zelensky warns of impending attack",
                 "Russian barrage hits Kyiv hours after Zelensky warns of impending attack",
@@ -380,19 +392,133 @@
                 "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
                 "Live: Russian strikes on Ukraine kill at least 15 in Zaporizhzhia, cause power outages in Kyiv",
                 "Zelenskyy furious as Trump announces deal to buy Russian diesel",
-                "Russian search engine Yandex struggles after Ukrainian strikes on data centres"
+                "Russian search engine Yandex struggles after Ukrainian strikes on data centres",
+                "Live: Trump says Ukraine needs new president after Zelensky pushes back on diesel deal",
+                "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
+                "Ukraine hit by deadly Russian strikes as ‘thanks’ for Trump diesel deal, Zelenskyy says",
+                "Russian search engine Yandex struggles after Ukrainian strikes on data centres",
+                "Zelenskyy furious as Trump announces deal to buy Russian diesel"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "France 24",
-                "BBC News",
                 "New York Times",
-                "BBC Europe",
-                "SCMP",
-                "The Guardian",
                 "NPR News",
-                "Ars Technica"
+                "The Guardian",
+                "BBC Europe",
+                "Ars Technica",
+                "SCMP",
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "5b745eea-fec4-44a4-b06a-b28637c6004d",
+            "title": "US closely monitoring case of lab worker who ‘poss...",
+            "keywords": [
+                "closely",
+                "monitoring",
+                "case",
+                "worker",
+                "‘possibly’",
+                "died",
+                "plague",
+                "siberia,",
+                "says",
+                "rubio"
+            ],
+            "entity_signature": "US:RU:WHO",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-05T22:07:16.056000+00:00",
+            "last_seen": "2026-10-10T19:49:26.752115+00:00",
+            "chapter_count": 69,
+            "chapter_titles": [
+                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
+                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
+                "US CDC says it’s ‘aware of and closely monitoring’ Russian plague case",
+                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
+                "Actress Eva Marie Saint, who won an Oscar for 'On the Waterfront,' dies at 102",
+                "Sebastian Maniscalco’s SiriusXM channel is hurting up-and-coming talent, comics say",
+                "Silicon Valley’s AI wunderkind launches Underdog, the most private Instinct/Muse competitor yet",
+                "CBI files closure report in Pocso court over death of 17-yr-old NEET aspirant in Bihar",
+                "Trump says will speak with Putin over Russia's reported plague death",
+                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
+                "Actress Eva Marie Saint, who won an Oscar for 'On the Waterfront,' dies at 102",
+                "Sebastian Maniscalco’s SiriusXM channel is hurting up-and-coming talent, comics say",
+                "Trump says will speak with Putin over Russia's reported plague death",
+                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
+                "CEC Gyanesh Kumar’s Chhattisgarh visit postponed",
+                "Sebastian Maniscalco’s SiriusXM channel is hurting up-and-coming talent, comics say",
+                "Trump says will speak with Putin over Russia's reported plague death",
+                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
+                "CEC Gyanesh Kumar’s Chhattisgarh visit postponed",
+                "Sebastian Maniscalco’s SiriusXM channel is hurting up-and-coming talent, comics say",
+                "India-born US citizen drives research into light at sanctioned Chinese school",
+                "Trump says will speak with Putin over Russia's reported plague death",
+                "Russian lab worker's death sparks plague fears as unverified claims spread online",
+                "The Social Reckoning is a tepid thriller that reminds us of how we got here",
+                "Google now lets you make games with AI",
+                "Akhilesh Yadav's SP skips Kharge's Delhi lunch, senior official blames 'delayed communication'",
+                "India-born US citizen drives research into light at sanctioned Chinese school",
+                "Trump says will speak with Putin over Russia's reported plague death",
+                "Russian lab worker's death sparks plague fears as unverified claims spread online",
+                "The Social Reckoning is a tepid thriller that reminds us of how we got here",
+                "Google now lets you make games with AI",
+                "Akhilesh Yadav's SP skips Kharge's Delhi lunch, senior official blames 'delayed communication'",
+                "India-born US citizen drives research into light at sanctioned Chinese school",
+                "Trump says will speak with Putin over Russia's reported plague death",
+                "Russian lab worker's death sparks plague fears as unverified claims spread online",
+                "The Social Reckoning is a tepid thriller that reminds us of how we got here",
+                "Google now lets you make games with AI",
+                "Akhilesh Yadav's SP skips Kharge's Delhi lunch, senior official blames 'delayed communication'",
+                "India-born US citizen drives research into light at sanctioned Chinese school",
+                "Trump says will speak with Putin over Russia's reported plague death",
+                "Russian lab worker's death sparks plague fears as unverified claims spread online",
+                "The Social Reckoning is a tepid thriller that reminds us of how we got here",
+                "Google now lets you make games with AI",
+                "Akhilesh Yadav's SP skips Kharge's Delhi lunch, senior official blames 'delayed communication'",
+                "The Social Reckoning is a tepid thriller that reminds us of how we got here",
+                "India-born US citizen drives research into light at sanctioned Chinese school",
+                "Trump says will speak with Putin over Russia's reported plague death",
+                "Russian lab worker's death sparks plague fears as unverified claims spread online",
+                "Akhilesh Yadav's SP skips Kharge's Delhi lunch, senior official blames 'delayed communication'",
+                "Google now lets you make games with AI",
+                "The Social Reckoning is a tepid thriller that reminds us of how we got here",
+                "India-born US citizen drives research into light at sanctioned Chinese school",
+                "Trump says will speak with Putin over Russia's reported plague death",
+                "Russian lab worker's death sparks plague fears as unverified claims spread online",
+                "Akhilesh Yadav's SP skips Kharge's Delhi lunch, senior official blames 'delayed communication'",
+                "Google now lets you make games with AI",
+                "Russia warns against spreading 'false information' as reports emerge of second plague case",
+                "Sardinian village where more women reach 100 may be new centenarian ‘blue zone’",
+                "The WHO seeks more details on the death of a plague research lab employee in Russia",
+                "French, US and Russian astronauts return to Earth after eight months in space",
+                "French, US and Russian astronauts return to Earth after eight months in space",
+                "I know who is behind sting operation, says D.K. Shivakumar",
+                "Japan angry after Russia seeks extradition of ICC chief targeted by US",
+                "French, US and Russian astronauts return to Earth after eight months in space",
+                "Residents of Ukraine's Kramatorsk forced to flee as drone strikes intensify",
+                "Clara Wu Tsai, the Billionaire Who Wants Brooklyn to Win",
+                "Travel agencies tout Huanggang Port tours, but security chief urges later visits",
+                "Residents of Ukraine's Kramatorsk forced to flee as drone strikes intensify",
+                "Christa Pike out of hospital and back in prison after surviving US execution attempt"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News",
+                "France 24",
+                "TechCrunch",
+                "Al Jazeera",
+                "The Guardian",
+                "Hindustan Times",
+                "The Verge",
+                "SCMP",
+                "The Hindu",
+                "NYT Business"
             ]
         },
         {
@@ -415,8 +541,8 @@
                 "Global"
             ],
             "first_seen": "2026-10-01T23:42:32.336918+00:00",
-            "last_seen": "2026-10-10T15:32:48.946152+00:00",
-            "chapter_count": 38,
+            "last_seen": "2026-10-10T19:49:26.752115+00:00",
+            "chapter_count": 40,
             "chapter_titles": [
                 "US says Europe should ready fuel supplies as Trump threatens diesel ban",
                 "US says Europe should ready fuel supplies as Trump threatens diesel ban",
@@ -455,22 +581,24 @@
                 "US lifts sanctions on daughter of military-linked Myanmar businessman",
                 "Trump Sends Obamacare ‘Refund’ Checks Ahead of Midterm Elections",
                 "'Stain on the country': Trump criticises Norway over Nobel Peace Prize",
+                "Trump Sends Obamacare ‘Refund’ Checks Ahead of Midterm Elections",
+                "'Stain on the country': Trump criticises Norway over Nobel Peace Prize",
                 "Trump Sends Obamacare ‘Refund’ Checks Ahead of Midterm Elections"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.5,
             "sources_involved": [
                 "France 24",
-                "BBC News",
+                "NPR News",
                 "NYT Business",
-                "Reuters",
-                "BBC Business",
-                "BBC Europe",
-                "HT Business",
                 "Al Jazeera",
-                "SCMP",
                 "The Guardian",
-                "NPR News"
+                "BBC Business",
+                "HT Business",
+                "Reuters",
+                "BBC Europe",
+                "SCMP",
+                "BBC News"
             ]
         },
         {
@@ -492,8 +620,8 @@
                 "Europe"
             ],
             "first_seen": "2026-10-01T19:41:52.469182+00:00",
-            "last_seen": "2026-10-10T15:32:48.946152+00:00",
-            "chapter_count": 23,
+            "last_seen": "2026-10-10T19:49:26.752115+00:00",
+            "chapter_count": 24,
             "chapter_titles": [
                 "Russian dissident Garry Kasparov says US warned him of danger to his life",
                 "Russian dissident Garry Kasparov says US warned him of danger to his life",
@@ -517,16 +645,17 @@
                 "Trump says U.S. to get diesel from Russia, relaxing pressure on Moscow to ease prices before midterms",
                 "Trump says U.S. to get diesel from Russia, relaxing pressure on Moscow to ease prices before midterms",
                 "Trump strikes diesel deal with Putin, reversing years of pressure on Russia over Ukraine war",
-                "Russian attacks kill 17 in Ukraine after Trump strikes diesel deal with Putin"
+                "Russian attacks kill 17 in Ukraine after Trump strikes diesel deal with Putin",
+                "Russian attacks kill 20 in Ukraine after Trump strikes diesel deal with Putin"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
             "sources_involved": [
                 "France 24",
-                "BBC Europe",
+                "NPR News",
                 "Al Jazeera",
-                "SCMP",
-                "NPR News"
+                "BBC Europe",
+                "SCMP"
             ]
         },
         {
@@ -549,8 +678,8 @@
                 "Middle East"
             ],
             "first_seen": "2026-10-06T02:24:11.640373+00:00",
-            "last_seen": "2026-10-10T15:32:48.946152+00:00",
-            "chapter_count": 21,
+            "last_seen": "2026-10-10T19:49:26.752115+00:00",
+            "chapter_count": 22,
             "chapter_titles": [
                 "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
                 "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
@@ -572,6 +701,7 @@
                 "Three Saudi nationals killed in Houthi attacks on Riyadh airport",
                 "Three Saudi nationals killed in Houthi attacks on Riyadh airport",
                 "Three Saudi nationals killed in Houthi attacks on Riyadh airport",
+                "Yemen says advancing against Houthis around key Bab al-Mandab strait",
                 "Yemen says advancing against Houthis around key Bab al-Mandab strait"
             ],
             "importance_trend": "rising",
@@ -603,8 +733,8 @@
                 "Global"
             ],
             "first_seen": "2026-09-30T16:40:54.510541+00:00",
-            "last_seen": "2026-10-10T15:32:48.946152+00:00",
-            "chapter_count": 17,
+            "last_seen": "2026-10-10T19:49:26.752115+00:00",
+            "chapter_count": 18,
             "chapter_titles": [
                 "Russia says European arms factories supplying Ukraine are potential military targets for Moscow - Reuters",
                 "Russia ‘pursuing strategy of terror’, EU’s von der Leyen says after deadly strikes on Ukraine – Europe live",
@@ -622,14 +752,15 @@
                 "As Putin Wages Shadow War, Europe Looks for a Way to Hit Back",
                 "Live: Russian strikes on Ukraine's Zaporizhzhia kill at least seven, including children",
                 "As Putin Wages Shadow War, Europe Looks for a Way to Hit Back",
+                "The more Putin escalates his attacks on Europe, the more Europe should support Ukraine | Timothy Garton Ash",
                 "The more Putin escalates his attacks on Europe, the more Europe should support Ukraine | Timothy Garton Ash"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
             "sources_involved": [
-                "The Guardian",
                 "Reuters",
                 "France 24",
+                "The Guardian",
                 "New York Times"
             ]
         },
@@ -654,8 +785,8 @@
                 "Europe"
             ],
             "first_seen": "2026-10-04T13:44:18.123110+00:00",
-            "last_seen": "2026-10-10T15:32:48.946152+00:00",
-            "chapter_count": 14,
+            "last_seen": "2026-10-10T19:49:26.752115+00:00",
+            "chapter_count": 15,
             "chapter_titles": [
                 "French education minister says up to 500 schools will remain partially or fully closed on Monday after student protests – Europe live",
                 "French education minister says up to 500 schools will remain partially or fully closed on Monday after student protests – Europe live",
@@ -670,13 +801,14 @@
                 "French police suspend use of stun grenades after high school protester loses hand",
                 "French high school protests continue despite PM’s promise of action – Europe live",
                 "‘So safe you could drink it’: Scientists and pesticide victims fear an EU rollback",
+                "‘So safe you could drink it’: Scientists and pesticide victims fear an EU rollback",
                 "‘So safe you could drink it’: Scientists and pesticide victims fear an EU rollback"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
             "sources_involved": [
-                "The Guardian",
-                "France 24"
+                "France 24",
+                "The Guardian"
             ]
         },
         {
@@ -700,8 +832,8 @@
                 "India"
             ],
             "first_seen": "2026-10-07T14:14:27.543907+00:00",
-            "last_seen": "2026-10-10T15:32:48.946152+00:00",
-            "chapter_count": 13,
+            "last_seen": "2026-10-10T19:49:26.752115+00:00",
+            "chapter_count": 14,
             "chapter_titles": [
                 "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
                 "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
@@ -715,54 +847,14 @@
                 "‘Build here, scale here’: IIT alumni body urges institution's diaspora to ‘come home’ to India amid US green card crackdown",
                 "US blocks green card route for Indian IT firms; why impact may be limited",
                 "‘Never raised H-1B green card issue with US’: Piyush Goyal says fewer work visas ‘good’ for India",
+                "US blocks green card route for Indian IT firms; why impact may be limited",
                 "US blocks green card route for Indian IT firms; why impact may be limited"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
             "sources_involved": [
-                "Hindustan Times",
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "7b3add8c-9f81-49d4-9cd0-b38e2e28065f",
-            "title": "US plans livestream of execution by firing squad",
-            "keywords": [
-                "plans",
-                "livestream",
-                "execution",
-                "firing",
-                "squad"
-            ],
-            "entity_signature": "US:BBC:AP",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-09T00:09:31.314731+00:00",
-            "last_seen": "2026-10-10T15:32:48.946152+00:00",
-            "chapter_count": 12,
-            "chapter_titles": [
-                "US plans livestream of execution by firing squad",
-                "Daily power demand rises to 290 MU in Andhra Pradesh, says Energy Minister Ravi Kumar",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US plans livestream of execution by firing squad",
-                "Survivor of US Army shooting supports gunman's execution but questions livestream",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US plans livestream of execution by firing squad",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US and Lebanon protecting wanted Syrian general, BBC finds"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC News",
-                "BBC Middle East",
-                "The Verge",
-                "The Hindu"
+                "HT Business",
+                "Hindustan Times"
             ]
         },
         {
@@ -786,8 +878,8 @@
                 "Europe"
             ],
             "first_seen": "2026-10-08T00:19:05.204415+00:00",
-            "last_seen": "2026-10-10T15:32:48.946152+00:00",
-            "chapter_count": 11,
+            "last_seen": "2026-10-10T19:49:26.752115+00:00",
+            "chapter_count": 14,
             "chapter_titles": [
                 "WHO says it does not have ‘full picture’ from Russia following suspected plague death",
                 "WHO says it does not have ‘full picture’ from Russia following suspected plague death",
@@ -799,14 +891,59 @@
                 "After losing ground with Latino voters, Democrats are turning to influencers for help",
                 "Who is Ajinkya Shinde? CJP leader from Maharashtra to lead Jantar Mantar stir in Abhijeet Dipke's absence",
                 "ICJ judge Navi Pillay wins Nobel peace prize for promoting international law",
+                "After losing ground with Latino voters, Democrats are turning to influencers for help",
+                "ICJ judge Navi Pillay wins Nobel peace prize for promoting international law",
+                "The Kennedy Center names new artistic director, amid concerns",
                 "After losing ground with Latino voters, Democrats are turning to influencers for help"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
             "sources_involved": [
-                "Hindustan Times",
+                "NPR News",
                 "The Guardian",
-                "NPR News"
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "7b3add8c-9f81-49d4-9cd0-b38e2e28065f",
+            "title": "US plans livestream of execution by firing squad",
+            "keywords": [
+                "plans",
+                "livestream",
+                "execution",
+                "firing",
+                "squad"
+            ],
+            "entity_signature": "US:BBC:AP",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-09T00:09:31.314731+00:00",
+            "last_seen": "2026-10-10T19:49:26.752115+00:00",
+            "chapter_count": 13,
+            "chapter_titles": [
+                "US plans livestream of execution by firing squad",
+                "Daily power demand rises to 290 MU in Andhra Pradesh, says Energy Minister Ravi Kumar",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US plans livestream of execution by firing squad",
+                "Survivor of US Army shooting supports gunman's execution but questions livestream",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US plans livestream of execution by firing squad",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US and Lebanon protecting wanted Syrian general, BBC finds"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Middle East",
+                "BBC News",
+                "The Verge",
+                "The Hindu"
             ]
         },
         {
@@ -829,8 +966,8 @@
                 "Europe"
             ],
             "first_seen": "2026-10-04T13:44:18.123110+00:00",
-            "last_seen": "2026-10-10T15:32:48.946152+00:00",
-            "chapter_count": 10,
+            "last_seen": "2026-10-10T19:49:26.752115+00:00",
+            "chapter_count": 11,
             "chapter_titles": [
                 "Germany's Merz visits Kyiv as Russia steps up attacks on Ukrainian cities",
                 "Russia hits Kyiv bridge as Germany’s Merz visits Ukraine’s capital",
@@ -841,15 +978,16 @@
                 "Germany's Merz visits Kyiv as Russia steps up attacks on Ukrainian cities",
                 "Burnham to meet German chancellor in Berlin to discuss security and EU ties",
                 "Nord Stream trial: How German police followed the evidence - to Ukraine",
+                "Nord Stream trial: How German police followed the evidence - to Ukraine",
                 "Nord Stream trial: How German police followed the evidence - to Ukraine"
             ],
             "importance_trend": "rising",
             "peak_velocity": 1.0,
             "sources_involved": [
-                "BBC News",
-                "BBC Europe",
                 "France 24",
-                "Al Jazeera"
+                "Al Jazeera",
+                "BBC News",
+                "BBC Europe"
             ]
         },
         {
@@ -873,8 +1011,8 @@
                 "Europe"
             ],
             "first_seen": "2026-10-04T18:00:03.576079+00:00",
-            "last_seen": "2026-10-10T15:32:48.946152+00:00",
-            "chapter_count": 8,
+            "last_seen": "2026-10-10T19:49:26.752115+00:00",
+            "chapter_count": 9,
             "chapter_titles": [
                 "Live: US wants to hold trilateral Ukraine talks with Russia by end of October, Zelensky says",
                 "US wants to hold trilateral Ukraine talks with Russia by end of October, Zelensky says",
@@ -883,13 +1021,51 @@
                 "Has Russia’s fuel crisis given Iranian oil an opening in Central Asia?",
                 "Has Russia’s fuel crisis given Iranian oil an opening in Central Asia?",
                 "Has Russia’s fuel crisis given Iranian oil an opening in Central Asia?",
+                "Russian glide bomb attack on Zaporizhzhia kills at least 15 people",
                 "Russian glide bomb attack on Zaporizhzhia kills at least 15 people"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
             "sources_involved": [
                 "France 24",
-                "BBC Europe",
+                "Al Jazeera",
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "f1c4f5f4-8556-4887-ae66-146684962a40",
+            "title": "Ukraine says Russia bombed apartment block as birt...",
+            "keywords": [
+                "ukraine",
+                "says",
+                "russia",
+                "bombed",
+                "apartment",
+                "block",
+                "birthday",
+                "gift",
+                "putin"
+            ],
+            "entity_signature": "UA:RU:Vladimir Putin:Volodymyr Zelenskyy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-07T14:14:27.543907+00:00",
+            "last_seen": "2026-10-10T19:49:26.752115+00:00",
+            "chapter_count": 5,
+            "chapter_titles": [
+                "Ukraine says Russia bombed apartment block as birthday gift for Putin",
+                "Ukraine says Russia bombed apartment block as birthday gift for Putin",
+                "Putin tells Trump peace talks are unlikely, cites Ukraine drone attacks",
+                "Ukrainian Drones Close Moscow Airports as Putin Flies Back to Russia",
+                "Ukrainian Drones Close Moscow Airports as Putin Flies Back to Russia"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "New York Times",
+                "The Guardian",
                 "Al Jazeera"
             ]
         },
@@ -1001,42 +1177,6 @@
             "sources_involved": [
                 "The Guardian",
                 "France 24",
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "f1c4f5f4-8556-4887-ae66-146684962a40",
-            "title": "Ukraine says Russia bombed apartment block as birt...",
-            "keywords": [
-                "ukraine",
-                "says",
-                "russia",
-                "bombed",
-                "apartment",
-                "block",
-                "birthday",
-                "gift",
-                "putin"
-            ],
-            "entity_signature": "UA:RU:Vladimir Putin:Volodymyr Zelenskyy",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-07T14:14:27.543907+00:00",
-            "last_seen": "2026-10-10T15:32:48.946152+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "Ukraine says Russia bombed apartment block as birthday gift for Putin",
-                "Ukraine says Russia bombed apartment block as birthday gift for Putin",
-                "Putin tells Trump peace talks are unlikely, cites Ukraine drone attacks",
-                "Ukrainian Drones Close Moscow Airports as Putin Flies Back to Russia"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian",
-                "New York Times",
                 "Al Jazeera"
             ]
         },
@@ -1344,114 +1484,6 @@
             ]
         },
         {
-            "arc_id": "5b745eea-fec4-44a4-b06a-b28637c6004d",
-            "title": "US closely monitoring case of lab worker who ‘poss...",
-            "keywords": [
-                "closely",
-                "monitoring",
-                "case",
-                "worker",
-                "‘possibly’",
-                "died",
-                "plague",
-                "siberia,",
-                "says",
-                "rubio"
-            ],
-            "entity_signature": "US:RU:WHO",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-09T19:17:05.829054+00:00",
-            "chapter_count": 68,
-            "chapter_titles": [
-                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
-                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
-                "US CDC says it’s ‘aware of and closely monitoring’ Russian plague case",
-                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
-                "Actress Eva Marie Saint, who won an Oscar for 'On the Waterfront,' dies at 102",
-                "Sebastian Maniscalco’s SiriusXM channel is hurting up-and-coming talent, comics say",
-                "Silicon Valley’s AI wunderkind launches Underdog, the most private Instinct/Muse competitor yet",
-                "CBI files closure report in Pocso court over death of 17-yr-old NEET aspirant in Bihar",
-                "Trump says will speak with Putin over Russia's reported plague death",
-                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
-                "Actress Eva Marie Saint, who won an Oscar for 'On the Waterfront,' dies at 102",
-                "Sebastian Maniscalco’s SiriusXM channel is hurting up-and-coming talent, comics say",
-                "Trump says will speak with Putin over Russia's reported plague death",
-                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
-                "CEC Gyanesh Kumar’s Chhattisgarh visit postponed",
-                "Sebastian Maniscalco’s SiriusXM channel is hurting up-and-coming talent, comics say",
-                "Trump says will speak with Putin over Russia's reported plague death",
-                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
-                "CEC Gyanesh Kumar’s Chhattisgarh visit postponed",
-                "Sebastian Maniscalco’s SiriusXM channel is hurting up-and-coming talent, comics say",
-                "India-born US citizen drives research into light at sanctioned Chinese school",
-                "Trump says will speak with Putin over Russia's reported plague death",
-                "Russian lab worker's death sparks plague fears as unverified claims spread online",
-                "The Social Reckoning is a tepid thriller that reminds us of how we got here",
-                "Google now lets you make games with AI",
-                "Akhilesh Yadav's SP skips Kharge's Delhi lunch, senior official blames 'delayed communication'",
-                "India-born US citizen drives research into light at sanctioned Chinese school",
-                "Trump says will speak with Putin over Russia's reported plague death",
-                "Russian lab worker's death sparks plague fears as unverified claims spread online",
-                "The Social Reckoning is a tepid thriller that reminds us of how we got here",
-                "Google now lets you make games with AI",
-                "Akhilesh Yadav's SP skips Kharge's Delhi lunch, senior official blames 'delayed communication'",
-                "India-born US citizen drives research into light at sanctioned Chinese school",
-                "Trump says will speak with Putin over Russia's reported plague death",
-                "Russian lab worker's death sparks plague fears as unverified claims spread online",
-                "The Social Reckoning is a tepid thriller that reminds us of how we got here",
-                "Google now lets you make games with AI",
-                "Akhilesh Yadav's SP skips Kharge's Delhi lunch, senior official blames 'delayed communication'",
-                "India-born US citizen drives research into light at sanctioned Chinese school",
-                "Trump says will speak with Putin over Russia's reported plague death",
-                "Russian lab worker's death sparks plague fears as unverified claims spread online",
-                "The Social Reckoning is a tepid thriller that reminds us of how we got here",
-                "Google now lets you make games with AI",
-                "Akhilesh Yadav's SP skips Kharge's Delhi lunch, senior official blames 'delayed communication'",
-                "The Social Reckoning is a tepid thriller that reminds us of how we got here",
-                "India-born US citizen drives research into light at sanctioned Chinese school",
-                "Trump says will speak with Putin over Russia's reported plague death",
-                "Russian lab worker's death sparks plague fears as unverified claims spread online",
-                "Akhilesh Yadav's SP skips Kharge's Delhi lunch, senior official blames 'delayed communication'",
-                "Google now lets you make games with AI",
-                "The Social Reckoning is a tepid thriller that reminds us of how we got here",
-                "India-born US citizen drives research into light at sanctioned Chinese school",
-                "Trump says will speak with Putin over Russia's reported plague death",
-                "Russian lab worker's death sparks plague fears as unverified claims spread online",
-                "Akhilesh Yadav's SP skips Kharge's Delhi lunch, senior official blames 'delayed communication'",
-                "Google now lets you make games with AI",
-                "Russia warns against spreading 'false information' as reports emerge of second plague case",
-                "Sardinian village where more women reach 100 may be new centenarian ‘blue zone’",
-                "The WHO seeks more details on the death of a plague research lab employee in Russia",
-                "French, US and Russian astronauts return to Earth after eight months in space",
-                "French, US and Russian astronauts return to Earth after eight months in space",
-                "I know who is behind sting operation, says D.K. Shivakumar",
-                "Japan angry after Russia seeks extradition of ICC chief targeted by US",
-                "French, US and Russian astronauts return to Earth after eight months in space",
-                "Residents of Ukraine's Kramatorsk forced to flee as drone strikes intensify",
-                "Clara Wu Tsai, the Billionaire Who Wants Brooklyn to Win",
-                "Travel agencies tout Huanggang Port tours, but security chief urges later visits",
-                "Residents of Ukraine's Kramatorsk forced to flee as drone strikes intensify"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NYT Business",
-                "Hindustan Times",
-                "NPR News",
-                "SCMP",
-                "France 24",
-                "The Verge",
-                "TechCrunch",
-                "The Guardian",
-                "The Hindu",
-                "Al Jazeera"
-            ]
-        },
-        {
             "arc_id": "1d0985cd-2704-4703-9bd5-0cdc729145a8",
             "title": "Trump says he deserves Nobel Peace Prize but has d...",
             "keywords": [
@@ -1596,7 +1628,7 @@
                 "Nicolás Maduro and his wife indicted for alleged torture of US citizens",
                 "Venezuela's ex-leader Nicolás Maduro charged with conspiracy to commit torture"
             ],
-            "importance_trend": "rising",
+            "importance_trend": "fading",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "The Guardian",
@@ -1750,7 +1782,7 @@
                 "Sardinian village where more women reach 100 may be new centenarian ‘blue zone’",
                 "The WHO seeks more details on the death of a plague research lab employee in Russia"
             ],
-            "importance_trend": "fading",
+            "importance_trend": "stable",
             "peak_velocity": 0.15,
             "sources_involved": [
                 "NPR News",
