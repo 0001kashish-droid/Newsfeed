@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-15T14:41:43.098243+00:00",
+    "last_updated": "2026-10-15T18:53:46.229581+00:00",
     "arcs": [
         {
             "arc_id": "00d4e7ae-12eb-4f1a-bdce-b37b56f95aed",
@@ -22,8 +22,8 @@
                 "Global"
             ],
             "first_seen": "2026-10-03T06:04:20.384092+00:00",
-            "last_seen": "2026-10-15T14:41:43.062658+00:00",
-            "chapter_count": 243,
+            "last_seen": "2026-10-15T18:53:46.196057+00:00",
+            "chapter_count": 249,
             "chapter_titles": [
                 "Apple says it will flag AI requests for Mac data after Meta's Muse draws complaints - Reuters",
                 "Morning Bid: Who's the boss? - Reuters",
@@ -267,14 +267,20 @@
                 "Kremlin says Russia restarts diesel exports after deal with Trump - Reuters",
                 "US Treasury pushes global partners to rename AI as 'super intelligence' - Reuters",
                 "EU and Gulf states postpone summit due in Saudi Arabia - Reuters",
-                "Swedish parliament votes against Social Democrats leader as PM, as expected - Reuters"
+                "Swedish parliament votes against Social Democrats leader as PM, as expected - Reuters",
+                "Nasdaq reports network disruption, US equities data feeds impacted - Reuters",
+                "CNN signs multi-year AI partnership with Google - Reuters",
+                "IEA to speed up oil stocks release including over 20 million barrels of diesel - Reuters",
+                "Houthis attack presidential palace complex in Yemen's Aden, PM unharmed, officials say - Reuters",
+                "Trump cancels livestream of US military execution for Fort Hood killer - Reuters",
+                "How Aramco learned to keep pumping oil under fire - Reuters"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
             "sources_involved": [
-                "Reuters",
                 "SCMP",
-                "The Verge"
+                "The Verge",
+                "Reuters"
             ]
         },
         {
@@ -298,8 +304,8 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-10-07T06:52:47.305533+00:00",
-            "last_seen": "2026-10-15T14:41:43.062658+00:00",
-            "chapter_count": 182,
+            "last_seen": "2026-10-15T18:53:46.196057+00:00",
+            "chapter_count": 189,
             "chapter_titles": [
                 "Russian barrage hits Kyiv hours after Zelensky warns of impending attack",
                 "Russian barrage hits Kyiv hours after Zelensky warns of impending attack",
@@ -482,22 +488,197 @@
                 "What is Starshield, and who limited Ukraine’s access to it?",
                 "Why Russia Sees a Window to Bomb Ukraine Into Submission This Winter",
                 "Zelensky Says Ukraine Will Resume Russian Refinery Strikes, Defying Trump",
-                "Ukraine resumes attacks on Russian oil refineries, officials say, after brief truce"
+                "Ukraine resumes attacks on Russian oil refineries, officials say, after brief truce",
+                "Will Trump really pull the plug? Starlink restored but Ukraine's fate still uncertain",
+                "Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume",
+                "'We're done': Ukraine resumes strikes on Russian oil refineries as 'only leverage' for peace talks",
+                "Russia and Ukraine trade strikes as Trump ‘energy ceasefire’ collapses",
+                "Data Centers Become Targets in Wars in Ukraine, Russia and the Middle East",
+                "Ukraine resumes attacks on Russian oil refineries, officials say, after brief truce",
+                "Zelensky Says Ukraine Will Resume Russian Refinery Strikes, Defying Trump"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
             "sources_involved": [
-                "NPR News",
                 "BBC Europe",
-                "BBC US",
-                "BBC News",
                 "NYT Business",
-                "France 24",
-                "Al Jazeera",
-                "Ars Technica",
                 "New York Times",
+                "NPR News",
+                "Ars Technica",
+                "BBC US",
                 "The Guardian",
-                "SCMP"
+                "Al Jazeera",
+                "SCMP",
+                "BBC News",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "48671d48-be32-4bfc-8d8f-7c22ba68b364",
+            "title": "'We were naive' about Hamas, Israeli ex-hostage Sh...",
+            "keywords": [
+                "were",
+                "naive'",
+                "about",
+                "hamas,",
+                "israeli",
+                "ex-hostage",
+                "shoshan",
+                "haran",
+                "says"
+            ],
+            "entity_signature": "PS:IL:FR",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-06T16:07:34.654926+00:00",
+            "last_seen": "2026-10-15T18:53:46.196057+00:00",
+            "chapter_count": 132,
+            "chapter_titles": [
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
+                "Live: Israel marks three years since Hamas’s deadly October 7 attacks",
+                "Israel marks third anniversary of October 7 attack as election looms",
+                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
+                "Israel warns Gazans will pay 'heavy price' for any October 7 attacks on military",
+                "Israelis mourn on the anniversary of the Oct. 7 as Palestinians grapple with war it sparked",
+                "Live: Israel marks three years since Hamas’s deadly October 7 attacks",
+                "Israel marks third anniversary of October 7 attack as election looms",
+                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
+                "Israel warns Gazans will pay 'heavy price' for any October 7 attacks on military",
+                "Israelis mourn on the anniversary of the Oct. 7 as Palestinians grapple with war it sparked",
+                "Live: Israel marks three years since Hamas’s deadly October 7 attacks",
+                "Israel marks third anniversary of October 7 attack as election looms",
+                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
+                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
+                "Israel warns Gazans will pay 'heavy price' for any October 7 attacks on military",
+                "Israelis mourn on the anniversary of the Oct. 7 as Palestinians grapple with war it sparked",
+                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira",
+                "Israel marks third anniversary of October 7 attack as election looms",
+                "Israeli papers commemorate October 7 attacks, three years on",
+                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
+                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira",
+                "Israel marks third anniversary of October 7 attack as election looms",
+                "Israeli papers commemorate October 7 attacks, three years on",
+                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
+                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira",
+                "Israel marks third anniversary of October 7 attack as election looms",
+                "Israeli papers commemorate October 7 attacks, three years on",
+                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
+                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira",
+                "Israel marks third anniversary of October 7 attack as election looms",
+                "Israeli papers commemorate October 7 attacks, three years on",
+                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
+                "Israeli papers commemorate October 7 attacks, three years on",
+                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira",
+                "Israel marks third anniversary of October 7 attack as election looms",
+                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
+                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira",
+                "Israeli papers commemorate October 7 attacks, three years on",
+                "Israel marks third anniversary of October 7 attack as election looms",
+                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
+                "Israelis mourn 7 October attack victims three years after deadly Hamas raid",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
+                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
+                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
+                "Israelis mourn 7 October attack victims three years after deadly Hamas raid",
+                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Israelis mourn 7 October attack victims three years after deadly Hamas raid",
+                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
+                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
+                "Israelis mourn 7 October attack victims three years after deadly Hamas raid",
+                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Child flees as Israeli settlers hijack car during pogrom",
+                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
+                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
+                "Israel Denounces the Decision to Award the Nobel Peace Prize to Navi Pillay",
+                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
+                "Human Rights Lawyer Navi Pillay Is Awarded Nobel Peace Prize",
+                "Palestinian Authority Says Elections Are to Be Postponed",
+                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
+                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
+                "Human Rights Lawyer Navi Pillay Is Awarded Nobel Peace Prize",
+                "Palestinian Authority Says Elections Are to Be Postponed",
+                "Israel Denounces the Decision to Award the Nobel Peace Prize to Navi Pillay",
+                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
+                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
+                "Human Rights Lawyer Navi Pillay Is Awarded Nobel Peace Prize",
+                "Palestinian Authority Says Elections Are to Be Postponed",
+                "Israel Denounces the Decision to Award the Nobel Peace Prize to Navi Pillay",
+                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
+                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
+                "Human Rights Lawyer Navi Pillay Is Awarded Nobel Peace Prize",
+                "A year of ceasefire in Gaza through the lens of NPR's reporter",
+                "Palestinian Authority Says Elections Are to Be Postponed",
+                "Israel Denounces the Decision to Award the Nobel Peace Prize to Navi Pillay",
+                "Palestinian leader Abbas postpones elections to September 2027",
+                "Palestinians struggle to find food in Gaza a year after ceasefire",
+                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
+                "A year of ceasefire in Gaza through the lens of NPR's reporter",
+                "Palestinian leader Abbas postpones elections to September 2027",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Palestinians struggle to find food in Gaza a year after ceasefire",
+                "Palestinians still being killed in Gaza, one year into ‘ceasefire’",
+                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
+                "Photos: Thousands march across Europe to demand end to Israel’s war on Gaza",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Palestinians struggle to find food in Gaza a year after ceasefire",
+                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Palestinians struggle to find food in Gaza a year after ceasefire",
+                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Wringing Hope From the Rubble of Gaza",
+                "Wringing Hope From the Rubble of Gaza",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Wringing Hope From the Rubble of Gaza",
+                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+                "Wringing Hope From the Rubble of Gaza",
+                "Gaza: Still Reporting",
+                "Israeli strike on tent in Gaza’s Khan Younis kills three",
+                "'Perfect Victims' author Mohammed El-Kurd challenges how Palestinian suffering is viewed",
+                "'Perfect Victims' author Mohammed El-Kurd challenges how Palestinian suffering is viewed",
+                "Israeli forces raid Palestinian NGOs and hospital in occupied West Bank",
+                "Air France says it will follow Israeli rule barring crew from some nations",
+                "Election delay 'a terrible disappointment', Palestinian activist Samer Sinijlawi says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times",
+                "NPR News",
+                "BBC Middle East",
+                "Al Jazeera",
+                "SCMP",
+                "BBC News",
+                "France 24"
             ]
         },
         {
@@ -520,8 +701,8 @@
                 "Global"
             ],
             "first_seen": "2026-10-01T23:42:32.336918+00:00",
-            "last_seen": "2026-10-15T14:41:43.062658+00:00",
-            "chapter_count": 64,
+            "last_seen": "2026-10-15T18:53:46.196057+00:00",
+            "chapter_count": 65,
             "chapter_titles": [
                 "US says Europe should ready fuel supplies as Trump threatens diesel ban",
                 "US says Europe should ready fuel supplies as Trump threatens diesel ban",
@@ -586,24 +767,25 @@
                 "Families of Trinidadian men killed in US boat strike demand accountability",
                 "Denmark pushes back as Trump touts Greenland oil and mineral deals",
                 "Argentina’s Milei backs Trump for US midterms, calls vote crucial for West",
-                "Trump says Fort Hood shooter execution will not be livestreamed"
+                "Trump says Fort Hood shooter execution will not be livestreamed",
+                "Ahead of US midterms, voters are frustrated with Trump, want change: Poll"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.5,
             "sources_involved": [
-                "NPR News",
-                "BBC Europe",
-                "BBC News",
-                "BBC US",
-                "The Guardian",
-                "Al Jazeera",
-                "France 24",
-                "BBC Business",
                 "Reuters",
-                "HT Business",
-                "Ars Technica",
+                "BBC Europe",
                 "NYT Business",
-                "SCMP"
+                "NPR News",
+                "HT Business",
+                "France 24",
+                "Ars Technica",
+                "BBC US",
+                "BBC Business",
+                "The Guardian",
+                "SCMP",
+                "BBC News",
+                "Al Jazeera"
             ]
         },
         {
@@ -626,8 +808,8 @@
                 "Middle East"
             ],
             "first_seen": "2026-10-06T02:24:11.640373+00:00",
-            "last_seen": "2026-10-15T14:41:43.062658+00:00",
-            "chapter_count": 61,
+            "last_seen": "2026-10-15T18:53:46.196057+00:00",
+            "chapter_count": 62,
             "chapter_titles": [
                 "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
                 "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
@@ -689,17 +871,18 @@
                 "French embassy in Riyadh tells citizens to avoid Saudi airports targeted by Houthis",
                 "Blasts rock Riyadh as Houthis vow to continue striking Saudi airports, oil facilities",
                 "French embassy in Riyadh tells citizens to avoid Saudi airports targeted by Houthis",
-                "Blasts rock Riyadh as Houthis vow to continue striking Saudi airports, oil facilities"
+                "Blasts rock Riyadh as Houthis vow to continue striking Saudi airports, oil facilities",
+                "Houthis launch deadly attack on presidential palace in Yemen’s Aden"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
             "sources_involved": [
-                "France 24",
-                "Al Jazeera",
-                "BBC Middle East",
-                "New York Times",
                 "NYT Business",
-                "SCMP"
+                "New York Times",
+                "France 24",
+                "BBC Middle East",
+                "SCMP",
+                "Al Jazeera"
             ]
         },
         {
@@ -723,8 +906,8 @@
                 "Europe"
             ],
             "first_seen": "2026-10-08T00:19:05.204415+00:00",
-            "last_seen": "2026-10-15T14:41:43.062658+00:00",
-            "chapter_count": 42,
+            "last_seen": "2026-10-15T18:53:46.196057+00:00",
+            "chapter_count": 43,
             "chapter_titles": [
                 "WHO says it does not have ‘full picture’ from Russia following suspected plague death",
                 "WHO says it does not have ‘full picture’ from Russia following suspected plague death",
@@ -767,17 +950,498 @@
                 "Spirit of Hong Kong Awards: veteran who keeps flame of Cantonese opera alive",
                 "YouTuber who exposed local crime shot dead outside Ulhasnagar railway station",
                 "ICJ judge Navi Pillay wins Nobel peace prize for promoting international law",
+                "ICJ judge Navi Pillay wins Nobel peace prize for promoting international law",
                 "ICJ judge Navi Pillay wins Nobel peace prize for promoting international law"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
             "sources_involved": [
+                "Hindustan Times",
                 "NPR News",
-                "TechCrunch",
                 "BBC Middle East",
+                "TechCrunch",
                 "The Guardian",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "5e033798-4df2-4364-ae62-063e0d32778c",
+            "title": "‘China already has spies’ at US AI labs, former An...",
+            "keywords": [
+                "‘china",
+                "already",
+                "spies’",
+                "labs,",
+                "former",
+                "anthropic",
+                "researcher",
+                "warns"
+            ],
+            "entity_signature": "CN:US",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-08T00:19:05.204415+00:00",
+            "last_seen": "2026-10-15T18:53:46.196057+00:00",
+            "chapter_count": 34,
+            "chapter_titles": [
+                "‘China already has spies’ at US AI labs, former Anthropic researcher warns",
+                "US AI firm Anthropic enables Chinese-language options for Claude chatbot",
+                "Did a US warship lose power while chasing a Chinese destroyer in the South China Sea?",
+                "It’s time for China to offer more than statements on Hormuz",
+                "US investigates 9 universities over alleged visa fraud, with focus on China",
+                "Flavio Bolsonaro says he would work with China and US as Brazil’s president",
+                "Anthropic claims Chinese AI firms secretly use Claude. Is it true?",
+                "China’s Pacific ties not part of ‘geopolitical rivalry’, Wang Yi tells island leaders",
+                "Why a ‘confrontational posture’ won’t help China in the Arctic",
+                "With war project, US tech ecosystem is beginning to look a lot like China’s",
+                "Meta is banning TikTok ads across its platforms",
+                "Anthropic claims Chinese AI firms secretly use Claude. Is it true?",
+                "Port of LA, key US point for China imports, has best-ever quarter despite trade uncertainty",
+                "How a museum masterpiece’s life-size replica sparked rare US-China collaboration",
+                "In AI, India’s choice needn’t be between a US leash or Chinese hook",
+                "Kurt Campbell on US deterrence, the Quad, Aukus and Taiwan after Xi-Trump summit",
+                "Chinese stocks an undervalued opportunity, says Charlie Munger disciple",
+                "Public comments flood US government websites over proposed H-1B, OPT fee hikes",
+                "Trump’s ‘golden age’ push hands top science honours to big tech. Will it work?",
+                "Why younger Japanese now fear Trump’s US more than China",
+                "Public comments flood US government websites over proposed H-1B, OPT fee hikes",
+                "Taiwan turns to US drone boats to track rising mainland Chinese sea activity",
+                "Bank of America fined US$1.21 billion as US flags suspected Chinese money laundering",
+                "ASML’s chip equipment sales to China soar 109% despite US export curb push",
+                "Bank of America fined US$1.21 billion as US flags suspected Chinese money laundering",
+                "Susan Thornton on US-China ties, post-midterms and averting a new balloon crisis",
+                "Hegseth calls US$1.5 trillion defence budget ‘critical’ to counter China",
+                "China, US discuss AI as chip stock rout hits Asian markets",
+                "‘Trump to decide in 10 days’: US envoy on bill threatening 100% tariffs on India, China, others",
+                "China is a beacon of global embryo research, says scientist on return from US to lead lab",
+                "Blast simulation, university probes, robotics fine, AI spies: 7 US-China relations reads",
+                "Young Americans are key for the US to better understand China",
+                "China bought half of Brazil's oil exports as Iran war shut Hormuz, driving sales to record",
+                "SK Hynix bargains for chip equipment exports to its China facility in return for building a factory in US"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
                 "SCMP",
+                "The Verge",
+                "TechCrunch",
                 "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "bdca5029-0d4f-4394-a2b4-9cbe3186cd64",
+            "title": "How Netanyahu survived the political fallout from ...",
+            "keywords": [
+                "netanyahu",
+                "survived",
+                "political",
+                "fallout",
+                "from",
+                "october",
+                "attacks"
+            ],
+            "entity_signature": "PS:IL:Benjamin Netanyahu",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-07T06:52:47.305533+00:00",
+            "last_seen": "2026-10-15T18:53:46.196057+00:00",
+            "chapter_count": 29,
+            "chapter_titles": [
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "How Netanyahu survived the political fallout from the October 7 attacks",
+                "No longer the same Israel? October 7th and the future of the Jewish State",
+                "No longer the same Israel? October 7 and the future of the Jewish State",
+                "No longer the same Israel? October 7 and the future of the Jewish State",
+                "No longer the same Israel? October 7 and the future of the Jewish State",
+                "No longer the same Israel? October 7 and the future of the Jewish State",
+                "No longer the same Israel? October 7 and the future of the Jewish State",
+                "Netanyahu demands probe into Israeli anonymous whistleblowers in 'NAZA' documentary",
+                "The Oct. 7 Attack Changed Israel, but Not Its Politics",
+                "The Oct. 7 Attack Changed Israel, but Not Its Politics",
+                "The Oct. 7 Attack Changed Israel, but Not Its Politics",
+                "The Oct. 7 Attack Changed Israel, but Not Its Politics",
+                "The Oct. 7 Attack Changed Israel, but Not Its Politics",
+                "Do any of these Israeli candidates support a Palestinian state?",
+                "Settlers attack Palestinian mosque near occupied East Jerusalem",
+                "How Gaza changed Europe, exposing cracks that grow bigger by the week | Shada Islam",
+                "How Gaza changed Europe, exposing cracks that grow bigger by the week | Shada Islam",
+                "How Gaza changed Europe, exposing cracks that grow bigger by the week | Shada Islam",
+                "How Gaza changed Europe, exposing cracks that grow bigger by the week | Shada Islam"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera",
+                "New York Times",
+                "The Guardian",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "ab377d9d-f4cd-4462-a052-657a008186f6",
+            "title": "Live: US wants to hold trilateral Ukraine talks wi...",
+            "keywords": [
+                "live:",
+                "wants",
+                "hold",
+                "trilateral",
+                "ukraine",
+                "talks",
+                "with",
+                "russia",
+                "october,",
+                "zelensky"
+            ],
+            "entity_signature": "US:UA:RU:Volodymyr Zelenskyy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-04T18:00:03.576079+00:00",
+            "last_seen": "2026-10-15T18:53:46.196057+00:00",
+            "chapter_count": 28,
+            "chapter_titles": [
+                "Live: US wants to hold trilateral Ukraine talks with Russia by end of October, Zelensky says",
+                "US wants to hold trilateral Ukraine talks with Russia by end of October, Zelensky says",
+                "US wants to hold trilateral Ukraine talks with Russia by end of October, Zelensky says",
+                "US wants to hold trilateral Ukraine talks with Russia by end of October, Zelensky says",
+                "Has Russia’s fuel crisis given Iranian oil an opening in Central Asia?",
+                "Has Russia’s fuel crisis given Iranian oil an opening in Central Asia?",
+                "Has Russia’s fuel crisis given Iranian oil an opening in Central Asia?",
+                "Russian glide bomb attack on Zaporizhzhia kills at least 15 people",
+                "Russian glide bomb attack on Zaporizhzhia kills at least 15 people",
+                "Russian glide bomb attack on Zaporizhzhia kills at least 20 people",
+                "Russian glide bomb attack on Zaporizhzhia kills at least 20 people",
+                "Russian glide bomb attack on Zaporizhzhia kills at least 20 people",
+                "Russian glide bomb attack on Zaporizhzhia kills at least 20 people",
+                "Russian glide bomb attack on Zaporizhzhia kills at least 20 people",
+                "Russian glide bomb attack on Zaporizhzhia kills at least 20 people",
+                "Russian glide bomb attack on Zaporizhzhia kills at least 20 people",
+                "'It's clear that Moscow is just playing with Washington', analyst says",
+                "Analysis: Trump's global headaches worsen weeks before crucial elections",
+                "'It's clear that Moscow is just playing with Washington', analyst says",
+                "Russia pounds Ukrainian cities, spares energy targets for first time since Trump 'ceasefire'",
+                "Russia pounds Ukrainian cities, spares energy targets for first time since Trump 'ceasefire'",
+                "Russia pounds Ukrainian cities, spares energy targets for first time since Trump 'ceasefire'",
+                "Ukraine live: EU sees 'no indication' US intel-sharing halted as Kyiv slams Starlink restrictions",
+                "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
+                "In Ukraine, civilian casualties were already rising. Restrictions on Starlink will only worsen the death toll",
+                "In Ukraine, civilian casualties were already rising. Restrictions on Starlink will only worsen the death toll",
+                "Russia accuses Ukraine of contradicting US brokered deal",
+                "Why have US-Ukraine relations soured ahead of the midterms?"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe",
+                "BBC US",
+                "The Guardian",
+                "Al Jazeera",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "d41a85fe-bfb1-4a29-8f24-2edcc54923a1",
+            "title": "Mozilla says Microsoft still steers Windows users ...",
+            "keywords": [
+                "mozilla",
+                "says",
+                "microsoft",
+                "still",
+                "steers",
+                "windows",
+                "users",
+                "towards",
+                "edge,",
+                "except"
+            ],
+            "entity_signature": "EU:IN:US",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-07T14:14:27.543907+00:00",
+            "last_seen": "2026-10-15T18:53:46.196057+00:00",
+            "chapter_count": 25,
+            "chapter_titles": [
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
+                "Why Amazon is laying off employees in India again?",
+                "Why Amazon is laying off employees in India again?",
+                "Why Amazon is laying off employees in India again?",
+                "US blocks green card route for Indian IT firms; why impact may be limited",
+                "‘Build here, scale here’: IIT alumni body urges institution's diaspora to ‘come home’ to India amid US green card crackdown",
+                "US blocks green card route for Indian IT firms; why impact may be limited",
+                "‘Never raised H-1B green card issue with US’: Piyush Goyal says fewer work visas ‘good’ for India",
+                "US blocks green card route for Indian IT firms; why impact may be limited",
+                "US blocks green card route for Indian IT firms; why impact may be limited",
+                "US blocks green card route for Indian IT firms; why impact may be limited",
+                "US blocks green card route for Indian IT firms; why impact may be limited",
+                "IAF chief ribs US general over F-35 at combat drills",
+                "US blocks green card route for Indian IT firms; why impact may be limited",
+                "US blocks green card route for Indian IT firms; why impact may be limited",
+                "US blocks green card route for Indian IT firms; why impact may be limited",
+                "US blocks green card route for Indian IT firms; why impact may be limited",
+                "Latin American organised crime ‘may operate in 16 European countries’",
+                "Piyush Goyal cites resilient defense, tech ties, says India-US relations remain strong",
+                "'Racist hostility', 'anti-India hate': India on 'attempted mass shooting' targeting Hindu temple in US",
+                "Unacceptable interference: Indian envoy rejects US lawmaker's ‘purging 130 million from voter rolls’ remark"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business",
+                "The Guardian",
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "7b3add8c-9f81-49d4-9cd0-b38e2e28065f",
+            "title": "US plans livestream of execution by firing squad",
+            "keywords": [
+                "plans",
+                "livestream",
+                "execution",
+                "firing",
+                "squad"
+            ],
+            "entity_signature": "US:BBC:AP",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-09T00:09:31.314731+00:00",
+            "last_seen": "2026-10-15T18:53:46.196057+00:00",
+            "chapter_count": 23,
+            "chapter_titles": [
+                "US plans livestream of execution by firing squad",
+                "Daily power demand rises to 290 MU in Andhra Pradesh, says Energy Minister Ravi Kumar",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US plans livestream of execution by firing squad",
+                "Survivor of US Army shooting supports gunman's execution but questions livestream",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US plans livestream of execution by firing squad",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "US and Lebanon protecting wanted Syrian general, BBC finds",
+                "Emergency calls from botched Christa Pike execution released to US media",
+                "One stolen every four minutes - inside the police battle against vehicle thieves",
+                "Watch: BBC joins police on front line against car theft",
+                "One stolen every four minutes - inside the police battle against vehicle thieves",
+                "Watch: BBC joins police on front line against car theft",
+                "Banks say Healey is planning Budget tax raid on their profits"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu",
+                "BBC Middle East",
+                "The Verge",
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "836f850a-d0a9-459d-a879-cb2bf55d8601",
+            "title": "Ball in UK’s court: EU ambassador says Brussels wi...",
+            "keywords": [
+                "ball",
+                "uk’s",
+                "court:",
+                "ambassador",
+                "says",
+                "brussels",
+                "will",
+                "‘ready",
+                "engage‘",
+                "after"
+            ],
+            "entity_signature": "UK:EU:BE:WHO",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-05T06:02:46.837647+00:00",
+            "last_seen": "2026-10-15T18:53:46.196057+00:00",
+            "chapter_count": 6,
+            "chapter_titles": [
+                "Ball in UK’s court: EU ambassador says Brussels will be ‘ready to engage‘ after country decides what it wants",
+                "Three sisters who drowned in sea off Brighton took own lives, inquest finds",
+                "Tiger kills man who entered big cat enclosure at UK wildlife park",
+                "Why the prime minister wants to talk about Brexit again",
+                "Chris Mason: Why the prime minister wants to talk about Brexit again",
+                "Prince Harry and Meghan in first joint outing since UK return: ‘great to be back!’"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP",
+                "BBC News",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "e57e6174-9530-4e77-a9a7-c2d66d0a9059",
+            "title": "NATO may redeploy anti-drone defenses as attacks",
+            "keywords": [
+                "nato",
+                "redeploy",
+                "anti-drone",
+                "defenses",
+                "attacks",
+                "sink",
+                "more",
+                "black",
+                "shipping"
+            ],
+            "entity_signature": "RU:BG:RO:NATO",
+            "category": "Tech",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-15T00:00:34.673276+00:00",
+            "last_seen": "2026-10-15T18:53:46.196057+00:00",
+            "chapter_count": 5,
+            "chapter_titles": [
+                "NATO may redeploy anti-drone defenses as attacks sink more Black Sea shipping",
+                "NATO may redeploy anti-drone defenses as attacks sink more Black Sea shipping",
+                "NATO may redeploy anti-drone defenses as attacks sink more Black Sea shipping",
+                "NATO may redeploy anti-drone defenses as attacks sink more Black Sea shipping",
+                "Seven sailors missing after drones strike tankers near Romania’s Black Sea coast"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian",
+                "Ars Technica"
+            ]
+        },
+        {
+            "arc_id": "327d6295-472a-4976-aa08-ff8b03c53497",
+            "title": "Norway plans temporary ban on smart glasses in som...",
+            "keywords": [
+                "norway",
+                "plans",
+                "temporary",
+                "smart",
+                "glasses",
+                "some",
+                "public",
+                "places"
+            ],
+            "entity_signature": "NO:UK:US",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-05T22:07:16.056000+00:00",
+            "last_seen": "2026-10-15T18:53:46.196057+00:00",
+            "chapter_count": 5,
+            "chapter_titles": [
+                "Norway plans temporary ban on smart glasses in some public places",
+                "Norway plans temporary ban on smart glasses in some public places",
+                "Norway plans temporary ban on smart glasses in some public places",
+                "Popular Norwegian Kitchen Brand Lands in the US with 7 Sleek Small Appliances",
+                "Wes Streeting urges US to back Ukraine on visit to Washington after Starlink row"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "CNET",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "0bea7c25-0a8b-488c-83c7-d9a9aca714f5",
+            "title": "Venezuela's Maduro to face new US charges over all...",
+            "keywords": [
+                "venezuela's",
+                "maduro",
+                "face",
+                "charges",
+                "over",
+                "alleged",
+                "torture",
+                "americans,",
+                "official",
+                "says"
+            ],
+            "entity_signature": "VE:US:Reuters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-08T00:19:05.204415+00:00",
+            "last_seen": "2026-10-15T18:53:46.196057+00:00",
+            "chapter_count": 5,
+            "chapter_titles": [
+                "Venezuela's Maduro to face new US charges over alleged torture of Americans, official says - Reuters",
+                "Nicolás Maduro and his wife indicted for alleged torture of US citizens",
+                "Venezuela's ex-leader Nicolás Maduro charged with conspiracy to commit torture",
+                "Fugitive businessman taken into US custody in Venezuela bribery case",
+                "Venezuela’s Maduro says new US torture allegations are ‘false’"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters",
+                "SCMP",
+                "BBC US",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "af632965-e359-4d37-8f2d-2b355ef14ea9",
+            "title": "US Supreme Court agrees to take up Trump’s ICE det...",
+            "keywords": [
+                "supreme",
+                "court",
+                "agrees",
+                "take",
+                "trump’s",
+                "detention",
+                "policy"
+            ],
+            "entity_signature": "US:Donald Trump:Supreme Court",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-01T19:41:52.469182+00:00",
+            "last_seen": "2026-10-15T18:53:46.196057+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "US Supreme Court agrees to take up Trump’s ICE detention policy",
+                "‘Not conducive’: Centre opposes Balwant Rajoana’s death commutation plea in Supreme Court",
+                "Dying in Detention"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times",
+                "Al Jazeera"
             ]
         },
         {
@@ -848,190 +1512,6 @@
                 "NYT Business",
                 "The Guardian",
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "5e033798-4df2-4364-ae62-063e0d32778c",
-            "title": "‘China already has spies’ at US AI labs, former An...",
-            "keywords": [
-                "‘china",
-                "already",
-                "spies’",
-                "labs,",
-                "former",
-                "anthropic",
-                "researcher",
-                "warns"
-            ],
-            "entity_signature": "CN:US",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-08T00:19:05.204415+00:00",
-            "last_seen": "2026-10-15T14:41:43.062658+00:00",
-            "chapter_count": 32,
-            "chapter_titles": [
-                "‘China already has spies’ at US AI labs, former Anthropic researcher warns",
-                "US AI firm Anthropic enables Chinese-language options for Claude chatbot",
-                "Did a US warship lose power while chasing a Chinese destroyer in the South China Sea?",
-                "It’s time for China to offer more than statements on Hormuz",
-                "US investigates 9 universities over alleged visa fraud, with focus on China",
-                "Flavio Bolsonaro says he would work with China and US as Brazil’s president",
-                "Anthropic claims Chinese AI firms secretly use Claude. Is it true?",
-                "China’s Pacific ties not part of ‘geopolitical rivalry’, Wang Yi tells island leaders",
-                "Why a ‘confrontational posture’ won’t help China in the Arctic",
-                "With war project, US tech ecosystem is beginning to look a lot like China’s",
-                "Meta is banning TikTok ads across its platforms",
-                "Anthropic claims Chinese AI firms secretly use Claude. Is it true?",
-                "Port of LA, key US point for China imports, has best-ever quarter despite trade uncertainty",
-                "How a museum masterpiece’s life-size replica sparked rare US-China collaboration",
-                "In AI, India’s choice needn’t be between a US leash or Chinese hook",
-                "Kurt Campbell on US deterrence, the Quad, Aukus and Taiwan after Xi-Trump summit",
-                "Chinese stocks an undervalued opportunity, says Charlie Munger disciple",
-                "Public comments flood US government websites over proposed H-1B, OPT fee hikes",
-                "Trump’s ‘golden age’ push hands top science honours to big tech. Will it work?",
-                "Why younger Japanese now fear Trump’s US more than China",
-                "Public comments flood US government websites over proposed H-1B, OPT fee hikes",
-                "Taiwan turns to US drone boats to track rising mainland Chinese sea activity",
-                "Bank of America fined US$1.21 billion as US flags suspected Chinese money laundering",
-                "ASML’s chip equipment sales to China soar 109% despite US export curb push",
-                "Bank of America fined US$1.21 billion as US flags suspected Chinese money laundering",
-                "Susan Thornton on US-China ties, post-midterms and averting a new balloon crisis",
-                "Hegseth calls US$1.5 trillion defence budget ‘critical’ to counter China",
-                "China, US discuss AI as chip stock rout hits Asian markets",
-                "‘Trump to decide in 10 days’: US envoy on bill threatening 100% tariffs on India, China, others",
-                "China is a beacon of global embryo research, says scientist on return from US to lead lab",
-                "Blast simulation, university probes, robotics fine, AI spies: 7 US-China relations reads",
-                "Young Americans are key for the US to better understand China"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Verge",
-                "SCMP",
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "bdca5029-0d4f-4394-a2b4-9cbe3186cd64",
-            "title": "How Netanyahu survived the political fallout from ...",
-            "keywords": [
-                "netanyahu",
-                "survived",
-                "political",
-                "fallout",
-                "from",
-                "october",
-                "attacks"
-            ],
-            "entity_signature": "PS:IL:Benjamin Netanyahu",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-07T06:52:47.305533+00:00",
-            "last_seen": "2026-10-15T14:41:43.062658+00:00",
-            "chapter_count": 28,
-            "chapter_titles": [
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "No longer the same Israel? October 7th and the future of the Jewish State",
-                "No longer the same Israel? October 7 and the future of the Jewish State",
-                "No longer the same Israel? October 7 and the future of the Jewish State",
-                "No longer the same Israel? October 7 and the future of the Jewish State",
-                "No longer the same Israel? October 7 and the future of the Jewish State",
-                "No longer the same Israel? October 7 and the future of the Jewish State",
-                "Netanyahu demands probe into Israeli anonymous whistleblowers in 'NAZA' documentary",
-                "The Oct. 7 Attack Changed Israel, but Not Its Politics",
-                "The Oct. 7 Attack Changed Israel, but Not Its Politics",
-                "The Oct. 7 Attack Changed Israel, but Not Its Politics",
-                "The Oct. 7 Attack Changed Israel, but Not Its Politics",
-                "The Oct. 7 Attack Changed Israel, but Not Its Politics",
-                "Do any of these Israeli candidates support a Palestinian state?",
-                "Settlers attack Palestinian mosque near occupied East Jerusalem",
-                "How Gaza changed Europe, exposing cracks that grow bigger by the week | Shada Islam",
-                "How Gaza changed Europe, exposing cracks that grow bigger by the week | Shada Islam",
-                "How Gaza changed Europe, exposing cracks that grow bigger by the week | Shada Islam"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times",
-                "The Guardian",
-                "France 24",
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "ab377d9d-f4cd-4462-a052-657a008186f6",
-            "title": "Live: US wants to hold trilateral Ukraine talks wi...",
-            "keywords": [
-                "live:",
-                "wants",
-                "hold",
-                "trilateral",
-                "ukraine",
-                "talks",
-                "with",
-                "russia",
-                "october,",
-                "zelensky"
-            ],
-            "entity_signature": "US:UA:RU:Volodymyr Zelenskyy",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-04T18:00:03.576079+00:00",
-            "last_seen": "2026-10-15T14:41:43.062658+00:00",
-            "chapter_count": 27,
-            "chapter_titles": [
-                "Live: US wants to hold trilateral Ukraine talks with Russia by end of October, Zelensky says",
-                "US wants to hold trilateral Ukraine talks with Russia by end of October, Zelensky says",
-                "US wants to hold trilateral Ukraine talks with Russia by end of October, Zelensky says",
-                "US wants to hold trilateral Ukraine talks with Russia by end of October, Zelensky says",
-                "Has Russia’s fuel crisis given Iranian oil an opening in Central Asia?",
-                "Has Russia’s fuel crisis given Iranian oil an opening in Central Asia?",
-                "Has Russia’s fuel crisis given Iranian oil an opening in Central Asia?",
-                "Russian glide bomb attack on Zaporizhzhia kills at least 15 people",
-                "Russian glide bomb attack on Zaporizhzhia kills at least 15 people",
-                "Russian glide bomb attack on Zaporizhzhia kills at least 20 people",
-                "Russian glide bomb attack on Zaporizhzhia kills at least 20 people",
-                "Russian glide bomb attack on Zaporizhzhia kills at least 20 people",
-                "Russian glide bomb attack on Zaporizhzhia kills at least 20 people",
-                "Russian glide bomb attack on Zaporizhzhia kills at least 20 people",
-                "Russian glide bomb attack on Zaporizhzhia kills at least 20 people",
-                "Russian glide bomb attack on Zaporizhzhia kills at least 20 people",
-                "'It's clear that Moscow is just playing with Washington', analyst says",
-                "Analysis: Trump's global headaches worsen weeks before crucial elections",
-                "'It's clear that Moscow is just playing with Washington', analyst says",
-                "Russia pounds Ukrainian cities, spares energy targets for first time since Trump 'ceasefire'",
-                "Russia pounds Ukrainian cities, spares energy targets for first time since Trump 'ceasefire'",
-                "Russia pounds Ukrainian cities, spares energy targets for first time since Trump 'ceasefire'",
-                "Ukraine live: EU sees 'no indication' US intel-sharing halted as Kyiv slams Starlink restrictions",
-                "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
-                "In Ukraine, civilian casualties were already rising. Restrictions on Starlink will only worsen the death toll",
-                "In Ukraine, civilian casualties were already rising. Restrictions on Starlink will only worsen the death toll",
-                "Russia accuses Ukraine of contradicting US brokered deal"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe",
-                "BBC US",
-                "Al Jazeera",
-                "France 24",
-                "The Guardian"
             ]
         },
         {
@@ -1134,74 +1614,6 @@
             ]
         },
         {
-            "arc_id": "e57e6174-9530-4e77-a9a7-c2d66d0a9059",
-            "title": "NATO may redeploy anti-drone defenses as attacks",
-            "keywords": [
-                "nato",
-                "redeploy",
-                "anti-drone",
-                "defenses",
-                "attacks",
-                "sink",
-                "more",
-                "black",
-                "shipping"
-            ],
-            "entity_signature": "RU:BG:RO:NATO",
-            "category": "Tech",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-15T00:00:34.673276+00:00",
-            "last_seen": "2026-10-15T14:41:43.062658+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "NATO may redeploy anti-drone defenses as attacks sink more Black Sea shipping",
-                "NATO may redeploy anti-drone defenses as attacks sink more Black Sea shipping",
-                "NATO may redeploy anti-drone defenses as attacks sink more Black Sea shipping",
-                "NATO may redeploy anti-drone defenses as attacks sink more Black Sea shipping"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Ars Technica"
-            ]
-        },
-        {
-            "arc_id": "327d6295-472a-4976-aa08-ff8b03c53497",
-            "title": "Norway plans temporary ban on smart glasses in som...",
-            "keywords": [
-                "norway",
-                "plans",
-                "temporary",
-                "smart",
-                "glasses",
-                "some",
-                "public",
-                "places"
-            ],
-            "entity_signature": "NO:UK:US",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-15T14:41:43.062658+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "Norway plans temporary ban on smart glasses in some public places",
-                "Norway plans temporary ban on smart glasses in some public places",
-                "Norway plans temporary ban on smart glasses in some public places",
-                "Popular Norwegian Kitchen Brand Lands in the US with 7 Sleek Small Appliances"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "CNET",
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "0ccd26fe-0717-43e7-9356-00331e9cc33d",
             "title": "Romania’s political crisis intensifies as Parliame...",
             "keywords": [
@@ -1232,63 +1644,6 @@
                 "Al Jazeera",
                 "The Guardian",
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "d41a85fe-bfb1-4a29-8f24-2edcc54923a1",
-            "title": "Mozilla says Microsoft still steers Windows users ...",
-            "keywords": [
-                "mozilla",
-                "says",
-                "microsoft",
-                "still",
-                "steers",
-                "windows",
-                "users",
-                "towards",
-                "edge,",
-                "except"
-            ],
-            "entity_signature": "EU:IN:US",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-07T14:14:27.543907+00:00",
-            "last_seen": "2026-10-15T09:45:51.708422+00:00",
-            "chapter_count": 24,
-            "chapter_titles": [
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU",
-                "Why Amazon is laying off employees in India again?",
-                "Why Amazon is laying off employees in India again?",
-                "Why Amazon is laying off employees in India again?",
-                "US blocks green card route for Indian IT firms; why impact may be limited",
-                "‘Build here, scale here’: IIT alumni body urges institution's diaspora to ‘come home’ to India amid US green card crackdown",
-                "US blocks green card route for Indian IT firms; why impact may be limited",
-                "‘Never raised H-1B green card issue with US’: Piyush Goyal says fewer work visas ‘good’ for India",
-                "US blocks green card route for Indian IT firms; why impact may be limited",
-                "US blocks green card route for Indian IT firms; why impact may be limited",
-                "US blocks green card route for Indian IT firms; why impact may be limited",
-                "US blocks green card route for Indian IT firms; why impact may be limited",
-                "IAF chief ribs US general over F-35 at combat drills",
-                "US blocks green card route for Indian IT firms; why impact may be limited",
-                "US blocks green card route for Indian IT firms; why impact may be limited",
-                "US blocks green card route for Indian IT firms; why impact may be limited",
-                "US blocks green card route for Indian IT firms; why impact may be limited",
-                "Latin American organised crime ‘may operate in 16 European countries’",
-                "Piyush Goyal cites resilient defense, tech ties, says India-US relations remain strong",
-                "'Racist hostility', 'anti-India hate': India on 'attempted mass shooting' targeting Hindu temple in US"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business",
-                "Hindustan Times",
-                "The Guardian"
             ]
         },
         {
@@ -1850,57 +2205,6 @@
             ]
         },
         {
-            "arc_id": "7b3add8c-9f81-49d4-9cd0-b38e2e28065f",
-            "title": "US plans livestream of execution by firing squad",
-            "keywords": [
-                "plans",
-                "livestream",
-                "execution",
-                "firing",
-                "squad"
-            ],
-            "entity_signature": "US:BBC:AP",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-09T00:09:31.314731+00:00",
-            "last_seen": "2026-10-14T12:40:33.037960+00:00",
-            "chapter_count": 22,
-            "chapter_titles": [
-                "US plans livestream of execution by firing squad",
-                "Daily power demand rises to 290 MU in Andhra Pradesh, says Energy Minister Ravi Kumar",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US plans livestream of execution by firing squad",
-                "Survivor of US Army shooting supports gunman's execution but questions livestream",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US plans livestream of execution by firing squad",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "US and Lebanon protecting wanted Syrian general, BBC finds",
-                "Emergency calls from botched Christa Pike execution released to US media",
-                "One stolen every four minutes - inside the police battle against vehicle thieves",
-                "Watch: BBC joins police on front line against car theft",
-                "One stolen every four minutes - inside the police battle against vehicle thieves",
-                "Watch: BBC joins police on front line against car theft"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Verge",
-                "BBC Middle East",
-                "BBC News",
-                "The Hindu"
-            ]
-        },
-        {
             "arc_id": "f1c4f5f4-8556-4887-ae66-146684962a40",
             "title": "Ukraine says Russia bombed apartment block as birt...",
             "keywords": [
@@ -1985,211 +2289,6 @@
             "sources_involved": [
                 "Reuters",
                 "New York Times"
-            ]
-        },
-        {
-            "arc_id": "48671d48-be32-4bfc-8d8f-7c22ba68b364",
-            "title": "'We were naive' about Hamas, Israeli ex-hostage Sh...",
-            "keywords": [
-                "were",
-                "naive'",
-                "about",
-                "hamas,",
-                "israeli",
-                "ex-hostage",
-                "shoshan",
-                "haran",
-                "says"
-            ],
-            "entity_signature": "PS:IL:FR",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-06T16:07:34.654926+00:00",
-            "last_seen": "2026-10-13T10:09:25.318029+00:00",
-            "chapter_count": 131,
-            "chapter_titles": [
-                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
-                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
-                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
-                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
-                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
-                "Live: Israel marks three years since Hamas’s deadly October 7 attacks",
-                "Israel marks third anniversary of October 7 attack as election looms",
-                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
-                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
-                "Israel warns Gazans will pay 'heavy price' for any October 7 attacks on military",
-                "Israelis mourn on the anniversary of the Oct. 7 as Palestinians grapple with war it sparked",
-                "Live: Israel marks three years since Hamas’s deadly October 7 attacks",
-                "Israel marks third anniversary of October 7 attack as election looms",
-                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
-                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
-                "Israel warns Gazans will pay 'heavy price' for any October 7 attacks on military",
-                "Israelis mourn on the anniversary of the Oct. 7 as Palestinians grapple with war it sparked",
-                "Live: Israel marks three years since Hamas’s deadly October 7 attacks",
-                "Israel marks third anniversary of October 7 attack as election looms",
-                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
-                "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
-                "Israel warns Gazans will pay 'heavy price' for any October 7 attacks on military",
-                "Israelis mourn on the anniversary of the Oct. 7 as Palestinians grapple with war it sparked",
-                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira",
-                "Israel marks third anniversary of October 7 attack as election looms",
-                "Israeli papers commemorate October 7 attacks, three years on",
-                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
-                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira",
-                "Israel marks third anniversary of October 7 attack as election looms",
-                "Israeli papers commemorate October 7 attacks, three years on",
-                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
-                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira",
-                "Israel marks third anniversary of October 7 attack as election looms",
-                "Israeli papers commemorate October 7 attacks, three years on",
-                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
-                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira",
-                "Israel marks third anniversary of October 7 attack as election looms",
-                "Israeli papers commemorate October 7 attacks, three years on",
-                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
-                "Israeli papers commemorate October 7 attacks, three years on",
-                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira",
-                "Israel marks third anniversary of October 7 attack as election looms",
-                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
-                "'Time doesn't heal': Parents of October 7 attacks victim Aner Shapira",
-                "Israeli papers commemorate October 7 attacks, three years on",
-                "Israel marks third anniversary of October 7 attack as election looms",
-                "UK to make last-ditch effort to stop Israel closing East Jerusalem consulate",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
-                "Israelis mourn 7 October attack victims three years after deadly Hamas raid",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
-                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
-                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
-                "Israelis mourn 7 October attack victims three years after deadly Hamas raid",
-                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "Israelis mourn 7 October attack victims three years after deadly Hamas raid",
-                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
-                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
-                "Israelis mourn 7 October attack victims three years after deadly Hamas raid",
-                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "Child flees as Israeli settlers hijack car during pogrom",
-                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
-                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
-                "Israel Denounces the Decision to Award the Nobel Peace Prize to Navi Pillay",
-                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
-                "Human Rights Lawyer Navi Pillay Is Awarded Nobel Peace Prize",
-                "Palestinian Authority Says Elections Are to Be Postponed",
-                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
-                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
-                "Human Rights Lawyer Navi Pillay Is Awarded Nobel Peace Prize",
-                "Palestinian Authority Says Elections Are to Be Postponed",
-                "Israel Denounces the Decision to Award the Nobel Peace Prize to Navi Pillay",
-                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
-                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
-                "Human Rights Lawyer Navi Pillay Is Awarded Nobel Peace Prize",
-                "Palestinian Authority Says Elections Are to Be Postponed",
-                "Israel Denounces the Decision to Award the Nobel Peace Prize to Navi Pillay",
-                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
-                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls",
-                "Human Rights Lawyer Navi Pillay Is Awarded Nobel Peace Prize",
-                "A year of ceasefire in Gaza through the lens of NPR's reporter",
-                "Palestinian Authority Says Elections Are to Be Postponed",
-                "Israel Denounces the Decision to Award the Nobel Peace Prize to Navi Pillay",
-                "Palestinian leader Abbas postpones elections to September 2027",
-                "Palestinians struggle to find food in Gaza a year after ceasefire",
-                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "Palestinians gained 'nothing' from October 7, Egyptian businessman Naguib Sawiris says",
-                "A year of ceasefire in Gaza through the lens of NPR's reporter",
-                "Palestinian leader Abbas postpones elections to September 2027",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "Palestinians struggle to find food in Gaza a year after ceasefire",
-                "Palestinians still being killed in Gaza, one year into ‘ceasefire’",
-                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
-                "Photos: Thousands march across Europe to demand end to Israel’s war on Gaza",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "Palestinians struggle to find food in Gaza a year after ceasefire",
-                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "Palestinians struggle to find food in Gaza a year after ceasefire",
-                "France Protests, Israel's 'politically charged' remembrance, Ethopia, Ukraine",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "Wringing Hope From the Rubble of Gaza",
-                "Wringing Hope From the Rubble of Gaza",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "Wringing Hope From the Rubble of Gaza",
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
-                "Wringing Hope From the Rubble of Gaza",
-                "Gaza: Still Reporting",
-                "Israeli strike on tent in Gaza’s Khan Younis kills three",
-                "'Perfect Victims' author Mohammed El-Kurd challenges how Palestinian suffering is viewed",
-                "'Perfect Victims' author Mohammed El-Kurd challenges how Palestinian suffering is viewed",
-                "Israeli forces raid Palestinian NGOs and hospital in occupied West Bank",
-                "Air France says it will follow Israeli rule barring crew from some nations"
-            ],
-            "importance_trend": "fading",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24",
-                "BBC News",
-                "NPR News",
-                "BBC Middle East",
-                "New York Times",
-                "SCMP",
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "836f850a-d0a9-459d-a879-cb2bf55d8601",
-            "title": "Ball in UK’s court: EU ambassador says Brussels wi...",
-            "keywords": [
-                "ball",
-                "uk’s",
-                "court:",
-                "ambassador",
-                "says",
-                "brussels",
-                "will",
-                "‘ready",
-                "engage‘",
-                "after"
-            ],
-            "entity_signature": "UK:EU:BE:WHO",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-05T06:02:46.837647+00:00",
-            "last_seen": "2026-10-13T10:09:25.318029+00:00",
-            "chapter_count": 5,
-            "chapter_titles": [
-                "Ball in UK’s court: EU ambassador says Brussels will be ‘ready to engage‘ after country decides what it wants",
-                "Three sisters who drowned in sea off Brighton took own lives, inquest finds",
-                "Tiger kills man who entered big cat enclosure at UK wildlife park",
-                "Why the prime minister wants to talk about Brexit again",
-                "Chris Mason: Why the prime minister wants to talk about Brexit again"
-            ],
-            "importance_trend": "fading",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC News",
-                "SCMP",
-                "The Guardian"
             ]
         },
         {
@@ -2306,43 +2405,6 @@
                 "BBC News",
                 "France 24",
                 "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "0bea7c25-0a8b-488c-83c7-d9a9aca714f5",
-            "title": "Venezuela's Maduro to face new US charges over all...",
-            "keywords": [
-                "venezuela's",
-                "maduro",
-                "face",
-                "charges",
-                "over",
-                "alleged",
-                "torture",
-                "americans,",
-                "official",
-                "says"
-            ],
-            "entity_signature": "VE:US:Reuters",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-08T00:19:05.204415+00:00",
-            "last_seen": "2026-10-12T21:34:36.830427+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "Venezuela's Maduro to face new US charges over alleged torture of Americans, official says - Reuters",
-                "Nicolás Maduro and his wife indicted for alleged torture of US citizens",
-                "Venezuela's ex-leader Nicolás Maduro charged with conspiracy to commit torture",
-                "Fugitive businessman taken into US custody in Venezuela bribery case"
-            ],
-            "importance_trend": "fading",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian",
-                "Reuters",
-                "BBC US"
             ]
         },
         {
@@ -2826,37 +2888,6 @@
             ]
         },
         {
-            "arc_id": "af632965-e359-4d37-8f2d-2b355ef14ea9",
-            "title": "US Supreme Court agrees to take up Trump’s ICE det...",
-            "keywords": [
-                "supreme",
-                "court",
-                "agrees",
-                "take",
-                "trump’s",
-                "detention",
-                "policy"
-            ],
-            "entity_signature": "US:Donald Trump:Supreme Court",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-01T19:41:52.469182+00:00",
-            "last_seen": "2026-10-07T14:14:27.543907+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "US Supreme Court agrees to take up Trump’s ICE detention policy",
-                "‘Not conducive’: Centre opposes Balwant Rajoana’s death commutation plea in Supreme Court"
-            ],
-            "importance_trend": "fading",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera",
-                "Hindustan Times"
-            ]
-        },
-        {
             "arc_id": "0345871a-6097-408b-8198-71187772a5f0",
             "title": "Russia says it properly informed WHO of plague ins...",
             "keywords": [
@@ -2961,7 +2992,7 @@
                 "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says",
                 "'We were naive' about Hamas, Israeli ex-hostage Shoshan Haran says"
             ],
-            "importance_trend": "fading",
+            "importance_trend": "stable",
             "peak_velocity": 0.25,
             "sources_involved": [
                 "France 24"
@@ -3625,37 +3656,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "France 24"
-            ]
-        },
-        {
-            "arc_id": "42bef234-55df-467f-b615-d3c5e8675e21",
-            "title": "No imminent threat to NATO territory from Russia, ...",
-            "keywords": [
-                "imminent",
-                "threat",
-                "nato",
-                "territory",
-                "from",
-                "russia,",
-                "rutte",
-                "says",
-                "reuters"
-            ],
-            "entity_signature": "RU:Mark Rutte:NATO:Reuters",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-09-30T16:40:54.510541+00:00",
-            "last_seen": "2026-09-30T16:40:54.510541+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "No imminent threat to NATO territory from Russia, Rutte says - Reuters"
-            ],
-            "importance_trend": "fading",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "Reuters"
             ]
         }
     ],
