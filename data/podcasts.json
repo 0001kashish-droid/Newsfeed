@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28T17:00:16.820892+00:00",
+  "lastUpdated": "2026-10-28T21:36:57.324593+00:00",
   "total": 30,
   "episodes": [
     {
@@ -23,20 +23,58 @@
       "duration": "3:34:27",
       "views": "",
       "category": "AI & Tech",
-      "resonant_news": []
+      "resonant_news": [
+        {
+          "id": "techcrunch-3-1839",
+          "title": "Anthropic just launched tools to show companies what their AI spending is buying",
+          "source": "TechCrunch",
+          "link": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
+          "url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
+          "relevance": 0.296,
+          "resonance_score": 0.296
+        },
+        {
+          "id": "cnet-0-43",
+          "title": "Google Debuts New AI Models, Genie 4 and Gemini 4 Carbon: What You Need to Know",
+          "source": "CNET",
+          "link": "https://www.cnet.com/tech/services-and-software/google-genie-4-gemini-4-carbon-ai-news/",
+          "url": "https://www.cnet.com/tech/services-and-software/google-genie-4-gemini-4-carbon-ai-news/",
+          "relevance": 0.297,
+          "resonance_score": 0.297
+        },
+        {
+          "id": "arstechnica-3-5642",
+          "title": "Google announces Gemini 4 Carbon, its latest frontier AI model that you can't use",
+          "source": "Ars Technica",
+          "link": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/",
+          "url": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/",
+          "relevance": 0.3,
+          "resonance_score": 0.3
+        },
+        {
+          "id": "reuters-world-3-8599",
+          "title": "Google launches Gemini 4 Carbon AI model with cybersecurity focus - Reuters",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNLXQyWUp5N0QwdVRZWXFkd1M5b2RrcExtNVBJS0JKaDdhaG1DQThXeEVlUWVWQUNPTjNOak9ZSnZlQjhDUkNIT2oxSlJrSjlJSkVSMVZFMW5acXV1N0l5bWxKTU1CNmtzZVM3U2dZVE5RbHlrZ2k5LTljM2FnNDVLM3NFbGI4N1hSMVIyQ2FNZXZYY0ZuNV9KR0lQYzdxT2RGdzkxamkzLXloVUVmLUhmdUZ3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNLXQyWUp5N0QwdVRZWXFkd1M5b2RrcExtNVBJS0JKaDdhaG1DQThXeEVlUWVWQUNPTjNOak9ZSnZlQjhDUkNIT2oxSlJrSjlJSkVSMVZFMW5acXV1N0l5bWxKTU1CNmtzZVM3U2dZVE5RbHlrZ2k5LTljM2FnNDVLM3NFbGI4N1hSMVIyQ2FNZXZYY0ZuNV9KR0lQYzdxT2RGdzkxamkzLXloVUVmLUhmdUZ3?oc=5",
+          "relevance": 0.153,
+          "resonance_score": 0.153
+        }
+      ]
     },
     {
       "id": "tp_FGCP2F_7rQk",
-      "title": "The FULL Taiwan Experience w/ Jensen Huang | Lex Fridman",
+      "title": "Taiwan: The Most Epic Night Market Experience w/ Jensen Huang | Lex Fridman",
       "podcast": "Lex Fridman Podcast",
       "channel": "Lex Fridman Podcast",
       "podcastLogo": "LF",
       "tier": "flagship",
-      "guest": "",
+      "guest": "Taiwan",
       "topics": [
-        "Artificial Intelligence"
+        "Artificial Intelligence",
+        "Global Economy"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning the full taiwan experience w/ jensen huang.",
+      "theme": "Explores strategic perspectives and key developments concerning taiwan: the most epic night market experience w/ jensen huang.",
       "imageUrl": "https://i.ytimg.com/vi/FGCP2F_7rQk/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/FGCP2F_7rQk/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=FGCP2F_7rQk",
@@ -186,7 +224,7 @@
       "category": "Science & Health",
       "resonant_news": [
         {
-          "id": "bbc-mideast-4-3425",
+          "id": "bbc-mideast-5-2338",
           "title": "Jordan carries out deadly strike in Syria in retaliation for church attack",
           "source": "BBC Middle East",
           "link": "https://www.bbc.co.uk/news/articles/cq8ezg6dy6xlo?at_medium=RSS&at_campaign=rss",
@@ -195,13 +233,22 @@
           "resonance_score": 0.219
         },
         {
-          "id": "guardian-world-1-1240",
+          "id": "guardian-world-1-2922",
           "title": "Africa’s ‘unprecedented’ Ebola outbreak could reach UK, says top health official",
           "source": "The Guardian",
           "link": "https://www.theguardian.com/global-development/2026/oct/28/africa-ebola-outbreak-could-reach-uk-says-top-health-official",
           "url": "https://www.theguardian.com/global-development/2026/oct/28/africa-ebola-outbreak-could-reach-uk-says-top-health-official",
           "relevance": 0.215,
           "resonance_score": 0.215
+        },
+        {
+          "id": "nyt-business-5-5131",
+          "title": "RFK Jr. to Allow Broad Use of Unapproved Peptide Injections",
+          "source": "NYT Business",
+          "link": "https://www.nytimes.com/2026/10/28/health/peptides-kennedy-fda.html",
+          "url": "https://www.nytimes.com/2026/10/28/health/peptides-kennedy-fda.html",
+          "relevance": 0.218,
+          "resonance_score": 0.218
         }
       ]
     },
@@ -313,8 +360,8 @@
       "thumbnail": "https://i.ytimg.com/vi/AoKo6EujpW8/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=AoKo6EujpW8",
       "youtube_url": "https://www.youtube.com/watch?v=AoKo6EujpW8",
-      "pubDate": "1d ago",
-      "date": "1d ago",
+      "pubDate": "2d ago",
+      "date": "2d ago",
       "duration": "5:52",
       "views": "",
       "category": "AI & Tech",
@@ -343,16 +390,7 @@
       "category": "Geopolitics & Policy",
       "resonant_news": [
         {
-          "id": "aljazeera-3-815",
-          "title": "Israeli soldier visiting UK faces war crimes complaint",
-          "source": "Al Jazeera",
-          "link": "https://www.aljazeera.com/news/2026/10/28/israeli-soldier-visiting-uk-faces-war-crimes-complaint?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/10/28/israeli-soldier-visiting-uk-faces-war-crimes-complaint?traffic_source=rss",
-          "relevance": 0.421,
-          "resonance_score": 0.421
-        },
-        {
-          "id": "nyt-asia-3-9383",
+          "id": "nyt-asia-3-8950",
           "title": "Tensions Between North and South Korea Stem From Decade-Old Border Dispute",
           "source": "New York Times",
           "link": "https://www.nytimes.com/2026/10/27/world/asia/korea-tensions-border-dmz-mdl.html",
@@ -361,7 +399,7 @@
           "resonance_score": 0.416
         },
         {
-          "id": "nyt-world-2-5270",
+          "id": "nyt-world-4-6603",
           "title": "The Ocean ‘Was the Color of Chocolate.’ Mexico Declares War on Seaweed.",
           "source": "New York Times",
           "link": "https://www.nytimes.com/2026/10/28/world/americas/mexico-seaweed-navy.html",
@@ -370,16 +408,7 @@
           "resonance_score": 0.416
         },
         {
-          "id": "npr-national-4-5160",
-          "title": "Senate candidates built up massive campaign war chests with out-of-state donations",
-          "source": "NPR News",
-          "link": "https://www.npr.org/2026/10/28/nx-s1-5940017/senate-campaign-fundraising-actblue-winred-ossoff",
-          "url": "https://www.npr.org/2026/10/28/nx-s1-5940017/senate-campaign-fundraising-actblue-winred-ossoff",
-          "relevance": 0.417,
-          "resonance_score": 0.417
-        },
-        {
-          "id": "france24-me-2-7543",
+          "id": "france24-me-5-6954",
           "title": "Israeli election: Lebanon expects little change in Israeli policy",
           "source": "France 24",
           "link": "https://www.france24.com/en/video/20261028-israeli-election-lebanon-expects-little-change-in-israeli-policy",
@@ -388,16 +417,7 @@
           "resonance_score": 0.414
         },
         {
-          "id": "hindustan-times-2-5416",
-          "title": "Supreme Court directs Centre to grant war injury pension to Army veteran who developed illness during Kargil posting",
-          "source": "Hindustan Times",
-          "link": "https://www.hindustantimes.com/india-news/supreme-court-directs-centre-to-grant-war-injury-pension-to-army-veteran-who-developed-illness-during-kargil-posting-101793202987916.html",
-          "url": "https://www.hindustantimes.com/india-news/supreme-court-directs-centre-to-grant-war-injury-pension-to-army-veteran-who-developed-illness-during-kargil-posting-101793202987916.html",
-          "relevance": 0.417,
-          "resonance_score": 0.417
-        },
-        {
-          "id": "france24-me-0-190",
+          "id": "france24-me-3-1594",
           "title": "Israel election: What impact on Iran as the war in the Middle East continues?",
           "source": "France 24",
           "link": "https://www.france24.com/en/video/20261028-israel-election-what-impact-on-iran-as-the-war-in-the-middle-east-continues",
@@ -423,8 +443,8 @@
       "thumbnail": "https://i.ytimg.com/vi/q2uVRZougS8/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=q2uVRZougS8",
       "youtube_url": "https://www.youtube.com/watch?v=q2uVRZougS8",
-      "pubDate": "4d ago",
-      "date": "4d ago",
+      "pubDate": "5d ago",
+      "date": "5d ago",
       "duration": "9:39",
       "views": "",
       "category": "Ideas & Culture",
@@ -476,67 +496,40 @@
       "category": "Business & Economy",
       "resonant_news": [
         {
-          "id": "bbc-world-5-9004",
-          "title": "Watch: At the scene of Spain's deadly train crash",
-          "source": "BBC News",
-          "link": "https://www.bbc.co.uk/news/videos/cw5ynjgy3vvgo?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/videos/cw5ynjgy3vvgo?at_medium=RSS&at_campaign=rss",
+          "id": "scmp-asia-2-6375",
+          "title": "Huawei opens defence in US criminal trial, touting its record of innovation",
+          "source": "SCMP",
+          "link": "https://www.scmp.com/news/us/article/3372491/huawei-opens-defence-us-criminal-trial-touting-its-record-innovation",
+          "url": "https://www.scmp.com/news/us/article/3372491/huawei-opens-defence-us-criminal-trial-touting-its-record-innovation",
+          "relevance": 0.414,
+          "resonance_score": 0.414
+        },
+        {
+          "id": "scmp-asia-3-5367",
+          "title": "US Fed holds interest rates steady despite surging inflation",
+          "source": "SCMP",
+          "link": "https://www.scmp.com/news/world/united-states-canada/article/3372489/us-fed-holds-interest-rates-steady-despite-surging-inflation",
+          "url": "https://www.scmp.com/news/world/united-states-canada/article/3372489/us-fed-holds-interest-rates-steady-despite-surging-inflation",
           "relevance": 0.218,
           "resonance_score": 0.218
         },
         {
-          "id": "the-hindu-5-4011",
-          "title": "S. Jaishankar holds talks with Austrian counterpart Meinl-Reisinger",
-          "source": "The Hindu",
-          "link": "https://www.thehindu.com/news/national/s-jaishankar-holds-talks-with-austrian-counterpart-meinl-reisinger/article71637593.ece",
-          "url": "https://www.thehindu.com/news/national/s-jaishankar-holds-talks-with-austrian-counterpart-meinl-reisinger/article71637593.ece",
-          "relevance": 0.25,
-          "resonance_score": 0.25
-        },
-        {
-          "id": "reuters-world-3-7469",
-          "title": "Bank of Canada raises key interest rate, says another hike possible - Reuters",
-          "source": "Reuters",
-          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQUNfMFh2VXFuRUpyWjNldzQ4dmZROU5kNjhfUlNoXzd1UXNWV0NiTXJiclpmYUlnS1dFUXJ0QkVPVno1VkJxaEpOUDc5Qk5PS2ZBR1NUbE5RSU5ja2FRQmVpd1VZZWhmdjl6dzRFTE9hNGJvWHNCc2VFN2NFQlNvYzNtdjYwWnVoNmdIZUdMRkZBbHY2OTJ1OEpvMFlRYkRHY2ZVZmZKM2RUdU9IckpCMzV2Wm4?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQUNfMFh2VXFuRUpyWjNldzQ4dmZROU5kNjhfUlNoXzd1UXNWV0NiTXJiclpmYUlnS1dFUXJ0QkVPVno1VkJxaEpOUDc5Qk5PS2ZBR1NUbE5RSU5ja2FRQmVpd1VZZWhmdjl6dzRFTE9hNGJvWHNCc2VFN2NFQlNvYzNtdjYwWnVoNmdIZUdMRkZBbHY2OTJ1OEpvMFlRYkRHY2ZVZmZKM2RUdU9IckpCMzV2Wm4?oc=5",
-          "relevance": 0.229,
-          "resonance_score": 0.229
-        },
-        {
-          "id": "aljazeera-0-5412",
-          "title": "Bank of Canada raises interest rates for the first time in three years",
-          "source": "Al Jazeera",
-          "link": "https://www.aljazeera.com/economy/2026/10/28/bank-of-canada-raises-interest-rates-for-the-first-time-in-three-years?traffic_source=rss",
-          "url": "https://www.aljazeera.com/economy/2026/10/28/bank-of-canada-raises-interest-rates-for-the-first-time-in-three-years?traffic_source=rss",
+          "id": "bbc-world-0-7720",
+          "title": "Healey unveils £100 for energy bills and bank tax in first Budget",
+          "source": "BBC News",
+          "link": "https://www.bbc.co.uk/news/articles/cqpvgxz3y49go?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/cqpvgxz3y49go?at_medium=RSS&at_campaign=rss",
           "relevance": 0.219,
           "resonance_score": 0.219
         },
         {
-          "id": "guardian-asia-1-9009",
+          "id": "guardian-asia-1-1900",
           "title": "Neck and neck in the 2026 New Zealand election – podcast",
           "source": "The Guardian",
           "link": "https://www.theguardian.com/australia-news/audio/2026/oct/27/neck-and-neck-in-the-2026-new-zealand-election-full-story-podcast",
           "url": "https://www.theguardian.com/australia-news/audio/2026/oct/27/neck-and-neck-in-the-2026-new-zealand-election-full-story-podcast",
           "relevance": 0.221,
           "resonance_score": 0.221
-        },
-        {
-          "id": "arstechnica-0-6113",
-          "title": "A hidden ocean change near Antarctica could have global consequences",
-          "source": "Ars Technica",
-          "link": "https://arstechnica.com/science/2026/10/antarctic-sea-ice-loss-could-reshape-weather-far-beyond-the-pole/",
-          "url": "https://arstechnica.com/science/2026/10/antarctic-sea-ice-loss-could-reshape-weather-far-beyond-the-pole/",
-          "relevance": 0.222,
-          "resonance_score": 0.222
-        },
-        {
-          "id": "bbc-mideast-5-1158",
-          "title": "Israel and the US are both going to the polls - the consequences will be global",
-          "source": "BBC Middle East",
-          "link": "https://www.bbc.co.uk/news/articles/crlykey9jywqo?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/crlykey9jywqo?at_medium=RSS&at_campaign=rss",
-          "relevance": 0.44,
-          "resonance_score": 0.44
         }
       ]
     },
@@ -564,7 +557,7 @@
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "bbc-europe-3-6499",
+          "id": "bbc-europe-4-3282",
           "title": "Norway and Finland leaders hold rare call with Putin",
           "source": "BBC Europe",
           "link": "https://www.bbc.co.uk/news/articles/c6vgj813mlelo?at_medium=RSS&at_campaign=rss",
@@ -573,22 +566,13 @@
           "resonance_score": 0.222
         },
         {
-          "id": "bbc-europe-1-6499",
+          "id": "bbc-europe-2-20",
           "title": "Ceasefire extended across Ukraine's Kherson region, officials say",
           "source": "BBC Europe",
           "link": "https://www.bbc.co.uk/news/articles/c6lye1w9p2l8o?at_medium=RSS&at_campaign=rss",
           "url": "https://www.bbc.co.uk/news/articles/c6lye1w9p2l8o?at_medium=RSS&at_campaign=rss",
           "relevance": 0.155,
           "resonance_score": 0.155
-        },
-        {
-          "id": "aljazeera-2-7111",
-          "title": "Kremlin says European countries not included in next Ukraine talks",
-          "source": "Al Jazeera",
-          "link": "https://www.aljazeera.com/news/2026/10/28/kremlin-says-european-countries-not-included-in-next-ukraine-talks?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/10/28/kremlin-says-european-countries-not-included-in-next-ukraine-talks?traffic_source=rss",
-          "relevance": 0.156,
-          "resonance_score": 0.156
         }
       ]
     },
@@ -608,8 +592,8 @@
       "thumbnail": "https://i.ytimg.com/vi/x09P5h5Soy8/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=x09P5h5Soy8",
       "youtube_url": "https://www.youtube.com/watch?v=x09P5h5Soy8",
-      "pubDate": "2h ago",
-      "date": "2h ago",
+      "pubDate": "7h ago",
+      "date": "7h ago",
       "duration": "50:36",
       "views": "",
       "category": "AI & Tech",
@@ -640,7 +624,7 @@
     },
     {
       "id": "tp_LY1UOVawwDc",
-      "title": "He is Murdered | Part 5 | The Haunted Library With Collin Morgan",
+      "title": "Frankenstein | Part 5 | The Haunted Library With Collin Morgan",
       "podcast": "BBC Podcasts",
       "channel": "BBC Podcasts",
       "podcastLogo": "BBC",
@@ -649,13 +633,13 @@
       "topics": [
         "Ideas & Culture"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning he is murdered.",
+      "theme": "Explores strategic perspectives and key developments concerning frankenstein.",
       "imageUrl": "https://i.ytimg.com/vi/LY1UOVawwDc/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/LY1UOVawwDc/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=LY1UOVawwDc",
       "youtube_url": "https://www.youtube.com/watch?v=LY1UOVawwDc",
-      "pubDate": "1d ago",
-      "date": "1d ago",
+      "pubDate": "2d ago",
+      "date": "2d ago",
       "duration": "28:47",
       "views": "",
       "category": "Ideas & Culture",
@@ -677,8 +661,8 @@
       "thumbnail": "https://i.ytimg.com/vi/FMAHPlNQDzU/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=FMAHPlNQDzU",
       "youtube_url": "https://www.youtube.com/watch?v=FMAHPlNQDzU",
-      "pubDate": "7h ago",
-      "date": "7h ago",
+      "pubDate": "11h ago",
+      "date": "11h ago",
       "duration": "2:53",
       "views": "",
       "category": "Ideas & Culture",
@@ -700,8 +684,8 @@
       "thumbnail": "https://i.ytimg.com/vi/a_bBKKZVaiE/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=a_bBKKZVaiE",
       "youtube_url": "https://www.youtube.com/watch?v=a_bBKKZVaiE",
-      "pubDate": "1d ago",
-      "date": "1d ago",
+      "pubDate": "2d ago",
+      "date": "2d ago",
       "duration": "2:56",
       "views": "",
       "category": "AI & Tech",
@@ -723,8 +707,8 @@
       "thumbnail": "https://i.ytimg.com/vi/CC9MIHTpYfA/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=CC9MIHTpYfA",
       "youtube_url": "https://www.youtube.com/watch?v=CC9MIHTpYfA",
-      "pubDate": "5d ago",
-      "date": "5d ago",
+      "pubDate": "6d ago",
+      "date": "6d ago",
       "duration": "20:09",
       "views": "",
       "category": "AI & Tech",
@@ -746,8 +730,8 @@
       "thumbnail": "https://i.ytimg.com/vi/2sS0ZeLxC9I/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=2sS0ZeLxC9I",
       "youtube_url": "https://www.youtube.com/watch?v=2sS0ZeLxC9I",
-      "pubDate": "17h ago",
-      "date": "17h ago",
+      "pubDate": "22h ago",
+      "date": "22h ago",
       "duration": "56:47",
       "views": "",
       "category": "Ideas & Culture",
@@ -769,8 +753,8 @@
       "thumbnail": "https://i.ytimg.com/vi/rYaDctbdRE8/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=rYaDctbdRE8",
       "youtube_url": "https://www.youtube.com/watch?v=rYaDctbdRE8",
-      "pubDate": "17h ago",
-      "date": "17h ago",
+      "pubDate": "22h ago",
+      "date": "22h ago",
       "duration": "7:48",
       "views": "",
       "category": "Ideas & Culture",
@@ -792,8 +776,8 @@
       "thumbnail": "https://i.ytimg.com/vi/r7TkUgbR6Yc/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=r7TkUgbR6Yc",
       "youtube_url": "https://www.youtube.com/watch?v=r7TkUgbR6Yc",
-      "pubDate": "18h ago",
-      "date": "18h ago",
+      "pubDate": "22h ago",
+      "date": "22h ago",
       "duration": "3:17",
       "views": "",
       "category": "Ideas & Culture",
@@ -823,7 +807,7 @@
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "ht-business-4-9844",
+          "id": "ht-business-4-2336",
           "title": "OpenAI plans to buy Google AI chips to expand computing capacity and strengthen AI infrastructure: Report",
           "source": "HT Business",
           "link": "https://www.hindustantimes.com/business/openai-plans-to-buy-google-ai-chips-to-expand-computing-capacity-and-strengthen-ai-infrastructure-report-101793181258667.html",
@@ -832,7 +816,7 @@
           "resonance_score": 0.238
         },
         {
-          "id": "guardian-asia-2-2851",
+          "id": "guardian-asia-2-3509",
           "title": "Chinese markets lose trillions as race for AI supremacy with US takes its toll",
           "source": "The Guardian",
           "link": "https://www.theguardian.com/world/2026/oct/27/chinese-markets-lose-trillions-ai-race-beijing",
