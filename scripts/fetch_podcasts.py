@@ -255,8 +255,11 @@ def scrape_channel(source):
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
         'Accept-Language': 'en-US,en;q=0.9',
     })
-    resp = urllib.request.urlopen(req, timeout=20)
-    html = resp.read().decode('utf-8', errors='replace')
+    try:
+        resp = urllib.request.urlopen(req, timeout=20)
+        html = resp.read().decode('utf-8', errors='replace')
+    except Exception:
+        return []
 
     match = re.search(r'var ytInitialData = (\{.*?\});\s*</script>', html, re.DOTALL)
     if not match:

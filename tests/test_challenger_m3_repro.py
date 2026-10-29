@@ -39,10 +39,9 @@ class TestMilestone3EmpiricalBugs(unittest.TestCase):
         article = {'title': None, 'category': 'General', 'entities': {}}
         arc = {'arc_id': 'arc-1', 'keywords': ['news'], 'entities': ['world']}
 
-        with self.assertRaises(AttributeError) as ctx:
-            match_article_to_arc(article, [arc])
-        self.assertIn("'NoneType' object has no attribute 'split'", str(ctx.exception))
-        print("\n[CONFIRMED BUG 1A] match_article_to_arc crashed on article['title']=None with AttributeError.")
+        matched_arc, conf = match_article_to_arc(article, [arc])
+        self.assertIsNone(matched_arc, "Should return None safely without crash")
+        self.assertEqual(conf, 0.0)
 
     def test_reproduce_bug1_memory_crash_on_none_keywords(self):
         """
@@ -54,10 +53,9 @@ class TestMilestone3EmpiricalBugs(unittest.TestCase):
         article = {'title': 'Valid Article Title', 'category': 'General', 'entities': {}}
         arc = {'arc_id': 'arc-1', 'keywords': None, 'entities': ['world']}
 
-        with self.assertRaises(TypeError) as ctx:
-            match_article_to_arc(article, [arc])
-        self.assertIn("NoneType", str(ctx.exception))
-        print("[CONFIRMED BUG 1B] match_article_to_arc crashed on arc['keywords']=None with TypeError.")
+        matched_arc, conf = match_article_to_arc(article, [arc])
+        self.assertIsNone(matched_arc, "Should return None safely without crash")
+        self.assertEqual(conf, 0.0)
 
     def test_reproduce_bug2_false_positive_deduplication(self):
         """
@@ -92,9 +90,9 @@ class TestMilestone3EmpiricalBugs(unittest.TestCase):
         print(f"[BUG 2 OBSERVATION] Input: 2 completely distinct tech articles. "
               f"Output count: {len(final_articles)}, Duplicates suppressed: {stats['duplicates_suppressed']}")
         
-        # Verify that the bug indeed suppresses one of them
-        self.assertEqual(stats['duplicates_suppressed'], 1, "Bug confirmed: False positive duplicate detected.")
-        self.assertEqual(len(final_articles), 1, "Bug confirmed: Distinct tech story dropped.")
+        # Verify that the fix preserves both distinct articles
+        self.assertEqual(stats['duplicates_suppressed'], 0, "Fix confirmed: No false positive duplicate detected.")
+        self.assertEqual(len(final_articles), 2, "Fix confirmed: Both distinct tech stories kept.")
 
 
 if __name__ == '__main__':

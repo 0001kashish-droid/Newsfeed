@@ -142,7 +142,8 @@ def thread_narratives(articles, memory):
         'arc_title': None,
         'day_number': 0,
         'total_chapters': 0,
-        'importance_trend': None
+        'importance_trend': None,
+        'previous_headlines': []
     }
 
     if not memory or not memory.get('arcs'):
@@ -179,7 +180,7 @@ def thread_narratives(articles, memory):
 
             art['narrative_arc'] = {
                 'arc_id': arc['arc_id'],
-                'arc_title': arc.get('title', 'Ongoing Story'),
+                'arc_title': arc.get('title') or None,
                 'day_number': day_num,
                 'total_chapters': arc.get('chapter_count', 1),
                 'importance_trend': arc.get('importance_trend', 'stable'),

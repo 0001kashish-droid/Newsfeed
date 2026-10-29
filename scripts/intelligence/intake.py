@@ -3,7 +3,16 @@
 import re
 from typing import List, Tuple, Dict, Any
 
-from intelligence.entities import extract_entities, compute_entity_signature
+from intelligence.entities import extract_entities, compute_entity_signature, COUNTRY_LEXICON, COUNTRY_NAMES
+from intelligence.sanitizer import sanitize_dispatch, normalize_text, is_quarantined_publisher
+
+_ALL_COUNTRY_TOKENS = frozenset(
+    set(k.lower() for k in COUNTRY_LEXICON.keys())
+    .union(set(v.lower() for v in COUNTRY_LEXICON.values()))
+    .union(set(v.lower() for v in COUNTRY_NAMES.values()))
+)
+
+
 
 # 1. NOISE FILTER
 
@@ -126,37 +135,59 @@ def filter_noise(articles: List[Dict[str, Any]]) -> Tuple[List[Dict[str, Any]], 
 def enrich_entities(articles: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """
     Enriches articles by extracting entities from their title and description.
+    Filters out any quarantined wire publishers from entity slots.
     """
     for article in articles:
         title = article.get('title', '') or ''
         description = article.get('description', '') or ''
-        extracted = extract_entities(title, description)
+        region = article.get('region', '') or ''
+        extracted = extract_entities(title, description, region)
         if 'entities' in article and isinstance(article['entities'], dict):
             merged = dict(article['entities'])
             for k, v in extracted.items():
-                if k not in merged:
+                if k == 'primary_actors':
+                    merged[k] = v
+                elif k not in merged:
                     merged[k] = v
                 elif isinstance(merged[k], list) and isinstance(v, list):
                     merged[k] = merged[k] + [item for item in v if item not in merged[k]]
             article['entities'] = merged
         else:
             article['entities'] = extracted
+
+        # Attach top-level primary_actors
+        if 'primary_actors' in extracted:
+            article['primary_actors'] = extracted['primary_actors']
+
+        # Defense-in-depth: cleanse any pre-existing quarantined publishers
+        if 'entities' in article and isinstance(article['entities'], dict):
+            for slot in ('organizations', 'companies', 'leaders'):
+                if slot in article['entities'] and isinstance(article['entities'][slot], list):
+                    article['entities'][slot] = [
+                        item for item in article['entities'][slot]
+                        if not is_quarantined_publisher(item.get('name', '') if isinstance(item, dict) else str(item))
+                    ]
+            cnt = sum(len(article['entities'].get(s, [])) for s in ('countries', 'leaders', 'organizations', 'companies'))
+            article['entities']['entity_count'] = cnt
+            words = len(re.findall(r'\b\w+\b', f"{title} {description}"))
+            article['entities']['entity_density'] = round(cnt / words, 4) if words > 0 else 0.0
     return articles
 
 
 def normalize_title(title: str) -> str:
     """
     Strips source suffixes, normalizes whitespace, and lowercases the title.
+    Uses sanitizer.normalize_text() for deterministic standard-library sanitization.
     """
     if not title:
         return ""
     
-    norm_title = title
+    clean = normalize_text(title)
     for regex in COMPILED_SOURCE_SUFFIXES:
-        norm_title = regex.sub('', norm_title)
+        clean = regex.sub('', clean)
         
-    norm_title = re.sub(r'\s+', ' ', norm_title).strip().lower()
-    return norm_title
+    return re.sub(r'\s+', ' ', clean).strip().lower()
+
 
 
 def jaccard_similarity(str1: str, str2: str) -> float:
@@ -228,9 +259,11 @@ def enhanced_dedup(articles: List[Dict[str, Any]], threshold: float = 0.85) -> L
                 entity_overlap_ratio = len(intersection) / len(union)
                 
             is_dup_jaccard = (jaccard >= threshold)
+            has_specific_entity = any(e.lower() not in _ALL_COUNTRY_TOKENS for e in intersection)
             is_dup_entity = (
                 entity_overlap_ratio >= 0.8 and 
                 len(intersection) >= 2 and 
+                has_specific_entity and
                 category == rep.get('category', '') and 
                 category != ''
             )
@@ -286,9 +319,32 @@ def enhanced_dedup(articles: List[Dict[str, Any]], threshold: float = 0.85) -> L
 
 def run_intake(articles: List[Dict[str, Any]]) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
     """
-    Orchestrates the Layer 1 INTAKE pipeline.
+    Orchestrates the Layer 1 INTAKE pipeline with Provenance Quarantine & Wire Sanitization (R1).
     """
     input_count = len(articles)
+
+    # 0. Provenance Quarantine & Wire Sanitization (R1)
+    for art in articles:
+        clean_res = sanitize_dispatch(
+            art.get('title', '') or '',
+            art.get('description', '') or '',
+            art.get('source', '') or ''
+        )
+        art['title'] = clean_res['clean_title']
+        art['description'] = clean_res['clean_description']
+        
+        prov = art.setdefault('provenance', {})
+        if not isinstance(prov, dict):
+            prov = {}
+            art['provenance'] = prov
+        prov['wire_quarantined'] = True
+        if clean_res.get('stripped_dateline'):
+            prov['stripped_dateline'] = clean_res['stripped_dateline']
+        if clean_res.get('stripped_attribution'):
+            prov['stripped_attribution'] = clean_res['stripped_attribution']
+        if clean_res.get('meta_flags'):
+            prov['editorial_flags'] = clean_res['meta_flags']
+            art.setdefault('meta', {}).update(clean_res['meta_flags'])
     
     # 1. Noise filter
     accepted, rejected = filter_noise(articles)

@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+import math
 import re
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -19,6 +20,9 @@ if _SCRIPT_DIR not in sys.path:
     sys.path.insert(0, _SCRIPT_DIR)
 if _PROJECT_ROOT not in sys.path:
     sys.path.insert(0, _PROJECT_ROOT)
+
+from intelligence.sanitizer import sanitize_dispatch
+
 
 PODCASTS_PATH = os.path.join(_DATA_DIR, "podcasts.json")
 NEWS_PATH = os.path.join(_DATA_DIR, "news.json")
@@ -246,11 +250,15 @@ def fetch_rss(source):
                 
                 if not title or not link:
                     continue
+
+                clean_res = sanitize_dispatch(title, desc, source['name'])
+                title = clean_res['clean_title']
+                desc = clean_res['clean_description']
                     
                 annotation = generate_annotation(title, desc)
                 img_url = extract_image(item, source['category'], title)
                 
-                items.append({
+                article_data = {
                     "id": f"{source['id']}-{index}-{abs(hash(link)) % 10000}",
                     "title": title,
                     "link": link,
@@ -263,8 +271,19 @@ def fetch_rss(source):
                     "imageUrl": img_url,
                     "annotation": annotation,
                     "readTime": f"{max(2, len(title.split()) // 4)} min read",
-                    "relatedSources": get_related_sources(source['name'], source['region'])
-                })
+                    "relatedSources": get_related_sources(source['name'], source['region']),
+                    "provenance": {
+                        "source": source['name'],
+                        "sourceLogo": source['logo'],
+                        "wire_quarantined": True,
+                        "stripped_dateline": clean_res.get('stripped_dateline'),
+                        "stripped_attribution": clean_res.get('stripped_attribution'),
+                        "editorial_flags": clean_res.get('meta_flags', {})
+                    }
+                }
+                if clean_res.get('meta_flags'):
+                    article_data['meta'] = dict(clean_res['meta_flags'])
+                items.append(article_data)
     except Exception as e:
         print(f"  [WARN] Error fetching {source['name']}: {e}")
     return items
@@ -285,7 +304,7 @@ def enforce_brand_family_cap(articles, max_ratio=0.18):
             brand_capped.append(art)
 
     # Convergence pass: ensure no brand family exceeds max_ratio in the resulting feed
-    while len(brand_capped) >= 6:
+    while len(brand_capped) >= 1:
         allowed_cap = max(1, int(max_ratio * len(brand_capped)))
         b_counts = Counter(BRAND_FAMILIES.get(a['source'], a['source']) for a in brand_capped)
         violators = {b for b, c in b_counts.items() if c > allowed_cap}
@@ -317,7 +336,7 @@ def balance_source_diversity(all_articles):
     region_source_counts = {}
     capped = []
     for art in all_articles:
-        key = (art['region'], art['source'])
+        key = (art.get('region', 'Global'), art.get('source', 'Unknown'))
         region_source_counts[key] = region_source_counts.get(key, 0) + 1
         if region_source_counts[key] <= MAX_PER_SOURCE_PER_REGION:
             capped.append(art)
@@ -328,14 +347,14 @@ def balance_source_diversity(all_articles):
     # Phase 3: Interleave sources within each region (avoid clustering)
     by_region = {}
     for art in brand_capped:
-        by_region.setdefault(art['region'], []).append(art)
+        by_region.setdefault(art.get('region', 'Global'), []).append(art)
 
     interleaved = []
     for region, articles in by_region.items():
         # Group by source
         source_groups = {}
         for art in articles:
-            source_groups.setdefault(art['source'], []).append(art)
+            source_groups.setdefault(art.get('source', 'Unknown'), []).append(art)
         
         # Round-robin interleave
         queues = list(source_groups.values())

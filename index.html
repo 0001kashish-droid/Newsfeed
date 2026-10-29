@@ -17,15 +17,31 @@
   <meta property="og:title" content="News Colossal — Global News Intelligence & Digest" />
   <meta property="og:description" content="Live real-time news aggregator with crisp annotations and credible publisher coverage." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://0001kashish-droid.github.io/Newsfeed/" />
+  <meta property="og:site_name" content="News Colossal" />
+  <meta property="og:image" content="https://0001kashish-droid.github.io/Newsfeed/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="News Colossal — Global News Intelligence & Digest" />
+  <meta name="twitter:description" content="Live real-time news aggregator with crisp annotations and credible publisher coverage." />
+  <meta name="twitter:image" content="https://0001kashish-droid.github.io/Newsfeed/og-image.png" />
   
   <!-- Preconnect & Asynchronous Font Loading (Instant Render) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" />
 
-  <!-- Canonical & Favicon -->
+  <!-- Canonical, Favicon & Progressive Web App Manifest -->
   <link rel="canonical" href="https://0001kashish-droid.github.io/Newsfeed/" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230284c7'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-weight='800' font-size='15' fill='white' text-anchor='middle'%3ENC%3C/text%3E%3C/svg%3E" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="assets/icon-192.svg" />
+  <meta name="apple-mobile-web-app-title" content="News Colossal" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="style.css?v=2.2.0" />
@@ -34,23 +50,52 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
-    "headline": "News Colossal — Live Real-Time News Command Center",
+    "@type": "WebSite",
+    "name": "News Colossal",
+    "url": "https://0001kashish-droid.github.io/Newsfeed/",
     "description": "Aggregating top 10 global news stories across trusted sources like BBC, Reuters, NYT, TechCrunch, The Verge, and Al Jazeera with crisp annotations.",
-    "author": {
+    "publisher": {
       "@type": "Organization",
-      "name": "News Colossal"
+      "name": "News Colossal",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://0001kashish-droid.github.io/Newsfeed/og-image.png"
+      }
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://0001kashish-droid.github.io/Newsfeed/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
     }
   }
   </script>
 </head>
 <body>
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
 
   <!-- Mobile Pull to Refresh Indicator Banner -->
   <div id="pullToRefreshBanner" class="pull-refresh-banner">
     <div class="pull-refresh-content">
       <span class="pull-refresh-spinner" id="pullRefreshSpinner">↻</span>
       <span class="pull-refresh-text" id="pullRefreshText">Pull down to refresh live news...</span>
+    </div>
+  </div>
+
+  <!-- Executive Focus Timer Pill (Top of Viewport, Hidden by Default) (R5) -->
+  <div class="focus-timer-pill" id="focusTimerPill" role="timer" aria-live="polite" style="display: none;">
+    <div class="focus-pill-pulse"></div>
+    <div class="focus-pill-info">
+      <span class="focus-pill-badge">🎯 FOCUS SESSION</span>
+      <span class="focus-pill-time" id="focusTimerDisplay">10:00</span>
+      <span class="focus-pill-divider">&bull;</span>
+      <span class="focus-pill-progress" id="focusCountDisplay">0 / 5 Read</span>
+    </div>
+    <div class="focus-pill-bar">
+      <div class="focus-pill-bar-fill" id="focusBarFill" style="width: 0%;"></div>
+    </div>
+    <div class="focus-pill-actions">
+      <button type="button" class="focus-pill-btn" id="focusPauseBtn" title="Pause / Resume" aria-label="Pause timer">⏸</button>
+      <button type="button" class="focus-pill-btn focus-pill-close" id="focusEndBtn" title="End Session" aria-label="End session">&times;</button>
     </div>
   </div>
 
@@ -84,7 +129,7 @@
         <div class="logo-emblem">
           <div class="logo-icon">NC</div>
         </div>
-        <div class="logo-text">News<span>Colossal</span></div>
+        <h1 class="logo-text">News<span>Colossal</span></h1>
       </a>
 
       <!-- Real-Time Regional Clock Display (Sleek Single Vector SVG) -->
@@ -101,36 +146,65 @@
         <span class="search-shortcut">/</span>
       </div>
 
-      <!-- Action Controls -->
+            <!-- Action Controls (Progressive Disclosure Architecture) -->
       <div class="header-actions">
-        <button id="newsletterHeaderBtn" class="liquid-glass-monetize-btn" title="Subscribe to Free Daily Executive Digest" aria-label="Daily Digest Subscription">
-          <span>📧</span> <span class="monetize-btn-text">Daily Digest</span><span id="subCountBadge" class="monetize-sub-count" style="display:none;"></span>
+        <!-- 1-Click Flash Briefing -->
+        <button id="flashBriefingBtn" class="btn-icon" title="⚡ 60-Second Flash Briefing" aria-label="Start Flash Briefing">
+          <span style="font-size: 1rem;">⚡</span>
         </button>
 
-        <button id="supportHeaderBtn" class="liquid-glass-monetize-btn support-pill" title="Support News Colossal (Ad-Free)" aria-label="Support News Colossal">
-          <span>☕</span> <span class="monetize-btn-text">Support</span>
-        </button>
-
-        <button id="shortcutHelpBtn" class="btn-icon" title="Keyboard Shortcuts (?)" aria-label="Keyboard Shortcuts">
-          <span style="font-weight: 800; font-size: 0.9rem;">?</span>
-        </button>
-
-        <button id="refreshBtn" class="btn-icon" title="Refresh Live Feeds" aria-label="Refresh news feeds">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M2.13 15.57a10 10 0 1 0 0.57-8.38l5.67-5.67"/></svg>
-        </button>
-
-        <button id="themeToggleBtn" class="btn-icon" title="Toggle Light/Dark Theme" aria-label="Toggle theme">
-          <svg id="themeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-        </button>
-
+        <!-- Bookmarks Drawer with Live Counter -->
         <button id="bookmarksBtn" class="btn-icon" title="Saved Bookmarks" aria-label="Open bookmarks drawer">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
           <span class="badge-count" id="bookmarkCount" style="display:none;">0</span>
         </button>
 
-        <button id="flashBriefingBtn" class="btn-icon" title="⚡ 60-Second Flash Briefing" aria-label="Start Flash Briefing">
-          <span style="font-size: 1rem;">⚡</span>
+        <!-- Light / Dark Theme Toggle -->
+        <button id="themeToggleBtn" class="btn-icon" title="Toggle Light/Dark Theme" aria-label="Toggle theme">
+          <svg id="themeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
         </button>
+
+        <!-- Progressive Disclosure: Quick Tools Menu -->
+        <div class="header-tools-dropdown" id="headerToolsDropdown">
+          <button id="headerToolsToggleBtn" class="btn-icon" title="Tools & Executive Actions (⋯)" aria-label="Open quick tools menu" aria-expanded="false">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/><circle cx="5" cy="12" r="1.5"/></svg>
+          </button>
+          
+          <div class="header-tools-popover" id="headerToolsPopover">
+            <button id="pwaVaultIndicatorBtn" class="tools-menu-item pwa-vault-item" title="Offline News Vault & Install App" aria-label="Offline News Vault">
+              <span class="pwa-vault-dot" id="pwaVaultDot"></span>
+              <span id="pwaVaultLabel">Offline Vault Ready</span>
+              <span class="pwa-install-badge" id="pwaInstallBadge" style="display:none;">Install</span>
+            </button>
+            <button id="focusSessionBtn" class="tools-menu-item focus-tool-pill" title="Start 10-Minute Executive Focus Session" aria-label="10-Minute Focus Session">
+              <span>🎯</span>
+              <span>Focus Session</span>
+              <span class="focus-timer-badge">10m</span>
+            </button>
+            <button id="constellationMapBtn" class="tools-menu-item constellation-tool-pill" title="Open Knowledge Constellation 2D Map" aria-label="Knowledge Constellation Map">
+              <span>🌌</span>
+              <span>Constellation</span>
+              <span class="focus-timer-badge constellation-badge">2D</span>
+            </button>
+            <button id="refreshBtn" class="tools-menu-item" title="Refresh Live Feeds" aria-label="Refresh news feeds">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M2.13 15.57a10 10 0 1 0 0.57-8.38l5.67-5.67"/></svg>
+              <span>Refresh Feeds</span>
+            </button>
+            <button id="newsletterHeaderBtn" class="tools-menu-item" title="Subscribe to Free Daily Executive Digest" aria-label="Daily Digest Subscription">
+              <span>📧</span>
+              <span>Daily Digest</span>
+              <span id="subCountBadge" class="monetize-sub-count" style="display:none;"></span>
+            </button>
+            <button id="supportHeaderBtn" class="tools-menu-item support-menu-pill" title="Support News Colossal (Ad-Free)" aria-label="Support News Colossal">
+              <span>☕</span>
+              <span>Support Colossal</span>
+            </button>
+            <button id="shortcutHelpBtn" class="tools-menu-item" title="Keyboard Shortcuts (?)" aria-label="Keyboard Shortcuts">
+              <span>⌨️</span>
+              <span>Shortcuts (?)</span>
+            </button>
+          </div>
+        </div>
       </div>
 
     <!-- Header Scroll Reading Progress Line -->
@@ -139,23 +213,39 @@
 
   <!-- Category & Region Navigation Bar with Magnetic Glass Hover Pill -->
   <main class="container" id="mainContent">
-    <div class="filter-bar">
+    <nav class="filter-bar" aria-label="News categories and region filter">
       <div class="nav-tabs-wrapper">
-        <div class="nav-tabs" id="navTabs">
+        <div class="nav-tabs" id="navTabs" role="tablist">
           <!-- Active Tab Sliding Glass Pill -->
           <div class="tab-indicator-pill" id="tabIndicatorPill"></div>
           <!-- Real-Time Hover Magnetic Preview Pill -->
           <div class="tab-hover-pill" id="tabHoverPill"></div>
 
-          <button class="tab-btn active" data-category="top10">Top 10 Colossal</button>
-          <button class="tab-btn" data-category="World">World</button>
-          <button class="tab-btn" data-category="Tech">Technology</button>
-          <button class="tab-btn" data-category="National">National</button>
-          <button class="tab-btn" data-category="Business">Business</button>
+          <button class="tab-btn active" data-category="top10" role="tab" aria-selected="true">Top 10 Colossal</button>
+          <button class="tab-btn" data-category="World" role="tab" aria-selected="false">World</button>
+          <button class="tab-btn" data-category="Tech" role="tab" aria-selected="false">Technology</button>
+          <button class="tab-btn" data-category="National" role="tab" aria-selected="false">National</button>
+          <button class="tab-btn" data-category="Business" role="tab" aria-selected="false">Business</button>
         </div>
       </div>
 
-      <div style="display: flex; align-items: center; gap: 0.75rem;">
+      <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+        <!-- Cognitive Load Thermostat (Adaptive Density Controller - R3) -->
+        <div class="density-toggle-group density-thermostat" id="densityToggleGroup" role="radiogroup" aria-label="Cognitive Load Density Mode">
+          <button type="button" class="density-btn" id="densityScanBtn" data-density="scan" role="radio" aria-checked="false" title="⚡ Scan Mode: Minimal chrome, fast skimming" tabindex="-1">
+            <span class="density-icon">⚡</span>
+            <span class="density-text">Scan</span>
+          </button>
+          <button type="button" class="density-btn active" id="densityDigestBtn" data-density="digest" role="radio" aria-checked="true" title="📖 Digest Mode: Balanced layout with annotations & cover art" tabindex="0">
+            <span class="density-icon">📖</span>
+            <span class="density-text">Digest</span>
+          </button>
+          <button type="button" class="density-btn" id="densityDeepBtn" data-density="deep" role="radio" aria-checked="false" title="🔬 Deep Dive Mode: High-density intelligence, inline entities & provenance" tabindex="-1">
+            <span class="density-icon">🔬</span>
+            <span class="density-text">Deep Dive</span>
+          </button>
+        </div>
+
         <select id="regionSelect" class="region-select" aria-label="Filter by region">
           <option value="all">🌍 All Regions</option>
           <option value="Global">🌐 Global Focus</option>
@@ -166,7 +256,7 @@
           <option value="India">🇮🇳 India</option>
         </select>
       </div>
-    </div>
+    </nav>
 
     <!-- Canvas Hero Spotlight Section -->
     <section class="hero-spotlight" id="heroSection">
@@ -260,7 +350,7 @@
   </main>
 
   <!-- Apple Liquid Glass Deck Reader Modal with Floating Side Paddles -->
-  <div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-label="Article reader">
     <!-- Large Target-Zone Floating Side Paddles -->
     <button class="liquid-glass-paddle liquid-glass-paddle-left" onclick="navigateModal(-1)" title="Previous Story (Left Arrow / Click)">
       <span>&lsaquo;</span>
@@ -276,8 +366,110 @@
     </div>
   </div>
 
+  <!-- Executive Focus Session Completion Report Modal (R5) -->
+  <div class="modal-backdrop focus-report-backdrop" id="focusReportModal" role="dialog" aria-modal="true" aria-labelledby="focusReportTitle" style="display: none;">
+    <div class="deck-modal-card focus-report-card" id="focusReportCard">
+      <div class="focus-report-header">
+        <div class="focus-report-kicker">✦ EXECUTIVE INTELLIGENCE SPRINT</div>
+        <h2 class="focus-report-title" id="focusReportTitle">10-Minute Intelligence Session Report</h2>
+        <p class="focus-report-subtitle">Your curated executive docket is complete. High-signal, multi-domain intelligence absorbed.</p>
+      </div>
+
+      <div class="focus-metrics-grid">
+        <div class="metric-box">
+          <span class="metric-val" id="metricTimeElapsed">10:00</span>
+          <span class="metric-lbl">Session Duration</span>
+        </div>
+        <div class="metric-box">
+          <span class="metric-val" id="metricStoriesRead">5 / 5</span>
+          <span class="metric-lbl">Stories Read</span>
+        </div>
+        <div class="metric-box">
+          <span class="metric-val" id="metricDomainCoverage">100%</span>
+          <span class="metric-lbl">Domain Coverage</span>
+        </div>
+        <div class="metric-box">
+          <span class="metric-val" id="metricSignalScore">5.82</span>
+          <span class="metric-lbl">Signal Density (/10)</span>
+        </div>
+      </div>
+
+      <div class="focus-domain-breakdown" id="focusReportDomains"></div>
+
+      <div class="focus-report-actions">
+        <button type="button" class="btn-primary" id="focusCopySummaryBtn">📋 Copy Session Summary</button>
+        <button type="button" class="btn-secondary" id="focusReturnFeedBtn">Return to Feed ↗</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Knowledge Constellation 2D Interactive Canvas Graph Modal (R7) -->
+  <div class="modal-backdrop constellation-modal-backdrop" id="constellationModalBackdrop" role="dialog" aria-modal="true" aria-label="Knowledge Constellation Network Graph" style="display: none;">
+    <div class="constellation-modal-box deck-modal-card" id="constellationModalBox">
+      <!-- Modal Header -->
+      <div class="constellation-header">
+        <div class="constellation-title-group">
+          <div class="constellation-title-row">
+            <span class="constellation-icon">🌌</span>
+            <h2 class="constellation-title">Knowledge Constellation Map</h2>
+          </div>
+          <p class="constellation-subtitle" id="constellationStatsLabel">
+            Interactive Global Entity Network &bull; 2D Force-Directed Simulation
+          </p>
+        </div>
+
+        <!-- Node Filter & Categorical Legend -->
+        <div class="constellation-legend" id="constellationLegend">
+          <span class="legend-pill active" data-type="all">
+            All Entities
+          </span>
+          <span class="legend-pill" data-type="nation" style="--pill-color: #10b981;">
+            <span class="legend-dot" style="background: #10b981;"></span> Nations
+          </span>
+          <span class="legend-pill" data-type="leader" style="--pill-color: #f59e0b;">
+            <span class="legend-dot" style="background: #f59e0b;"></span> Leaders
+          </span>
+          <span class="legend-pill" data-type="org" style="--pill-color: #0284c7;">
+            <span class="legend-dot" style="background: #0284c7;"></span> Orgs &amp; Cos
+          </span>
+          <span class="legend-pill" data-type="cluster" style="--pill-color: #a855f7;">
+            <span class="legend-dot" style="background: #a855f7;"></span> Clusters
+          </span>
+        </div>
+
+        <!-- Interactive Canvas Controls -->
+        <div class="constellation-controls">
+          <button type="button" class="constellation-ctrl-btn" id="constellationZoomInBtn" title="Zoom In (+)" aria-label="Zoom in">+</button>
+          <button type="button" class="constellation-ctrl-btn" id="constellationZoomOutBtn" title="Zoom Out (-)" aria-label="Zoom out">&minus;</button>
+          <button type="button" class="constellation-ctrl-btn" id="constellationFitBtn" title="Fit to Screen" aria-label="Fit to screen">Fit</button>
+          <button type="button" class="constellation-ctrl-btn constellation-close-btn" id="constellationCloseBtn" title="Close Map (Esc)" aria-label="Close constellation map">&times;</button>
+        </div>
+      </div>
+
+      <!-- Main Canvas Stage & Overlay Panes -->
+      <div class="constellation-canvas-container" id="constellationCanvasContainer">
+        <canvas id="constellationCanvas" class="constellation-canvas"></canvas>
+        <div class="constellation-tooltip" id="constellationTooltip" style="display: none;"></div>
+
+        <!-- Sliding Node Inspector Drawer -->
+        <div class="constellation-inspector" id="constellationInspector" style="display: none;">
+          <div class="inspector-header">
+            <div class="inspector-badge" id="inspectorBadge">NATION</div>
+            <h3 class="inspector-title" id="inspectorTitle">United States</h3>
+            <span class="inspector-stats" id="inspectorStats">13 Stories &bull; 24 Connections</span>
+            <button type="button" class="inspector-close" id="inspectorCloseBtn" aria-label="Close details">&times;</button>
+          </div>
+          <div class="inspector-body">
+            <h4 class="inspector-section-label">Connected Dispatches</h4>
+            <div class="inspector-dispatches-list" id="inspectorDispatchesList"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Keyboard Shortcut Helper Modal -->
-  <div class="modal-backdrop" id="shortcutModalBackdrop">
+  <div class="modal-backdrop" id="shortcutModalBackdrop" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts">
     <div class="deck-modal-card" style="max-width: 480px; padding: 2rem;">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem;">
         <h3 style="font-family: var(--font-heading); font-size: 1.3rem; font-weight: 800;">Keyboard Shortcuts</h3>
@@ -441,7 +633,7 @@
   </div>
 
   <!-- 60-SECOND FLASH BRIEFING ENGINE -->
-  <div class="flash-briefing-overlay" id="flashBriefingOverlay">
+  <div class="flash-briefing-overlay" id="flashBriefingOverlay" role="dialog" aria-modal="true" aria-label="Flash briefing">
     <div class="flash-briefing-header">
       <div class="flash-briefing-brand">
         <span class="flash-briefing-bolt">⚡</span>
@@ -483,6 +675,6 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="app.js?v=2.2.0"></script>
+  <script defer src="app.js?v=2.2.0"></script>
 </body>
 </html>

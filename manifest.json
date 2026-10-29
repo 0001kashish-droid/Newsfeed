@@ -1,0 +1,55 @@
+{
+  "name": "News Colossal — Global News Intelligence & Digest",
+  "short_name": "News Colossal",
+  "description": "Real-time global news command center featuring multi-source intelligence, narrative arc tracking, podcast resonance, and an offline news vault.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0b1120",
+  "theme_color": "#0b1120",
+  "categories": ["news", "magazines", "productivity"],
+  "icons": [
+    {
+      "src": "assets/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Top 10 Colossal",
+      "url": "./index.html#top10",
+      "description": "Top 10 Curated Global Headlines"
+    },
+    {
+      "name": "World Dispatches",
+      "url": "./index.html#World",
+      "description": "World News & Geopolitics"
+    },
+    {
+      "name": "Tech & AI",
+      "url": "./index.html#Tech",
+      "description": "Frontier Technology & Autonomous AI"
+    }
+  ]
+}

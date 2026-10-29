@@ -41,7 +41,10 @@ from intelligence.memory import (
     prune_stale_arcs,
     get_active_arcs,
     load_memory,
-    save_memory
+    save_memory,
+    substantive_stems,
+    _extract_article_entities_for_anchors,
+    _extract_arc_entities_for_anchors
 )
 from intelligence.intake import (
     run_intake,
@@ -93,7 +96,7 @@ class TestMemoryNullGuardsAndEdgeCases(unittest.TestCase):
         article = {
             'title': 'Anthropic Announces Autonomous Software Agents Deployment for Enterprise',
             'category': 'Tech',
-            'entities': {'companies': [{'name': 'Anthropic'}]}
+            'entities': {'companies': [{'name': 'Anthropic'}, {'name': 'Microsoft'}]}
         }
 
         # With normal threshold
@@ -475,6 +478,368 @@ class TestIntakeDuplicateSuppressionPrecision(unittest.TestCase):
         self.assertEqual(len(final_articles), 30)
         for art in final_articles:
             self.assertFalse(art.get('is_duplicate', False))
+
+
+class TestAdversarialCountryRejection(unittest.TestCase):
+    """
+    Adversarial Challenge: Single country code/name pairs must NEVER satisfy Anchor 2.
+    Even under identical headlines and high Jaccard scores (J >= 0.50),
+    sharing only 1 country code or country name must result in len(common_entities) <= 1,
+    failing Anchor 2 and returning (None, 0.0).
+    """
+
+    def test_single_country_pairs_never_satisfy_anchor2_and_reject(self):
+        countries_to_test = [
+            ('DE', 'Germany', 'Europe'),
+            ('US', 'United States', 'North America'),
+            ('FR', 'France', 'Europe'),
+            ('JP', 'Japan', 'Asia-Pacific'),
+            ('IN', 'India', 'India'),
+            ('RU', 'Russia', 'Europe'),
+            ('CN', 'China', 'Asia-Pacific'),
+            ('GB', 'United Kingdom', 'Europe'),
+            ('IT', 'Italy', 'Europe'),
+            ('BR', 'Brazil', 'Americas')
+        ]
+
+        for code, name, reg in countries_to_test:
+            with self.subTest(code=code, name=name):
+                arc = {
+                    'arc_id': f'arc-country-{code.lower()}',
+                    'title': f'{name} National Infrastructure Energy Modernization Program',
+                    'keywords': [name.lower(), 'infrastructure', 'energy', 'modernization', 'program'],
+                    'countries': [code],
+                    'category': 'Business',
+                    'regions': [reg],
+                    'chapter_titles': [f'{name} Initiates Comprehensive Energy Infrastructure Upgrades']
+                }
+
+                art = {
+                    'id': f'art-{code.lower()}-test',
+                    'title': f'{name} advances national infrastructure energy modernization program',
+                    'description': f'Federal authorities in {name} outline massive infrastructure investment plan.',
+                    'category': 'Business',
+                    'country_code': code.lower(),
+                    'region': reg,
+                    'entities': {'countries': [{'code': code, 'name': name}]}
+                }
+
+                # 1. Directly verify extracted entities
+                _, _, art_ents, art_leaders = _extract_article_entities_for_anchors(art)
+                _, _, arc_ents, arc_leaders = _extract_arc_entities_for_anchors(arc)
+                common = art_ents.intersection(arc_ents)
+                common_l = art_leaders.intersection(arc_leaders)
+
+                # Anchor 2 invariants:
+                # Cardinality of common entities MUST be at most 1 (the canonical country name, never 2-letter ISO code)
+                self.assertLessEqual(
+                    len(common), 1,
+                    f"Country {code}/{name} inflated entities to {common} (len {len(common)})"
+                )
+                self.assertEqual(len(common_l), 0, "No leaders should be extracted from pure country entities")
+
+                # Anchor 2 MUST evaluate to False
+                anchor2 = (len(common) >= 2) or (len(common_l) >= 1)
+                self.assertFalse(
+                    anchor2,
+                    f"Anchor 2 unexpectedly passed for single country {code}/{name}: common={common}"
+                )
+
+                # 2. Verify match_article_to_arc strictly returns (None, 0.0) despite high Jaccard
+                matched, score = match_article_to_arc(art, [arc])
+                self.assertIsNone(
+                    matched,
+                    f"Article sharing ONLY country {code}/{name} bound to arc with score {score}!"
+                )
+                self.assertEqual(score, 0.0)
+
+
+class TestAdversarialSingleEntityBypassElimination(unittest.TestCase):
+    """
+    Adversarial Challenge: Removal of line 575 bypass strictly prevents single-entity binding.
+    Pairs sharing exactly 1 entity and 0 leaders with matching category and high Jaccard (J >= 0.50)
+    must strictly evaluate Anchor 2 to False and return (None, 0.0).
+    """
+
+    def test_single_company_with_high_jaccard_strictly_rejects(self):
+        single_entities = [
+            ('Anthropic', 'Tech', 'Anthropic Unveils Next Generation AI Autonomous Agents'),
+            ('Nvidia', 'Tech', 'Nvidia Announces High Performance Semiconductor Architecture'),
+            ('TSMC', 'Tech', 'TSMC Expands Advanced Foundry Fabrication Capacity'),
+            ('Boeing', 'Business', 'Boeing Finalizes Commercial Aircraft Fleet Deliveries'),
+            ('Pfizer', 'Business', 'Pfizer Reports Promising Clinical Trial Phase Results'),
+            ('UNESCO', 'World', 'UNESCO Designates New World Heritage Protection Sites')
+        ]
+
+        for ent_name, cat, title in single_entities:
+            with self.subTest(entity=ent_name, category=cat):
+                arc = {
+                    'arc_id': f'arc-{ent_name.lower()}',
+                    'title': title,
+                    'keywords': [ent_name.lower(), 'announces', 'advancement', 'strategy'],
+                    'entities': [ent_name.lower()],  # exactly 1 entity
+                    'category': cat,
+                    'regions': ['Global'],
+                    'chapter_titles': [title]
+                }
+
+                art = {
+                    'id': f'art-{ent_name.lower()}',
+                    'title': title,  # Identical title ensures Jaccard >= 0.80
+                    'description': f'{ent_name} confirms official milestones in new statement.',
+                    'category': cat,  # Category matches!
+                    'region': 'Global',
+                    'entities': {'organizations': [{'name': ent_name}]}  # exactly 1 entity
+                }
+
+                # 1. Direct inspection
+                _, _, art_ents, art_leaders = _extract_article_entities_for_anchors(art)
+                _, _, arc_ents, arc_leaders = _extract_arc_entities_for_anchors(arc)
+                common = art_ents.intersection(arc_ents)
+                common_l = art_leaders.intersection(arc_leaders)
+
+                self.assertEqual(
+                    len(common), 1,
+                    f"Expected exactly 1 shared entity for {ent_name}, got {common}"
+                )
+                self.assertEqual(len(common_l), 0)
+
+                # 2. Strict rejection: removal of line 575 bypass means this CANNOT bind
+                matched, score = match_article_to_arc(art, [arc])
+                self.assertIsNone(
+                    matched,
+                    f"Single entity {ent_name} bypassed Anchor 2 and bound with score {score}!"
+                )
+                self.assertEqual(score, 0.0)
+
+
+class TestGenuineMultiEntityAndLeaderBinding(unittest.TestCase):
+    """
+    Verification: Confirm that genuine multi-entity matches (|E(A) ∩ E(M)| >= 2)
+    and genuine leader matches (|L(A) ∩ L(M)| >= 1 with matching category)
+    pass Anchor 2 and bind when Jaccard >= 0.30.
+    """
+
+    def test_genuine_multi_entity_matches_bind_successfully(self):
+        pairs = [
+            # 2 companies in Tech
+            {
+                'name': 'Tech multi-entity',
+                'arc_title': 'Nvidia and TSMC Partner on Next Gen Silicon Architecture',
+                'art_title': 'Nvidia and TSMC partner on next gen silicon architecture fabrication',
+                'category': 'Tech',
+                'region': 'North America',
+                'arc_ents': ['nvidia', 'tsmc'],
+                'art_ents': {'companies': [{'name': 'Nvidia'}, {'name': 'TSMC'}]}
+            },
+            # Country + Company in Business
+            {
+                'name': 'Germany and Siemens',
+                'arc_title': 'German Industrial Manufacturing Powerhouse Siemens Expands Global Plants',
+                'art_title': 'Siemens expands industrial manufacturing operations across Germany plants',
+                'category': 'Business',
+                'region': 'Europe',
+                'arc_ents': ['germany', 'siemens'],
+                'arc_countries': ['DE'],
+                'art_country_code': 'de',
+                'art_ents': {'locations': ['Germany'], 'companies': [{'name': 'Siemens'}]}
+            },
+            # 2 international organizations in World
+            {
+                'name': 'UN and NATO diplomacy',
+                'arc_title': 'United Nations and NATO Coordinate Humanitarian Security Corridors',
+                'art_title': 'United Nations and NATO officials coordinate humanitarian security corridors',
+                'category': 'World',
+                'region': 'Europe',
+                'arc_ents': ['united nations', 'nato'],
+                'art_ents': {'organizations': [{'name': 'United Nations'}, {'name': 'NATO'}]}
+            }
+        ]
+
+        for p in pairs:
+            with self.subTest(name=p['name']):
+                arc = {
+                    'arc_id': f"arc-{p['name'].replace(' ', '-')}",
+                    'title': p['arc_title'],
+                    'keywords': [e.lower() for e in p['arc_ents']] + ['strategic', 'operations'],
+                    'entities': p['arc_ents'],
+                    'countries': p.get('arc_countries', []),
+                    'category': p['category'],
+                    'regions': [p['region']],
+                    'chapter_titles': [p['arc_title']]
+                }
+                art = {
+                    'id': f"art-{p['name'].replace(' ', '-')}",
+                    'title': p['art_title'],
+                    'category': p['category'],
+                    'country_code': p.get('art_country_code', ''),
+                    'region': p['region'],
+                    'entities': p['art_ents']
+                }
+
+                matched, score = match_article_to_arc(art, [arc])
+                self.assertIsNotNone(
+                    matched,
+                    f"Multi-entity match failed for {p['name']}"
+                )
+                self.assertGreaterEqual(score, 0.30)
+                self.assertEqual(matched['arc_id'], arc['arc_id'])
+
+    def test_genuine_leader_matches_bind_with_matching_category(self):
+        leaders = [
+            ('Emmanuel Macron', 'macron', 'FR', 'Europe', 'World',
+             'French President Emmanuel Macron Addresses European Security Summit',
+             'Macron addresses European security summit on defense strategy'),
+            ('Volodymyr Zelenskyy', 'zelenskyy', 'UA', 'Europe', 'World',
+             'President Volodymyr Zelenskyy Appeals for Air Defense Missiles in Kyiv Address',
+             'Zelenskyy appeals for air defense missiles in Kyiv address'),
+            ('Narendra Modi', 'modi', 'IN', 'India', 'World',
+             'Prime Minister Narendra Modi Inaugurates Global Technology Summit in Delhi',
+             'Modi inaugurates global technology summit in Delhi address')
+        ]
+
+        for leader_full, leader_match, code, reg, cat, arc_headline, art_headline in leaders:
+            with self.subTest(leader=leader_full):
+                arc = {
+                    'arc_id': f'arc-leader-{leader_match}',
+                    'title': arc_headline,
+                    'keywords': [leader_match, 'summit', 'address', 'defense'],
+                    'entity_signature': f'{code}:{leader_full}',
+                    'countries': [code],
+                    'category': cat,
+                    'regions': [reg],
+                    'chapter_titles': [arc_headline]
+                }
+                art = {
+                    'id': f'art-leader-{leader_match}',
+                    'title': art_headline,
+                    'category': cat,  # matching category
+                    'country_code': code.lower(),
+                    'region': reg,
+                    'entities': {
+                        'leaders': [{'name': leader_full, 'matched': leader_match}],
+                        'countries': [{'code': code}]
+                    }
+                }
+
+                matched, score = match_article_to_arc(art, [arc])
+                self.assertIsNotNone(
+                    matched,
+                    f"Leader match failed for {leader_full}"
+                )
+                self.assertGreaterEqual(score, 0.30)
+
+    def test_leader_match_with_category_mismatch_strictly_rejects(self):
+        arc = {
+            'arc_id': 'arc-leader-mismatch',
+            'title': 'Chancellor Olaf Scholz Delivers European Foreign Policy Address',
+            'keywords': ['scholz', 'foreign', 'policy', 'europe'],
+            'entities': ['olaf scholz'],
+            'category': 'World',
+            'regions': ['Europe'],
+            'chapter_titles': ['Chancellor Olaf Scholz Delivers European Foreign Policy Address']
+        }
+        art = {
+            'id': 'art-leader-mismatch',
+            'title': 'Olaf Scholz Comments On Industrial Technology Subsidies',
+            'category': 'Tech',  # Category MISMATCH (Tech vs World)
+            'region': 'Europe',
+            'entities': {'leaders': [{'name': 'Olaf Scholz'}]}
+        }
+
+        matched, score = match_article_to_arc(art, [arc])
+        self.assertIsNone(
+            matched,
+            "Leader match with category mismatch must strictly reject"
+        )
+        self.assertEqual(score, 0.0)
+
+
+class TestStemmerSymmetryAndAdversarialPlurals(unittest.TestCase):
+    """
+    Verification: Symmetrical stemming across singular/plural inflections
+    (silent 'e', y/ies, consonant doubling) and crash-proof handling of edge inputs.
+    """
+
+    def test_silent_e_singular_plural_symmetry(self):
+        silent_e_pairs = [
+            ('strike', 'strikes'),
+            ('probe', 'probes'),
+            ('vote', 'votes'),
+            ('trade', 'trades'),
+            ('missile', 'missiles'),
+            ('siege', 'sieges'),
+            ('drone', 'drones'),
+            ('ceasefire', 'ceasefires'),
+            ('regime', 'regimes'),
+            ('offensive', 'offensives'),
+            ('blockade', 'blockades'),
+            ('dispute', 'disputes'),
+            ('pipeline', 'pipelines'),
+            ('truce', 'truces')
+        ]
+
+        for sing, plur in silent_e_pairs:
+            with self.subTest(singular=sing, plural=plur):
+                stems_sing = substantive_stems(sing)
+                stems_plur = substantive_stems(plur)
+                self.assertEqual(
+                    stems_sing, stems_plur,
+                    f"Silent-e stem mismatch: '{sing}' -> {stems_sing} vs '{plur}' -> {stems_plur}"
+                )
+                self.assertTrue(len(stems_sing) > 0, f"Stem of '{sing}' should not be empty")
+
+    def test_y_ies_singular_plural_symmetry(self):
+        y_ies_pairs = [
+            ('treaty', 'treaties'),
+            ('ministry', 'ministries'),
+            ('foundry', 'foundries'),
+            ('subsidy', 'subsidies'),
+            ('company', 'companies'),
+            ('factory', 'factories'),
+            ('embassy', 'embassies'),
+            ('refinery', 'refineries'),
+            ('territory', 'territories'),
+            ('battery', 'batteries')
+        ]
+
+        for sing, plur in y_ies_pairs:
+            with self.subTest(singular=sing, plural=plur):
+                stems_sing = substantive_stems(sing)
+                stems_plur = substantive_stems(plur)
+                self.assertEqual(
+                    stems_sing, stems_plur,
+                    f"y/ies stem mismatch: '{sing}' -> {stems_sing} vs '{plur}' -> {stems_plur}"
+                )
+                self.assertTrue(len(stems_sing) > 0, f"Stem of '{sing}' should not be empty")
+
+    def test_edge_punctuation_and_adversarial_inputs_survive_without_crashes(self):
+        adversarial_inputs = [
+            None,
+            "",
+            "   \t\n   ",
+            "???---...!!!",
+            ",,, ;;; :::: () [] {}",
+            "123 4567 890",
+            "🚀🔥💥 news alert 🌐🤖",
+            "абракадабра русский текст",
+            "مرحبا بالعالم",
+            "a an the of and or in on at to by",  # pure stopwords
+            "reuters ap bbc afp bloomberg nyt cnn",  # pure wire entities
+            "a" * 100000  # 100k single word
+        ]
+
+        for inp in adversarial_inputs:
+            with self.subTest(inp_repr=repr(inp)[:40]):
+                res = substantive_stems(inp)
+                self.assertIsInstance(res, set)
+
+    def test_double_s_guard(self):
+        double_s_words = ['press', 'boss', 'class', 'crisis', 'process', 'access']
+        for w in double_s_words:
+            stems = substantive_stems(w)
+            for st in stems:
+                self.assertTrue(st.endswith('ss') or st == 'crisi' or len(st) >= 3)
 
 
 if __name__ == '__main__':

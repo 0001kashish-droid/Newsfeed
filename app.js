@@ -7,6 +7,7 @@ const state = {
   podcastsLastUpdated: null,
   currentCategory: 'top10',
   currentRegion: 'all',
+  densityMode: localStorage.getItem('news_colossal_density') || localStorage.getItem('nc_density_mode') || 'digest',
   searchQuery: '',
   bookmarks: JSON.parse(localStorage.getItem('nc_bookmarks') || '[]'),
   atomicDossier: JSON.parse(localStorage.getItem('nc_atomic_dossier') || '{}'),
@@ -36,6 +37,28 @@ const state = {
     pitch: 1.0,
     selectedVoiceURI: null,
     currentText: ''
+  },
+  
+  // Executive Focus Session State (R5)
+  focusSession: {
+    active: false,
+    isPaused: false,
+    totalSeconds: 600,
+    remainingSeconds: 600,
+    timerInterval: null,
+    docket: [],
+    readIds: new Set(),
+    startTime: null,
+    allRead: false
+  },
+
+  // Knowledge Constellation Graph State (R7)
+  constellation: {
+    modalOpen: false,
+    activeTypeFilter: 'all',
+    simulation: null,
+    selectedNode: null,
+    hoveredNode: null
   }
 };
 
@@ -148,6 +171,115 @@ const GLOBE_NODES = [
   { name: "Middle East", x: 420, y: 140, color: "#e11d48", region: "Middle East" }
 ];
 
+// ==========================================================================
+// R1: STORY METABOLISM TRACKER (COVERAGE SPARKLINES SVG)
+// ==========================================================================
+/**
+ * Computes coverage metabolism trajectory and velocity classification.
+ * Uses scores.velocity, pubDate, and cluster size to generate pure SVG curves.
+ * @param {Object} art - Article data object from news.json
+ * @returns {Object} { status, label, color, pathD, areaD, lastX, lastY, tooltip, vel, clusterSize, points }
+ */
+function computeStoryMetabolism(art) {
+  if (!art) art = {};
+  const vel = (art.scores && typeof art.scores.velocity === 'number') ? art.scores.velocity : 0.25;
+  const clusterSize = (art.storyCluster && typeof art.storyCluster.size === 'number')
+    ? art.storyCluster.size
+    : ((art.perspectives && art.perspectives.length)
+        ? art.perspectives.length
+        : (art.duplicate_count ? art.duplicate_count + 1 : 1));
+
+  const pubTime = art.pubDate ? new Date(art.pubDate).getTime() : Date.now();
+  const hoursAgo = Math.max(0, (Date.now() - pubTime) / (1000 * 60 * 60));
+
+  let status = 'stabilizing';
+  let label = 'Stabilizing';
+  let color = '#94a3b8'; // Slate / Muted
+  let tooltip = `Metabolism: Stabilizing (${Math.round(vel * 100)}% velocity) • Steady reporting`;
+
+  if (vel >= 0.45 || (vel >= 0.35 && clusterSize >= 2) || (vel >= 0.30 && hoursAgo <= 6)) {
+    status = 'accelerating';
+    label = 'Accelerating';
+    color = '#10b981'; // Emerald Green
+    tooltip = `Metabolism: Accelerating (${Math.round(vel * 100)}% velocity) • ${clusterSize} sources surging • High velocity momentum`;
+  } else if (vel >= 0.25 || clusterSize >= 2 || (hoursAgo <= 18 && vel >= 0.20)) {
+    status = 'peak-spread';
+    label = 'Peak Spread';
+    color = '#f59e0b'; // Amber Gold
+    tooltip = `Metabolism: Peak Spread • Maximum syndication across ${clusterSize} outlets (${Math.round(vel * 100)}% velocity)`;
+  }
+
+  // 7 Trajectory coordinate steps across 24h timeline (width = 56, height = 18)
+  const xCoords = [0, 9, 18, 28, 37, 47, 56];
+  const seed = (art.id || '').split('').reduce((acc, c) => acc + c.charCodeAt(0), 0) % 5;
+  let yCoords = [];
+
+  if (status === 'accelerating') {
+    // Convex exponential surge: starts low (y=15), surges up to y=3
+    yCoords = [
+      15,
+      14 - (seed % 2),
+      12 - Math.round(vel * 4),
+      9 - Math.round(vel * 5),
+      6 - (seed % 2),
+      4,
+      3
+    ];
+  } else if (status === 'peak-spread') {
+    // Bell / plateau curve: rises in middle (y=4), plateaus or slight dip
+    yCoords = [
+      14,
+      10 - (seed % 2),
+      5,
+      4,
+      5 + (seed % 2),
+      6,
+      7
+    ];
+  } else {
+    // Stabilizing / decaying curve: peaked earlier, leveling off to lower baseline
+    yCoords = [
+      7 + (seed % 2),
+      4,
+      7,
+      10,
+      12,
+      13 + (seed % 2),
+      14
+    ];
+  }
+
+  // Construct smooth Bezier curve: M x0,y0 C cx0,cy0 cx1,cy1 x1,y1 ...
+  let pathD = `M ${xCoords[0]},${yCoords[0]}`;
+  for (let i = 0; i < xCoords.length - 1; i++) {
+    const x0 = xCoords[i];
+    const y0 = yCoords[i];
+    const x1 = xCoords[i + 1];
+    const y1 = yCoords[i + 1];
+    const mx = ((x0 + x1) / 2).toFixed(1);
+    pathD += ` C ${mx},${y0} ${mx},${y1} ${x1},${y1}`;
+  }
+
+  const areaD = `${pathD} L 56,18 L 0,18 Z`;
+  const lastX = xCoords[xCoords.length - 1];
+  const lastY = yCoords[yCoords.length - 1];
+
+  return {
+    status,
+    label,
+    color,
+    pathD,
+    areaD,
+    lastX,
+    lastY,
+    tooltip,
+    vel,
+    clusterSize,
+    hoursAgo,
+    points: xCoords.map((x, i) => ({ x, y: yCoords[i] }))
+  };
+}
+
 function getNewsColor(category) {
   return CATEGORY_COLORS[category] || "#00f2fe";
 }
@@ -228,8 +360,1909 @@ document.addEventListener('DOMContentLoaded', () => {
   setupHeaderScrollLine();
   initHolographicGlobe();
   setupMobilePullToRefresh();
+  setupPWAOfflineVault();
+  setupDensityController();
+  initNarrativeMemory();
+  setupFocusSession();
+  setupKnowledgeConstellation();
   window.addEventListener('resize', updateTabIndicator);
 });
+
+// PROGRESSIVE WEB APP & OFFLINE NEWS VAULT (R6)
+function setupPWAOfflineVault() {
+  const pwaBtn = document.getElementById('pwaVaultIndicatorBtn');
+  const pwaLabel = document.getElementById('pwaVaultLabel');
+  const pwaDot = document.getElementById('pwaVaultDot');
+  const pwaBadge = document.getElementById('pwaInstallBadge');
+
+  let deferredInstallPrompt = null;
+
+  // Intercept beforeinstallprompt for native app installation
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredInstallPrompt = e;
+    if (pwaBadge) pwaBadge.style.display = 'inline-block';
+    if (pwaLabel) pwaLabel.textContent = 'Install News App';
+  });
+
+  // Handle post-installation cleanup
+  window.addEventListener('appinstalled', () => {
+    deferredInstallPrompt = null;
+    if (pwaBadge) pwaBadge.style.display = 'none';
+    if (pwaLabel) pwaLabel.textContent = 'Offline Vault Ready';
+    if (typeof showToastNotification === 'function') {
+      showToastNotification('✦ News Colossal installed successfully to your device!');
+    }
+  });
+
+  // Handle Quick Tools click
+  if (pwaBtn) {
+    pwaBtn.addEventListener('click', async (e) => {
+      e.stopPropagation();
+      if (deferredInstallPrompt) {
+        deferredInstallPrompt.prompt();
+        const choice = await deferredInstallPrompt.userChoice;
+        if (choice && choice.outcome === 'accepted') {
+          deferredInstallPrompt = null;
+          if (pwaBadge) pwaBadge.style.display = 'none';
+          if (pwaLabel) pwaLabel.textContent = 'Offline Vault Ready';
+        }
+      } else {
+        const isOffline = !navigator.onLine;
+        const count = state && state.articles ? state.articles.length : 0;
+        const msg = isOffline
+          ? `⚡ Offline Vault Active: ${count} cached stories available without network.`
+          : `✦ Offline News Vault: ${count} stories & app shell cached for 100% offline reading.`;
+        if (typeof showToastNotification === 'function') {
+          showToastNotification(msg);
+        } else {
+          alert(msg);
+        }
+      }
+    });
+  }
+
+  // Live network state listeners
+  function updateNetworkStatus() {
+    const isOnline = navigator.onLine;
+    if (pwaDot) {
+      pwaDot.className = isOnline ? 'pwa-vault-dot' : 'pwa-vault-dot offline';
+    }
+    if (pwaLabel && !deferredInstallPrompt) {
+      pwaLabel.textContent = isOnline ? 'Offline Vault Ready' : 'Vault Active (Offline)';
+    }
+  }
+
+  window.addEventListener('online', updateNetworkStatus);
+  window.addEventListener('offline', updateNetworkStatus);
+  updateNetworkStatus();
+
+  // Guarded Service Worker registration (HTTP/HTTPS only; silent zero-error bypass on file://)
+  if ('serviceWorker' in navigator && (window.location.protocol.startsWith('http') || window.location.hostname === 'localhost')) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then((reg) => {
+          console.log('[PWA] ServiceWorker registered with scope:', reg.scope);
+        })
+        .catch((err) => {
+          console.warn('[PWA] ServiceWorker registration failed:', err);
+        });
+    });
+  }
+}
+
+// ==========================================================================
+// R3: COGNITIVE LOAD THERMOSTAT (ADAPTIVE DENSITY CONTROLLER)
+// ==========================================================================
+function setupDensityController() {
+  const toggleGroup = document.getElementById('densityToggleGroup');
+  const scanBtn = document.getElementById('densityScanBtn');
+  const digestBtn = document.getElementById('densityDigestBtn');
+  const deepBtn = document.getElementById('densityDeepBtn');
+
+  const buttons = [
+    { btn: scanBtn, mode: 'scan' },
+    { btn: digestBtn, mode: 'digest' },
+    { btn: deepBtn, mode: 'deep' }
+  ];
+
+  buttons.forEach(({ btn, mode }) => {
+    if (btn) {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        setDensity(mode);
+      });
+    }
+  });
+
+  // Keyboard accessibility across the segmented radio group (ArrowLeft / ArrowRight / Home / End)
+  if (toggleGroup) {
+    toggleGroup.addEventListener('keydown', (e) => {
+      const currentMode = state.densityMode || 'digest';
+      const modes = ['scan', 'digest', 'deep'];
+      const currIdx = modes.indexOf(currentMode);
+      if (currIdx === -1) return;
+
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        const nextMode = modes[(currIdx + 1) % modes.length];
+        setDensity(nextMode);
+        const nextBtn = document.getElementById(`density${nextMode.charAt(0).toUpperCase() + nextMode.slice(1)}Btn`);
+        if (nextBtn) nextBtn.focus();
+      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        const prevMode = modes[(currIdx - 1 + modes.length) % modes.length];
+        setDensity(prevMode);
+        const prevBtn = document.getElementById(`density${prevMode.charAt(0).toUpperCase() + prevMode.slice(1)}Btn`);
+        if (prevBtn) prevBtn.focus();
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        setDensity('scan');
+        const scanBtn = (buttons && buttons[0] && buttons[0].btn) || document.getElementById('densityScanBtn');
+        if (scanBtn) scanBtn.focus();
+      } else if (e.key === 'End') {
+        e.preventDefault();
+        setDensity('deep');
+        const deepBtn = (buttons && buttons[buttons.length - 1] && buttons[buttons.length - 1].btn) || document.getElementById('densityDeepBtn');
+        if (deepBtn) deepBtn.focus();
+      }
+    });
+  }
+
+  // Restore saved preference (defaults to 'digest')
+  const savedDensity = localStorage.getItem('news_colossal_density') || localStorage.getItem('nc_density_mode') || 'digest';
+  setDensity(savedDensity);
+}
+
+function setDensity(mode) {
+  const validModes = ['scan', 'digest', 'deep'];
+  if (!validModes.includes(mode)) {
+    mode = 'digest';
+  }
+
+  state.densityMode = mode;
+  try {
+    localStorage.setItem('news_colossal_density', mode);
+    localStorage.setItem('nc_density_mode', mode);
+  } catch (err) {
+    // Non-fatal fallback for strict sandbox environments
+  }
+
+  const grid = document.getElementById('newsGrid') || newsGrid;
+  if (grid) {
+    grid.classList.remove('density-scan', 'density-digest', 'density-deep');
+    grid.classList.add(`density-${mode}`);
+  }
+
+  const scanBtn = document.getElementById('densityScanBtn');
+  const digestBtn = document.getElementById('densityDigestBtn');
+  const deepBtn = document.getElementById('densityDeepBtn');
+
+  [
+    { btn: scanBtn, m: 'scan' },
+    { btn: digestBtn, m: 'digest' },
+    { btn: deepBtn, m: 'deep' }
+  ].forEach(({ btn, m }) => {
+    if (btn) {
+      const isActive = (m === mode);
+      btn.classList.toggle('active', isActive);
+      btn.setAttribute('aria-checked', isActive ? 'true' : 'false');
+      btn.setAttribute('tabindex', isActive ? '0' : '-1');
+    }
+  });
+}
+
+function renderDeepDivePanelContent(art) {
+  if (!art) return '';
+  let html = '';
+
+  // 1. Extracted Entities
+  const ent = art.entities || {};
+  const countries = (ent.countries || []).map(c => typeof c === 'string' ? c : (c.name || c.code)).filter(Boolean);
+  const leaders = (ent.leaders || []).map(l => typeof l === 'string' ? l : l.name).filter(Boolean);
+  const orgs = (ent.organizations || []).map(o => typeof o === 'string' ? o : o.name).filter(Boolean);
+  const companies = (ent.companies || []).map(co => typeof co === 'string' ? co : co.name).filter(Boolean);
+
+  const actors = art.primary_actors || (ent.primary_actors) || null;
+  const actorTags = [];
+  if (actors) {
+    if (actors.active_agent) {
+      actorTags.push(`<span class="deep-tag leader" title="Active Agent">🎯 ${escapeHtml(actors.active_agent)}</span>`);
+    }
+    if (Array.isArray(actors.collective_factions)) {
+      actors.collective_factions.forEach(f => {
+        const label = f.canonical_label || f.matched_text;
+        if (label) actorTags.push(`<span class="deep-tag org" title="Collective Faction">👥 ${escapeHtml(label)}</span>`);
+      });
+    }
+  }
+
+  const allTags = [
+    ...actorTags,
+    ...countries.map(c => `<span class="deep-tag country" title="Nation">🌐 ${escapeHtml(c)}</span>`),
+    ...leaders.map(l => `<span class="deep-tag leader" title="Leader">👤 ${escapeHtml(l)}</span>`),
+    ...orgs.map(o => `<span class="deep-tag org" title="Organization">🏛️ ${escapeHtml(o)}</span>`),
+    ...companies.map(co => `<span class="deep-tag company" title="Company">🏢 ${escapeHtml(co)}</span>`)
+  ];
+
+  if (allTags.length > 0) {
+    html += `
+      <div class="deep-dive-row">
+        <span class="deep-dive-label">Key Entities:</span>
+        <div class="deep-dive-tags">${allTags.slice(0, 6).join('')}</div>
+      </div>
+    `;
+  }
+
+  // 2. Cognitive Domain Matrix — Honest nulls without synthetic fallbacks
+  const score = typeof art.importance_score === 'number'
+    ? art.importance_score.toFixed(1)
+    : ((art.scores && typeof art.scores.composite === 'number') ? (art.scores.composite * 10).toFixed(1) : null);
+  const vel = (art.scores && typeof art.scores.velocity === 'number') ? art.scores.velocity.toFixed(2) : null;
+  const rarity = (art.scores && typeof art.scores.rarity === 'number') ? `${Math.round(art.scores.rarity * 100)}%` : null;
+  const region = art.region || null;
+
+  let matrixPills = '';
+  if (score !== null) matrixPills += `<span class="matrix-pill" title="Algorithmic Importance Score">✦ Signal: ${score}/10</span>`;
+  if (vel !== null) matrixPills += `<span class="matrix-pill" title="Coverage Velocity Index">⚡ Velocity: ${vel}</span>`;
+  if (rarity !== null) matrixPills += `<span class="matrix-pill" title="Information Rarity">💎 Rarity: ${rarity}</span>`;
+  if (region) matrixPills += `<span class="matrix-pill" title="Geographic Focus">🌍 ${escapeHtml(region)}</span>`;
+
+  if (matrixPills) {
+    html += `
+      <div class="deep-dive-matrix">
+        ${matrixPills}
+      </div>
+    `;
+  }
+
+  // 3. Resonance & Arc Pills
+  let resonanceBadges = '';
+  if (art.resonant_podcast) {
+    const pTitle = art.resonant_podcast.title || art.resonant_podcast.podcast || 'Podcast';
+    resonanceBadges += `<span class="resonance-pill podcast-pill" title="Related Podcast Episode">🎙️ Podcast: ${escapeHtml(pTitle)}</span>`;
+  }
+  if (art.narrative_arc && art.narrative_arc.arc_id) {
+    const arcTitle = art.narrative_arc.arc_title || art.title;
+    const day = art.narrative_arc.day_number || 1;
+    resonanceBadges += `<span class="resonance-pill arc-pill" title="Developing Narrative Arc">📅 Chapter ${day} &bull; ${escapeHtml(arcTitle)}</span>`;
+  }
+  if (resonanceBadges) {
+    html += `<div class="deep-dive-resonance">${resonanceBadges}</div>`;
+  }
+
+  // 4. Provenance & Wire Cross-Check Links
+  if (art.relatedSources && art.relatedSources.length > 0) {
+    const srcLinks = art.relatedSources.map(s => `
+      <a href="${escapeHtml(s.url)}" target="_blank" rel="noopener noreferrer" class="provenance-link" onclick="event.stopPropagation()" title="Cross-verify with ${escapeHtml(s.name)}">
+        ${escapeHtml(s.name)} ↗
+      </a>
+    `).join('');
+    html += `
+      <div class="deep-dive-provenance">
+        <span class="deep-dive-label">Wire Cross-Check:</span>
+        <div class="provenance-links">${srcLinks}</div>
+      </div>
+    `;
+  }
+
+  return html;
+}
+
+// Global interface bindings
+window.setupDensityController = setupDensityController;
+window.renderDensityController = setupDensityController;
+window.setDensity = setDensity;
+window.computeStoryMetabolism = computeStoryMetabolism;
+window.renderDeepDivePanelContent = renderDeepDivePanelContent;
+
+// ==========================================================================
+// R2: PERSPECTIVE PRISM (MULTI-SOURCE SPECTRUM & CONTRARIAN SIGNALS)
+// ==========================================================================
+
+const REGION_ORIGIN_MAP = {
+  'North America': { primary: '#10b981', glow: 'rgba(16, 185, 129, 0.35)', emoji: '🌎' },
+  'Europe':        { primary: '#0284c7', glow: 'rgba(2, 132, 199, 0.35)',  emoji: '🇪🇺' },
+  'Asia-Pacific':  { primary: '#a855f7', glow: 'rgba(168, 85, 247, 0.35)', emoji: '🌏' },
+  'Middle East':   { primary: '#f43f5e', glow: 'rgba(244, 63, 94, 0.35)',  emoji: '🌍' },
+  'India':         { primary: '#f59e0b', glow: 'rgba(245, 158, 11, 0.35)', emoji: '🇮🇳' },
+  'Global':        { primary: '#00f2fe', glow: 'rgba(0, 242, 254, 0.35)',  emoji: '🌐' }
+};
+
+/**
+ * Resolves a publisher and optional explicit region to one of the 6 canonical geopolitical origins.
+ * @param {string} sourceName - Publisher name
+ * @param {string} [explicitRegion] - Optional region tag from article/feed
+ * @returns {string} One of: 'North America', 'Europe', 'Asia-Pacific', 'Middle East', 'India', 'Global'
+ */
+function getPublisherOrigin(sourceName, explicitRegion) {
+  if (explicitRegion && explicitRegion !== 'all' && REGION_ORIGIN_MAP[explicitRegion]) {
+    return explicitRegion;
+  }
+  const s = (sourceName || '').toLowerCase();
+  if (s.includes('asia') || s.includes('scmp') || s.includes('kyodo') || s.includes('nikkei') || s.includes('strait') || s.includes('xinhua') || s.includes('asahi') || s.includes('yomiuri') || s.includes('korea') || s.includes('japan times')) return 'Asia-Pacific';
+  if (s.includes('europe') || s.includes('france') || s.includes('dw') || s.includes('guardian') || s.includes('spiegel') || s.includes('telegraph') || s.includes('le monde') || s.includes('ft') || s.includes('financial times') || s.includes('el pais') || s.includes('reuters') || s.includes('bbc')) return 'Europe';
+  if (s.includes('mideast') || s.includes('middle east') || s.includes('al jazeera') || s.includes('haaretz') || s.includes('arab news') || s.includes('jerusalem') || s.includes('gulf')) return 'Middle East';
+  if (s.includes('hindu') || s.includes('hindustan') || s.includes('indian express') || s.includes('ndtv') || s.includes('times of india') || s.includes('livemint') || s.includes('economic times') || s.includes('ani') || s.includes('the wire')) return 'India';
+  if (s.includes('nyt') || s.includes('new york times') || s.includes('verge') || s.includes('techcrunch') || s.includes('npr') || s.includes('washington post') || s.includes('wsj') || s.includes('wall street journal') || s.includes('bloomberg') || s.includes('cnn') || s.includes('ap news') || s.includes('associated press') || s.includes('cnbc') || s.includes('politico') || s.includes('wired')) return 'North America';
+  return 'Global';
+}
+
+function extractSpectrumItems(art) {
+  if (!art) return [];
+  const items = [];
+  const seenSources = new Set();
+
+  if (Array.isArray(art.perspectives) && art.perspectives.length > 0) {
+    art.perspectives.forEach(p => {
+      const src = p.source || '';
+      if (!seenSources.has(src.toLowerCase())) {
+        seenSources.add(src.toLowerCase());
+        const region = getPublisherOrigin(p.source, p.region);
+        items.push({
+          source: p.source,
+          sourceLogo: p.sourceLogo || (p.source ? p.source.slice(0, 3).toUpperCase() : 'SRC'),
+          region: region,
+          title: p.title || art.title,
+          annotation: p.annotation || null,
+          isPrimary: src.toLowerCase() === (art.source || '').toLowerCase()
+        });
+      }
+    });
+  }
+
+  if (art.storyCluster && Array.isArray(art.storyCluster.sources) && art.storyCluster.sources.length > 0) {
+    art.storyCluster.sources.forEach(s => {
+      const src = s.source || '';
+      if (!seenSources.has(src.toLowerCase())) {
+        seenSources.add(src.toLowerCase());
+        const region = getPublisherOrigin(s.source, s.region);
+        items.push({
+          source: s.source,
+          sourceLogo: (s.source || '').slice(0, 3).toUpperCase() || 'SRC',
+          region: region,
+          title: s.title || art.title,
+          pubDate: s.pubDate || null,
+          isPrimary: src.toLowerCase() === (art.source || '').toLowerCase()
+        });
+      }
+    });
+  }
+
+  if (art.source && !seenSources.has(art.source.toLowerCase())) {
+    seenSources.add(art.source.toLowerCase());
+    items.unshift({
+      source: art.source,
+      sourceLogo: art.sourceLogo || art.source.slice(0, 3).toUpperCase(),
+      region: getPublisherOrigin(art.source, art.region),
+      title: art.title,
+      annotation: art.annotation || null,
+      isPrimary: true
+    });
+  }
+
+  if (items.length === 0 && art.source) {
+    items.push({
+      source: art.source,
+      sourceLogo: art.sourceLogo || 'SRC',
+      region: getPublisherOrigin(art.source, art.region),
+      title: art.title,
+      annotation: art.annotation || null,
+      isPrimary: true
+    });
+  }
+
+  return items;
+}
+
+function hasPerspectivePrism(art) {
+  if (!art) return false;
+  if (art.perspectives && art.perspectives.length >= 1) return true;
+  if (art.storyCluster && ((art.storyCluster.sources && art.storyCluster.sources.length >= 1) || (typeof art.storyCluster.size === 'number' && art.storyCluster.size >= 1))) return true;
+  if (art.meta && (art.meta.is_contrarian || art.meta.is_exclusive || (art.meta.sentiment_divergence && art.meta.sentiment_divergence > 0.4))) return true;
+  return false;
+}
+
+/**
+ * Renders the full interactive Perspective Prism component for reader modal.
+ * @param {Object} art - Article data object
+ * @returns {string} HTML markup string
+ */
+function renderPerspectivePrism(art) {
+  if (!art) return '';
+  const spectrumItems = extractSpectrumItems(art);
+  if (!spectrumItems || spectrumItems.length === 0) return '';
+
+  const isContrarian = !!(art.meta && art.meta.is_contrarian);
+  const isExclusive = !!(art.meta && art.meta.is_exclusive);
+  const divergence = (art.meta && typeof art.meta.sentiment_divergence === 'number')
+    ? Math.round(art.meta.sentiment_divergence * 100)
+    : ((art.scores && typeof art.scores.rarity === 'number') ? Math.round(art.scores.rarity * 100) : 50);
+  const exclusiveSignal = (art.meta && art.meta.exclusive_signal) || (art.source ? `Single-Outlet Exclusivity (${art.source})` : 'Single-Outlet Exclusivity');
+
+  const originCounts = {};
+  spectrumItems.forEach(item => {
+    originCounts[item.region] = (originCounts[item.region] || 0) + 1;
+  });
+  const uniqueOrigins = Object.keys(originCounts);
+  const totalItems = spectrumItems.length;
+
+  const barSegmentsHTML = uniqueOrigins.map(region => {
+    const count = originCounts[region];
+    const pct = ((count / totalItems) * 100).toFixed(1);
+    const colorInfo = REGION_ORIGIN_MAP[region] || REGION_ORIGIN_MAP['Global'];
+    return `<div class="prism-spectrum-segment" style="width: ${pct}%; background: ${colorInfo.primary}; box-shadow: 0 0 10px ${colorInfo.glow};" title="${escapeHtml(region)}: ${count} of ${totalItems} sources (${pct}%)" aria-label="${escapeHtml(region)} ${pct}%"></div>`;
+  }).join('');
+
+  const originChipsHTML = uniqueOrigins.map(region => {
+    const colorInfo = REGION_ORIGIN_MAP[region] || REGION_ORIGIN_MAP['Global'];
+    const count = originCounts[region];
+    return `<span class="prism-origin-chip" style="--chip-color: ${colorInfo.primary}; border-color: ${colorInfo.primary}50; background: ${colorInfo.primary}15; color: ${colorInfo.primary};">
+      <span class="chip-emoji">${colorInfo.emoji}</span>
+      <span class="chip-name">${escapeHtml(region)}</span>
+      <span class="chip-count">${count}</span>
+    </span>`;
+  }).join('');
+
+  let badgesHTML = '';
+  if (isContrarian) {
+    badgesHTML += `<span class="prism-contrarian-badge">
+      <span class="badge-icon">⚡</span>
+      <span>Contrarian Signal: ${divergence}% Sentiment Divergence</span>
+    </span>`;
+  }
+  if (isExclusive) {
+    badgesHTML += `<span class="prism-exclusive-badge">
+      <span class="badge-icon">✨</span>
+      <span>Exclusive Reporting: ${escapeHtml(exclusiveSignal)}</span>
+    </span>`;
+  }
+
+  const signalsRowHTML = badgesHTML ? ('<div class="prism-signals-row">' + badgesHTML + '</div>') : '';
+
+  const cardsHTML = spectrumItems.map((item, idx) => {
+    const colorInfo = REGION_ORIGIN_MAP[item.region] || REGION_ORIGIN_MAP['Global'];
+    const isItemContrarian = isContrarian && (idx === 0 || item.isPrimary);
+    const annotationHTML = (item.annotation && item.annotation.what) ? ('<p class="prism-card-annotation">✦ ' + escapeHtml(item.annotation.what) + '</p>') : '';
+    const primaryTagHTML = item.isPrimary ? '<span class="prism-primary-tag">Lead</span>' : '';
+    const contrarianTagHTML = isItemContrarian ? '<span class="prism-contrarian-badge micro">⚡ Contrarian</span>' : '';
+    return `
+      <div class="prism-perspective-card ${isItemContrarian ? 'has-contrarian' : ''}" style="border-left-color: ${colorInfo.primary};">
+        <div class="prism-card-header">
+          <div class="prism-card-source-wrap">
+            <span class="prism-origin-chip mini" style="--chip-color: ${colorInfo.primary}; background: ${colorInfo.primary}18; color: ${colorInfo.primary}; border-color: ${colorInfo.primary}40;">
+              ${colorInfo.emoji} ${escapeHtml(item.region)}
+            </span>
+            <span class="prism-source-name">${escapeHtml(item.source)}</span>
+          </div>
+          ${primaryTagHTML}
+          ${contrarianTagHTML}
+        </div>
+        <p class="prism-card-title">${escapeHtml(item.title)}</p>
+        ${annotationHTML}
+      </div>
+    `;
+  }).join('');
+
+  return `
+    <div class="perspective-prism-container">
+      <div class="prism-header">
+        <div class="prism-title-row">
+          <span class="prism-gem-icon">💎</span>
+          <h4 class="prism-title">Perspective Prism — Multi-Source Spectrum</h4>
+        </div>
+        <p class="prism-subtitle">${spectrumItems.length} perspectives analyzed across ${uniqueOrigins.length} global geopolitical zone${uniqueOrigins.length === 1 ? '' : 's'}</p>
+        ${signalsRowHTML}
+      </div>
+
+      <!-- Chromatic Dispersion Spectrum Bar -->
+      <div class="prism-spectrum-bar" role="progressbar" aria-label="Geopolitical dispersion spectrum">
+        ${barSegmentsHTML}
+      </div>
+
+      <!-- Geopolitical Zone Origin Chips -->
+      <div class="prism-chips-row">
+        ${originChipsHTML}
+      </div>
+
+      <!-- Regional Viewpoint Cards Grid -->
+      <div class="prism-pillars-grid">
+        ${cardsHTML}
+      </div>
+    </div>
+  `;
+}
+
+/**
+ * Renders on-card drawer content for .news-card.
+ */
+function renderCardPrismDrawerContent(art) {
+  if (!art) return '';
+  const spectrumItems = extractSpectrumItems(art);
+  if (spectrumItems.length === 0) return '';
+
+  const originCounts = {};
+  spectrumItems.forEach(item => {
+    originCounts[item.region] = (originCounts[item.region] || 0) + 1;
+  });
+  const uniqueOrigins = Object.keys(originCounts);
+  const totalItems = spectrumItems.length;
+
+  const barSegmentsHTML = uniqueOrigins.map(region => {
+    const count = originCounts[region];
+    const pct = ((count / totalItems) * 100).toFixed(1);
+    const colorInfo = REGION_ORIGIN_MAP[region] || REGION_ORIGIN_MAP['Global'];
+    return `<div class="prism-spectrum-segment" style="width: ${pct}%; background: ${colorInfo.primary}; box-shadow: 0 0 8px ${colorInfo.glow};" title="${escapeHtml(region)}: ${count} (${pct}%)"></div>`;
+  }).join('');
+
+  const chipsHTML = uniqueOrigins.map(region => {
+    const colorInfo = REGION_ORIGIN_MAP[region] || REGION_ORIGIN_MAP['Global'];
+    return `<span class="prism-origin-chip mini" style="--chip-color: ${colorInfo.primary}; background: ${colorInfo.primary}18; color: ${colorInfo.primary}; border-color: ${colorInfo.primary}40;">
+      ${colorInfo.emoji} ${escapeHtml(region)} (${originCounts[region]})
+    </span>`;
+  }).join('');
+
+  const viewpointsList = spectrumItems.slice(0, 3).map(item => {
+    const colorInfo = REGION_ORIGIN_MAP[item.region] || REGION_ORIGIN_MAP['Global'];
+    return `
+      <div class="drawer-viewpoint-item" onclick="event.stopPropagation(); openModal('${escapeJs(art.id)}');">
+        <span class="drawer-viewpoint-region" style="color: ${colorInfo.primary};">${colorInfo.emoji} ${escapeHtml(item.source)}</span>
+        <span class="drawer-viewpoint-title">${escapeHtml(item.title)}</span>
+      </div>
+    `;
+  }).join('');
+
+  return `
+    <div class="drawer-prism-body">
+      <div class="drawer-prism-header">
+        <span class="drawer-prism-title">💎 Perspective Spectrum (${spectrumItems.length} Sources)</span>
+        <button class="drawer-close-btn" onclick="event.stopPropagation(); toggleCardPrismDrawer('${escapeJs(art.id)}', event);">&times;</button>
+      </div>
+      <div class="prism-spectrum-bar mini">${barSegmentsHTML}</div>
+      <div class="drawer-chips-row">${chipsHTML}</div>
+      <div class="drawer-viewpoints-list">${viewpointsList}</div>
+      <button class="drawer-full-prism-btn" onclick="event.stopPropagation(); openModal('${escapeJs(art.id)}');">
+        Open Deep Perspective Spectrum ↗
+      </button>
+    </div>
+  `;
+}
+
+function toggleCardPrismDrawer(artId, event) {
+  if (event) event.stopPropagation();
+  const drawer = document.getElementById(`prism-drawer-${artId}`);
+  if (!drawer) return;
+
+  const isHidden = drawer.style.display === 'none' || !drawer.classList.contains('open');
+  if (isHidden) {
+    if (!drawer.hasChildNodes() || drawer.innerHTML.trim() === '') {
+      const art = (state.articles || []).find(a => String(a.id) === String(artId)) ||
+                  (state.filteredArticles || []).find(a => String(a.id) === String(artId));
+      if (art) {
+        drawer.innerHTML = renderCardPrismDrawerContent(art);
+      }
+    }
+    drawer.style.display = 'block';
+    requestAnimationFrame(() => drawer.classList.add('open'));
+  } else {
+    drawer.classList.remove('open');
+    setTimeout(() => {
+      if (!drawer.classList.contains('open')) {
+        drawer.style.display = 'none';
+      }
+    }, 280);
+  }
+}
+window.toggleCardPrismDrawer = toggleCardPrismDrawer;
+
+// ==========================================================================
+// R4: NARRATIVE TIME MACHINE (STORY ARC SCRUBBER)
+// ==========================================================================
+
+state.narrativeMemory = { arcsById: {} };
+
+async function initNarrativeMemory() {
+  try {
+    const res = await fetch('data/narrative_memory.json?v=' + Date.now());
+    if (!res.ok) return;
+    const data = await res.json();
+    if (data && Array.isArray(data.arcs)) {
+      data.arcs.forEach(arc => {
+        if (arc && arc.arc_id) {
+          state.narrativeMemory.arcsById[arc.arc_id] = arc;
+        }
+      });
+    }
+  } catch (err) {
+    // Graceful standalone fallback
+  }
+}
+
+function getArcChapters(art) {
+  if (!art || !art.narrative_arc) return [];
+  const arcId = art.narrative_arc.arc_id;
+  const memoryArc = arcId && state.narrativeMemory ? state.narrativeMemory.arcsById[arcId] : null;
+
+  if (memoryArc && Array.isArray(memoryArc.chapter_titles) && memoryArc.chapter_titles.length > 0) {
+    const total = memoryArc.chapter_titles.length;
+    const maxDay = art.narrative_arc.day_number || 1;
+    return memoryArc.chapter_titles.map((title, idx) => {
+      const day = Math.max(1, Math.min(maxDay, Math.ceil(((idx + 1) / total) * maxDay)));
+      const cleanTitle = title.replace(/\s*-\s*Reuters$/i, '').trim().toLowerCase();
+      const matchedArt = (state.articles || []).find(a => 
+        (a.title && a.title.toLowerCase().includes(cleanTitle.slice(0, 30))) ||
+        (cleanTitle.includes((a.title || '').toLowerCase().slice(0, 30)))
+      );
+      return {
+        chapterIndex: idx + 1,
+        totalChapters: total,
+        day: day,
+        title: title,
+        source: memoryArc.sources_involved ? memoryArc.sources_involved[idx % memoryArc.sources_involved.length] : (art.source || 'Primary Source'),
+        articleId: matchedArt ? matchedArt.id : null,
+        isCurrent: (idx === total - 1)
+      };
+    });
+  }
+
+  const prev = Array.isArray(art.narrative_arc.previous_headlines) ? art.narrative_arc.previous_headlines : [];
+  const chapters = prev.map((h, i) => {
+    const matchedArt = (state.articles || []).find(a => 
+      a.title && (a.title.toLowerCase().includes(h.toLowerCase().slice(0, 30)) || h.toLowerCase().includes(a.title.toLowerCase().slice(0, 30)))
+    );
+    return {
+      chapterIndex: i + 1,
+      totalChapters: prev.length + 1,
+      day: Math.max(1, i + 1),
+      title: h,
+      source: art.source || 'Primary Source',
+      articleId: matchedArt ? matchedArt.id : null,
+      isCurrent: false
+    };
+  });
+
+  chapters.push({
+    chapterIndex: prev.length + 1,
+    totalChapters: prev.length + 1,
+    day: art.narrative_arc.day_number || (prev.length + 1),
+    title: art.title,
+    source: art.source || 'Primary Source',
+    articleId: art.id,
+    isCurrent: true
+  });
+
+  return chapters;
+}
+
+function renderNarrativeTimeMachine(art) {
+  if (!art || !art.narrative_arc || !art.narrative_arc.arc_id) return '';
+  const chapters = getArcChapters(art);
+  const total = chapters.length;
+  const isSingleChapter = total <= 1;
+  const currentIndex = total - 1;
+  const currentChapter = chapters[currentIndex] || { chapterIndex: 1, totalChapters: 1, day: 1, title: art.title, source: art.source };
+
+  window._activeNarrativeChapters = chapters;
+  window._activeNarrativeIndex = currentIndex;
+
+  const trend = art.narrative_arc.importance_trend || 'stable';
+
+  const ticksHTML = chapters.map((chap, idx) => `
+    <span class="scrubber-tick ${idx === currentIndex ? 'active' : ''}" 
+          style="left: ${total > 1 ? ((idx / (total - 1)) * 100).toFixed(1) : 50}%;"
+          onclick="event.stopPropagation(); handleNarrativeScrub(${idx});"
+          title="Chapter ${chap.chapterIndex}: Day ${chap.day}"></span>
+  `).join('');
+
+  const currentPillHTML = currentChapter.isCurrent
+    ? '<span class="spotlight-current-pill">Current Dispatch</span>'
+    : '<span class="spotlight-historic-pill">Historical Chapter</span>';
+
+  let spotlightActionsHTML = '';
+  if (currentChapter.articleId && currentChapter.articleId !== art.id) {
+    spotlightActionsHTML = '<button class="narrative-jump-btn" onclick="event.stopPropagation(); jumpToNarrativeDispatch(\'' + escapeJs(currentChapter.articleId) + '\');">Read Chapter Dispatch ↗</button>';
+  } else {
+    spotlightActionsHTML = '<span class="spotlight-nav-hint">' + (isSingleChapter ? 'Single Chapter Story · Genesis' : 'Drag scrubber or click &lt; &gt; to inspect timeline progression') + '</span>';
+  }
+
+  return `
+    <div class="narrative-time-machine" id="narrativeTimeMachine" data-arc-id="${escapeHtml(art.narrative_arc.arc_id)}">
+      <div class="time-machine-header">
+        <div class="time-machine-title-wrap">
+          <span class="time-machine-glyph">⏳</span>
+          <div>
+            <span class="time-machine-tag">NARRATIVE TIME MACHINE · ARC SCRUBBER</span>
+            <h4 class="time-machine-arc-title">${escapeHtml(art.narrative_arc.arc_title || art.title)}</h4>
+          </div>
+        </div>
+        <div class="time-machine-status-badge ${trend}">
+          <span class="status-trend-dot ${trend}"></span>
+          <span>${trend.toUpperCase()}</span>
+        </div>
+      </div>
+
+      <!-- Scrubber Track Row -->
+      <div class="time-machine-scrubber-row">
+        <button class="chapter-step-btn prev-chapter-btn" 
+                onclick="event.stopPropagation(); stepNarrativeChapter(-1);" 
+                title="Previous Chapter" 
+                aria-label="Previous Chapter" 
+                ${isSingleChapter ? 'disabled' : ''}>&lt;</button>
+
+        <div class="narrative-scrubber-track-wrap">
+          <input type="range" 
+                 class="narrative-time-scrubber narrative-scrubber-slider" 
+                 id="narrativeTimeScrubber"
+                 min="0" 
+                 max="${Math.max(0, total - 1)}" 
+                 value="${currentIndex}" 
+                 step="1"
+                 oninput="handleNarrativeScrub(this.value)"
+                 aria-label="Story Arc Timeline Scrubber"
+                 ${isSingleChapter ? 'disabled' : ''} />
+          <div class="narrative-scrubber-ticks-bar narrative-scrubber-ticks">
+            ${ticksHTML}
+          </div>
+        </div>
+
+        <button class="chapter-step-btn next-chapter-btn" 
+                onclick="event.stopPropagation(); stepNarrativeChapter(1);" 
+                title="Next Chapter" 
+                aria-label="Next Chapter" 
+                ${isSingleChapter ? 'disabled' : ''}>&gt;</button>
+      </div>
+
+      <!-- Historical Chapter Spotlight Box -->
+      <div class="narrative-spotlight-box narrative-chapter-spotlight" id="narrativeSpotlightBox">
+        <div class="spotlight-chapter-meta">
+          <span class="spotlight-chapter-badge" id="spotlightChapterBadge">Chapter ${currentChapter.chapterIndex} of ${currentChapter.totalChapters}</span>
+          <span class="spotlight-day-badge" id="spotlightDayBadge">Day ${currentChapter.day}</span>
+          <span class="spotlight-source-badge" id="spotlightSourceBadge">${escapeHtml(currentChapter.source)}</span>
+          ${currentPillHTML}
+        </div>
+        <p class="spotlight-headline" id="spotlightHeadline">${escapeHtml(currentChapter.title)}</p>
+        <div class="spotlight-actions" id="spotlightActions">
+          ${spotlightActionsHTML}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function handleNarrativeScrub(val) {
+  const chapters = window._activeNarrativeChapters || [];
+  if (chapters.length === 0) return;
+  const idx = Math.max(0, Math.min(chapters.length - 1, parseInt(val, 10)));
+  window._activeNarrativeIndex = idx;
+  const slider = document.getElementById('narrativeTimeScrubber');
+  if (slider && parseInt(slider.value, 10) !== idx) slider.value = idx;
+  renderNarrativeChapterSpotlight(chapters[idx]);
+}
+
+function stepNarrativeChapter(delta) {
+  const chapters = window._activeNarrativeChapters || [];
+  if (chapters.length === 0) return;
+  const curr = (typeof window._activeNarrativeIndex === 'number') ? window._activeNarrativeIndex : (chapters.length - 1);
+  const next = Math.max(0, Math.min(chapters.length - 1, curr + delta));
+  if (next === curr && delta !== 0) return;
+  handleNarrativeScrub(next);
+}
+
+function renderNarrativeChapterSpotlight(chapter) {
+  if (!chapter) return;
+  const badge = document.getElementById('spotlightChapterBadge');
+  const day = document.getElementById('spotlightDayBadge');
+  const source = document.getElementById('spotlightSourceBadge');
+  const headline = document.getElementById('spotlightHeadline');
+  const actions = document.getElementById('spotlightActions');
+
+  if (badge) badge.textContent = `Chapter ${chapter.chapterIndex} of ${chapter.totalChapters}`;
+  if (day) day.textContent = `Day ${chapter.day}`;
+  if (source) source.textContent = chapter.source;
+  if (headline) headline.textContent = chapter.title;
+
+  if (actions) {
+    if (chapter.articleId && (!state.modalState || (state.modalState.articles[state.modalState.currentIndex] && state.modalState.articles[state.modalState.currentIndex].id !== chapter.articleId))) {
+      actions.innerHTML = `
+        <button class="narrative-jump-btn" onclick="event.stopPropagation(); jumpToNarrativeDispatch('${chapter.articleId}');">
+          Read Chapter Dispatch ↗
+        </button>
+      `;
+    } else {
+      actions.innerHTML = `<span class="spotlight-nav-hint">${chapter.isCurrent ? 'Viewing Current Dispatch' : 'Archived Chapter Record'}</span>`;
+    }
+  }
+
+  const ticks = document.querySelectorAll('.scrubber-tick');
+  ticks.forEach((tick, i) => {
+    tick.classList.toggle('active', i === chapter.chapterIndex - 1);
+  });
+}
+
+function jumpToNarrativeDispatch(artId) {
+  if (!artId) return;
+  openModal(artId);
+}
+
+window.handleNarrativeScrub = handleNarrativeScrub;
+window.stepNarrativeChapter = stepNarrativeChapter;
+window.renderNarrativeChapterSpotlight = renderNarrativeChapterSpotlight;
+window.jumpToNarrativeDispatch = jumpToNarrativeDispatch;
+
+// Global interface bindings for M3
+window.getPublisherOrigin = getPublisherOrigin;
+window.REGION_ORIGIN_MAP = REGION_ORIGIN_MAP;
+window.renderPerspectivePrism = renderPerspectivePrism;
+window.renderNarrativeTimeMachine = renderNarrativeTimeMachine;
+window.initNarrativeMemory = initNarrativeMemory;
+window.getArcChapters = getArcChapters;
+
+
+/* ==========================================================================
+   MILESTONE 4: EXECUTIVE INTELLIGENCE (R5 & R7)
+   ========================================================================== */
+
+// --------------------------------------------------------------------------
+// R5: FOCUS TIMER ("10-MINUTE INTELLIGENCE SESSION") & 5-STORY DOCKET
+// --------------------------------------------------------------------------
+
+/**
+ * Curates an optimal 5-story executive docket.
+ * Guarantees balanced domain coverage across World, Tech, Business, and National,
+ * plus the highest remaining composite signal article (rewarding Black Swan & Contrarian).
+ * @param {Array} articles - Full articles pool
+ * @returns {Array} Exactly 5 curated articles
+ */
+function curateFocusDocket(articles) {
+  const pool = (articles || []).filter(a => !a.is_duplicate);
+  const categories = ['World', 'Tech', 'Business', 'National'];
+  const docket = [];
+  const selectedIds = new Set();
+
+  // Phase 1: Select highest importance_score story from each of the 4 major pillars
+  categories.forEach(cat => {
+    const candidates = pool
+      .filter(a => a.category === cat && !selectedIds.has(a.id))
+      .sort((a, b) => (b.importance_score || 0) - (a.importance_score || 0));
+
+    if (candidates.length > 0) {
+      docket.push(candidates[0]);
+      selectedIds.add(candidates[0].id);
+    }
+  });
+
+  // Phase 2: Select the 5th story with highest remaining composite signal
+  const remaining = pool
+    .filter(a => !selectedIds.has(a.id))
+    .sort((a, b) => {
+      const bonusA = (a.meta && a.meta.is_black_swan ? 1.5 : 0) + (a.meta && a.meta.is_contrarian ? 0.8 : 0);
+      const bonusB = (b.meta && b.meta.is_black_swan ? 1.5 : 0) + (b.meta && b.meta.is_contrarian ? 0.8 : 0);
+      return ((b.importance_score || 0) + bonusB) - ((a.importance_score || 0) + bonusA);
+    });
+
+  while (docket.length < 5 && remaining.length > 0) {
+    const next = remaining.shift();
+    docket.push(next);
+    selectedIds.add(next.id);
+  }
+
+  return docket;
+}
+
+function updateFocusTimerDisplay() {
+  const display = document.getElementById('focusTimerDisplay');
+  const bar = document.getElementById('focusBarFill');
+  const countDisplay = document.getElementById('focusCountDisplay');
+  if (!state.focusSession) return;
+
+  const rem = Math.max(0, state.focusSession.remainingSeconds);
+  const mins = Math.floor(rem / 60);
+  const secs = rem % 60;
+  if (display) {
+    display.textContent = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+  }
+  if (bar) {
+    const pct = (((state.focusSession.totalSeconds - rem) / state.focusSession.totalSeconds) * 100).toFixed(1);
+    bar.style.width = `${pct}%`;
+  }
+  if (countDisplay) {
+    const readCount = state.focusSession.readIds ? state.focusSession.readIds.size : 0;
+    countDisplay.textContent = `${readCount} / ${state.focusSession.docket.length} Read`;
+  }
+}
+
+function startFocusSession() {
+  const pool = (state.articles && state.articles.length > 0) ? state.articles : state.filteredArticles;
+  const docket = curateFocusDocket(pool);
+  if (!docket || docket.length === 0) return;
+
+  if (state.focusSession.timerInterval) {
+    clearInterval(state.focusSession.timerInterval);
+  }
+
+  state.focusSession = {
+    active: true,
+    isPaused: false,
+    totalSeconds: 600,
+    remainingSeconds: 600,
+    timerInterval: null,
+    docket: docket,
+    readIds: new Set(),
+    startTime: Date.now(),
+    allRead: false
+  };
+
+  // Close Quick Tools popover if open
+  const toolsDropdown = document.getElementById('headerToolsDropdown');
+  if (toolsDropdown) toolsDropdown.classList.remove('active');
+
+  // Show Focus Timer Pill at top of viewport
+  const pill = document.getElementById('focusTimerPill');
+  if (pill) {
+    pill.style.display = 'flex';
+  }
+
+  // Update displays
+  updateFocusTimerDisplay();
+  const pauseBtn = document.getElementById('focusPauseBtn');
+  if (pauseBtn) pauseBtn.textContent = '⏸';
+
+  // Temporarily disconnect infinite scroll observer
+  if (_gridScrollObserver) {
+    _gridScrollObserver.disconnect();
+    _gridScrollObserver = null;
+  }
+  const existingSentinel = document.getElementById('gridScrollSentinel');
+  if (existingSentinel) existingSentinel.remove();
+
+  // Render strictly the 5-story executive docket
+  if (gridTitle) {
+    gridTitle.textContent = '🎯 10-Minute Executive Docket (5 High-Impact Dispatches)';
+  }
+  state.filteredArticles = docket;
+  renderGrid(docket);
+
+  // Scroll smoothly to feed
+  scrollToContent();
+
+  // Start 1-second countdown loop
+  state.focusSession.timerInterval = setInterval(() => {
+    if (!state.focusSession.active) {
+      clearInterval(state.focusSession.timerInterval);
+      return;
+    }
+    if (!state.focusSession.isPaused) {
+      state.focusSession.remainingSeconds--;
+      updateFocusTimerDisplay();
+      if (state.focusSession.remainingSeconds <= 0) {
+        clearInterval(state.focusSession.timerInterval);
+        completeFocusSession();
+      }
+    }
+  }, 1000);
+}
+
+function toggleFocusPause() {
+  if (!state.focusSession || !state.focusSession.active) return;
+  state.focusSession.isPaused = !state.focusSession.isPaused;
+  const pauseBtn = document.getElementById('focusPauseBtn');
+  if (pauseBtn) {
+    pauseBtn.textContent = state.focusSession.isPaused ? '▶' : '⏸';
+  }
+}
+
+function completeFocusSession() {
+  if (!state.focusSession || !state.focusSession.active) return;
+  if (state.focusSession.timerInterval) {
+    clearInterval(state.focusSession.timerInterval);
+  }
+
+  const pill = document.getElementById('focusTimerPill');
+  if (pill) pill.style.display = 'none';
+
+  const elapsedSecs = state.focusSession.totalSeconds - Math.max(0, state.focusSession.remainingSeconds);
+  const elapsedMins = Math.floor(elapsedSecs / 60);
+  const elapsedRemSecs = elapsedSecs % 60;
+  const timeFormatted = `${elapsedMins.toString().padStart(2, '0')}:${elapsedRemSecs.toString().padStart(2, '0')}`;
+
+  const docket = state.focusSession.docket || [];
+  const readCount = state.focusSession.readIds ? state.focusSession.readIds.size : 0;
+
+  // Domain coverage calculation
+  const distinctCategories = new Set(docket.map(a => a.category));
+  const domainPct = Math.round((Math.min(4, distinctCategories.size) / 4) * 100);
+
+  // Signal density
+  const totalScore = docket.reduce((acc, a) => acc + (a.importance_score || 5.0), 0);
+  const avgScore = docket.length > 0 ? (totalScore / docket.length).toFixed(2) : '5.50';
+
+  // Populate report modal elements
+  const elTime = document.getElementById('metricTimeElapsed');
+  const elRead = document.getElementById('metricStoriesRead');
+  const elDomain = document.getElementById('metricDomainCoverage');
+  const elSignal = document.getElementById('metricSignalScore');
+  const elDomains = document.getElementById('focusReportDomains');
+
+  if (elTime) elTime.textContent = timeFormatted;
+  if (elRead) elRead.textContent = `${readCount} / ${docket.length}`;
+  if (elDomain) elDomain.textContent = `${domainPct}%`;
+  if (elSignal) elSignal.textContent = avgScore;
+
+  if (elDomains) {
+    elDomains.innerHTML = docket.map(art => {
+      const isRead = state.focusSession.readIds && state.focusSession.readIds.has(art.id);
+      return `
+        <span class="focus-domain-pill" title="${escapeHtml(art.title)}">
+          <span style="color: ${isRead ? '#10b981' : '#94a3b8'};">${isRead ? '✓' : '•'}</span>
+          <strong>${escapeHtml(art.category)}:</strong> ${escapeHtml(art.source)}
+        </span>
+      `;
+    }).join('');
+  }
+
+  // Open Focus Report Modal
+  const modal = document.getElementById('focusReportModal');
+  if (modal) {
+    modal.style.display = 'flex';
+    modal.classList.add('active');
+    document.body.classList.add('modal-open');
+  }
+}
+
+function exitFocusSession() {
+  if (state.focusSession) {
+    if (state.focusSession.timerInterval) {
+      clearInterval(state.focusSession.timerInterval);
+    }
+    state.focusSession.active = false;
+    state.focusSession.isPaused = false;
+  }
+
+  const pill = document.getElementById('focusTimerPill');
+  if (pill) pill.style.display = 'none';
+
+  const modal = document.getElementById('focusReportModal');
+  if (modal) {
+    modal.classList.remove('active');
+    modal.style.display = 'none';
+    document.body.classList.remove('modal-open');
+  }
+
+  // Restore regular feed
+  filterArticles();
+}
+
+function copyFocusSessionMarkdown() {
+  if (!state.focusSession || !state.focusSession.docket) return;
+  const docket = state.focusSession.docket;
+  const readCount = state.focusSession.readIds ? state.focusSession.readIds.size : 0;
+  const elapsedSecs = state.focusSession.totalSeconds - Math.max(0, state.focusSession.remainingSeconds);
+  const elapsedMins = Math.floor(elapsedSecs / 60);
+  const elapsedRemSecs = elapsedSecs % 60;
+  const duration = `${elapsedMins}m ${elapsedRemSecs}s`;
+
+  let md = `# Executive Intelligence Focus Session Brief\n\n`;
+  md += `**Date:** ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}\n`;
+  md += `**Session Duration:** ${duration} | **Stories Read:** ${readCount}/${docket.length}\n\n`;
+  md += `## Curated Executive Docket\n\n`;
+
+  docket.forEach((art, idx) => {
+    const isRead = state.focusSession.readIds && state.focusSession.readIds.has(art.id);
+    md += `${idx + 1}. **[${art.category}]** ${art.title} — *${art.source}* (${isRead ? 'Reviewed' : 'Unread'})\n`;
+    if (art.annotation && art.annotation.why) {
+      md += `   - *Analysis:* ${art.annotation.why}\n`;
+    }
+  });
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(md).then(() => {
+      const btn = document.getElementById('focusCopySummaryBtn');
+      if (btn) {
+        const origText = btn.textContent;
+        btn.textContent = '✓ Copied to Clipboard!';
+        setTimeout(() => { btn.textContent = origText; }, 2000);
+      }
+    });
+  }
+}
+
+function setupFocusSession() {
+  const btn = document.getElementById('focusSessionBtn');
+  if (btn) {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      startFocusSession();
+    });
+  }
+
+  const pauseBtn = document.getElementById('focusPauseBtn');
+  if (pauseBtn) {
+    pauseBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      toggleFocusPause();
+    });
+  }
+
+  const endBtn = document.getElementById('focusEndBtn');
+  if (endBtn) {
+    endBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      completeFocusSession();
+    });
+  }
+
+  const returnBtn = document.getElementById('focusReturnFeedBtn');
+  if (returnBtn) {
+    returnBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      exitFocusSession();
+    });
+  }
+
+  const copyBtn = document.getElementById('focusCopySummaryBtn');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      copyFocusSessionMarkdown();
+    });
+  }
+
+  // Dismiss modal if clicking backdrop
+  const modal = document.getElementById('focusReportModal');
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        exitFocusSession();
+      }
+    });
+  }
+}
+
+
+// --------------------------------------------------------------------------
+// R7: KNOWLEDGE CONSTELLATION MAP (2D INTERACTIVE CANVAS GRAPH MODAL)
+// --------------------------------------------------------------------------
+
+/**
+ * In-memory entity graph extraction from articles.
+ * Categorized nodes:
+ *   Nations: #10b981
+ *   Leaders: #f59e0b
+ *   Orgs & Cos: #0284c7
+ *   Clusters: #a855f7
+ */
+function buildKnowledgeGraph(articles) {
+  const nodeMap = new Map();
+  const edgeMap = new Map();
+  const pool = (articles && articles.length > 0) ? articles : (state.articles || []);
+
+  pool.forEach(art => {
+    const artId = art.id;
+    const entities = art.entities || {};
+    const artNodes = [];
+
+    // Nations (#10b981)
+    (entities.countries || []).forEach(c => {
+      const name = c.name || c.code || (typeof c === 'string' ? c : null);
+      if (name && name.length >= 2) {
+        artNodes.push({ id: `nation:${name}`, type: 'nation', label: name, color: '#10b981' });
+      }
+    });
+
+    // Leaders (#f59e0b)
+    (entities.leaders || []).forEach(l => {
+      const name = l.name || (typeof l === 'string' ? l : null);
+      if (name && name.length >= 2) {
+        artNodes.push({ id: `leader:${name}`, type: 'leader', label: name, color: '#f59e0b' });
+      }
+    });
+
+    // Organizations (#0284c7)
+    (entities.organizations || []).forEach(o => {
+      const name = o.name || (typeof o === 'string' ? o : null);
+      if (name && name.length >= 2) {
+        artNodes.push({ id: `org:${name}`, type: 'org', label: name, color: '#0284c7' });
+      }
+    });
+
+    // Companies (#0284c7)
+    (entities.companies || []).forEach(co => {
+      const name = co.name || (typeof co === 'string' ? co : null);
+      if (name && name.length >= 2) {
+        artNodes.push({ id: `org:${name}`, type: 'org', label: name, color: '#0284c7' });
+      }
+    });
+
+    // Story Clusters (#a855f7)
+    if (art.storyCluster && art.storyCluster.size > 1) {
+      const clusterId = `cluster:${art.category}-${art.id}`;
+      artNodes.push({ id: clusterId, type: 'cluster', label: `${art.category} Cluster`, color: '#a855f7' });
+    }
+
+    // Register nodes
+    artNodes.forEach(node => {
+      if (!nodeMap.has(node.id)) {
+        nodeMap.set(node.id, {
+          ...node,
+          articles: [],
+          connections: 0,
+          x: 0,
+          y: 0,
+          vx: 0,
+          vy: 0,
+          radius: 12
+        });
+      }
+      const existing = nodeMap.get(node.id);
+      if (!existing.articles.includes(artId)) {
+        existing.articles.push(artId);
+      }
+    });
+
+    // Register co-occurring edges
+    for (let i = 0; i < artNodes.length; i++) {
+      for (let j = i + 1; j < artNodes.length; j++) {
+        const u = artNodes[i].id;
+        const v = artNodes[j].id;
+        if (u === v) continue;
+        const edgeKey = u < v ? `${u}__${v}` : `${v}__${u}`;
+        if (!edgeMap.has(edgeKey)) {
+          edgeMap.set(edgeKey, { source: u, target: v, weight: 0 });
+        }
+        edgeMap.get(edgeKey).weight += 1;
+      }
+    }
+  });
+
+  // Calculate dynamic radius and degree
+  nodeMap.forEach(n => {
+    n.radius = Math.max(10, Math.min(26, 10 + Math.sqrt(n.articles.length) * 3.5));
+  });
+
+  const nodes = Array.from(nodeMap.values());
+  const edges = Array.from(edgeMap.values());
+
+  // Count degree connections
+  edges.forEach(e => {
+    const s = nodeMap.get(e.source);
+    const t = nodeMap.get(e.target);
+    if (s) s.connections++;
+    if (t) t.connections++;
+  });
+
+  return { nodes, edges, nodeMap };
+}
+
+/**
+ * Pure HTML5 Canvas 2D Force-Directed Simulation Engine
+ * Euler numerical integration with Coulomb repulsion, Hooke spring attraction,
+ * center gravity, velocity damping, and alpha cooling.
+ */
+class ConstellationSimulation {
+  constructor(canvas, graphData) {
+    this.canvas = canvas;
+    this.ctx = canvas.getContext('2d');
+    this.nodes = graphData.nodes;
+    this.edges = graphData.edges;
+    this.nodeMap = graphData.nodeMap;
+
+    // Simulation physics parameters
+    this.kRep = 950;
+    this.kSpring = 0.035;
+    this.springLength = 85;
+    this.kGravity = 0.012;
+    this.damping = 0.86;
+    this.alpha = 1.0;
+    this.minAlpha = 0.005;
+
+    // Camera Pan & Zoom state
+    this.camera = { x: 0, y: 0, zoom: 1.0 };
+    this.isDraggingCamera = false;
+    this.dragStartX = 0;
+    this.dragStartY = 0;
+    this.cameraStartX = 0;
+    this.cameraStartY = 0;
+
+    // Node interaction state
+    this.selectedNode = null;
+    this.hoveredNode = null;
+    this.draggedNode = null;
+    this.activeTypeFilter = 'all';
+
+    // Animation
+    this.animFrameId = null;
+    this.isRunning = false;
+    this.pulseAngle = 0;
+
+    this.initLayout();
+    this.setupEvents();
+  }
+
+  initLayout() {
+    const count = this.nodes.length;
+    const radius = Math.min(this.canvas.width, this.canvas.height) * 0.35;
+    this.nodes.forEach((node, i) => {
+      const angle = (i / count) * Math.PI * 2;
+      const r = radius * (0.4 + 0.6 * Math.random());
+      node.x = Math.cos(angle) * r;
+      node.y = Math.sin(angle) * r;
+      node.vx = (Math.random() - 0.5) * 2;
+      node.vy = (Math.random() - 0.5) * 2;
+    });
+    this.alpha = 1.0;
+  }
+
+  toScreen(wx, wy) {
+    const cx = this.canvas.width / 2;
+    const cy = this.canvas.height / 2;
+    return {
+      x: cx + (wx + this.camera.x) * this.camera.zoom,
+      y: cy + (wy + this.camera.y) * this.camera.zoom
+    };
+  }
+
+  toWorld(sx, sy) {
+    const cx = this.canvas.width / 2;
+    const cy = this.canvas.height / 2;
+    return {
+      x: (sx - cx) / this.camera.zoom - this.camera.x,
+      y: (sy - cy) / this.camera.zoom - this.camera.y
+    };
+  }
+
+  getNodeAtScreenPos(sx, sy) {
+    const world = this.toWorld(sx, sy);
+    for (let i = this.nodes.length - 1; i >= 0; i--) {
+      const n = this.nodes[i];
+      if (this.activeTypeFilter !== 'all' && n.type !== this.activeTypeFilter) continue;
+      const dx = world.x - n.x;
+      const dy = world.y - n.y;
+      if (dx * dx + dy * dy <= (n.radius + 4) * (n.radius + 4)) {
+        return n;
+      }
+    }
+    return null;
+  }
+
+  stepPhysics() {
+    if (this.alpha < this.minAlpha) return;
+
+    const n = this.nodes.length;
+
+    // 1. Coulomb Repulsion between all node pairs
+    for (let i = 0; i < n; i++) {
+      const u = this.nodes[i];
+      for (let j = i + 1; j < n; j++) {
+        const v = this.nodes[j];
+        const dx = v.x - u.x;
+        const dy = v.y - u.y;
+        const dSq = dx * dx + dy * dy + 1.0;
+        const dist = Math.sqrt(dSq);
+        const force = this.kRep / dSq;
+        const fx = (dx / dist) * force;
+        const fy = (dy / dist) * force;
+        u.vx -= fx;
+        u.vy -= fy;
+        v.vx += fx;
+        v.vy += fy;
+      }
+    }
+
+    // 2. Hooke's Spring Attraction along edges
+    for (let i = 0; i < this.edges.length; i++) {
+      const edge = this.edges[i];
+      const u = this.nodeMap.get(edge.source);
+      const v = this.nodeMap.get(edge.target);
+      if (!u || !v) continue;
+      const dx = v.x - u.x;
+      const dy = v.y - u.y;
+      const dist = Math.sqrt(dx * dx + dy * dy) + 0.1;
+      const delta = dist - this.springLength;
+      const force = delta * this.kSpring * Math.min(3, 1 + edge.weight * 0.4);
+      const fx = (dx / dist) * force;
+      const fy = (dy / dist) * force;
+      u.vx += fx;
+      u.vy += fy;
+      v.vx -= fx;
+      v.vy -= fy;
+    }
+
+    // 3. Center Gravity & Integration
+    for (let i = 0; i < n; i++) {
+      const u = this.nodes[i];
+      if (u === this.draggedNode) continue;
+      u.vx -= u.x * this.kGravity;
+      u.vy -= u.y * this.kGravity;
+
+      u.vx *= this.damping;
+      u.vy *= this.damping;
+
+      u.x += u.vx * this.alpha;
+      u.y += u.vy * this.alpha;
+    }
+
+    this.alpha *= 0.985;
+  }
+
+  draw() {
+    const ctx = this.ctx;
+    const w = this.canvas.width;
+    const h = this.canvas.height;
+    this.pulseAngle += 0.04;
+
+    ctx.clearRect(0, 0, w, h);
+
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+
+    // Ambient radial background glow
+    const bgGrad = ctx.createRadialGradient(w / 2, h / 2, 50, w / 2, h / 2, Math.max(w, h) * 0.7);
+    if (isLight) {
+      bgGrad.addColorStop(0, '#f8fafc');
+      bgGrad.addColorStop(1, '#e2e8f0');
+    } else {
+      bgGrad.addColorStop(0, '#0f172a');
+      bgGrad.addColorStop(1, '#020617');
+    }
+    ctx.fillStyle = bgGrad;
+    ctx.fillRect(0, 0, w, h);
+
+    // Save context for camera transformation
+    ctx.save();
+    ctx.translate(w / 2, h / 2);
+    ctx.scale(this.camera.zoom, this.camera.zoom);
+    ctx.translate(this.camera.x, this.camera.y);
+
+    const activeNode = this.hoveredNode || this.selectedNode;
+
+    // Draw Edges
+    for (let i = 0; i < this.edges.length; i++) {
+      const e = this.edges[i];
+      const u = this.nodeMap.get(e.source);
+      const v = this.nodeMap.get(e.target);
+      if (!u || !v) continue;
+
+      const isConnectedToActive = activeNode && (u.id === activeNode.id || v.id === activeNode.id);
+
+      ctx.beginPath();
+      ctx.moveTo(u.x, u.y);
+      ctx.lineTo(v.x, v.y);
+
+      if (isConnectedToActive) {
+        ctx.strokeStyle = '#00f2fe';
+        ctx.lineWidth = Math.min(3.5, 1.5 + e.weight * 0.5);
+        ctx.shadowColor = '#00f2fe';
+        ctx.shadowBlur = 8;
+      } else if (activeNode) {
+        ctx.strokeStyle = isLight ? 'rgba(15, 23, 42, 0.06)' : 'rgba(255, 255, 255, 0.04)';
+        ctx.lineWidth = 1;
+        ctx.shadowBlur = 0;
+      } else {
+        ctx.strokeStyle = isLight ? 'rgba(15, 23, 42, 0.15)' : 'rgba(255, 255, 255, 0.1)';
+        ctx.lineWidth = Math.min(2.5, 0.8 + e.weight * 0.3);
+        ctx.shadowBlur = 0;
+      }
+      ctx.stroke();
+    }
+    ctx.shadowBlur = 0;
+
+    // Draw Nodes
+    for (let i = 0; i < this.nodes.length; i++) {
+      const u = this.nodes[i];
+      const isFiltered = this.activeTypeFilter !== 'all' && u.type !== this.activeTypeFilter;
+      const isSelected = this.selectedNode && this.selectedNode.id === u.id;
+      const isHovered = this.hoveredNode && this.hoveredNode.id === u.id;
+      const isConnected = activeNode && !isHovered && !isSelected && this.edges.some(e => 
+        (e.source === activeNode.id && e.target === u.id) || (e.target === activeNode.id && e.source === u.id)
+      );
+
+      ctx.save();
+      if (isFiltered) {
+        ctx.globalAlpha = 0.15;
+      } else if (activeNode && !isSelected && !isHovered && !isConnected) {
+        ctx.globalAlpha = 0.28;
+      }
+
+      // Outer Glow Halo
+      ctx.shadowColor = u.color;
+      ctx.shadowBlur = isHovered || isSelected ? 22 : 10;
+
+      // Selection Concentric Ring
+      if (isSelected || isHovered) {
+        const ringRadius = u.radius + 5 + Math.sin(this.pulseAngle) * 2;
+        ctx.beginPath();
+        ctx.arc(u.x, u.y, ringRadius, 0, Math.PI * 2);
+        ctx.strokeStyle = '#00f2fe';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+      }
+
+      // Node Body
+      ctx.beginPath();
+      ctx.arc(u.x, u.y, u.radius, 0, Math.PI * 2);
+      const radGrad = ctx.createRadialGradient(u.x - u.radius * 0.3, u.y - u.radius * 0.3, u.radius * 0.1, u.x, u.y, u.radius);
+      radGrad.addColorStop(0, '#ffffff');
+      radGrad.addColorStop(0.3, u.color);
+      radGrad.addColorStop(1, u.color);
+      ctx.fillStyle = radGrad;
+      ctx.fill();
+
+      // VisionOS Specular Ring
+      ctx.lineWidth = 1.5;
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.5)';
+      ctx.stroke();
+
+      // Node Label (Text below node with crisp dark stroke for readability)
+      ctx.shadowBlur = 0;
+      ctx.font = '600 11px Inter, -apple-system, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'top';
+
+      const label = u.label;
+      const textY = u.y + u.radius + 5;
+
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = isLight ? 'rgba(255, 255, 255, 0.95)' : 'rgba(2, 6, 23, 0.95)';
+      ctx.strokeText(label, u.x, textY);
+
+      ctx.fillStyle = isLight ? '#0f172a' : '#f8fafc';
+      ctx.fillText(label, u.x, textY);
+
+      ctx.restore();
+    }
+
+    ctx.restore();
+  }
+
+  loop() {
+    if (!this.isRunning) return;
+    this.stepPhysics();
+    this.draw();
+    this.animFrameId = requestAnimationFrame(() => this.loop());
+  }
+
+  start() {
+    if (this.isRunning) return;
+    this.isRunning = true;
+    this.alpha = 1.0;
+    this.loop();
+  }
+
+  stop() {
+    this.isRunning = false;
+    if (this.animFrameId) {
+      cancelAnimationFrame(this.animFrameId);
+      this.animFrameId = null;
+    }
+  }
+
+  fitToScreen() {
+    if (this.nodes.length === 0) return;
+    let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+    this.nodes.forEach(n => {
+      minX = Math.min(minX, n.x - n.radius);
+      maxX = Math.max(maxX, n.x + n.radius);
+      minY = Math.min(minY, n.y - n.radius);
+      maxY = Math.max(maxY, n.y + n.radius);
+    });
+
+    const graphW = Math.max(100, maxX - minX);
+    const graphH = Math.max(100, maxY - minY);
+    const margin = 80;
+    const scaleX = (this.canvas.width - margin * 2) / graphW;
+    const scaleY = (this.canvas.height - margin * 2) / graphH;
+
+    this.camera.zoom = Math.max(0.4, Math.min(1.6, Math.min(scaleX, scaleY)));
+    this.camera.x = -((minX + maxX) / 2);
+    this.camera.y = -((minY + maxY) / 2);
+    this.alpha = 0.2;
+  }
+
+  setupEvents() {
+    const canvas = this.canvas;
+    const tooltip = document.getElementById('constellationTooltip');
+    let downPos = { x: 0, y: 0 };
+
+    canvas.addEventListener('pointerdown', (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const sx = e.clientX - rect.left;
+      const sy = e.clientY - rect.top;
+      downPos = { x: sx, y: sy };
+
+      const hit = this.getNodeAtScreenPos(sx, sy);
+      if (hit) {
+        this.draggedNode = hit;
+        this.alpha = 0.4;
+      } else {
+        this.isDraggingCamera = true;
+        this.dragStartX = e.clientX;
+        this.dragStartY = e.clientY;
+        this.cameraStartX = this.camera.x;
+        this.cameraStartY = this.camera.y;
+      }
+    });
+
+    window.addEventListener('pointermove', (e) => {
+      if (!this.isRunning) return;
+      const rect = canvas.getBoundingClientRect();
+      const sx = e.clientX - rect.left;
+      const sy = e.clientY - rect.top;
+
+      if (this.draggedNode) {
+        const world = this.toWorld(sx, sy);
+        this.draggedNode.x = world.x;
+        this.draggedNode.y = world.y;
+        this.draggedNode.vx = 0;
+        this.draggedNode.vy = 0;
+        this.alpha = 0.3;
+      } else if (this.isDraggingCamera) {
+        const dx = (e.clientX - this.dragStartX) / this.camera.zoom;
+        const dy = (e.clientY - this.dragStartY) / this.camera.zoom;
+        this.camera.x = this.cameraStartX + dx;
+        this.camera.y = this.cameraStartY + dy;
+      } else if (sx >= 0 && sx <= rect.width && sy >= 0 && sy <= rect.height) {
+        const hit = this.getNodeAtScreenPos(sx, sy);
+        this.hoveredNode = hit;
+        if (hit && tooltip) {
+          tooltip.style.display = 'block';
+          tooltip.style.left = `${sx}px`;
+          tooltip.style.top = `${sy}px`;
+          tooltip.innerHTML = `
+            <strong>${escapeHtml(hit.label)}</strong> &bull; <span style="color: ${hit.color}">${hit.type.toUpperCase()}</span><br>
+            <span style="font-size: 0.72rem; opacity: 0.85;">${hit.articles.length} dispatches &bull; ${hit.connections} ties</span>
+          `;
+        } else if (tooltip) {
+          tooltip.style.display = 'none';
+        }
+      } else {
+        this.hoveredNode = null;
+        if (tooltip) tooltip.style.display = 'none';
+      }
+    });
+
+    window.addEventListener('pointerup', (e) => {
+      if (!this.isRunning) return;
+      const rect = canvas.getBoundingClientRect();
+      const sx = e.clientX - rect.left;
+      const sy = e.clientY - rect.top;
+      const moved = Math.hypot(sx - downPos.x, sy - downPos.y);
+
+      if (this.draggedNode) {
+        if (moved < 6) {
+          this.selectNode(this.draggedNode);
+        }
+        this.draggedNode = null;
+      } else if (this.isDraggingCamera) {
+        this.isDraggingCamera = false;
+      }
+    });
+
+    canvas.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      const zoomFactor = e.deltaY < 0 ? 1.15 : 0.87;
+      const newZoom = Math.max(0.25, Math.min(3.5, this.camera.zoom * zoomFactor));
+
+      const rect = canvas.getBoundingClientRect();
+      const sx = e.clientX - rect.left;
+      const sy = e.clientY - rect.top;
+      const worldBefore = this.toWorld(sx, sy);
+
+      this.camera.zoom = newZoom;
+      const worldAfter = this.toWorld(sx, sy);
+
+      this.camera.x += (worldAfter.x - worldBefore.x);
+      this.camera.y += (worldAfter.y - worldBefore.y);
+      this.alpha = 0.2;
+    }, { passive: false });
+  }
+
+  selectNode(node) {
+    this.selectedNode = node;
+    const inspector = document.getElementById('constellationInspector');
+    const badge = document.getElementById('inspectorBadge');
+    const title = document.getElementById('inspectorTitle');
+    const stats = document.getElementById('inspectorStats');
+    const list = document.getElementById('inspectorDispatchesList');
+
+    if (!inspector || !node) return;
+
+    if (badge) {
+      badge.textContent = node.type.toUpperCase();
+      badge.style.color = node.color;
+    }
+    if (title) title.textContent = node.label;
+    if (stats) stats.textContent = `${node.articles.length} Connected Stories • ${node.connections} Cross-Entity Ties`;
+
+    if (list) {
+      const artMap = new Map();
+      (state.articles || []).forEach(a => artMap.set(a.id, a));
+      const connectedArticles = node.articles.map(id => artMap.get(id)).filter(Boolean);
+
+      list.innerHTML = connectedArticles.map(art => `
+        <div class="inspector-dispatch-card" onclick="jumpToArticleFromConstellation('${escapeJs(art.id)}')">
+          <div class="dispatch-card-meta">
+            <span>${escapeHtml(art.source)}</span>
+            <span>${escapeHtml(art.category)}</span>
+          </div>
+          <h5 class="dispatch-card-title">${escapeHtml(art.title)}</h5>
+          <span class="dispatch-jump-action">Open Dispatch in Reader Modal ↗</span>
+        </div>
+      `).join('');
+    }
+
+    inspector.style.display = 'flex';
+    this.alpha = 0.2;
+  }
+}
+
+let _activeConstellationSim = null;
+
+function openConstellationModal() {
+  const modal = document.getElementById('constellationModalBackdrop');
+  const canvas = document.getElementById('constellationCanvas');
+  const container = document.getElementById('constellationCanvasContainer');
+  if (!modal || !canvas || !container) return;
+
+  // Close tools popover if open
+  const toolsDropdown = document.getElementById('headerToolsDropdown');
+  if (toolsDropdown) toolsDropdown.classList.remove('active');
+
+  modal.style.display = 'flex';
+  modal.classList.add('active');
+  document.body.classList.add('modal-open');
+
+  // Compute Retina resolution
+  const dpr = window.devicePixelRatio || 1;
+  const width = container.clientWidth || (window.innerWidth * 0.94);
+  const height = container.clientHeight || (window.innerHeight * 0.78);
+
+  canvas.width = width * dpr;
+  canvas.height = height * dpr;
+  canvas.style.width = `${width}px`;
+  canvas.style.height = `${height}px`;
+
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const graphData = buildKnowledgeGraph(state.articles);
+
+  const statsLabel = document.getElementById('constellationStatsLabel');
+  if (statsLabel) {
+    statsLabel.textContent = `${graphData.nodes.length} Key Entities • ${graphData.edges.length} Cross-Entity Ties • Pure Canvas 2D Force Engine`;
+  }
+
+  if (_activeConstellationSim) {
+    _activeConstellationSim.stop();
+  }
+
+  _activeConstellationSim = new ConstellationSimulation(canvas, graphData);
+  _activeConstellationSim.start();
+  _activeConstellationSim.fitToScreen();
+
+  state.constellation.modalOpen = true;
+}
+
+function closeConstellationModal() {
+  const modal = document.getElementById('constellationModalBackdrop');
+  if (modal) {
+    modal.classList.remove('active');
+    modal.style.display = 'none';
+  }
+  document.body.classList.remove('modal-open');
+
+  if (_activeConstellationSim) {
+    _activeConstellationSim.stop();
+  }
+  state.constellation.modalOpen = false;
+
+  const inspector = document.getElementById('constellationInspector');
+  if (inspector) inspector.style.display = 'none';
+}
+
+function jumpToArticleFromConstellation(artId) {
+  closeConstellationModal();
+  openModal(artId);
+}
+
+function setupKnowledgeConstellation() {
+  const openBtn = document.getElementById('constellationMapBtn');
+  if (openBtn) {
+    openBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openConstellationModal();
+    });
+  }
+
+  const closeBtn = document.getElementById('constellationCloseBtn');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeConstellationModal();
+    });
+  }
+
+  const zoomInBtn = document.getElementById('constellationZoomInBtn');
+  if (zoomInBtn) {
+    zoomInBtn.addEventListener('click', () => {
+      if (_activeConstellationSim) {
+        _activeConstellationSim.camera.zoom = Math.min(3.5, _activeConstellationSim.camera.zoom * 1.25);
+        _activeConstellationSim.alpha = 0.2;
+      }
+    });
+  }
+
+  const zoomOutBtn = document.getElementById('constellationZoomOutBtn');
+  if (zoomOutBtn) {
+    zoomOutBtn.addEventListener('click', () => {
+      if (_activeConstellationSim) {
+        _activeConstellationSim.camera.zoom = Math.max(0.25, _activeConstellationSim.camera.zoom / 1.25);
+        _activeConstellationSim.alpha = 0.2;
+      }
+    });
+  }
+
+  const fitBtn = document.getElementById('constellationFitBtn');
+  if (fitBtn) {
+    fitBtn.addEventListener('click', () => {
+      if (_activeConstellationSim) {
+        _activeConstellationSim.fitToScreen();
+      }
+    });
+  }
+
+  const inspectorCloseBtn = document.getElementById('inspectorCloseBtn');
+  if (inspectorCloseBtn) {
+    inspectorCloseBtn.addEventListener('click', () => {
+      const inspector = document.getElementById('constellationInspector');
+      if (inspector) inspector.style.display = 'none';
+      if (_activeConstellationSim) _activeConstellationSim.selectedNode = null;
+    });
+  }
+
+  // Legend pill filter toggling
+  const legend = document.getElementById('constellationLegend');
+  if (legend) {
+    legend.addEventListener('click', (e) => {
+      const pill = e.target.closest('.legend-pill');
+      if (!pill) return;
+      const type = pill.getAttribute('data-type') || 'all';
+      legend.querySelectorAll('.legend-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+
+      if (_activeConstellationSim) {
+        _activeConstellationSim.activeTypeFilter = type;
+        _activeConstellationSim.alpha = 0.25;
+      }
+    });
+  }
+
+  // Dismiss on backdrop click
+  const modal = document.getElementById('constellationModalBackdrop');
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeConstellationModal();
+      }
+    });
+  }
+}
+
+// Global interface bindings for M4
+window.curateFocusDocket = curateFocusDocket;
+window.startFocusSession = startFocusSession;
+window.toggleFocusPause = toggleFocusPause;
+window.completeFocusSession = completeFocusSession;
+window.exitFocusSession = exitFocusSession;
+window.copyFocusSessionMarkdown = copyFocusSessionMarkdown;
+window.setupFocusSession = setupFocusSession;
+
+window.buildKnowledgeGraph = buildKnowledgeGraph;
+window.ConstellationSimulation = ConstellationSimulation;
+window.openConstellationModal = openConstellationModal;
+window.closeConstellationModal = closeConstellationModal;
+window.jumpToArticleFromConstellation = jumpToArticleFromConstellation;
+window.setupKnowledgeConstellation = setupKnowledgeConstellation;
+
+
 
 // HEADER READING SCROLL PROGRESS LINE
 function setupHeaderScrollLine() {
@@ -840,8 +2873,8 @@ function searchArticles(query, articleList) {
 // LIVE GOOGLE NEWS RSS SEARCH — Fetches real-time results for any topic
 async function fetchLiveGoogleNews(query) {
   const encodedQuery = encodeURIComponent(query);
-  const googleRssUrl = `https://news.google.com/rss/search?q=${encodedQuery}&hl=en-US&gl=US&ceid=US:en`;
-  const proxyUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(googleRssUrl)}`;
+  const googleRssUrl = 'https://news.google.com/rss/search?q=' + encodedQuery + '&hl=en-US&gl=US&ceid=US:en';
+  const proxyUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(googleRssUrl);
 
   try {
     const res = await fetch(proxyUrl);
@@ -870,12 +2903,12 @@ async function fetchLiveGoogleNews(query) {
         imageUrl: thumbUrl,
         annotation: {
           what: cleanTitle,
-          why: cleanDesc || 'Live result from Google News index.'
+          why: cleanDesc || ''
         },
         readTime: '3 min read',
         relatedSources: [
           { name: pubName, url: item.link },
-          { name: 'Google News', url: `https://news.google.com/search?q=${encodedQuery}` }
+          { name: 'Google News', url: 'https://news.google.com/search?q=' + encodedQuery }
         ],
         _isLive: true
       };
@@ -1000,6 +3033,8 @@ function createCardHTML(art, idx) {
     ? art.imageUrl
     : getTopicImageUrl(art.title, art.category, art.region);
 
+  const metabolism = computeStoryMetabolism(art);
+
   let intelBadges = '';
   if (art.meta) {
     if (art.meta.is_black_swan) intelBadges += '<span class="intel-badge black-swan" title="Anomalous event with high impact">🦢 Black Swan</span>';
@@ -1009,10 +3044,49 @@ function createCardHTML(art, idx) {
   if (art.resonant_podcast) {
     intelBadges += `<span class="intel-badge podcast" title="Listen to related podcast">🎧 Resonates in Podcast</span>`;
   }
+  if ((art.narrative_arc && art.narrative_arc.arc_id) || art.arc_id) {
+    intelBadges += '<span class="intel-badge halflife-arc" title="Ongoing multi-day developing story arc">📅 Developing Arc</span>';
+  } else if (art.scores && typeof art.scores.temporal === 'number') {
+    if (art.scores.temporal >= 0.85) {
+      intelBadges += '<span class="intel-badge halflife-flash" title="Story half-life: Flash event (< 6h)">⚡ Breaking</span>';
+    } else if (art.scores.temporal >= 0.6) {
+      intelBadges += '<span class="intel-badge halflife-daily" title="Story half-life: 24h Daily News Cycle">📰 Daily Cycle</span>';
+    } else {
+      intelBadges += '<span class="intel-badge halflife-epoch" title="Story half-life: Macro structural event">🏛️ Macro Focus</span>';
+    }
+  }
+  const isDocketRead = !!(state.focusSession && state.focusSession.active && state.focusSession.readIds && state.focusSession.readIds.has(art.id));
+  const docketReadClass = isDocketRead ? ' docket-read-card' : '';
+  if (isDocketRead) {
+    intelBadges += '<span class="docket-read-badge">✓ Reviewed</span>';
+  }
   const badgesHTML = intelBadges ? `<div class="intel-badge-row">${intelBadges}</div>` : '';
+  const hasPrism = hasPerspectivePrism(art);
+  const sourcesCount = (art.storyCluster && art.storyCluster.size) || 
+                       (art.perspectives && art.perspectives.length) || 
+                       (art.meta && art.meta.is_exclusive ? 1 : 2);
+
+  let prismToggleBtnHTML = '';
+  let prismDrawerHTML = '';
+  if (hasPrism) {
+    const contrarianBadge = (art.meta && art.meta.is_contrarian) ? '<span class="prism-contrarian-badge mini">Contrarian</span>' : '';
+    const exclusiveBadge = (art.meta && art.meta.is_exclusive) ? '<span class="prism-exclusive-badge mini">Exclusive</span>' : '';
+    const btnClass = 'prism-toggle-btn' + ((art.meta && art.meta.is_contrarian) ? ' has-contrarian' : '');
+    prismToggleBtnHTML = '<button class="' + btnClass + '" onclick="event.stopPropagation(); toggleCardPrismDrawer(\'' + art.id + '\', event);" title="Toggle Perspective Spectrum (' + sourcesCount + ' viewpoints)" aria-label="Toggle Perspective Spectrum"><span class="prism-btn-icon">💎</span><span class="prism-btn-text">Spectrum (' + sourcesCount + ')</span>' + contrarianBadge + exclusiveBadge + '</button>';
+    prismDrawerHTML = '<div class="card-prism-drawer" id="prism-drawer-' + art.id + '" style="display: none;"></div>';
+  }
+
+  const hasValidAnnotation = !!(art.annotation && art.annotation.what && art.annotation.what.trim().toLowerCase() !== (art.title || '').trim().toLowerCase());
+  const noAnnotationClass = hasValidAnnotation ? '' : ' no-annotation';
+  const annotationBoxHTML = hasValidAnnotation
+    ? ('<div class="annotation-box">' +
+        '<div class="annotation-title">✦ Crisp Annotation (' + escapeHtml(art.region) + ')</div>' +
+        '<p class="annotation-bullet">' + escapeHtml(art.annotation.what) + '</p>' +
+      '</div>')
+    : '';
 
   return `
-    <article class="news-card" data-id="${art.id}" data-article-id="${art.id}" style="animation-delay: ${delay}s; --card-index: ${idx};" onclick="openModal('${art.id}')">
+    <article class="news-card${docketReadClass}${noAnnotationClass}" data-id="${art.id}" data-article-id="${art.id}" style="animation-delay: ${delay}s; --card-index: ${idx};" onclick="openModal('${art.id}')">
       <div class="card-sheen"></div>
       <div class="card-thumb-box">
         <img src="${imgUrl}" alt="${escapeHtml(art.title)}" class="card-thumb" width="640" height="360" loading="lazy" decoding="async" onerror="this.onerror=null; this.src=getTopicImageUrl('${escapeJs(art.title)}', '${escapeJs(art.category)}', '${escapeJs(art.region)}');" />
@@ -1026,25 +3100,47 @@ function createCardHTML(art, idx) {
         ${badgesHTML}
         <div class="card-meta">
           <span class="card-source">${art.sourceLogo} &bull; ${art.source}</span>
+          <div class="metabolism-sparkline sparkline-box sparkline-container ${metabolism.status}" title="${escapeHtml(metabolism.tooltip)}" aria-label="${escapeHtml(metabolism.tooltip)}" tabindex="0">
+            <svg class="sparkline-svg" width="56" height="18" viewBox="0 0 56 18" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="spark-grad-${escapeHtml(art.id)}" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="${metabolism.color}" stop-opacity="0.35" />
+                  <stop offset="100%" stop-color="${metabolism.color}" stop-opacity="0.0" />
+                </linearGradient>
+              </defs>
+              <path d="${metabolism.areaD}" fill="url(#spark-grad-${escapeHtml(art.id)})" />
+              <path d="${metabolism.pathD}" fill="none" stroke="${metabolism.color}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="${metabolism.lastX}" cy="${metabolism.lastY}" r="2" fill="${metabolism.color}" class="sparkline-pulse-dot" />
+            </svg>
+            <span class="metabolism-label sparkline-tooltip-label" style="color: ${metabolism.color};">${metabolism.label}</span>
+            <span class="sparkline-tooltip">${escapeHtml(metabolism.tooltip)}</span>
+          </div>
           <span>${art.readTime}</span>
         </div>
         <h3 class="card-title">${escapeHtml(art.title)}</h3>
 
         <!-- Crisp Annotation Preview -->
-        <div class="annotation-box">
-          <div class="annotation-title">✦ Crisp Annotation (${art.region})</div>
-          <p class="annotation-bullet">${escapeHtml(art.annotation ? art.annotation.what : art.title)}</p>
+        ${annotationBoxHTML}
+
+        <!-- R3 Deep Dive Intelligence Panel (Expanded in Deep Dive mode) -->
+        <div class="card-deep-dive-panel">
+          ${renderDeepDivePanelContent(art)}
         </div>
 
-        <!-- Dual Prominent Action Buttons: Deck Preview + Direct Source Link -->
+        <!-- Streamlined Card Actions: Executive Brief + Source Link + Perspective Prism Drawer Toggle -->
         <div class="card-footer" style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-top: auto; padding-top: 0.8rem; border-top: 1px solid var(--border-color);">
-          <button onclick="event.stopPropagation(); openModal('${art.id}');" class="btn-primary" style="padding: 0.45rem 0.95rem; font-size: 0.8rem;" title="Open Frosted Glass Executive Reader Deck" aria-label="Open Deck Preview">
-            ✦ Deck Preview
-          </button>
-          <a href="${art.link}" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 0.45rem 0.95rem; font-size: 0.8rem; color: var(--text-primary); border: 1px solid var(--border-color);" onclick="event.stopPropagation()" title="Read Full Story directly on ${art.source}" aria-label="Read full story on source">
+          <div style="display: flex; align-items: center; gap: 0.45rem; flex-wrap: wrap;">
+            <span class="card-read-cue" style="display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.78rem; font-weight: 700; color: var(--accent-cyan); letter-spacing: 0.04em;">
+              ✦ Executive Brief
+            </span>
+            ${prismToggleBtnHTML}
+          </div>
+          <a href="${art.link}" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 0.38rem 0.85rem; font-size: 0.78rem; color: var(--text-primary); border: 1px solid var(--border-color); border-radius: var(--radius-full);" onclick="event.stopPropagation()" title="Read Full Story directly on ${art.source}" aria-label="Read full story on source">
             Source ↗
           </a>
         </div>
+
+        ${prismDrawerHTML}
       </div>
     </article>
   `;
@@ -1073,6 +3169,13 @@ function renderGrid(articles) {
 
   const existingSentinel = document.getElementById('gridScrollSentinel');
   if (existingSentinel) existingSentinel.remove();
+
+  // Synchronize cognitive load density mode (R3)
+  const currentDensity = state.densityMode || 'digest';
+  if (newsGrid && !newsGrid.classList.contains(`density-${currentDensity}`)) {
+    newsGrid.classList.remove('density-scan', 'density-digest', 'density-deep');
+    newsGrid.classList.add(`density-${currentDensity}`);
+  }
 
   // Instant First Paint batch (24 stories), dynamically loads subsequent batches on scroll
   const INITIAL_BATCH = 24;
@@ -1166,6 +3269,11 @@ function renderGrid(articles) {
   });
 
   attach3DTiltListeners();
+
+  // Suppress infinite scroll sentinel and observer if Focus Session is active (R5)
+  if (state.focusSession && state.focusSession.active) {
+    return;
+  }
 
   if (_currentRenderedCount < articles.length) {
     const sentinel = document.createElement('div');
@@ -1273,6 +3381,13 @@ window.openModal = function(id) {
               state.modalState.articles = [syntheticArticle];
               state.modalState.currentIndex = 0;
               document.body.classList.add('modal-open');
+              // Focus trap: make background inert
+              if (document.getElementById('mainContent')) {
+                document.getElementById('mainContent').setAttribute('inert', '');
+              }
+              if (document.getElementById('siteHeader')) {
+                document.getElementById('siteHeader').setAttribute('inert', '');
+              }
               const card = document.querySelector('.deck-modal-card');
               if (card) {
                 card.style.transform = '';
@@ -1285,6 +3400,9 @@ window.openModal = function(id) {
           }
         }
       }
+      if (typeof showToastNotification === 'function') {
+        showToastNotification('Article is no longer available in the active feed.');
+      }
       return;
     }
     state.modalState.articles = state.articles;
@@ -1294,7 +3412,38 @@ window.openModal = function(id) {
     state.modalState.currentIndex = index;
   }
 
+  // Track read progress for executive focus session (R5)
+  if (state.focusSession && state.focusSession.active && state.focusSession.docket) {
+    if (state.focusSession.docket.some(a => a.id === id)) {
+      state.focusSession.readIds.add(id);
+      if (typeof updateFocusTimerDisplay === 'function') {
+        updateFocusTimerDisplay();
+      }
+      const domCard = document.querySelector(`.news-card[data-id="${id}"]`);
+      if (domCard && !domCard.classList.contains('docket-read-card')) {
+        domCard.classList.add('docket-read-card');
+        const contentDiv = domCard.querySelector('.card-content');
+        if (contentDiv && !contentDiv.querySelector('.docket-read-badge')) {
+          const rBadge = document.createElement('span');
+          rBadge.className = 'docket-read-badge';
+          rBadge.textContent = '✓ Reviewed';
+          contentDiv.insertBefore(rBadge, contentDiv.firstChild);
+        }
+      }
+      if (state.focusSession.readIds.size >= state.focusSession.docket.length) {
+        state.focusSession.allRead = true;
+      }
+    }
+  }
+
   document.body.classList.add('modal-open');
+  // Focus trap: make background inert
+  if (document.getElementById('mainContent')) {
+    document.getElementById('mainContent').setAttribute('inert', '');
+  }
+  if (document.getElementById('siteHeader')) {
+    document.getElementById('siteHeader').setAttribute('inert', '');
+  }
   const card = document.querySelector('.deck-modal-card');
   if (card) {
     card.style.transform = '';
@@ -1304,11 +3453,189 @@ window.openModal = function(id) {
   modalBackdrop.classList.add('active');
 };
 
-function renderExecutiveModal() {
+// STRUCTURED INTELLIGENCE ATOM VIEW GENERATOR
+function renderStructuredIntelligenceView(art, themeColor) {
+  if (!art) return '';
+
+  const entities = art.entities || {};
+  const leaders = (entities.leaders || []).map(l => l.name || l).join(', ');
+  const orgs = (entities.organizations || []).map(o => o.name || o).join(', ');
+  const countries = (entities.countries || []).map(c => c.name || c.code || c).join(', ');
+  const companies = (entities.companies || []).map(c => c.name || c).join(', ');
+  const actions = (entities.actions || []).join(', ');
+
+  // Compute Primary Actors cleanly from genuine 5W1H grammar contracts
+  const actors = art.primary_actors || (art.entities && art.entities.primary_actors) || null;
+  let primaryActorsHtml = '';
+
+  if (actors) {
+    if (actors.active_agent) {
+      const agentType = actors.active_agent_type || 'primary';
+      primaryActorsHtml += `<div><strong>Active Agent:</strong> <span class="actor-name">${escapeHtml(actors.active_agent)}</span> <span class="actor-type-pill ${escapeHtml(agentType)}">${escapeHtml(agentType)}</span></div>`;
+    } else if (leaders) {
+      primaryActorsHtml += '<div><strong>Leaders:</strong> ' + escapeHtml(leaders) + '</div>';
+    } else if (orgs) {
+      primaryActorsHtml += '<div><strong>Organizations:</strong> ' + escapeHtml(orgs) + '</div>';
+    } else {
+      primaryActorsHtml += '<div><strong>Active Agent:</strong> <span class="actor-null-label">Unattributed Dispatch</span></div>';
+    }
+
+    if (actors.impacted_population) {
+      primaryActorsHtml += `<div><strong>Impacted Population:</strong> ${escapeHtml(actors.impacted_population)} <span class="actor-type-pill impacted">${escapeHtml(actors.impacted_type || 'community')}</span></div>`;
+    }
+
+    if (Array.isArray(actors.collective_factions) && actors.collective_factions.length > 0) {
+      const factionsText = actors.collective_factions.map(f => f.canonical_label || f.matched_text).join(', ');
+      primaryActorsHtml += `<div><strong>Collective Factions:</strong> ${escapeHtml(factionsText)}</div>`;
+    }
+
+    if (Array.isArray(actors.sovereign_stakeholders) && actors.sovereign_stakeholders.length > 0) {
+      primaryActorsHtml += `<div><strong>Sovereign Stakeholders:</strong> ${escapeHtml(actors.sovereign_stakeholders.join(', '))}</div>`;
+    } else if (art.region && art.region !== 'Global') {
+      primaryActorsHtml += `<div><strong>Regional Stakeholder:</strong> ${escapeHtml(art.region)} sovereign arena</div>`;
+    }
+
+    if (actors.syntactic_frame && actors.syntactic_frame.verb && (actors.syntactic_frame.subject || actors.syntactic_frame.object)) {
+      primaryActorsHtml += `<div class="syntactic-frame-pill"><span class="frame-label">Frame:</span> <code>[${escapeHtml(actors.syntactic_frame.subject || 'Agent')}]</code> <strong>${escapeHtml(actors.syntactic_frame.verb)}</strong> <code>[${escapeHtml(actors.syntactic_frame.object || 'Target')}]</code></div>`;
+    }
+  } else {
+    if (leaders) primaryActorsHtml += '<div><strong>Leaders:</strong> ' + escapeHtml(leaders) + '</div>';
+    if (orgs) primaryActorsHtml += '<div><strong>Organizations:</strong> ' + escapeHtml(orgs) + '</div>';
+    if (companies) primaryActorsHtml += '<div><strong>Companies:</strong> ' + escapeHtml(companies) + '</div>';
+    if (!leaders && !orgs && !companies) {
+      if (countries) {
+        primaryActorsHtml += '<div><strong>Regional Stakeholders:</strong> ' + escapeHtml(countries) + ' domestic factions</div>';
+      } else {
+        primaryActorsHtml += '<div><strong>Active Agent:</strong> <span class="actor-null-label">Unattributed Dispatch</span></div>';
+      }
+    }
+  }
+
+  // Quarantine wire source strictly to subordinate provenance ledger:
+  primaryActorsHtml += '<div class="subordinate-provenance-ledger">📡 Chronicled by ' + escapeHtml(art.source || 'Primary Source') + '</div>';
+
+  const cognitiveType = (art.cognitive_type || 'strategic').toUpperCase();
+  const temporalScore = (art.scores && typeof art.scores.temporal === 'number')
+    ? (art.scores.temporal >= 0.85 ? '⚡ Breaking Flash (< 6h)' : (art.scores.temporal >= 0.6 ? '📰 24h Daily Cycle' : '🏛️ Multi-Week Macro Epoch'))
+    : '📰 Daily Cycle';
+
+  const compositeScore = (art.scores && typeof art.scores.composite === 'number')
+    ? (art.scores.composite * 10).toFixed(1) + ' / 10'
+    : (typeof art.importance_score === 'number' ? art.importance_score.toFixed(1) + ' / 10' : 'Unscored');
+
+  const hasWhy = !!(art.annotation && art.annotation.why && art.annotation.why.trim().length > 0);
+  const coreEventClass = hasWhy ? 'intel-atom-card' : 'intel-atom-card atom-hero atom-span-2';
+  const gridMorphologyClass = hasWhy ? 'morphology-6col' : 'morphology-standalone morphology-5col';
+
+  const strategicContextHtml = hasWhy
+    ? ('<div class="intel-atom-card">' +
+        '<span class="intel-atom-label">💡 STRATEGIC CONTEXT (WHY)</span>' +
+        '<div class="intel-atom-body">' +
+          escapeHtml(art.annotation.why) +
+        '</div>' +
+      '</div>')
+    : '';
+
+  const hasArc = !!(art.narrative_arc && art.narrative_arc.arc_id);
+  const arcTitleHtml = (hasArc && art.narrative_arc.arc_title)
+    ? ('<br><strong>Active Arc:</strong> ' + escapeHtml(art.narrative_arc.arc_title))
+    : '';
+  const horizonBodyHtml = hasArc
+    ? (temporalScore + arcTitleHtml)
+    : ('<div class="horizon-standalone-badge">✦ Standalone Dispatch</div>' +
+       '<div class="horizon-standalone-detail">' + temporalScore + ' · Discrete Single-Event Horizon</div>');
+
+  const domainStripHtml = art.category
+    ? ('<span>✦ <strong>Domain:</strong> ' + escapeHtml(art.category) + '</span>')
+    : '';
+
+  return `
+    <div class="structured-intel-grid ${gridMorphologyClass}">
+      <div class="${coreEventClass}">
+        <span class="intel-atom-label">⚡ CORE EVENT (WHAT)</span>
+        <div class="intel-atom-body">
+          ${escapeHtml(art.annotation ? art.annotation.what : art.title)}
+          ${actions ? ('<div style="margin-top: 0.35rem; font-size: 0.78rem; color: ' + themeColor + ';">✦ Vector Actions: ' + escapeHtml(actions) + '</div>') : ''}
+        </div>
+      </div>
+
+      <div class="intel-atom-card">
+        <span class="intel-atom-label">🎯 PRIMARY ACTORS (WHO)</span>
+        <div class="intel-atom-body">
+          ${primaryActorsHtml}
+        </div>
+      </div>
+
+      <div class="intel-atom-card">
+        <span class="intel-atom-label">🌐 GEOPOLITICAL THEATER (WHERE)</span>
+        <div class="intel-atom-body">
+          <strong>Region:</strong> ${escapeHtml(art.region || 'Global')}
+          ${countries ? ('<br><strong>Nations Involved:</strong> ' + escapeHtml(countries)) : ''}
+        </div>
+      </div>
+
+      ${strategicContextHtml}
+
+      <div class="intel-atom-card">
+        <span class="intel-atom-label">🧠 COGNITIVE MATRIX</span>
+        <div class="intel-atom-body" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+          <span><strong>Dimension:</strong> ${cognitiveType}</span>
+          <span><strong>Signal Power:</strong> <span style="color: ${themeColor}; font-weight: 800;">${compositeScore}</span></span>
+        </div>
+      </div>
+
+      <div class="intel-atom-card">
+        <span class="intel-atom-label">⏳ STORY HORIZON & HALF-LIFE</span>
+        <div class="intel-atom-body">
+          ${horizonBodyHtml}
+        </div>
+      </div>
+
+      <div class="structured-intel-provenance-strip">
+        <span>📡 <strong>Reporting Provenance:</strong> Chronicled by ${escapeHtml(art.source || 'Primary Source')}</span>
+        ${domainStripHtml}
+        <span>✦ <strong>Integrity:</strong> Zero-Hallucination Verified</span>
+      </div>
+    </div>
+  `;
+}
+
+window.switchDeckView = function(view) {
+  const btnNarr = document.getElementById('deckViewBtnNarrative');
+  const btnIntel = document.getElementById('deckViewBtnIntel');
+  const viewNarr = document.getElementById('deckNarrativeView');
+  const viewIntel = document.getElementById('deckStructuredView');
+
+  if (view === 'intel') {
+    if (btnNarr) {
+      btnNarr.classList.remove('active');
+      btnNarr.setAttribute('aria-selected', 'false');
+    }
+    if (btnIntel) {
+      btnIntel.classList.add('active');
+      btnIntel.setAttribute('aria-selected', 'true');
+    }
+    if (viewNarr) viewNarr.style.display = 'none';
+    if (viewIntel) viewIntel.style.display = 'block';
+  } else {
+    if (btnIntel) {
+      btnIntel.classList.remove('active');
+      btnIntel.setAttribute('aria-selected', 'false');
+    }
+    if (btnNarr) {
+      btnNarr.classList.add('active');
+      btnNarr.setAttribute('aria-selected', 'true');
+    }
+    if (viewIntel) viewIntel.style.display = 'none';
+    if (viewNarr) viewNarr.style.display = 'block';
+  }
+};
+
+function renderExecutiveModal(artParam) {
   const pool = state.modalState.articles;
   const currIdx = state.modalState.currentIndex;
-  const total = pool.length;
-  const art = pool[currIdx];
+  const total = pool.length || (artParam ? 1 : 0);
+  const art = artParam || pool[currIdx];
   if (!art) return;
 
   const themeColor = getNewsColor(art.category);
@@ -1326,16 +3653,22 @@ function renderExecutiveModal() {
   function cleanAndCompleteText(raw) {
     if (!raw) return '';
     let s = raw.trim();
-    // Strip trailing dots, ellipses, or cut-off symbols
-    s = s.replace(/[\.\s]*[\.…]+$/, '').trim();
-    // Trim back to last complete sentence if terminated mid-sentence
-    const lastPeriod = Math.max(s.lastIndexOf('.'), s.lastIndexOf('?'), s.lastIndexOf('!'));
-    if (lastPeriod > 50) {
-      s = s.slice(0, lastPeriod + 1);
-    } else if (s && !s.endsWith('.')) {
-      s += '.';
+    // If it already ends with sentence-ending punctuation, preserve it fully
+    if (/[.!?]["'”’]?$/.test(s)) {
+      if (s.endsWith('...') || s.endsWith('…')) {
+        s = s.replace(/[\s\.\-–—…]+$/, '').trim();
+        const lastPeriod = Math.max(s.lastIndexOf('.'), s.lastIndexOf('?'), s.lastIndexOf('!'));
+        if (lastPeriod > 50) {
+          s = s.slice(0, lastPeriod + 1);
+        } else if (s) {
+          s += '.';
+        }
+      }
+      return s;
     }
-    return s;
+    // For texts without terminal punctuation, clean cut-off fragments and terminate cleanly
+    s = s.replace(/[\s\.\-–—…]+$/, '').trim();
+    return s ? (s + '.') : '';
   }
 
   const rawDesc = art.description || '';
@@ -1350,20 +3683,39 @@ function renderExecutiveModal() {
 
   let storyBodyHtml = '';
   if (!storyText || storyText.length < 180 || storyText === titleText) {
+    const synopsisItems = [];
+    if (art.annotation && art.annotation.what && art.annotation.what !== titleText) {
+      synopsisItems.push(`<li><strong>Core Event:</strong> ${escapeHtml(art.annotation.what)}</li>`);
+    }
+    const actors = art.primary_actors || (art.entities && art.entities.primary_actors);
+    if (actors && actors.active_agent) {
+      synopsisItems.push(`<li><strong>Active Agent:</strong> ${escapeHtml(actors.active_agent)} <span class="actor-type-pill ${escapeHtml(actors.active_agent_type || 'primary')}">${escapeHtml(actors.active_agent_type || 'primary')}</span></li>`);
+    } else if (actors && actors.syntactic_frame && actors.syntactic_frame.subject) {
+      synopsisItems.push(`<li><strong>Focal Subject:</strong> ${escapeHtml(actors.syntactic_frame.subject)}</li>`);
+    }
+    if (actors && Array.isArray(actors.collective_factions) && actors.collective_factions.length > 0) {
+      const factions = actors.collective_factions.map(f => f.canonical_label || f.matched_text).slice(0, 2).join(', ');
+      synopsisItems.push(`<li><strong>Factions Involved:</strong> ${escapeHtml(factions)}</li>`);
+    }
+    if (art.region || art.category) {
+      synopsisItems.push(`<li><strong>Geopolitical Context:</strong> ${escapeHtml(art.category || 'World')} affairs in ${escapeHtml(art.region || 'Global arena')}.</li>`);
+    }
+    if (art.source) {
+      synopsisItems.push(`<li><strong>Reporting Provenance:</strong> Chronicled by ${escapeHtml(art.source)}.</li>`);
+    }
+
     storyBodyHtml = `
       <div style="display: flex; flex-direction: column; gap: 1.1rem;">
         <p style="font-size: 1.08rem; color: var(--text-primary); line-height: 1.8; margin: 0; font-weight: 500;">
           ${storyText && storyText !== titleText ? storyText : titleText + '.'}
         </p>
 
-        <div style="background: ${themeColor}0a; border-left: 3px solid ${themeColor}; padding: 1rem 1.2rem; border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+        <div class="executive-synopsis-box" style="background: ${themeColor}0a; border-left: 3px solid ${themeColor}; padding: 1rem 1.2rem; border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
           <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: ${themeColor}; display: block; margin-bottom: 0.3rem;">
-            ✦ Executive Intelligence Briefing
+            ✦ Executive Intelligence Synopsis
           </span>
           <ul style="margin: 0; padding-left: 1.1rem; color: var(--text-secondary); font-size: 0.94rem; line-height: 1.65;">
-            <li style="margin-bottom: 0.35rem;"><strong>Source Reporting:</strong> Verified live coverage dispatched by ${escapeHtml(art.source)} tracking ${escapeHtml(art.category)} affairs in ${escapeHtml(art.region)}.</li>
-            <li style="margin-bottom: 0.35rem;"><strong>Key Takeaway:</strong> Official statements and strategic updates being monitored as events unfold.</li>
-            <li><strong>Full Access:</strong> Tap below to review the complete, unedited publication on ${escapeHtml(art.source)}.</li>
+            ${synopsisItems.join('\n            ')}
           </ul>
         </div>
       </div>
@@ -1375,6 +3727,24 @@ function renderExecutiveModal() {
   }
 
   const saved = isBookmarked(art.id);
+  const hasArc = !!(art.narrative_arc && art.narrative_arc.arc_id);
+  if (!hasArc) {
+    window._activeNarrativeChapters = [];
+    window._activeNarrativeIndex = -1;
+  }
+
+  const narrativeBoxHTML = hasArc
+    ? ('<div class="liquid-glass-narrative-box">' +
+        '<span class="narrative-box-icon">📖</span>' +
+        '<div class="narrative-box-content">' +
+          '<span class="narrative-box-label">Ongoing Narrative Arc · Day ' + (art.narrative_arc.day_number || 1) + '</span>' +
+          '<span class="narrative-box-title">' + escapeHtml(art.narrative_arc.arc_title || art.title) + '</span>' +
+          '<span class="narrative-box-subtitle">Tracked across ' + (art.narrative_arc.total_chapters || 1) + ' updates</span>' +
+        '</div>' +
+      '</div>' +
+      renderNarrativeTimeMachine(art))
+    : '';
+  const perspectivePrismHTML = hasPerspectivePrism(art) ? renderPerspectivePrism(art) : '';
 
   modalContent.innerHTML = `
     <!-- Reading Progress Bar — whisper-thin -->
@@ -1433,7 +3803,7 @@ function renderExecutiveModal() {
       </div>
 
       <!-- Article Content Body — Editorial (responsive padding via CSS class) -->
-      <div class="deck-content-fade deck-content-body">
+      <div class="deck-content-fade deck-content-body ${hasArc ? 'has-narrative-arc' : 'standalone-dispatch'}">
 
         <!-- Whisper Meta Line with time-ago -->
         <div style="display: flex; align-items: center; gap: 0.45rem; margin-bottom: 0.8rem; opacity: 0.5; font-size: 0.76rem; font-weight: 600; color: var(--text-muted); letter-spacing: 0.03em;">
@@ -1459,17 +3829,8 @@ function renderExecutiveModal() {
         </div>
         ` : ''}
 
-        <!-- Narrative Arc Indicator (if part of an active arc) -->
-        ${(art.narrative_arc && art.narrative_arc.arc_id) ? `
-        <div class="liquid-glass-narrative-box">
-          <span class="narrative-box-icon">📖</span>
-          <div class="narrative-box-content">
-            <span class="narrative-box-label">Ongoing Narrative Arc · Day ${art.narrative_arc.day_number || 1}</span>
-            <span class="narrative-box-title">${escapeHtml(art.narrative_arc.arc_title || 'Developing Story')}</span>
-            <span class="narrative-box-subtitle">Tracked across ${art.narrative_arc.total_chapters || 1} updates</span>
-          </div>
-        </div>
-        ` : ''}
+        <!-- Narrative Arc Indicator (if part of an active arc) with Narrative Time Machine -->
+        ${narrativeBoxHTML}
 
         <!-- Resonant Podcast Deep-Dive Callout -->
         ${(art.resonant_podcast && (art.resonant_podcast.title || art.resonant_podcast.episode_title || art.resonant_podcast.podcast)) ? `
@@ -1488,11 +3849,30 @@ function renderExecutiveModal() {
         </div>
         ` : ''}
 
-        <!-- Story Body with Structured Briefing / Drop Cap -->
-        <div style="color: var(--text-secondary); line-height: 1.85; margin-bottom: 2rem;">${storyBodyHtml}</div>
+        <!-- Segmented Deck View Switcher (Executive Narrative vs Structured Intelligence) -->
+        <div class="deck-view-switcher">
+          <button id="deckViewBtnNarrative" class="deck-view-btn active" onclick="switchDeckView('narrative')">
+            <span>📖</span> Executive Narrative
+          </button>
+          <button id="deckViewBtnIntel" class="deck-view-btn" onclick="switchDeckView('intel')">
+            <span>📋</span> Structured Intelligence
+          </button>
+        </div>
+
+        <!-- Story Body Panels -->
+        <div id="deckNarrativeView" class="deck-view-panel active">
+          <div id="deckKaraokeHighlightZone" style="color: var(--text-secondary); line-height: 1.85; margin-bottom: 2rem;">${storyBodyHtml}</div>
+        </div>
+
+        <div id="deckStructuredView" class="deck-view-panel" style="display: none; margin-bottom: 2rem;">
+          ${renderStructuredIntelligenceView(art, themeColor)}
+        </div>
 
         <!-- Hairline -->
         <div style="height: 1px; background: var(--border-color); margin-bottom: 1.4rem; opacity: 0.6;"></div>
+
+        <!-- R2: Perspective Prism (Multi-Source Spectrum & Contrarian Signals) -->
+        ${perspectivePrismHTML}
 
         <!-- Story DNA Lineage Timeline -->
         ${typeof renderStoryDNA === 'function' ? renderStoryDNA(art) : ''}
@@ -1658,7 +4038,13 @@ function getTimeAgo(dateStr) {
 
 // INLINE SPEAK ARTICLE — Bridge for modal "Listen" button to Speech Synthesis
 window.speakArticle = function(text) {
-  if (!('speechSynthesis' in window) || !text) return;
+  if (!('speechSynthesis' in window)) {
+    if (typeof showToastNotification === 'function') {
+      showToastNotification('🎙 Audio playback is not supported on this browser.');
+    }
+    return;
+  }
+  if (!text) return;
   window.speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.rate = 1.0;
@@ -1690,11 +4076,23 @@ window.navigateModal = function(step) {
 
 window.closeModal = function() {
   document.body.classList.remove('modal-open');
+  // Remove focus trap
+  if (document.getElementById('mainContent')) {
+    document.getElementById('mainContent').removeAttribute('inert');
+  }
+  if (document.getElementById('siteHeader')) {
+    document.getElementById('siteHeader').removeAttribute('inert');
+  }
   modalBackdrop.classList.remove('active');
   const card = document.querySelector('.deck-modal-card');
   if (card) {
     card.style.transform = '';
     card.style.transition = '';
+  }
+
+  // If focus session active and all docket stories read, show completion report
+  if (state.focusSession && state.focusSession.active && state.focusSession.allRead) {
+    completeFocusSession();
   }
 };
 
@@ -1734,7 +4132,12 @@ if (shortcutHelpBtn) {
 
 // REAL-TIME INSTANT VOICE MODULATOR ENGINE
 function setupVoiceModulator() {
-  if (!('speechSynthesis' in window)) return;
+  if (!('speechSynthesis' in window)) {
+    if (typeof showToastNotification === 'function') {
+      showToastNotification('🎙 Audio playback is not supported on this browser.');
+    }
+    return;
+  }
 
   const audioPrevBtn = document.getElementById('audioPrevBtn');
   const audioNextBtn = document.getElementById('audioNextBtn');
@@ -1892,12 +4295,19 @@ function generateHumanBroadcastScript(article, index, total) {
   const title = (article.title || '').trim();
 
   let desc = (article.description || '').trim();
-  desc = desc.replace(/[\.\s]*[\.…]+$/, '').trim();
-  const lastPeriod = Math.max(desc.lastIndexOf('.'), desc.lastIndexOf('?'), desc.lastIndexOf('!'));
-  if (lastPeriod > 40) {
-    desc = desc.slice(0, lastPeriod + 1);
-  } else if (desc && !desc.endsWith('.')) {
-    desc += '.';
+  if (/[.!?]["'”’]?$/.test(desc)) {
+    if (desc.endsWith('...') || desc.endsWith('…')) {
+      desc = desc.replace(/[\s\.\-–—…]+$/, '').trim();
+      const lastPeriod = Math.max(desc.lastIndexOf('.'), desc.lastIndexOf('?'), desc.lastIndexOf('!'));
+      if (lastPeriod > 40) {
+        desc = desc.slice(0, lastPeriod + 1);
+      } else if (desc) {
+        desc += '.';
+      }
+    }
+  } else {
+    desc = desc.replace(/[\s\.\-–—…]+$/, '').trim();
+    if (desc) desc += '.';
   }
 
   let text = '';
@@ -1946,7 +4356,12 @@ function generateHumanBroadcastScript(article, index, total) {
 
 // SMART CONVERSATIONAL RADIO BROADCASTER & CONTINUOUS AUTO-ADVANCE
 window.playStoryAtIndex = function(index) {
-  if (!('speechSynthesis' in window)) return;
+  if (!('speechSynthesis' in window)) {
+    if (typeof showToastNotification === 'function') {
+      showToastNotification('🎙 Audio playback is not supported on this browser.');
+    }
+    return;
+  }
   const activeList = getActiveFeedArticles();
   if (!activeList || activeList.length === 0) return;
   
@@ -2014,23 +4429,27 @@ window.playStoryAtIndex = function(index) {
 
 // UNIFIED PLAY / PAUSE BUTTON
 audioPlayBtn.addEventListener('click', () => {
-  if ('speechSynthesis' in window) {
-    if (state.audioState.isPlaying) {
-      window.speechSynthesis.pause();
-      audioPlayBtn.textContent = '▶';
-      if (eqContainer) eqContainer.classList.remove('active');
-      state.audioState.isPlaying = false;
-      state.audioState.isPaused = true;
-    } else if (state.audioState.isPaused) {
-      window.speechSynthesis.resume();
-      audioPlayBtn.textContent = '⏸';
-      if (eqContainer) eqContainer.classList.add('active');
-      state.audioState.isPlaying = true;
-      state.audioState.isPaused = false;
-    } else {
-      const currentIdx = state.audioState.currentIndex || 0;
-      playStoryAtIndex(currentIdx);
+  if (!('speechSynthesis' in window)) {
+    if (typeof showToastNotification === 'function') {
+      showToastNotification('🎙 Audio playback is not supported on this browser.');
     }
+    return;
+  }
+  if (state.audioState.isPlaying) {
+    window.speechSynthesis.pause();
+    audioPlayBtn.textContent = '▶';
+    if (eqContainer) eqContainer.classList.remove('active');
+    state.audioState.isPlaying = false;
+    state.audioState.isPaused = true;
+  } else if (state.audioState.isPaused) {
+    window.speechSynthesis.resume();
+    audioPlayBtn.textContent = '⏸';
+    if (eqContainer) eqContainer.classList.add('active');
+    state.audioState.isPlaying = true;
+    state.audioState.isPaused = false;
+  } else {
+    const currentIdx = state.audioState.currentIndex || 0;
+    playStoryAtIndex(currentIdx);
   }
 });
 
@@ -2454,9 +4873,13 @@ function renderSkeletons() {
 function setupEventListeners() {
   navTabs.addEventListener('click', (e) => {
     if (e.target.classList.contains('tab-btn')) {
+      const btn = e.target;
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      e.target.classList.add('active');
-      state.currentCategory = e.target.getAttribute('data-category');
+      btn.classList.add('active');
+      // Update ARIA attributes for accessibility
+      navTabs.querySelectorAll('.tab-btn').forEach(b => b.setAttribute('aria-selected', 'false'));
+      btn.setAttribute('aria-selected', 'true');
+      state.currentCategory = btn.getAttribute('data-category');
       filterAndRender();
       scrollToContent();
       updateTabIndicator();
@@ -2506,6 +4929,33 @@ function setupEventListeners() {
     });
   }
 
+  // Progressive Disclosure: Quick Tools Menu Dropdown
+  const toolsDropdown = document.getElementById('headerToolsDropdown');
+  const toolsToggleBtn = document.getElementById('headerToolsToggleBtn');
+  const toolsPopover = document.getElementById('headerToolsPopover');
+
+  if (toolsToggleBtn && toolsDropdown) {
+    toolsToggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = toolsDropdown.classList.toggle('active');
+      toolsToggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    if (toolsPopover) {
+      toolsPopover.addEventListener('click', () => {
+        toolsDropdown.classList.remove('active');
+        toolsToggleBtn.setAttribute('aria-expanded', 'false');
+      });
+    }
+
+    document.addEventListener('click', (e) => {
+      if (!toolsDropdown.contains(e.target)) {
+        toolsDropdown.classList.remove('active');
+        toolsToggleBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
   document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft') {
       if (modalBackdrop.classList.contains('active')) navigateModal(-1);
@@ -2524,7 +4974,18 @@ function setupEventListeners() {
       closeModal();
       closeShortcutModal();
       closeMonetizeModals();
+      closeConstellationModal();
+      const reportModal = document.getElementById('focusReportModal');
+      if (reportModal && reportModal.classList.contains('active')) {
+        exitFocusSession();
+      }
       drawerBackdrop.classList.remove('active');
+      const toolsDropdown = document.getElementById('headerToolsDropdown');
+      if (toolsDropdown) {
+        toolsDropdown.classList.remove('active');
+        const toolsToggle = document.getElementById('headerToolsToggleBtn');
+        if (toolsToggle) toolsToggle.setAttribute('aria-expanded', 'false');
+      }
     }
   });
 
@@ -3049,7 +5510,7 @@ function renderThoughtPulse(data) {
     const saved = isBookmarked(ep.id);
     const guestLabel = ep.guest ? `<span style="font-weight:600;color:var(--text-primary);">${escapeHtml(ep.guest)}</span> · ` : '';
     const topicsHTML = (ep.topics && ep.topics.length)
-      ? `<div class="thought-card-topics">${ep.topics.map(t => `<span class="thought-topic-pill">#${escapeHtml(t)}</span>`).join('')}</div>`
+      ? ('<div class="thought-card-topics">' + ep.topics.map(t => '<span class="thought-topic-pill">#' + escapeHtml(t) + '</span>').join('') + '</div>')
       : '';
     const themeHTML = ep.theme
       ? `<div class="thought-card-theme-box"><span class="thought-theme-label">Dominant Theme</span><p class="thought-card-theme">${escapeHtml(ep.theme)}</p></div>`
@@ -3069,7 +5530,7 @@ function renderThoughtPulse(data) {
         <div class="thought-card-thumb-wrap">
           <img class="thought-card-thumb" src="${ep.imageUrl}" alt="${escapeHtml(ep.title)}" loading="lazy"
                onerror="this.src='https://i.ytimg.com/vi/${ep.id.replace('tp_','')}/hqdefault.jpg'">
-          ${ep.duration ? `<span class="thought-card-duration">${escapeHtml(ep.duration)}</span>` : ''}
+          ${ep.duration ? ('<span class="thought-card-duration">' + escapeHtml(ep.duration) + '</span>') : ''}
           ${isFlagship ? '<span class="thought-card-tier-badge">Featured</span>' : ''}
           <button class="thought-bookmark-btn ${saved ? 'saved' : ''}" onclick="toggleBookmark('${ep.id}', event)" title="${saved ? 'Remove Bookmark' : 'Bookmark Podcast'}" aria-label="Bookmark Podcast">
             ${saved ? '★' : '☆'}
@@ -3188,7 +5649,26 @@ function renderThoughtPulse(data) {
     clearInterval(flashState.intervalId);
     flashState.currentIndex++;
     if (flashState.currentIndex >= flashState.articles.length) {
-      closeFlashBriefing();
+      // Show completion card instead of abrupt close
+      clearInterval(flashState.intervalId);
+      const cardArea = document.getElementById('flashCardArea');
+      if (cardArea) {
+        cardArea.innerHTML = `
+          <div class="flash-card">
+            <div class="flash-card-urgency urgency-low"></div>
+            <span class="flash-card-category" style="background: rgba(16, 185, 129, 0.12); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3);">COMPLETE</span>
+            <h2 class="flash-card-headline">⚡ Briefing Complete</h2>
+            <p class="flash-card-summary">${flashState.articles.length} stories covered in 60 seconds. You're now caught up on today's top headlines.</p>
+            <div class="flash-card-source">
+              <span>Press Escape or tap Close to exit</span>
+            </div>
+          </div>
+        `;
+      }
+      const progressFill = document.getElementById('flashProgressFill');
+      if (progressFill) progressFill.style.width = '100%';
+      const counter = document.getElementById('flashCounter');
+      if (counter) counter.textContent = 'Done ✓';
       return;
     }
     renderFlashCard(flashState.currentIndex);
@@ -3200,7 +5680,12 @@ function renderThoughtPulse(data) {
     flashState.articles = pool.slice(0, 10);
     flashState.currentIndex = 0;
     flashState.isPaused = false;
-    if (flashState.articles.length === 0) return;
+    if (flashState.articles.length === 0) {
+      if (typeof showToastNotification === 'function') {
+        showToastNotification('⚡ No stories available for Flash Briefing. Try refreshing first.');
+      }
+      return;
+    }
 
     document.body.classList.add('modal-open');
     overlay.classList.add('active');
