@@ -1,6 +1,1255 @@
 {
-    "last_updated": "2026-10-29T04:32:54.472335+00:00",
+    "last_updated": "2026-10-29T08:05:38.434173+00:00",
     "arcs": [
+        {
+            "arc_id": "808fdf5d-e27b-4432-8044-66ac1e615ef4",
+            "title": "Spain begins three days of mourning after train",
+            "keywords": [
+                "begin",
+                "crash",
+                "dozen",
+                "kill",
+                "mourn",
+                "spain",
+                "three",
+                "train"
+            ],
+            "entity_signature": "ES:EU:crisis:dozens:economy",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 7,
+            "chapter_titles": [
+                "Spain begins three days of mourning after train crash kills dozens",
+                "High-speed train crash kills at least 68 people in Spain",
+                "Spain begins mourning period after deadly train crash",
+                "'Desolation, despair': Spain begins three days of mourning after deadly train crash",
+                "What we know so far about deadly Spain train crash",
+                "At Least 68 Killed in Train Crash in Spain, Officials Say",
+                "Spain reckons with 2nd deadly train crash of the year ahead of national election"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7999999999999999,
+            "sources_involved": [
+                "BBC Europe",
+                "BBC News",
+                "France 24",
+                "NPR News",
+                "New York Times",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "11bef9a0-8b45-4f9c-b704-5e32da75b42e",
+            "title": "Egypt fines prominent editor Lina Attalah and",
+            "keywords": [
+                "attalah",
+                "editor",
+                "egypt",
+                "fin",
+                "independent",
+                "lina",
+                "mada",
+                "masr",
+                "outlet",
+                "prominent"
+            ],
+            "entity_signature": "EG:court:eg:egypt",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Egypt fines prominent editor Lina Attalah and shuts independent news outlet Mada Masr",
+                "Egypt court fines journalist Lina Attalah and orders news site's closure"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "d7a67d3b-98fc-46f5-8c36-777b3ef770fb",
+            "title": "Hello Kitty maker cuts ties with Japanese spy",
+            "keywords": [
+                "backlash",
+                "china",
+                "cut",
+                "drama",
+                "hello",
+                "japanes",
+                "kitti",
+                "maker",
+                "spy",
+                "tie"
+            ],
+            "entity_signature": "CN:JP:china:cn:cuts",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Hello Kitty maker cuts ties with Japanese spy drama after China backlash",
+                "Hello Kitty company cuts ties with Japanese spy show after China outcry"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "BBC Asia",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "19575a3e-da9a-4ec3-a1ab-12215b91601b",
+            "title": "Israel's election deadlock is a sign of the",
+            "keywords": [
+                "countri",
+                "deadlock",
+                "deep",
+                "division",
+                "elec",
+                "israel",
+                "sign"
+            ],
+            "entity_signature": "IL:election:il:israel",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Israel's election deadlock is a sign of the country's deep divisions",
+                "How could Israel break election deadlock? Here are four scenarios"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "75bc0648-d887-4b4c-8a0f-59417729c44f",
+            "title": "South Korea says considering deployment options",
+            "keywords": [
+                "aircraft",
+                "consider",
+                "deploy",
+                "hormuz",
+                "includ",
+                "korea",
+                "option",
+                "south",
+                "strait"
+            ],
+            "entity_signature": "KR:kr:south korea:south korea says considering deployment options to strait of hormuz, including aircraft",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "South Korea says considering deployment options to Strait of Hormuz, including aircraft"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "53bc9cbf-1925-495a-b901-66d856a78338",
+            "title": "Africa's 'unprecedented' Ebola outbreak could",
+            "keywords": [
+                "africa",
+                "ebola",
+                "health",
+                "official",
+                "outbreak",
+                "reach",
+                "top",
+                "unprecedent"
+            ],
+            "entity_signature": "UK:africa's 'unprecedented' ebola outbreak could reach uk, says top health official:collective_faction:crisis",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Africa's 'unprecedented' Ebola outbreak could reach UK, says top health official"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "5dec28f0-53c7-46fe-8630-33c089294f45",
+            "title": "As US ties fray, Europe plans first undersea",
+            "keywords": [
+                "cabl",
+                "europ",
+                "first",
+                "fray",
+                "greenland",
+                "link",
+                "plan",
+                "tie",
+                "undersea"
+            ],
+            "entity_signature": "CA:EU:JP:as us ties fray, europe plans first undersea cable link to greenland:ca",
+            "category": "Tech",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "As US ties fray, Europe plans first undersea cable link to Greenland"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Ars Technica"
+            ]
+        },
+        {
+            "arc_id": "63f7cd00-37fa-401c-a4dd-b4b502d2271d",
+            "title": "Ukraine sends drones towards Moscow, Russia",
+            "keywords": [
+                "dron",
+                "kharkiv",
+                "moscow",
+                "official",
+                "russia",
+                "say",
+                "send",
+                "strik",
+                "toward",
+                "ukrain"
+            ],
+            "entity_signature": "RU:UA:kharkiv:officials:regulatory & state authorities",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ukraine sends drones towards Moscow, Russia strikes Kharkiv, officials say"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "b28430b0-074c-4a41-807f-bf22fe8e7747",
+            "title": "North Korea fires around 10 ballistic missiles",
+            "keywords": [
+                "around",
+                "ballistic",
+                "coast",
+                "east",
+                "fir",
+                "korea",
+                "missil",
+                "north",
+                "sea",
+                "seoul"
+            ],
+            "entity_signature": "KP:KR:around 10 ballistic missiles toward sea off east coast, seoul says:fires:kp",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "North Korea fires around 10 ballistic missiles toward sea off east coast, Seoul says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "b7af97d0-a9b5-47e8-be95-37ff17b6ef5a",
+            "title": "Trump admin sues Utah to save Kalshi from the",
+            "keywords": [
+                "admin",
+                "ban",
+                "gambl",
+                "kalshi",
+                "sav",
+                "stat",
+                "sue",
+                "total",
+                "trump",
+                "utah"
+            ],
+            "entity_signature": "US:Donald:Donald Trump:leader:legislation",
+            "category": "Tech",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump admin sues Utah to save Kalshi from the state's total ban on gambling"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Ars Technica"
+            ]
+        },
+        {
+            "arc_id": "482c64e3-2973-41a0-8de4-dbc4ccbe8338",
+            "title": "Death of US actress Hayden Panettiere ruled",
+            "keywords": [
+                "accidental",
+                "actress",
+                "death",
+                "end",
+                "hayden",
+                "local",
+                "panettier",
+                "polic",
+                "prob",
+                "rul"
+            ],
+            "entity_signature": "US:accidental, ending local police probe:collective_faction:death of us actress hayden panettiere",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Death of US actress Hayden Panettiere ruled accidental, ending local police probe"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "575f0ec2-a139-487b-9e02-930de1ff9e36",
+            "title": "CK Asset pauses Hong Kong sales launch at Yuen",
+            "keywords": [
+                "asset",
+                "develop",
+                "hong",
+                "kong",
+                "launch",
+                "long",
+                "montag",
+                "paus",
+                "sal",
+                "yuen"
+            ],
+            "entity_signature": "asia-pacific regional stakeholders:ck asset pauses hong kong sales:launch",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "CK Asset pauses Hong Kong sales launch at Yuen Long's Montage development"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "0e4af61d-bd16-4991-a269-ab82db30dc43",
+            "title": "'Singapore also at risk': Indonesian minister",
+            "keywords": [
+                "also",
+                "cabl",
+                "calm",
+                "indonesian",
+                "internet",
+                "jab",
+                "minister",
+                "risk",
+                "singapor"
+            ],
+            "entity_signature": "ID:SG:calm:id:indonesia",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'Singapore also at risk': Indonesian minister urges calm over internet cable jab"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "4bc9ba2b-191f-416e-8852-8de2c435b76d",
+            "title": "'Like cutting up a Picasso': AI microdrama edit",
+            "keywords": [
+                "actor",
+                "ai",
+                "crew",
+                "cutt",
+                "edit",
+                "lik",
+                "microdrama",
+                "neighbour",
+                "picasso",
+                "worri"
+            ],
+            "entity_signature": "AU:au:australia:cutting",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'Like cutting up a Picasso': AI microdrama edit of Neighbours worries actors and crew"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "633cfb50-aa23-44bd-b131-1c8aaf96a7a6",
+            "title": "Japan and US strike deal on missile assembly as",
+            "keywords": [
+                "arsenal",
+                "assembli",
+                "deal",
+                "expand",
+                "japan",
+                "long",
+                "missil",
+                "rang",
+                "strik",
+                "tokyo"
+            ],
+            "entity_signature": "AU:IN:JP:au:australia",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Japan and US strike deal on missile assembly as Tokyo expands long-range arsenal"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "461737eb-c579-43ac-9c29-df69750ae873",
+            "title": "Germany does not want China decoupling but must",
+            "keywords": [
+                "china",
+                "decoupl",
+                "defend",
+                "germani",
+                "interest",
+                "must",
+                "president",
+                "want"
+            ],
+            "entity_signature": "CN:DE:china:cn:de",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Germany does not want China decoupling but must defend its interests, president warns"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "88c3be71-f1b5-4316-bf4a-f2b64f59c73d",
+            "title": "Myanmar diplomat breaks down as he urges world to",
+            "keywords": [
+                "break",
+                "diplomat",
+                "end",
+                "myanmar",
+                "suffer",
+                "world"
+            ],
+            "entity_signature": "MM:collective_faction:diplomat:diplomatic envoys",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Myanmar diplomat breaks down as he urges world to 'end our suffering'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "4e87b481-57b3-4912-8050-36a4fe5d2328",
+            "title": "Tencent targets Southeast Asia as launch pad for",
+            "keywords": [
+                "agent",
+                "ai",
+                "amid",
+                "asia",
+                "launch",
+                "local",
+                "market",
+                "pad",
+                "southeast",
+                "target"
+            ],
+            "entity_signature": "ASEAN:CN:asean:china:cn",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Tencent targets Southeast Asia as launch pad for AI agent WorkBuddy amid tough local market"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "f0133528-af35-4782-a657-5cf681d529c0",
+            "title": "Canada and EU drop associate membership plan in",
+            "keywords": [
+                "associat",
+                "bid",
+                "canada",
+                "deepen",
+                "drop",
+                "membership",
+                "plan",
+                "tie"
+            ],
+            "entity_signature": "CA:EU:ca:canada:canada and eu drop associate membership plan in bid",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Canada and EU drop associate membership plan in bid to deepen ties"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "4fd948d0-5553-4e99-9a00-3854c705b500",
+            "title": "Albania imposes $6,000 fine for demonstrators",
+            "keywords": [
+                "albania",
+                "demonstrator",
+                "fin",
+                "impos",
+                "present",
+                "protest",
+                "turn",
+                "violent"
+            ],
+            "entity_signature": "$6,000 fine:albania:civic activists / protesters",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Albania imposes $6,000 fine for demonstrators present at a protest that turns violent"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "9332133c-c3f7-405f-be19-362a032a68a8",
+            "title": "EU backs away from offer to Canada to start",
+            "keywords": [
+                "associat",
+                "away",
+                "back",
+                "canada",
+                "member",
+                "offer",
+                "start",
+                "talk"
+            ],
+            "entity_signature": "CA:EU:away:backs:ca",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "EU backs away from offer to Canada to start 'associate member' talks"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "cab0f939-3019-42da-b7fa-a19ebc1b9828",
+            "title": "Rivals in Israel Election Strike Tone of Triumph",
+            "keywords": [
+                "clear",
+                "elec",
+                "far",
+                "israel",
+                "outcom",
+                "rival",
+                "strik",
+                "ton",
+                "triumph"
+            ],
+            "entity_signature": "IL:Benjamin:Benjamin Netanyahu:conflict:election",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Rivals in Israel Election Strike Tone of Triumph, but Outcome Is Far From Clear"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "7ba6968a-0a7b-47fe-8a98-73b66476b129",
+            "title": "El Salvador pledges more than 2,000 soldiers as",
+            "keywords": [
+                "delay",
+                "elec",
+                "haiti",
+                "pledg",
+                "salvador",
+                "soldier"
+            ],
+            "entity_signature": "000 soldiers:collective_faction:el salvador",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "El Salvador pledges more than 2,000 soldiers as Haiti delays elections"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "ccb4c42e-7587-460f-b04a-ce7a7126d881",
+            "title": "North Korea fires missiles as row over landmine",
+            "keywords": [
+                "blast",
+                "fir",
+                "intensifi",
+                "korea",
+                "landmin",
+                "missil",
+                "north",
+                "row"
+            ],
+            "entity_signature": "KP:KR:fires:kp:kr",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "North Korea fires missiles as row over landmine blast intensifies"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "a121650d-2d69-48d9-ab5a-c179295ec8a3",
+            "title": "Netanyahu and Eisenkot face difficult paths to",
+            "keywords": [
+                "difficult",
+                "eisenkot",
+                "fac",
+                "major",
+                "neither",
+                "netanyahu",
+                "path",
+                "power",
+                "set",
+                "win"
+            ],
+            "entity_signature": "Benjamin:Benjamin Netanyahu:difficult paths:face:leader",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Netanyahu and Eisenkot face difficult paths to power as neither set to win majority"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "ff484b35-2709-4013-8f9d-8dee7481678d",
+            "title": "Anduril now says its BlueChip laptop will meet",
+            "keywords": [
+                "american",
+                "anduril",
+                "bluechip",
+                "buy",
+                "laptop",
+                "launch",
+                "meet",
+                "now",
+                "standard"
+            ],
+            "entity_signature": "US:anduril says its bluechip laptop will:buy american standards:geopolitics",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Anduril now says its BlueChip laptop will meet Buy American standards at launch"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "0bed3b64-f6ce-42f3-9b2b-b88df2652236",
+            "title": "Upwind raises $400M after walking away from",
+            "keywords": [
+                "400m",
+                "acquisi",
+                "away",
+                "datadog",
+                "offer",
+                "rais",
+                "upwind",
+                "walk"
+            ],
+            "entity_signature": "$400m:north america regional stakeholders:raises",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Upwind raises $400M after walking away from Datadog acquisition offer"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "e327d267-b337-48c0-b297-534b936c96dc",
+            "title": "Adam Mosseri says negativity around AI is 'going",
+            "keywords": [
+                "adam",
+                "ai",
+                "around",
+                "get",
+                "going",
+                "mosseri",
+                "negativ",
+                "wors"
+            ],
+            "entity_signature": "adam mosseri says negativity around ai is 'going to get worse:instagram:meta",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Adam Mosseri says negativity around AI is 'going to get worse'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "0928601b-7d7e-4e61-942e-fe836978d25a",
+            "title": "Brewers beat the Rays to win the first World",
+            "keywords": [
+                "beat",
+                "brewer",
+                "first",
+                "franchis",
+                "histori",
+                "ray",
+                "seri",
+                "titl",
+                "win",
+                "world"
+            ],
+            "entity_signature": "brewers beat the rays:economics:economy",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Brewers beat the Rays to win the first World Series title in franchise history"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "3816da6d-581d-4df9-b9be-a17545f4e6bd",
+            "title": "Akai is embracing vibe-coded mods with an",
+            "keywords": [
+                "akai",
+                "cod",
+                "embrac",
+                "mod",
+                "mpc",
+                "open",
+                "sourc",
+                "vib"
+            ],
+            "entity_signature": "-source mpc:akai is embracing vibe-coded mods with an:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Akai is embracing vibe-coded mods with an open-source MPC"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "a3193673-9064-48e6-9876-51caf6c79fb7",
+            "title": "Google says its investments in AI are driving",
+            "keywords": [
+                "ai",
+                "driv",
+                "googl",
+                "invest",
+                "search"
+            ],
+            "entity_signature": "google:google says its investments in ai are driving more searches:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Google says its investments in AI are driving more searches"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "7df79af1-4273-4834-90ef-edba7ae69820",
+            "title": "Cheranalloor luxury car crash: Kerala HC directs",
+            "keywords": [
+                "accus",
+                "arrest",
+                "car",
+                "cheranalloor",
+                "crash",
+                "direct",
+                "judg",
+                "kerala",
+                "luxuri",
+                "order"
+            ],
+            "entity_signature": "accused judge until further orders:arrest:collective_faction",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Cheranalloor luxury car crash: Kerala HC directs police not to arrest accused judge until further orders"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "39661040-17a7-4f25-bca0-477803647363",
+            "title": "Indian worker jailed in Dubai for 4 months",
+            "keywords": [
+                "dubai",
+                "famili",
+                "held",
+                "indian",
+                "jail",
+                "job",
+                "leav",
+                "notic",
+                "without",
+                "worker"
+            ],
+            "entity_signature": "IN:in:india:india sovereign authorities",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Indian worker jailed in Dubai for 4 months, family says he was held for leaving job without notice"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "4ac2f9f8-0e47-4171-a1a1-dc8d983410a6",
+            "title": "Loka Kerala Sabha disbanded as it failed to meet",
+            "keywords": [
+                "disband",
+                "fail",
+                "kerala",
+                "keralam",
+                "loka",
+                "meet",
+                "objectiv",
+                "sabha"
+            ],
+            "entity_signature": "india regional stakeholders:loka kerala sabha disbanded as it failed:meet",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Loka Kerala Sabha disbanded as it failed to meet objectives: Keralam CM"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "61a5fd00-c831-4f89-8306-b4c150bd4742",
+            "title": "SC rejects actor's plea seeking recognition of",
+            "keywords": [
+                "actor",
+                "khanna",
+                "marriag",
+                "plea",
+                "rajesh",
+                "recogni",
+                "reject",
+                "relationship",
+                "seek"
+            ],
+            "entity_signature": "actor's plea seeking recognition of relationship:india regional stakeholders:rejects",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "SC rejects actor's plea seeking recognition of relationship with Rajesh Khanna as marriage"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "1d198d79-9253-43a0-a2f9-9e9afe9b78d3",
+            "title": "Sensex, Nifty open flat in green as investors",
+            "keywords": [
+                "crud",
+                "decision",
+                "fed",
+                "flat",
+                "green",
+                "investor",
+                "nifti",
+                "oil",
+                "open",
+                "polici"
+            ],
+            "entity_signature": "US:flat:governance:open",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Sensex, Nifty open flat in green as investors track crude oil prices, US Fed policy decision"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "8ed04477-9cce-40a8-8bbd-45cd19031ceb",
+            "title": "Progress made but more to do: Top UNDP India",
+            "keywords": [
+                "biodivers",
+                "global",
+                "india",
+                "mad",
+                "official",
+                "progress",
+                "target",
+                "top",
+                "undp"
+            ],
+            "entity_signature": "IN:collective_faction:diplomacy:in",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Progress made but more to do: Top UNDP India official on global biodiversity targets"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "4d5d946e-0084-4aaa-83cb-f1ae381425cb",
+            "title": "Cyclone Arnab: Andhra CM orders fast-track",
+            "keywords": [
+                "andhra",
+                "arnab",
+                "compensa",
+                "cyclon",
+                "earli",
+                "fast",
+                "order",
+                "power",
+                "relief",
+                "restora"
+            ],
+            "entity_signature": "cyclone arnab:india regional stakeholders:syntactic_subject",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Cyclone Arnab: Andhra CM orders fast-track relief, power restoration, early compensation"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "e54d28f5-d4f3-44f0-99f8-7673063aff76",
+            "title": "Cyclone Arnab claims five lives in Andhra",
+            "keywords": [
+                "andhra",
+                "arnab",
+                "cyclon",
+                "fiv",
+                "liv",
+                "naidu",
+                "packag",
+                "pradesh",
+                "relief"
+            ],
+            "entity_signature": "announces:india regional stakeholders:naidu",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Cyclone Arnab claims five lives in Andhra Pradesh; Naidu announces relief package"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "b49a1f94-2222-4bef-b662-6cb06f690412",
+            "title": "Karnataka SIR: Congress minister defends",
+            "keywords": [
+                "congress",
+                "defend",
+                "dele",
+                "exercis",
+                "karnataka",
+                "legitimat",
+                "minister",
+                "sir",
+                "unlik"
+            ],
+            "entity_signature": "collective_faction:congress:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Karnataka SIR: Congress minister defends deletions, says exercise legitimate unlike other states"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
         {
             "arc_id": "289251d1-3c10-4e5a-a3db-06abef0209ff",
             "title": "Germany's Merz visits Kyiv as Russia steps up atta...",
