@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-29T08:05:38.434173+00:00",
+    "last_updated": "2026-10-29T15:25:05.546389+00:00",
     "arcs": [
         {
             "arc_id": "808fdf5d-e27b-4432-8044-66ac1e615ef4",
@@ -20,8 +20,8 @@
                 "Global"
             ],
             "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-29T08:05:38.122735+00:00",
-            "chapter_count": 7,
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 12,
             "chapter_titles": [
                 "Spain begins three days of mourning after train crash kills dozens",
                 "High-speed train crash kills at least 68 people in Spain",
@@ -29,7 +29,12 @@
                 "'Desolation, despair': Spain begins three days of mourning after deadly train crash",
                 "What we know so far about deadly Spain train crash",
                 "At Least 68 Killed in Train Crash in Spain, Officials Say",
-                "Spain reckons with 2nd deadly train crash of the year ahead of national election"
+                "Spain reckons with 2nd deadly train crash of the year ahead of national election",
+                "Audio reveals exchanges between control centre and drivers before deadly Spain train crash",
+                "How did the Spain train crash happen and what will investigators be asking?",
+                "Spain begins three days of mourning after train crash kills 69",
+                "Spain begins mourning period after train crash as search continues for victims in wreckage",
+                "Spain's train crash kills 69 people: What exactly happened?"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.7999999999999999,
@@ -63,7 +68,7 @@
                 "Global"
             ],
             "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Egypt fines prominent editor Lina Attalah and shuts independent news outlet Mada Masr",
@@ -97,7 +102,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Hello Kitty maker cuts ties with Japanese spy drama after China backlash",
@@ -128,7 +133,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Israel's election deadlock is a sign of the country's deep divisions",
@@ -138,6 +143,986 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "f0c3edbc-c58e-4dd6-af63-4104e246d2da",
+            "title": "Hong Kong's leader apologises for deadly",
+            "keywords": [
+                "apologis",
+                "deadli",
+                "fir",
+                "high",
+                "hong",
+                "kong",
+                "leader",
+                "ris"
+            ],
+            "entity_signature": "asia-pacific regional stakeholders:court:fire",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Hong Kong's leader apologises for deadly high-rise fire",
+                "Hong Kong Leader Apologizes for Deadly Apartment Building Fire"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "BBC Asia",
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "2294eac7-6652-4b13-9c2b-4539500c5323",
+            "title": "Russian drone attack on Ukrainian train station",
+            "keywords": [
+                "attack",
+                "dron",
+                "kill",
+                "least",
+                "official",
+                "russian",
+                "say",
+                "sta",
+                "train",
+                "ukrainian"
+            ],
+            "entity_signature": "RU:UA:attack:conflict:ru",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Russian drone attack on Ukrainian train station kills at least 14, officials say",
+                "At least 13 killed in 'horrific' Russian drone strike at Ukraine train station"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "BBC Europe",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "53bc9cbf-1925-495a-b901-66d856a78338",
+            "title": "Africa's 'unprecedented' Ebola outbreak could",
+            "keywords": [
+                "africa",
+                "ebola",
+                "health",
+                "official",
+                "outbreak",
+                "reach",
+                "top",
+                "unprecedent"
+            ],
+            "entity_signature": "UK:africa's 'unprecedented' ebola outbreak could reach uk, says top health official:collective_faction:crisis",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Africa's 'unprecedented' Ebola outbreak could reach UK, says top health official"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "5dec28f0-53c7-46fe-8630-33c089294f45",
+            "title": "As US ties fray, Europe plans first undersea",
+            "keywords": [
+                "cabl",
+                "europ",
+                "first",
+                "fray",
+                "greenland",
+                "link",
+                "plan",
+                "tie",
+                "undersea"
+            ],
+            "entity_signature": "CA:EU:JP:as us ties fray, europe plans first undersea cable link to greenland:ca",
+            "category": "Tech",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "As US ties fray, Europe plans first undersea cable link to Greenland"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Ars Technica"
+            ]
+        },
+        {
+            "arc_id": "b7af97d0-a9b5-47e8-be95-37ff17b6ef5a",
+            "title": "Trump admin sues Utah to save Kalshi from the",
+            "keywords": [
+                "admin",
+                "ban",
+                "gambl",
+                "kalshi",
+                "sav",
+                "stat",
+                "sue",
+                "total",
+                "trump",
+                "utah"
+            ],
+            "entity_signature": "US:Donald:Donald Trump:leader:legislation",
+            "category": "Tech",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump admin sues Utah to save Kalshi from the state's total ban on gambling"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Ars Technica"
+            ]
+        },
+        {
+            "arc_id": "4bc9ba2b-191f-416e-8852-8de2c435b76d",
+            "title": "'Like cutting up a Picasso': AI microdrama edit",
+            "keywords": [
+                "actor",
+                "ai",
+                "crew",
+                "cutt",
+                "edit",
+                "lik",
+                "microdrama",
+                "neighbour",
+                "picasso",
+                "worri"
+            ],
+            "entity_signature": "AU:au:australia:cutting",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'Like cutting up a Picasso': AI microdrama edit of Neighbours worries actors and crew"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "a121650d-2d69-48d9-ab5a-c179295ec8a3",
+            "title": "Netanyahu and Eisenkot face difficult paths to",
+            "keywords": [
+                "difficult",
+                "eisenkot",
+                "fac",
+                "major",
+                "neither",
+                "netanyahu",
+                "path",
+                "power",
+                "set",
+                "win"
+            ],
+            "entity_signature": "Benjamin:Benjamin Netanyahu:difficult paths:face:leader",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Netanyahu and Eisenkot face difficult paths to power as neither set to win majority"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "b629ef60-f2ca-4bb9-b530-ceae5ff37e4b",
+            "title": "Finland launches criminal investigation into",
+            "keywords": [
+                "clear",
+                "criminal",
+                "datacentr",
+                "finland",
+                "forest",
+                "googl",
+                "investiga",
+                "launch",
+                "sit"
+            ],
+            "entity_signature": "FI:criminal investigation:fi:finland",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Finland launches criminal investigation into Google's clearing of forest for datacentre site"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "27d90697-a7f8-4cf1-be89-ff9f6ec86406",
+            "title": "QatarEnergy buys US, other LNG to hedge future",
+            "keywords": [
+                "buy",
+                "disrup",
+                "futur",
+                "hedg",
+                "hormuz",
+                "lng",
+                "qatarenergi"
+            ],
+            "entity_signature": "US:buys:qatarenergy:syntactic_subject",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "QatarEnergy buys US, other LNG to hedge future Hormuz disruptions"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "d9e93c56-1ec7-4872-b115-783a0334d0ea",
+            "title": "Nvidia CEO reportedly targeted by Chinese spy",
+            "keywords": [
+                "ceo",
+                "chines",
+                "nvidia",
+                "report",
+                "spy",
+                "target"
+            ],
+            "entity_signature": "CN:Huang:Jensen:china:chinese spy",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Nvidia CEO reportedly targeted by Chinese spy"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "b367db46-e5f8-4907-8463-f6b9f475e71b",
+            "title": "China tests powerful AI that could one day be",
+            "keywords": [
+                "ai",
+                "china",
+                "day",
+                "one",
+                "powerful",
+                "submarin",
+                "test",
+                "used"
+            ],
+            "entity_signature": "CN:china:cn:crisis",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "China tests powerful AI that could one day be used on submarines"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "0dab5c92-8667-4d17-a58c-4706ca36ff33",
+            "title": "VHS tapes and computers handed to police as",
+            "keywords": [
+                "computer",
+                "hand",
+                "investigat",
+                "markl",
+                "polic",
+                "tap",
+                "thoma",
+                "vhs"
+            ],
+            "entity_signature": "asia-pacific regional stakeholders:collective_faction:handed to police",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "VHS tapes and computers handed to police as Thomas Markle is investigated"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "df795d05-8225-4bfe-a1e6-b799dea06b2c",
+            "title": "Lee vows to stay on, says housing minister's",
+            "keywords": [
+                "decision",
+                "hous",
+                "lee",
+                "minister",
+                "political",
+                "resigna",
+                "stay"
+            ],
+            "entity_signature": "asia-pacific regional stakeholders:lee:stay on, says housing minister's resignation his 'political decision",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Lee vows to stay on, says housing minister's resignation his 'political decision'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "b99e34e1-ab96-4bbe-b7f8-14eaebffcfc4",
+            "title": "Security chief vows revamp of fire department",
+            "keywords": [
+                "censur",
+                "chief",
+                "depart",
+                "fir",
+                "inspec",
+                "lax",
+                "report",
+                "revamp",
+                "secur"
+            ],
+            "entity_signature": "asia-pacific regional stakeholders:revamp of fire department:security chief",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Security chief vows revamp of fire department after report censures lax inspections"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "f4cf5125-a295-43bb-8f60-f7f3312b31e7",
+            "title": "'Real questions to be asked' after deadly train",
+            "keywords": [
+                "ask",
+                "collision",
+                "deadli",
+                "journalist",
+                "ques",
+                "real",
+                "spain",
+                "train"
+            ],
+            "entity_signature": "ES:es:real questions to be asked' after deadly train collision in spain, journalist says:sovereign_stakeholder",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'Real questions to be asked' after deadly train collision in Spain, journalist says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "f717f0ad-246c-4b71-b461-75be601cf04d",
+            "title": "France: Trappes racist shooting suspect",
+            "keywords": [
+                "court",
+                "franc",
+                "french",
+                "racist",
+                "shoot",
+                "suspect",
+                "transferr",
+                "trapp"
+            ],
+            "entity_signature": "FR:collective_faction:conflict:court",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "France: Trappes racist shooting suspect transferred to French court"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "8eff8e1a-e510-4b53-b933-af897261ac04",
+            "title": "'Very disturbing details': Trappes shooting",
+            "keywords": [
+                "admit",
+                "detail",
+                "disturb",
+                "rac",
+                "religion",
+                "shoot",
+                "suspect",
+                "target",
+                "trapp",
+                "victim"
+            ],
+            "entity_signature": "FR:conflict:fr:france",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'Very disturbing details': Trappes shooting suspect admits targeting victims by race, religion"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "45ba6123-89af-4e17-bfc5-d7573de5dc9c",
+            "title": "Rock collapse kills two in Turkey's Cappadocia",
+            "keywords": [
+                "cappadocia",
+                "collaps",
+                "kill",
+                "local",
+                "media",
+                "rock",
+                "turkey",
+                "two"
+            ],
+            "entity_signature": "TR:crisis:kills:rock collapse",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Rock collapse kills two in Turkey's Cappadocia, local media reports"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "c0d551a1-0d4b-477b-9d6d-33ba0b7fc491",
+            "title": "Neville says managers need sacking 'for own good'",
+            "keywords": [
+                "carrick",
+                "good",
+                "man",
+                "manager",
+                "need",
+                "nevill",
+                "retain",
+                "sack",
+                "utd"
+            ],
+            "entity_signature": "middle east regional stakeholders:neville says managers need sacking 'for own good' as man utd retain carrick:sovereign_stakeholder",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Neville says managers need sacking 'for own good' as Man Utd retain Carrick"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "fa95d0a8-e880-4d9a-b39b-382c46160f5f",
+            "title": "Damascus, Amman contradict each other on attack",
+            "keywords": [
+                "amman",
+                "attack",
+                "civilian",
+                "contradict",
+                "damascu",
+                "kill"
+            ],
+            "entity_signature": "SY:attack:civilians:civilians & impacted communities",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Damascus, Amman contradict each other on attack that killed civilians"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "df4f9fea-269b-4e4b-9047-f13b991e06a5",
+            "title": "Alaska governor orders probe into Democratic",
+            "keywords": [
+                "alaska",
+                "alleg",
+                "campaign",
+                "candidat",
+                "democratic",
+                "governor",
+                "link",
+                "nam",
+                "order",
+                "prob"
+            ],
+            "entity_signature": "alaska governor orders:democratic campaign's alleged links:election",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Alaska governor orders probe into Democratic campaign's alleged links to same-name candidate"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC US"
+            ]
+        },
+        {
+            "arc_id": "50d94c23-b5b6-4102-93b1-68f334fd4508",
+            "title": "Wabi, the AI agent that builds mini apps, now",
+            "keywords": [
+                "25b",
+                "agent",
+                "ai",
+                "app",
+                "build",
+                "latest",
+                "mini",
+                "now",
+                "round",
+                "valu"
+            ],
+            "entity_signature": "builds:mini apps, now valued:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Wabi, the AI agent that builds mini apps, now valued at $1.25B after latest round"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "620502e1-407e-435d-9688-9a8ab7d43668",
+            "title": "Bluesky blocks links to leaked DHS employee data",
+            "keywords": [
+                "block",
+                "blueski",
+                "data",
+                "dhs",
+                "employee",
+                "govern",
+                "leak",
+                "link",
+                "seek",
+                "takedown"
+            ],
+            "entity_signature": "blocks:bluesky:links",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Bluesky blocks links to leaked DHS employee data as government seeks takedowns"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "9ef61f0a-4649-4608-8720-d7efd3480cf3",
+            "title": "Suspect in France Shootings Said He Targeted",
+            "keywords": [
+                "african",
+                "franc",
+                "muslim",
+                "prosecutor",
+                "shoot",
+                "suspect",
+                "target"
+            ],
+            "entity_signature": "FR:collective_faction:fr:france",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Suspect in France Shootings Said He Targeted Muslims and Africans, Prosecutor Says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "755afa91-e80d-4e24-90af-15eab65ed2bb",
+            "title": "DoorDash to Buy Instacart for $17 Billion",
+            "keywords": [
+                "billion",
+                "buy",
+                "deliveri",
+                "doordash",
+                "giant",
+                "instacart",
+                "unit"
+            ],
+            "entity_signature": "buy:diplomacy:doordash",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "DoorDash to Buy Instacart for $17 Billion, Uniting 2 Delivery Giants"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "ed1008d9-45d6-41ab-95b8-97b840b735da",
+            "title": "Anthropic's business plan: Build God or die trying",
+            "keywords": [
+                "anthropic",
+                "build",
+                "busi",
+                "die",
+                "god",
+                "plan",
+                "try"
+            ],
+            "entity_signature": "anthropic:build:god or die trying",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Anthropic's business plan: Build God or die trying"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "9c1a70d8-da48-4884-8957-d1ea3ca35046",
+            "title": "Nasdaq futures fall as Alphabet's AI spending",
+            "keywords": [
+                "ai",
+                "alphabet",
+                "concern",
+                "fall",
+                "futur",
+                "nasdaq",
+                "spend",
+                "stock",
+                "tech",
+                "weigh"
+            ],
+            "entity_signature": "US:alphabet:economics:economy",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Nasdaq futures fall as Alphabet's AI spending concerns weigh on tech stocks"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "024d5f1c-2e99-4ee1-bf95-ab1a546e0b03",
+            "title": "Amazon cuts 250 jobs in devices unit weeks after",
+            "keywords": [
+                "amazon",
+                "cut",
+                "devic",
+                "job",
+                "launch",
+                "new",
+                "product",
+                "unit"
+            ],
+            "entity_signature": "250 jobs:amazon:cuts",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Amazon cuts 250 jobs in devices unit weeks after new product launches"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "7fad4902-7f7b-409d-a514-3348f0ad510c",
+            "title": "Alliance confident of winning all 86 Vijayawada",
+            "keywords": [
+                "allianc",
+                "confident",
+                "division",
+                "vijayawada",
+                "winn"
+            ],
+            "entity_signature": "all 86 vijayawada divisions, says mp:alliance confident of:geopolitics",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Alliance confident of winning all 86 Vijayawada divisions, says MP"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "fad6ffd0-eaac-422d-ad37-ddebd82c4297",
+            "title": "Park Hospitals strengthens north India footprint",
+            "keywords": [
+                "bed",
+                "cror",
+                "footprint",
+                "hospital",
+                "india",
+                "invest",
+                "north",
+                "park",
+                "rs200",
+                "strengthen"
+            ],
+            "entity_signature": "IN:6,600 beds:health:in",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Park Hospitals strengthens north India footprint with Rs200 crore investment, targets 6,600 beds"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "68b063c8-b8a5-4056-ad22-c212afc13fe9",
+            "title": "IndiGo Q2 loss narrows to ₹1,879.1 crore as fare",
+            "keywords": [
+                "cost",
+                "cror",
+                "far",
+                "fuel",
+                "gain",
+                "indigo",
+                "loss",
+                "narrow",
+                "offset",
+                "partli"
+            ],
+            "entity_signature": "economy:india regional stakeholders:indigo q2 loss narrows to ₹1,879.1 crore as fare gains partly offset fuel-cost",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "IndiGo Q2 loss narrows to ₹1,879.1 crore as fare gains partly offset fuel-cost surge"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "7bcf1bdf-3da3-4971-9a20-3cf557e0b132",
+            "title": "UP tightens government job verification rules",
+            "keywords": [
+                "alon",
+                "candidat",
+                "disqualifi",
+                "govern",
+                "ideologi",
+                "job",
+                "political",
+                "rul",
+                "tighten",
+                "verifica"
+            ],
+            "entity_signature": ", says political ideology alone cannot disqualify candidates:india regional stakeholders:rules",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "UP tightens government job verification rules, says political ideology alone cannot disqualify candidates"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
             ]
         },
         {
@@ -169,67 +1154,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "53bc9cbf-1925-495a-b901-66d856a78338",
-            "title": "Africa's 'unprecedented' Ebola outbreak could",
-            "keywords": [
-                "africa",
-                "ebola",
-                "health",
-                "official",
-                "outbreak",
-                "reach",
-                "top",
-                "unprecedent"
-            ],
-            "entity_signature": "UK:africa's 'unprecedented' ebola outbreak could reach uk, says top health official:collective_faction:crisis",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-29T08:05:38.122735+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Africa's 'unprecedented' Ebola outbreak could reach UK, says top health official"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "5dec28f0-53c7-46fe-8630-33c089294f45",
-            "title": "As US ties fray, Europe plans first undersea",
-            "keywords": [
-                "cabl",
-                "europ",
-                "first",
-                "fray",
-                "greenland",
-                "link",
-                "plan",
-                "tie",
-                "undersea"
-            ],
-            "entity_signature": "CA:EU:JP:as us ties fray, europe plans first undersea cable link to greenland:ca",
-            "category": "Tech",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-29T08:05:38.122735+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "As US ties fray, Europe plans first undersea cable link to Greenland"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Ars Technica"
             ]
         },
         {
@@ -294,38 +1218,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "b7af97d0-a9b5-47e8-be95-37ff17b6ef5a",
-            "title": "Trump admin sues Utah to save Kalshi from the",
-            "keywords": [
-                "admin",
-                "ban",
-                "gambl",
-                "kalshi",
-                "sav",
-                "stat",
-                "sue",
-                "total",
-                "trump",
-                "utah"
-            ],
-            "entity_signature": "US:Donald:Donald Trump:leader:legislation",
-            "category": "Tech",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-29T08:05:38.122735+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump admin sues Utah to save Kalshi from the state's total ban on gambling"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Ars Technica"
             ]
         },
         {
@@ -421,38 +1313,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "4bc9ba2b-191f-416e-8852-8de2c435b76d",
-            "title": "'Like cutting up a Picasso': AI microdrama edit",
-            "keywords": [
-                "actor",
-                "ai",
-                "crew",
-                "cutt",
-                "edit",
-                "lik",
-                "microdrama",
-                "neighbour",
-                "picasso",
-                "worri"
-            ],
-            "entity_signature": "AU:au:australia:cutting",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-29T08:05:38.122735+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'Like cutting up a Picasso': AI microdrama edit of Neighbours worries actors and crew"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
             ]
         },
         {
@@ -754,38 +1614,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "a121650d-2d69-48d9-ab5a-c179295ec8a3",
-            "title": "Netanyahu and Eisenkot face difficult paths to",
-            "keywords": [
-                "difficult",
-                "eisenkot",
-                "fac",
-                "major",
-                "neither",
-                "netanyahu",
-                "path",
-                "power",
-                "set",
-                "win"
-            ],
-            "entity_signature": "Benjamin:Benjamin Netanyahu:difficult paths:face:leader",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-29T08:05:38.122735+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Netanyahu and Eisenkot face difficult paths to power as neither set to win majority"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
             ]
         },
         {
@@ -2297,819 +3125,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "918793fe-ff46-444f-a9b8-a04e69fa7c45",
-            "title": "Maricarmen, the 87-year-old woman whose eviction",
-            "keywords": [
-                "died",
-                "evic",
-                "maricarmen",
-                "old",
-                "shook",
-                "spain",
-                "whose",
-                "woman"
-            ],
-            "entity_signature": "ES:died:es:maricarmen, the 87-year-old woman whose eviction shook spain, has",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Maricarmen, the 87-year-old woman whose eviction shook Spain, has died"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "58eb4475-a908-48bc-8ede-b4a473229184",
-            "title": "'Most Israeli citizens lost confidence' in govt",
-            "keywords": [
-                "blame",
-                "block",
-                "citizen",
-                "commission",
-                "confidence",
-                "govt",
-                "inquiry",
-                "israeli",
-                "leader",
-                "lost"
-            ],
-            "entity_signature": "IL:block:block' commission:citizens",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'Most Israeli citizens lost confidence' in govt: Leaders 'shift' blame, 'block' commission inquiry"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "6418889c-fcee-4c52-9150-5d717dd09b0d",
-            "title": "In Indonesia, will VP Gibran's 'diploma-gate'",
-            "keywords": [
-                "court",
-                "diploma",
-                "future",
-                "gate",
-                "gibran",
-                "haunt",
-                "indonesia",
-                "rul"
-            ],
-            "entity_signature": "ID:?:collective_faction:court",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "In Indonesia, will VP Gibran's 'diploma-gate' haunt his future after court ruling?"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "6f992de4-dc1a-4ae1-b5d3-26f058243619",
-            "title": "TP-Link problems in US grow amid FCC router ban",
-            "keywords": [
-                "amid",
-                "ban",
-                "fcc",
-                "four",
-                "grow",
-                "lawsuit",
-                "link",
-                "problem",
-                "router",
-                "state"
-            ],
-            "entity_signature": "US:and four state lawsuits:ban:collective_faction",
-            "category": "Tech",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "TP-Link problems in US grow amid FCC router ban and four state lawsuits"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Ars Technica"
-            ]
-        },
-        {
-            "arc_id": "25208f3d-2f4c-4cd3-98d3-80b9d82d2633",
-            "title": "Jharkhand High Court sets 6-month timeline for",
-            "keywords": [
-                "corrup",
-                "court",
-                "high",
-                "jharkhand",
-                "official",
-                "prob",
-                "set",
-                "state",
-                "timeline"
-            ],
-            "entity_signature": "against state officials:collective_faction:court",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Jharkhand High Court sets 6-month timeline for corruption probes against state officials"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Indian Express"
-            ]
-        },
-        {
-            "arc_id": "99ec9fe7-31cb-40d3-8c7f-eb79e4989f84",
-            "title": "Chinese team says its all-in-one mini artificial",
-            "keywords": [
-                "artificial",
-                "care",
-                "chinese",
-                "diabet",
-                "gen",
-                "mini",
-                "offer",
-                "one",
-                "pancrea",
-                "team"
-            ],
-            "entity_signature": "CN:china:china sovereign authorities:chinese team says its all-in-one mini artificial pancreas offers next-gen diabetes care",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Chinese team says its all-in-one mini artificial pancreas offers next-gen diabetes care"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "0224ffe8-f220-49fa-a0f5-ed157997c07d",
-            "title": "For France's Resurgent Far Left, Student Protests",
-            "keywords": [
-                "far",
-                "france",
-                "left",
-                "open",
-                "protest",
-                "resurgent",
-                "student",
-                "threat"
-            ],
-            "entity_signature": "FR:and a threat:for france's resurgent far left, student protests are an:fr",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "For France's Resurgent Far Left, Student Protests Are an Opening and a Threat"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "25c40a21-5b37-4b3b-a2d4-c21b6a23125d",
-            "title": "Nous Research confirms it hit $1.5B valuation",
-            "keywords": [
-                "agent",
-                "ai",
-                "busi",
-                "confirm",
-                "hit",
-                "launch",
-                "nou",
-                "research",
-                "user",
-                "valua"
-            ],
-            "entity_signature": "ai agents:launches:north america regional stakeholders",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Nous Research confirms it hit $1.5B valuation, launches AI agents for business users"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "9a4c3e78-d8b2-4858-9240-826219112af6",
-            "title": "Sensex, Nifty open in red following RBI repo rate",
-            "keywords": [
-                "follow",
-                "hike",
-                "nifty",
-                "open",
-                "rate",
-                "rbi",
-                "red",
-                "repo",
-                "sensex"
-            ],
-            "entity_signature": "india regional stakeholders:open:red following rbi repo rate hike",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Sensex, Nifty open in red following RBI repo rate hike"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "5410a13d-7d96-4f59-b36e-85024194d5c9",
-            "title": "Meta's Muse launches on iPad just a month after",
-            "keywords": [
-                "debut",
-                "ipad",
-                "just",
-                "launch",
-                "meta",
-                "mobile",
-                "muse"
-            ],
-            "entity_signature": "ipad just a month:launches:meta",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Meta's Muse launches on iPad just a month after its mobile debut"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "35c0eb7c-0bc7-4e0a-b570-9509b7a9bdf1",
-            "title": "Three people killed in Houthi attacks on Saudi",
-            "keywords": [
-                "airport",
-                "arabia",
-                "attack",
-                "houthi",
-                "kill",
-                "official",
-                "people",
-                "saudi",
-                "say",
-                "three"
-            ],
-            "entity_signature": "SA:collective_faction:geopolitics:houthi",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Three people killed in Houthi attacks on Saudi Arabia airports, officials say"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "99d05beb-ea84-42ef-b85b-892ec1af41fe",
-            "title": "While VCs crowd into San Francisco, Endeavor",
-            "keywords": [
-                "320m",
-                "catalyst",
-                "crowd",
-                "elsewhere",
-                "endeavor",
-                "founder",
-                "francisco",
-                "rais",
-                "san",
-                "vcs"
-            ],
-            "entity_signature": "$320m:north america regional stakeholders:raises",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "While VCs crowd into San Francisco, Endeavor Catalyst raises $320M for founders 'elsewhere'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "2269bd5c-2d45-4575-8dde-a38ddd77c57d",
-            "title": "France halts use of stun grenades after boy's",
-            "keywords": [
-                "blown",
-                "boy",
-                "france",
-                "grenad",
-                "halt",
-                "hand",
-                "protest",
-                "student",
-                "stun",
-                "use"
-            ],
-            "entity_signature": "FR:fr:france:france halts use of stun grenades after boy's hand blown off in student protests",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "France halts use of stun grenades after boy's hand blown off in student protests"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "c2473c3e-b3b1-4444-876d-407944382f7a",
-            "title": "Teenage Engineering's CEO says it'll stop making",
-            "keywords": [
-                "ceo",
-                "engineer",
-                "mak",
-                "stop",
-                "synth",
-                "teenage"
-            ],
-            "entity_signature": "north america regional stakeholders:sovereign_stakeholder:teenage engineering's ceo says it'll stop making synths",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Teenage Engineering's CEO says it'll stop making synths"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Verge"
-            ]
-        },
-        {
-            "arc_id": "2c18666d-40f4-4127-a46f-5e9ef383b3bf",
-            "title": "What is repo rate? Key things to know after RBI's",
-            "keywords": [
-                "first",
-                "four",
-                "hike",
-                "key",
-                "know",
-                "rate",
-                "rbi",
-                "repo",
-                "thing"
-            ],
-            "entity_signature": "four years:governance:hike",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "What is repo rate? Key things to know after RBI's first hike in four years"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "6748e1eb-3b5a-4b4d-8a33-3a6637abcfc9",
-            "title": "Trump Administration Investigates Wells Fargo for",
-            "keywords": [
-                "administra",
-                "bas",
-                "fargo",
-                "investigat",
-                "lend",
-                "race",
-                "trump",
-                "well"
-            ],
-            "entity_signature": "Donald:Donald Trump:investigates:leader:north america regional stakeholders",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump Administration Investigates Wells Fargo for Race-Based Lending"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "b3d5a3ff-2b21-490e-b620-ea18a1f969e2",
-            "title": "Punjab CBI probe: SC puts off state's plea",
-            "keywords": [
-                "cbi",
-                "declin",
-                "interim",
-                "order",
-                "plea",
-                "probe",
-                "punjab",
-                "put",
-                "state"
-            ],
-            "entity_signature": "cbi:collective_faction:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Punjab CBI probe: SC puts off state's plea, declines interim order"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "b10d4e8b-1e88-4eb8-9f15-bbd2ab1a1822",
-            "title": "Sri Lanka's ex-first lady arrested over alleged",
-            "keywords": [
-                "alleg",
-                "arrest",
-                "children",
-                "dona",
-                "first",
-                "hospital",
-                "lady",
-                "lanka",
-                "misuse",
-                "sri"
-            ],
-            "entity_signature": "alleged misuse of children's hospital donations:arrested:asia-pacific regional stakeholders",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Sri Lanka's ex-first lady arrested over alleged misuse of children's hospital donations"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "2b03f180-17b6-4cc6-baa0-3ac90ea9e90f",
-            "title": "Shooter behind Mad Sandhu's murder arrested in",
-            "keywords": [
-                "ahmedabad",
-                "arrest",
-                "behind",
-                "cop",
-                "dhillon",
-                "gangster",
-                "goldy",
-                "link",
-                "mad",
-                "murder"
-            ],
-            "entity_signature": "ahmedabad:arrested:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Shooter behind Mad Sandhu's murder arrested in Ahmedabad; cops to probe link with gangster Goldy Dhillon"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "38755500-58c3-42c8-80bf-7f0d33a6a708",
-            "title": "Bihar CM sparks controversy again over remark on",
-            "keywords": [
-                "bihar",
-                "controversy",
-                "find",
-                "five",
-                "media",
-                "molesta",
-                "remark",
-                "spark",
-                "video"
-            ],
-            "entity_signature": "bihar cm sparks controversy again over remark on molestation videos, says media 'could find only five videos:india regional stakeholders:sovereign_stakeholder",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Bihar CM sparks controversy again over remark on molestation videos, says media 'could find only five videos'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "f99e60b3-d830-4f07-a50c-1ffb1f3dd15b",
-            "title": "IIM Ahmedabad's Dubai campus launches 2-year",
-            "keywords": [
-                "ahmedabad",
-                "campu",
-                "dubai",
-                "executive",
-                "iim",
-                "launch",
-                "mba"
-            ],
-            "entity_signature": "2-year executive mba:iim ahmedabad's dubai campus:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "IIM Ahmedabad's Dubai campus launches 2-year Executive MBA"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Indian Express"
-            ]
-        },
-        {
-            "arc_id": "272d2295-2b40-4ade-b228-1b9e96556de4",
-            "title": "Veteran Indian actor Nana Patekar dies at 75",
-            "keywords": [
-                "actor",
-                "die",
-                "indian",
-                "nana",
-                "patekar",
-                "veteran"
-            ],
-            "entity_signature": "IN:75:dies:india",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-25T12:36:16.244600+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Veteran Indian actor Nana Patekar dies at 75"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.6,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "85310cd4-e6c8-4579-aaa0-a4027440a2f8",
-            "title": "'Maricarmen,' Whose Eviction Enraged Spaniards",
-            "keywords": [
-                "die",
-                "enrag",
-                "evic",
-                "maricarmen",
-                "spaniard",
-                "whos"
-            ],
-            "entity_signature": "ES:87:dies:maricarmen,' whose eviction enraged spaniards,",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-25T12:36:16.244600+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'Maricarmen,' Whose Eviction Enraged Spaniards, Dies at 87"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "79bccd96-c0e0-4da7-b4dd-18ddd39bb236",
-            "title": "Russia warns against spreading 'false",
-            "keywords": [
-                "cas",
-                "emerg",
-                "fals",
-                "informa",
-                "plagu",
-                "russia",
-                "second",
-                "spread"
-            ],
-            "entity_signature": "RU:russia:spreading 'false information' as reports emerge of second plague case:syntactic_subject",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-25T12:36:16.244600+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Russia warns against spreading 'false information' as reports emerge of second plague case"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "5b745eea-fec4-44a4-b06a-b28637c6004d",
-            "title": "US closely monitoring case of lab worker who ‘poss...",
-            "keywords": [
-                "closely",
-                "monitoring",
-                "case",
-                "worker",
-                "‘possibly’",
-                "died",
-                "plague",
-                "siberia,",
-                "says",
-                "rubio"
-            ],
-            "entity_signature": "US:RU:plague",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-05T22:07:16.056000+00:00",
-            "last_seen": "2026-10-25T12:08:22.256721+00:00",
-            "chapter_count": 7,
-            "chapter_titles": [
-                "US closely monitoring case of lab worker who ‘possibly’ died of plague in Siberia, says Rubio",
-                "US CDC says it’s ‘aware of and closely monitoring’ Russian plague case",
-                "Plague epidemic risk in Russia low after death of lab technician, WHO says",
-                "Trump says will speak with Putin over Russia's reported plague death",
-                "Russian lab worker's death sparks plague fears as unverified claims spread online",
-                "Russia warns against spreading 'false information' as reports emerge of second plague case",
-                "The WHO seeks more details on the death of a plague research lab employee in Russia"
-            ],
-            "importance_trend": "fading",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Al Jazeera",
-                "France 24",
-                "Hindustan Times",
-                "NPR News",
-                "SCMP",
-                "The Guardian",
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "6a08522c-b012-4bc4-b200-83974377870c",
-            "title": "WHO says it does not have ‘full picture’ from Russ...",
-            "keywords": [
-                "says",
-                "does",
-                "have",
-                "‘full",
-                "picture’",
-                "from",
-                "russia",
-                "following",
-                "suspected",
-                "plague"
-            ],
-            "entity_signature": "RU:WHO:UN",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-08T00:19:05.204415+00:00",
-            "last_seen": "2026-10-25T11:52:53.043602+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "WHO says it does not have ‘full picture’ from Russia following suspected plague death",
-                "The WHO seeks more details on the death of a plague research lab employee in Russia"
-            ],
-            "importance_trend": "fading",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News",
-                "The Guardian"
             ]
         }
     ],
