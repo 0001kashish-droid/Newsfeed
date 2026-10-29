@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-29T15:25:05.546389+00:00",
+    "last_updated": "2026-10-29T20:27:04.424501+00:00",
     "arcs": [
         {
             "arc_id": "808fdf5d-e27b-4432-8044-66ac1e615ef4",
@@ -20,8 +20,8 @@
                 "Global"
             ],
             "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
-            "chapter_count": 12,
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 13,
             "chapter_titles": [
                 "Spain begins three days of mourning after train crash kills dozens",
                 "High-speed train crash kills at least 68 people in Spain",
@@ -34,7 +34,8 @@
                 "How did the Spain train crash happen and what will investigators be asking?",
                 "Spain begins three days of mourning after train crash kills 69",
                 "Spain begins mourning period after train crash as search continues for victims in wreckage",
-                "Spain's train crash kills 69 people: What exactly happened?"
+                "Spain's train crash kills 69 people: What exactly happened?",
+                "Spain begins mourning period as search continues for train crash victims"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.7999999999999999,
@@ -43,6 +44,40 @@
                 "BBC News",
                 "France 24",
                 "NPR News",
+                "New York Times",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "f0c3edbc-c58e-4dd6-af63-4104e246d2da",
+            "title": "Hong Kong's leader apologises for deadly",
+            "keywords": [
+                "apologis",
+                "deadli",
+                "fir",
+                "high",
+                "hong",
+                "kong",
+                "leader",
+                "ris"
+            ],
+            "entity_signature": "asia-pacific regional stakeholders:court:fire",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Hong Kong's leader apologises for deadly high-rise fire",
+                "Hong Kong Leader Apologizes for Deadly Apartment Building Fire",
+                "Hong Kong's leader apologises for residential fire that killed 168 people"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "BBC Asia",
                 "New York Times",
                 "The Guardian"
             ]
@@ -68,7 +103,7 @@
                 "Global"
             ],
             "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Egypt fines prominent editor Lina Attalah and shuts independent news outlet Mada Masr",
@@ -102,7 +137,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Hello Kitty maker cuts ties with Japanese spy drama after China backlash",
@@ -133,7 +168,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Israel's election deadlock is a sign of the country's deep divisions",
@@ -143,38 +178,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "f0c3edbc-c58e-4dd6-af63-4104e246d2da",
-            "title": "Hong Kong's leader apologises for deadly",
-            "keywords": [
-                "apologis",
-                "deadli",
-                "fir",
-                "high",
-                "hong",
-                "kong",
-                "leader",
-                "ris"
-            ],
-            "entity_signature": "asia-pacific regional stakeholders:court:fire",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-29T15:25:05.106967+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Hong Kong's leader apologises for deadly high-rise fire",
-                "Hong Kong Leader Apologizes for Deadly Apartment Building Fire"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "BBC Asia",
-                "New York Times"
             ]
         },
         {
@@ -198,7 +201,7 @@
                 "Europe"
             ],
             "first_seen": "2026-10-29T15:25:05.106967+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Russian drone attack on Ukrainian train station kills at least 14, officials say",
@@ -209,6 +212,98 @@
             "sources_involved": [
                 "BBC Europe",
                 "France 24"
+            ]
+        },
+        {
+            "arc_id": "45ba6123-89af-4e17-bfc5-d7573de5dc9c",
+            "title": "Rock collapse kills two in Turkey's Cappadocia",
+            "keywords": [
+                "cappadocia",
+                "collaps",
+                "kill",
+                "local",
+                "media",
+                "rock",
+                "turkey",
+                "two"
+            ],
+            "entity_signature": "TR:crisis:kills:rock collapse",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Rock collapse kills two in Turkey's Cappadocia, local media reports",
+                "3 killed in rock spire collapse in Turkey's touristic Cappadocia"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Europe",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "9ef61f0a-4649-4608-8720-d7efd3480cf3",
+            "title": "Suspect in France Shootings Said He Targeted",
+            "keywords": [
+                "african",
+                "franc",
+                "muslim",
+                "prosecutor",
+                "shoot",
+                "suspect",
+                "target"
+            ],
+            "entity_signature": "FR:collective_faction:fr:france",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Suspect in France Shootings Said He Targeted Muslims and Africans, Prosecutor Says",
+                "Man targeted Muslims, Africans and North Africans, French prosecutors say"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera",
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "fb18e7ff-b679-4c82-b24c-37c9998feca5",
+            "title": "Rivian's R2 is officially its best-selling vehicle",
+            "keywords": [
+                "best",
+                "officialli",
+                "rivian",
+                "sell",
+                "vehicl"
+            ],
+            "entity_signature": "north america regional stakeholders:rivian's r2 is its best-:selling",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Rivian's R2 is officially its best-selling vehicle",
+                "The R2 SUV is already Rivian's best-selling vehicle"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "TechCrunch",
+                "The Verge"
             ]
         },
         {
@@ -230,7 +325,7 @@
                 "Global"
             ],
             "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Africa's 'unprecedented' Ebola outbreak could reach UK, says top health official"
@@ -239,6 +334,1247 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "4bc9ba2b-191f-416e-8852-8de2c435b76d",
+            "title": "'Like cutting up a Picasso': AI microdrama edit",
+            "keywords": [
+                "actor",
+                "ai",
+                "crew",
+                "cutt",
+                "edit",
+                "lik",
+                "microdrama",
+                "neighbour",
+                "picasso",
+                "worri"
+            ],
+            "entity_signature": "AU:au:australia:cutting",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'Like cutting up a Picasso': AI microdrama edit of Neighbours worries actors and crew"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "a121650d-2d69-48d9-ab5a-c179295ec8a3",
+            "title": "Netanyahu and Eisenkot face difficult paths to",
+            "keywords": [
+                "difficult",
+                "eisenkot",
+                "fac",
+                "major",
+                "neither",
+                "netanyahu",
+                "path",
+                "power",
+                "set",
+                "win"
+            ],
+            "entity_signature": "Benjamin:Benjamin Netanyahu:difficult paths:face:leader",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Netanyahu and Eisenkot face difficult paths to power as neither set to win majority"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "d9e93c56-1ec7-4872-b115-783a0334d0ea",
+            "title": "Nvidia CEO reportedly targeted by Chinese spy",
+            "keywords": [
+                "ceo",
+                "chines",
+                "nvidia",
+                "report",
+                "spy",
+                "target"
+            ],
+            "entity_signature": "CN:Huang:Jensen:china:chinese spy",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Nvidia CEO reportedly targeted by Chinese spy"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "0dab5c92-8667-4d17-a58c-4706ca36ff33",
+            "title": "VHS tapes and computers handed to police as",
+            "keywords": [
+                "computer",
+                "hand",
+                "investigat",
+                "markl",
+                "polic",
+                "tap",
+                "thoma",
+                "vhs"
+            ],
+            "entity_signature": "asia-pacific regional stakeholders:collective_faction:handed to police",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "VHS tapes and computers handed to police as Thomas Markle is investigated"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "f4cf5125-a295-43bb-8f60-f7f3312b31e7",
+            "title": "'Real questions to be asked' after deadly train",
+            "keywords": [
+                "ask",
+                "collision",
+                "deadli",
+                "journalist",
+                "ques",
+                "real",
+                "spain",
+                "train"
+            ],
+            "entity_signature": "ES:es:real questions to be asked' after deadly train collision in spain, journalist says:sovereign_stakeholder",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'Real questions to be asked' after deadly train collision in Spain, journalist says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "f717f0ad-246c-4b71-b461-75be601cf04d",
+            "title": "France: Trappes racist shooting suspect",
+            "keywords": [
+                "court",
+                "franc",
+                "french",
+                "racist",
+                "shoot",
+                "suspect",
+                "transferr",
+                "trapp"
+            ],
+            "entity_signature": "FR:collective_faction:conflict:court",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "France: Trappes racist shooting suspect transferred to French court"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "755afa91-e80d-4e24-90af-15eab65ed2bb",
+            "title": "DoorDash to Buy Instacart for $17 Billion",
+            "keywords": [
+                "billion",
+                "buy",
+                "deliveri",
+                "doordash",
+                "giant",
+                "instacart",
+                "unit"
+            ],
+            "entity_signature": "buy:diplomacy:doordash",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "DoorDash to Buy Instacart for $17 Billion, Uniting 2 Delivery Giants"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "9c1a70d8-da48-4884-8957-d1ea3ca35046",
+            "title": "Nasdaq futures fall as Alphabet's AI spending",
+            "keywords": [
+                "ai",
+                "alphabet",
+                "concern",
+                "fall",
+                "futur",
+                "nasdaq",
+                "spend",
+                "stock",
+                "tech",
+                "weigh"
+            ],
+            "entity_signature": "US:alphabet:economics:economy",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Nasdaq futures fall as Alphabet's AI spending concerns weigh on tech stocks"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "024d5f1c-2e99-4ee1-bf95-ab1a546e0b03",
+            "title": "Amazon cuts 250 jobs in devices unit weeks after",
+            "keywords": [
+                "amazon",
+                "cut",
+                "devic",
+                "job",
+                "launch",
+                "new",
+                "product",
+                "unit"
+            ],
+            "entity_signature": "250 jobs:amazon:cuts",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T15:25:05.106967+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Amazon cuts 250 jobs in devices unit weeks after new product launches"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "73ae2b9b-c5c5-4cc3-b39d-36a96d1e0faa",
+            "title": "Cuts like a knife: Canadian rocker Bryan Adams",
+            "keywords": [
+                "adam",
+                "bryan",
+                "canadian",
+                "cut",
+                "knif",
+                "lik",
+                "new",
+                "rocker",
+                "song",
+                "troll"
+            ],
+            "entity_signature": "CA:US:Donald:Donald Trump:ca",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Cuts like a knife: Canadian rocker Bryan Adams trolls Trump with new song"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "bbef2349-13d6-4434-8cd6-482592621774",
+            "title": "Pentagon IG refuses to investigate",
+            "keywords": [
+                "investigat",
+                "pentagon",
+                "refus",
+                "slowdown",
+                "starlink",
+                "starshield",
+                "ukrain"
+            ],
+            "entity_signature": "UA:collective_faction:investigate:military command / armed forces",
+            "category": "Tech",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Pentagon IG refuses to investigate Starlink/Starshield slowdown in Ukraine"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Ars Technica"
+            ]
+        },
+        {
+            "arc_id": "c1e937b5-e1ae-49bd-b2f7-2f130ed36af3",
+            "title": "Audio reveals exchanges between Spain train",
+            "keywords": [
+                "audio",
+                "crash",
+                "deadli",
+                "driver",
+                "exchang",
+                "moment",
+                "operator",
+                "reveal",
+                "spain",
+                "train"
+            ],
+            "entity_signature": "ES:audio:economy:es",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Audio reveals exchanges between Spain train operators and drivers moments before deadly crash"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "585e5f21-11ea-477c-8914-a8e3ad5af681",
+            "title": "Senior US general fired, accused of leaking",
+            "keywords": [
+                "accus",
+                "classifi",
+                "fir",
+                "general",
+                "informa",
+                "leak",
+                "senior"
+            ],
+            "entity_signature": "US:, accused of leaking classified information:collective_faction:fired",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Senior US general fired, accused of leaking classified information"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "7252d045-074d-4241-87bc-2041ae6cf107",
+            "title": "Trump ignored intel on China's Nvidia spy to",
+            "keywords": [
+                "china",
+                "compani",
+                "ignor",
+                "intel",
+                "nvidia",
+                "protect",
+                "report",
+                "spy",
+                "stock",
+                "trump"
+            ],
+            "entity_signature": "CN:Donald:Donald Trump:china:cn",
+            "category": "Tech",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump ignored intel on China's Nvidia spy to protect company's stock, report says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Ars Technica"
+            ]
+        },
+        {
+            "arc_id": "ca68031b-4ee0-4665-b92b-2244e8b5b760",
+            "title": "US proposes Venezuela elections for 2027",
+            "keywords": [
+                "elec",
+                "leader",
+                "machado",
+                "opposi",
+                "propos",
+                "venezuela"
+            ],
+            "entity_signature": "US:VE:sovereign_stakeholder:united states:united states sovereign authorities",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US proposes Venezuela elections for 2027, opposition leader Machado says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "f6770546-cf89-418a-84d5-7c1a0a48f36a",
+            "title": "Russia to extend diesel export ban, use quotas to",
+            "keywords": [
+                "ban",
+                "deal",
+                "diesel",
+                "export",
+                "extend",
+                "fulfil",
+                "quota",
+                "russia",
+                "say",
+                "sourc"
+            ],
+            "entity_signature": "RU:US:, use quotas:ban:diplomacy",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russia to extend diesel export ban, use quotas to fulfil US deal, sources say"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "ecd7c2db-aafb-403e-930c-8ab432fd6e2c",
+            "title": "Patrick Stewart, of Star Trek and X-Men fame",
+            "keywords": [
+                "die",
+                "fam",
+                "men",
+                "patrick",
+                "star",
+                "stewart",
+                "trek"
+            ],
+            "entity_signature": "86:asia-pacific regional stakeholders:dies",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Patrick Stewart, of Star Trek and X-Men fame, dies at 86"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "af78ff20-3ae3-49de-9e76-8a8f220c533c",
+            "title": "Hong Kong's John Lee apologises for Tai Po fire",
+            "keywords": [
+                "apologis",
+                "chief",
+                "fir",
+                "hong",
+                "hous",
+                "john",
+                "kong",
+                "lee",
+                "reform",
+                "resign"
+            ],
+            "entity_signature": ", unveils reforms as housing chief resigns:asia-pacific regional stakeholders:fire",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Hong Kong's John Lee apologises for Tai Po fire, unveils reforms as housing chief resigns"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "10fb42f9-0212-4ec9-8c4b-99457462401e",
+            "title": "US bans Chinese labs from testing electronics",
+            "keywords": [
+                "ahead",
+                "ban",
+                "chines",
+                "electronic",
+                "lab",
+                "meet",
+                "test",
+                "trump"
+            ],
+            "entity_signature": "CN:US:Donald:Donald Trump:bans",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US bans Chinese labs from testing electronics ahead of Trump-Xi meeting"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "8d7d7b5f-3e4c-432d-a8c9-b31ccf8d4ff8",
+            "title": "French shooting suspect deliberately targeted",
+            "keywords": [
+                "african",
+                "deliberateli",
+                "french",
+                "muslim",
+                "shoot",
+                "suspect",
+                "target"
+            ],
+            "entity_signature": "FR:conflict:fr:france",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "French shooting suspect deliberately targeted Muslims, Africans"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "6317a52a-3c63-436f-ae03-f424eb063481",
+            "title": "Ireland opens arms to Americans fleeing US",
+            "keywords": [
+                "american",
+                "arm",
+                "donald",
+                "flee",
+                "ireland",
+                "open",
+                "president",
+                "trump"
+            ],
+            "entity_signature": "FR:IE:US:Donald:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ireland opens arms to Americans fleeing US President Donald Trump"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "649a3d11-3c3d-4c4e-9363-7b7f1f59080b",
+            "title": "Elke Sommer, prolific German star of A Shot in",
+            "keywords": [
+                "aged",
+                "dark",
+                "die",
+                "elk",
+                "german",
+                "non",
+                "prolific",
+                "shot",
+                "sommer",
+                "star"
+            ],
+            "entity_signature": "DE:de:elke sommer, prolific german star of a:germany",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Elke Sommer, prolific German star of A Shot in the Dark and And Then There Were None, dies aged 85"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "579a4309-722b-4860-9e50-84d2cc283a7e",
+            "title": "Netanyahu attacks Palestinian-Israeli parties as",
+            "keywords": [
+                "attack",
+                "fall",
+                "israeli",
+                "major",
+                "netanyahu",
+                "palestinian",
+                "parti",
+                "short"
+            ],
+            "entity_signature": "IL:PS:Benjamin:Benjamin Netanyahu:attacks",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Netanyahu attacks Palestinian-Israeli parties as he falls short of majority"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "94d39e2a-4557-4a4b-8b0a-b86050efb12e",
+            "title": "'Arab voice doesn't count': Jewish Israeli blocs",
+            "keywords": [
+                "arab",
+                "bloc",
+                "count",
+                "doesn",
+                "israeli",
+                "jewish",
+                "palestinian",
+                "reject",
+                "support",
+                "voic"
+            ],
+            "entity_signature": "IL:PS:il:israel:jewish israeli blocs",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'Arab voice doesn't count': Jewish Israeli blocs reject Palestinian support"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "0c700aba-bd95-4932-a526-6a97ee7664ba",
+            "title": "Patrick Stewart has died at age 86",
+            "keywords": [
+                "age",
+                "died",
+                "patrick",
+                "stewart"
+            ],
+            "entity_signature": "age 86:died:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Patrick Stewart has died at age 86"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "3820e158-1089-4466-b65f-b4e0ed3526df",
+            "title": "More than 43 million ballots cast so far in",
+            "keywords": [
+                "ballot",
+                "cast",
+                "earli",
+                "far",
+                "midterm",
+                "million",
+                "surg",
+                "vot"
+            ],
+            "entity_signature": "economy:more than 43 million ballots cast so far in midterms early voting:north america regional stakeholders",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "More than 43 million ballots cast so far in midterms early voting surge"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC US"
+            ]
+        },
+        {
+            "arc_id": "6577d0cb-d568-41ca-89f3-2d9443aeab2f",
+            "title": "As search traffic dries up, Reddit announces it's",
+            "keywords": [
+                "dri",
+                "experienc",
+                "logg",
+                "reddit",
+                "search",
+                "shift",
+                "traffic"
+            ],
+            "entity_signature": "announces:as search traffic dries up, reddit:it's shifting",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "As search traffic dries up, Reddit announces it's shifting to a logged-in experience"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "c2e8f70d-8af3-43f2-9506-6811a0c516a7",
+            "title": "What killed 500-plus penguins? How scientists",
+            "keywords": [
+                "kill",
+                "mysteri",
+                "penguin",
+                "plu",
+                "scientist",
+                "solv"
+            ],
+            "entity_signature": "500-plus penguins? how scientists solved the mystery:collective_faction:killed",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "What killed 500-plus penguins? How scientists solved the mystery"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "a64531e9-7cf5-453b-abac-976acda52c97",
+            "title": "GM to pay $220 million to resolve claims it sold",
+            "keywords": [
+                "data",
+                "driv",
+                "habit",
+                "million",
+                "pay",
+                "resolv",
+                "sold"
+            ],
+            "entity_signature": "driving habits data:general:gm to pay $220 million to resolve claims it",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "GM to pay $220 million to resolve claims it sold driving habits data"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "911a175c-30b6-41b9-80ea-918868c6fd5d",
+            "title": "OpenAI-backed Thrive Holdings acquires ADT",
+            "keywords": [
+                "acquir",
+                "adt",
+                "back",
+                "hold",
+                "openai",
+                "thriv"
+            ],
+            "entity_signature": "backed:diplomacy:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "OpenAI-backed Thrive Holdings acquires ADT"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "b65bf7c5-afb2-4f09-8141-c632bafbe8ac",
+            "title": "You can generate and edit Google Docs files",
+            "keywords": [
+                "chat",
+                "directli",
+                "doc",
+                "edit",
+                "fil",
+                "gemini",
+                "generat",
+                "googl",
+                "now"
+            ],
+            "entity_signature": "directly:files:google",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "You can generate and edit Google Docs files directly in Gemini chats now"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "aff188ef-999f-403d-8eac-5279b4d71287",
+            "title": "US and Japan agree to establish a Japanese",
+            "keywords": [
+                "agree",
+                "establish",
+                "facil",
+                "japan",
+                "japanes",
+                "joint",
+                "missil",
+                "produc"
+            ],
+            "entity_signature": "CN:JP:US:agree:china",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US and Japan agree to establish a Japanese facility for joint missile production"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "ba915f7f-7b92-4082-968b-25d3d185b6e2",
+            "title": "Meta quietly launches an AI fashion app called",
+            "keywords": [
+                "ai",
+                "app",
+                "call",
+                "fashion",
+                "launch",
+                "meta",
+                "quietli",
+                "sketch",
+                "styl"
+            ],
+            "entity_signature": "ai fashion app called style sketch:launches:meta",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Meta quietly launches an AI fashion app called Style Sketch"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "5ad59557-c421-4f93-bc78-2b38efedf38e",
+            "title": "China elevates a military general to the",
+            "keywords": [
+                "china",
+                "disciplin",
+                "elevat",
+                "general",
+                "militari",
+                "parti",
+                "politburo",
+                "seek",
+                "strengthen"
+            ],
+            "entity_signature": "CN:Jinping:Xi Jinping:china:china elevates a military general to the politburo and",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "China elevates a military general to the Politburo and seeks to strengthen party discipline"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "5810cc5a-ecf0-481a-989a-9ca4d1506bf4",
+            "title": "Delhi's Jamia University agrees to students'",
+            "keywords": [
+                "agre",
+                "delhi",
+                "demand",
+                "jamia",
+                "poll",
+                "set",
+                "student",
+                "timelin",
+                "union",
+                "univers"
+            ],
+            "entity_signature": "agrees:delhi's jamia university:governance",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Delhi's Jamia University agrees to students' demands, sets timeline for union polls"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "68f545aa-d61a-453b-9689-61d0bb2fe161",
+            "title": "M.P. wildlife officials highlight Chambal",
+            "keywords": [
+                "chambal",
+                "cheetah",
+                "cultur",
+                "goe",
+                "gun",
+                "highlight",
+                "official",
+                "prob",
+                "region",
+                "shoot"
+            ],
+            "entity_signature": "cheetah shooting goes on:collective_faction:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "M.P. wildlife officials highlight Chambal region's gun culture as probe into cheetah shooting goes on"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "bc7ad9e7-eb96-44c4-8012-8ed4f2b51e0f",
+            "title": "TVK functionary arrested for allegedly sexually",
+            "keywords": [
+                "alleg",
+                "arrest",
+                "colleg",
+                "functionari",
+                "harass",
+                "nadu",
+                "sexualli",
+                "student",
+                "tamil",
+                "tvk"
+            ],
+            "entity_signature": "allegedly sexually harassing college student:arrested:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "TVK functionary arrested for allegedly sexually harassing college student in Tamil Nadu"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "a97ddcac-2d22-477b-a6bc-19ffb16dacd8",
+            "title": "Delhi traders urge Rahul Gandhi to postpone INDIA",
+            "keywords": [
+                "bloc",
+                "busi",
+                "delhi",
+                "diwali",
+                "fear",
+                "gandhi",
+                "india",
+                "loss",
+                "maidan",
+                "postpon"
+            ],
+            "entity_signature": "IN:congress:delhi traders:economy",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Delhi traders urge Rahul Gandhi to postpone INDIA bloc's Ramlila Maidan rally over Diwali business loss fears"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "13eaad74-a9ba-4e5a-a88f-ea60e34ef0fe",
+            "title": "Hike to help farmers, says CM; Ashok accuses",
+            "keywords": [
+                "accus",
+                "ashok",
+                "burden",
+                "farmer",
+                "govt",
+                "help",
+                "hik",
+                "peopl",
+                "plac"
+            ],
+            "entity_signature": "help farmers, says cm:hike:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Hike to help farmers, says CM; Ashok accuses govt. of placing burden on people"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "8bb9539a-b3b4-4a47-8f01-3086cee65a31",
+            "title": "Man, daughter killed in road accident in",
+            "keywords": [
+                "accident",
+                "daughter",
+                "kill",
+                "man",
+                "road",
+                "tiruvannamalai"
+            ],
+            "entity_signature": "india regional stakeholders:killed:man, daughter",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Man, daughter killed in road accident in Tiruvannamalai"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "086f8250-4909-4956-9839-c37a325fbde5",
+            "title": "'Show me one Muslim minister at Centre, BJP-ruled",
+            "keywords": [
+                "bjp",
+                "centr",
+                "deputi",
+                "minister",
+                "muslim",
+                "one",
+                "rul",
+                "show"
+            ],
+            "entity_signature": "india regional stakeholders:ruled:show me one muslim minister at centre, bjp-",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-29T20:27:03.983393+00:00",
+            "last_seen": "2026-10-29T20:27:03.983393+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'Show me one Muslim minister at Centre, BJP-ruled States': J&K Deputy CM"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
             ]
         },
         {
@@ -305,70 +1641,6 @@
             ]
         },
         {
-            "arc_id": "4bc9ba2b-191f-416e-8852-8de2c435b76d",
-            "title": "'Like cutting up a Picasso': AI microdrama edit",
-            "keywords": [
-                "actor",
-                "ai",
-                "crew",
-                "cutt",
-                "edit",
-                "lik",
-                "microdrama",
-                "neighbour",
-                "picasso",
-                "worri"
-            ],
-            "entity_signature": "AU:au:australia:cutting",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'Like cutting up a Picasso': AI microdrama edit of Neighbours worries actors and crew"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "a121650d-2d69-48d9-ab5a-c179295ec8a3",
-            "title": "Netanyahu and Eisenkot face difficult paths to",
-            "keywords": [
-                "difficult",
-                "eisenkot",
-                "fac",
-                "major",
-                "neither",
-                "netanyahu",
-                "path",
-                "power",
-                "set",
-                "win"
-            ],
-            "entity_signature": "Benjamin:Benjamin Netanyahu:difficult paths:face:leader",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Netanyahu and Eisenkot face difficult paths to power as neither set to win majority"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
             "arc_id": "b629ef60-f2ca-4bb9-b530-ceae5ff37e4b",
             "title": "Finland launches criminal investigation into",
             "keywords": [
@@ -429,34 +1701,6 @@
             ]
         },
         {
-            "arc_id": "d9e93c56-1ec7-4872-b115-783a0334d0ea",
-            "title": "Nvidia CEO reportedly targeted by Chinese spy",
-            "keywords": [
-                "ceo",
-                "chines",
-                "nvidia",
-                "report",
-                "spy",
-                "target"
-            ],
-            "entity_signature": "CN:Huang:Jensen:china:chinese spy",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-29T15:25:05.106967+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Nvidia CEO reportedly targeted by Chinese spy"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "b367db46-e5f8-4907-8463-f6b9f475e71b",
             "title": "China tests powerful AI that could one day be",
             "keywords": [
@@ -484,36 +1728,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "0dab5c92-8667-4d17-a58c-4706ca36ff33",
-            "title": "VHS tapes and computers handed to police as",
-            "keywords": [
-                "computer",
-                "hand",
-                "investigat",
-                "markl",
-                "polic",
-                "tap",
-                "thoma",
-                "vhs"
-            ],
-            "entity_signature": "asia-pacific regional stakeholders:collective_faction:handed to police",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-29T15:25:05.106967+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "VHS tapes and computers handed to police as Thomas Markle is investigated"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Asia"
             ]
         },
         {
@@ -577,66 +1791,6 @@
             ]
         },
         {
-            "arc_id": "f4cf5125-a295-43bb-8f60-f7f3312b31e7",
-            "title": "'Real questions to be asked' after deadly train",
-            "keywords": [
-                "ask",
-                "collision",
-                "deadli",
-                "journalist",
-                "ques",
-                "real",
-                "spain",
-                "train"
-            ],
-            "entity_signature": "ES:es:real questions to be asked' after deadly train collision in spain, journalist says:sovereign_stakeholder",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-29T15:25:05.106967+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'Real questions to be asked' after deadly train collision in Spain, journalist says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "f717f0ad-246c-4b71-b461-75be601cf04d",
-            "title": "France: Trappes racist shooting suspect",
-            "keywords": [
-                "court",
-                "franc",
-                "french",
-                "racist",
-                "shoot",
-                "suspect",
-                "transferr",
-                "trapp"
-            ],
-            "entity_signature": "FR:collective_faction:conflict:court",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-29T15:25:05.106967+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "France: Trappes racist shooting suspect transferred to French court"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
             "arc_id": "8eff8e1a-e510-4b53-b933-af897261ac04",
             "title": "'Very disturbing details': Trappes shooting",
             "keywords": [
@@ -666,36 +1820,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "France 24"
-            ]
-        },
-        {
-            "arc_id": "45ba6123-89af-4e17-bfc5-d7573de5dc9c",
-            "title": "Rock collapse kills two in Turkey's Cappadocia",
-            "keywords": [
-                "cappadocia",
-                "collaps",
-                "kill",
-                "local",
-                "media",
-                "rock",
-                "turkey",
-                "two"
-            ],
-            "entity_signature": "TR:crisis:kills:rock collapse",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-29T15:25:05.106967+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Rock collapse kills two in Turkey's Cappadocia, local media reports"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Europe"
             ]
         },
         {
@@ -854,64 +1978,6 @@
             ]
         },
         {
-            "arc_id": "9ef61f0a-4649-4608-8720-d7efd3480cf3",
-            "title": "Suspect in France Shootings Said He Targeted",
-            "keywords": [
-                "african",
-                "franc",
-                "muslim",
-                "prosecutor",
-                "shoot",
-                "suspect",
-                "target"
-            ],
-            "entity_signature": "FR:collective_faction:fr:france",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-29T15:25:05.106967+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Suspect in France Shootings Said He Targeted Muslims and Africans, Prosecutor Says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "755afa91-e80d-4e24-90af-15eab65ed2bb",
-            "title": "DoorDash to Buy Instacart for $17 Billion",
-            "keywords": [
-                "billion",
-                "buy",
-                "deliveri",
-                "doordash",
-                "giant",
-                "instacart",
-                "unit"
-            ],
-            "entity_signature": "buy:diplomacy:doordash",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-29T15:25:05.106967+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "DoorDash to Buy Instacart for $17 Billion, Uniting 2 Delivery Giants"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
             "arc_id": "ed1008d9-45d6-41ab-95b8-97b840b735da",
             "title": "Anthropic's business plan: Build God or die trying",
             "keywords": [
@@ -938,68 +2004,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "The Verge"
-            ]
-        },
-        {
-            "arc_id": "9c1a70d8-da48-4884-8957-d1ea3ca35046",
-            "title": "Nasdaq futures fall as Alphabet's AI spending",
-            "keywords": [
-                "ai",
-                "alphabet",
-                "concern",
-                "fall",
-                "futur",
-                "nasdaq",
-                "spend",
-                "stock",
-                "tech",
-                "weigh"
-            ],
-            "entity_signature": "US:alphabet:economics:economy",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-29T15:25:05.106967+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Nasdaq futures fall as Alphabet's AI spending concerns weigh on tech stocks"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "024d5f1c-2e99-4ee1-bf95-ab1a546e0b03",
-            "title": "Amazon cuts 250 jobs in devices unit weeks after",
-            "keywords": [
-                "amazon",
-                "cut",
-                "devic",
-                "job",
-                "launch",
-                "new",
-                "product",
-                "unit"
-            ],
-            "entity_signature": "250 jobs:amazon:cuts",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-29T15:25:05.106967+00:00",
-            "last_seen": "2026-10-29T15:25:05.106967+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Amazon cuts 250 jobs in devices unit weeks after new product launches"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
             ]
         },
         {
@@ -2076,1055 +3080,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "289251d1-3c10-4e5a-a3db-06abef0209ff",
-            "title": "Germany's Merz visits Kyiv as Russia steps up atta...",
-            "keywords": [
-                "germany's",
-                "merz",
-                "visits",
-                "kyiv",
-                "russia",
-                "steps",
-                "attacks",
-                "ukrainian",
-                "cities"
-            ],
-            "entity_signature": "DE:UA:RU",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-04T13:44:18.123110+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "Germany's Merz visits Kyiv as Russia steps up attacks on Ukrainian cities",
-                "Russia hits Kyiv bridge as Germany’s Merz visits Ukraine’s capital",
-                "Live: New Russian strikes hit Kyiv bridge as Germany's Merz visits",
-                "Burnham to meet German chancellor in Berlin to discuss security and EU ties"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 1.0,
-            "sources_involved": [
-                "Al Jazeera",
-                "BBC News",
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "4282e364-6446-443e-8105-4ad7a352bff1",
-            "title": "Houthis claim attacks on Riyadh airport as Saudi-l...",
-            "keywords": [
-                "houthis",
-                "claim",
-                "attacks",
-                "riyadh",
-                "airport",
-                "saudi-led",
-                "forces",
-                "strike",
-                "yemen"
-            ],
-            "entity_signature": "SA:IR:PK",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-06T02:24:11.640373+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "Houthis claim attacks on Riyadh airport as Saudi-led forces strike Yemen",
-                "Saudi-backed Yemeni forces expel the Houthis from several areas around key strait, officials say",
-                "Yemen’s Houthis attack Aden airport as fighting intensifies",
-                "Explosions heard in Saudi capital Riyadh after deadly Houthi attacks on airports"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24",
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "e3034724-14b8-454c-afb6-fa7135f62961",
-            "title": "French education minister says up to 500 schools w...",
-            "keywords": [
-                "french",
-                "education",
-                "minister",
-                "says",
-                "schools",
-                "will",
-                "remain",
-                "partially",
-                "fully",
-                "closed"
-            ],
-            "entity_signature": "FR:EU:UA",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-04T13:44:18.123110+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "French education minister says up to 500 schools will remain partially or fully closed on Monday after student protests – Europe live",
-                "French police suspend use of stun grenades after high school protester loses hand",
-                "French high school protests continue despite PM’s promise of action – Europe live"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "6f607c75-6586-457b-a8ab-4020ffeeef57",
-            "title": "Russia says European arms factories supplying Ukra...",
-            "keywords": [
-                "russia",
-                "says",
-                "european",
-                "arms",
-                "factories",
-                "supplying",
-                "ukraine",
-                "potential",
-                "military",
-                "targets"
-            ],
-            "entity_signature": "RU:EU:UA",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-09-30T16:40:54.510541+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Russia says European arms factories supplying Ukraine are potential military targets for Moscow",
-                "Russia ‘pursuing strategy of terror’, EU’s von der Leyen says after deadly strikes on Ukraine – Europe live",
-                "US, Russia explore gas sale to Europe amid Ukraine war, say sources"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "2ee304c7-2f52-473f-a5f3-3097baf5eb8b",
-            "title": "Russian dissident Garry Kasparov says US warned hi...",
-            "keywords": [
-                "russian",
-                "dissident",
-                "garry",
-                "kasparov",
-                "says",
-                "warned",
-                "danger",
-                "life"
-            ],
-            "entity_signature": "RU:US:Vladimir Putin",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-01T19:41:52.469182+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Russian dissident Garry Kasparov says US warned him of danger to his life",
-                "Politkovskaya 'predicted' Russia's turn under Putin, editor says on 20th anniversary of her death",
-                "Trump to speak to Putin about plague lab worker's death in Russia"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe",
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "5d9f7047-00a7-4319-8e2b-4808cc69d99b",
-            "title": "Evicted pensioner who sparked Spain housing",
-            "keywords": [
-                "die",
-                "evict",
-                "hous",
-                "pensioner",
-                "protest",
-                "spain",
-                "spark",
-                "tenant",
-                "union"
-            ],
-            "entity_signature": "ES:civic activists / protesters:civic activists / protesters (tenant union):civilians & impacted communities",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Evicted pensioner who sparked Spain housing protests dies: tenant union",
-                "Evicted pensioner Maricarmen Abascal, heart of Spain's housing protests, dies",
-                "Spanish pensioner whose eviction sparked nationwide protests dies"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "BBC Europe",
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "7d591e60-3cf6-40e2-bc4b-9c388c90b6b4",
-            "title": "Brazil’s Lula says only he can stop rise of fascis...",
-            "keywords": [
-                "brazil’s",
-                "lula",
-                "says",
-                "only",
-                "stop",
-                "rise",
-                "fascism",
-                "under",
-                "bolsonaro’s"
-            ],
-            "entity_signature": "BR:Luiz Inácio Lula da Silva:Jair Bolsonaro",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-03T00:37:14.992433+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Brazil’s Lula says only he can stop rise of fascism under Bolsonaro’s son",
-                "Flávio Bolsonaro’s advance in Brazil’s election is grim jolt for climate campaigners"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "5e033798-4df2-4364-ae62-063e0d32778c",
-            "title": "‘China already has spies’ at US AI labs, former An...",
-            "keywords": [
-                "‘china",
-                "already",
-                "spies’",
-                "labs,",
-                "former",
-                "anthropic",
-                "researcher",
-                "warns"
-            ],
-            "entity_signature": "CN:US",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-08T00:19:05.204415+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "‘China already has spies’ at US AI labs, former Anthropic researcher warns",
-                "US AI firm Anthropic enables Chinese-language options for Claude chatbot"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "6e35d273-c47c-4619-a7de-426c994ca7d1",
-            "title": "Macron says ‘welcome back’ to Burnham suggestion U...",
-            "keywords": [
-                "macron",
-                "says",
-                "‘welcome",
-                "back’",
-                "burnham",
-                "suggestion",
-                "could",
-                "rejoin"
-            ],
-            "entity_signature": "UK:EU:FR:Emmanuel Macron",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-09-30T21:14:02.080480+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Macron says ‘welcome back’ to Burnham suggestion UK could rejoin EU",
-                "'Come all the way' back to EU, French finance minister tells UK"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC News",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "bdca5029-0d4f-4394-a2b4-9cbe3186cd64",
-            "title": "How Netanyahu survived the political fallout from ...",
-            "keywords": [
-                "netanyahu",
-                "survived",
-                "political",
-                "fallout",
-                "from",
-                "october",
-                "attacks"
-            ],
-            "entity_signature": "PS:IL:Benjamin Netanyahu",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-07T06:52:47.305533+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "How Netanyahu survived the political fallout from the October 7 attacks",
-                "No longer the same Israel? October 7th and the future of the Jewish State"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "41facffd-3011-4a04-9c6a-62c69374686b",
-            "title": "María del Carmen Abascal, symbol of Spain's",
-            "keywords": [
-                "abascal",
-                "aged",
-                "carmen",
-                "del",
-                "die",
-                "hous",
-                "protest",
-                "spain",
-                "symbol"
-            ],
-            "entity_signature": "ES:activists:aged 87:civic activists / protesters",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "María del Carmen Abascal, symbol of Spain's housing protests, dies aged 87",
-                "'Maricarmen,' Whose Eviction Enraged Spaniards, Dies at 87"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "New York Times",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "12130b8c-18bd-4749-bca9-c5ac7327452d",
-            "title": "Israel and U.K. Cut Last-Minute Deal to Avoid",
-            "keywords": [
-                "avoid",
-                "british",
-                "closure",
-                "consulate",
-                "cut",
-                "deal",
-                "east",
-                "full",
-                "israel",
-                "jerusalem"
-            ],
-            "entity_signature": "IL:UK:cut:diplomacy:il",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Israel and U.K. Cut Last-Minute Deal to Avoid Full Closure of British Consulate in East Jerusalem",
-                "British diplomats to remain at renamed consulate in Jerusalem"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times",
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "c378b542-d08d-40b0-aace-e2a3b0491794",
-            "title": "Acclaimed Indian actor Nana Patekar dies aged 75",
-            "keywords": [
-                "acclaim",
-                "actor",
-                "aged",
-                "die",
-                "indian",
-                "nana",
-                "patekar"
-            ],
-            "entity_signature": "IN:acclaimed indian actor nana patekar:aged 75:civilian",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Acclaimed Indian actor Nana Patekar dies aged 75",
-                "Veteran Indian actor Nana Patekar dies at 75"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.6,
-            "sources_involved": [
-                "Al Jazeera",
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "20fb5077-fa2f-4359-b4bb-3d5d5746a166",
-            "title": "The WHO seeks more details on the death of a",
-            "keywords": [
-                "death",
-                "detail",
-                "employee",
-                "lab",
-                "plagu",
-                "research",
-                "russia",
-                "seek"
-            ],
-            "entity_signature": "RU:more details:russia:russia sovereign authorities",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-25T12:36:16.244600+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "The WHO seeks more details on the death of a plague research lab employee in Russia",
-                "What is the pneumonic plague?"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "d41a85fe-bfb1-4a29-8f24-2edcc54923a1",
-            "title": "Mozilla says Microsoft still steers Windows users ...",
-            "keywords": [
-                "mozilla",
-                "says",
-                "microsoft",
-                "still",
-                "steers",
-                "windows",
-                "users",
-                "towards",
-                "edge,",
-                "except"
-            ],
-            "entity_signature": "EU:IN:US",
-            "category": "Business",
-            "regions": [
-                "Europe",
-                "North America"
-            ],
-            "first_seen": "2026-10-07T14:14:27.543907+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Mozilla says Microsoft still steers Windows users towards Edge, except in the EU"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "27bc4645-15b5-44f8-8a28-73d31189f246",
-            "title": "Flydubai attack investigation widens as alleged",
-            "keywords": [
-                "alleg",
-                "attack",
-                "flydubai",
-                "hijacker",
-                "investiga",
-                "new",
-                "scrutinis",
-                "train",
-                "widen",
-                "zealand"
-            ],
-            "entity_signature": "AU:NZ:attack:au:australia",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Flydubai attack investigation widens as alleged hijacker's training in New Zealand scrutinised"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "9267d840-c82c-4c67-93bc-5d3d47c18efe",
-            "title": "Satellite images show attack jets at Chinese",
-            "keywords": [
-                "attack",
-                "chinese",
-                "facil",
-                "imag",
-                "jet",
-                "lao",
-                "military",
-                "satellite",
-                "show"
-            ],
-            "entity_signature": "CN:at chinese military:attack:china",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Satellite images show attack jets at Chinese military facility in Laos"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "59df8f50-e225-448f-9c59-ee75f6fa1ac3",
-            "title": "US opens direct talks with Myanmar's generals",
-            "keywords": [
-                "direct",
-                "general",
-                "isola",
-                "myanmar",
-                "open",
-                "revers",
-                "talk"
-            ],
-            "entity_signature": "MM:US:collective_faction:diplomacy:direct talks",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "US opens direct talks with Myanmar's generals, reversing years of isolation"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "8a2f86fa-902e-40cd-a6ef-f021ea9b6648",
-            "title": "'Every day there is killing': Gazans face Israeli",
-            "keywords": [
-                "ceasefire",
-                "day",
-                "deal",
-                "despite",
-                "every",
-                "face",
-                "gazan",
-                "israeli",
-                "kill",
-                "peace"
-            ],
-            "entity_signature": "IL:PS:US:conflict:diplomacy",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'Every day there is killing': Gazans face Israeli strikes despite ceasefire as peace deal stalls"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "32453011-3374-4b91-9f07-4a47526ce86c",
-            "title": "Most UK diplomats to leave East Jerusalem",
-            "keywords": [
-                "consulate",
-                "diplomat",
-                "east",
-                "israel",
-                "jerusalem",
-                "leave",
-                "miliband",
-                "remain",
-                "servic",
-                "vital"
-            ],
-            "entity_signature": "IL:PS:UK:collective_faction:diplomatic envoys",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "BBC News"
-            ]
-        },
-        {
-            "arc_id": "33d37d26-a970-40e0-9b89-d0532085bf07",
-            "title": "Kenya confirms first Ebola case as virus 'surges'",
-            "keywords": [
-                "case",
-                "confirm",
-                "congo",
-                "ebola",
-                "first",
-                "kenya",
-                "province",
-                "surg",
-                "viru"
-            ],
-            "entity_signature": "KE:citizen:civilians & impacted communities:civilians & impacted communities (citizen)",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Kenya confirms first Ebola case as virus 'surges' in DR Congo province"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "9e67237b-7f0a-4728-b6d3-a57b45bc8ae6",
-            "title": "Italy Weighs Controversial Law Giving Bonus Seats",
-            "keywords": [
-                "bonu",
-                "controversial",
-                "elec",
-                "giv",
-                "italy",
-                "law",
-                "seat",
-                "weigh",
-                "winner"
-            ],
-            "entity_signature": "IT:controversial law giving bonus seats:election:it",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Italy Weighs Controversial Law Giving Bonus Seats to Election Winners"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "68cd5757-4433-4a6c-917c-fa069cc889fe",
-            "title": "'Lost control of its Frankenstein': India",
-            "keywords": [
-                "control",
-                "doublespeak",
-                "frankenstein",
-                "india",
-                "lambast",
-                "lost",
-                "pakistan",
-                "terrorism"
-            ],
-            "entity_signature": "IN:PK:control of its frankenstein:in:india",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'Lost control of its Frankenstein': India lambasts Pakistan's doublespeak on terrorism at UN"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "f58a4d99-38da-42ef-9029-ef70e01d6fa7",
-            "title": "Tigray rebel groups 'forcibly recruiting boys as",
-            "keywords": [
-                "boy",
-                "fight",
-                "forcibly",
-                "group",
-                "rebel",
-                "recruit",
-                "spread",
-                "tigray",
-                "young"
-            ],
-            "entity_signature": "ET:boys as young as 15:civilians & impacted communities:civilians & impacted communities (boys as young as 15)",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Tigray rebel groups 'forcibly recruiting boys as young as 15' as fighting spreads"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "488af554-85ac-4b80-a5f3-985ca026f3dd",
-            "title": "Delhi cops deploy teams at Connaught Place as",
-            "keywords": [
-                "bloc",
-                "cec",
-                "connaught",
-                "cop",
-                "delhi",
-                "deploy",
-                "india",
-                "lunch",
-                "place",
-                "plan"
-            ],
-            "entity_signature": "IN:commission:delhi cops deploy teams at connaught place as india bloc plans lunch, protest against cec:election",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Delhi cops deploy teams at Connaught Place as INDIA bloc plans lunch, protest against CEC"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "d38e7b03-197e-45b9-888f-aac3eef93ea8",
-            "title": "India's Cockroach Party Leader Carries Gen Z's",
-            "keywords": [
-                "carri",
-                "cockroach",
-                "demand",
-                "gen",
-                "india",
-                "leader",
-                "many",
-                "party"
-            ],
-            "entity_signature": "IN:. they are many.:demands:in",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "India's Cockroach Party Leader Carries Gen Z's Demands. They Are Many."
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "06bf8741-1d3c-43fd-b1d3-31a2dbd90ba2",
-            "title": "Egyptian journalist faces terrorism charges after",
-            "keywords": [
-                "charg",
-                "detain",
-                "egyptian",
-                "entire",
-                "fac",
-                "journalist",
-                "newsroom",
-                "terrorism"
-            ],
-            "entity_signature": "EG:eg:egypt:egyptian journalist",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Egyptian journalist faces terrorism charges after entire newsroom detained"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "0eca21e3-c375-4e21-bf64-85dcfaa1dca5",
-            "title": "Children killed while they slept as Russian",
-            "keywords": [
-                "block",
-                "children",
-                "flat",
-                "kill",
-                "missile",
-                "russian",
-                "slept"
-            ],
-            "entity_signature": "RU:UA:children:civilians & impacted communities:civilians & impacted communities (children)",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Children killed while they slept as Russian missile kills 22 in block of flats"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "3569d25a-6572-48ec-a3b5-91eee1964ac1",
-            "title": "Seemapuri collapse: 3-year-old survives with",
-            "keywords": [
-                "among",
-                "collapse",
-                "dead",
-                "injuri",
-                "minor",
-                "mother",
-                "old",
-                "seemapuri",
-                "surviv"
-            ],
-            "entity_signature": "3-year-old:crisis:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Seemapuri collapse: 3-year-old survives with minor injuries, mother among 5 dead"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "5090ced6-6fed-4d98-ac72-8905a8c0146d",
-            "title": "Israelis mourn 7 October attack victims three",
-            "keywords": [
-                "attack",
-                "deadly",
-                "hama",
-                "israeli",
-                "mourn",
-                "october",
-                "raid",
-                "three",
-                "victim"
-            ],
-            "entity_signature": "IL:PS:after deadly hamas:attack:collective_faction",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Israelis mourn 7 October attack victims three years after deadly Hamas raid"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "dd23f1c6-dad9-41b9-a325-1639213bf640",
-            "title": "Trump proposes Camp David-style presidential",
-            "keywords": [
-                "camp",
-                "club",
-                "david",
-                "florida",
-                "golf",
-                "presidential",
-                "private",
-                "propos",
-                "retreat",
-                "style"
-            ],
-            "entity_signature": "Donald:Donald Trump:his private florida golf club:leader:north america regional stakeholders",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump proposes Camp David-style presidential retreat at his private Florida golf club"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "9b14eb4b-57c2-4160-9054-3c230350f519",
-            "title": "Indonesia accused of 'gross negligence' in",
-            "keywords": [
-                "accus",
-                "gross",
-                "haze",
-                "indonesia",
-                "lawsuit",
-                "negligence",
-                "region",
-                "test",
-                "wildfir"
-            ],
-            "entity_signature": "ID:id:indonesia:indonesia accused of 'gross negligence' in wildfires lawsuit as haze",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Indonesia accused of 'gross negligence' in wildfires lawsuit as haze tests region"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "87f3251c-308c-4cc1-a8da-4e4cb408e3d2",
-            "title": "India rejects Elon Musk's claim of discrimination",
-            "keywords": [
-                "claim",
-                "discrimina",
-                "elon",
-                "india",
-                "launch",
-                "musk",
-                "reject",
-                "starlink"
-            ],
-            "entity_signature": "IN:Elon:Elon Musk:elon musk's claim of discrimination:in",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-25T11:52:53.043602+00:00",
-            "last_seen": "2026-10-29T04:32:53.821569+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "India rejects Elon Musk's claim of discrimination over Starlink launch"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "TechCrunch"
             ]
         }
     ],
