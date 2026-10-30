@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-10-30T18:44:09.583187+00:00",
+    "last_updated": "2026-10-30T22:48:38.202517+00:00",
     "arcs": [
         {
             "arc_id": "c1e937b5-e1ae-49bd-b2f7-2f130ed36af3",
@@ -22,7 +22,7 @@
                 "Global"
             ],
             "first_seen": "2026-10-29T20:27:03.983393+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
             "chapter_count": 5,
             "chapter_titles": [
                 "Audio reveals exchanges between Spain train operators and drivers moments before deadly crash",
@@ -39,6 +39,40 @@
                 "BBC News",
                 "New York Times",
                 "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "c6151a59-2bc1-4aa7-9f18-1ddab5b1f1ba",
+            "title": "Residents leave devastated Russian-occupied",
+            "keywords": [
+                "corridor",
+                "devastat",
+                "evacua",
+                "leav",
+                "occupi",
+                "oleshki",
+                "open",
+                "resident",
+                "russian"
+            ],
+            "entity_signature": "RU:civilians & impacted communities:civilians & impacted communities (residents):impacted_community",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-30T13:20:06.343127+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Residents leave devastated Russian-occupied Oleshky as evacuation corridor opens",
+                "War in Ukraine: Evacuations under way in Russian-occupied Oleshky",
+                "Residents leave Russian-occupied Oleshky in evacuation operation"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC News",
+                "France 24"
             ]
         },
         {
@@ -62,7 +96,7 @@
                 "Global"
             ],
             "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Egypt fines prominent editor Lina Attalah and shuts independent news outlet Mada Masr",
@@ -93,7 +127,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Israel's election deadlock is a sign of the country's deep divisions",
@@ -103,39 +137,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "c6151a59-2bc1-4aa7-9f18-1ddab5b1f1ba",
-            "title": "Residents leave devastated Russian-occupied",
-            "keywords": [
-                "corridor",
-                "devastat",
-                "evacua",
-                "leav",
-                "occupi",
-                "oleshki",
-                "open",
-                "resident",
-                "russian"
-            ],
-            "entity_signature": "RU:civilians & impacted communities:civilians & impacted communities (residents):impacted_community",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-30T13:20:06.343127+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Residents leave devastated Russian-occupied Oleshky as evacuation corridor opens",
-                "War in Ukraine: Evacuations under way in Russian-occupied Oleshky"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC News",
-                "France 24"
             ]
         },
         {
@@ -157,7 +158,7 @@
                 "Global"
             ],
             "first_seen": "2026-10-30T18:44:09.218444+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "US inmate Christa Pike says she woke up 'confused and in pain' after failed execution",
@@ -167,6 +168,7 @@
             "peak_velocity": 0.5,
             "sources_involved": [
                 "BBC News",
+                "BBC US",
                 "SCMP"
             ]
         },
@@ -189,7 +191,7 @@
                 "Global"
             ],
             "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Africa's 'unprecedented' Ebola outbreak could reach UK, says top health official"
@@ -221,7 +223,7 @@
                 "India"
             ],
             "first_seen": "2026-10-30T06:13:49.170191+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Sensex, Nifty open flat amid high crude oil prices, jump in IT stocks"
@@ -250,7 +252,7 @@
                 "India"
             ],
             "first_seen": "2026-10-30T06:13:49.170191+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Google's $500bn bloodbath reflects the danger it faces from AI"
@@ -279,7 +281,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-10-30T13:20:06.343127+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Human rights lawyer couple sentenced to 10 years' prison in Pakistan"
@@ -307,7 +309,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-10-30T13:20:06.343127+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "I Covered the Tiananmen Square Massacre. It Still Weighs on Me."
@@ -337,7 +339,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-10-30T13:20:06.343127+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "How the Japanese Spy Drama 'Vivant' Became The Target of China's Anger"
@@ -346,6 +348,789 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "New York Times"
+            ]
+        },
+        {
+            "arc_id": "d14faad4-ec23-46d4-a9e9-a2b9fe60053d",
+            "title": "Opening the EU debate again is clearly a",
+            "keywords": [
+                "clearli",
+                "debat",
+                "jenkin",
+                "minefield",
+                "open",
+                "political",
+                "simon"
+            ],
+            "entity_signature": "EU:UK:eu:eu debate again is clearly a political minefield. but we have:european union",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-30T13:20:06.343127+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Opening the EU debate again is clearly a political minefield. But we have to do it | Simon Jenkins"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "ebbc99ad-c83b-4836-b146-103e4d32be16",
+            "title": "Russian society being 'systematically crushed'",
+            "keywords": [
+                "closur",
+                "crush",
+                "gazeta",
+                "newspaper",
+                "novaya",
+                "russian",
+                "societi",
+                "systematicalli"
+            ],
+            "entity_signature": "RU:announces:closure:ru",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-30T18:44:09.218444+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russian society being 'systematically crushed' says Novaya Gazeta as newspaper announces closure"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "f686f65a-0a75-4f2c-82d4-4b79c84999cc",
+            "title": "Spain transport minister says he won't resign",
+            "keywords": [
+                "disaster",
+                "high",
+                "minister",
+                "rail",
+                "resign",
+                "spain",
+                "spe",
+                "transport",
+                "won"
+            ],
+            "entity_signature": "ES:crisis:es:spain",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-30T18:44:09.218444+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Spain transport minister says he won't resign over high-speed rail disaster"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "c081356a-6206-4453-a4a5-f85302a873e3",
+            "title": "French port strikes: Unions 'will get better",
+            "keywords": [
+                "better",
+                "condi",
+                "curb",
+                "french",
+                "get",
+                "militarisa",
+                "port",
+                "strik",
+                "union",
+                "work"
+            ],
+            "entity_signature": "FR:fr:france:french port",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-30T18:44:09.218444+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "French port strikes: Unions 'will get better working conditions', but can they curb militarisation?"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "9ae05f3f-794d-48cb-8056-b879a232f3d3",
+            "title": "Israeli election: 'Netanyahu did not win, he lost",
+            "keywords": [
+                "barak",
+                "dramaticalli",
+                "elec",
+                "former",
+                "israeli",
+                "lost",
+                "netanyahu",
+                "win"
+            ],
+            "entity_signature": "FR:IL:Benjamin:Benjamin Netanyahu:, he lost dramatically,' former pm barak says",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-30T18:44:09.218444+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Israeli election: 'Netanyahu did not win, he lost dramatically,' former PM Barak says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "d485668a-745b-4bc0-988a-6add56ba64e8",
+            "title": "ICE activity is surging ahead of midterms. So is",
+            "keywords": [
+                "activ",
+                "ahead",
+                "ice",
+                "midterm",
+                "surg",
+                "turnout",
+                "voter"
+            ],
+            "entity_signature": "advocates:ahead of midterms. so is voter turnout.:civic activists / protesters",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-30T18:44:09.218444+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "ICE activity is surging ahead of midterms. So is voter turnout."
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "fca1f20d-37db-49fb-89cd-af6a86dc4957",
+            "title": "3 Arrested in Connection With Deadly Blast in",
+            "keywords": [
+                "arrest",
+                "athen",
+                "blast",
+                "central",
+                "connec",
+                "deadli"
+            ],
+            "entity_signature": "GR:3:arrested:connection",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-30T18:44:09.218444+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "3 Arrested in Connection With Deadly Blast in Central Athens"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "dd188aaa-b499-4599-ace8-07d008ba5db2",
+            "title": "How AAIB conducts probe into air crashes",
+            "keywords": [
+                "aaib",
+                "air",
+                "conduct",
+                "crash",
+                "prob"
+            ],
+            "entity_signature": "air crashes:how aaib conducts:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-30T18:44:09.218444+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "How AAIB conducts probe into air crashes"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "b1b28a01-f4b5-42da-94bd-5e86687cea3f",
+            "title": "Flesh-eating screwworms are feasting on pets; 4",
+            "keywords": [
+                "attack",
+                "cat",
+                "dog",
+                "eat",
+                "feast",
+                "flesh",
+                "pet",
+                "screwworm"
+            ],
+            "entity_signature": "US:4 dogs and cat:attacked:syntactic_subject",
+            "category": "Tech",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Flesh-eating screwworms are feasting on pets; 4 dogs and cat attacked this week"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Ars Technica"
+            ]
+        },
+        {
+            "arc_id": "a8d2b044-b698-4165-8a65-731ae622aa39",
+            "title": "McDonald's must face lawsuit over McRib, US judge",
+            "keywords": [
+                "fac",
+                "judg",
+                "lawsuit",
+                "mcdonald",
+                "mcrib",
+                "must",
+                "rul"
+            ],
+            "entity_signature": "US:collective_faction:face:judge",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "McDonald's must face lawsuit over McRib, US judge rules"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "7a323ab0-7630-46c5-8998-28ba9145b473",
+            "title": "US FDA approves Inovio's treatment for rare",
+            "keywords": [
+                "approv",
+                "diseas",
+                "fda",
+                "inovio",
+                "rar",
+                "shar",
+                "surg",
+                "throat",
+                "treat"
+            ],
+            "entity_signature": "US:collective_faction:economy:fda",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US FDA approves Inovio's treatment for rare throat disease; shares surge"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "7f1c91b4-f334-4d0c-a12e-9d5695704413",
+            "title": "Zelenskiy says he will head to Turkey for talks",
+            "keywords": [
+                "head",
+                "talk",
+                "turkey",
+                "zelenskiy"
+            ],
+            "entity_signature": "TR:diplomacy:sovereign_stakeholder:tr",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Zelenskiy says he will head to Turkey for talks"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "b704a51b-fbff-43f9-b7cc-f5908eedd9d3",
+            "title": "Canada and EU announce new alliance open to",
+            "keywords": [
+                "allianc",
+                "announc",
+                "canada",
+                "countri",
+                "lik",
+                "mind",
+                "new",
+                "open"
+            ],
+            "entity_signature": "CA:EU:announce:ca:canada",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Canada and EU announce new alliance open to like-minded countries"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "ae95bb83-50cf-4fba-96b1-a583c4d333ce",
+            "title": "Wall Street drops to its worst day since June",
+            "keywords": [
+                "day",
+                "deepen",
+                "drop",
+                "jun",
+                "sell",
+                "sinc",
+                "street",
+                "tech",
+                "wall",
+                "worst"
+            ],
+            "entity_signature": "-off deepens:asia-pacific regional stakeholders:economics",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Wall Street drops to its worst day since June after tech sell-off deepens"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "e8dafcdc-9d8b-49c9-8b47-cc2d2b7bc0e1",
+            "title": "Russia's top independent newspaper Novaya Gazeta",
+            "keywords": [
+                "gazeta",
+                "independent",
+                "kill",
+                "kremlin",
+                "newspaper",
+                "novaya",
+                "pressur",
+                "russia",
+                "top"
+            ],
+            "entity_signature": "RU:UA:conflict:geopolitics:killed",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russia's top independent newspaper Novaya Gazeta 'killed' by Kremlin pressure"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "e95c289b-48e1-41f4-9a72-ad7c3f978caa",
+            "title": "They strangled us, says founder of Russian",
+            "keywords": [
+                "authoriti",
+                "founder",
+                "newspaper",
+                "pressur",
+                "russian",
+                "shut",
+                "strangl"
+            ],
+            "entity_signature": "RU:ru:russia:russia sovereign authorities",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "They strangled us, says founder of Russian newspaper shut under pressure from authorities"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "e65893fc-0121-47f2-a22a-9b9b2b7c4eed",
+            "title": "Swiss supreme court upholds Liberian ex-rebel",
+            "keywords": [
+                "commander",
+                "court",
+                "liberian",
+                "rebel",
+                "sentenc",
+                "suprem",
+                "swiss",
+                "uphold"
+            ],
+            "entity_signature": "CH:ch:collective_faction:commander",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Swiss supreme court upholds Liberian ex-rebel commander's 20-year sentence"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "9a68b330-fb9b-4fdd-a813-24531aca3cbb",
+            "title": "Rubio hosts G20 talks as Russia's Lavrov presence",
+            "keywords": [
+                "g20",
+                "host",
+                "lavrov",
+                "presenc",
+                "rubio",
+                "russia",
+                "spark",
+                "talk",
+                "tension"
+            ],
+            "entity_signature": "RU:US:diplomacy:g20:g20 talks as russia's lavrov presence sparks tensions",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Rubio hosts G20 talks as Russia's Lavrov presence sparks tensions"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "f3a98f41-3048-4288-8611-4391ea4d6f77",
+            "title": "EU and Canada seek deeper ties amid worsening",
+            "keywords": [
+                "amid",
+                "canada",
+                "deeper",
+                "global",
+                "seek",
+                "tie",
+                "uncertainti",
+                "worsen"
+            ],
+            "entity_signature": "CA:EU:US:Donald:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "EU and Canada seek deeper ties amid worsening global uncertainty"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "7938cc85-b7d3-4147-a7f7-c27310ac73a5",
+            "title": "Judge orders an inquiry into potential DOJ",
+            "keywords": [
+                "cas",
+                "cours",
+                "doj",
+                "golf",
+                "inquiri",
+                "judg",
+                "misconduct",
+                "order",
+                "potential",
+                "trump"
+            ],
+            "entity_signature": "Donald:Donald Trump:governance:judge:judge orders an inquiry into potential doj misconduct in trump's golf course case",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Judge orders an inquiry into potential DOJ misconduct in Trump's golf course case"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "9d0f1a55-4734-4167-b98e-919d086e132f",
+            "title": "Sam Altman says it's better for RAM to be in a",
+            "keywords": [
+                "altman",
+                "better",
+                "center",
+                "data",
+                "desk",
+                "ram",
+                "sam"
+            ],
+            "entity_signature": "Altman:Sam:leader:north america regional stakeholders:openai",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Sam Altman says it's better for RAM to be in a data center than on your desk"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "29e35bf2-2bf1-4aa3-bc43-5b10117832a0",
+            "title": "Anthropic expected to receive high 'junk' rating",
+            "keywords": [
+                "agenci",
+                "anthropic",
+                "credit",
+                "expect",
+                "follow",
+                "high",
+                "ipo",
+                "junk",
+                "rat",
+                "receiv"
+            ],
+            "entity_signature": "anthropic:anthropic expected to receive high 'junk' rating from credit agencies following ipo, ft report says:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Anthropic expected to receive high 'junk' rating from credit agencies following IPO, FT report says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "6eddc4d8-d74c-4513-b456-6f14018332ba",
+            "title": "The biggest names in AI are backing a new way to",
+            "keywords": [
+                "ai",
+                "back",
+                "biggest",
+                "nam",
+                "new",
+                "opt",
+                "scrap",
+                "way"
+            ],
+            "entity_signature": "anthropic:backing:biggest names in ai",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "The biggest names in AI are backing a new way to opt out of scraping"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "d43dc4fa-f9e2-4d62-af71-dcd35a743286",
+            "title": "Wall Street tumbles to worst day since June: 5",
+            "keywords": [
+                "amid",
+                "day",
+                "jun",
+                "key",
+                "point",
+                "sell",
+                "sinc",
+                "street",
+                "tech",
+                "tumbl"
+            ],
+            "entity_signature": "-off:5 key points amid tech:india regional stakeholders",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Wall Street tumbles to worst day since June: 5 key points amid tech sell-off"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "85fbb70e-72da-4113-8490-f7db7a684ef4",
+            "title": "Isro successfully launches NVS-03 satellite to",
+            "keywords": [
+                "access",
+                "civilian",
+                "improv",
+                "india",
+                "isro",
+                "launch",
+                "navic",
+                "naviga",
+                "nvs",
+                "satellit"
+            ],
+            "entity_signature": "IN:civilian:civilians & impacted communities:civilians & impacted communities (civilian)",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Isro successfully launches NVS-03 satellite to strengthen India's NavIC navigation system, improve civilian access"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "77997884-29a9-422a-92e2-bc4d0dbf17ba",
+            "title": "Election Commission's appeals against 16.10 lakh",
+            "keywords": [
+                "appeal",
+                "clear",
+                "commission",
+                "elec",
+                "lakh",
+                "legal",
+                "ques",
+                "rais",
+                "voter"
+            ],
+            "entity_signature": "commission:election:election commission's appeals st 16.10 lakh cleared voters",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-10-30T22:48:37.896375+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Election Commission's appeals against 16.10 lakh cleared voters raise legal questions"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
             ]
         },
         {
@@ -376,35 +1161,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "d14faad4-ec23-46d4-a9e9-a2b9fe60053d",
-            "title": "Opening the EU debate again is clearly a",
-            "keywords": [
-                "clearli",
-                "debat",
-                "jenkin",
-                "minefield",
-                "open",
-                "political",
-                "simon"
-            ],
-            "entity_signature": "EU:UK:eu:eu debate again is clearly a political minefield. but we have:european union",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-30T13:20:06.343127+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Opening the EU debate again is clearly a political minefield. But we have to do it | Simon Jenkins"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
             ]
         },
         {
@@ -566,129 +1322,6 @@
             ]
         },
         {
-            "arc_id": "ebbc99ad-c83b-4836-b146-103e4d32be16",
-            "title": "Russian society being 'systematically crushed'",
-            "keywords": [
-                "closur",
-                "crush",
-                "gazeta",
-                "newspaper",
-                "novaya",
-                "russian",
-                "societi",
-                "systematicalli"
-            ],
-            "entity_signature": "RU:announces:closure:ru",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-30T18:44:09.218444+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Russian society being 'systematically crushed' says Novaya Gazeta as newspaper announces closure"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "f686f65a-0a75-4f2c-82d4-4b79c84999cc",
-            "title": "Spain transport minister says he won't resign",
-            "keywords": [
-                "disaster",
-                "high",
-                "minister",
-                "rail",
-                "resign",
-                "spain",
-                "spe",
-                "transport",
-                "won"
-            ],
-            "entity_signature": "ES:crisis:es:spain",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-30T18:44:09.218444+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Spain transport minister says he won't resign over high-speed rail disaster"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "c081356a-6206-4453-a4a5-f85302a873e3",
-            "title": "French port strikes: Unions 'will get better",
-            "keywords": [
-                "better",
-                "condi",
-                "curb",
-                "french",
-                "get",
-                "militarisa",
-                "port",
-                "strik",
-                "union",
-                "work"
-            ],
-            "entity_signature": "FR:fr:france:french port",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-30T18:44:09.218444+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "French port strikes: Unions 'will get better working conditions', but can they curb militarisation?"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "9ae05f3f-794d-48cb-8056-b879a232f3d3",
-            "title": "Israeli election: 'Netanyahu did not win, he lost",
-            "keywords": [
-                "barak",
-                "dramaticalli",
-                "elec",
-                "former",
-                "israeli",
-                "lost",
-                "netanyahu",
-                "win"
-            ],
-            "entity_signature": "FR:IL:Benjamin:Benjamin Netanyahu:, he lost dramatically,' former pm barak says",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-30T18:44:09.218444+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Israeli election: 'Netanyahu did not win, he lost dramatically,' former PM Barak says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
             "arc_id": "53d50af7-a5f1-4154-815a-5adb90e057e3",
             "title": "How cuts under Colombia's de la Espriella",
             "keywords": [
@@ -777,35 +1410,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "d485668a-745b-4bc0-988a-6add56ba64e8",
-            "title": "ICE activity is surging ahead of midterms. So is",
-            "keywords": [
-                "activ",
-                "ahead",
-                "ice",
-                "midterm",
-                "surg",
-                "turnout",
-                "voter"
-            ],
-            "entity_signature": "advocates:ahead of midterms. so is voter turnout.:civic activists / protesters",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-30T18:44:09.218444+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "ICE activity is surging ahead of midterms. So is voter turnout."
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NPR News"
             ]
         },
         {
@@ -929,34 +1533,6 @@
             ]
         },
         {
-            "arc_id": "fca1f20d-37db-49fb-89cd-af6a86dc4957",
-            "title": "3 Arrested in Connection With Deadly Blast in",
-            "keywords": [
-                "arrest",
-                "athen",
-                "blast",
-                "central",
-                "connec",
-                "deadli"
-            ],
-            "entity_signature": "GR:3:arrested:connection",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-30T18:44:09.218444+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "3 Arrested in Connection With Deadly Blast in Central Athens"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
             "arc_id": "702e986e-6e71-4c52-8b63-920b42590055",
             "title": "Russian News Outlet That Defied Kremlin Will Shut",
             "keywords": [
@@ -1013,33 +1589,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "dd188aaa-b499-4599-ace8-07d008ba5db2",
-            "title": "How AAIB conducts probe into air crashes",
-            "keywords": [
-                "aaib",
-                "air",
-                "conduct",
-                "crash",
-                "prob"
-            ],
-            "entity_signature": "air crashes:how aaib conducts:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-30T18:44:09.218444+00:00",
-            "last_seen": "2026-10-30T18:44:09.218444+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "How AAIB conducts probe into air crashes"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
             ]
         },
         {
@@ -2522,555 +3071,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "027584bf-3424-4cec-a0b0-1461a05a5ff1",
-            "title": "Evergrande liquidators sell controlling stake in",
-            "keywords": [
-                "controll",
-                "evergrand",
-                "liquidator",
-                "million",
-                "properti",
-                "sell",
-                "servic",
-                "stak",
-                "unit"
-            ],
-            "entity_signature": "CN:US:china:cn:controlling stake",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-30T06:13:49.170191+00:00",
-            "last_seen": "2026-10-30T06:13:49.170191+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Evergrande liquidators sell controlling stake in property services unit for US$513 million"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "ba2498dd-a615-42be-88c0-86ff6899ea74",
-            "title": "'Why did it take 11 months?': apology too late",
-            "keywords": [
-                "apologi",
-                "fir",
-                "lat",
-                "survivor",
-                "tai",
-                "tak"
-            ],
-            "entity_signature": "apology too late for some tai po:asia-pacific regional stakeholders:civilians & impacted communities",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-30T06:13:49.170191+00:00",
-            "last_seen": "2026-10-30T06:13:49.170191+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'Why did it take 11 months?': apology too late for some Tai Po fire survivors"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "78284504-6257-4dbf-b573-bd19464715f5",
-            "title": "China's optical suppliers extend sell-off as",
-            "keywords": [
-                "ai",
-                "china",
-                "earn",
-                "extend",
-                "fear",
-                "growth",
-                "optical",
-                "sell",
-                "slower",
-                "supplier"
-            ],
-            "entity_signature": "CN:Donald:Donald Trump:-off as fears of slower ai growth trump upbeat earnings:china",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-30T06:13:49.170191+00:00",
-            "last_seen": "2026-10-30T06:13:49.170191+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "China's optical suppliers extend sell-off as fears of slower AI growth trump upbeat earnings"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "9c913fa8-1d85-4dc1-bf84-4c97a70a76d5",
-            "title": "Could 2026 be the year that democracy fought",
-            "keywords": [
-                "back",
-                "david",
-                "democraci",
-                "fought",
-                "reybrouck",
-                "van"
-            ],
-            "entity_signature": "BR:HU:RS:?:back",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-30T06:13:49.170191+00:00",
-            "last_seen": "2026-10-30T06:13:49.170191+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Could 2026 be the year that democracy fought back? | David Van Reybrouck"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "eff45fc8-3c85-4e84-9d47-4a97ff319215",
-            "title": "Flash floods kill five in Syria",
-            "keywords": [
-                "fiv",
-                "flash",
-                "flood",
-                "kill",
-                "syria"
-            ],
-            "entity_signature": "SY:children:civilians & impacted communities:civilians & impacted communities (children)",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-30T06:13:49.170191+00:00",
-            "last_seen": "2026-10-30T06:13:49.170191+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Flash floods kill five in Syria"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "4f86259b-7e87-421b-8a8e-addd93c7152d",
-            "title": "INDIA bloc meet LIVE: Opposition bloc preps for",
-            "keywords": [
-                "bloc",
-                "cec",
-                "gyanesh",
-                "impeach",
-                "india",
-                "kumar",
-                "meet",
-                "opposi",
-                "prep",
-                "public"
-            ],
-            "entity_signature": "IN:in:india:india bloc",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-30T06:13:49.170191+00:00",
-            "last_seen": "2026-10-30T06:13:49.170191+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "INDIA bloc meet LIVE: Opposition bloc preps for 'public impeachment' of CEC Gyanesh Kumar"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "8955a0af-7207-477f-aa05-ef95ee5b98f8",
-            "title": "Terror financing module: 10 associates of",
-            "keywords": [
-                "arrest",
-                "associat",
-                "financ",
-                "modul",
-                "terror",
-                "terrorist"
-            ],
-            "entity_signature": "10 associates of terrorists:arrested:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-30T06:13:49.170191+00:00",
-            "last_seen": "2026-10-30T06:13:49.170191+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Terror financing module: 10 associates of terrorists arrested in J&K"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "ef635dbb-fcaf-42d0-ab71-a42162def024",
-            "title": "CTI urges Congress to postpone November 1 rally",
-            "keywords": [
-                "congress",
-                "cror",
-                "cti",
-                "delhi",
-                "market",
-                "november",
-                "postpon",
-                "ralli",
-                "risk",
-                "trad"
-            ],
-            "entity_signature": "collective_faction:congress:cti",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-30T06:13:49.170191+00:00",
-            "last_seen": "2026-10-30T06:13:49.170191+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "CTI urges Congress to postpone November 1 rally, says ₹10,000-12,000 crore trade in Delhi markets at risk"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "1799c773-9960-43a7-b528-6e28399395f1",
-            "title": "External Affairs Minister Jaishankar in U.S. for",
-            "keywords": [
-                "affair",
-                "external",
-                "foreign",
-                "g20",
-                "jaishankar",
-                "meet",
-                "minister"
-            ],
-            "entity_signature": "US:external affairs minister jaishankar in u.s. for g20 foreign ministers:g20:meet",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-30T06:13:49.170191+00:00",
-            "last_seen": "2026-10-30T06:13:49.170191+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "External Affairs Minister Jaishankar in U.S. for G20 Foreign Ministers' meet"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "0dab5c92-8667-4d17-a58c-4706ca36ff33",
-            "title": "VHS tapes and computers handed to police as",
-            "keywords": [
-                "computer",
-                "hand",
-                "investigat",
-                "markl",
-                "polic",
-                "tap",
-                "thoma",
-                "vhs"
-            ],
-            "entity_signature": "asia-pacific regional stakeholders:collective_faction:handed to police",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-29T15:25:05.106967+00:00",
-            "last_seen": "2026-10-30T00:08:57.433985+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "VHS tapes and computers handed to police as Thomas Markle is investigated"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "9c1a70d8-da48-4884-8957-d1ea3ca35046",
-            "title": "Nasdaq futures fall as Alphabet's AI spending",
-            "keywords": [
-                "ai",
-                "alphabet",
-                "concern",
-                "fall",
-                "futur",
-                "nasdaq",
-                "spend",
-                "stock",
-                "tech",
-                "weigh"
-            ],
-            "entity_signature": "US:alphabet:economics:economy",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-29T15:25:05.106967+00:00",
-            "last_seen": "2026-10-30T00:08:57.433985+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Nasdaq futures fall as Alphabet's AI spending concerns weigh on tech stocks"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "024d5f1c-2e99-4ee1-bf95-ab1a546e0b03",
-            "title": "Amazon cuts 250 jobs in devices unit weeks after",
-            "keywords": [
-                "amazon",
-                "cut",
-                "devic",
-                "job",
-                "launch",
-                "new",
-                "product",
-                "unit"
-            ],
-            "entity_signature": "250 jobs:amazon:cuts",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-29T15:25:05.106967+00:00",
-            "last_seen": "2026-10-30T00:08:57.433985+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Amazon cuts 250 jobs in devices unit weeks after new product launches"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "649a3d11-3c3d-4c4e-9363-7b7f1f59080b",
-            "title": "Elke Sommer, prolific German star of A Shot in",
-            "keywords": [
-                "aged",
-                "dark",
-                "die",
-                "elk",
-                "german",
-                "non",
-                "prolific",
-                "shot",
-                "sommer",
-                "star"
-            ],
-            "entity_signature": "DE:de:elke sommer, prolific german star of a:germany",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-29T20:27:03.983393+00:00",
-            "last_seen": "2026-10-30T00:08:57.433985+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Elke Sommer, prolific German star of A Shot in the Dark and And Then There Were None, dies aged 85"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "3820e158-1089-4466-b65f-b4e0ed3526df",
-            "title": "More than 43 million ballots cast so far in",
-            "keywords": [
-                "ballot",
-                "cast",
-                "earli",
-                "far",
-                "midterm",
-                "million",
-                "surg",
-                "vot"
-            ],
-            "entity_signature": "economy:more than 43 million ballots cast so far in midterms early voting:north america regional stakeholders",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-29T20:27:03.983393+00:00",
-            "last_seen": "2026-10-30T00:08:57.433985+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "More than 43 million ballots cast so far in midterms early voting surge"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC US"
-            ]
-        },
-        {
-            "arc_id": "5810cc5a-ecf0-481a-989a-9ca4d1506bf4",
-            "title": "Delhi's Jamia University agrees to students'",
-            "keywords": [
-                "agre",
-                "delhi",
-                "demand",
-                "jamia",
-                "poll",
-                "set",
-                "student",
-                "timelin",
-                "union",
-                "univers"
-            ],
-            "entity_signature": "agrees:delhi's jamia university:governance",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-29T20:27:03.983393+00:00",
-            "last_seen": "2026-10-30T00:08:57.433985+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Delhi's Jamia University agrees to students' demands, sets timeline for union polls"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "68f545aa-d61a-453b-9689-61d0bb2fe161",
-            "title": "M.P. wildlife officials highlight Chambal",
-            "keywords": [
-                "chambal",
-                "cheetah",
-                "cultur",
-                "goe",
-                "gun",
-                "highlight",
-                "official",
-                "prob",
-                "region",
-                "shoot"
-            ],
-            "entity_signature": "cheetah shooting goes on:collective_faction:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-29T20:27:03.983393+00:00",
-            "last_seen": "2026-10-30T00:08:57.433985+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "M.P. wildlife officials highlight Chambal region's gun culture as probe into cheetah shooting goes on"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "bc7ad9e7-eb96-44c4-8012-8ed4f2b51e0f",
-            "title": "TVK functionary arrested for allegedly sexually",
-            "keywords": [
-                "alleg",
-                "arrest",
-                "colleg",
-                "functionari",
-                "harass",
-                "nadu",
-                "sexualli",
-                "student",
-                "tamil",
-                "tvk"
-            ],
-            "entity_signature": "allegedly sexually harassing college student:arrested:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-29T20:27:03.983393+00:00",
-            "last_seen": "2026-10-30T00:08:57.433985+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "TVK functionary arrested for allegedly sexually harassing college student in Tamil Nadu"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "a97ddcac-2d22-477b-a6bc-19ffb16dacd8",
-            "title": "Delhi traders urge Rahul Gandhi to postpone INDIA",
-            "keywords": [
-                "bloc",
-                "busi",
-                "delhi",
-                "diwali",
-                "fear",
-                "gandhi",
-                "india",
-                "loss",
-                "maidan",
-                "postpon"
-            ],
-            "entity_signature": "IN:congress:delhi traders:economy",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-29T20:27:03.983393+00:00",
-            "last_seen": "2026-10-30T00:08:57.433985+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Delhi traders urge Rahul Gandhi to postpone INDIA bloc's Ramlila Maidan rally over Diwali business loss fears"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
             ]
         }
     ],
