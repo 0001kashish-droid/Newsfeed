@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-31T19:27:26.316742+00:00",
+  "lastUpdated": "2026-10-31T22:44:04.122296+00:00",
   "total": 30,
   "episodes": [
     {
@@ -25,7 +25,16 @@
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "ht-business-5-238",
+          "id": "techcrunch-0-1421",
+          "title": "Apple CEO says the company doesn't 'want to ship AI for AI's sake'",
+          "source": "TechCrunch",
+          "link": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+          "url": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+          "relevance": 0.151,
+          "resonance_score": 0.151
+        },
+        {
+          "id": "ht-business-5-8903",
           "title": "Google's $500bn bloodbath reflects the danger it faces from AI",
           "source": "HT Business",
           "link": "https://www.hindustantimes.com/business/googles-500bn-bloodbath-reflects-the-danger-it-faces-from-ai-101793328273505.html",
@@ -220,7 +229,16 @@
       "category": "Science & Health",
       "resonant_news": [
         {
-          "id": "guardian-world-3-9866",
+          "id": "aljazeera-3-1839",
+          "title": "Health authorities probe two suspected Ebola cases in northeast Nigeria",
+          "source": "Al Jazeera",
+          "link": "https://www.aljazeera.com/news/2026/10/31/health-authorities-probe-two-suspected-ebola-cases-in-northeast-nigeria?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/10/31/health-authorities-probe-two-suspected-ebola-cases-in-northeast-nigeria?traffic_source=rss",
+          "relevance": 0.219,
+          "resonance_score": 0.219
+        },
+        {
+          "id": "guardian-world-3-3257",
           "title": "Africa's 'unprecedented' Ebola outbreak could reach UK, says top health official",
           "source": "The Guardian",
           "link": "https://www.theguardian.com/global-development/2026/oct/28/africa-ebola-outbreak-could-reach-uk-says-top-health-official",
@@ -246,12 +264,22 @@
       "thumbnail": "https://i.ytimg.com/vi/9FvMm01QpU8/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=9FvMm01QpU8",
       "youtube_url": "https://www.youtube.com/watch?v=9FvMm01QpU8",
-      "pubDate": "6h ago",
-      "date": "6h ago",
+      "pubDate": "9h ago",
+      "date": "9h ago",
       "duration": "7:52",
       "views": "",
       "category": "Ideas & Culture",
-      "resonant_news": []
+      "resonant_news": [
+        {
+          "id": "arstechnica-2-952",
+          "title": "Once again, NASA is asking for ideas to rescue Hubble from certain death",
+          "source": "Ars Technica",
+          "link": "https://arstechnica.com/space/2026/10/think-you-can-save-the-hubble-space-telescope-nasa-wants-to-know/",
+          "url": "https://arstechnica.com/space/2026/10/think-you-can-save-the-hubble-space-telescope-nasa-wants-to-know/",
+          "relevance": 0.22,
+          "resonance_score": 0.22
+        }
+      ]
     },
     {
       "id": "tp_7HmiGzd-7WQ",
@@ -274,17 +302,7 @@
       "duration": "7:49",
       "views": "",
       "category": "AI & Tech",
-      "resonant_news": [
-        {
-          "id": "bbc-world-4-7615",
-          "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
-          "source": "BBC News",
-          "link": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
-          "relevance": 0.218,
-          "resonance_score": 0.218
-        }
-      ]
+      "resonant_news": []
     },
     {
       "id": "tp_9AIZhBfomp4",
@@ -332,13 +350,22 @@
       "category": "Geopolitics & Policy",
       "resonant_news": [
         {
-          "id": "nyt-world-5-6701",
-          "title": "Syria Weighs Joining Saudi Mutual Defense Pact as Yemen War Rages",
+          "id": "nyt-asia-2-463",
+          "title": "Will Digging Up Vietnam's War Dead Heal Old Wounds or Reopen Them?",
           "source": "New York Times",
-          "link": "https://www.nytimes.com/2026/10/31/world/middleeast/syria-saudi-defense-pact.html",
-          "url": "https://www.nytimes.com/2026/10/31/world/middleeast/syria-saudi-defense-pact.html",
-          "relevance": 0.445,
-          "resonance_score": 0.445
+          "link": "https://www.nytimes.com/2026/10/31/world/asia/vietnam-missing-war-dead.html",
+          "url": "https://www.nytimes.com/2026/10/31/world/asia/vietnam-missing-war-dead.html",
+          "relevance": 0.215,
+          "resonance_score": 0.215
+        },
+        {
+          "id": "guardian-world-1-2188",
+          "title": "Sudanese diaspora and human rights groups denounce UAE nominee for UN top job",
+          "source": "The Guardian",
+          "link": "https://www.theguardian.com/world/2026/oct/30/sudanese-diaspora-human-rights-groups-denounce-uae-nominee-un-top-job",
+          "url": "https://www.theguardian.com/world/2026/oct/30/sudanese-diaspora-human-rights-groups-denounce-uae-nominee-un-top-job",
+          "relevance": 0.213,
+          "resonance_score": 0.213
         }
       ]
     },
@@ -365,16 +392,25 @@
       "category": "Ideas & Culture",
       "resonant_news": [
         {
-          "id": "techcrunch-5-1034",
-          "title": "Salesforce's M&A spree continues with a reported $375M deal for defense tech startup Rune",
-          "source": "TechCrunch",
-          "link": "https://techcrunch.com/2026/10/30/salesforces-ma-spree-continues-with-a-reported-375m-deal-for-defense-tech-startup-rune/",
-          "url": "https://techcrunch.com/2026/10/30/salesforces-ma-spree-continues-with-a-reported-375m-deal-for-defense-tech-startup-rune/",
-          "relevance": 0.419,
-          "resonance_score": 0.419
+          "id": "guardian-world-5-6823",
+          "title": "Canada and EU announce new alliance open to like-minded countries",
+          "source": "The Guardian",
+          "link": "https://www.theguardian.com/world/2026/oct/30/canada-european-union-alliance",
+          "url": "https://www.theguardian.com/world/2026/oct/30/canada-european-union-alliance",
+          "relevance": 0.246,
+          "resonance_score": 0.246
         },
         {
-          "id": "france24-eu-0-9425",
+          "id": "nyt-business-2-7921",
+          "title": "How Binance's $6.3 Billion Hack Went Down",
+          "source": "NYT Business",
+          "link": "https://www.nytimes.com/2026/10/31/technology/binance-hack-crypto-north-korea.html",
+          "url": "https://www.nytimes.com/2026/10/31/technology/binance-hack-crypto-north-korea.html",
+          "relevance": 0.216,
+          "resonance_score": 0.216
+        },
+        {
+          "id": "france24-eu-1-7751",
           "title": "Residents from Russian-occupied Oleshky reunite with families after evacuation operation",
           "source": "France 24",
           "link": "https://www.france24.com/en/europe/20261031-evacuees-from-russian-occupied-oleshky-arrive-in-ukraine",
@@ -423,8 +459,8 @@
       "thumbnail": "https://i.ytimg.com/vi/BFl2mZsZHoo/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=BFl2mZsZHoo",
       "youtube_url": "https://www.youtube.com/watch?v=BFl2mZsZHoo",
-      "pubDate": "22h ago",
-      "date": "22h ago",
+      "pubDate": "1d ago",
+      "date": "1d ago",
       "duration": "1:03:36",
       "views": "",
       "category": "Ideas & Culture",
@@ -446,8 +482,8 @@
       "thumbnail": "https://i.ytimg.com/vi/u8S_sdUfzx8/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=u8S_sdUfzx8",
       "youtube_url": "https://www.youtube.com/watch?v=u8S_sdUfzx8",
-      "pubDate": "22h ago",
-      "date": "22h ago",
+      "pubDate": "1d ago",
+      "date": "1d ago",
       "duration": "1:03:36",
       "views": "",
       "category": "Ideas & Culture",
@@ -492,8 +528,8 @@
       "thumbnail": "https://i.ytimg.com/vi/CE1yRFuNHLc/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=CE1yRFuNHLc",
       "youtube_url": "https://www.youtube.com/watch?v=CE1yRFuNHLc",
-      "pubDate": "4h ago",
-      "date": "4h ago",
+      "pubDate": "8h ago",
+      "date": "8h ago",
       "duration": "56:30",
       "views": "",
       "category": "Ideas & Culture",
@@ -561,8 +597,8 @@
       "thumbnail": "https://i.ytimg.com/vi/dJns_ryO-Bc/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=dJns_ryO-Bc",
       "youtube_url": "https://www.youtube.com/watch?v=dJns_ryO-Bc",
-      "pubDate": "1d ago",
-      "date": "1d ago",
+      "pubDate": "2d ago",
+      "date": "2d ago",
       "duration": "28:43",
       "views": "",
       "category": "Ideas & Culture",
@@ -584,8 +620,8 @@
       "thumbnail": "https://i.ytimg.com/vi/ZhcXfMScY3w/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=ZhcXfMScY3w",
       "youtube_url": "https://www.youtube.com/watch?v=ZhcXfMScY3w",
-      "pubDate": "1d ago",
-      "date": "1d ago",
+      "pubDate": "2d ago",
+      "date": "2d ago",
       "duration": "3:05",
       "views": "",
       "category": "Geopolitics & Policy",
@@ -610,6 +646,75 @@
       "pubDate": "3d ago",
       "date": "3d ago",
       "duration": "2:53",
+      "views": "",
+      "category": "Ideas & Culture",
+      "resonant_news": []
+    },
+    {
+      "id": "tp_9wVvkVd7hos",
+      "title": "Inside a Ukrainian city hit by Russian drones during the Starlink disruption",
+      "podcast": "PBS NewsHour",
+      "channel": "PBS NewsHour",
+      "podcastLogo": "PBS",
+      "tier": "standard",
+      "guest": "",
+      "topics": [
+        "Artificial Intelligence"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning inside a ukrainian city hit by russian drones during the starlink disruption.",
+      "imageUrl": "https://i.ytimg.com/vi/9wVvkVd7hos/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/9wVvkVd7hos/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=9wVvkVd7hos",
+      "youtube_url": "https://www.youtube.com/watch?v=9wVvkVd7hos",
+      "pubDate": "23h ago",
+      "date": "23h ago",
+      "duration": "4:51",
+      "views": "",
+      "category": "AI & Tech",
+      "resonant_news": []
+    },
+    {
+      "id": "tp_25PA9JPFS9o",
+      "title": "What Israel's election deadlock means for Netanyahu and the region",
+      "podcast": "PBS NewsHour",
+      "channel": "PBS NewsHour",
+      "podcastLogo": "PBS",
+      "tier": "standard",
+      "guest": "",
+      "topics": [
+        "Ideas & Culture"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning what israel's election deadlock means for netanyahu and the region.",
+      "imageUrl": "https://i.ytimg.com/vi/25PA9JPFS9o/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/25PA9JPFS9o/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=25PA9JPFS9o",
+      "youtube_url": "https://www.youtube.com/watch?v=25PA9JPFS9o",
+      "pubDate": "23h ago",
+      "date": "23h ago",
+      "duration": "26:47",
+      "views": "",
+      "category": "Geopolitics & Policy",
+      "resonant_news": []
+    },
+    {
+      "id": "tp_7WnwQyBG9a0",
+      "title": "Capehart and Continetti on closing messages and midterm predictions",
+      "podcast": "PBS NewsHour",
+      "channel": "PBS NewsHour",
+      "podcastLogo": "PBS",
+      "tier": "standard",
+      "guest": "",
+      "topics": [
+        "Ideas & Culture"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning capehart and continetti on closing messages and midterm predictions.",
+      "imageUrl": "https://i.ytimg.com/vi/7WnwQyBG9a0/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/7WnwQyBG9a0/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=7WnwQyBG9a0",
+      "youtube_url": "https://www.youtube.com/watch?v=7WnwQyBG9a0",
+      "pubDate": "23h ago",
+      "date": "23h ago",
+      "duration": "12:16",
       "views": "",
       "category": "Ideas & Culture",
       "resonant_news": []
@@ -662,7 +767,7 @@
     },
     {
       "id": "tp_ngbhIDvYm_k",
-      "title": "How AI Regulation Could Help the Public—and Investors Too | WSJ’s Take On the Week",
+      "title": "Ex-DOJ Lawyer: Congress Must Act to Protect Public From AI | WSJ’s Take On the Week",
       "podcast": "WSJ Podcasts",
       "channel": "WSJ Podcasts",
       "podcastLogo": "WSJ",
@@ -671,7 +776,7 @@
       "topics": [
         "Artificial Intelligence"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning how ai regulation could help the public.",
+      "theme": "Explores strategic perspectives and key developments concerning ex.",
       "imageUrl": "https://i.ytimg.com/vi/ngbhIDvYm_k/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/ngbhIDvYm_k/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=ngbhIDvYm_k",
@@ -682,122 +787,6 @@
       "views": "",
       "category": "AI & Tech",
       "resonant_news": []
-    },
-    {
-      "id": "tp_wOZaCUlha8w",
-      "title": "BYRON MAJOR",
-      "podcast": "Bloomberg Originals",
-      "channel": "Bloomberg Originals",
-      "podcastLogo": "BB",
-      "tier": "flagship",
-      "guest": "",
-      "topics": [
-        "Ideas & Culture"
-      ],
-      "theme": "Explores strategic perspectives and key developments concerning byron major.",
-      "imageUrl": "https://i.ytimg.com/vi/wOZaCUlha8w/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/wOZaCUlha8w/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=wOZaCUlha8w",
-      "youtube_url": "https://www.youtube.com/watch?v=wOZaCUlha8w",
-      "pubDate": "2y ago",
-      "date": "2y ago",
-      "duration": "15:00",
-      "views": "",
-      "category": "Ideas & Culture",
-      "resonant_news": [
-        {
-          "id": "arstechnica-2-8955",
-          "title": "Once again, NASA is asking for ideas to rescue Hubble from certain death",
-          "source": "Ars Technica",
-          "link": "https://arstechnica.com/space/2026/10/think-you-can-save-the-hubble-space-telescope-nasa-wants-to-know/",
-          "url": "https://arstechnica.com/space/2026/10/think-you-can-save-the-hubble-space-telescope-nasa-wants-to-know/",
-          "relevance": 0.221,
-          "resonance_score": 0.221
-        }
-      ]
-    },
-    {
-      "id": "tp_43aPB8-NQRs",
-      "title": "BYRON MAJOR",
-      "podcast": "Bloomberg Originals",
-      "channel": "Bloomberg Originals",
-      "podcastLogo": "BB",
-      "tier": "flagship",
-      "guest": "",
-      "topics": [
-        "Ideas & Culture"
-      ],
-      "theme": "Explores strategic perspectives and key developments concerning byron major.",
-      "imageUrl": "https://i.ytimg.com/vi/43aPB8-NQRs/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/43aPB8-NQRs/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=43aPB8-NQRs",
-      "youtube_url": "https://www.youtube.com/watch?v=43aPB8-NQRs",
-      "pubDate": "2y ago",
-      "date": "2y ago",
-      "duration": "15:00",
-      "views": "",
-      "category": "Ideas & Culture",
-      "resonant_news": []
-    },
-    {
-      "id": "tp_XliQ1SthAbs",
-      "title": "WAR WORLD THREE",
-      "podcast": "Bloomberg Originals",
-      "channel": "Bloomberg Originals",
-      "podcastLogo": "BB",
-      "tier": "flagship",
-      "guest": "",
-      "topics": [
-        "Geopolitics"
-      ],
-      "theme": "Explores strategic perspectives and key developments concerning war world three.",
-      "imageUrl": "https://i.ytimg.com/vi/XliQ1SthAbs/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/XliQ1SthAbs/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=XliQ1SthAbs",
-      "youtube_url": "https://www.youtube.com/watch?v=XliQ1SthAbs",
-      "pubDate": "2y ago",
-      "date": "2y ago",
-      "duration": "15:00",
-      "views": "",
-      "category": "Geopolitics & Policy",
-      "resonant_news": [
-        {
-          "id": "nyt-asia-1-9524",
-          "title": "Will Digging Up Vietnam's War Dead Heal Old Wounds or Reopen Them?",
-          "source": "New York Times",
-          "link": "https://www.nytimes.com/2026/10/31/world/asia/vietnam-missing-war-dead.html",
-          "url": "https://www.nytimes.com/2026/10/31/world/asia/vietnam-missing-war-dead.html",
-          "relevance": 0.419,
-          "resonance_score": 0.419
-        },
-        {
-          "id": "nyt-business-1-4036",
-          "title": "How Binance's $6.3 Billion Hack Went Down",
-          "source": "NYT Business",
-          "link": "https://www.nytimes.com/2026/10/31/technology/binance-hack-crypto-north-korea.html",
-          "url": "https://www.nytimes.com/2026/10/31/technology/binance-hack-crypto-north-korea.html",
-          "relevance": 0.439,
-          "resonance_score": 0.439
-        },
-        {
-          "id": "guardian-world-5-6977",
-          "title": "Canada and EU announce new alliance open to like-minded countries",
-          "source": "The Guardian",
-          "link": "https://www.theguardian.com/world/2026/oct/30/canada-european-union-alliance",
-          "url": "https://www.theguardian.com/world/2026/oct/30/canada-european-union-alliance",
-          "relevance": 0.417,
-          "resonance_score": 0.417
-        },
-        {
-          "id": "guardian-world-1-5050",
-          "title": "Sudanese diaspora and human rights groups denounce UAE nominee for UN top job",
-          "source": "The Guardian",
-          "link": "https://www.theguardian.com/world/2026/oct/30/sudanese-diaspora-human-rights-groups-denounce-uae-nominee-un-top-job",
-          "url": "https://www.theguardian.com/world/2026/oct/30/sudanese-diaspora-human-rights-groups-denounce-uae-nominee-un-top-job",
-          "relevance": 0.416,
-          "resonance_score": 0.416
-        }
-      ]
     }
   ]
 }
