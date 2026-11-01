@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-01T15:48:44.214211+00:00",
+    "last_updated": "2026-11-01T20:15:13.178741+00:00",
     "arcs": [
         {
             "arc_id": "3eba73ef-f588-4e70-b937-fa40b2f2de00",
@@ -20,7 +20,7 @@
                 "North America"
             ],
             "first_seen": "2026-10-31T15:05:56.589729+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
             "chapter_count": 6,
             "chapter_titles": [
                 "Rare Evacuation Announced by Melania Trump Begins in Ukrainian City of Oleshky",
@@ -62,7 +62,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-01T01:54:00.087108+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
             "chapter_count": 3,
             "chapter_titles": [
                 "India's opposition set to hold mega rally seeking election chief's resignation",
@@ -74,6 +74,108 @@
             "sources_involved": [
                 "Al Jazeera",
                 "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "2a6a26f3-2a64-4409-8845-843167c537e4",
+            "title": "Binance to resume withdrawals after $6 billion",
+            "keywords": [
+                "attempt",
+                "billion",
+                "binanc",
+                "hack",
+                "resum",
+                "withdrawal"
+            ],
+            "entity_signature": "KP:binance:fbi:judicial & investigative bodies",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-01T08:47:54.764110+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Binance to resume withdrawals after $6 billion hack attempt",
+                "Binance resumes customer withdrawals after record $6.3bn hack",
+                "Binance sees spike in withdrawals as exchange returns online after US$6.3 billion hack"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "HT Business",
+                "SCMP",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "397aff71-a99e-4ab2-9885-970861b5fbd1",
+            "title": "Israeli strikes kill eight people in Gaza",
+            "keywords": [
+                "eight",
+                "gaza",
+                "israeli",
+                "kill",
+                "medic",
+                "peopl",
+                "say",
+                "strik"
+            ],
+            "entity_signature": "IL:PS:il:impacted_community:israel",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-01T15:48:43.899672+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Israeli strikes kill eight people in Gaza - medics say",
+                "Israeli attacks on Gaza kill at least nine people",
+                "Israeli strikes in Gaza kill eight including child, hospitals say"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "Al Jazeera",
+                "BBC Middle East",
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "4594fec1-d8b1-42f8-b263-e11c69bc31f7",
+            "title": "France opens 'attempted murder' probe over petrol",
+            "keywords": [
+                "attack",
+                "attempt",
+                "bomb",
+                "forc",
+                "franc",
+                "murder",
+                "open",
+                "petrol",
+                "prob",
+                "secur"
+            ],
+            "entity_signature": "FR:attempted murder' probe:conflict:fr",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "France opens 'attempted murder' probe over petrol bomb attacks on security forces",
+                "Attempted murder probe after petrol bomb thrown at French riot police",
+                "France opens 'attempted murder' probe into petrol bomb attacks on police"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7,
+            "sources_involved": [
+                "Al Jazeera",
+                "SCMP",
+                "The Guardian"
             ]
         },
         {
@@ -97,7 +199,7 @@
                 "Global"
             ],
             "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Egypt fines prominent editor Lina Attalah and shuts independent news outlet Mada Masr",
@@ -128,7 +230,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Israel's election deadlock is a sign of the country's deep divisions",
@@ -156,7 +258,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-10-31T15:05:56.589729+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Iran's supreme leader warns US, Israel against war",
@@ -188,7 +290,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-01T08:47:54.764110+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "India's Congress Party Plans Mass Protest in New Delhi",
@@ -198,36 +300,6 @@
             "peak_velocity": 0.4,
             "sources_involved": [
                 "New York Times"
-            ]
-        },
-        {
-            "arc_id": "2a6a26f3-2a64-4409-8845-843167c537e4",
-            "title": "Binance to resume withdrawals after $6 billion",
-            "keywords": [
-                "attempt",
-                "billion",
-                "binanc",
-                "hack",
-                "resum",
-                "withdrawal"
-            ],
-            "entity_signature": "KP:binance:fbi:judicial & investigative bodies",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-01T08:47:54.764110+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Binance to resume withdrawals after $6 billion hack attempt",
-                "Binance resumes customer withdrawals after record $6.3bn hack"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "HT Business",
-                "The Guardian"
             ]
         },
         {
@@ -249,7 +321,7 @@
                 "Global"
             ],
             "first_seen": "2026-11-01T15:48:43.899672+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "University of Cambridge scientist among those who died in Spanish train crash",
@@ -263,34 +335,63 @@
             ]
         },
         {
-            "arc_id": "397aff71-a99e-4ab2-9885-970861b5fbd1",
-            "title": "Israeli strikes kill eight people in Gaza",
+            "arc_id": "f5f0e745-ff2e-48c3-936f-581e0fa7d1e4",
+            "title": "Russian strikes cut power to thousands in Ukraine",
             "keywords": [
-                "eight",
-                "gaza",
-                "israeli",
-                "kill",
-                "medic",
-                "peopl",
-                "say",
-                "strik"
+                "cut",
+                "damag",
+                "dron",
+                "facil",
+                "power",
+                "russian",
+                "strik",
+                "thousand",
+                "ukrain"
             ],
-            "entity_signature": "IL:PS:il:impacted_community:israel",
+            "entity_signature": "RU:UA:cut power:ru:russia",
             "category": "World",
             "regions": [
                 "Global"
             ],
             "first_seen": "2026-11-01T15:48:43.899672+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
             "chapter_count": 2,
             "chapter_titles": [
-                "Israeli strikes kill eight people in Gaza - medics say",
-                "Israeli attacks on Gaza kill at least nine people"
+                "Russian strikes cut power to thousands in Ukraine as drones damage Russian facility",
+                "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire to end"
             ],
             "importance_trend": "rising",
-            "peak_velocity": 0.5,
+            "peak_velocity": 0.25,
             "sources_involved": [
-                "Al Jazeera",
+                "BBC News",
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "7794e8c9-af7b-4f95-8517-d28f4dab3f24",
+            "title": "FSB says US warned Russia of possible Moscow",
+            "keywords": [
+                "attack",
+                "fsb",
+                "moscow",
+                "possibl",
+                "russia"
+            ],
+            "entity_signature": "RU:US:conflict:fsb says us:ru",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-31T19:27:25.631342+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "FSB says US warned Russia of possible Moscow attack",
+                "Russia's FSB says minor detained over park attack threat after US tip-off"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
                 "Reuters"
             ]
         },
@@ -313,7 +414,7 @@
                 "Global"
             ],
             "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Africa's 'unprecedented' Ebola outbreak could reach UK, says top health official"
@@ -342,7 +443,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-10-30T13:20:06.343127+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Human rights lawyer couple sentenced to 10 years' prison in Pakistan"
@@ -372,7 +473,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-10-30T18:44:09.218444+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Israeli election: 'Netanyahu did not win, he lost dramatically,' former PM Barak says"
@@ -381,6 +482,742 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "France 24"
+            ]
+        },
+        {
+            "arc_id": "d43dc4fa-f9e2-4d62-af71-dcd35a743286",
+            "title": "Wall Street tumbles to worst day since June: 5",
+            "keywords": [
+                "amid",
+                "day",
+                "jun",
+                "key",
+                "point",
+                "sell",
+                "sinc",
+                "street",
+                "tech",
+                "tumbl"
+            ],
+            "entity_signature": "-off:5 key points amid tech:india regional stakeholders",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-10-30T22:48:37.896375+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Wall Street tumbles to worst day since June: 5 key points amid tech sell-off"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "7f795eca-a064-47cf-b242-085c6b9e5c9d",
+            "title": "Flesh-eating screwworms spread to third state and",
+            "keywords": [
+                "attack",
+                "eat",
+                "flesh",
+                "pet",
+                "screwworm",
+                "spread",
+                "stat",
+                "third"
+            ],
+            "entity_signature": "US:attacking:flesh-eating screwworms spread to third state and:pets",
+            "category": "Tech",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-31T02:02:16.998373+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Flesh-eating screwworms spread to third state and are attacking pets"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Ars Technica"
+            ]
+        },
+        {
+            "arc_id": "56648e7d-3617-4b9b-8834-d8193e5773d0",
+            "title": "Liu Yandong, Rare Woman Among China's Political",
+            "keywords": [
+                "among",
+                "china",
+                "die",
+                "elit",
+                "liu",
+                "political",
+                "rar",
+                "woman",
+                "yandong"
+            ],
+            "entity_signature": "CN:80:china:china sovereign authorities",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-10-31T08:40:52.787494+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Liu Yandong, Rare Woman Among China's Political Elite, Dies at 80"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "42c59ffb-0f4e-4560-9131-e0d5313f44ff",
+            "title": "Apple CEO says the company doesn't 'want to ship",
+            "keywords": [
+                "ai",
+                "appl",
+                "ceo",
+                "compani",
+                "doesn",
+                "sak",
+                "ship",
+                "want"
+            ],
+            "entity_signature": "apple:apple ceo says the company doesn't 'want to ship ai for ai's sake:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-10-31T22:44:03.763198+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Apple CEO says the company doesn't 'want to ship AI for AI's sake'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "42e572f2-a2a1-4898-b6d7-50e914ff6e0f",
+            "title": "King to address slavery in Antigua as PM says he",
+            "keywords": [
+                "address",
+                "antigua",
+                "apologi",
+                "king",
+                "open",
+                "possibl",
+                "slaveri"
+            ],
+            "entity_signature": "UK:king to address slavery in antigua as pm says he:open:possible uk apology",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-01T15:48:43.899672+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "King to address slavery in Antigua as PM says he is open to possible UK apology"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "87cc0d4a-bb89-4772-9236-6003fb007fb0",
+            "title": "ACLU's Anthony Romero Says CEOs Are 'Ducking the",
+            "keywords": [
+                "aclu",
+                "anthoni",
+                "ceo",
+                "duck",
+                "hard",
+                "issu",
+                "romero"
+            ],
+            "entity_signature": "US:aclu's anthony romero says ceos are 'ducking the hard issues:sovereign_stakeholder:united states",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-01T15:48:43.899672+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "ACLU's Anthony Romero Says CEOs Are 'Ducking the Hard Issues'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "d91e825f-d697-4104-a0ce-8291a47473e3",
+            "title": "Cyril Hilsum, Who Helped Invent Flat-Panel",
+            "keywords": [
+                "cyril",
+                "died",
+                "display",
+                "flat",
+                "help",
+                "hilsum",
+                "invent",
+                "iphon",
+                "panel",
+                "tvs"
+            ],
+            "entity_signature": "101:cyril hilsum, who helped invent flat-panel displays in tvs and iphones, has:died",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-01T15:48:43.899672+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Cyril Hilsum, Who Helped Invent Flat-Panel Displays in TVs and iPhones, Has Died at 101"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "d6fe03a0-3027-4fe2-84f8-52f6ccfba8cb",
+            "title": "Sullivan vows to honour Alaska race outcome, US",
+            "keywords": [
+                "alaska",
+                "dismiss",
+                "doj",
+                "honour",
+                "judg",
+                "lawsuit",
+                "outcom",
+                "rac",
+                "sullivan"
+            ],
+            "entity_signature": "US:Donald:Donald Trump:election:honour alaska race outcome, us judge dismisses doj lawsuit",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Sullivan vows to honour Alaska race outcome, US judge dismisses DOJ lawsuit"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "09eb5373-7d74-4641-8368-3a67fb309918",
+            "title": "Bulgarian acting president Iliana Iotova wins",
+            "keywords": [
+                "act",
+                "bulgarian",
+                "elec",
+                "exit",
+                "iliana",
+                "iotova",
+                "poll",
+                "president",
+                "run",
+                "show"
+            ],
+            "entity_signature": "BG:RU:UA:bg:bulgaria",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Bulgarian acting president Iliana Iotova wins run-off election, exit polls show"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "48979a71-c5bc-4e28-a0b1-6477cbfca22f",
+            "title": "Ukraine defies Trump to resume attacks on Russian",
+            "keywords": [
+                "attack",
+                "defi",
+                "oil",
+                "refineri",
+                "resum",
+                "russian",
+                "trump",
+                "ukrain"
+            ],
+            "entity_signature": "RU:UA:US:Donald:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ukraine defies Trump to resume attacks on Russian oil refineries"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "ee07c70f-f6ce-4174-8f5b-5e672faf5d24",
+            "title": "Arsenal go top after narrow win at Liverpool",
+            "keywords": [
+                "arsenal",
+                "liverpool",
+                "narrow",
+                "top",
+                "win"
+            ],
+            "entity_signature": "arsenal go top after narrow:liverpool:middle east regional stakeholders",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Arsenal go top after narrow win at Liverpool"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "1c010f20-0a68-4d08-8786-750068d27607",
+            "title": "Binance Reports $3.64 Billion in Outflows as It",
+            "keywords": [
+                "billion",
+                "binanc",
+                "normal",
+                "outflow",
+                "resum",
+                "transac"
+            ],
+            "entity_signature": "KP:binance reports $3.64 billion in outflows as it:kp:normal transactions",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Binance Reports $3.64 Billion in Outflows as It Resumes Normal Transactions"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "865e6662-ffd5-40b6-83dd-31d9d5ef4c6f",
+            "title": "Binance resumes withdrawals following $6.3",
+            "keywords": [
+                "billion",
+                "binanc",
+                "breach",
+                "follow",
+                "resum",
+                "withdrawal"
+            ],
+            "entity_signature": "binance:north america regional stakeholders:resumes",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Binance resumes withdrawals following $6.3 billion breach"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "c0500d50-73f3-4658-997f-4852afcd7a76",
+            "title": "Judge tosses Trump's attempt to block Alaska",
+            "keywords": [
+                "alaska",
+                "attempt",
+                "block",
+                "gop",
+                "incumbent",
+                "judg",
+                "los",
+                "result",
+                "senat",
+                "toss"
+            ],
+            "entity_signature": "US:Donald:Donald Trump:alaska senate results if gop incumbent loses:block",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Judge tosses Trump's attempt to block Alaska Senate results if GOP incumbent loses"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "82b108ce-e918-4d27-9070-90eeb6ddf5c5",
+            "title": "The midterms will test the nation's political",
+            "keywords": [
+                "confidenc",
+                "direc",
+                "midterm",
+                "nation",
+                "political",
+                "test"
+            ],
+            "entity_signature": "midterms will:nation's political direction and confidence:north america regional stakeholders",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "The midterms will test the nation's political direction and confidence"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "671e055b-b90a-4471-92bf-f7e1690d32d7",
+            "title": "New York City Marathon: Sweden's Almgren and",
+            "keywords": [
+                "almgren",
+                "chepkirui",
+                "citi",
+                "kenya",
+                "marathon",
+                "new",
+                "part",
+                "sweden",
+                "tak",
+                "win"
+            ],
+            "entity_signature": "KE:SE:as 60,000 take part:ke:kenya",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "New York City Marathon: Sweden's Almgren and Kenya's Chepkirui win as 60,000 take part"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "e9ae48e0-9eb1-4a92-a118-25e90be8dde6",
+            "title": "Over 22,000 litres of 'adulterated', expired ghee",
+            "keywords": [
+                "adulterat",
+                "arrest",
+                "cror",
+                "expir",
+                "ghee",
+                "litr",
+                "rajasthan",
+                "seiz",
+                "worth"
+            ],
+            "entity_signature": "india regional stakeholders:over 22,000 litres of 'adulterated', expired ghee worth ₹1.6 crore:rajasthan",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Over 22,000 litres of 'adulterated', expired ghee worth ₹1.6 crore seized in Rajasthan; 3 arrested"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "021f49ca-3df4-4ce7-9b2d-e0c8f38e149e",
+            "title": "Cyclone Murasu LIVE update: Orange alert in six",
+            "keywords": [
+                "alert",
+                "colleg",
+                "cyclon",
+                "district",
+                "fiv",
+                "holiday",
+                "murasu",
+                "orang",
+                "school",
+                "six"
+            ],
+            "entity_signature": "announced:cyclone murasu live update: orange alert in six telangana districts, yellow alert in five; holiday:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Cyclone Murasu LIVE update: Orange alert in six Telangana districts, yellow alert in five; holiday announced for schools, colleges in T.N., A.P. districts"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "09f9b415-faf9-4267-ba6d-c9e9d68fc7ae",
+            "title": "'She is upstairs': Panchkula school boy who",
+            "keywords": [
+                "attack",
+                "bloodi",
+                "boy",
+                "classroom",
+                "father",
+                "led",
+                "old",
+                "panchkula",
+                "school",
+                "upstair"
+            ],
+            "entity_signature": "6-year-old led her father:attacked:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'She is upstairs': Panchkula school boy who attacked 6-year-old led her father to bloodied classroom"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "dd8b70d8-f45d-4380-8a75-38c4b5d3d99f",
+            "title": "Ladakh liquor traders slam Sonam Wangchuk's dry",
+            "keywords": [
+                "brand",
+                "demand",
+                "dry",
+                "ladakh",
+                "licenc",
+                "liquor",
+                "ques",
+                "rais",
+                "slam",
+                "sonam"
+            ],
+            "entity_signature": ", raise questions:demand:health",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ladakh liquor traders slam Sonam Wangchuk's dry UT demand, raise questions over licence to his wine brand"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "9520c40e-a299-4057-baa8-63d27f105224",
+            "title": "Andhra youth, who attacked schoolgirl with",
+            "keywords": [
+                "andhra",
+                "attack",
+                "chainsaw",
+                "custodi",
+                "escap",
+                "polic",
+                "schoolgirl",
+                "shot",
+                "try",
+                "youth"
+            ],
+            "entity_signature": "andhra youth:at:collective_faction",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Andhra youth, who attacked schoolgirl with chainsaw, shot at while 'trying to escape' police custody"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "310e6509-5563-478d-b7d4-0b0145a3ce65",
+            "title": "Rebel leaders of AIADMK do not take part in",
+            "keywords": [
+                "aiadmk",
+                "chair",
+                "district",
+                "leader",
+                "meet",
+                "palaniswami",
+                "part",
+                "rebel",
+                "secretari",
+                "tak"
+            ],
+            "entity_signature": "chaired:collective_faction:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Rebel leaders of AIADMK do not take part in district secretaries' meeting chaired by Palaniswami"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "ad214dc5-8085-4551-b525-c170eded55ee",
+            "title": "Panchkula school assault case: Two suspended",
+            "keywords": [
+                "assault",
+                "cas",
+                "child",
+                "panchkula",
+                "panel",
+                "report",
+                "right",
+                "school",
+                "seek",
+                "suspend"
+            ],
+            "entity_signature": "conflict:india regional stakeholders:report",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Panchkula school assault case: Two suspended, child rights panel seeks report"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "a1b7cf81-3a4d-4f25-bd4c-fcca917b0315",
+            "title": "Litigants will not be entitled to refund of court",
+            "keywords": [
+                "commence",
+                "court",
+                "disput",
+                "entitl",
+                "fee",
+                "get",
+                "high",
+                "litigant",
+                "madra",
+                "refund"
+            ],
+            "entity_signature": "court:governance:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-01T20:15:12.802613+00:00",
+            "last_seen": "2026-11-01T20:15:12.802613+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Litigants will not be entitled to refund of court fees if disputes get settled out of court after commencement of trial, rules Madras High Court"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
             ]
         },
         {
@@ -414,99 +1251,6 @@
             ]
         },
         {
-            "arc_id": "d43dc4fa-f9e2-4d62-af71-dcd35a743286",
-            "title": "Wall Street tumbles to worst day since June: 5",
-            "keywords": [
-                "amid",
-                "day",
-                "jun",
-                "key",
-                "point",
-                "sell",
-                "sinc",
-                "street",
-                "tech",
-                "tumbl"
-            ],
-            "entity_signature": "-off:5 key points amid tech:india regional stakeholders",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-30T22:48:37.896375+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Wall Street tumbles to worst day since June: 5 key points amid tech sell-off"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "7f795eca-a064-47cf-b242-085c6b9e5c9d",
-            "title": "Flesh-eating screwworms spread to third state and",
-            "keywords": [
-                "attack",
-                "eat",
-                "flesh",
-                "pet",
-                "screwworm",
-                "spread",
-                "stat",
-                "third"
-            ],
-            "entity_signature": "US:attacking:flesh-eating screwworms spread to third state and:pets",
-            "category": "Tech",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-31T02:02:16.998373+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Flesh-eating screwworms spread to third state and are attacking pets"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Ars Technica"
-            ]
-        },
-        {
-            "arc_id": "56648e7d-3617-4b9b-8834-d8193e5773d0",
-            "title": "Liu Yandong, Rare Woman Among China's Political",
-            "keywords": [
-                "among",
-                "china",
-                "die",
-                "elit",
-                "liu",
-                "political",
-                "rar",
-                "woman",
-                "yandong"
-            ],
-            "entity_signature": "CN:80:china:china sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-31T08:40:52.787494+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Liu Yandong, Rare Woman Among China's Political Elite, Dies at 80"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
             "arc_id": "a9815e31-3e03-470d-9332-2651707320b6",
             "title": "'Gen Z' demonstrations across Germany demand more",
             "keywords": [
@@ -533,36 +1277,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "France 24"
-            ]
-        },
-        {
-            "arc_id": "42c59ffb-0f4e-4560-9131-e0d5313f44ff",
-            "title": "Apple CEO says the company doesn't 'want to ship",
-            "keywords": [
-                "ai",
-                "appl",
-                "ceo",
-                "compani",
-                "doesn",
-                "sak",
-                "ship",
-                "want"
-            ],
-            "entity_signature": "apple:apple ceo says the company doesn't 'want to ship ai for ai's sake:north america regional stakeholders",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-31T22:44:03.763198+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Apple CEO says the company doesn't 'want to ship AI for AI's sake'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "TechCrunch"
             ]
         },
         {
@@ -617,66 +1331,6 @@
             "chapter_count": 1,
             "chapter_titles": [
                 "More than 300 arrests at Palestine Action support protest outside US embassy"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC News"
-            ]
-        },
-        {
-            "arc_id": "f5f0e745-ff2e-48c3-936f-581e0fa7d1e4",
-            "title": "Russian strikes cut power to thousands in Ukraine",
-            "keywords": [
-                "cut",
-                "damag",
-                "dron",
-                "facil",
-                "power",
-                "russian",
-                "strik",
-                "thousand",
-                "ukrain"
-            ],
-            "entity_signature": "RU:UA:cut power:ru:russia",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-01T15:48:43.899672+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Russian strikes cut power to thousands in Ukraine as drones damage Russian facility"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "42e572f2-a2a1-4898-b6d7-50e914ff6e0f",
-            "title": "King to address slavery in Antigua as PM says he",
-            "keywords": [
-                "address",
-                "antigua",
-                "apologi",
-                "king",
-                "open",
-                "possibl",
-                "slaveri"
-            ],
-            "entity_signature": "UK:king to address slavery in antigua as pm says he:open:possible uk apology",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-01T15:48:43.899672+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "King to address slavery in Antigua as PM says he is open to possible UK apology"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
@@ -865,35 +1519,6 @@
             ]
         },
         {
-            "arc_id": "87cc0d4a-bb89-4772-9236-6003fb007fb0",
-            "title": "ACLU's Anthony Romero Says CEOs Are 'Ducking the",
-            "keywords": [
-                "aclu",
-                "anthoni",
-                "ceo",
-                "duck",
-                "hard",
-                "issu",
-                "romero"
-            ],
-            "entity_signature": "US:aclu's anthony romero says ceos are 'ducking the hard issues:sovereign_stakeholder:united states",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-01T15:48:43.899672+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "ACLU's Anthony Romero Says CEOs Are 'Ducking the Hard Issues'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
             "arc_id": "b8d3f8bd-e39c-4b77-a8b9-c4f5732a7a93",
             "title": "It's ACA open enrollment time. Here are the",
             "keywords": [
@@ -920,38 +1545,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "NPR News"
-            ]
-        },
-        {
-            "arc_id": "d91e825f-d697-4104-a0ce-8291a47473e3",
-            "title": "Cyril Hilsum, Who Helped Invent Flat-Panel",
-            "keywords": [
-                "cyril",
-                "died",
-                "display",
-                "flat",
-                "help",
-                "hilsum",
-                "invent",
-                "iphon",
-                "panel",
-                "tvs"
-            ],
-            "entity_signature": "101:cyril hilsum, who helped invent flat-panel displays in tvs and iphones, has:died",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-01T15:48:43.899672+00:00",
-            "last_seen": "2026-11-01T15:48:43.899672+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Cyril Hilsum, Who Helped Invent Flat-Panel Displays in TVs and iPhones, Has Died at 101"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NYT Business"
             ]
         },
         {
@@ -2277,33 +2870,6 @@
             ]
         },
         {
-            "arc_id": "7794e8c9-af7b-4f95-8517-d28f4dab3f24",
-            "title": "FSB says US warned Russia of possible Moscow",
-            "keywords": [
-                "attack",
-                "fsb",
-                "moscow",
-                "possibl",
-                "russia"
-            ],
-            "entity_signature": "RU:US:conflict:fsb says us:ru",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-31T19:27:25.631342+00:00",
-            "last_seen": "2026-10-31T22:44:03.763198+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "FSB says US warned Russia of possible Moscow attack"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
             "arc_id": "ab0a77d0-032c-4da7-8f95-6e6b77e29c87",
             "title": "Europe can no longer rely on US to 'bankroll' its",
             "keywords": [
@@ -2486,555 +3052,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "51d37848-bb50-4158-9a24-7ba2b1545283",
-            "title": "Legal filing questions Trump's claims of",
-            "keywords": [
-                "california",
-                "citizen",
-                "fil",
-                "legal",
-                "non",
-                "ques",
-                "trump",
-                "vot"
-            ],
-            "entity_signature": "Donald:Donald Trump:citizen:civilians & impacted communities:civilians & impacted communities (citizen)",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-31T22:44:03.763198+00:00",
-            "last_seen": "2026-10-31T22:44:03.763198+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Legal filing questions Trump's claims of non-citizen voting in California"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "327d71f5-50f8-42d6-b152-656bbb5a49bc",
-            "title": "Health authorities probe two suspected Ebola",
-            "keywords": [
-                "authoriti",
-                "cas",
-                "ebola",
-                "health",
-                "nigeria",
-                "northeast",
-                "prob",
-                "suspect",
-                "two"
-            ],
-            "entity_signature": "NG:health authorities:justice:ng",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-31T22:44:03.763198+00:00",
-            "last_seen": "2026-10-31T22:44:03.763198+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Health authorities probe two suspected Ebola cases in northeast Nigeria"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "dfb96f1e-7a38-4360-af47-ca6ad876d84d",
-            "title": "District of Columbia and Virginia sue to block",
-            "keywords": [
-                "arch",
-                "block",
-                "columbia",
-                "district",
-                "plan",
-                "sue",
-                "triumphal",
-                "trump",
-                "virginia"
-            ],
-            "entity_signature": "Donald:Donald Trump:block trump's triumphal arch plans:district of columbia and virginia:leader",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-31T22:44:03.763198+00:00",
-            "last_seen": "2026-10-31T22:44:03.763198+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "District of Columbia and Virginia sue to block Trump's triumphal arch plans"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "10c75c3d-f922-4c3f-ac44-58fb1ba7623c",
-            "title": "Israel's allegations of Qatari election",
-            "keywords": [
-                "allega",
-                "elec",
-                "interferenc",
-                "israel",
-                "qatari",
-                "reject"
-            ],
-            "entity_signature": "IL:election:il:israel",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-31T22:44:03.763198+00:00",
-            "last_seen": "2026-10-31T22:44:03.763198+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Israel's allegations of Qatari election interference rejected"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "a47f2880-1a35-46a9-b520-25777ac7419d",
-            "title": "We did not buy peace; we established peace in",
-            "keywords": [
-                "buy",
-                "day",
-                "establish",
-                "founda",
-                "manoj",
-                "peac",
-                "sinha"
-            ],
-            "entity_signature": "buy:diplomacy:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-10-31T22:44:03.763198+00:00",
-            "last_seen": "2026-10-31T22:44:03.763198+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "We did not buy peace; we established peace in J&K: L-G Manoj Sinha on UT Foundation Day"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "27b65285-ee3d-4b45-8174-d2b39355d29f",
-            "title": "Ukraine's Zelenskyy praises US over $2.1bn",
-            "keywords": [
-                "1bn",
-                "deal",
-                "missil",
-                "patriot",
-                "prais",
-                "tak",
-                "ukrain",
-                "zelenskyi"
-            ],
-            "entity_signature": "UA:US:Volodymyr:Volodymyr Zelenskyy:conflict",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-31T08:40:52.787494+00:00",
-            "last_seen": "2026-10-31T19:27:25.631342+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Ukraine's Zelenskyy praises US over $2.1bn Patriot missile deal but warns it could take years",
-                "US approves sale of 500 Patriot missiles to Ukraine"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "d5bd3751-1de7-49da-aab3-05d91ce78e0b",
-            "title": "How the Japanese Spy Drama 'Vivant' Became The",
-            "keywords": [
-                "anger",
-                "becam",
-                "china",
-                "drama",
-                "japanes",
-                "spy",
-                "target",
-                "vivant"
-            ],
-            "entity_signature": "CN:JP:china:cn:how the japanese spy drama 'vivant' became the",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-30T13:20:06.343127+00:00",
-            "last_seen": "2026-10-31T19:27:25.631342+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "How the Japanese Spy Drama 'Vivant' Became The Target of China's Anger"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "e95c289b-48e1-41f4-9a72-ad7c3f978caa",
-            "title": "They strangled us, says founder of Russian",
-            "keywords": [
-                "authoriti",
-                "founder",
-                "newspaper",
-                "pressur",
-                "russian",
-                "shut",
-                "strangl"
-            ],
-            "entity_signature": "RU:ru:russia:russia sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-30T22:48:37.896375+00:00",
-            "last_seen": "2026-10-31T19:27:25.631342+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "They strangled us, says founder of Russian newspaper shut under pressure from authorities"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "62590778-882d-487c-b5f5-4486c233b6ee",
-            "title": "Nvidia weighs playing the cosigner for Nscale's",
-            "keywords": [
-                "ai",
-                "center",
-                "cosigner",
-                "data",
-                "nscal",
-                "nvidia",
-                "play",
-                "virginia",
-                "weigh",
-                "west"
-            ],
-            "entity_signature": "north america regional stakeholders:nvidia:playing the cosigner",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-31T02:02:16.998373+00:00",
-            "last_seen": "2026-10-31T19:27:25.631342+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Nvidia weighs playing the cosigner for Nscale's AI data center in West Virginia"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "5c18127c-b128-4135-b358-366d3561ff31",
-            "title": "Student-backed election winners demand sweeping",
-            "keywords": [
-                "back",
-                "demand",
-                "elec",
-                "resigna",
-                "serbia",
-                "student",
-                "sweep",
-                "winner"
-            ],
-            "entity_signature": "RS:backed:election:election winners demand sweeping resignations",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-10-30T13:20:06.343127+00:00",
-            "last_seen": "2026-10-31T19:27:25.631342+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Student-backed election winners demand sweeping resignations in Serbia"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "d28e885f-1196-4ccb-91af-347b8969336f",
-            "title": "Pile-ins, payouts, and pacing pressure: the",
-            "keywords": [
-                "behind",
-                "ins",
-                "investor",
-                "open",
-                "pac",
-                "payout",
-                "pil",
-                "pressur",
-                "vcs"
-            ],
-            "entity_signature": "investors behind the vcs:north america regional stakeholders:open",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-31T08:40:52.787494+00:00",
-            "last_seen": "2026-10-31T19:27:25.631342+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Pile-ins, payouts, and pacing pressure: the investors behind the VCs open up"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "e49fbe6c-58fe-4081-be31-0d7048d2d038",
-            "title": "HKT says US order 'ceased' as firm reportedly",
-            "keywords": [
-                "agre",
-                "american",
-                "ceas",
-                "exit",
-                "firm",
-                "hkt",
-                "market",
-                "order",
-                "report"
-            ],
-            "entity_signature": "US:agrees:climate:economics",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-31T15:05:56.589729+00:00",
-            "last_seen": "2026-10-31T19:27:25.631342+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "HKT says US order 'ceased' as firm reportedly agrees to exit American market"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "6cd48902-b185-434b-a283-e74c16c67e2d",
-            "title": "Why Did So Many People File Early for Social",
-            "keywords": [
-                "earli",
-                "fil",
-                "mani",
-                "peopl",
-                "secur",
-                "social"
-            ],
-            "entity_signature": "early:file:north america regional stakeholders",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-10-31T15:05:56.589729+00:00",
-            "last_seen": "2026-10-31T19:27:25.631342+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Why Did So Many People File Early for Social Security Last Year?"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "a86ef1bd-d0cc-4098-91e9-8e6e54556629",
-            "title": "Iranian envoys meet Qatari mediators as threat",
-            "keywords": [
-                "envoy",
-                "iranian",
-                "loom",
-                "mediator",
-                "meet",
-                "midterm",
-                "qatari",
-                "strik",
-                "threat"
-            ],
-            "entity_signature": "IR:US:collective_faction:diplomatic envoys:diplomatic envoys (envoys)",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-31T19:27:25.631342+00:00",
-            "last_seen": "2026-10-31T19:27:25.631342+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Iranian envoys meet Qatari mediators as threat looms of US strikes after midterms"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "1fb7a179-568b-4dc3-9e09-4b0f2a194e15",
-            "title": "Meta builds humanoid robot with Chinese startup",
-            "keywords": [
-                "build",
-                "chines",
-                "fourier",
-                "humanoid",
-                "informa",
-                "meta",
-                "robot",
-                "startup"
-            ],
-            "entity_signature": "CN:builds:china:cn",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-31T19:27:25.631342+00:00",
-            "last_seen": "2026-10-31T19:27:25.631342+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Meta builds humanoid robot with Chinese startup Fourier, The Information says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "80960cf4-73e0-4864-be2d-ccfea42abd15",
-            "title": "Quad not 'anti-China', says Rubio as first summit",
-            "keywords": [
-                "anti",
-                "china",
-                "first",
-                "quad",
-                "rubio",
-                "set",
-                "summit",
-                "talk",
-                "trump",
-                "two"
-            ],
-            "entity_signature": "CN:PH:US:Donald:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-31T19:27:25.631342+00:00",
-            "last_seen": "2026-10-31T19:27:25.631342+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Quad not 'anti-China', says Rubio as first summit in two years set before Trump-Xi talks"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "c2ead0c1-85e6-4d21-bf46-96821bcfb569",
-            "title": "Hong Kong man falls from luxury housing complex",
-            "keywords": [
-                "complex",
-                "domestic",
-                "fall",
-                "helper",
-                "hong",
-                "hous",
-                "kong",
-                "luxuri",
-                "man",
-                "strik"
-            ],
-            "entity_signature": "asia-pacific regional stakeholders:domestic helper below:health",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-31T19:27:25.631342+00:00",
-            "last_seen": "2026-10-31T19:27:25.631342+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Hong Kong man falls from luxury housing complex, striking domestic helper below"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "e13dba56-47f5-4b8a-8a00-fd2c07ebb90d",
-            "title": "Coventry win leaves Man United on brink of",
-            "keywords": [
-                "brink",
-                "coventri",
-                "leagu",
-                "leav",
-                "man",
-                "premier",
-                "relega",
-                "unit",
-                "win",
-                "zon"
-            ],
-            "entity_signature": "coventry:leaves man united:middle east regional stakeholders",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-10-31T19:27:25.631342+00:00",
-            "last_seen": "2026-10-31T19:27:25.631342+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Coventry win leaves Man United on brink of Premier League relegation zone"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
             ]
         }
     ],
