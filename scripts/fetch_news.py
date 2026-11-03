@@ -459,7 +459,10 @@ def cluster_stories(articles, threshold=0.35):
                 'source': art['source'],
                 'region': art['region'],
                 'title': art['title'],
-                'pubDate': art.get('pubDate', '')
+                'pubDate': art.get('pubDate', ''),
+                # Preserve the primary record so downstream evidence views can
+                # take a reader to the actual corroborating dispatch.
+                'link': art.get('link', '')
             })
             if art['title'] not in headline_variants:
                 headline_variants.append(art['title'])

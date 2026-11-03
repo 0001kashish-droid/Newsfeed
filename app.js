@@ -16,6 +16,7 @@ const state = {
   heroIndex: 0,
   heroPlaying: true,
   heroTimer: null,
+  heroPauseReasons: new Set(),
   progressInterval: null,
   progressValue: 0,
   userTimezone: Intl.DateTimeFormat().resolvedOptions().timeZone || 'Asia/Kolkata',
@@ -340,6 +341,7 @@ const heroDots = document.getElementById('heroDots');
 const heroPrevBtn = document.getElementById('heroPrevBtn');
 const heroNextBtn = document.getElementById('heroNextBtn');
 const heroPlayPauseBtn = document.getElementById('heroPlayPauseBtn');
+const heroSection = document.getElementById('heroSection');
 
 let canvasImages = {};
 let animProgress = 1.0;
@@ -351,6 +353,7 @@ let globePulseAngle = 0;
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   setupCanvasResize();
+  setupHeroMotionGuards();
   loadData();
   setupEventListeners();
   setupVoiceModulator();
@@ -552,6 +555,106 @@ function setDensity(mode) {
   });
 }
 
+function getScoreExplanation(article, scoreKey) {
+  const scores = article.scores || {};
+  const cluster = article.storyCluster || {};
+  const sourceCount = Number(cluster.size) || (Array.isArray(article.perspectives) ? article.perspectives.length : 0) || 1;
+  const sourceAuthority = article.meta && typeof article.meta.source_authority === 'number'
+    ? article.meta.source_authority : null;
+  const entityCount = article.entities && typeof article.entities.entity_count === 'number'
+    ? article.entities.entity_count : 0;
+  const confidence = sourceCount >= 3 && (sourceAuthority === null || sourceAuthority >= 0.65)
+    ? 'Higher confidence' : (sourceCount >= 2 ? 'Moderate confidence' : 'Early confidence');
+  const evidence = [];
+  if (article.source) evidence.push(article.source);
+  (Array.isArray(cluster.sources) ? cluster.sources : []).forEach(item => {
+    if (item && item.source && !evidence.includes(item.source)) evidence.push(item.source);
+  });
+
+  const details = {
+    signal: {
+      label: 'Signal',
+      value: typeof article.importance_score === 'number' ? `${article.importance_score.toFixed(1)} / 10` : `${((scores.composite || 0) * 10).toFixed(1)} / 10`,
+      plain: 'A ranking of editorial attention, not a statement of fact.',
+      inputs: [
+        ['Velocity', scores.velocity, '18%'], ['Rarity', scores.rarity, '12%'],
+        ['Narrative continuity', scores.narrative, '15%'], ['Source quality', scores.quality, '15%'],
+        ['Entity density', scores.density, '10%'], ['Bridge value', scores.bridge, '10%'],
+        ['Timeliness', scores.temporal, '20%']
+      ].filter(([, value]) => typeof value === 'number'),
+      uncertainty: `${confidence}. This ranking changes as new reporting arrives; it is not a truth or impact guarantee.`
+    },
+    rarity: {
+      label: 'Rarity',
+      value: `${Math.round((scores.rarity || 0) * 100)}%`,
+      plain: 'How unusual the title language is compared with the current feed.',
+      inputs: [
+        ['Distinctive title terms', scores.rarity, 'feed-relative'],
+        ['Named entities', entityCount / 10, `${entityCount} detected`],
+        ['Exclusive reporting', article.meta && article.meta.is_exclusive ? 1 : 0, article.meta && article.meta.is_exclusive ? 'yes' : 'no']
+      ],
+      uncertainty: 'This is relative to today’s feed, not a universal measure of how rare the event is.'
+    },
+    velocity: {
+      label: 'Velocity',
+      value: typeof scores.velocity === 'number' ? scores.velocity.toFixed(2) : 'Unscored',
+      plain: 'How quickly this story is spreading between reporting sources.',
+      inputs: [
+        ['Reporting cluster', Math.min(sourceCount / 5, 1), `${sourceCount} source${sourceCount === 1 ? '' : 's'}`],
+        ['Cross-regional coverage', cluster.crossRegional ? 1 : 0, cluster.crossRegional ? 'yes (+0.10)' : 'no'],
+        ['Freshness bonus', 0, 'up to +0.10 in the first 3 hours']
+      ],
+      uncertainty: 'Velocity measures coverage movement, not accuracy. A fast-moving story can still be incomplete.'
+    }
+  };
+  return { ...details[scoreKey], evidence };
+}
+
+window.closeScoreExplanation = function() {
+  const panel = document.getElementById('scoreExplainPopover');
+  if (panel) panel.remove();
+};
+
+window.showScoreExplanation = function(articleId, scoreKey, trigger) {
+  const article = state.articles.find(item => item.id === articleId);
+  if (!article || !['signal', 'rarity', 'velocity'].includes(scoreKey)) return;
+  const explanation = getScoreExplanation(article, scoreKey);
+  const inputRows = explanation.inputs.map(([label, value, detail]) => {
+    const pct = Math.max(0, Math.min(100, Math.round((Number(value) || 0) * 100)));
+    return `<li><span>${escapeHtml(label)}</span><span class="score-input-meter"><i style="width:${pct}%"></i></span><b>${escapeHtml(detail)}</b></li>`;
+  }).join('');
+  const evidenceLinks = [
+    article.link ? `<a href="${escapeHtml(article.link)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${escapeHtml(article.source || 'Primary report')} ↗</a>` : '',
+    ...(article.relatedSources || []).slice(0, 3).map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${escapeHtml(source.name)} ↗</a>`)
+  ].filter(Boolean).join('');
+
+  window.closeScoreExplanation();
+  const panel = document.createElement('section');
+  panel.id = 'scoreExplainPopover';
+  panel.className = 'score-explain-popover';
+  panel.setAttribute('role', 'dialog');
+  panel.setAttribute('aria-label', `${explanation.label} score explanation`);
+  panel.innerHTML = `
+    <div class="score-explain-card">
+      <button class="score-explain-close" type="button" onclick="closeScoreExplanation()" aria-label="Close score explanation">×</button>
+      <span class="score-explain-kicker">WHY THIS SCORE</span>
+      <div class="score-explain-heading"><h3>${escapeHtml(explanation.label)}</h3><strong>${escapeHtml(explanation.value)}</strong></div>
+      <p>${escapeHtml(explanation.plain)}</p>
+      <h4>Inputs</h4><ul class="score-input-list">${inputRows}</ul>
+      <div class="score-explain-uncertainty"><b>Uncertainty</b><span>${escapeHtml(explanation.uncertainty)}</span></div>
+      <div class="score-explain-evidence"><b>Evidence</b><span>${sourceCountLabel(article, explanation.evidence)}</span><div>${evidenceLinks || '<em>No linked reporting is available for this dispatch.</em>'}</div></div>
+    </div>`;
+  panel.addEventListener('click', event => { if (event.target === panel) window.closeScoreExplanation(); });
+  document.body.appendChild(panel);
+  const closeButton = panel.querySelector('.score-explain-close');
+  if (closeButton) closeButton.focus();
+};
+
+function sourceCountLabel(article, evidence) {
+  const count = (article.storyCluster && article.storyCluster.size) || evidence.length || 1;
+  return `${count} reporting source${count === 1 ? '' : 's'} considered`;
+}
+
 function renderDeepDivePanelContent(art) {
   if (!art) return '';
   let html = '';
@@ -601,11 +704,13 @@ function renderDeepDivePanelContent(art) {
   const vel = (art.scores && typeof art.scores.velocity === 'number') ? art.scores.velocity.toFixed(2) : null;
   const rarity = (art.scores && typeof art.scores.rarity === 'number') ? `${Math.round(art.scores.rarity * 100)}%` : null;
   const region = art.region || null;
+  const geography = art.geography || {};
+  const scoreId = escapeJs(art.id || '');
 
   let matrixPills = '';
-  if (score !== null) matrixPills += `<span class="matrix-pill" title="Algorithmic Importance Score">✦ Signal: ${score}/10</span>`;
-  if (vel !== null) matrixPills += `<span class="matrix-pill" title="Coverage Velocity Index">⚡ Velocity: ${vel}</span>`;
-  if (rarity !== null) matrixPills += `<span class="matrix-pill" title="Information Rarity">💎 Rarity: ${rarity}</span>`;
+  if (score !== null) matrixPills += `<button type="button" class="matrix-pill score-explain-trigger" onclick="event.stopPropagation(); showScoreExplanation('${scoreId}', 'signal', this)" title="Explain Signal score">✦ Signal: ${score}/10 <small>Why?</small></button>`;
+  if (vel !== null) matrixPills += `<button type="button" class="matrix-pill score-explain-trigger" onclick="event.stopPropagation(); showScoreExplanation('${scoreId}', 'velocity', this)" title="Explain Velocity score">⚡ Velocity: ${vel} <small>Why?</small></button>`;
+  if (rarity !== null) matrixPills += `<button type="button" class="matrix-pill score-explain-trigger" onclick="event.stopPropagation(); showScoreExplanation('${scoreId}', 'rarity', this)" title="Explain Rarity score">💎 Rarity: ${rarity} <small>Why?</small></button>`;
   if (region) matrixPills += `<span class="matrix-pill" title="Geographic Focus">🌍 ${escapeHtml(region)}</span>`;
 
   if (matrixPills) {
@@ -614,6 +719,16 @@ function renderDeepDivePanelContent(art) {
         ${matrixPills}
       </div>
     `;
+  }
+
+  const geographyRows = [
+    geography.event_regions && geography.event_regions.length ? ['Event', geography.event_regions.join(' · ')] : null,
+    geography.actors && geography.actors.length ? ['Actors', geography.actors.join(' · ')] : null,
+    geography.affected_regions && geography.affected_regions.length ? ['Affected', geography.affected_regions.join(' · ')] : null,
+    geography.strategic_theatre ? ['Theatre', geography.strategic_theatre] : null
+  ].filter(Boolean);
+  if (geographyRows.length) {
+    html += `<div class="story-geography" aria-label="Story geography">${geographyRows.map(([label, value]) => `<span class="story-geography-pill"><b>${escapeHtml(label)}</b> ${escapeHtml(value)}</span>`).join('')}</div>`;
   }
 
   // 3. Resonance & Arc Pills
@@ -669,6 +784,55 @@ const REGION_ORIGIN_MAP = {
   'Global':        { primary: '#00f2fe', glow: 'rgba(0, 242, 254, 0.35)',  emoji: '🌐' }
 };
 
+// Story geography is intentionally distinct from a publisher's feed section.
+// Cached news from older runs is enriched here; fresh runs receive the same
+// schema from scripts/intelligence/geography.py.
+const STORY_COUNTRY_REGIONS = {
+  US: 'North America', CA: 'North America', MX: 'North America',
+  UK: 'Europe', DE: 'Europe', FR: 'Europe', IT: 'Europe', ES: 'Europe', PL: 'Europe', NL: 'Europe', SE: 'Europe', CH: 'Europe', AT: 'Europe', GR: 'Europe', PT: 'Europe', IE: 'Europe', BE: 'Europe', DK: 'Europe', FI: 'Europe', NO: 'Europe', CZ: 'Europe', HU: 'Europe', RO: 'Europe', BG: 'Europe', RS: 'Europe', HR: 'Europe', UA: 'Europe', EU: 'Europe', RU: 'Europe',
+  CN: 'Asia-Pacific', JP: 'Asia-Pacific', KR: 'Asia-Pacific', KP: 'Asia-Pacific', TW: 'Asia-Pacific', AU: 'Asia-Pacific', NZ: 'Asia-Pacific', ID: 'Asia-Pacific', MM: 'Asia-Pacific', VN: 'Asia-Pacific', TH: 'Asia-Pacific', PH: 'Asia-Pacific', MY: 'Asia-Pacific', SG: 'Asia-Pacific', ASEAN: 'Asia-Pacific',
+  IN: 'India', IR: 'Middle East', IL: 'Middle East', PS: 'Middle East', SA: 'Middle East', TR: 'Middle East', EG: 'Middle East', SY: 'Middle East', LB: 'Middle East', AF: 'Middle East', PK: 'Middle East'
+};
+
+function inferStrategicTheatre(countryCodes, eventRegions) {
+  const codes = new Set(countryCodes);
+  if ([...codes].some(code => ['RU', 'UA', 'PL', 'FI', 'SE', 'RS', 'HU'].includes(code)) && eventRegions.includes('Europe')) return 'European Security';
+  if ([...codes].some(code => ['CN', 'TW', 'JP', 'KR', 'KP', 'PH', 'AU'].includes(code)) && [...codes].some(code => ['US', 'CN', 'TW', 'JP', 'KR', 'KP', 'PH', 'AU'].includes(code))) return 'Indo-Pacific';
+  if ([...codes].some(code => ['IR', 'IL', 'PS', 'SA', 'SY', 'LB', 'AF'].includes(code))) return 'Middle East';
+  if (codes.has('IN') && [...codes].some(code => ['PK', 'BD', 'CN', 'AF'].includes(code))) return 'South Asia';
+  return eventRegions[0] || 'Global';
+}
+
+function hydrateStoryGeography(article) {
+  if (!article || typeof article !== 'object') return article;
+  const sourceRegion = article.source_region || article.region || 'Global';
+  const entities = article.entities || {};
+  const codes = (entities.countries || []).map(country => typeof country === 'string' ? country : country && country.code).filter(Boolean);
+  const eventRegions = [...new Set(codes.map(code => STORY_COUNTRY_REGIONS[code]).filter(Boolean))];
+  const actors = article.primary_actors || entities.primary_actors || {};
+  const actorLabels = [actors.active_agent, ...(actors.leaders || []), ...(actors.sovereign_stakeholders || [])]
+    .filter(value => typeof value === 'string' && value)
+    .filter((value, index, values) => values.indexOf(value) === index)
+    .slice(0, 4);
+  const existing = article.geography || {};
+  article.source_region = existing.source_region || sourceRegion;
+  article.geography = {
+    event_regions: existing.event_regions || eventRegions,
+    actors: existing.actors || actorLabels,
+    affected_regions: existing.affected_regions || eventRegions,
+    strategic_theatre: existing.strategic_theatre || inferStrategicTheatre(codes, eventRegions),
+    source_region: article.source_region,
+    confidence: existing.confidence || (eventRegions.length ? 'entity-derived' : 'source-context')
+  };
+  article.region = article.geography.event_regions[0] || article.source_region;
+  return article;
+}
+
+function geographySummary(article) {
+  const geography = article && article.geography;
+  return geography && geography.strategic_theatre ? geography.strategic_theatre : (article && article.region) || 'Global';
+}
+
 /**
  * Resolves a publisher and optional explicit region to one of the 6 canonical geopolitical origins.
  * @param {string} sourceName - Publisher name
@@ -698,7 +862,7 @@ function extractSpectrumItems(art) {
       const src = p.source || '';
       if (!seenSources.has(src.toLowerCase())) {
         seenSources.add(src.toLowerCase());
-        const region = getPublisherOrigin(p.source, p.region);
+        const region = getPublisherOrigin(p.source, p.source_region || p.region);
         items.push({
           source: p.source,
           sourceLogo: p.sourceLogo || (p.source ? p.source.slice(0, 3).toUpperCase() : 'SRC'),
@@ -716,7 +880,7 @@ function extractSpectrumItems(art) {
       const src = s.source || '';
       if (!seenSources.has(src.toLowerCase())) {
         seenSources.add(src.toLowerCase());
-        const region = getPublisherOrigin(s.source, s.region);
+        const region = getPublisherOrigin(s.source, s.source_region || s.region);
         items.push({
           source: s.source,
           sourceLogo: (s.source || '').slice(0, 3).toUpperCase() || 'SRC',
@@ -734,7 +898,7 @@ function extractSpectrumItems(art) {
     items.unshift({
       source: art.source,
       sourceLogo: art.sourceLogo || art.source.slice(0, 3).toUpperCase(),
-      region: getPublisherOrigin(art.source, art.region),
+      region: getPublisherOrigin(art.source, art.source_region || art.region),
       title: art.title,
       annotation: art.annotation || null,
       isPrimary: true
@@ -745,7 +909,7 @@ function extractSpectrumItems(art) {
     items.push({
       source: art.source,
       sourceLogo: art.sourceLogo || 'SRC',
-      region: getPublisherOrigin(art.source, art.region),
+      region: getPublisherOrigin(art.source, art.source_region || art.region),
       title: art.title,
       annotation: art.annotation || null,
       isPrimary: true
@@ -761,6 +925,110 @@ function hasPerspectivePrism(art) {
   if (art.storyCluster && ((art.storyCluster.sources && art.storyCluster.sources.length >= 1) || (typeof art.storyCluster.size === 'number' && art.storyCluster.size >= 1))) return true;
   if (art.meta && (art.meta.is_contrarian || art.meta.is_exclusive || (art.meta.sentiment_divergence && art.meta.sentiment_divergence > 0.4))) return true;
   return false;
+}
+
+function renderStructuredEvidenceLedger(ledger, compact = false) {
+  const claim = ledger && Array.isArray(ledger.claims) ? ledger.claims[0] : null;
+  if (!claim) return '';
+  const evidence = Array.isArray(claim.evidence) ? claim.evidence : [];
+  const corroboration = (claim.corroboration && Array.isArray(claim.corroboration.independent_sources))
+    ? claim.corroboration.independent_sources : [];
+  const confidence = claim.confidence || {};
+  const evidenceLinks = evidence.map(item => item.url
+    ? `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${escapeHtml(item.source || 'Publisher report')} ↗</a>`
+    : escapeHtml(item.source || 'Publisher report')).join('');
+  const corroborated = corroboration.length
+    ? `${corroboration.length} independent publisher${corroboration.length === 1 ? '' : 's'} describe the same event. ${claim.corroboration.method || ''}`
+    : 'No independent, matching publisher headline is attached to this claim.';
+  const corroborationLinks = corroboration.filter(item => item.url).map(item =>
+    `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${escapeHtml(item.source)} ↗</a>`
+  ).join('');
+  const disputed = claim.disputed && claim.disputed.present
+    ? `${claim.disputed.note || 'Conflicting signal detected.'} ${(claim.disputed.signals || []).map(item => `${item.source}: ${item.signal}`).join('; ')}`.trim()
+    : ((claim.disputed && claim.disputed.note) || 'No contradiction signal was detected in the available cluster metadata.');
+  const unknown = Array.isArray(claim.unknown) && claim.unknown.length
+    ? claim.unknown.join(' ')
+    : 'No additional uncertainty note is available.';
+  const entries = [
+    ['reported', 'Directly reported', claim.statement || 'No publisher statement available.', evidenceLinks],
+    ['corroborated', 'Independently corroborated', corroborated, corroborationLinks],
+    ['inferred', 'Inferred', claim.inference || 'No inference is asserted by this evidence record.', ''],
+    ['disputed', 'Disputed', disputed, ''],
+    ['unknown', 'Still unknown', unknown, '']
+  ];
+  const confidenceLabel = confidence.label ? `${confidence.label} coverage · ${Math.round((confidence.score || 0) * 100)}%` : 'Source-grounded';
+  return `
+    <section class="evidence-ledger${compact ? ' compact' : ''}" aria-label="Evidence ledger">
+      <div class="evidence-ledger-heading">
+        <div><span>◈ EVIDENCE LEDGER</span><h5>Claim-level provenance and uncertainty</h5></div>
+        <em>${escapeHtml(confidenceLabel)}</em>
+      </div>
+      <div class="evidence-ledger-list">
+        ${entries.map(([kind, label, detail, links]) => `
+          <div class="ledger-entry ${kind}">
+            <span class="ledger-status">${escapeHtml(label)}</span>
+            <p>${escapeHtml(detail)}</p>
+            ${links ? `<div class="ledger-links">${links}</div>` : ''}
+          </div>`).join('')}
+      </div>
+    </section>`;
+}
+
+function renderEvidenceLedger(art, spectrumItems, compact = false) {
+  const structuredLedger = renderStructuredEvidenceLedger(art.evidence_ledger, compact);
+  if (structuredLedger) return structuredLedger;
+  const clusterSources = (Array.isArray(art.storyCluster && art.storyCluster.sources) ? art.storyCluster.sources : [])
+    .map(item => item && item.source)
+    .filter(Boolean);
+  const independentSources = [...new Set(clusterSources.filter(source => source.toLowerCase() !== (art.source || '').toLowerCase()))];
+  const sourceNames = independentSources.slice(0, 4).join(', ');
+  const directClaim = art.title || (art.annotation && art.annotation.what) || 'No publisher headline available';
+  const inferredContext = art.annotation && art.annotation.why && art.annotation.why.trim();
+  const meta = art.meta || {};
+  const disputed = meta.cluster_contested
+    ? 'The clustered reporting is marked contested. Review the source headlines before treating its details as settled.'
+    : (meta.is_contrarian
+      ? 'This story is marked as a contrarian framing signal. That flags a difference in framing, not proof that the reported facts are false.'
+      : (typeof meta.sentiment_divergence === 'number' && meta.sentiment_divergence > 0.4
+        ? `${Math.round(meta.sentiment_divergence * 100)}% framing divergence was detected across available reporting.`
+        : 'No factual dispute is recorded in the available story metadata.'));
+  const unknown = independentSources.length > 0
+    ? 'Claim-by-claim agreement is not measured. Open the cited reports to verify wording, evidence, and omissions.'
+    : 'No independently grouped reporting is available yet; this remains a single-source dispatch.';
+  const primaryLink = art.link
+    ? `<a href="${escapeHtml(art.link)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${escapeHtml(art.source || 'Primary report')} ↗</a>`
+    : escapeHtml(art.source || 'Primary source unavailable');
+  const corroborationLinks = (art.relatedSources || [])
+    .filter(source => source && independentSources.some(name => name.toLowerCase() === String(source.name || '').toLowerCase()))
+    .slice(0, compact ? 2 : 4).map(source =>
+    `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${escapeHtml(source.name)} ↗</a>`
+  ).join('');
+  const entries = [
+    ['reported', 'Directly reported', directClaim, primaryLink],
+    ['corroborated', 'Independently corroborated', independentSources.length
+      ? `${independentSources.length} other source${independentSources.length === 1 ? '' : 's'} appears in the same story cluster: ${sourceNames}. Cluster membership indicates topical overlap, not agreement on every detail.`
+      : 'No independent corroboration is currently attached to this dispatch.', corroborationLinks],
+    ['inferred', 'Inferred', inferredContext
+      ? `Analysis layer: ${inferredContext}`
+      : 'No analytical inference is stored for this story.', ''],
+    ['disputed', 'Disputed', disputed, ''],
+    ['unknown', 'Still unknown', unknown, '']
+  ];
+  return `
+    <section class="evidence-ledger${compact ? ' compact' : ''}" aria-label="Evidence ledger">
+      <div class="evidence-ledger-heading">
+        <div><span>◈ EVIDENCE LEDGER</span><h5>What the available reporting can—and cannot—support</h5></div>
+        <em>Source-grounded</em>
+      </div>
+      <div class="evidence-ledger-list">
+        ${entries.map(([kind, label, detail, links]) => `
+          <div class="ledger-entry ${kind}">
+            <span class="ledger-status">${escapeHtml(label)}</span>
+            <p>${escapeHtml(detail)}</p>
+            ${links ? `<div class="ledger-links">${links}</div>` : ''}
+          </div>`).join('')}
+      </div>
+    </section>`;
 }
 
 /**
@@ -843,6 +1111,7 @@ function renderPerspectivePrism(art) {
       </div>
     `;
   }).join('');
+  const evidenceLedgerHTML = renderEvidenceLedger(art, spectrumItems);
 
   return `
     <div class="perspective-prism-container">
@@ -869,6 +1138,7 @@ function renderPerspectivePrism(art) {
       <div class="prism-pillars-grid">
         ${cardsHTML}
       </div>
+      ${evidenceLedgerHTML}
     </div>
   `;
 }
@@ -911,6 +1181,7 @@ function renderCardPrismDrawerContent(art) {
       </div>
     `;
   }).join('');
+  const evidenceLedgerHTML = renderEvidenceLedger(art, spectrumItems, true);
 
   return `
     <div class="drawer-prism-body">
@@ -921,6 +1192,7 @@ function renderCardPrismDrawerContent(art) {
       <div class="prism-spectrum-bar mini">${barSegmentsHTML}</div>
       <div class="drawer-chips-row">${chipsHTML}</div>
       <div class="drawer-viewpoints-list">${viewpointsList}</div>
+      ${evidenceLedgerHTML}
       <button class="drawer-full-prism-btn" onclick="event.stopPropagation(); openModal('${escapeJs(art.id)}');">
         Open Deep Perspective Spectrum ↗
       </button>
@@ -1633,6 +1905,39 @@ function buildKnowledgeGraph(articles) {
   return { nodes, edges, nodeMap };
 }
 
+// The overview intentionally shows a handful of story theatres, not every
+// person and organisation at once. Selecting a theatre reveals its entities.
+function buildConstellationOverview(articles) {
+  const pool = (articles && articles.length > 0) ? articles : (state.articles || []);
+  const groups = new Map();
+  pool.forEach(article => {
+    const geography = article.geography || {};
+    const theatre = geography.strategic_theatre || article.region || 'Global Signals';
+    if (!groups.has(theatre)) groups.set(theatre, []);
+    groups.get(theatre).push(article);
+  });
+
+  const sortedGroups = [...groups.entries()].sort((a, b) => b[1].length - a[1].length);
+  const visibleGroups = sortedGroups.slice(0, 7);
+  const overflow = sortedGroups.slice(7).flatMap(([, stories]) => stories);
+  if (overflow.length) visibleGroups.push(['Other Signals', overflow]);
+
+  const colors = ['#00f2fe', '#0284c7', '#a855f7', '#10b981', '#f59e0b', '#f43f5e', '#38bdf8', '#c084fc'];
+  const nodes = visibleGroups.map(([label, stories], index) => ({
+    id: `overview:${label}`,
+    type: 'cluster',
+    label,
+    color: colors[index % colors.length],
+    articles: stories.map(article => article.id),
+    connections: 0,
+    radius: Math.min(42, 20 + Math.sqrt(stories.length) * 4),
+    x: 0, y: 0, vx: 0, vy: 0,
+    overview: true
+  }));
+  const nodeMap = new Map(nodes.map(node => [node.id, node]));
+  return { nodes, edges: [], nodeMap, mode: 'overview' };
+}
+
 /**
  * Pure HTML5 Canvas 2D Force-Directed Simulation Engine
  * Euler numerical integration with Coulomb repulsion, Hooke spring attraction,
@@ -1645,12 +1950,13 @@ class ConstellationSimulation {
     this.nodes = graphData.nodes;
     this.edges = graphData.edges;
     this.nodeMap = graphData.nodeMap;
+    this.mode = graphData.mode || 'detail';
 
     // Simulation physics parameters
-    this.kRep = 950;
+    this.kRep = this.mode === 'overview' ? 0 : 950;
     this.kSpring = 0.035;
     this.springLength = 85;
-    this.kGravity = 0.012;
+    this.kGravity = this.mode === 'overview' ? 0 : 0.012;
     this.damping = 0.86;
     this.alpha = 1.0;
     this.minAlpha = 0.005;
@@ -1680,21 +1986,23 @@ class ConstellationSimulation {
 
   initLayout() {
     const count = this.nodes.length;
-    const radius = Math.min(this.canvas.width, this.canvas.height) * 0.35;
+    const canvasWidth = this.canvas.clientWidth || this.canvas.width;
+    const canvasHeight = this.canvas.clientHeight || this.canvas.height;
+    const radius = Math.min(canvasWidth, canvasHeight) * (this.mode === 'overview' ? 0.28 : 0.35);
     this.nodes.forEach((node, i) => {
       const angle = (i / count) * Math.PI * 2;
-      const r = radius * (0.4 + 0.6 * Math.random());
+      const r = this.mode === 'overview' ? radius : radius * (0.4 + 0.6 * Math.random());
       node.x = Math.cos(angle) * r;
       node.y = Math.sin(angle) * r;
-      node.vx = (Math.random() - 0.5) * 2;
-      node.vy = (Math.random() - 0.5) * 2;
+      node.vx = this.mode === 'overview' ? 0 : (Math.random() - 0.5) * 2;
+      node.vy = this.mode === 'overview' ? 0 : (Math.random() - 0.5) * 2;
     });
-    this.alpha = 1.0;
+    this.alpha = this.mode === 'overview' ? 0 : 1.0;
   }
 
   toScreen(wx, wy) {
-    const cx = this.canvas.width / 2;
-    const cy = this.canvas.height / 2;
+    const cx = (this.canvas.clientWidth || this.canvas.width) / 2;
+    const cy = (this.canvas.clientHeight || this.canvas.height) / 2;
     return {
       x: cx + (wx + this.camera.x) * this.camera.zoom,
       y: cy + (wy + this.camera.y) * this.camera.zoom
@@ -1702,8 +2010,8 @@ class ConstellationSimulation {
   }
 
   toWorld(sx, sy) {
-    const cx = this.canvas.width / 2;
-    const cy = this.canvas.height / 2;
+    const cx = (this.canvas.clientWidth || this.canvas.width) / 2;
+    const cy = (this.canvas.clientHeight || this.canvas.height) / 2;
     return {
       x: (sx - cx) / this.camera.zoom - this.camera.x,
       y: (sy - cy) / this.camera.zoom - this.camera.y
@@ -1786,8 +2094,8 @@ class ConstellationSimulation {
 
   draw() {
     const ctx = this.ctx;
-    const w = this.canvas.width;
-    const h = this.canvas.height;
+    const w = this.canvas.clientWidth || this.canvas.width;
+    const h = this.canvas.clientHeight || this.canvas.height;
     this.pulseAngle += 0.04;
 
     ctx.clearRect(0, 0, w, h);
@@ -1897,15 +2205,16 @@ class ConstellationSimulation {
       ctx.textAlign = 'center';
       ctx.textBaseline = 'top';
 
-      const label = u.label;
-      const textY = u.y + u.radius + 5;
-
-      ctx.lineWidth = 3;
-      ctx.strokeStyle = isLight ? 'rgba(255, 255, 255, 0.95)' : 'rgba(2, 6, 23, 0.95)';
-      ctx.strokeText(label, u.x, textY);
-
-      ctx.fillStyle = isLight ? '#0f172a' : '#f8fafc';
-      ctx.fillText(label, u.x, textY);
+      const shouldDrawLabel = this.mode === 'overview' || this.camera.zoom >= 1.1 || isSelected || isHovered;
+      if (shouldDrawLabel) {
+        const label = u.label;
+        const textY = u.y + u.radius + 5;
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = isLight ? 'rgba(255, 255, 255, 0.95)' : 'rgba(2, 6, 23, 0.95)';
+        ctx.strokeText(label, u.x, textY);
+        ctx.fillStyle = isLight ? '#0f172a' : '#f8fafc';
+        ctx.fillText(label, u.x, textY);
+      }
 
       ctx.restore();
     }
@@ -1948,8 +2257,10 @@ class ConstellationSimulation {
     const graphW = Math.max(100, maxX - minX);
     const graphH = Math.max(100, maxY - minY);
     const margin = 80;
-    const scaleX = (this.canvas.width - margin * 2) / graphW;
-    const scaleY = (this.canvas.height - margin * 2) / graphH;
+    const canvasWidth = this.canvas.clientWidth || this.canvas.width;
+    const canvasHeight = this.canvas.clientHeight || this.canvas.height;
+    const scaleX = (canvasWidth - margin * 2) / graphW;
+    const scaleY = (canvasHeight - margin * 2) / graphH;
 
     this.camera.zoom = Math.max(0.4, Math.min(1.6, Math.min(scaleX, scaleY)));
     this.camera.x = -((minX + maxX) / 2);
@@ -2070,14 +2381,19 @@ class ConstellationSimulation {
       badge.style.color = node.color;
     }
     if (title) title.textContent = node.label;
-    if (stats) stats.textContent = `${node.articles.length} Connected Stories • ${node.connections} Cross-Entity Ties`;
+    if (stats) stats.textContent = node.overview
+      ? `${node.articles.length} stories in this theatre • select to reveal named entities`
+      : `${node.articles.length} Connected Stories • ${node.connections} Cross-Entity Ties`;
 
     if (list) {
       const artMap = new Map();
       (state.articles || []).forEach(a => artMap.set(a.id, a));
       const connectedArticles = node.articles.map(id => artMap.get(id)).filter(Boolean);
 
-      list.innerHTML = connectedArticles.map(art => `
+      const revealEntities = node.overview
+        ? `<button type="button" class="inspector-reveal-btn" onclick="openConstellationEntities('${escapeJs(node.id)}')">Reveal named entities →</button>`
+        : '';
+      list.innerHTML = revealEntities + connectedArticles.map(art => `
         <div class="inspector-dispatch-card" onclick="jumpToArticleFromConstellation('${escapeJs(art.id)}')">
           <div class="dispatch-card-meta">
             <span>${escapeHtml(art.source)}</span>
@@ -2095,6 +2411,34 @@ class ConstellationSimulation {
 }
 
 let _activeConstellationSim = null;
+
+function mountConstellationGraph(graphData, subtitle) {
+  const canvas = document.getElementById('constellationCanvas');
+  if (!canvas) return;
+  const statsLabel = document.getElementById('constellationStatsLabel');
+  const overviewBtn = document.getElementById('constellationOverviewBtn');
+  if (statsLabel) statsLabel.textContent = subtitle;
+  if (overviewBtn) overviewBtn.style.display = graphData.mode === 'overview' ? 'none' : 'inline-flex';
+  if (_activeConstellationSim) _activeConstellationSim.stop();
+  _activeConstellationSim = new ConstellationSimulation(canvas, graphData);
+  _activeConstellationSim.start();
+  _activeConstellationSim.fitToScreen();
+}
+
+function showConstellationOverview() {
+  const graphData = buildConstellationOverview(state.articles);
+  mountConstellationGraph(graphData, `${graphData.nodes.length} Story Theatres • Select one to reveal named entities`);
+}
+
+function openConstellationEntities(nodeId) {
+  if (!_activeConstellationSim) return;
+  const overviewNode = _activeConstellationSim.nodeMap.get(nodeId);
+  if (!overviewNode || !overviewNode.overview) return;
+  const articles = (state.articles || []).filter(article => overviewNode.articles.includes(article.id));
+  const graphData = buildKnowledgeGraph(articles);
+  graphData.mode = 'detail';
+  mountConstellationGraph(graphData, `${overviewNode.label} • ${articles.length} stories • ${graphData.nodes.length} named entities`);
+}
 
 function openConstellationModal() {
   const modal = document.getElementById('constellationModalBackdrop');
@@ -2123,20 +2467,7 @@ function openConstellationModal() {
   const ctx = canvas.getContext('2d');
   ctx.scale(dpr, dpr);
 
-  const graphData = buildKnowledgeGraph(state.articles);
-
-  const statsLabel = document.getElementById('constellationStatsLabel');
-  if (statsLabel) {
-    statsLabel.textContent = `${graphData.nodes.length} Key Entities • ${graphData.edges.length} Cross-Entity Ties • Pure Canvas 2D Force Engine`;
-  }
-
-  if (_activeConstellationSim) {
-    _activeConstellationSim.stop();
-  }
-
-  _activeConstellationSim = new ConstellationSimulation(canvas, graphData);
-  _activeConstellationSim.start();
-  _activeConstellationSim.fitToScreen();
+  showConstellationOverview();
 
   state.constellation.modalOpen = true;
 }
@@ -2209,6 +2540,9 @@ function setupKnowledgeConstellation() {
     });
   }
 
+  const overviewBtn = document.getElementById('constellationOverviewBtn');
+  if (overviewBtn) overviewBtn.addEventListener('click', showConstellationOverview);
+
   const inspectorCloseBtn = document.getElementById('inspectorCloseBtn');
   if (inspectorCloseBtn) {
     inspectorCloseBtn.addEventListener('click', () => {
@@ -2225,6 +2559,15 @@ function setupKnowledgeConstellation() {
       const pill = e.target.closest('.legend-pill');
       if (!pill) return;
       const type = pill.getAttribute('data-type') || 'all';
+      // The overview intentionally has only theatre clusters.  Keep its
+      // meaningful view visible rather than applying entity-type filters.
+      if (_activeConstellationSim && _activeConstellationSim.mode === 'overview' && type !== 'all') {
+        legend.querySelectorAll('.legend-pill').forEach(p => p.classList.remove('active'));
+        const allPill = legend.querySelector('[data-type="all"]');
+        if (allPill) allPill.classList.add('active');
+        _activeConstellationSim.activeTypeFilter = 'all';
+        return;
+      }
       legend.querySelectorAll('.legend-pill').forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
 
@@ -2256,11 +2599,13 @@ window.copyFocusSessionMarkdown = copyFocusSessionMarkdown;
 window.setupFocusSession = setupFocusSession;
 
 window.buildKnowledgeGraph = buildKnowledgeGraph;
+window.buildConstellationOverview = buildConstellationOverview;
 window.ConstellationSimulation = ConstellationSimulation;
 window.openConstellationModal = openConstellationModal;
 window.closeConstellationModal = closeConstellationModal;
 window.jumpToArticleFromConstellation = jumpToArticleFromConstellation;
 window.setupKnowledgeConstellation = setupKnowledgeConstellation;
+window.openConstellationEntities = openConstellationEntities;
 
 
 
@@ -2498,7 +2843,7 @@ async function loadData(forceBustCache = false) {
     });
     if (!res.ok) throw new Error('Data file not found');
     const data = await res.json();
-    state.articles = data.articles || [];
+    state.articles = (data.articles || []).map(hydrateStoryGeography);
     
     // Format live sync timestamp
     const nowStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
@@ -2588,7 +2933,7 @@ async function fetchClientFallback() {
     if (data.items) {
       state.articles = data.items.map((item, idx) => {
         const cleanDesc = item.description.replace(/<[^>]*>?/gm, '').trim();
-        return {
+        return hydrateStoryGeography({
           id: `bbc-live-${idx}`,
           title: item.title,
           link: item.link,
@@ -2608,7 +2953,7 @@ async function fetchClientFallback() {
             { name: 'BBC News', url: item.link },
             { name: 'Reuters', url: 'https://www.reuters.com' }
           ]
-        };
+        });
       });
     }
   } catch (e) {
@@ -2710,7 +3055,7 @@ function renderHeroOverlayText(article) {
   if (!article || !heroOverlay) return;
   heroOverlay.innerHTML = `
     <div class="hero-badge-row">
-      <span class="tag-badge">${article.category} SPOTLIGHT #${state.heroIndex + 1} (${article.region})</span>
+      <span class="tag-badge">${article.category} SPOTLIGHT #${state.heroIndex + 1} (${escapeHtml(geographySummary(article))})</span>
       <span class="source-tag">✦ ${article.source} &bull; ${article.readTime}</span>
     </div>
     <h1 class="hero-title">${escapeHtml(article.title)}</h1>
@@ -2740,12 +3085,37 @@ function resetProgressBar() {
   if (canvasProgressBar) canvasProgressBar.style.width = '0%';
 }
 
+function syncHeroPlaybackUI() {
+  if (!heroPlayPauseBtn) return;
+  const paused = !state.heroPlaying || state.heroPauseReasons.size > 0;
+  heroPlayPauseBtn.textContent = paused ? '▶' : '⏸';
+  heroPlayPauseBtn.setAttribute('aria-label', paused ? 'Play slideshow' : 'Pause slideshow');
+  heroPlayPauseBtn.title = paused ? 'Play slideshow' : 'Pause slideshow';
+}
+
+function setHeroPauseReason(reason, isPaused) {
+  if (isPaused) state.heroPauseReasons.add(reason);
+  else state.heroPauseReasons.delete(reason);
+  syncHeroPlaybackUI();
+}
+
+function canAutoAdvanceHero() {
+  return state.heroPlaying && state.heroPauseReasons.size === 0 && !document.hidden;
+}
+
+function setupHeroMotionGuards() {
+  if (!heroSection) return;
+  heroSection.addEventListener('pointerenter', () => setHeroPauseReason('hover', true));
+  heroSection.addEventListener('pointerleave', () => setHeroPauseReason('hover', false));
+  syncHeroPlaybackUI();
+}
+
 function startHeroTimer() {
   if (state.heroTimer) clearInterval(state.heroTimer);
   if (state.progressInterval) clearInterval(state.progressInterval);
 
   state.progressInterval = setInterval(() => {
-    if (!state.heroPlaying) return;
+    if (!canAutoAdvanceHero()) return;
     state.progressValue += 2;
     if (canvasProgressBar) canvasProgressBar.style.width = `${state.progressValue}%`;
     if (state.progressValue >= 100) {
@@ -2758,7 +3128,7 @@ function startHeroTimer() {
 if (heroPlayPauseBtn) {
   heroPlayPauseBtn.addEventListener('click', () => {
     state.heroPlaying = !state.heroPlaying;
-    heroPlayPauseBtn.textContent = state.heroPlaying ? '⏸' : '▶';
+    syncHeroPlaybackUI();
   });
 }
 if (heroPrevBtn) {

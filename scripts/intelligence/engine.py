@@ -28,6 +28,8 @@ from intelligence.scoring import run_scoring
 from intelligence.memory import load_memory, save_memory, update_memory, prune_stale_arcs, get_active_arcs
 from intelligence.meta import run_meta_intelligence
 from intelligence.curation import run_curation
+from intelligence.geography import enrich_story_geographies
+from intelligence.evidence import enrich_evidence_ledgers
 
 
 # Default memory file location (relative to Newsfeed project root)
@@ -96,6 +98,16 @@ def run_editorial_intelligence(articles, podcasts=None, memory_path=None):
     print("=" * 60)
 
     articles = run_meta_intelligence(articles)
+
+    # -- STORY GEOGRAPHY -------------------------------------------------
+    # A feed's source section is not the same thing as an event's location.
+    # Preserve source_region while enriching reader-facing event geography.
+    articles = enrich_story_geographies(articles)
+
+    # -- EVIDENCE LEDGER -----------------------------------------------
+    # Claim provenance is generated from the actual dispatch and clustered
+    # publisher headlines.  The ledger reports its limitations explicitly.
+    articles = enrich_evidence_ledgers(articles)
 
     # -- UPDATE NARRATIVE MEMORY ----------------------------------------
     print("\n" + "=" * 60)
