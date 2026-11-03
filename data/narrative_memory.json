@@ -1,6 +1,46 @@
 {
-    "last_updated": "2026-11-03T03:37:06.518240+00:00",
+    "last_updated": "2026-11-03T11:39:38.528770+00:00",
     "arcs": [
+        {
+            "arc_id": "4f5a538b-33d9-4738-8693-93fa691e9f66",
+            "title": "Russian Strike on Ukraine Humanitarian Hub Kills",
+            "keywords": [
+                "dozen",
+                "hub",
+                "humanitarian",
+                "kill",
+                "russian",
+                "strik",
+                "ukrain"
+            ],
+            "entity_signature": "RU:UA:conflict:ru:russia",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-02T22:25:11.068910+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 8,
+            "chapter_titles": [
+                "Russian Strike on Ukraine Humanitarian Hub Kills Dozens",
+                "Russian bombing of Ukrainian aid centre kills at least 26, Kyiv says",
+                "Russian strikes kill 26 in Ukraine after longest ceasefire ends",
+                "Multiple Russian strikes kill at least 26 at Ukraine aid centre",
+                "Russian bombing kills 29 people at Ukraine aid centre, Kyiv says",
+                "Russia bombs aid centre and shelter in Ukraine, killing at least 29 people",
+                "Russian strikes kill at least 26 in Ukraine after war's longest ceasefire ends",
+                "Emergency responders comb through rubble after deadly strike on Ukrainian aid centre – video"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera",
+                "BBC Europe",
+                "France 24",
+                "New York Times",
+                "The Guardian"
+            ]
+        },
         {
             "arc_id": "508673c9-e077-4a8c-89fc-5d154b6e4294",
             "title": "Shop freezers in six European countries hit by",
@@ -21,7 +61,7 @@
                 "Global"
             ],
             "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
             "chapter_count": 7,
             "chapter_titles": [
                 "Shop freezers in six European countries hit by suspected cyber-attack",
@@ -39,6 +79,1407 @@
                 "BBC News",
                 "Reuters",
                 "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "a475f78c-6d66-4bf1-8870-b79086b4a9e0",
+            "title": "Oil rises after report of US strike on Iran's",
+            "keywords": [
+                "iran",
+                "island",
+                "oil",
+                "qeshm",
+                "report",
+                "ris",
+                "strik"
+            ],
+            "entity_signature": "IR:US:conflict:ir:iran",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-03T03:37:06.202512+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 5,
+            "chapter_titles": [
+                "Oil rises after report of US strike on Iran's Qeshm Island",
+                "US carries out 'defensive' strikes on Iran's Qeshm Island, officials say",
+                "US strikes Iran's Qeshm Island as Trump signals progress in talks",
+                "Explosions hit Iran's Qeshm Island as US media report US strikes in Hormuz",
+                "US hits Qeshm Island, Pezeshkian signals more diplomacy: Iran war latest"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera",
+                "France 24",
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "e01dab48-337c-42f9-aeaf-9e861a769d52",
+            "title": "Iran warns renewed war with US could outlast",
+            "keywords": [
+                "conflict",
+                "iran",
+                "outlast",
+                "previou",
+                "renew",
+                "war"
+            ],
+            "entity_signature": "IR:US:Donald:Donald Trump:conflict",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-02T04:43:29.131419+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 4,
+            "chapter_titles": [
+                "Iran warns renewed war with US could outlast previous conflict",
+                "Netanyahu is pressing Trump to attack Iran after US midterm elections, officials say",
+                "Why a midterm mauling for Trump will not bring Asia trade relief",
+                "As Trump's Midterm Deadline Looms, Gulf Countries Brace for Possible Renewal of Iran War"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24",
+                "New York Times",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "2a6a26f3-2a64-4409-8845-843167c537e4",
+            "title": "Binance to resume withdrawals after $6 billion",
+            "keywords": [
+                "attempt",
+                "billion",
+                "binanc",
+                "hack",
+                "resum",
+                "withdrawal"
+            ],
+            "entity_signature": "KP:binance:fbi:judicial & investigative bodies",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-01T08:47:54.764110+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Binance to resume withdrawals after $6 billion hack attempt",
+                "Binance resumes customer withdrawals after record $6.3bn hack",
+                "Binance sees spike in withdrawals as exchange returns online after US$6.3 billion hack"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "HT Business",
+                "SCMP",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "397aff71-a99e-4ab2-9885-970861b5fbd1",
+            "title": "Israeli strikes kill eight people in Gaza",
+            "keywords": [
+                "eight",
+                "gaza",
+                "israeli",
+                "kill",
+                "medic",
+                "peopl",
+                "say",
+                "strik"
+            ],
+            "entity_signature": "IL:PS:il:impacted_community:israel",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-01T15:48:43.899672+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Israeli strikes kill eight people in Gaza - medics say",
+                "Israeli attacks on Gaza kill at least nine people",
+                "Israeli strikes in Gaza kill eight including child, hospitals say"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "Al Jazeera",
+                "BBC Middle East",
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "11bef9a0-8b45-4f9c-b704-5e32da75b42e",
+            "title": "Egypt fines prominent editor Lina Attalah and",
+            "keywords": [
+                "attalah",
+                "editor",
+                "egypt",
+                "fin",
+                "independent",
+                "lina",
+                "mada",
+                "masr",
+                "outlet",
+                "prominent"
+            ],
+            "entity_signature": "EG:court:eg:egypt",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Egypt fines prominent editor Lina Attalah and shuts independent news outlet Mada Masr",
+                "Egypt court fines journalist Lina Attalah and orders news site's closure"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "c786e26d-1652-4179-9030-e661c39b0321",
+            "title": "Ukraine and Russia report fake emergency alerts",
+            "keywords": [
+                "alert",
+                "app",
+                "cyberattack",
+                "emergenci",
+                "fak",
+                "report",
+                "russia",
+                "target",
+                "ukrain"
+            ],
+            "entity_signature": "RU:UA:apps:crisis:geopolitics",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-02T22:25:11.068910+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Ukraine and Russia report fake emergency alerts after cyberattacks target apps",
+                "Emergency alerts hacking 'designed to undermine trust in government', expert says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "baaf9621-7b8c-4a07-ab68-7d63660a3e50",
+            "title": "Iran Says It Would Reopen Strait of Hormuz in 2",
+            "keywords": [
+                "deal",
+                "hormuz",
+                "iran",
+                "part",
+                "reopen",
+                "strait"
+            ],
+            "entity_signature": "IR:US:conflict:delegation:diplomacy",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-02T22:25:11.068910+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Iran Says It Would Reopen Strait of Hormuz in 2 Days as Part of U.S. Deal",
+                "Iran offers deal on Hormuz Strait, Netanyahu wants to 'finish the job'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24",
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "00d437d6-eb9b-4764-9682-4f84a0417829",
+            "title": "UK and EU agree draft deal to scrap Brexit red",
+            "keywords": [
+                "agree",
+                "brexit",
+                "deal",
+                "draft",
+                "export",
+                "food",
+                "red",
+                "scrap",
+                "tap"
+            ],
+            "entity_signature": "EU:UK:agree:diplomacy:draft deal",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-03T03:37:06.202512+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "UK and EU agree draft deal to scrap Brexit red tape over food exports",
+                "UK and EU agree deal to remove Brexit checks on food and animal products"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Europe",
+                "BBC News",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "8a94dd79-72f6-47a3-bbea-62527788e62e",
+            "title": "US to mediate trilateral talks with Ukraine",
+            "keywords": [
+                "abu",
+                "dhabi",
+                "envoy",
+                "mediat",
+                "russia",
+                "talk",
+                "trilateral",
+                "ukrain"
+            ],
+            "entity_signature": "RU:UA:US:diplomacy:diplomatic envoys",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-03T03:37:06.202512+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "US to mediate trilateral talks with Ukraine, Russia in Abu Dhabi next week, US envoy says",
+                "Kremlin confirms trilateral Ukraine peace talks in Abu Dhabi next week"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "41e66764-5f46-4c9e-94e7-22c01c4ed82d",
+            "title": "Apple says it's 'hard to predict' when iPhone Duo",
+            "keywords": [
+                "appl",
+                "constraint",
+                "duo",
+                "hard",
+                "improv",
+                "iphon",
+                "predict"
+            ],
+            "entity_signature": "apple:apple says it's 'hard to predict' when iphone duo constraints will improve:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-03T03:37:06.202512+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Apple says it's 'hard to predict' when iPhone Duo constraints will improve",
+                "Apple is 'not able to predict' when it'll have enough iPhone Duos to go around"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "TechCrunch",
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "144601af-ed02-4c1b-8d6b-6f2a627ad5eb",
+            "title": "Spanish footballer dies after collision with",
+            "keywords": [
+                "collision",
+                "die",
+                "footballer",
+                "goalkeeper",
+                "match",
+                "spanish"
+            ],
+            "entity_signature": "ES:civic activists / protesters:civic activists / protesters (striker):dies",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Spanish footballer dies after collision with goalkeeper during match",
+                "Tenerife striker De Miguel dies after on-field collision"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Europe",
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "d845db1d-dd0a-41b4-8983-2bc42ac3800d",
+            "title": "Australian Court Hears Challenge to Social Media",
+            "keywords": [
+                "australian",
+                "ban",
+                "challeng",
+                "court",
+                "hear",
+                "media",
+                "social"
+            ],
+            "entity_signature": "AU:au:australia:australian court",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Australian Court Hears Challenge to Social Media Ban",
+                "Major test for Australia's social media ban begins in High Court"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "BBC Asia",
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "53bc9cbf-1925-495a-b901-66d856a78338",
+            "title": "Africa's 'unprecedented' Ebola outbreak could",
+            "keywords": [
+                "africa",
+                "ebola",
+                "health",
+                "official",
+                "outbreak",
+                "reach",
+                "top",
+                "unprecedent"
+            ],
+            "entity_signature": "UK:africa's 'unprecedented' ebola outbreak could reach uk, says top health official:collective_faction:crisis",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Africa's 'unprecedented' Ebola outbreak could reach UK, says top health official"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "6f25574d-9757-44d9-b47e-a0989d34e5b7",
+            "title": "Iran killed her teenage daughter - now she is",
+            "keywords": [
+                "daughter",
+                "fac",
+                "iran",
+                "kill",
+                "now",
+                "regim",
+                "teenag"
+            ],
+            "entity_signature": "IR:her teenage daughter - now she is facing up:ir:iran",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-02T13:09:15.994714+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Iran killed her teenage daughter - now she is facing up to the regime"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "BBC Middle East",
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "b7fa380a-81d0-42d0-a7fb-09275e2aeda4",
+            "title": "Israeli 'unity government': Efrat Shapira expects",
+            "keywords": [
+                "camp",
+                "coali",
+                "efrat",
+                "expect",
+                "form",
+                "govern",
+                "herzog",
+                "israeli",
+                "rival",
+                "shapira"
+            ],
+            "entity_signature": "IL:efrat shapira expects herzog will:il:israel",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-02T22:25:11.068910+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Israeli 'unity government': Efrat Shapira expects Herzog will urge rival camps to form a 'coalition'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "fbff7702-c458-43b5-8e63-e7a3b9102712",
+            "title": "'Men know they won't face consequences': rise of",
+            "keywords": [
+                "call",
+                "chang",
+                "consequenc",
+                "fac",
+                "fuell",
+                "know",
+                "men",
+                "ris",
+                "sex",
+                "street"
+            ],
+            "entity_signature": "JP:japan:jp:men know they",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-03T03:37:06.202512+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'Men know they won't face consequences': rise of street sex work in Tokyo is fuelling calls for change"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "3b527fc6-55bf-4ebb-9ede-c3b9c994a85f",
+            "title": "William Nordhaus Has Died. Nobelist Influenced",
+            "keywords": [
+                "climat",
+                "died",
+                "influenc",
+                "nobelist",
+                "nordhau",
+                "polici",
+                "william"
+            ],
+            "entity_signature": ". nobelist influenced climate policy.:climate:died",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-03T03:37:06.202512+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "William Nordhaus Has Died. Nobelist Influenced Climate Policy."
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "a3359e6f-b838-4111-9b86-1efaeeab26e3",
+            "title": "State regulator didn't propose the rule that",
+            "keywords": [
+                "board",
+                "didn",
+                "froz",
+                "propos",
+                "regulator",
+                "rul",
+                "stat",
+                "tata",
+                "trust"
+            ],
+            "entity_signature": "collective_faction:india regional stakeholders:regulator",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-03T03:37:06.202512+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "State regulator didn't propose the rule that froze Tata Trust board"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "55022199-53f4-4585-8e20-84f8610b0e28",
+            "title": "Bomb threats reported on two passenger planes to",
+            "keywords": [
+                "bomb",
+                "land",
+                "passenger",
+                "plan",
+                "threat",
+                "two",
+                "warsaw"
+            ],
+            "entity_signature": "PL:bomb:civilians & impacted communities:civilians & impacted communities (passenger)",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Bomb threats reported on two passenger planes to Warsaw, both land"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "65739683-04cd-4454-b522-710677ee59c5",
+            "title": "Google AI chatbot's use of press items may",
+            "keywords": [
+                "adviser",
+                "ai",
+                "chatbot",
+                "copyright",
+                "court",
+                "googl",
+                "infr",
+                "item",
+                "may",
+                "press"
+            ],
+            "entity_signature": "EU:, eu court adviser says:collective_faction:court",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Google AI chatbot's use of press items may infringe copyright rules, EU court adviser says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "2e33cd61-b3cb-4413-b7d9-e3680e41fa81",
+            "title": "Czech public media launch strike, accusing",
+            "keywords": [
+                "accus",
+                "czech",
+                "govern",
+                "launch",
+                "meddl",
+                "media",
+                "political",
+                "public",
+                "strik"
+            ],
+            "entity_signature": "CZ:conflict:cz:czech public media",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Czech public media launch strike, accusing government of political meddling"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "ee237977-4bc2-461e-8a63-f0e54815499e",
+            "title": "Ghost Town review – the phantoms and lost souls",
+            "keywords": [
+                "citi",
+                "earthquak",
+                "ghost",
+                "haunt",
+                "japanes",
+                "lost",
+                "phantom",
+                "review",
+                "soul",
+                "town"
+            ],
+            "entity_signature": "JP:civilians & impacted communities:civilians & impacted communities (passengers):crisis",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ghost Town review – the phantoms and lost souls haunting a Japanese city after the 2011 earthquake"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "672fca7a-f3e8-4827-850d-f2907fe58806",
+            "title": "New Group review – schoolkids build human",
+            "keywords": [
+                "bizarr",
+                "build",
+                "conform",
+                "group",
+                "horror",
+                "human",
+                "japanes",
+                "new",
+                "pyramid",
+                "review"
+            ],
+            "entity_signature": "JP:build:human pyramids:japan",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "New Group review – schoolkids build human pyramids in bizarre Japanese horror-satire on conformity"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "20bce9e9-a1b0-4dd4-8ab1-0088a327d443",
+            "title": "Journalists may need judicial review to access",
+            "keywords": [
+                "access",
+                "journalist",
+                "judicial",
+                "land",
+                "may",
+                "need",
+                "new",
+                "record",
+                "review",
+                "rul"
+            ],
+            "entity_signature": "asia-pacific regional stakeholders:journalists may need judicial review to access land records under new:rules",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Journalists may need judicial review to access land records under new rules"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "ea188f73-0dbb-4f08-a2ed-b99276cbd6d2",
+            "title": "Man and boy arrested after allegedly attacking",
+            "keywords": [
+                "alleg",
+                "arrest",
+                "attack",
+                "bat",
+                "boy",
+                "man",
+                "nation",
+                "one",
+                "volunteer"
+            ],
+            "entity_signature": "AU:arrested:au:australia",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Man and boy arrested after allegedly attacking One Nation volunteer with bat"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "fc467a08-7ce3-4727-90d6-f42715263911",
+            "title": "Warsaw Modlin airport resumes operations after",
+            "keywords": [
+                "airport",
+                "bomb",
+                "europ",
+                "flight",
+                "london",
+                "modlin",
+                "opera",
+                "resum",
+                "threat",
+                "warsaw"
+            ],
+            "entity_signature": "EU:PL:UK:conflict:eu",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Warsaw Modlin airport resumes operations after bomb threat reported on London flight – Europe live"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "f2d43e9a-74a2-4196-8c2f-9cf497b401bd",
+            "title": "Two planes face threats en route to Warsaw, and",
+            "keywords": [
+                "airport",
+                "briefli",
+                "clos",
+                "fac",
+                "one",
+                "plan",
+                "rout",
+                "threat",
+                "two",
+                "warsaw"
+            ],
+            "entity_signature": "PL:face:pl:poland",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Two planes face threats en route to Warsaw, and one airport is briefly closed"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "a5b10881-96e9-479b-92b0-9abce168ecad",
+            "title": "Denmark pushes for EU ban on 'turbo chickens' as",
+            "keywords": [
+                "ban",
+                "caus",
+                "chicken",
+                "denmark",
+                "footag",
+                "outrag",
+                "push",
+                "secret",
+                "turbo"
+            ],
+            "entity_signature": "DK:EU:'turbo chickens' as secret footage causes outrage:ban:denmark",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Denmark pushes for EU ban on 'turbo chickens' as secret footage causes outrage"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "b981ab61-5c2f-4cbf-8247-9b4321c25a2c",
+            "title": "Israeli opposition unites behind Eisenkot as",
+            "keywords": [
+                "behind",
+                "chos",
+                "eisenkot",
+                "israeli",
+                "netanyahu",
+                "opposi",
+                "unit",
+                "voter"
+            ],
+            "entity_signature": "IL:Benjamin:Benjamin Netanyahu:election:geopolitics",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Israeli opposition unites behind Eisenkot as Netanyahu says voters chose him for PM"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "55234a45-385c-48eb-9008-9768f5196305",
+            "title": "US strikes Iranian island ahead of midterm",
+            "keywords": [
+                "ahead",
+                "elec",
+                "iranian",
+                "island",
+                "midterm",
+                "strik"
+            ],
+            "entity_signature": "IR:US:ir:iran:iranian island ahead of midterm elections",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US strikes Iranian island ahead of midterm elections"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "52c09c5d-7590-4260-8fdd-2617c0963494",
+            "title": "How India pulled 500 million people out of",
+            "keywords": [
+                "deepen",
+                "india",
+                "inequal",
+                "million",
+                "peopl",
+                "poverti",
+                "pull"
+            ],
+            "entity_signature": "IN:deepens:how india pulled 500 million people out of poverty, as inequality:in",
+            "category": "World",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "How India pulled 500 million people out of poverty, as inequality deepens"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "69fbcf22-5867-49ea-a4d2-4cc941961947",
+            "title": "Polls open in closely contested US midterm",
+            "keywords": [
+                "closeli",
+                "contest",
+                "elec",
+                "midterm",
+                "open",
+                "poll"
+            ],
+            "entity_signature": "US:closely contested us midterm elections 2026:congress:open",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Polls open in closely contested US midterm elections 2026"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "d253ff05-84e4-4dab-83cd-0a91b229f5d9",
+            "title": "US conducts series of 'defensive strikes' against",
+            "keywords": [
+                "conduct",
+                "defensiv",
+                "iran",
+                "seri",
+                "strik"
+            ],
+            "entity_signature": "IR:US:ir:iran:strikes",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US conducts series of 'defensive strikes' against Iran"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "fcd7f036-1a62-4c67-bf77-7b95524b0ba1",
+            "title": "Death toll hits 29 after Russian strike on",
+            "keywords": [
+                "aid",
+                "death",
+                "hit",
+                "miss",
+                "russian",
+                "sit",
+                "still",
+                "strik",
+                "toll",
+                "ukrainian"
+            ],
+            "entity_signature": "RU:UA:US:Volodymyr:Volodymyr Zelenskyy",
+            "category": "National",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Death toll hits 29 after Russian strike on Ukrainian aid site, with 48 still missing"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "0afe785e-e123-4709-b4e7-5225683fd8a3",
+            "title": "Apple Watch's AI features for rewinding and",
+            "keywords": [
+                "ai",
+                "appl",
+                "begin",
+                "beta",
+                "conversa",
+                "featur",
+                "recapp",
+                "rewind",
+                "test"
+            ],
+            "entity_signature": "apple:apple watch's ai features for rewinding and recapping conversations begin beta:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Apple Watch's AI features for rewinding and recapping conversations begin beta testing"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "4276d976-5fbb-4c31-b41e-b51c6faa49ef",
+            "title": "Saudi Aramco Profit Jumps Despite Damaging",
+            "keywords": [
+                "aramco",
+                "attack",
+                "damag",
+                "despit",
+                "jump",
+                "pipelin",
+                "profit",
+                "refineri",
+                "saudi"
+            ],
+            "entity_signature": "SA:attacks:pipelines and refineries:sa",
+            "category": "Business",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Saudi Aramco Profit Jumps Despite Damaging Attacks on Pipelines and Refineries"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "c08371b6-e042-4e89-9c42-c5f173f7aec4",
+            "title": "A Test for Israeli Democracy: Should Jews Ask",
+            "keywords": [
+                "arab",
+                "ask",
+                "democraci",
+                "govern",
+                "israeli",
+                "jew",
+                "join",
+                "test"
+            ],
+            "entity_signature": "IL:Benjamin:Benjamin Netanyahu:a:il",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "A Test for Israeli Democracy: Should Jews Ask Arabs to Join the Government?"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "475a51a8-ebe2-4cf3-9925-637f2055ad8d",
+            "title": "Three arrested for stabbing woman, robbery in",
+            "keywords": [
+                "arrest",
+                "hyderabad",
+                "malakpet",
+                "robberi",
+                "stabb",
+                "three",
+                "woman"
+            ],
+            "entity_signature": "arrested:india regional stakeholders:stabbing woman, robbery",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Three arrested for stabbing woman, robbery in Hyderabad's Malakpet"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "76b5bfc8-373c-4373-bd4d-74db6c0de474",
+            "title": "SC seeks Rahul Gandhi, Mallikarjun Kharge's",
+            "keywords": [
+                "cec",
+                "court",
+                "gandhi",
+                "kharg",
+                "mallikarjun",
+                "march",
+                "opposi",
+                "plea",
+                "rahul",
+                "repli"
+            ],
+            "entity_signature": "collective_faction:court:election",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "SC seeks Rahul Gandhi, Mallikarjun Kharge's replies on plea over Opposition march against CEC to top court"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "b95525a2-b4d8-46ab-8e4b-2426af0c550d",
+            "title": "Gold prices continue to fall ahead of Dhanteras",
+            "keywords": [
+                "ahead",
+                "continu",
+                "demand",
+                "dhantera",
+                "diwali",
+                "fall",
+                "gold",
+                "increas",
+                "likeli",
+                "pric"
+            ],
+            "entity_signature": "demand:india regional stakeholders:likely",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Gold prices continue to fall ahead of Dhanteras, Diwali; demand likely to increase"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "11b52b61-0f75-457a-baff-6a9a18b3c08a",
+            "title": "TN unveils Battery Storage Policy to become",
+            "keywords": [
+                "batteri",
+                "becom",
+                "countri",
+                "energi",
+                "green",
+                "hub",
+                "polici",
+                "premier",
+                "storag",
+                "unveil"
+            ],
+            "entity_signature": "battery storage policy:governance:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "TN unveils Battery Storage Policy to become country's premier green energy hub"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "3a5fbaae-0ae9-467c-9641-0618115cc8b0",
+            "title": "Madras High Court orders immediate closure of 87",
+            "keywords": [
+                "closur",
+                "court",
+                "high",
+                "illegal",
+                "immediat",
+                "madra",
+                "order",
+                "reserv",
+                "resort",
+                "sathyamangalam"
+            ],
+            "entity_signature": "collective_faction:court:governance",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Madras High Court orders immediate closure of 87 illegal resorts in Sathyamangalam Tiger Reserve"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "46718b3d-b967-4d71-8231-f2c918867788",
+            "title": "Rajnath Singh chairs defence modernisation",
+            "keywords": [
+                "chair",
+                "cror",
+                "defenc",
+                "jaisalmer",
+                "lakh",
+                "meet",
+                "modernisa",
+                "produc",
+                "rajnath",
+                "singh"
+            ],
+            "entity_signature": "Modi:Narendra:india regional stakeholders:jaisalmer, targets ₹3 lakh crore production:leader",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Rajnath Singh chairs defence modernisation meeting in Jaisalmer, targets ₹3 lakh crore production by 2029"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "3be1156a-dfc1-40d2-b9f0-862d60419c30",
+            "title": "Need to build a Navy that can fight, sustain",
+            "keywords": [
+                "admiral",
+                "build",
+                "constraint",
+                "fight",
+                "navi",
+                "need",
+                "sustain",
+                "swaminathan",
+                "without"
+            ],
+            "entity_signature": "build:collective_faction:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Need to build a Navy that can fight, sustain without any constraints: Admiral Swaminathan"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "4a021343-0db7-46bc-a203-05fa22158f80",
+            "title": "Sensex, Nifty extend winning run as markets open",
+            "keywords": [
+                "extend",
+                "higher",
+                "market",
+                "nifti",
+                "open",
+                "run",
+                "sensex",
+                "winn"
+            ],
+            "entity_signature": "india regional stakeholders:run as markets open higher:sensex, nifty extend",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-03T11:39:38.283623+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Sensex, Nifty extend winning run as markets open higher"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
             ]
         },
         {
@@ -80,75 +1521,6 @@
             ]
         },
         {
-            "arc_id": "4f5a538b-33d9-4738-8693-93fa691e9f66",
-            "title": "Russian Strike on Ukraine Humanitarian Hub Kills",
-            "keywords": [
-                "dozen",
-                "hub",
-                "humanitarian",
-                "kill",
-                "russian",
-                "strik",
-                "ukrain"
-            ],
-            "entity_signature": "RU:UA:conflict:ru:russia",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-02T22:25:11.068910+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "Russian Strike on Ukraine Humanitarian Hub Kills Dozens",
-                "Russian bombing of Ukrainian aid centre kills at least 26, Kyiv says",
-                "Russian strikes kill 26 in Ukraine after longest ceasefire ends",
-                "Multiple Russian strikes kill at least 26 at Ukraine aid centre"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera",
-                "France 24",
-                "New York Times",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "a475f78c-6d66-4bf1-8870-b79086b4a9e0",
-            "title": "Oil rises after report of US strike on Iran's",
-            "keywords": [
-                "iran",
-                "island",
-                "oil",
-                "qeshm",
-                "report",
-                "ris",
-                "strik"
-            ],
-            "entity_signature": "IR:US:conflict:ir:iran",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-03T03:37:06.202512+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "Oil rises after report of US strike on Iran's Qeshm Island",
-                "US carries out 'defensive' strikes on Iran's Qeshm Island, officials say",
-                "US strikes Iran's Qeshm Island as Trump signals progress in talks",
-                "Explosions hit Iran's Qeshm Island as US media report US strikes in Hormuz"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera",
-                "France 24",
-                "Reuters"
-            ]
-        },
-        {
             "arc_id": "9c93dcc0-e9c2-405c-b024-5568401dc000",
             "title": "India's opposition set to hold mega rally seeking",
             "keywords": [
@@ -184,72 +1556,6 @@
             ]
         },
         {
-            "arc_id": "2a6a26f3-2a64-4409-8845-843167c537e4",
-            "title": "Binance to resume withdrawals after $6 billion",
-            "keywords": [
-                "attempt",
-                "billion",
-                "binanc",
-                "hack",
-                "resum",
-                "withdrawal"
-            ],
-            "entity_signature": "KP:binance:fbi:judicial & investigative bodies",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-01T08:47:54.764110+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Binance to resume withdrawals after $6 billion hack attempt",
-                "Binance resumes customer withdrawals after record $6.3bn hack",
-                "Binance sees spike in withdrawals as exchange returns online after US$6.3 billion hack"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "HT Business",
-                "SCMP",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "397aff71-a99e-4ab2-9885-970861b5fbd1",
-            "title": "Israeli strikes kill eight people in Gaza",
-            "keywords": [
-                "eight",
-                "gaza",
-                "israeli",
-                "kill",
-                "medic",
-                "peopl",
-                "say",
-                "strik"
-            ],
-            "entity_signature": "IL:PS:il:impacted_community:israel",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-01T15:48:43.899672+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Israeli strikes kill eight people in Gaza - medics say",
-                "Israeli attacks on Gaza kill at least nine people",
-                "Israeli strikes in Gaza kill eight including child, hospitals say"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "Al Jazeera",
-                "BBC Middle East",
-                "Reuters"
-            ]
-        },
-        {
             "arc_id": "1348db06-ff73-436d-904a-e8e2f26a0287",
             "title": "Ukraine and Russia say emergency air-raid warning",
             "keywords": [
@@ -281,40 +1587,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "France 24",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "11bef9a0-8b45-4f9c-b704-5e32da75b42e",
-            "title": "Egypt fines prominent editor Lina Attalah and",
-            "keywords": [
-                "attalah",
-                "editor",
-                "egypt",
-                "fin",
-                "independent",
-                "lina",
-                "mada",
-                "masr",
-                "outlet",
-                "prominent"
-            ],
-            "entity_signature": "EG:court:eg:egypt",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Egypt fines prominent editor Lina Attalah and shuts independent news outlet Mada Masr",
-                "Egypt court fines journalist Lina Attalah and orders news site's closure"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East",
                 "The Guardian"
             ]
         },
@@ -413,68 +1685,6 @@
             ]
         },
         {
-            "arc_id": "c786e26d-1652-4179-9030-e661c39b0321",
-            "title": "Ukraine and Russia report fake emergency alerts",
-            "keywords": [
-                "alert",
-                "app",
-                "cyberattack",
-                "emergenci",
-                "fak",
-                "report",
-                "russia",
-                "target",
-                "ukrain"
-            ],
-            "entity_signature": "RU:UA:apps:crisis:geopolitics",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-02T22:25:11.068910+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Ukraine and Russia report fake emergency alerts after cyberattacks target apps",
-                "Emergency alerts hacking 'designed to undermine trust in government', expert says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "baaf9621-7b8c-4a07-ab68-7d63660a3e50",
-            "title": "Iran Says It Would Reopen Strait of Hormuz in 2",
-            "keywords": [
-                "deal",
-                "hormuz",
-                "iran",
-                "part",
-                "reopen",
-                "strait"
-            ],
-            "entity_signature": "IR:US:conflict:delegation:diplomacy",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-02T22:25:11.068910+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Iran Says It Would Reopen Strait of Hormuz in 2 Days as Part of U.S. Deal",
-                "Iran offers deal on Hormuz Strait, Netanyahu wants to 'finish the job'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24",
-                "New York Times"
-            ]
-        },
-        {
             "arc_id": "251847bc-a4f6-412f-9567-17f74e59cab5",
             "title": "Major fire breaks out at Hindustan Petroleum",
             "keywords": [
@@ -504,36 +1714,6 @@
             "sources_involved": [
                 "Hindustan Times",
                 "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "53bc9cbf-1925-495a-b901-66d856a78338",
-            "title": "Africa's 'unprecedented' Ebola outbreak could",
-            "keywords": [
-                "africa",
-                "ebola",
-                "health",
-                "official",
-                "outbreak",
-                "reach",
-                "top",
-                "unprecedent"
-            ],
-            "entity_signature": "UK:africa's 'unprecedented' ebola outbreak could reach uk, says top health official:collective_faction:crisis",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Africa's 'unprecedented' Ebola outbreak could reach UK, says top health official"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
             ]
         },
         {
@@ -597,36 +1777,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "HT Business"
-            ]
-        },
-        {
-            "arc_id": "6f25574d-9757-44d9-b47e-a0989d34e5b7",
-            "title": "Iran killed her teenage daughter - now she is",
-            "keywords": [
-                "daughter",
-                "fac",
-                "iran",
-                "kill",
-                "now",
-                "regim",
-                "teenag"
-            ],
-            "entity_signature": "IR:her teenage daughter - now she is facing up:ir:iran",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Iran killed her teenage daughter - now she is facing up to the regime"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "BBC Middle East",
-                "BBC News"
             ]
         },
         {
@@ -719,38 +1869,6 @@
             "peak_velocity": 0.4,
             "sources_involved": [
                 "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "b7fa380a-81d0-42d0-a7fb-09275e2aeda4",
-            "title": "Israeli 'unity government': Efrat Shapira expects",
-            "keywords": [
-                "camp",
-                "coali",
-                "efrat",
-                "expect",
-                "form",
-                "govern",
-                "herzog",
-                "israeli",
-                "rival",
-                "shapira"
-            ],
-            "entity_signature": "IL:efrat shapira expects herzog will:il:israel",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-02T22:25:11.068910+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Israeli 'unity government': Efrat Shapira expects Herzog will urge rival camps to form a 'coalition'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
             ]
         },
         {
@@ -870,37 +1988,6 @@
             ]
         },
         {
-            "arc_id": "00d437d6-eb9b-4764-9682-4f84a0417829",
-            "title": "UK and EU agree draft deal to scrap Brexit red",
-            "keywords": [
-                "agree",
-                "brexit",
-                "deal",
-                "draft",
-                "export",
-                "food",
-                "red",
-                "scrap",
-                "tap"
-            ],
-            "entity_signature": "EU:UK:agree:diplomacy:draft deal",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-03T03:37:06.202512+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "UK and EU agree draft deal to scrap Brexit red tape over food exports"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC News"
-            ]
-        },
-        {
             "arc_id": "d544b501-537f-43ca-be0b-811fad976a61",
             "title": "Asian stocks retreat ahead of US midterms, oil",
             "keywords": [
@@ -992,68 +2079,6 @@
             ]
         },
         {
-            "arc_id": "8a94dd79-72f6-47a3-bbea-62527788e62e",
-            "title": "US to mediate trilateral talks with Ukraine",
-            "keywords": [
-                "abu",
-                "dhabi",
-                "envoy",
-                "mediat",
-                "russia",
-                "talk",
-                "trilateral",
-                "ukrain"
-            ],
-            "entity_signature": "RU:UA:US:diplomacy:diplomatic envoys",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-03T03:37:06.202512+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "US to mediate trilateral talks with Ukraine, Russia in Abu Dhabi next week, US envoy says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "fbff7702-c458-43b5-8e63-e7a3b9102712",
-            "title": "'Men know they won't face consequences': rise of",
-            "keywords": [
-                "call",
-                "chang",
-                "consequenc",
-                "fac",
-                "fuell",
-                "know",
-                "men",
-                "ris",
-                "sex",
-                "street"
-            ],
-            "entity_signature": "JP:japan:jp:men know they",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-03T03:37:06.202512+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'Men know they won't face consequences': rise of street sex work in Tokyo is fuelling calls for change"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "2a63f0b6-45d9-4a62-9806-034164c0645b",
             "title": "Man, 61, arrested for allegedly spiking drink of",
             "keywords": [
@@ -1110,35 +2135,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "3b527fc6-55bf-4ebb-9ede-c3b9c994a85f",
-            "title": "William Nordhaus Has Died. Nobelist Influenced",
-            "keywords": [
-                "climat",
-                "died",
-                "influenc",
-                "nobelist",
-                "nordhau",
-                "polici",
-                "william"
-            ],
-            "entity_signature": ". nobelist influenced climate policy.:climate:died",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-03T03:37:06.202512+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "William Nordhaus Has Died. Nobelist Influenced Climate Policy."
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NYT Business"
             ]
         },
         {
@@ -1201,66 +2197,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "41e66764-5f46-4c9e-94e7-22c01c4ed82d",
-            "title": "Apple says it's 'hard to predict' when iPhone Duo",
-            "keywords": [
-                "appl",
-                "constraint",
-                "duo",
-                "hard",
-                "improv",
-                "iphon",
-                "predict"
-            ],
-            "entity_signature": "apple:apple says it's 'hard to predict' when iphone duo constraints will improve:north america regional stakeholders",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-03T03:37:06.202512+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Apple says it's 'hard to predict' when iPhone Duo constraints will improve"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "a3359e6f-b838-4111-9b86-1efaeeab26e3",
-            "title": "State regulator didn't propose the rule that",
-            "keywords": [
-                "board",
-                "didn",
-                "froz",
-                "propos",
-                "regulator",
-                "rul",
-                "stat",
-                "tata",
-                "trust"
-            ],
-            "entity_signature": "collective_faction:india regional stakeholders:regulator",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-03T03:37:06.202512+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "State regulator didn't propose the rule that froze Tata Trust board"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "HT Business"
             ]
         },
         {
@@ -1352,36 +2288,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "e01dab48-337c-42f9-aeaf-9e861a769d52",
-            "title": "Iran warns renewed war with US could outlast",
-            "keywords": [
-                "conflict",
-                "iran",
-                "outlast",
-                "previou",
-                "renew",
-                "war"
-            ],
-            "entity_signature": "IR:US:Donald:Donald Trump:conflict",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-02T04:43:29.131419+00:00",
-            "last_seen": "2026-11-02T22:25:11.068910+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Iran warns renewed war with US could outlast previous conflict",
-                "Netanyahu is pressing Trump to attack Iran after US midterm elections, officials say"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24",
-                "SCMP"
             ]
         },
         {
@@ -2206,893 +3112,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "02bb1544-7289-4bf9-9bd7-4388a4f92a12",
-            "title": "Ex-boyfriend planned to kill yoga instructor",
-            "keywords": [
-                "boyfriend",
-                "hear",
-                "hong",
-                "instructor",
-                "kill",
-                "kong",
-                "murder",
-                "plann",
-                "trial",
-                "yoga"
-            ],
-            "entity_signature": "asia-pacific regional stakeholders:court:ex-boyfriend planned",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-02T13:09:15.994714+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Ex-boyfriend planned to kill yoga instructor, Hong Kong murder trial hears"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "3da7dc83-5ecc-40fe-a832-8640fc25b0d9",
-            "title": "Finland and Norway's call to Putin tests European",
-            "keywords": [
-                "call",
-                "european",
-                "finland",
-                "norway",
-                "putin",
-                "russia",
-                "test",
-                "uniti"
-            ],
-            "entity_signature": "EU:FI:NO:Putin:Vladimir",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-02T13:09:15.994714+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Finland and Norway's call to Putin tests European unity over Russia"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "6b73451f-e934-4498-b8ee-e3a590890966",
-            "title": "Europe could face colder weather as polar vortex",
-            "keywords": [
-                "colder",
-                "europ",
-                "fac",
-                "polar",
-                "vortex",
-                "weaken",
-                "weather"
-            ],
-            "entity_signature": "EU:climate:colder weather as polar vortex weakens:eu",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-02T13:09:15.994714+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Europe could face colder weather as polar vortex weakens"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "b5c26c78-3947-48c1-beb8-ce41cda97474",
-            "title": "Jordan's King Abdullah promises to confront",
-            "keywords": [
-                "abdullah",
-                "attack",
-                "confront",
-                "jordan",
-                "karak",
-                "king",
-                "promis",
-                "terrorist"
-            ],
-            "entity_signature": "IL:attack:conflict:il",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-02T13:09:15.994714+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Jordan's King Abdullah promises to confront 'terrorists' after Karak attack"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "1c225efd-c24c-4649-be77-f3c088845998",
-            "title": "Oman and China sign deals to boost trade and",
-            "keywords": [
-                "boost",
-                "china",
-                "deal",
-                "invest",
-                "oman",
-                "sign",
-                "trad"
-            ],
-            "entity_signature": "CN:china:cn:deals",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-02T13:09:15.994714+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Oman and China sign deals to boost trade and investment"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "fcbecd7e-1301-4f6d-92e5-725cb85187ab",
-            "title": "French school protests resume on small scale as",
-            "keywords": [
-                "break",
-                "french",
-                "protest",
-                "resum",
-                "return",
-                "scal",
-                "school",
-                "small",
-                "student"
-            ],
-            "entity_signature": "FR:fr:france:french school protests",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-02T13:09:15.994714+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "French school protests resume on small scale as students return from break"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "389f6dcf-74e7-44f3-bfb2-bcaa16bf3716",
-            "title": "Ford launches a 'privacy promise' and explains",
-            "keywords": [
-                "customer",
-                "data",
-                "explain",
-                "ford",
-                "launch",
-                "privaci",
-                "promis",
-                "use"
-            ],
-            "entity_signature": "'privacy promise' and explains how and why it uses customer data:ford:launches",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-02T13:09:15.994714+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Ford launches a 'privacy promise' and explains how and why it uses customer data"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "54b3c76e-d5ba-4248-8689-3b58b4f297c1",
-            "title": "King Charles Meets Both Joy and Criticism on",
-            "keywords": [
-                "caribbean",
-                "charl",
-                "criticism",
-                "joy",
-                "king",
-                "meet",
-                "tour"
-            ],
-            "entity_signature": "UK:both joy and criticism:king charles:meets",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-02T13:09:15.994714+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "King Charles Meets Both Joy and Criticism on Caribbean Tour"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "1547958f-bc23-44bf-b71f-6b863362f383",
-            "title": "The Nation's Oldest Road Racetrack Starts a Big",
-            "keywords": [
-                "big",
-                "costli",
-                "fac",
-                "lift",
-                "nation",
-                "oldest",
-                "racetrack",
-                "road",
-                "start"
-            ],
-            "entity_signature": "-lift:face:nation's oldest road racetrack starts a big, costly",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-02T13:09:15.994714+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "The Nation's Oldest Road Racetrack Starts a Big, Costly Face-Lift"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "8d00a20a-f8cc-41b1-8fb9-cfb2c302448d",
-            "title": "Railways intensify security ahead of Deepavali",
-            "keywords": [
-                "ahead",
-                "carri",
-                "deepavali",
-                "firecracker",
-                "intensifi",
-                "railway",
-                "secur",
-                "warn"
-            ],
-            "entity_signature": "carrying firecrackers:india regional stakeholders:legislation",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-02T13:09:15.994714+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Railways intensify security ahead of Deepavali, warn against carrying firecrackers"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "808f1c9a-6d08-4722-8377-47762a45d4d7",
-            "title": "Mysuru Science Centre: Yaduveer seeks early",
-            "keywords": [
-                "centr",
-                "earli",
-                "mysuru",
-                "nod",
-                "scienc",
-                "seek",
-                "yaduveer"
-            ],
-            "entity_signature": "early centre's nod:india regional stakeholders:seeks",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-02T13:09:15.994714+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Mysuru Science Centre: Yaduveer seeks early Centre's nod"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "ccbfd8f2-6afa-45af-bb6d-e1e559fd39c2",
-            "title": "GRAP-II pollution curbs imposed in Delhi-NCR as",
-            "keywords": [
-                "air",
-                "curb",
-                "delhi",
-                "dip",
-                "grap",
-                "impos",
-                "ncr",
-                "pollu",
-                "qual"
-            ],
-            "entity_signature": "delhi-ncr as air quality dips further:grap-ii pollution curbs:imposed",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-02T13:09:15.994714+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "GRAP-II pollution curbs imposed in Delhi-NCR as air quality dips further"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "bd2d0625-573a-4e2d-9886-de51416b9ce3",
-            "title": "DMK seeks DVAC inquiry into Minister Rajmohan's",
-            "keywords": [
-                "allega",
-                "briberi",
-                "dmk",
-                "dvac",
-                "inquiri",
-                "minister",
-                "offer",
-                "post",
-                "rajmohan",
-                "seek"
-            ],
-            "entity_signature": "dmk:dvac inquiry:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-02T13:09:15.994714+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "DMK seeks DVAC inquiry into Minister Rajmohan's allegation of being offered bribery for post"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "df779146-86a7-45f2-883f-2d2eed8afff9",
-            "title": "Thane, Hingoli, Pune and Beed courts receive bomb",
-            "keywords": [
-                "beed",
-                "bomb",
-                "court",
-                "email",
-                "found",
-                "hingoli",
-                "noth",
-                "pun",
-                "receiv",
-                "suspiciou"
-            ],
-            "entity_signature": "and beed courts:bomb:collective_faction",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-02T13:09:15.994714+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Thane, Hingoli, Pune and Beed courts receive bomb threat emails; nothing suspicious found"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "5803510b-7ac6-4874-b12a-33f3a9d8b676",
-            "title": "Congress seeks arrest of playwright Addanda C",
-            "keywords": [
-                "addanda",
-                "arrest",
-                "cariappa",
-                "congress",
-                "gandhi",
-                "mahatma",
-                "playwright",
-                "remark",
-                "seek"
-            ],
-            "entity_signature": "arrest of playwright addanda c. cariappa:collective_faction:congress",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-02T13:09:15.994714+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Congress seeks arrest of playwright Addanda C. Cariappa over remarks on Mahatma Gandhi"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "f5f0e745-ff2e-48c3-936f-581e0fa7d1e4",
-            "title": "Russian strikes cut power to thousands in Ukraine",
-            "keywords": [
-                "cut",
-                "damag",
-                "dron",
-                "facil",
-                "power",
-                "russian",
-                "strik",
-                "thousand",
-                "ukrain"
-            ],
-            "entity_signature": "RU:UA:cut power:ru:russia",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-01T15:48:43.899672+00:00",
-            "last_seen": "2026-11-02T04:43:29.131419+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "Russian strikes cut power to thousands in Ukraine as drones damage Russian facility",
-                "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire to end",
-                "Ceasefire in Ukraine's Kherson region ends after Russia refuses extension",
-                "Kherson braces for return of war as localised Russia-Ukraine truce ends"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera",
-                "BBC News",
-                "France 24",
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "fd64ac95-3972-4527-ac31-131a19a0ed8c",
-            "title": "Antonelli becomes world champion as Verstappen",
-            "keywords": [
-                "antonelli",
-                "becom",
-                "champion",
-                "mexico",
-                "verstappen",
-                "win",
-                "world"
-            ],
-            "entity_signature": "MX:antonelli becomes world champion as verstappen:mexico:mexico sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-02T04:43:29.131419+00:00",
-            "last_seen": "2026-11-02T04:43:29.131419+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Antonelli becomes world champion as Verstappen wins in Mexico",
-                "Kimi Antonelli becomes Formula One's youngest world champion in Mexico City"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "Al Jazeera",
-                "BBC News"
-            ]
-        },
-        {
-            "arc_id": "56648e7d-3617-4b9b-8834-d8193e5773d0",
-            "title": "Liu Yandong, Rare Woman Among China's Political",
-            "keywords": [
-                "among",
-                "china",
-                "die",
-                "elit",
-                "liu",
-                "political",
-                "rar",
-                "woman",
-                "yandong"
-            ],
-            "entity_signature": "CN:80:china:china sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-10-31T08:40:52.787494+00:00",
-            "last_seen": "2026-11-02T04:43:29.131419+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Liu Yandong, Rare Woman Among China's Political Elite, Dies at 80"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "87cc0d4a-bb89-4772-9236-6003fb007fb0",
-            "title": "ACLU's Anthony Romero Says CEOs Are 'Ducking the",
-            "keywords": [
-                "aclu",
-                "anthoni",
-                "ceo",
-                "duck",
-                "hard",
-                "issu",
-                "romero"
-            ],
-            "entity_signature": "US:aclu's anthony romero says ceos are 'ducking the hard issues:sovereign_stakeholder:united states",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-01T15:48:43.899672+00:00",
-            "last_seen": "2026-11-02T04:43:29.131419+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "ACLU's Anthony Romero Says CEOs Are 'Ducking the Hard Issues'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "d91e825f-d697-4104-a0ce-8291a47473e3",
-            "title": "Cyril Hilsum, Who Helped Invent Flat-Panel",
-            "keywords": [
-                "cyril",
-                "died",
-                "display",
-                "flat",
-                "help",
-                "hilsum",
-                "invent",
-                "iphon",
-                "panel",
-                "tvs"
-            ],
-            "entity_signature": "101:cyril hilsum, who helped invent flat-panel displays in tvs and iphones, has:died",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-01T15:48:43.899672+00:00",
-            "last_seen": "2026-11-02T04:43:29.131419+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Cyril Hilsum, Who Helped Invent Flat-Panel Displays in TVs and iPhones, Has Died at 101"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "48979a71-c5bc-4e28-a0b1-6477cbfca22f",
-            "title": "Ukraine defies Trump to resume attacks on Russian",
-            "keywords": [
-                "attack",
-                "defi",
-                "oil",
-                "refineri",
-                "resum",
-                "russian",
-                "trump",
-                "ukrain"
-            ],
-            "entity_signature": "RU:UA:US:Donald:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-01T20:15:12.802613+00:00",
-            "last_seen": "2026-11-02T04:43:29.131419+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Ukraine defies Trump to resume attacks on Russian oil refineries"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "1c010f20-0a68-4d08-8786-750068d27607",
-            "title": "Binance Reports $3.64 Billion in Outflows as It",
-            "keywords": [
-                "billion",
-                "binanc",
-                "normal",
-                "outflow",
-                "resum",
-                "transac"
-            ],
-            "entity_signature": "KP:binance reports $3.64 billion in outflows as it:kp:normal transactions",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-01T20:15:12.802613+00:00",
-            "last_seen": "2026-11-02T04:43:29.131419+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Binance Reports $3.64 Billion in Outflows as It Resumes Normal Transactions"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "c0500d50-73f3-4658-997f-4852afcd7a76",
-            "title": "Judge tosses Trump's attempt to block Alaska",
-            "keywords": [
-                "alaska",
-                "attempt",
-                "block",
-                "gop",
-                "incumbent",
-                "judg",
-                "los",
-                "result",
-                "senat",
-                "toss"
-            ],
-            "entity_signature": "US:Donald:Donald Trump:alaska senate results if gop incumbent loses:block",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-01T20:15:12.802613+00:00",
-            "last_seen": "2026-11-02T04:43:29.131419+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Judge tosses Trump's attempt to block Alaska Senate results if GOP incumbent loses"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "0e285b3b-8c45-490b-a47a-f9246af19966",
-            "title": "Do you know signs of a stroke? BE FAST are the",
-            "keywords": [
-                "fast",
-                "know",
-                "remember",
-                "sign",
-                "strok",
-                "word"
-            ],
-            "entity_signature": "do you know:north america regional stakeholders:of a stroke? be fast are the words",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-01T23:46:15.238680+00:00",
-            "last_seen": "2026-11-02T04:43:29.131419+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Do you know signs of a stroke? BE FAST are the words to remember"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "f52129e5-acd1-47c5-bc84-0c662ac04d27",
-            "title": "Tesla, Samsung oppose new US tariffs on Vietnam",
-            "keywords": [
-                "deadlin",
-                "near",
-                "new",
-                "oppos",
-                "prob",
-                "samsung",
-                "tariff",
-                "tesla",
-                "vietnam"
-            ],
-            "entity_signature": "US:VN:deadline nears:justice:probe",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-02T04:43:29.131419+00:00",
-            "last_seen": "2026-11-02T04:43:29.131419+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Tesla, Samsung oppose new US tariffs on Vietnam as probe deadline nears"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "0a61e33d-9b31-4675-97b4-d5b70d0b7e78",
-            "title": "Russian emergencies ministry's mobile app hit by",
-            "keywords": [
-                "app",
-                "cyberattack",
-                "emergenci",
-                "hit",
-                "ministri",
-                "mobil",
-                "russian",
-                "tass"
-            ],
-            "entity_signature": "RU:collective_faction:ministry:regulatory & state authorities",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-02T04:43:29.131419+00:00",
-            "last_seen": "2026-11-02T04:43:29.131419+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Russian emergencies ministry's mobile app hit by cyberattack, TASS says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "cb7c5978-256d-45f8-833a-9e762d55cd57",
-            "title": "Police armed with assault rifles patrol Sydney in",
-            "keywords": [
-                "arm",
-                "assault",
-                "attack",
-                "australian",
-                "bondi",
-                "first",
-                "patrol",
-                "polic",
-                "rifl",
-                "sydney"
-            ],
-            "entity_signature": "AU:attack:au:australia",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-02T04:43:29.131419+00:00",
-            "last_seen": "2026-11-02T04:43:29.131419+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Police armed with assault rifles patrol Sydney in Australian first after Bondi attack"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "c9eb4aa9-242b-45df-9cfe-f6ede160073c",
-            "title": "After Tech Sell-Off, Investors Brace for More",
-            "keywords": [
-                "brac",
-                "investor",
-                "market",
-                "sell",
-                "tech",
-                "volatil"
-            ],
-            "entity_signature": "-off, investors brace:after tech:economics",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-02T04:43:29.131419+00:00",
-            "last_seen": "2026-11-02T04:43:29.131419+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "After Tech Sell-Off, Investors Brace for More Market Volatility"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "c394de42-a4ee-416b-8c21-da9291ac389b",
-            "title": "Gulf region on edge as Qatar leads talks with",
-            "keywords": [
-                "attack",
-                "edg",
-                "gulf",
-                "iran",
-                "lead",
-                "new",
-                "qatar",
-                "region",
-                "stav",
-                "talk"
-            ],
-            "entity_signature": "IR:US:attacks:diplomacy:gulf region on edge as qatar leads talks with iran to stave off new u.s.",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-02T04:43:29.131419+00:00",
-            "last_seen": "2026-11-02T04:43:29.131419+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Gulf region on edge as Qatar leads talks with Iran to stave off new U.S. attacks"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
             ]
         }
     ],
