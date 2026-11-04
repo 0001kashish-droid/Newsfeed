@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-04T00:06:16.001332+00:00",
+    "last_updated": "2026-11-04T06:51:50.535254+00:00",
     "arcs": [
         {
             "arc_id": "4f5a538b-33d9-4738-8693-93fa691e9f66",
@@ -19,7 +19,7 @@
                 "North America"
             ],
             "first_seen": "2026-11-02T22:25:11.068910+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
             "chapter_count": 10,
             "chapter_titles": [
                 "Russian Strike on Ukraine Humanitarian Hub Kills Dozens",
@@ -63,7 +63,7 @@
                 "Global"
             ],
             "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
             "chapter_count": 8,
             "chapter_titles": [
                 "Shop freezers in six European countries hit by suspected cyber-attack",
@@ -102,7 +102,7 @@
                 "Global"
             ],
             "first_seen": "2026-11-03T03:37:06.202512+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
             "chapter_count": 6,
             "chapter_titles": [
                 "Oil rises after report of US strike on Iran's Qeshm Island",
@@ -141,7 +141,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
             "chapter_count": 6,
             "chapter_titles": [
                 "Warsaw Modlin airport resumes operations after bomb threat reported on London flight – Europe live",
@@ -180,7 +180,7 @@
                 "Global"
             ],
             "first_seen": "2026-11-01T15:48:43.899672+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
             "chapter_count": 3,
             "chapter_titles": [
                 "Israeli strikes kill eight people in Gaza - medics say",
@@ -214,7 +214,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
             "chapter_count": 3,
             "chapter_titles": [
                 "Spain's transport minister says he will resign after latest deadly train crash",
@@ -227,6 +227,37 @@
                 "Reuters",
                 "SCMP",
                 "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "d253ff05-84e4-4dab-83cd-0a91b229f5d9",
+            "title": "US conducts series of 'defensive strikes' against",
+            "keywords": [
+                "conduct",
+                "defensiv",
+                "iran",
+                "seri",
+                "strik"
+            ],
+            "entity_signature": "IR:US:ir:iran:strikes",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "US conducts series of 'defensive strikes' against Iran",
+                "US strikes Iran's Qeshm Island as Trump signals progress in talks",
+                "US strikes Iranian island ahead of midterm elections"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera",
+                "BBC Middle East",
+                "France 24"
             ]
         },
         {
@@ -250,7 +281,7 @@
                 "Global"
             ],
             "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Egypt fines prominent editor Lina Attalah and shuts independent news outlet Mada Masr",
@@ -280,7 +311,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Spanish footballer dies after collision with goalkeeper during match",
@@ -311,7 +342,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Australian Court Hears Challenge to Social Media Ban",
@@ -343,7 +374,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-02T22:25:11.068910+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "French pupils resume school blockades as country braces for more protests",
@@ -375,7 +406,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-03T19:08:31.384919+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Europe on alert after supermarket freezers hit by cyber-attacks in 10 countries",
@@ -406,7 +437,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-03T19:08:31.384919+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Poland foils attempted 'provocation' on Russian border, PM Tusk says",
@@ -420,26 +451,27 @@
             ]
         },
         {
-            "arc_id": "d253ff05-84e4-4dab-83cd-0a91b229f5d9",
-            "title": "US conducts series of 'defensive strikes' against",
+            "arc_id": "b4bb75a9-6c66-487b-ad3e-3539c22102ce",
+            "title": "President Zelenskyy says US elections will impact",
             "keywords": [
-                "conduct",
-                "defensiv",
-                "iran",
-                "seri",
-                "strik"
+                "elec",
+                "impact",
+                "president",
+                "ukrain",
+                "war",
+                "zelenskyi"
             ],
-            "entity_signature": "IR:US:ir:iran:strikes",
+            "entity_signature": "UA:US:Volodymyr:Volodymyr Zelenskyy:conflict",
             "category": "World",
             "regions": [
                 "North America"
             ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
+            "first_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
             "chapter_count": 2,
             "chapter_titles": [
-                "US conducts series of 'defensive strikes' against Iran",
-                "US strikes Iran's Qeshm Island as Trump signals progress in talks"
+                "President Zelenskyy says US elections will impact war in Ukraine",
+                "Ukraine and Russia are taking the war underground as drones saturate the battlefield"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
@@ -467,7 +499,7 @@
                 "Global"
             ],
             "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Africa's 'unprecedented' Ebola outbreak could reach UK, says top health official"
@@ -496,7 +528,7 @@
                 "Global"
             ],
             "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Iran killed her teenage daughter - now she is facing up to the regime"
@@ -529,7 +561,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-02T22:25:11.068910+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Israeli 'unity government': Efrat Shapira expects Herzog will urge rival camps to form a 'coalition'"
@@ -538,6 +570,1169 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "France 24"
+            ]
+        },
+        {
+            "arc_id": "ee237977-4bc2-461e-8a63-f0e54815499e",
+            "title": "Ghost Town review – the phantoms and lost souls",
+            "keywords": [
+                "citi",
+                "earthquak",
+                "ghost",
+                "haunt",
+                "japanes",
+                "lost",
+                "phantom",
+                "review",
+                "soul",
+                "town"
+            ],
+            "entity_signature": "JP:civilians & impacted communities:civilians & impacted communities (passengers):crisis",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ghost Town review – the phantoms and lost souls haunting a Japanese city after the 2011 earthquake"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "672fca7a-f3e8-4827-850d-f2907fe58806",
+            "title": "New Group review – schoolkids build human",
+            "keywords": [
+                "bizarr",
+                "build",
+                "conform",
+                "group",
+                "horror",
+                "human",
+                "japanes",
+                "new",
+                "pyramid",
+                "review"
+            ],
+            "entity_signature": "JP:build:human pyramids:japan",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "New Group review – schoolkids build human pyramids in bizarre Japanese horror-satire on conformity"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "b981ab61-5c2f-4cbf-8247-9b4321c25a2c",
+            "title": "Israeli opposition unites behind Eisenkot as",
+            "keywords": [
+                "behind",
+                "chos",
+                "eisenkot",
+                "israeli",
+                "netanyahu",
+                "opposi",
+                "unit",
+                "voter"
+            ],
+            "entity_signature": "IL:Benjamin:Benjamin Netanyahu:election:geopolitics",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Israeli opposition unites behind Eisenkot as Netanyahu says voters chose him for PM"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "9dc361ab-9734-495a-9c0e-816b1fa7760d",
+            "title": "Indian tourist killed after two helicopters",
+            "keywords": [
+                "bas",
+                "camp",
+                "collid",
+                "everest",
+                "helicopter",
+                "indian",
+                "kill",
+                "near",
+                "tourist",
+                "two"
+            ],
+            "entity_signature": "IN:in:india:indian tourist",
+            "category": "World",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-03T19:08:31.384919+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Indian tourist killed after two helicopters collide near Everest base camp"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "8aabce4f-2d02-4357-aa3e-058d33ef3f6d",
+            "title": "Trump's troubles with Iran could open the door to",
+            "keywords": [
+                "china",
+                "door",
+                "iran",
+                "open",
+                "troubl",
+                "trump"
+            ],
+            "entity_signature": "CN:IR:Donald:Donald Trump:china",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-03T19:08:31.384919+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump's troubles with Iran could open the door to China"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "6a3c022e-d561-47dd-89ea-0838c0e8eb0b",
+            "title": "Russian households face increasing financial",
+            "keywords": [
+                "drag",
+                "fac",
+                "financial",
+                "household",
+                "increas",
+                "russian",
+                "strain",
+                "ukrain",
+                "war"
+            ],
+            "entity_signature": "RU:UA:citizens:civilians & impacted communities:civilians & impacted communities (citizens)",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-03T19:08:31.384919+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russian households face increasing financial strain as war in Ukraine drags on"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "7241f54d-e056-4a08-8c9a-bcf2e9e6d103",
+            "title": "King Charles says he has greater understanding of",
+            "keywords": [
+                "apologi",
+                "charl",
+                "fall",
+                "greater",
+                "horror",
+                "king",
+                "short",
+                "slaveri",
+                "understand"
+            ],
+            "entity_signature": "europe regional stakeholders:king charles says he has greater understanding of 'horrors' of slavery, falls short of apology:sovereign_stakeholder",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-03T19:08:31.384919+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "King Charles says he has greater understanding of 'horrors' of slavery, falls short of apology"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "30f3c63c-7103-474e-ab82-64a488bed340",
+            "title": "Trump cuts Israeli military aid: $3.8 billion in",
+            "keywords": [
+                "aid",
+                "assistanc",
+                "billion",
+                "cut",
+                "israeli",
+                "militari",
+                "secur",
+                "slash",
+                "trump"
+            ],
+            "entity_signature": "IL:US:Benjamin:Benjamin Netanyahu:cuts",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-03T19:08:31.384919+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump cuts Israeli military aid: $3.8 billion in security assistance slashed"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "35713cdf-0cd9-448f-b128-f8982ca80ae8",
+            "title": "King Charles Says U.K.'s Role in Slave Trade",
+            "keywords": [
+                "charl",
+                "fill",
+                "heart",
+                "horror",
+                "king",
+                "rol",
+                "slav",
+                "trad"
+            ],
+            "entity_signature": "UK:economics:economy:king charles says u.k.'s role in slave trade 'fills my heart with horror",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-03T19:08:31.384919+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "King Charles Says U.K.'s Role in Slave Trade 'Fills My Heart With Horror'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "7b04023a-9a2b-46d4-82c5-81c8adf3d29f",
+            "title": "Ukraine's drone strikes spur hasty Russian plans",
+            "keywords": [
+                "center",
+                "data",
+                "dron",
+                "hasti",
+                "plan",
+                "russian",
+                "spur",
+                "strik",
+                "ukrain",
+                "underground"
+            ],
+            "entity_signature": "RU:UA:conflict:geopolitics:ru",
+            "category": "Tech",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ukraine's drone strikes spur hasty Russian plans for underground data centers"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Ars Technica"
+            ]
+        },
+        {
+            "arc_id": "7faeb4c5-342b-4e78-a57b-8b615c292a60",
+            "title": "Trump Asked Grok AI About Invading Venezuela",
+            "keywords": [
+                "ai",
+                "ask",
+                "chat",
+                "democrat",
+                "grok",
+                "histori",
+                "invad",
+                "trump",
+                "venezuela",
+                "want"
+            ],
+            "entity_signature": "VE:Donald:Donald Trump:geopolitics:invading",
+            "category": "Tech",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump Asked Grok AI About Invading Venezuela. Democrats Want His Chat History"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "CNET"
+            ]
+        },
+        {
+            "arc_id": "11dd2c25-7225-4a5d-ad1c-4f080779524d",
+            "title": "One dead and another missing in suspected grizzly",
+            "keywords": [
+                "another",
+                "attack",
+                "bear",
+                "canada",
+                "dead",
+                "grizzli",
+                "miss",
+                "one",
+                "suspect"
+            ],
+            "entity_signature": "CA:attack:ca:canada",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "One dead and another missing in suspected grizzly bear attack in Canada"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "561a5766-5936-4be8-82f7-3c5c742f9821",
+            "title": "Helicopters Collide Over Everest Trail, Killing 1",
+            "keywords": [
+                "collid",
+                "everest",
+                "helicopter",
+                "injur",
+                "kill",
+                "other",
+                "trail"
+            ],
+            "entity_signature": "1 and injuring 3 others:asia-pacific regional stakeholders:economy",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Helicopters Collide Over Everest Trail, Killing 1 and Injuring 3 Others"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "c98d8077-7123-4b4e-9710-4f90676991ca",
+            "title": "Bomb threats against European airlines force",
+            "keywords": [
+                "affect",
+                "airlin",
+                "airport",
+                "bomb",
+                "closur",
+                "european",
+                "flight",
+                "forc",
+                "several",
+                "threat"
+            ],
+            "entity_signature": "EU:PL:bomb:conflict:eu",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Bomb threats against European airlines force Warsaw airport closure, affect several flights"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "aeaabc5a-8d76-4752-8de5-ddcbf8fcfbb0",
+            "title": "Trump says US 'won't be paying Israel' by end of",
+            "keywords": [
+                "end",
+                "israel",
+                "pay",
+                "trump",
+                "won"
+            ],
+            "entity_signature": "IL:US:Donald:Donald Trump:conflict",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump says US 'won't be paying Israel' by end of year"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "98fa5850-8a4c-434b-afc8-ef26c1832b9c",
+            "title": "Drone Boat Maker Saildrone Wins Protest Over Navy",
+            "keywords": [
+                "boat",
+                "contract",
+                "dron",
+                "maker",
+                "navi",
+                "protest",
+                "saildron",
+                "win"
+            ],
+            "entity_signature": "collective_faction:drone boat maker saildrone:geopolitics",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Drone Boat Maker Saildrone Wins Protest Over Navy Contract"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "08eca74e-f92d-4235-8135-6c87a13e3db0",
+            "title": "Canva is announcing changes and layoffs affecting",
+            "keywords": [
+                "affect",
+                "announc",
+                "canva",
+                "chang",
+                "layoff",
+                "percent"
+            ],
+            "entity_signature": "announcing:canva:changes and layoffs affecting 22 percent of its staff",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Canva is announcing changes and layoffs affecting 22 percent of its staff"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "47bb8417-062c-409e-9417-d1bf3d888f0f",
+            "title": "West Bank Property Sales Tactics Face a Challenge",
+            "keywords": [
+                "bank",
+                "canada",
+                "challeng",
+                "fac",
+                "properti",
+                "sal",
+                "tactic",
+                "west"
+            ],
+            "entity_signature": "CA:IL:PS:ca:canada",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "West Bank Property Sales Tactics Face a Challenge in Canada"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "f78e23c7-479b-42ff-bae3-9be33eea8977",
+            "title": "Ted Schlein's Ballistic Ventures seeks $490M for",
+            "keywords": [
+                "490m",
+                "ai",
+                "amid",
+                "ballistic",
+                "boom",
+                "cybersecur",
+                "driven",
+                "fund",
+                "new",
+                "schlein"
+            ],
+            "entity_signature": "$490m:north america regional stakeholders:seeks",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ted Schlein's Ballistic Ventures seeks $490M for new funds amid AI-driven cybersecurity boom"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "41f9e4e3-6c9d-4413-8af4-c856757942cb",
+            "title": "AMD forecasts $17 billion fourth-quarter revenue",
+            "keywords": [
+                "ai",
+                "amd",
+                "billion",
+                "center",
+                "data",
+                "demand",
+                "driv",
+                "forecast",
+                "fourth",
+                "quarter"
+            ],
+            "entity_signature": "amd forecasts $17 billion fourth-quarter revenue as ai:demand:drives record data-center sales",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "AMD forecasts $17 billion fourth-quarter revenue as AI demand drives record data-center sales"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "57507d9f-2807-4ade-88f1-8ec36ef3b8b6",
+            "title": "ANC faces anger over poor services as South",
+            "keywords": [
+                "african",
+                "anc",
+                "anger",
+                "elec",
+                "fac",
+                "local",
+                "poor",
+                "servic",
+                "south",
+                "vot"
+            ],
+            "entity_signature": "ZA:anc:anger:congress",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "ANC faces anger over poor services as South Africans vote in local elections"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "f1683054-c9ab-4131-a327-da1e55de0304",
+            "title": "Miliband says slavery apology will not bring cost",
+            "keywords": [
+                "apologi",
+                "bring",
+                "cost",
+                "miliband",
+                "slaveri",
+                "taxpayer"
+            ],
+            "entity_signature": "UK:miliband says slavery apology will not bring cost for uk taxpayers:sovereign_stakeholder:uk",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Miliband says slavery apology will not bring cost for UK taxpayers"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "c1afe091-0d16-469b-9cf0-da6a6178bc4c",
+            "title": "Weapon or wine bottle? China disputes reports of",
+            "keywords": [
+                "artilleri",
+                "bottl",
+                "china",
+                "disput",
+                "guinea",
+                "new",
+                "papua",
+                "shell",
+                "weapon",
+                "win"
+            ],
+            "entity_signature": "CN:china:china sovereign authorities:cn",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Weapon or wine bottle? China disputes reports of artillery shell in Papua New Guinea"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "4536e603-8123-4ba4-af3a-858722412fd9",
+            "title": "Canva announces major job cuts after 'our hardest",
+            "keywords": [
+                "canva",
+                "cut",
+                "hardest",
+                "job",
+                "major",
+                "yet"
+            ],
+            "entity_signature": "announces:asia-pacific regional stakeholders:canva",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Canva announces major job cuts after 'our hardest year yet'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "6e0d8fc3-7b9b-4f06-b1e8-3194ceab5440",
+            "title": "John Lee begins Beijing, Shanghai trip to deepen",
+            "keywords": [
+                "begin",
+                "beij",
+                "deepen",
+                "economic",
+                "john",
+                "lee",
+                "mainland",
+                "shanghai",
+                "tie",
+                "trip"
+            ],
+            "entity_signature": "CN:china:china sovereign authorities:cn",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "John Lee begins Beijing, Shanghai trip to deepen mainland economic ties"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "27c80158-3c7e-4378-acfe-69fa4fcebcb0",
+            "title": "Lula's victory is a stress test for the Global",
+            "keywords": [
+                "global",
+                "lula",
+                "south",
+                "stress",
+                "test",
+                "victori"
+            ],
+            "entity_signature": "BR:CN:US:Donald:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Lula's victory is a stress test for the Global South"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "a9fc784a-d0d0-429b-bca2-517c628a18df",
+            "title": "N Korea fires multiple missiles, denies US claims",
+            "keywords": [
+                "binanc",
+                "deni",
+                "fir",
+                "hack",
+                "korea",
+                "missil",
+                "multipl"
+            ],
+            "entity_signature": "US:fires:multiple missiles, denies us claims:n korea",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "N Korea fires multiple missiles, denies US claims on Binance hack"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "7ba1ffbf-9af0-4630-bb3a-8d0cd08f564d",
+            "title": "Troy Jackson wins Maine Senate race over Susan",
+            "keywords": [
+                "collin",
+                "coup",
+                "democrat",
+                "jackson",
+                "main",
+                "major",
+                "rac",
+                "senat",
+                "susan",
+                "troy"
+            ],
+            "entity_signature": "collective_faction:congress:maine senate race",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Troy Jackson wins Maine Senate race over Susan Collins, in major coup for Democrats"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "436d311d-c2bf-4d6b-8036-d412b4127b82",
+            "title": "Former Arkansas governor says Democrats' gains",
+            "keywords": [
+                "anticipat",
+                "arkansa",
+                "democrat",
+                "ever",
+                "former",
+                "gain",
+                "governor",
+                "significant"
+            ],
+            "entity_signature": "former arkansas governor says democrats' gains are 'more significant than ever anticipated:north america regional stakeholders:sovereign_stakeholder",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Former Arkansas governor says Democrats' gains are 'more significant than ever anticipated'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "c5813e7a-816d-4290-8823-095356c8f4ab",
+            "title": "Democrats win full control of Congress, ushering",
+            "keywords": [
+                "congress",
+                "control",
+                "democrat",
+                "divid",
+                "era",
+                "full",
+                "govern",
+                "new",
+                "usher",
+                "win"
+            ],
+            "entity_signature": "Donald:Donald Trump:congress:democrats:full control of congress, ushering",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Democrats win full control of Congress, ushering in a new era of divided government"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "14cff6bd-8951-4a93-971b-d214e89116e8",
+            "title": "Democrat Josh Turek wins the Senate seat in Iowa",
+            "keywords": [
+                "democrat",
+                "iowa",
+                "josh",
+                "seat",
+                "senat",
+                "turek",
+                "win"
+            ],
+            "entity_signature": "collective_faction:congress:democrat josh turek",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Democrat Josh Turek wins the Senate seat in Iowa"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "f424dc0b-aa83-4e3a-b2ee-30ed37be2ab2",
+            "title": "On a historic night for democratic socialists",
+            "keywords": [
+                "class",
+                "democratic",
+                "historic",
+                "mamdani",
+                "midterm",
+                "night",
+                "power",
+                "show",
+                "socialist",
+                "voter"
+            ],
+            "entity_signature": "north america regional stakeholders:on a historic night for democratic socialists, mamdani says midterms show power of working-class voters:sovereign_stakeholder",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "On a historic night for democratic socialists, Mamdani says midterms show power of working-class voters"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "6d4c8b12-232e-4989-9be6-c64c6ad3153e",
+            "title": "BJP had no role to play, says Ram Madhav as",
+            "keywords": [
+                "bjp",
+                "fric",
+                "intensifi",
+                "madhav",
+                "play",
+                "ram",
+                "rol"
+            ],
+            "entity_signature": "bjp had no role to play, says ram madhav as friction in nc intensifies:india regional stakeholders:sovereign_stakeholder",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "BJP had no role to play, says Ram Madhav as friction in NC intensifies"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "701ca947-492b-463c-b312-b9a70b03cf7b",
+            "title": "Sensex, Nifty positive in opening trade as",
+            "keywords": [
+                "closeli",
+                "elec",
+                "investor",
+                "midterm",
+                "nifti",
+                "open",
+                "outcom",
+                "positiv",
+                "sensex",
+                "trad"
+            ],
+            "entity_signature": "US:economics:economy:election",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Sensex, Nifty positive in opening trade as investors closely watch US midterm election outcome"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "aa3cdf9b-82cf-4199-bdb7-d07f07be6270",
+            "title": "As it readies AI consultation paper, MeitY weighs",
+            "keywords": [
+                "ai",
+                "approach",
+                "consulta",
+                "meiti",
+                "paper",
+                "readi",
+                "sector",
+                "specific",
+                "weigh"
+            ],
+            "entity_signature": "as it readies ai consultation paper, meity:india regional stakeholders:officials",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "As it readies AI consultation paper, MeitY weighs sector-specific approach"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "d9450ab0-5aa2-4e14-9d76-34f99e7c3cb3",
+            "title": "Bengal man arrested from temple with wife's",
+            "keywords": [
+                "alleg",
+                "arrest",
+                "bengal",
+                "discord",
+                "head",
+                "man",
+                "marital",
+                "neighbour",
+                "sever",
+                "templ"
+            ],
+            "entity_signature": "arrested:bengal man:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Bengal man arrested from temple with wife's severed head; neighbours allege marital discord"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "83794fb5-0e14-4610-a5e4-12ead3d4e42c",
+            "title": "Welfare payments will be based on voter IDs, not",
+            "keywords": [
+                "aadhaar",
+                "bas",
+                "ids",
+                "minister",
+                "panchayati",
+                "pay",
+                "raj",
+                "voter",
+                "welfar"
+            ],
+            "entity_signature": "india regional stakeholders:sovereign_stakeholder:welfare payments will be based on voter ids, not aadhaar, says panchayati raj minister",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Welfare payments will be based on voter IDs, not Aadhaar, says Panchayati Raj Minister"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "23a9a9ff-70bd-4a26-ad4f-f6c9cd40a543",
+            "title": "Suspected fake bail orders on Rajasthan high",
+            "keywords": [
+                "bail",
+                "court",
+                "fak",
+                "high",
+                "inquiri",
+                "order",
+                "rajasthan",
+                "suspect",
+                "trigger",
+                "websit"
+            ],
+            "entity_signature": "collective_faction:court:governance",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-04T06:51:50.105125+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Suspected fake bail orders on Rajasthan high court website trigger inquiry"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
             ]
         },
         {
@@ -570,100 +1765,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "ee237977-4bc2-461e-8a63-f0e54815499e",
-            "title": "Ghost Town review – the phantoms and lost souls",
-            "keywords": [
-                "citi",
-                "earthquak",
-                "ghost",
-                "haunt",
-                "japanes",
-                "lost",
-                "phantom",
-                "review",
-                "soul",
-                "town"
-            ],
-            "entity_signature": "JP:civilians & impacted communities:civilians & impacted communities (passengers):crisis",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Ghost Town review – the phantoms and lost souls haunting a Japanese city after the 2011 earthquake"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "672fca7a-f3e8-4827-850d-f2907fe58806",
-            "title": "New Group review – schoolkids build human",
-            "keywords": [
-                "bizarr",
-                "build",
-                "conform",
-                "group",
-                "horror",
-                "human",
-                "japanes",
-                "new",
-                "pyramid",
-                "review"
-            ],
-            "entity_signature": "JP:build:human pyramids:japan",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "New Group review – schoolkids build human pyramids in bizarre Japanese horror-satire on conformity"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "b981ab61-5c2f-4cbf-8247-9b4321c25a2c",
-            "title": "Israeli opposition unites behind Eisenkot as",
-            "keywords": [
-                "behind",
-                "chos",
-                "eisenkot",
-                "israeli",
-                "netanyahu",
-                "opposi",
-                "unit",
-                "voter"
-            ],
-            "entity_signature": "IL:Benjamin:Benjamin Netanyahu:election:geopolitics",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Israeli opposition unites behind Eisenkot as Netanyahu says voters chose him for PM"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
             ]
         },
         {
@@ -757,189 +1858,6 @@
             ]
         },
         {
-            "arc_id": "9dc361ab-9734-495a-9c0e-816b1fa7760d",
-            "title": "Indian tourist killed after two helicopters",
-            "keywords": [
-                "bas",
-                "camp",
-                "collid",
-                "everest",
-                "helicopter",
-                "indian",
-                "kill",
-                "near",
-                "tourist",
-                "two"
-            ],
-            "entity_signature": "IN:in:india:indian tourist",
-            "category": "World",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-03T19:08:31.384919+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Indian tourist killed after two helicopters collide near Everest base camp"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "8aabce4f-2d02-4357-aa3e-058d33ef3f6d",
-            "title": "Trump's troubles with Iran could open the door to",
-            "keywords": [
-                "china",
-                "door",
-                "iran",
-                "open",
-                "troubl",
-                "trump"
-            ],
-            "entity_signature": "CN:IR:Donald:Donald Trump:china",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-03T19:08:31.384919+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump's troubles with Iran could open the door to China"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "6a3c022e-d561-47dd-89ea-0838c0e8eb0b",
-            "title": "Russian households face increasing financial",
-            "keywords": [
-                "drag",
-                "fac",
-                "financial",
-                "household",
-                "increas",
-                "russian",
-                "strain",
-                "ukrain",
-                "war"
-            ],
-            "entity_signature": "RU:UA:citizens:civilians & impacted communities:civilians & impacted communities (citizens)",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-03T19:08:31.384919+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Russian households face increasing financial strain as war in Ukraine drags on"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "7241f54d-e056-4a08-8c9a-bcf2e9e6d103",
-            "title": "King Charles says he has greater understanding of",
-            "keywords": [
-                "apologi",
-                "charl",
-                "fall",
-                "greater",
-                "horror",
-                "king",
-                "short",
-                "slaveri",
-                "understand"
-            ],
-            "entity_signature": "europe regional stakeholders:king charles says he has greater understanding of 'horrors' of slavery, falls short of apology:sovereign_stakeholder",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-03T19:08:31.384919+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "King Charles says he has greater understanding of 'horrors' of slavery, falls short of apology"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "30f3c63c-7103-474e-ab82-64a488bed340",
-            "title": "Trump cuts Israeli military aid: $3.8 billion in",
-            "keywords": [
-                "aid",
-                "assistanc",
-                "billion",
-                "cut",
-                "israeli",
-                "militari",
-                "secur",
-                "slash",
-                "trump"
-            ],
-            "entity_signature": "IL:US:Benjamin:Benjamin Netanyahu:cuts",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-03T19:08:31.384919+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump cuts Israeli military aid: $3.8 billion in security assistance slashed"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "35713cdf-0cd9-448f-b128-f8982ca80ae8",
-            "title": "King Charles Says U.K.'s Role in Slave Trade",
-            "keywords": [
-                "charl",
-                "fill",
-                "heart",
-                "horror",
-                "king",
-                "rol",
-                "slav",
-                "trad"
-            ],
-            "entity_signature": "UK:economics:economy:king charles says u.k.'s role in slave trade 'fills my heart with horror",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-03T19:08:31.384919+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "King Charles Says U.K.'s Role in Slave Trade 'Fills My Heart With Horror'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
             "arc_id": "afc8beb2-80d5-4052-aa48-fef079a8c338",
             "title": "Haryana STF seizes 25000 cartridges from two cars",
             "keywords": [
@@ -1004,70 +1922,6 @@
             ]
         },
         {
-            "arc_id": "7b04023a-9a2b-46d4-82c5-81c8adf3d29f",
-            "title": "Ukraine's drone strikes spur hasty Russian plans",
-            "keywords": [
-                "center",
-                "data",
-                "dron",
-                "hasti",
-                "plan",
-                "russian",
-                "spur",
-                "strik",
-                "ukrain",
-                "underground"
-            ],
-            "entity_signature": "RU:UA:conflict:geopolitics:ru",
-            "category": "Tech",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Ukraine's drone strikes spur hasty Russian plans for underground data centers"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Ars Technica"
-            ]
-        },
-        {
-            "arc_id": "7faeb4c5-342b-4e78-a57b-8b615c292a60",
-            "title": "Trump Asked Grok AI About Invading Venezuela",
-            "keywords": [
-                "ai",
-                "ask",
-                "chat",
-                "democrat",
-                "grok",
-                "histori",
-                "invad",
-                "trump",
-                "venezuela",
-                "want"
-            ],
-            "entity_signature": "VE:Donald:Donald Trump:geopolitics:invading",
-            "category": "Tech",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump Asked Grok AI About Invading Venezuela. Democrats Want His Chat History"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "CNET"
-            ]
-        },
-        {
             "arc_id": "bb1ad30f-3736-4cb0-b8b0-6d3ce2445fbc",
             "title": "Meta raises $15 billion in five-part US bond sale",
             "keywords": [
@@ -1126,66 +1980,6 @@
             ]
         },
         {
-            "arc_id": "11dd2c25-7225-4a5d-ad1c-4f080779524d",
-            "title": "One dead and another missing in suspected grizzly",
-            "keywords": [
-                "another",
-                "attack",
-                "bear",
-                "canada",
-                "dead",
-                "grizzli",
-                "miss",
-                "one",
-                "suspect"
-            ],
-            "entity_signature": "CA:attack:ca:canada",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "One dead and another missing in suspected grizzly bear attack in Canada"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "561a5766-5936-4be8-82f7-3c5c742f9821",
-            "title": "Helicopters Collide Over Everest Trail, Killing 1",
-            "keywords": [
-                "collid",
-                "everest",
-                "helicopter",
-                "injur",
-                "kill",
-                "other",
-                "trail"
-            ],
-            "entity_signature": "1 and injuring 3 others:asia-pacific regional stakeholders:economy",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Helicopters Collide Over Everest Trail, Killing 1 and Injuring 3 Others"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
             "arc_id": "66e2ced3-dc4b-444a-84f3-33bddeeafcad",
             "title": "Trump says US close to trade deal with Canada",
             "keywords": [
@@ -1213,65 +2007,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "c98d8077-7123-4b4e-9710-4f90676991ca",
-            "title": "Bomb threats against European airlines force",
-            "keywords": [
-                "affect",
-                "airlin",
-                "airport",
-                "bomb",
-                "closur",
-                "european",
-                "flight",
-                "forc",
-                "several",
-                "threat"
-            ],
-            "entity_signature": "EU:PL:bomb:conflict:eu",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Bomb threats against European airlines force Warsaw airport closure, affect several flights"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "aeaabc5a-8d76-4752-8de5-ddcbf8fcfbb0",
-            "title": "Trump says US 'won't be paying Israel' by end of",
-            "keywords": [
-                "end",
-                "israel",
-                "pay",
-                "trump",
-                "won"
-            ],
-            "entity_signature": "IL:US:Donald:Donald Trump:conflict",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump says US 'won't be paying Israel' by end of year"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "BBC Middle East"
             ]
         },
         {
@@ -1303,154 +2038,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "b4bb75a9-6c66-487b-ad3e-3539c22102ce",
-            "title": "President Zelenskyy says US elections will impact",
-            "keywords": [
-                "elec",
-                "impact",
-                "president",
-                "ukrain",
-                "war",
-                "zelenskyi"
-            ],
-            "entity_signature": "UA:US:Volodymyr:Volodymyr Zelenskyy:conflict",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "President Zelenskyy says US elections will impact war in Ukraine"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "98fa5850-8a4c-434b-afc8-ef26c1832b9c",
-            "title": "Drone Boat Maker Saildrone Wins Protest Over Navy",
-            "keywords": [
-                "boat",
-                "contract",
-                "dron",
-                "maker",
-                "navi",
-                "protest",
-                "saildron",
-                "win"
-            ],
-            "entity_signature": "collective_faction:drone boat maker saildrone:geopolitics",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Drone Boat Maker Saildrone Wins Protest Over Navy Contract"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "08eca74e-f92d-4235-8135-6c87a13e3db0",
-            "title": "Canva is announcing changes and layoffs affecting",
-            "keywords": [
-                "affect",
-                "announc",
-                "canva",
-                "chang",
-                "layoff",
-                "percent"
-            ],
-            "entity_signature": "announcing:canva:changes and layoffs affecting 22 percent of its staff",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Canva is announcing changes and layoffs affecting 22 percent of its staff"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Verge"
-            ]
-        },
-        {
-            "arc_id": "47bb8417-062c-409e-9417-d1bf3d888f0f",
-            "title": "West Bank Property Sales Tactics Face a Challenge",
-            "keywords": [
-                "bank",
-                "canada",
-                "challeng",
-                "fac",
-                "properti",
-                "sal",
-                "tactic",
-                "west"
-            ],
-            "entity_signature": "CA:IL:PS:ca:canada",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "West Bank Property Sales Tactics Face a Challenge in Canada"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "f78e23c7-479b-42ff-bae3-9be33eea8977",
-            "title": "Ted Schlein's Ballistic Ventures seeks $490M for",
-            "keywords": [
-                "490m",
-                "ai",
-                "amid",
-                "ballistic",
-                "boom",
-                "cybersecur",
-                "driven",
-                "fund",
-                "new",
-                "schlein"
-            ],
-            "entity_signature": "$490m:north america regional stakeholders:seeks",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Ted Schlein's Ballistic Ventures seeks $490M for new funds amid AI-driven cybersecurity boom"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "TechCrunch"
             ]
         },
         {
@@ -1544,38 +2131,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "41f9e4e3-6c9d-4413-8af4-c856757942cb",
-            "title": "AMD forecasts $17 billion fourth-quarter revenue",
-            "keywords": [
-                "ai",
-                "amd",
-                "billion",
-                "center",
-                "data",
-                "demand",
-                "driv",
-                "forecast",
-                "fourth",
-                "quarter"
-            ],
-            "entity_signature": "amd forecasts $17 billion fourth-quarter revenue as ai:demand:drives record data-center sales",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-04T00:06:15.530871+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "AMD forecasts $17 billion fourth-quarter revenue as AI demand drives record data-center sales"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "HT Business"
             ]
         },
         {
@@ -2562,573 +3117,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "2e33cd61-b3cb-4413-b7d9-e3680e41fa81",
-            "title": "Czech public media launch strike, accusing",
-            "keywords": [
-                "accus",
-                "czech",
-                "govern",
-                "launch",
-                "meddl",
-                "media",
-                "political",
-                "public",
-                "strik"
-            ],
-            "entity_signature": "CZ:conflict:cz:czech public media",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-03T11:39:38.283623+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Czech public media launch strike, accusing government of political meddling"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "20bce9e9-a1b0-4dd4-8ab1-0088a327d443",
-            "title": "Journalists may need judicial review to access",
-            "keywords": [
-                "access",
-                "journalist",
-                "judicial",
-                "land",
-                "may",
-                "need",
-                "new",
-                "record",
-                "review",
-                "rul"
-            ],
-            "entity_signature": "asia-pacific regional stakeholders:journalists may need judicial review to access land records under new:rules",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-03T11:39:38.283623+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Journalists may need judicial review to access land records under new rules"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "ea188f73-0dbb-4f08-a2ed-b99276cbd6d2",
-            "title": "Man and boy arrested after allegedly attacking",
-            "keywords": [
-                "alleg",
-                "arrest",
-                "attack",
-                "bat",
-                "boy",
-                "man",
-                "nation",
-                "one",
-                "volunteer"
-            ],
-            "entity_signature": "AU:arrested:au:australia",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-03T11:39:38.283623+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Man and boy arrested after allegedly attacking One Nation volunteer with bat"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "f2d43e9a-74a2-4196-8c2f-9cf497b401bd",
-            "title": "Two planes face threats en route to Warsaw, and",
-            "keywords": [
-                "airport",
-                "briefli",
-                "clos",
-                "fac",
-                "one",
-                "plan",
-                "rout",
-                "threat",
-                "two",
-                "warsaw"
-            ],
-            "entity_signature": "PL:face:pl:poland",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-03T11:39:38.283623+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Two planes face threats en route to Warsaw, and one airport is briefly closed"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "a5b10881-96e9-479b-92b0-9abce168ecad",
-            "title": "Denmark pushes for EU ban on 'turbo chickens' as",
-            "keywords": [
-                "ban",
-                "caus",
-                "chicken",
-                "denmark",
-                "footag",
-                "outrag",
-                "push",
-                "secret",
-                "turbo"
-            ],
-            "entity_signature": "DK:EU:'turbo chickens' as secret footage causes outrage:ban:denmark",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-03T11:39:38.283623+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Denmark pushes for EU ban on 'turbo chickens' as secret footage causes outrage"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "52c09c5d-7590-4260-8fdd-2617c0963494",
-            "title": "How India pulled 500 million people out of",
-            "keywords": [
-                "deepen",
-                "india",
-                "inequal",
-                "million",
-                "peopl",
-                "poverti",
-                "pull"
-            ],
-            "entity_signature": "IN:deepens:how india pulled 500 million people out of poverty, as inequality:in",
-            "category": "World",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-03T11:39:38.283623+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "How India pulled 500 million people out of poverty, as inequality deepens"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "69fbcf22-5867-49ea-a4d2-4cc941961947",
-            "title": "Polls open in closely contested US midterm",
-            "keywords": [
-                "closeli",
-                "contest",
-                "elec",
-                "midterm",
-                "open",
-                "poll"
-            ],
-            "entity_signature": "US:closely contested us midterm elections 2026:congress:open",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-03T11:39:38.283623+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Polls open in closely contested US midterm elections 2026"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "0afe785e-e123-4709-b4e7-5225683fd8a3",
-            "title": "Apple Watch's AI features for rewinding and",
-            "keywords": [
-                "ai",
-                "appl",
-                "begin",
-                "beta",
-                "conversa",
-                "featur",
-                "recapp",
-                "rewind",
-                "test"
-            ],
-            "entity_signature": "apple:apple watch's ai features for rewinding and recapping conversations begin beta:north america regional stakeholders",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-03T11:39:38.283623+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Apple Watch's AI features for rewinding and recapping conversations begin beta testing"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "4276d976-5fbb-4c31-b41e-b51c6faa49ef",
-            "title": "Saudi Aramco Profit Jumps Despite Damaging",
-            "keywords": [
-                "aramco",
-                "attack",
-                "damag",
-                "despit",
-                "jump",
-                "pipelin",
-                "profit",
-                "refineri",
-                "saudi"
-            ],
-            "entity_signature": "SA:attacks:pipelines and refineries:sa",
-            "category": "Business",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-03T11:39:38.283623+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Saudi Aramco Profit Jumps Despite Damaging Attacks on Pipelines and Refineries"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "c08371b6-e042-4e89-9c42-c5f173f7aec4",
-            "title": "A Test for Israeli Democracy: Should Jews Ask",
-            "keywords": [
-                "arab",
-                "ask",
-                "democraci",
-                "govern",
-                "israeli",
-                "jew",
-                "join",
-                "test"
-            ],
-            "entity_signature": "IL:Benjamin:Benjamin Netanyahu:a:il",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-03T11:39:38.283623+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "A Test for Israeli Democracy: Should Jews Ask Arabs to Join the Government?"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "475a51a8-ebe2-4cf3-9925-637f2055ad8d",
-            "title": "Three arrested for stabbing woman, robbery in",
-            "keywords": [
-                "arrest",
-                "hyderabad",
-                "malakpet",
-                "robberi",
-                "stabb",
-                "three",
-                "woman"
-            ],
-            "entity_signature": "arrested:india regional stakeholders:stabbing woman, robbery",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-03T11:39:38.283623+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Three arrested for stabbing woman, robbery in Hyderabad's Malakpet"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "76b5bfc8-373c-4373-bd4d-74db6c0de474",
-            "title": "SC seeks Rahul Gandhi, Mallikarjun Kharge's",
-            "keywords": [
-                "cec",
-                "court",
-                "gandhi",
-                "kharg",
-                "mallikarjun",
-                "march",
-                "opposi",
-                "plea",
-                "rahul",
-                "repli"
-            ],
-            "entity_signature": "collective_faction:court:election",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-03T11:39:38.283623+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "SC seeks Rahul Gandhi, Mallikarjun Kharge's replies on plea over Opposition march against CEC to top court"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "11b52b61-0f75-457a-baff-6a9a18b3c08a",
-            "title": "TN unveils Battery Storage Policy to become",
-            "keywords": [
-                "batteri",
-                "becom",
-                "countri",
-                "energi",
-                "green",
-                "hub",
-                "polici",
-                "premier",
-                "storag",
-                "unveil"
-            ],
-            "entity_signature": "battery storage policy:governance:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-03T11:39:38.283623+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "TN unveils Battery Storage Policy to become country's premier green energy hub"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "3a5fbaae-0ae9-467c-9641-0618115cc8b0",
-            "title": "Madras High Court orders immediate closure of 87",
-            "keywords": [
-                "closur",
-                "court",
-                "high",
-                "illegal",
-                "immediat",
-                "madra",
-                "order",
-                "reserv",
-                "resort",
-                "sathyamangalam"
-            ],
-            "entity_signature": "collective_faction:court:governance",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-03T11:39:38.283623+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Madras High Court orders immediate closure of 87 illegal resorts in Sathyamangalam Tiger Reserve"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "46718b3d-b967-4d71-8231-f2c918867788",
-            "title": "Rajnath Singh chairs defence modernisation",
-            "keywords": [
-                "chair",
-                "cror",
-                "defenc",
-                "jaisalmer",
-                "lakh",
-                "meet",
-                "modernisa",
-                "produc",
-                "rajnath",
-                "singh"
-            ],
-            "entity_signature": "Modi:Narendra:india regional stakeholders:jaisalmer, targets ₹3 lakh crore production:leader",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-03T11:39:38.283623+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Rajnath Singh chairs defence modernisation meeting in Jaisalmer, targets ₹3 lakh crore production by 2029"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "3be1156a-dfc1-40d2-b9f0-862d60419c30",
-            "title": "Need to build a Navy that can fight, sustain",
-            "keywords": [
-                "admiral",
-                "build",
-                "constraint",
-                "fight",
-                "navi",
-                "need",
-                "sustain",
-                "swaminathan",
-                "without"
-            ],
-            "entity_signature": "build:collective_faction:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-03T11:39:38.283623+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Need to build a Navy that can fight, sustain without any constraints: Admiral Swaminathan"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "4594fec1-d8b1-42f8-b263-e11c69bc31f7",
-            "title": "France opens 'attempted murder' probe over petrol",
-            "keywords": [
-                "attack",
-                "attempt",
-                "bomb",
-                "forc",
-                "franc",
-                "murder",
-                "open",
-                "petrol",
-                "prob",
-                "secur"
-            ],
-            "entity_signature": "FR:attempted murder' probe:conflict:fr",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-01T20:15:12.802613+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "France opens 'attempted murder' probe over petrol bomb attacks on security forces",
-                "Attempted murder probe after petrol bomb thrown at French riot police",
-                "France opens 'attempted murder' probe into petrol bomb attacks on police",
-                "France launches attempted murder investigation after petrol bomb thrown at police"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.7,
-            "sources_involved": [
-                "Al Jazeera",
-                "BBC Europe",
-                "SCMP",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "9c93dcc0-e9c2-405c-b024-5568401dc000",
-            "title": "India's opposition set to hold mega rally seeking",
-            "keywords": [
-                "chief",
-                "elec",
-                "hold",
-                "india",
-                "mega",
-                "opposi",
-                "ralli",
-                "resigna",
-                "seek",
-                "set"
-            ],
-            "entity_signature": "IN:economy:election:election chief's resignation",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-01T01:54:00.087108+00:00",
-            "last_seen": "2026-11-03T03:37:06.202512+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "India's opposition set to hold mega rally seeking election chief's resignation",
-                "India's opposition holds mega rally seeking election chief's resignation",
-                "Photos: Thousands join India's opposition rally against election chief"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera",
-                "BBC Asia"
             ]
         }
     ],
