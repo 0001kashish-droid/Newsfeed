@@ -1,6 +1,51 @@
 {
-    "last_updated": "2026-11-05T09:01:14.913750+00:00",
+    "last_updated": "2026-11-05T17:32:48.588021+00:00",
     "arcs": [
+        {
+            "arc_id": "4f5a538b-33d9-4738-8693-93fa691e9f66",
+            "title": "Russian Strike on Ukraine Humanitarian Hub Kills",
+            "keywords": [
+                "dozen",
+                "hub",
+                "humanitarian",
+                "kill",
+                "russian",
+                "strik",
+                "ukrain"
+            ],
+            "entity_signature": "RU:UA:conflict:ru:russia",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-02T22:25:11.068910+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 12,
+            "chapter_titles": [
+                "Russian Strike on Ukraine Humanitarian Hub Kills Dozens",
+                "Russian bombing of Ukrainian aid centre kills at least 26, Kyiv says",
+                "Russian strikes kill 26 in Ukraine after longest ceasefire ends",
+                "Multiple Russian strikes kill at least 26 at Ukraine aid centre",
+                "Russian bombing kills 29 people at Ukraine aid centre, Kyiv says",
+                "Russia bombs aid centre and shelter in Ukraine, killing at least 29 people",
+                "Russian strikes kill at least 26 in Ukraine after war's longest ceasefire ends",
+                "Emergency responders comb through rubble after deadly strike on Ukrainian aid centre – video",
+                "Russian bombing kills 31 people at Ukraine aid centre, Kyiv says",
+                "Russia bombs humanitarian hub in Ukraine, killing at least 31 people",
+                "Ukraine says bodycam video shows deadly Russian double-tap bombing",
+                "Ukraine raises death toll from Russian strike on Zaporizhia to 40 people"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera",
+                "BBC Europe",
+                "BBC News",
+                "France 24",
+                "New York Times",
+                "The Guardian"
+            ]
+        },
         {
             "arc_id": "e01dab48-337c-42f9-aeaf-9e861a769d52",
             "title": "Iran warns renewed war with US could outlast",
@@ -18,7 +63,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-02T04:43:29.131419+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
             "chapter_count": 9,
             "chapter_titles": [
                 "Iran warns renewed war with US could outlast previous conflict",
@@ -40,6 +85,1415 @@
                 "New York Times",
                 "SCMP",
                 "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "fc467a08-7ce3-4727-90d6-f42715263911",
+            "title": "Warsaw Modlin airport resumes operations after",
+            "keywords": [
+                "airport",
+                "bomb",
+                "europ",
+                "flight",
+                "london",
+                "modlin",
+                "opera",
+                "resum",
+                "threat",
+                "warsaw"
+            ],
+            "entity_signature": "EU:PL:UK:conflict:eu",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 8,
+            "chapter_titles": [
+                "Warsaw Modlin airport resumes operations after bomb threat reported on London flight – Europe live",
+                "Bomb threats cause flight disruptions across Europe",
+                "Seven flights across Europe targeted by suspected bomb threats",
+                "Fake bomb threats on flights and cruise ship cause travel disruption in Europe",
+                "Seven planes across Europe searched or diverted after 'malicious hoax' bomb threats",
+                "Bomb Threats Disrupt Several Flights Across Europe",
+                "Multiple planes diverted as bomb threats to commercial flights reported across Europe – live",
+                "Multiple flights in Europe diverted because of bomb threats after earlier hoaxes"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Europe",
+                "BBC News",
+                "France 24",
+                "New York Times",
+                "Reuters",
+                "SCMP",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "42ce6e81-aef1-453b-9c1a-7c7f652214e3",
+            "title": "What consequences for Israel as Democrats win the",
+            "keywords": [
+                "consequenc",
+                "democrat",
+                "elec",
+                "israel",
+                "midterm",
+                "win"
+            ],
+            "entity_signature": "IL:US:congress:il:israel",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-04T15:09:07.676826+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 4,
+            "chapter_titles": [
+                "What consequences for Israel as Democrats win the US midterm elections?",
+                "The world is reacting to the Democrats' sweeping midterm elections victory",
+                "Democrat leaders hail midterm election success",
+                "For Israelis, U.S. Midterms Show How Far Their Star Has Fallen in America"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Al Jazeera",
+                "France 24",
+                "NPR News",
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "5bad0c07-b270-4c54-9fa5-f2c232720b20",
+            "title": "Trump says Republicans harmed by Iran war",
+            "keywords": [
+                "harm",
+                "inabil",
+                "iran",
+                "lov",
+                "republican",
+                "transfer",
+                "trump",
+                "war"
+            ],
+            "entity_signature": "IR:Donald:Donald Trump:conflict:geopolitics",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-04T21:25:12.657701+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 4,
+            "chapter_titles": [
+                "Trump says Republicans harmed by Iran war, inability to 'transfer the love' for him",
+                "European far right distances itself from Trump, blaming Iran war for Republicans' defeat",
+                "Vance walks Trump tightrope after blaming Iran war for election defeat",
+                "Vance walks Trump tightrope with scathing election critique blaming Iran war"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC News",
+                "BBC US",
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "1ab7ec79-d555-4eb0-9005-66bd64d18ead",
+            "title": "Hong Kong pro-democracy activist Joshua Wong",
+            "keywords": [
+                "activist",
+                "cas",
+                "democraci",
+                "hong",
+                "joshua",
+                "kong",
+                "nate",
+                "prison",
+                "pro",
+                "secur"
+            ],
+            "entity_signature": "10 years:activist:asia-pacific regional stakeholders",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-05T09:01:14.671428+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 4,
+            "chapter_titles": [
+                "Hong Kong pro-democracy activist Joshua Wong sentenced to 10 years in prison in national security case",
+                "'I worry people will forget Hong Kong': Joshua Wong laments city's fate from inside maximum security prison",
+                "Joshua Wong, Hong Kong Democracy Activist, Is Sentenced to 10 Years in Prison",
+                "Hong Kong activist Joshua Wong sentenced to 10 years in prison"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 1.0,
+            "sources_involved": [
+                "NPR News",
+                "New York Times",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "397aff71-a99e-4ab2-9885-970861b5fbd1",
+            "title": "Israeli strikes kill eight people in Gaza",
+            "keywords": [
+                "eight",
+                "gaza",
+                "israeli",
+                "kill",
+                "medic",
+                "peopl",
+                "say",
+                "strik"
+            ],
+            "entity_signature": "IL:PS:il:impacted_community:israel",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-01T15:48:43.899672+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Israeli strikes kill eight people in Gaza - medics say",
+                "Israeli attacks on Gaza kill at least nine people",
+                "Israeli strikes in Gaza kill eight including child, hospitals say"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "Al Jazeera",
+                "BBC Middle East",
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "d253ff05-84e4-4dab-83cd-0a91b229f5d9",
+            "title": "US conducts series of 'defensive strikes' against",
+            "keywords": [
+                "conduct",
+                "defensiv",
+                "iran",
+                "seri",
+                "strik"
+            ],
+            "entity_signature": "IR:US:ir:iran:strikes",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "US conducts series of 'defensive strikes' against Iran",
+                "US strikes Iran's Qeshm Island as Trump signals progress in talks",
+                "US strikes Iranian island ahead of midterm elections"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera",
+                "BBC Middle East",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "11bef9a0-8b45-4f9c-b704-5e32da75b42e",
+            "title": "Egypt fines prominent editor Lina Attalah and",
+            "keywords": [
+                "attalah",
+                "editor",
+                "egypt",
+                "fin",
+                "independent",
+                "lina",
+                "mada",
+                "masr",
+                "outlet",
+                "prominent"
+            ],
+            "entity_signature": "EG:court:eg:egypt",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-10-29T08:05:38.122735+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Egypt fines prominent editor Lina Attalah and shuts independent news outlet Mada Masr",
+                "Egypt court fines journalist Lina Attalah and orders news site's closure"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "c98d8077-7123-4b4e-9710-4f90676991ca",
+            "title": "Bomb threats against European airlines force",
+            "keywords": [
+                "affect",
+                "airlin",
+                "airport",
+                "bomb",
+                "closur",
+                "european",
+                "flight",
+                "forc",
+                "several",
+                "threat"
+            ],
+            "entity_signature": "EU:PL:bomb:conflict:eu",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Bomb threats against European airlines force Warsaw airport closure, affect several flights",
+                "Hoax bomb threats target European airlines and airports for second time in a week"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "672a7f23-11a4-4fc1-b170-c8b6f4018f1a",
+            "title": "European leaders welcome Democrats' US midterms",
+            "keywords": [
+                "democrat",
+                "elec",
+                "european",
+                "leader",
+                "midterm",
+                "welcom",
+                "win"
+            ],
+            "entity_signature": "EU:FR:US:Donald:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-04T21:25:12.657701+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "European leaders welcome Democrats' US midterms election win",
+                "Europe's far right has a Trump problem after Republican US midterms wipeout"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "18bcb9fd-1af2-4585-8663-33ed496d0b6c",
+            "title": "X says its updated web app is way faster",
+            "keywords": [
+                "app",
+                "faster",
+                "updat",
+                "way",
+                "web"
+            ],
+            "entity_signature": "north america regional stakeholders:sovereign_stakeholder:x says its updated web app is way faster",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-05T01:40:14.810131+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "X says its updated web app is way faster",
+                "Xbox overhauls its PC, web, and cloud apps with a faster design"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "f423c297-0b12-459b-9568-2cbffe65441f",
+            "title": "France faces new protests as Macron seeks to",
+            "keywords": [
+                "fac",
+                "franc",
+                "macron",
+                "new",
+                "october",
+                "prevent",
+                "protest",
+                "repeat",
+                "seek",
+                "unrest"
+            ],
+            "entity_signature": "FR:Emmanuel:Emmanuel Macron:faces:fr",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-05T09:01:14.671428+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "France faces new protests as Macron seeks to prevent repeat of October unrest",
+                "France faces new protests as government seeks to prevent violence"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24",
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "94a08bb8-8585-4316-a46c-16d39977ca48",
+            "title": "Iran's IRGC says two tankers and tugboat caught",
+            "keywords": [
+                "caught",
+                "fir",
+                "hormuz",
+                "iran",
+                "irgc",
+                "strait",
+                "tanker",
+                "tugboat",
+                "two"
+            ],
+            "entity_signature": "IR:fire:ir:iran",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-05T09:01:14.671428+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Iran's IRGC says two tankers and tugboat caught fire in Strait of Hormuz",
+                "Iran says 5 tankers catch fire after striking naval mines in Strait of Hormuz"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "905d4177-60ef-4cd6-a980-b65b0b365c5d",
+            "title": "Italian chef fired after refusing to put",
+            "keywords": [
+                "chef",
+                "fir",
+                "italian",
+                "pineappl",
+                "pizza",
+                "put",
+                "refus"
+            ],
+            "entity_signature": "AU:IT:au:australia:fired",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-05T09:01:14.671428+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Italian chef fired after refusing to put pineapple on pizza",
+                "Was an Italian chef really fired over refusal to put pineapple on pizza?"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Asia",
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "df4b3a97-32fa-45e5-b693-e2124bb0481b",
+            "title": "Protesters to join nationwide march as France",
+            "keywords": [
+                "action",
+                "brac",
+                "day",
+                "franc",
+                "join",
+                "march",
+                "nationwid",
+                "protester",
+                "strik"
+            ],
+            "entity_signature": "FR:as france braces:civic activists / protesters:civic activists / protesters (protesters)",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-05T09:01:14.671428+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Protesters to join nationwide march as France braces for day of strike action",
+                "Protesters join street demonstrations across France on day of strike action"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "fd76589d-fa5d-4a31-85b5-bd8ddfcbf530",
+            "title": "British actor Russell Brand faces prison after",
+            "keywords": [
+                "actor",
+                "assault",
+                "brand",
+                "british",
+                "convic",
+                "fac",
+                "prison",
+                "rap",
+                "russell",
+                "sexual"
+            ],
+            "entity_signature": "UK:british actor russell brand:conflict:faces",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "British actor Russell Brand faces prison after rape, sexual assault conviction",
+                "British comedian Russell Brand found guilty of rape, sexual assault"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7,
+            "sources_involved": [
+                "France 24",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "6f25574d-9757-44d9-b47e-a0989d34e5b7",
+            "title": "Iran killed her teenage daughter - now she is",
+            "keywords": [
+                "daughter",
+                "fac",
+                "iran",
+                "kill",
+                "now",
+                "regim",
+                "teenag"
+            ],
+            "entity_signature": "IR:her teenage daughter - now she is facing up:ir:iran",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-02T13:09:15.994714+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Iran killed her teenage daughter - now she is facing up to the regime"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "BBC Middle East",
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "aeaabc5a-8d76-4752-8de5-ddcbf8fcfbb0",
+            "title": "Trump says US 'won't be paying Israel' by end of",
+            "keywords": [
+                "end",
+                "israel",
+                "pay",
+                "trump",
+                "won"
+            ],
+            "entity_signature": "IL:US:Donald:Donald Trump:conflict",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump says US 'won't be paying Israel' by end of year"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "57507d9f-2807-4ade-88f1-8ec36ef3b8b6",
+            "title": "ANC faces anger over poor services as South",
+            "keywords": [
+                "african",
+                "anc",
+                "anger",
+                "elec",
+                "fac",
+                "local",
+                "poor",
+                "servic",
+                "south",
+                "vot"
+            ],
+            "entity_signature": "ZA:anc:anger:congress",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "ANC faces anger over poor services as South Africans vote in local elections"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "4bcd74b3-22a2-4660-9d21-7fedf6b3de86",
+            "title": "Delhi air quality worsens ahead of Diwali as",
+            "keywords": [
+                "ahead",
+                "air",
+                "delhi",
+                "diwali",
+                "enter",
+                "firework",
+                "forc",
+                "qual",
+                "restric",
+                "worsen"
+            ],
+            "entity_signature": "ahead of diwali as firework restrictions enter force:asia-pacific regional stakeholders:delhi air quality",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-04T15:09:07.676826+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Delhi air quality worsens ahead of Diwali as firework restrictions enter force"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "d458e01c-7c9a-4a6a-9880-1cfe8a591c93",
+            "title": "The Clock Is Running on Apple's Siri Settlement",
+            "keywords": [
+                "appl",
+                "clock",
+                "dec",
+                "fil",
+                "runn",
+                "settle",
+                "siri"
+            ],
+            "entity_signature": "US:apple:clock is running on apple's siri settlement. how:file",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "The Clock Is Running on Apple's Siri Settlement. How to File Before Dec. 21"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "CNET"
+            ]
+        },
+        {
+            "arc_id": "0caa2a90-6f88-4011-999a-7dd216ceb661",
+            "title": "Married at First Sight UK cancelled after BBC",
+            "keywords": [
+                "allega",
+                "cancell",
+                "first",
+                "marri",
+                "rap",
+                "reveal",
+                "sight"
+            ],
+            "entity_signature": "UK:married at first sight uk cancelled after bbc:rape allegations:revealed",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Married at First Sight UK cancelled after BBC revealed rape allegations"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "71070a51-e2ef-4587-b274-f45cfb8eefa0",
+            "title": "A bitter end for Ronaldo - the icon who",
+            "keywords": [
+                "bitter",
+                "end",
+                "icon",
+                "internate",
+                "portugal",
+                "retire",
+                "ronaldo",
+                "transform"
+            ],
+            "entity_signature": "PT:announces:bitter end for ronaldo - the icon who transformed portugal:international retirement",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "A bitter end for Ronaldo - the icon who transformed Portugal announces international retirement"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "13b8fccb-be27-40de-ba8c-1391d61bc31f",
+            "title": "Melania Trump hosts Ukraine, Russia officials",
+            "keywords": [
+                "call",
+                "endur",
+                "host",
+                "melania",
+                "official",
+                "russia",
+                "truc",
+                "trump",
+                "ukrain"
+            ],
+            "entity_signature": "RU:UA:US:Donald:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Melania Trump hosts Ukraine, Russia officials, calls for 'more enduring' truce"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "bbb16a3b-6bf0-40d8-8815-9adc95381a7b",
+            "title": "Bangladesh Agrees to Raise Minimum Wage for",
+            "keywords": [
+                "agre",
+                "bangladesh",
+                "gar",
+                "minimum",
+                "protest",
+                "rais",
+                "wag",
+                "worker"
+            ],
+            "entity_signature": "BD:agrees:bangladesh:bd",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Bangladesh Agrees to Raise Minimum Wage for Garment Workers After Protests"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "de6dc3a7-e1e7-4e5c-a99c-4635ca1bb456",
+            "title": "Joshua Wong, face of Hong Kong's pro-democracy",
+            "keywords": [
+                "democraci",
+                "fac",
+                "hong",
+                "jail",
+                "joshua",
+                "kong",
+                "pro",
+                "protest",
+                "wong"
+            ],
+            "entity_signature": "asia-pacific regional stakeholders:face:joshua wong,",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Joshua Wong, face of Hong Kong's pro-democracy protests, jailed for 10 years"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "064194cf-0d56-4e8f-9d61-9734c0779725",
+            "title": "Paraguay's President Pena resigns under mounting",
+            "keywords": [
+                "bank",
+                "collaps",
+                "mount",
+                "paraguay",
+                "pena",
+                "president",
+                "pressur",
+                "resign"
+            ],
+            "entity_signature": "CL:chile:cl:crisis",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Paraguay's President Pena resigns under mounting pressure from bank collapse"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "49129069-415c-4ae9-b2c9-a1bb24ffbc31",
+            "title": "Hong Kong police arrest operator of prisoner",
+            "keywords": [
+                "alleg",
+                "arrest",
+                "book",
+                "group",
+                "hong",
+                "kong",
+                "operator",
+                "polic",
+                "prisoner",
+                "seditiou"
+            ],
+            "entity_signature": "TW:arrest:collective_faction:hong kong police",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Hong Kong police arrest operator of prisoner support group over allegedly seditious books"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "b5359a06-b080-4757-82d3-d2f4e2569fc5",
+            "title": "China Blocks SoftBank's $5.4 Billion Robotics",
+            "keywords": [
+                "billion",
+                "block",
+                "china",
+                "deal",
+                "foreign",
+                "imped",
+                "robotic",
+                "softbank",
+                "takeover"
+            ],
+            "entity_signature": "CH:CN:JP:blocks:ch",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "China Blocks SoftBank's $5.4 Billion Robotics Takeover, Impeding Foreign Deals"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "c90b4e9c-10d3-4858-86ab-8442433ad1ad",
+            "title": "France holds new strikes and protests as unions",
+            "keywords": [
+                "answer",
+                "demand",
+                "franc",
+                "hold",
+                "immediat",
+                "new",
+                "protest",
+                "strik",
+                "union"
+            ],
+            "entity_signature": "FR:and protests as unions demand immediate answers:fr:france",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "France holds new strikes and protests as unions demand immediate answers"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "0b731ac8-b238-43a7-bf58-8902e218b971",
+            "title": "Burnham says long-awaited 10-year plan may be",
+            "keywords": [
+                "await",
+                "burnham",
+                "delay",
+                "januari",
+                "long",
+                "may",
+                "plan",
+                "politic"
+            ],
+            "entity_signature": "EU:UK:burnham says long-awaited 10-year plan may be delayed until january:eu:european union",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Burnham says long-awaited 10-year plan may be delayed until January – UK politics live"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "75b452d8-89ca-4c47-bd6d-b512eea022d3",
+            "title": "Rome-bound plane diverted to French airbase as 20",
+            "keywords": [
+                "airbas",
+                "bomb",
+                "bound",
+                "divert",
+                "european",
+                "flight",
+                "french",
+                "hit",
+                "hoax",
+                "plan"
+            ],
+            "entity_signature": "EU:FR:IE:bomb:conflict",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Rome-bound plane diverted to French airbase as 20 European flights hit by bomb hoaxes"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "bd475fa1-774f-45d0-a584-4212b18a8665",
+            "title": "Houthi missiles fired at Medina intercepted",
+            "keywords": [
+                "coali",
+                "fir",
+                "houthi",
+                "intercept",
+                "medina",
+                "missil",
+                "saudi"
+            ],
+            "entity_signature": "SA:collective_faction:conflict:fired",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Houthi missiles fired at Medina intercepted, Saudi coalition says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "5f6db1e5-1632-48a7-8734-20ec6f4f0463",
+            "title": "Photos: Spain mourns Jesus de Miguel, who died",
+            "keywords": [
+                "collision",
+                "died",
+                "jesu",
+                "miguel",
+                "mourn",
+                "photo",
+                "pitch",
+                "spain"
+            ],
+            "entity_signature": "ES:died:es:sovereign_stakeholder",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Photos: Spain mourns Jesus de Miguel, who died after on-pitch collision"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "6a0fd2cc-dbd8-4b48-8898-1440e1b0b391",
+            "title": "Parents Sue Google Over A.I. Safety Risks on",
+            "keywords": [
+                "chromebook",
+                "googl",
+                "parent",
+                "risk",
+                "safeti",
+                "school",
+                "sue"
+            ],
+            "entity_signature": "children:civilians & impacted communities:civilians & impacted communities (children)",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Parents Sue Google Over A.I. Safety Risks on School Chromebooks"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "5d7a744d-fe61-4ee7-9ac5-b2930ce1a8df",
+            "title": "TikTok launched a dedicated TikTok Shop app",
+            "keywords": [
+                "app",
+                "dedicat",
+                "launch",
+                "shop",
+                "tiktok"
+            ],
+            "entity_signature": "dedicated tiktok shop app:launched:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "TikTok launched a dedicated TikTok Shop app"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "78579b59-78a5-431d-afed-d9ac4e165ac0",
+            "title": "Food delivery startup Wonder files for IPO as it",
+            "keywords": [
+                "big",
+                "bit",
+                "deliveri",
+                "explor",
+                "fil",
+                "food",
+                "ipo",
+                "startup",
+                "wonder"
+            ],
+            "entity_signature": "files:food delivery startup wonder:ipo as it explores its next big bite",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Food delivery startup Wonder files for IPO as it explores its next big bite"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "d112c01a-2006-40c6-b399-bf2c2931b119",
+            "title": "Nintendo says it's not planning another Switch 2",
+            "keywords": [
+                "another",
+                "hik",
+                "nintendo",
+                "plann",
+                "pric",
+                "switch"
+            ],
+            "entity_signature": "hike:nintendo says it's not planning another switch 2 price:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Nintendo says it's not planning another Switch 2 price hike"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "b4b0f098-2dda-4a28-be40-03d99255aba6",
+            "title": "Russell Brand is convicted of rape, and judge",
+            "keywords": [
+                "brand",
+                "convict",
+                "get",
+                "judg",
+                "prison",
+                "rap",
+                "russell",
+                "term"
+            ],
+            "entity_signature": "and judge:collective_faction:judge",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russell Brand is convicted of rape, and judge says he'll get a prison term"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "cab837b3-88ee-4c9e-b6a3-a5bc37c0c6c5",
+            "title": "Bank of England Raises Rates for First Time in",
+            "keywords": [
+                "bank",
+                "england",
+                "first",
+                "rais",
+                "rat",
+                "three"
+            ],
+            "entity_signature": "bank of england:central bank:economics",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Bank of England Raises Rates for First Time in Three Years"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "4f065577-6944-49f0-9895-d0bcc5f776d5",
+            "title": "TikTok quietly launches a stand-alone TikTok Shop",
+            "keywords": [
+                "alon",
+                "app",
+                "launch",
+                "quietli",
+                "shop",
+                "stand",
+                "tiktok"
+            ],
+            "entity_signature": "launches:north america regional stakeholders:stand-alone tiktok shop app",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "TikTok quietly launches a stand-alone TikTok Shop app"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "9da4ea5d-97cf-4212-b94e-7e7735ec785d",
+            "title": "OpenAI says its new cybersecurity model is better",
+            "keywords": [
+                "better",
+                "compani",
+                "cybersecur",
+                "hack",
+                "model",
+                "new",
+                "openai"
+            ],
+            "entity_signature": "north america regional stakeholders:openai:openai says its new cybersecurity model is better at not hacking other companies",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "OpenAI says its new cybersecurity model is better at not hacking other companies"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "cbef7d0f-2e91-4939-b4a4-da12d88dfe87",
+            "title": "India successfully test-fires indigenously",
+            "keywords": [
+                "ballistic",
+                "develop",
+                "fir",
+                "india",
+                "indigenousli",
+                "missil",
+                "pralay",
+                "quasi",
+                "successfulli",
+                "test"
+            ],
+            "entity_signature": "IN:-fires indigenously developed quasi-ballistic missile pralay:conflict:in",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "India successfully test-fires indigenously developed quasi-ballistic missile Pralay | Watch"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "885540e2-242d-4887-ae46-d15a4b95cf21",
+            "title": "Green gram procurement centre opens in",
+            "keywords": [
+                "centr",
+                "chamarajanagar",
+                "gram",
+                "green",
+                "open",
+                "procure",
+                "santhemarahalli"
+            ],
+            "entity_signature": "green gram procurement centre:india regional stakeholders:opens",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Green gram procurement centre opens in Santhemarahalli in Chamarajanagar"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "0d5d2b69-961f-487a-8be3-22ac14b66784",
+            "title": "Keralam court rejects plea to cancel bail of",
+            "keywords": [
+                "bail",
+                "cancel",
+                "court",
+                "judg",
+                "keralam",
+                "kochi",
+                "man",
+                "minor",
+                "plea",
+                "ran"
+            ],
+            "entity_signature": "collective_faction:court:economy",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Keralam court rejects plea to cancel bail of judge's minor son ran over man in Kochi"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "faec24d5-3e1f-4b7d-908d-44181a23bff2",
+            "title": "BMRCL signs ₹65-crore MoU with InMobi for",
+            "keywords": [
+                "bmrcl",
+                "cror",
+                "ibbaluru",
+                "inmobi",
+                "metro",
+                "mou",
+                "nam",
+                "right",
+                "sign",
+                "sta"
+            ],
+            "entity_signature": "bmrcl:india regional stakeholders:signs",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-05T17:32:48.112967+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "BMRCL signs ₹65-crore MoU with InMobi for Ibbaluru Metro Station naming rights"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
             ]
         },
         {
@@ -81,177 +1535,6 @@
             ]
         },
         {
-            "arc_id": "42ce6e81-aef1-453b-9c1a-7c7f652214e3",
-            "title": "What consequences for Israel as Democrats win the",
-            "keywords": [
-                "consequenc",
-                "democrat",
-                "elec",
-                "israel",
-                "midterm",
-                "win"
-            ],
-            "entity_signature": "IL:US:congress:il:israel",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-04T15:09:07.676826+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "What consequences for Israel as Democrats win the US midterm elections?",
-                "The world is reacting to the Democrats' sweeping midterm elections victory",
-                "Democrat leaders hail midterm election success",
-                "For Israelis, U.S. Midterms Show How Far Their Star Has Fallen in America"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Al Jazeera",
-                "France 24",
-                "NPR News",
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "5bad0c07-b270-4c54-9fa5-f2c232720b20",
-            "title": "Trump says Republicans harmed by Iran war",
-            "keywords": [
-                "harm",
-                "inabil",
-                "iran",
-                "lov",
-                "republican",
-                "transfer",
-                "trump",
-                "war"
-            ],
-            "entity_signature": "IR:Donald:Donald Trump:conflict:geopolitics",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-04T21:25:12.657701+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "Trump says Republicans harmed by Iran war, inability to 'transfer the love' for him",
-                "European far right distances itself from Trump, blaming Iran war for Republicans' defeat",
-                "Vance walks Trump tightrope after blaming Iran war for election defeat",
-                "Vance walks Trump tightrope with scathing election critique blaming Iran war"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC News",
-                "BBC US",
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "1ab7ec79-d555-4eb0-9005-66bd64d18ead",
-            "title": "Hong Kong pro-democracy activist Joshua Wong",
-            "keywords": [
-                "activist",
-                "cas",
-                "democraci",
-                "hong",
-                "joshua",
-                "kong",
-                "nate",
-                "prison",
-                "pro",
-                "secur"
-            ],
-            "entity_signature": "10 years:activist:asia-pacific regional stakeholders",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-05T09:01:14.671428+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "Hong Kong pro-democracy activist Joshua Wong sentenced to 10 years in prison in national security case",
-                "'I worry people will forget Hong Kong': Joshua Wong laments city's fate from inside maximum security prison",
-                "Joshua Wong, Hong Kong Democracy Activist, Is Sentenced to 10 Years in Prison",
-                "Hong Kong activist Joshua Wong sentenced to 10 years in prison"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 1.0,
-            "sources_involved": [
-                "NPR News",
-                "New York Times",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "397aff71-a99e-4ab2-9885-970861b5fbd1",
-            "title": "Israeli strikes kill eight people in Gaza",
-            "keywords": [
-                "eight",
-                "gaza",
-                "israeli",
-                "kill",
-                "medic",
-                "peopl",
-                "say",
-                "strik"
-            ],
-            "entity_signature": "IL:PS:il:impacted_community:israel",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-01T15:48:43.899672+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Israeli strikes kill eight people in Gaza - medics say",
-                "Israeli attacks on Gaza kill at least nine people",
-                "Israeli strikes in Gaza kill eight including child, hospitals say"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "Al Jazeera",
-                "BBC Middle East",
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "d253ff05-84e4-4dab-83cd-0a91b229f5d9",
-            "title": "US conducts series of 'defensive strikes' against",
-            "keywords": [
-                "conduct",
-                "defensiv",
-                "iran",
-                "seri",
-                "strik"
-            ],
-            "entity_signature": "IR:US:ir:iran:strikes",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "US conducts series of 'defensive strikes' against Iran",
-                "US strikes Iran's Qeshm Island as Trump signals progress in talks",
-                "US strikes Iranian island ahead of midterm elections"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera",
-                "BBC Middle East",
-                "France 24"
-            ]
-        },
-        {
             "arc_id": "b4bb75a9-6c66-487b-ad3e-3539c22102ce",
             "title": "President Zelenskyy says US elections will impact",
             "keywords": [
@@ -284,40 +1567,6 @@
             ]
         },
         {
-            "arc_id": "11bef9a0-8b45-4f9c-b704-5e32da75b42e",
-            "title": "Egypt fines prominent editor Lina Attalah and",
-            "keywords": [
-                "attalah",
-                "editor",
-                "egypt",
-                "fin",
-                "independent",
-                "lina",
-                "mada",
-                "masr",
-                "outlet",
-                "prominent"
-            ],
-            "entity_signature": "EG:court:eg:egypt",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Egypt fines prominent editor Lina Attalah and shuts independent news outlet Mada Masr",
-                "Egypt court fines journalist Lina Attalah and orders news site's closure"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East",
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "ea856b4e-6a68-42a6-8254-292b3e9efbdf",
             "title": "Elon Musk will face scrutiny from Democrats in",
             "keywords": [
@@ -346,36 +1595,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "NPR News"
-            ]
-        },
-        {
-            "arc_id": "6f25574d-9757-44d9-b47e-a0989d34e5b7",
-            "title": "Iran killed her teenage daughter - now she is",
-            "keywords": [
-                "daughter",
-                "fac",
-                "iran",
-                "kill",
-                "now",
-                "regim",
-                "teenag"
-            ],
-            "entity_signature": "IR:her teenage daughter - now she is facing up:ir:iran",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-02T13:09:15.994714+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Iran killed her teenage daughter - now she is facing up to the regime"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "BBC Middle East",
-                "BBC News"
             ]
         },
         {
@@ -472,97 +1691,6 @@
             ]
         },
         {
-            "arc_id": "c98d8077-7123-4b4e-9710-4f90676991ca",
-            "title": "Bomb threats against European airlines force",
-            "keywords": [
-                "affect",
-                "airlin",
-                "airport",
-                "bomb",
-                "closur",
-                "european",
-                "flight",
-                "forc",
-                "several",
-                "threat"
-            ],
-            "entity_signature": "EU:PL:bomb:conflict:eu",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Bomb threats against European airlines force Warsaw airport closure, affect several flights"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "aeaabc5a-8d76-4752-8de5-ddcbf8fcfbb0",
-            "title": "Trump says US 'won't be paying Israel' by end of",
-            "keywords": [
-                "end",
-                "israel",
-                "pay",
-                "trump",
-                "won"
-            ],
-            "entity_signature": "IL:US:Donald:Donald Trump:conflict",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump says US 'won't be paying Israel' by end of year"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "57507d9f-2807-4ade-88f1-8ec36ef3b8b6",
-            "title": "ANC faces anger over poor services as South",
-            "keywords": [
-                "african",
-                "anc",
-                "anger",
-                "elec",
-                "fac",
-                "local",
-                "poor",
-                "servic",
-                "south",
-                "vot"
-            ],
-            "entity_signature": "ZA:anc:anger:congress",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-04T06:51:50.105125+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "ANC faces anger over poor services as South Africans vote in local elections"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "c1afe091-0d16-469b-9cf0-da6a6178bc4c",
             "title": "Weapon or wine bottle? China disputes reports of",
             "keywords": [
@@ -587,38 +1715,6 @@
             "chapter_count": 1,
             "chapter_titles": [
                 "Weapon or wine bottle? China disputes reports of artillery shell in Papua New Guinea"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "4bcd74b3-22a2-4660-9d21-7fedf6b3de86",
-            "title": "Delhi air quality worsens ahead of Diwali as",
-            "keywords": [
-                "ahead",
-                "air",
-                "delhi",
-                "diwali",
-                "enter",
-                "firework",
-                "forc",
-                "qual",
-                "restric",
-                "worsen"
-            ],
-            "entity_signature": "ahead of diwali as firework restrictions enter force:asia-pacific regional stakeholders:delhi air quality",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-04T15:09:07.676826+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Delhi air quality worsens ahead of Diwali as firework restrictions enter force"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
@@ -715,35 +1811,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "New York Times"
-            ]
-        },
-        {
-            "arc_id": "672a7f23-11a4-4fc1-b170-c8b6f4018f1a",
-            "title": "European leaders welcome Democrats' US midterms",
-            "keywords": [
-                "democrat",
-                "elec",
-                "european",
-                "leader",
-                "midterm",
-                "welcom",
-                "win"
-            ],
-            "entity_signature": "EU:FR:US:Donald:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-04T21:25:12.657701+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "European leaders welcome Democrats' US midterms election win"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
             ]
         },
         {
@@ -984,33 +2051,6 @@
             ]
         },
         {
-            "arc_id": "18bcb9fd-1af2-4585-8663-33ed496d0b6c",
-            "title": "X says its updated web app is way faster",
-            "keywords": [
-                "app",
-                "faster",
-                "updat",
-                "way",
-                "web"
-            ],
-            "entity_signature": "north america regional stakeholders:sovereign_stakeholder:x says its updated web app is way faster",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-05T01:40:14.810131+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "X says its updated web app is way faster"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Verge"
-            ]
-        },
-        {
             "arc_id": "2ec83a51-1496-46f0-acb6-551969ba0b5a",
             "title": "Nothing CEO says company's mysterious AI-first",
             "keywords": [
@@ -1102,69 +2142,6 @@
             ]
         },
         {
-            "arc_id": "f423c297-0b12-459b-9568-2cbffe65441f",
-            "title": "France faces new protests as Macron seeks to",
-            "keywords": [
-                "fac",
-                "franc",
-                "macron",
-                "new",
-                "october",
-                "prevent",
-                "protest",
-                "repeat",
-                "seek",
-                "unrest"
-            ],
-            "entity_signature": "FR:Emmanuel:Emmanuel Macron:faces:fr",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-05T09:01:14.671428+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "France faces new protests as Macron seeks to prevent repeat of October unrest"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "94a08bb8-8585-4316-a46c-16d39977ca48",
-            "title": "Iran's IRGC says two tankers and tugboat caught",
-            "keywords": [
-                "caught",
-                "fir",
-                "hormuz",
-                "iran",
-                "irgc",
-                "strait",
-                "tanker",
-                "tugboat",
-                "two"
-            ],
-            "entity_signature": "IR:fire:ir:iran",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-05T09:01:14.671428+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Iran's IRGC says two tankers and tugboat caught fire in Strait of Hormuz"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
             "arc_id": "36e67dc3-1217-48f1-a3d6-f88cbefd9bd4",
             "title": "Microsoft will not expand Texas data center deal",
             "keywords": [
@@ -1227,35 +2204,6 @@
             ]
         },
         {
-            "arc_id": "905d4177-60ef-4cd6-a980-b65b0b365c5d",
-            "title": "Italian chef fired after refusing to put",
-            "keywords": [
-                "chef",
-                "fir",
-                "italian",
-                "pineappl",
-                "pizza",
-                "put",
-                "refus"
-            ],
-            "entity_signature": "AU:IT:au:australia:fired",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-05T09:01:14.671428+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Italian chef fired after refusing to put pineapple on pizza"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
             "arc_id": "cd3658f3-6273-4cad-b33a-ad594f63c4f4",
             "title": "Hong Kong needs 'forward-looking' plans amid",
             "keywords": [
@@ -1315,37 +2263,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "df4b3a97-32fa-45e5-b693-e2124bb0481b",
-            "title": "Protesters to join nationwide march as France",
-            "keywords": [
-                "action",
-                "brac",
-                "day",
-                "franc",
-                "join",
-                "march",
-                "nationwid",
-                "protester",
-                "strik"
-            ],
-            "entity_signature": "FR:as france braces:civic activists / protesters:civic activists / protesters (protesters)",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-05T09:01:14.671428+00:00",
-            "last_seen": "2026-11-05T09:01:14.671428+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Protesters to join nationwide march as France braces for day of strike action"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
             ]
         },
         {
@@ -1615,51 +2532,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "4f5a538b-33d9-4738-8693-93fa691e9f66",
-            "title": "Russian Strike on Ukraine Humanitarian Hub Kills",
-            "keywords": [
-                "dozen",
-                "hub",
-                "humanitarian",
-                "kill",
-                "russian",
-                "strik",
-                "ukrain"
-            ],
-            "entity_signature": "RU:UA:conflict:ru:russia",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-02T22:25:11.068910+00:00",
-            "last_seen": "2026-11-05T01:40:14.810131+00:00",
-            "chapter_count": 12,
-            "chapter_titles": [
-                "Russian Strike on Ukraine Humanitarian Hub Kills Dozens",
-                "Russian bombing of Ukrainian aid centre kills at least 26, Kyiv says",
-                "Russian strikes kill 26 in Ukraine after longest ceasefire ends",
-                "Multiple Russian strikes kill at least 26 at Ukraine aid centre",
-                "Russian bombing kills 29 people at Ukraine aid centre, Kyiv says",
-                "Russia bombs aid centre and shelter in Ukraine, killing at least 29 people",
-                "Russian strikes kill at least 26 in Ukraine after war's longest ceasefire ends",
-                "Emergency responders comb through rubble after deadly strike on Ukrainian aid centre – video",
-                "Russian bombing kills 31 people at Ukraine aid centre, Kyiv says",
-                "Russia bombs humanitarian hub in Ukraine, killing at least 31 people",
-                "Ukraine says bodycam video shows deadly Russian double-tap bombing",
-                "Ukraine raises death toll from Russian strike on Zaporizhia to 40 people"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera",
-                "BBC Europe",
-                "BBC News",
-                "France 24",
-                "New York Times",
-                "The Guardian"
             ]
         },
         {
@@ -2246,876 +3118,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "f5ace6f4-daa1-4442-9c46-edbde78ed6fd",
-            "title": "Election Commission of India to launch major",
-            "keywords": [
-                "commission",
-                "driv",
-                "elec",
-                "enrol",
-                "india",
-                "launch",
-                "major",
-                "nov",
-                "voter"
-            ],
-            "entity_signature": "IN:collective_faction:commission:election",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-05T01:40:14.810131+00:00",
-            "last_seen": "2026-11-05T01:40:14.810131+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Election Commission of India to launch major voter enrolment drive in UP on Nov 12"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "7b04023a-9a2b-46d4-82c5-81c8adf3d29f",
-            "title": "Ukraine's drone strikes spur hasty Russian plans",
-            "keywords": [
-                "center",
-                "data",
-                "dron",
-                "hasti",
-                "plan",
-                "russian",
-                "spur",
-                "strik",
-                "ukrain",
-                "underground"
-            ],
-            "entity_signature": "RU:UA:conflict:geopolitics:ru",
-            "category": "Tech",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-04T21:25:12.657701+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Ukraine's drone strikes spur hasty Russian plans for underground data centers"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Ars Technica"
-            ]
-        },
-        {
-            "arc_id": "645fcfc1-ce48-41f7-b102-5420682052c4",
-            "title": "More than 900 academics urge UK to reverse",
-            "keywords": [
-                "academic",
-                "andrea",
-                "bar",
-                "decision",
-                "malm",
-                "revers",
-                "urg"
-            ],
-            "entity_signature": "PS:SE:UK:climate:conflict",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-04T15:09:07.676826+00:00",
-            "last_seen": "2026-11-04T21:25:12.657701+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "More than 900 academics urge UK to reverse decision to bar Andreas Malm"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "45cdc227-9292-44b8-b987-4498c7d3fe91",
-            "title": "Canada to curb reliance on US despite Trump",
-            "keywords": [
-                "canada",
-                "crush",
-                "curb",
-                "despit",
-                "loss",
-                "midterm",
-                "minister",
-                "relianc",
-                "team",
-                "trump"
-            ],
-            "entity_signature": "CA:US:Donald:Donald Trump:ca",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T21:25:12.657701+00:00",
-            "last_seen": "2026-11-04T21:25:12.657701+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Canada to curb reliance on US despite Trump team's crushing midterm loss, minister says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "bed1a4dd-a375-46ad-87f9-c3f2826e3c8a",
-            "title": "Who won in China? In the US midterms, Susan",
-            "keywords": [
-                "china",
-                "collin",
-                "firefighter",
-                "local",
-                "midterm",
-                "susan",
-                "won"
-            ],
-            "entity_signature": "CN:US:china:china sovereign authorities:china?",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-04T21:25:12.657701+00:00",
-            "last_seen": "2026-11-04T21:25:12.657701+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Who won in China? In the US midterms, Susan Collins and the local firefighters"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "f2693e28-174c-4319-86ec-129ae573deb7",
-            "title": "Will the US resume its attacks on Iran?",
-            "keywords": [
-                "attack",
-                "iran",
-                "resum"
-            ],
-            "entity_signature": "IR:US:ir:iran:its attacks",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T21:25:12.657701+00:00",
-            "last_seen": "2026-11-04T21:25:12.657701+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Will the US resume its attacks on Iran?"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "ed31d1b9-431c-45ef-93a0-dfc18206715a",
-            "title": "Democratic progressive wing notches win in",
-            "keywords": [
-                "california",
-                "central",
-                "democratic",
-                "notch",
-                "progressiv",
-                "valley",
-                "win",
-                "wing"
-            ],
-            "entity_signature": "california central valley:democratic progressive wing notches:election",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-04T21:25:12.657701+00:00",
-            "last_seen": "2026-11-04T21:25:12.657701+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Democratic progressive wing notches win in California Central Valley"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "be08ed3a-c9d6-44af-b9ea-f28c5738cef8",
-            "title": "Hakeem Jeffries promises 'affordability' focus",
-            "keywords": [
-                "affordabil",
-                "democratic",
-                "focu",
-                "hakeem",
-                "jeffri",
-                "midterm",
-                "promis",
-                "win"
-            ],
-            "entity_signature": "hakeem jeffries promises 'affordability' focus after democratic midterm:middle east regional stakeholders:sovereign_stakeholder",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-04T21:25:12.657701+00:00",
-            "last_seen": "2026-11-04T21:25:12.657701+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Hakeem Jeffries promises 'affordability' focus after Democratic midterm win"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "cb8cb774-2744-43af-ab8b-6896f1d44f8f",
-            "title": "Hackers stole DreamHost customer files and",
-            "keywords": [
-                "attack",
-                "customer",
-                "dreamhost",
-                "fil",
-                "hacker",
-                "inbox",
-                "long",
-                "stol"
-            ],
-            "entity_signature": "and inboxes during months-long attack:conflict:files",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T21:25:12.657701+00:00",
-            "last_seen": "2026-11-04T21:25:12.657701+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Hackers stole DreamHost customer files and inboxes during months-long attack"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "e0bf8aac-4717-4716-9b49-670c1b888950",
-            "title": "Open source AI is booming. Hugging Face explains",
-            "keywords": [
-                "ai",
-                "boom",
-                "explain",
-                "fac",
-                "hugg",
-                "open",
-                "profit",
-                "sourc"
-            ],
-            "entity_signature": "north america regional stakeholders:open:source ai is booming. hugging face explains who profits.",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T21:25:12.657701+00:00",
-            "last_seen": "2026-11-04T21:25:12.657701+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Open source AI is booming. Hugging Face explains who profits."
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "2fddb887-c7db-469a-a0cf-a4874c74ce04",
-            "title": "Nothing teases a screen-free AI device ahead of",
-            "keywords": [
-                "ahead",
-                "ai",
-                "devic",
-                "free",
-                "launch",
-                "noth",
-                "screen",
-                "teas"
-            ],
-            "entity_signature": "launch:next month:north america regional stakeholders",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T21:25:12.657701+00:00",
-            "last_seen": "2026-11-04T21:25:12.657701+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Nothing teases a screen-free AI device ahead of launch next month"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Verge"
-            ]
-        },
-        {
-            "arc_id": "e0994f0c-6ed1-4410-830c-8c1619e18a7e",
-            "title": "'You Can See Everything' is getting an outer",
-            "keywords": [
-                "com",
-                "europ",
-                "even",
-                "everyth",
-                "gett",
-                "hasn",
-                "outer",
-                "releas",
-                "see",
-                "spac"
-            ],
-            "entity_signature": "EU:UK:and it hasn't even come out:eu:european union",
-            "category": "Tech",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-04T21:25:12.657701+00:00",
-            "last_seen": "2026-11-04T21:25:12.657701+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'You Can See Everything' is getting an outer space release and it hasn't even come out in Europe yet"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "4b26e24f-9289-4663-85b1-0b93134cd04b",
-            "title": "11 SDRF, fire services personnel missing after",
-            "keywords": [
-                "boat",
-                "capsiz",
-                "fir",
-                "floodwater",
-                "miss",
-                "personnel",
-                "rescu",
-                "sdrf",
-                "servic",
-                "telangana"
-            ],
-            "entity_signature": "11 sdrf,:fire:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-04T21:25:12.657701+00:00",
-            "last_seen": "2026-11-04T21:25:12.657701+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "11 SDRF, fire services personnel missing after rescue boats capsize in Telangana floodwaters"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "1ac068fd-d832-4a8e-9b62-4d8badd3083b",
-            "title": "Delhi Police to reimburse full tuition fee of",
-            "keywords": [
-                "children",
-                "delhi",
-                "duti",
-                "fee",
-                "full",
-                "kill",
-                "lin",
-                "personnel",
-                "polic",
-                "reimburs"
-            ],
-            "entity_signature": "children:civilians & impacted communities:civilians & impacted communities (children)",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-04T21:25:12.657701+00:00",
-            "last_seen": "2026-11-04T21:25:12.657701+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Delhi Police to reimburse full tuition fee of children of personnel killed in line of duty"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "f28e353e-f6f8-4428-937d-3e462a355cfb",
-            "title": "MP high court rejects bail plea of ex-judge",
-            "keywords": [
-                "bail",
-                "cas",
-                "court",
-                "giribala",
-                "high",
-                "judg",
-                "plea",
-                "reject",
-                "sharma",
-                "singh"
-            ],
-            "entity_signature": "bail plea of ex-judge giribala singh:collective_faction:court",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-04T21:25:12.657701+00:00",
-            "last_seen": "2026-11-04T21:25:12.657701+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "MP high court rejects bail plea of ex-judge Giribala Singh in Twisha Sharma case"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "00f2f79d-cd3a-4c67-993c-bbf282ad6eb1",
-            "title": "Government proposes immediate suspension of",
-            "keywords": [
-                "drug",
-                "govern",
-                "immediat",
-                "licenc",
-                "manufactur",
-                "propos",
-                "substandard",
-                "suspension"
-            ],
-            "entity_signature": "governance:government proposes immediate suspension of manufacturing licences of substandard drugs:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-04T21:25:12.657701+00:00",
-            "last_seen": "2026-11-04T21:25:12.657701+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Government proposes immediate suspension of manufacturing licences of substandard drugs"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "a475f78c-6d66-4bf1-8870-b79086b4a9e0",
-            "title": "Oil rises after report of US strike on Iran's",
-            "keywords": [
-                "iran",
-                "island",
-                "oil",
-                "qeshm",
-                "report",
-                "ris",
-                "strik"
-            ],
-            "entity_signature": "IR:US:conflict:ir:iran",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-03T03:37:06.202512+00:00",
-            "last_seen": "2026-11-04T15:09:07.676826+00:00",
-            "chapter_count": 6,
-            "chapter_titles": [
-                "Oil rises after report of US strike on Iran's Qeshm Island",
-                "US carries out 'defensive' strikes on Iran's Qeshm Island, officials say",
-                "US strikes Iran's Qeshm Island as Trump signals progress in talks",
-                "Explosions hit Iran's Qeshm Island as US media report US strikes in Hormuz",
-                "US hits Qeshm Island, Pezeshkian signals more diplomacy: Iran war latest",
-                "US strikes Iran's Qeshm Island as midterm elections start"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera",
-                "France 24",
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "fc467a08-7ce3-4727-90d6-f42715263911",
-            "title": "Warsaw Modlin airport resumes operations after",
-            "keywords": [
-                "airport",
-                "bomb",
-                "europ",
-                "flight",
-                "london",
-                "modlin",
-                "opera",
-                "resum",
-                "threat",
-                "warsaw"
-            ],
-            "entity_signature": "EU:PL:UK:conflict:eu",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-04T15:09:07.676826+00:00",
-            "chapter_count": 6,
-            "chapter_titles": [
-                "Warsaw Modlin airport resumes operations after bomb threat reported on London flight – Europe live",
-                "Bomb threats cause flight disruptions across Europe",
-                "Seven flights across Europe targeted by suspected bomb threats",
-                "Fake bomb threats on flights and cruise ship cause travel disruption in Europe",
-                "Seven planes across Europe searched or diverted after 'malicious hoax' bomb threats",
-                "Bomb Threats Disrupt Several Flights Across Europe"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Europe",
-                "BBC News",
-                "New York Times",
-                "Reuters",
-                "SCMP",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "144601af-ed02-4c1b-8d6b-6f2a627ad5eb",
-            "title": "Spanish footballer dies after collision with",
-            "keywords": [
-                "collision",
-                "die",
-                "footballer",
-                "goalkeeper",
-                "match",
-                "spanish"
-            ],
-            "entity_signature": "ES:civic activists / protesters:civic activists / protesters (striker):dies",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-04T15:09:07.676826+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Spanish footballer dies after collision with goalkeeper during match",
-                "Tenerife striker De Miguel dies after on-field collision",
-                "Football world mourns Tenerife striker De Miguel"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Europe",
-                "BBC News"
-            ]
-        },
-        {
-            "arc_id": "5af1c388-e92e-4935-9614-022665eadff7",
-            "title": "Europe on alert after supermarket freezers hit by",
-            "keywords": [
-                "alert",
-                "attack",
-                "countri",
-                "cyber",
-                "europ",
-                "freezer",
-                "hit",
-                "supermarket"
-            ],
-            "entity_signature": "EU:IT:PT:10 countries:attacks",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-03T19:08:31.384919+00:00",
-            "last_seen": "2026-11-04T15:09:07.676826+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Europe on alert after supermarket freezers hit by cyber-attacks in 10 countries",
-                "Food suppliers in UK hit by cyber-attacks after freezers targeted in Europe"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "BBC Europe",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "d3d50d54-5414-431d-b49f-9ebe12cbbb2d",
-            "title": "Poland foils attempted 'provocation' on Russian",
-            "keywords": [
-                "attempt",
-                "border",
-                "foil",
-                "poland",
-                "provoca",
-                "russian",
-                "tusk"
-            ],
-            "entity_signature": "PL:RU:pl:poland:poland foils attempted 'provocation' on russian border, pm tusk says",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-03T19:08:31.384919+00:00",
-            "last_seen": "2026-11-04T15:09:07.676826+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Poland foils attempted 'provocation' on Russian border, PM Tusk says",
-                "Poland Beefs Up Security at Border With Russia"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24",
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "53bc9cbf-1925-495a-b901-66d856a78338",
-            "title": "Africa's 'unprecedented' Ebola outbreak could",
-            "keywords": [
-                "africa",
-                "ebola",
-                "health",
-                "official",
-                "outbreak",
-                "reach",
-                "top",
-                "unprecedent"
-            ],
-            "entity_signature": "UK:africa's 'unprecedented' ebola outbreak could reach uk, says top health official:collective_faction:crisis",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-10-29T08:05:38.122735+00:00",
-            "last_seen": "2026-11-04T15:09:07.676826+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Africa's 'unprecedented' Ebola outbreak could reach UK, says top health official"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "11dd2c25-7225-4a5d-ad1c-4f080779524d",
-            "title": "One dead and another missing in suspected grizzly",
-            "keywords": [
-                "another",
-                "attack",
-                "bear",
-                "canada",
-                "dead",
-                "grizzli",
-                "miss",
-                "one",
-                "suspect"
-            ],
-            "entity_signature": "CA:attack:ca:canada",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-04T15:09:07.676826+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "One dead and another missing in suspected grizzly bear attack in Canada"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "9cbcf91e-ffde-4492-9285-99688aff387e",
-            "title": "Five reasons why Republicans lost so badly",
-            "keywords": [
-                "badli",
-                "fiv",
-                "lost",
-                "reason",
-                "republican"
-            ],
-            "entity_signature": "US:five reasons why republicans:lost:so badly",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T15:09:07.676826+00:00",
-            "last_seen": "2026-11-04T15:09:07.676826+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Five reasons why Republicans lost so badly"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC News"
-            ]
-        },
-        {
-            "arc_id": "ee2b5a9d-bae9-441e-b945-c3bb7a538cb4",
-            "title": "Republicans face prospect of 'civil war' as",
-            "keywords": [
-                "air",
-                "civil",
-                "fac",
-                "fad",
-                "invincibil",
-                "prospect",
-                "republican",
-                "start",
-                "trump",
-                "war"
-            ],
-            "entity_signature": "US:Donald:Donald Trump:conflict:election",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T15:09:07.676826+00:00",
-            "last_seen": "2026-11-04T15:09:07.676826+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Republicans face prospect of 'civil war' as Trump's air of invincibility starts to fade"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "1dee8c4e-4b4a-4580-8bfc-2cae76b185a2",
-            "title": "Montenegro could sign accession treaty with EU in",
-            "keywords": [
-                "accession",
-                "commission",
-                "european",
-                "jun",
-                "montenegro",
-                "sign",
-                "treati"
-            ],
-            "entity_signature": "EU:accession treaty:collective_faction:commission",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-04T15:09:07.676826+00:00",
-            "last_seen": "2026-11-04T15:09:07.676826+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Montenegro could sign accession treaty with EU in June 2027, European Commission says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "5df5eccb-e1da-4299-bb28-056660f97c20",
-            "title": "AI data center stocks dip, renewables surge after",
-            "keywords": [
-                "ai",
-                "center",
-                "data",
-                "democrat",
-                "dip",
-                "elec",
-                "midterm",
-                "renewabl",
-                "stock",
-                "surg"
-            ],
-            "entity_signature": "US:ai data center stocks dip, renewables:economics:economy",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T15:09:07.676826+00:00",
-            "last_seen": "2026-11-04T15:09:07.676826+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "AI data center stocks dip, renewables surge after Democrat sweep in US midterm elections"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "893b2143-1c0c-4977-8462-08d4721172c6",
-            "title": "Danish students join European wave of youth",
-            "keywords": [
-                "cut",
-                "danish",
-                "educa",
-                "european",
-                "join",
-                "strik",
-                "student",
-                "wav",
-                "youth"
-            ],
-            "entity_signature": "DK:EU:danish students join european wave of youth:denmark:denmark sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-04T15:09:07.676826+00:00",
-            "last_seen": "2026-11-04T15:09:07.676826+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Danish students join European wave of youth strikes over education cuts"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
             ]
         }
     ],
