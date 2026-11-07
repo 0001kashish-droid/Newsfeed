@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-07T17:29:31.260853+00:00",
+    "last_updated": "2026-11-07T21:03:37.125417+00:00",
     "arcs": [
         {
             "arc_id": "4f5a538b-33d9-4738-8693-93fa691e9f66",
@@ -19,8 +19,8 @@
                 "North America"
             ],
             "first_seen": "2026-11-02T22:25:11.068910+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 15,
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 16,
             "chapter_titles": [
                 "Russian Strike on Ukraine Humanitarian Hub Kills Dozens",
                 "Russian bombing of Ukrainian aid centre kills at least 26, Kyiv says",
@@ -36,7 +36,8 @@
                 "Ukraine raises death toll from Russian strike on Zaporizhia to 40 people",
                 "Death toll rises to 50 in Russian attack on aid distribution ‌point in Ukraine",
                 "Russia launches massive strike on Kyiv",
-                "Blackouts and water shortages in Kyiv after Russia strikes Ukraine's energy grid"
+                "Blackouts and water shortages in Kyiv after Russia strikes Ukraine's energy grid",
+                "Russia hits Kyiv and surrounding region in massive overnight strike"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
@@ -70,7 +71,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
             "chapter_count": 12,
             "chapter_titles": [
                 "Bomb threats against European airlines force Warsaw airport closure, affect several flights",
@@ -117,7 +118,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-02T04:43:29.131419+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
             "chapter_count": 10,
             "chapter_titles": [
                 "Iran warns renewed war with US could outlast previous conflict",
@@ -163,56 +164,27 @@
                 "Europe"
             ],
             "first_seen": "2026-11-07T17:29:30.818640+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 6,
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 7,
             "chapter_titles": [
                 "Five killed in shooting in main square of Polish city of Krakow, police say",
                 "5 killed in shooting in tourist heart of Krakow, Poland",
                 "Kraków shooting latest updates: five killed and more than a dozen injured, police say",
                 "At least six people killed in shooting in Polish city of Krakow, police say",
                 "Five killed and at least 10 injured in Krakow shooting",
-                "Gunman Opens Fire in Krakow, Killing at Least 5, Polish Police Say"
+                "Gunman Opens Fire in Krakow, Killing at Least 5, Polish Police Say",
+                "Gunman opens fire in Polish city of Krakow, killing 6 people and injuring 15"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.7,
             "sources_involved": [
                 "Al Jazeera",
                 "France 24",
+                "NPR News",
                 "New York Times",
                 "Reuters",
                 "SCMP",
                 "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "d253ff05-84e4-4dab-83cd-0a91b229f5d9",
-            "title": "US conducts series of 'defensive strikes' against",
-            "keywords": [
-                "conduct",
-                "defensiv",
-                "iran",
-                "seri",
-                "strik"
-            ],
-            "entity_signature": "IR:US:ir:iran:strikes",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-03T11:39:38.283623+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "US conducts series of 'defensive strikes' against Iran",
-                "US strikes Iran's Qeshm Island as Trump signals progress in talks",
-                "US strikes Iranian island ahead of midterm elections"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera",
-                "BBC Middle East",
-                "France 24"
             ]
         },
         {
@@ -236,18 +208,119 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-04T15:09:07.676826+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 3,
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 4,
             "chapter_titles": [
                 "Israel's President Herzog accepts certified election results, urges compromise to form government",
                 "Israel president to announce Sunday who will form new government",
-                "After Israel's Election, Who Will Get the First Chance to Form a Government?"
+                "After Israel's Election, Who Will Get the First Chance to Form a Government?",
+                "Israel's president taps opposition candidate Eisenkot to form a government, in setback for Netanyahu"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
             "sources_involved": [
                 "France 24",
+                "NPR News",
                 "New York Times"
+            ]
+        },
+        {
+            "arc_id": "36eccfa0-bf9a-494f-8fb7-f226b6d03ef9",
+            "title": "New Zealand faces weeks of uncertainty with",
+            "keywords": [
+                "call",
+                "clos",
+                "elec",
+                "fac",
+                "new",
+                "uncertainti",
+                "zealand"
+            ],
+            "entity_signature": "NZ:election:faces:new zealand",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-07T21:03:36.772174+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 4,
+            "chapter_titles": [
+                "New Zealand faces weeks of uncertainty with election 'too close to call'",
+                "New Zealand election 'too close to call' - so who will be next PM?",
+                "New Zealand's Election 'Too Close to Call' as Voters Turn to Minor Parties",
+                "Chris vs Chris: Who's running and what's at stake this New Zealand election"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "BBC Asia",
+                "New York Times",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "d253ff05-84e4-4dab-83cd-0a91b229f5d9",
+            "title": "US conducts series of 'defensive strikes' against",
+            "keywords": [
+                "conduct",
+                "defensiv",
+                "iran",
+                "seri",
+                "strik"
+            ],
+            "entity_signature": "IR:US:ir:iran:strikes",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-03T11:39:38.283623+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "US conducts series of 'defensive strikes' against Iran",
+                "US strikes Iran's Qeshm Island as Trump signals progress in talks",
+                "US strikes Iranian island ahead of midterm elections"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera",
+                "BBC Middle East",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "63a3c456-3210-4d46-aaaf-fa896640ec01",
+            "title": "Six dead after gunman opens fire 'at random' in",
+            "keywords": [
+                "dead",
+                "fir",
+                "gunman",
+                "market",
+                "open",
+                "random",
+                "six",
+                "squar"
+            ],
+            "entity_signature": "PL:economics:economy:fire 'at random",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-07T17:29:30.818640+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Six dead after gunman opens fire 'at random' in Kraków market square",
+                "What we know so far after Polish gunman opens fire in Krakow main square",
+                "At Least 6 Dead in Poland After Gunman Opens Fire in Krakow, Police Say"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC News",
+                "New York Times",
+                "The Guardian"
             ]
         },
         {
@@ -271,7 +344,7 @@
                 "Global"
             ],
             "first_seen": "2026-11-04T06:51:50.105125+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "ANC faces anger over poor services as South Africans vote in local elections",
@@ -300,7 +373,7 @@
                 "Global"
             ],
             "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "The leader of a Kenyan doomsday cult is sentenced to 200 years in prison",
@@ -331,7 +404,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Bomb Threats in Europe Probably a Coordinated Campaign, Ireland Says",
@@ -364,7 +437,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-06T23:41:03.632589+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "China's Top Spy Agency Recruited Woman Who Targeted Jensen Huang",
@@ -398,7 +471,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Yemeni gov't forces, Houthis trade blame for deadly strikes on Taiz market",
@@ -409,6 +482,888 @@
             "sources_involved": [
                 "Al Jazeera",
                 "France 24"
+            ]
+        },
+        {
+            "arc_id": "ce982317-95ab-4f12-b462-0459dbd391e9",
+            "title": "The US let Nvidia sell chips to an empty office",
+            "keywords": [
+                "china",
+                "chip",
+                "empti",
+                "nvidia",
+                "offic",
+                "sell"
+            ],
+            "entity_signature": "CN:US:china:chips:cn",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-07T17:29:30.818640+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "The US let Nvidia sell chips to an empty office in China",
+                "U.S. Cleared Nvidia Chips to Chinese Firms With Empty Offices and Troubling Ties"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business",
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "aeaabc5a-8d76-4752-8de5-ddcbf8fcfbb0",
+            "title": "Trump says US 'won't be paying Israel' by end of",
+            "keywords": [
+                "end",
+                "israel",
+                "pay",
+                "trump",
+                "won"
+            ],
+            "entity_signature": "IL:US:Donald:Donald Trump:conflict",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump says US 'won't be paying Israel' by end of year"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "bbb16a3b-6bf0-40d8-8815-9adc95381a7b",
+            "title": "Bangladesh Agrees to Raise Minimum Wage for",
+            "keywords": [
+                "agre",
+                "bangladesh",
+                "gar",
+                "minimum",
+                "protest",
+                "rais",
+                "wag",
+                "worker"
+            ],
+            "entity_signature": "BD:agrees:bangladesh:bd",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-05T17:32:48.112967+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Bangladesh Agrees to Raise Minimum Wage for Garment Workers After Protests"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "42225671-4275-439b-88ff-d29c0e52e37e",
+            "title": "Australian woman shot during Bondi Beach attack",
+            "keywords": [
+                "almost",
+                "attack",
+                "australian",
+                "beach",
+                "bondi",
+                "die",
+                "later",
+                "shot",
+                "woman"
+            ],
+            "entity_signature": "AU:au:australia:australian woman",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-06T11:51:06.544845+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Australian woman shot during Bondi Beach attack dies almost a year later"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "4f95cc62-4611-443a-8ee3-03c29bfd586d",
+            "title": "Russian extremist group denies sending hoax bomb",
+            "keywords": [
+                "bomb",
+                "deni",
+                "extremist",
+                "group",
+                "hoax",
+                "russian",
+                "send",
+                "threat"
+            ],
+            "entity_signature": "EU:RU:bomb:conflict:eu",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-06T18:57:15.146358+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russian extremist group denies sending hoax bomb threats"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "86843973-1a68-4619-b661-46f65cf48507",
+            "title": "Man investigated for leaving 17-year-old on",
+            "keywords": [
+                "germani",
+                "highest",
+                "investigat",
+                "leav",
+                "man",
+                "mountain",
+                "old"
+            ],
+            "entity_signature": "DE:de:germany:health",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-06T18:57:15.146358+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Man investigated for leaving 17-year-old on Germany's highest mountain"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "68e97322-af70-42d5-9813-3b57c85dc1ab",
+            "title": "Spain's rail authorities face European fraud",
+            "keywords": [
+                "authoriti",
+                "disaster",
+                "european",
+                "fac",
+                "fraud",
+                "prob",
+                "rail",
+                "spain",
+                "urda"
+            ],
+            "entity_signature": "ES:EU:crisis:economy:es",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-06T18:57:15.146358+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Spain's rail authorities face European fraud probe after Urda rail disaster"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "c38b1d64-fe5b-4d1e-afce-6a58603ef7b7",
+            "title": "How GTF institute is building a learning",
+            "keywords": [
+                "build",
+                "ecosystem",
+                "gtf",
+                "institut",
+                "learn",
+                "trader"
+            ],
+            "entity_signature": "building:how gtf institute:india regional stakeholders",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-06T18:57:15.146358+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "How GTF institute is building a learning ecosystem for traders"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "2d45f31d-0e47-4655-a687-b53e5779d4d1",
+            "title": "An Indian film that nobody would release is",
+            "keywords": [
+                "award",
+                "film",
+                "finalli",
+                "hit",
+                "indian",
+                "later",
+                "nobodi",
+                "releas"
+            ],
+            "entity_signature": "IN:in:india:indian film that nobody would",
+            "category": "World",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-06T23:41:03.632589+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "An Indian film that nobody would release is finally a hit - 18 awards later"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "28d88f74-de92-459b-aa06-c48aeb1dedc9",
+            "title": "Ousted Paraguay president under house arrest",
+            "keywords": [
+                "access",
+                "account",
+                "arrest",
+                "bank",
+                "countri",
+                "crisi",
+                "hous",
+                "leav",
+                "oust",
+                "paraguay"
+            ],
+            "entity_signature": "CL:arrest:chile:civic activists / protesters",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-07T04:53:09.059440+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ousted Paraguay president under house arrest after banking crisis leaves 60% of country unable to access accounts"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "adc8d14d-2aa3-4eba-88ca-53312fac4c78",
+            "title": "Researchers Identify Suspicious Activity on",
+            "keywords": [
+                "activ",
+                "identifi",
+                "kalshi",
+                "poll",
+                "polymarket",
+                "releas",
+                "researcher",
+                "siena",
+                "suspiciou",
+                "tim"
+            ],
+            "entity_signature": "collective_faction:congress:election",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-07T04:53:09.059440+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Researchers Identify Suspicious Activity on Kalshi and Polymarket Before Times/Siena Poll Release"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "2c0b3a64-7612-49cd-afef-53c3618be981",
+            "title": "Crusoe sells troubled Wyoming data center project",
+            "keywords": [
+                "center",
+                "cruso",
+                "data",
+                "googl",
+                "project",
+                "sell",
+                "troubl",
+                "wyom"
+            ],
+            "entity_signature": "crusoe:diplomacy:google",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-07T04:53:09.059440+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Crusoe sells troubled Wyoming data center project to Google"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "a394d5eb-351a-4ab9-972c-e715316c4430",
+            "title": "Home Office sued after stripping almost 1,500 EU",
+            "keywords": [
+                "almost",
+                "citizen",
+                "hom",
+                "offic",
+                "right",
+                "stripp",
+                "sued"
+            ],
+            "entity_signature": "EU:UK:citizens:civilians & impacted communities:civilians & impacted communities (citizens)",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-07T11:31:42.333087+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Home Office sued after stripping almost 1,500 EU citizens of right to live in UK"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "84a71676-e2f9-45f7-8082-4cd9e917554e",
+            "title": "AI Data centres face growing backlash",
+            "keywords": [
+                "ai",
+                "backlash",
+                "centr",
+                "data",
+                "fac",
+                "grow"
+            ],
+            "entity_signature": "EU:NL:activists:ai data centres:civic activists / protesters",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-07T11:31:42.333087+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "AI Data centres face growing backlash"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "1f0b6150-fb3a-457b-a0c9-0e033482f8e2",
+            "title": "Indian markets surge as Sensex, nifty defy global",
+            "keywords": [
+                "defi",
+                "global",
+                "indian",
+                "market",
+                "nifti",
+                "sensex",
+                "surg",
+                "tech",
+                "turmoil"
+            ],
+            "entity_signature": "IN:analysts:as sensex, nifty defy global tech turmoil:economy",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-07T11:31:42.333087+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Indian markets surge as Sensex, nifty defy global tech turmoil"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "fc1506f5-bbc2-43c5-9f41-8872542afb0d",
+            "title": "Woman hurt in flat fire suspected to have been",
+            "keywords": [
+                "aromatherapi",
+                "caus",
+                "fir",
+                "flat",
+                "hurt",
+                "item",
+                "suspect",
+                "woman"
+            ],
+            "entity_signature": "asia-pacific regional stakeholders:fire:justice",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-07T17:29:30.818640+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Woman hurt in flat fire suspected to have been caused by aromatherapy items"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "92546454-4906-4c5b-a3d3-767e72b88215",
+            "title": "Guatemalan lawmaker, 3 police officers killed in",
+            "keywords": [
+                "arm",
+                "attack",
+                "guatemalan",
+                "kill",
+                "lawmaker",
+                "officer",
+                "polic"
+            ],
+            "entity_signature": "armed attack:asia-pacific regional stakeholders:collective_faction",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-07T17:29:30.818640+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Guatemalan lawmaker, 3 police officers killed in armed attack"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "76ee60fe-de90-4745-8391-e85198a524db",
+            "title": "Court rules against Home Office in asylum seeker",
+            "keywords": [
+                "asylum",
+                "cas",
+                "court",
+                "hom",
+                "kidnapp",
+                "offic",
+                "rul",
+                "seeker"
+            ],
+            "entity_signature": "SY:asylum seeker:civilians & impacted communities:civilians & impacted communities (asylum seeker)",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-07T17:29:30.818640+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Court rules against Home Office in asylum seeker kidnapping case"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "07543d39-e19c-495f-b7a3-53eb6b32fdc8",
+            "title": "A promising new medicine against heart disease",
+            "keywords": [
+                "diseas",
+                "fail",
+                "heart",
+                "medicin",
+                "new",
+                "promis",
+                "unexpect"
+            ],
+            "entity_signature": "health:north america regional stakeholders:promising new medicine against heart disease fails unexpectedly",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-07T17:29:30.818640+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "A promising new medicine against heart disease fails unexpectedly"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "c033cd67-767b-48b3-9821-fb73df2cb6b9",
+            "title": "Democrats plan to widen their probes of fatal ICE",
+            "keywords": [
+                "democrat",
+                "fatal",
+                "ice",
+                "plan",
+                "prob",
+                "shoot",
+                "widen"
+            ],
+            "entity_signature": "democrats plan to widen their:economy:north america regional stakeholders",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-07T17:29:30.818640+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Democrats plan to widen their probes of fatal ICE shootings"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "5f5e346a-0110-489a-87e9-948fb3ef55be",
+            "title": "Poland in shock as six dead after mass shooting",
+            "keywords": [
+                "dead",
+                "krakow",
+                "mass",
+                "poland",
+                "shock",
+                "shoot",
+                "six"
+            ],
+            "entity_signature": "PL:krakow:pl:poland",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-07T21:03:36.772174+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Poland in shock as six dead after mass shooting in Krakow"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "e9bf983e-c672-4487-a315-2440fff749c7",
+            "title": "Gunman 'fascinated by far-right' kills 6 in",
+            "keywords": [
+                "far",
+                "fascinat",
+                "gunman",
+                "kill",
+                "krakow",
+                "poland",
+                "right"
+            ],
+            "entity_signature": "PL:6:gunman 'fascinated by far-right:kills",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-07T21:03:36.772174+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Gunman 'fascinated by far-right' kills 6 in Krakow, Poland"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "79cebbc7-a120-4751-adc4-cda68b5d4bc2",
+            "title": "Kraków shooting latest updates: six killed and",
+            "keywords": [
+                "dozen",
+                "injur",
+                "kill",
+                "latest",
+                "polic",
+                "say",
+                "shoot",
+                "six"
+            ],
+            "entity_signature": "PL:US:ambassador:diplomatic envoys:diplomatic envoys (ambassador)",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-07T21:03:36.772174+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Kraków shooting latest updates: six killed and more than a dozen injured, police say"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "2f45b949-3303-4434-b4bc-24a773fe6530",
+            "title": "Ukraine's Zaporizhzhia faces threat as Russian",
+            "keywords": [
+                "clos",
+                "dron",
+                "fac",
+                "russian",
+                "threat",
+                "ukrain",
+                "zaporizhzhia"
+            ],
+            "entity_signature": "RU:UA:conflict:faces:geopolitics",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-07T21:03:36.772174+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ukraine's Zaporizhzhia faces threat as Russian drones close in"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "3a639baf-0b0b-4008-9fdd-0c9d2cd26be5",
+            "title": "Masked protesters set off firecrackers and block",
+            "keywords": [
+                "albania",
+                "block",
+                "firecracker",
+                "mask",
+                "protester",
+                "road",
+                "set"
+            ],
+            "entity_signature": "block:civic activists / protesters:civic activists / protesters (protesters)",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-07T21:03:36.772174+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Masked protesters set off firecrackers and block roads in Albania"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "276dc0fb-f393-4775-9db4-2370ec84519c",
+            "title": "Eisenkot Seeks to Oust Netanyahu as Prime",
+            "keywords": [
+                "eisenkot",
+                "minister",
+                "netanyahu",
+                "oust",
+                "prim",
+                "seek"
+            ],
+            "entity_signature": "Benjamin:Benjamin Netanyahu:eisenkot:leader:north america regional stakeholders",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-07T21:03:36.772174+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Eisenkot Seeks to Oust Netanyahu as Prime Minister. Here's How."
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "fc807e42-b92b-4dfe-9b44-8bef443ad223",
+            "title": "More Than 50 Killed in Yemen in One of the",
+            "keywords": [
+                "deadliest",
+                "kill",
+                "one",
+                "war",
+                "yemen"
+            ],
+            "entity_signature": "SA:civilians:civilians & impacted communities:civilians & impacted communities (civilians)",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-07T21:03:36.772174+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "More Than 50 Killed in Yemen in One of the Deadliest 24 Hours of the War"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "f43bbfff-f6d3-4376-b325-68648650d15b",
+            "title": "Water released from Shenbagathoppu dam due to rain",
+            "keywords": [
+                "dam",
+                "due",
+                "rain",
+                "releas",
+                "shenbagathoppu",
+                "water"
+            ],
+            "entity_signature": "civilians & impacted communities:civilians & impacted communities (residents):impacted_community",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-07T21:03:36.772174+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Water released from Shenbagathoppu dam due to rain"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "ac581482-146c-416f-a671-d01c9d43267a",
+            "title": "Renovated bus terminus in Ranipet town opened for",
+            "keywords": [
+                "bus",
+                "open",
+                "public",
+                "ranipet",
+                "renovat",
+                "terminu",
+                "town",
+                "use"
+            ],
+            "entity_signature": "india regional stakeholders:opened:public use",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-07T21:03:36.772174+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Renovated bus terminus in Ranipet town opened for public use"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "149d8d5b-64f5-4f52-99ea-4ae7ab016813",
+            "title": "Two youths arrested for possessing narcotics in",
+            "keywords": [
+                "arrest",
+                "narcotic",
+                "possess",
+                "two",
+                "vellor",
+                "youth"
+            ],
+            "entity_signature": "arrested:india regional stakeholders:judicial & investigative bodies",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-07T21:03:36.772174+00:00",
+            "last_seen": "2026-11-07T21:03:36.772174+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Two youths arrested for possessing narcotics in Vellore"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
             ]
         },
         {
@@ -441,242 +1396,6 @@
             "sources_involved": [
                 "France 24",
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "aeaabc5a-8d76-4752-8de5-ddcbf8fcfbb0",
-            "title": "Trump says US 'won't be paying Israel' by end of",
-            "keywords": [
-                "end",
-                "israel",
-                "pay",
-                "trump",
-                "won"
-            ],
-            "entity_signature": "IL:US:Donald:Donald Trump:conflict",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump says US 'won't be paying Israel' by end of year"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "bbb16a3b-6bf0-40d8-8815-9adc95381a7b",
-            "title": "Bangladesh Agrees to Raise Minimum Wage for",
-            "keywords": [
-                "agre",
-                "bangladesh",
-                "gar",
-                "minimum",
-                "protest",
-                "rais",
-                "wag",
-                "worker"
-            ],
-            "entity_signature": "BD:agrees:bangladesh:bd",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-05T17:32:48.112967+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Bangladesh Agrees to Raise Minimum Wage for Garment Workers After Protests"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "42225671-4275-439b-88ff-d29c0e52e37e",
-            "title": "Australian woman shot during Bondi Beach attack",
-            "keywords": [
-                "almost",
-                "attack",
-                "australian",
-                "beach",
-                "bondi",
-                "die",
-                "later",
-                "shot",
-                "woman"
-            ],
-            "entity_signature": "AU:au:australia:australian woman",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-06T11:51:06.544845+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Australian woman shot during Bondi Beach attack dies almost a year later"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "4f95cc62-4611-443a-8ee3-03c29bfd586d",
-            "title": "Russian extremist group denies sending hoax bomb",
-            "keywords": [
-                "bomb",
-                "deni",
-                "extremist",
-                "group",
-                "hoax",
-                "russian",
-                "send",
-                "threat"
-            ],
-            "entity_signature": "EU:RU:bomb:conflict:eu",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Russian extremist group denies sending hoax bomb threats"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "86843973-1a68-4619-b661-46f65cf48507",
-            "title": "Man investigated for leaving 17-year-old on",
-            "keywords": [
-                "germani",
-                "highest",
-                "investigat",
-                "leav",
-                "man",
-                "mountain",
-                "old"
-            ],
-            "entity_signature": "DE:de:germany:health",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Man investigated for leaving 17-year-old on Germany's highest mountain"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "68e97322-af70-42d5-9813-3b57c85dc1ab",
-            "title": "Spain's rail authorities face European fraud",
-            "keywords": [
-                "authoriti",
-                "disaster",
-                "european",
-                "fac",
-                "fraud",
-                "prob",
-                "rail",
-                "spain",
-                "urda"
-            ],
-            "entity_signature": "ES:EU:crisis:economy:es",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Spain's rail authorities face European fraud probe after Urda rail disaster"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "c38b1d64-fe5b-4d1e-afce-6a58603ef7b7",
-            "title": "How GTF institute is building a learning",
-            "keywords": [
-                "build",
-                "ecosystem",
-                "gtf",
-                "institut",
-                "learn",
-                "trader"
-            ],
-            "entity_signature": "building:how gtf institute:india regional stakeholders",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "How GTF institute is building a learning ecosystem for traders"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "2d45f31d-0e47-4655-a687-b53e5779d4d1",
-            "title": "An Indian film that nobody would release is",
-            "keywords": [
-                "award",
-                "film",
-                "finalli",
-                "hit",
-                "indian",
-                "later",
-                "nobodi",
-                "releas"
-            ],
-            "entity_signature": "IN:in:india:indian film that nobody would",
-            "category": "World",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-06T23:41:03.632589+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "An Indian film that nobody would release is finally a hit - 18 awards later"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Asia"
             ]
         },
         {
@@ -734,157 +1453,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "28d88f74-de92-459b-aa06-c48aeb1dedc9",
-            "title": "Ousted Paraguay president under house arrest",
-            "keywords": [
-                "access",
-                "account",
-                "arrest",
-                "bank",
-                "countri",
-                "crisi",
-                "hous",
-                "leav",
-                "oust",
-                "paraguay"
-            ],
-            "entity_signature": "CL:arrest:chile:civic activists / protesters",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-07T04:53:09.059440+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Ousted Paraguay president under house arrest after banking crisis leaves 60% of country unable to access accounts"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "adc8d14d-2aa3-4eba-88ca-53312fac4c78",
-            "title": "Researchers Identify Suspicious Activity on",
-            "keywords": [
-                "activ",
-                "identifi",
-                "kalshi",
-                "poll",
-                "polymarket",
-                "releas",
-                "researcher",
-                "siena",
-                "suspiciou",
-                "tim"
-            ],
-            "entity_signature": "collective_faction:congress:election",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-07T04:53:09.059440+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Researchers Identify Suspicious Activity on Kalshi and Polymarket Before Times/Siena Poll Release"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "2c0b3a64-7612-49cd-afef-53c3618be981",
-            "title": "Crusoe sells troubled Wyoming data center project",
-            "keywords": [
-                "center",
-                "cruso",
-                "data",
-                "googl",
-                "project",
-                "sell",
-                "troubl",
-                "wyom"
-            ],
-            "entity_signature": "crusoe:diplomacy:google",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-07T04:53:09.059440+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Crusoe sells troubled Wyoming data center project to Google"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "a394d5eb-351a-4ab9-972c-e715316c4430",
-            "title": "Home Office sued after stripping almost 1,500 EU",
-            "keywords": [
-                "almost",
-                "citizen",
-                "hom",
-                "offic",
-                "right",
-                "stripp",
-                "sued"
-            ],
-            "entity_signature": "EU:UK:citizens:civilians & impacted communities:civilians & impacted communities (citizens)",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-07T11:31:42.333087+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Home Office sued after stripping almost 1,500 EU citizens of right to live in UK"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "84a71676-e2f9-45f7-8082-4cd9e917554e",
-            "title": "AI Data centres face growing backlash",
-            "keywords": [
-                "ai",
-                "backlash",
-                "centr",
-                "data",
-                "fac",
-                "grow"
-            ],
-            "entity_signature": "EU:NL:activists:ai data centres:civic activists / protesters",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-07T11:31:42.333087+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "AI Data centres face growing backlash"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
             ]
         },
         {
@@ -949,37 +1517,6 @@
             ]
         },
         {
-            "arc_id": "1f0b6150-fb3a-457b-a0c9-0e033482f8e2",
-            "title": "Indian markets surge as Sensex, nifty defy global",
-            "keywords": [
-                "defi",
-                "global",
-                "indian",
-                "market",
-                "nifti",
-                "sensex",
-                "surg",
-                "tech",
-                "turmoil"
-            ],
-            "entity_signature": "IN:analysts:as sensex, nifty defy global tech turmoil:economy",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-07T11:31:42.333087+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Indian markets surge as Sensex, nifty defy global tech turmoil"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
             "arc_id": "992c865c-453a-44e7-90af-d31b785f4b9c",
             "title": "Enforcement Directorate is not a 'super cop'",
             "keywords": [
@@ -1037,65 +1574,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "fc1506f5-bbc2-43c5-9f41-8872542afb0d",
-            "title": "Woman hurt in flat fire suspected to have been",
-            "keywords": [
-                "aromatherapi",
-                "caus",
-                "fir",
-                "flat",
-                "hurt",
-                "item",
-                "suspect",
-                "woman"
-            ],
-            "entity_signature": "asia-pacific regional stakeholders:fire:justice",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-07T17:29:30.818640+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Woman hurt in flat fire suspected to have been caused by aromatherapy items"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "92546454-4906-4c5b-a3d3-767e72b88215",
-            "title": "Guatemalan lawmaker, 3 police officers killed in",
-            "keywords": [
-                "arm",
-                "attack",
-                "guatemalan",
-                "kill",
-                "lawmaker",
-                "officer",
-                "polic"
-            ],
-            "entity_signature": "armed attack:asia-pacific regional stakeholders:collective_faction",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-07T17:29:30.818640+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Guatemalan lawmaker, 3 police officers killed in armed attack"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "SCMP"
             ]
         },
         {
@@ -1158,66 +1636,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "63a3c456-3210-4d46-aaaf-fa896640ec01",
-            "title": "Six dead after gunman opens fire 'at random' in",
-            "keywords": [
-                "dead",
-                "fir",
-                "gunman",
-                "market",
-                "open",
-                "random",
-                "six",
-                "squar"
-            ],
-            "entity_signature": "PL:economics:economy:fire 'at random",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-07T17:29:30.818640+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Six dead after gunman opens fire 'at random' in Kraków market square"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "76ee60fe-de90-4745-8391-e85198a524db",
-            "title": "Court rules against Home Office in asylum seeker",
-            "keywords": [
-                "asylum",
-                "cas",
-                "court",
-                "hom",
-                "kidnapp",
-                "offic",
-                "rul",
-                "seeker"
-            ],
-            "entity_signature": "SY:asylum seeker:civilians & impacted communities:civilians & impacted communities (asylum seeker)",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-07T17:29:30.818640+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Court rules against Home Office in asylum seeker kidnapping case"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
             ]
         },
         {
@@ -1340,92 +1758,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "BBC US"
-            ]
-        },
-        {
-            "arc_id": "07543d39-e19c-495f-b7a3-53eb6b32fdc8",
-            "title": "A promising new medicine against heart disease",
-            "keywords": [
-                "diseas",
-                "fail",
-                "heart",
-                "medicin",
-                "new",
-                "promis",
-                "unexpect"
-            ],
-            "entity_signature": "health:north america regional stakeholders:promising new medicine against heart disease fails unexpectedly",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-07T17:29:30.818640+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "A promising new medicine against heart disease fails unexpectedly"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "c033cd67-767b-48b3-9821-fb73df2cb6b9",
-            "title": "Democrats plan to widen their probes of fatal ICE",
-            "keywords": [
-                "democrat",
-                "fatal",
-                "ice",
-                "plan",
-                "prob",
-                "shoot",
-                "widen"
-            ],
-            "entity_signature": "democrats plan to widen their:economy:north america regional stakeholders",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-07T17:29:30.818640+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Democrats plan to widen their probes of fatal ICE shootings"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "ce982317-95ab-4f12-b462-0459dbd391e9",
-            "title": "The US let Nvidia sell chips to an empty office",
-            "keywords": [
-                "china",
-                "chip",
-                "empti",
-                "nvidia",
-                "offic",
-                "sell"
-            ],
-            "entity_signature": "CN:US:china:chips:cn",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-07T17:29:30.818640+00:00",
-            "last_seen": "2026-11-07T17:29:30.818640+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "The US let Nvidia sell chips to an empty office in China"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Verge"
             ]
         },
         {
@@ -2815,353 +3147,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "7a2ff71b-922f-4452-b843-43044e3f7af6",
-            "title": "Supreme Court decision on BBMB arrears a victory",
-            "keywords": [
-                "arrear",
-                "bbmb",
-                "court",
-                "decision",
-                "himachal",
-                "sukhu",
-                "suprem",
-                "victori"
-            ],
-            "entity_signature": "collective_faction:governance:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-06T23:41:03.632589+00:00",
-            "last_seen": "2026-11-06T23:41:03.632589+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Supreme Court decision on BBMB arrears a victory for Himachal, says CM Sukhu"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "064194cf-0d56-4e8f-9d61-9734c0779725",
-            "title": "Paraguay's President Pena resigns under mounting",
-            "keywords": [
-                "bank",
-                "collaps",
-                "mount",
-                "paraguay",
-                "pena",
-                "president",
-                "pressur",
-                "resign"
-            ],
-            "entity_signature": "CL:chile:cl:crisis",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-05T17:32:48.112967+00:00",
-            "last_seen": "2026-11-06T18:57:15.146358+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Paraguay's President Pena resigns under mounting pressure from bank collapse",
-                "Paraguay's president is impeached minutes after resigning following a bank collapse",
-                "How Paraguay's Ueno collapse is only its latest banking crisis"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "Al Jazeera",
-                "NPR News",
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "db90d3bd-6fcb-476f-99fa-b230a44a59ba",
-            "title": "A judge blocks construction of Trump's arch",
-            "keywords": [
-                "approval",
-                "arch",
-                "block",
-                "construc",
-                "federal",
-                "judg",
-                "moment",
-                "trump",
-                "won"
-            ],
-            "entity_signature": "Donald:Donald Trump:blocks:construction of trump's arch moments:judge",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-06T11:51:06.544845+00:00",
-            "last_seen": "2026-11-06T18:57:15.146358+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "A judge blocks construction of Trump's arch moments after it won federal approval",
-                "Judge halts construction of Trump's arch. And, Labor Department to release jobs report"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "699b272a-04d9-44ab-963e-769d4e5e4940",
-            "title": "Trump says Russia-Ukraine deal is near after",
-            "keywords": [
-                "deal",
-                "envoy",
-                "meet",
-                "near",
-                "putin",
-                "russia",
-                "trump",
-                "ukrain"
-            ],
-            "entity_signature": "RU:UA:US:Donald:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-06T03:31:51.946987+00:00",
-            "last_seen": "2026-11-06T18:57:15.146358+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Trump says Russia-Ukraine deal is near after meeting Putin's envoy",
-                "Russia's land gains in Ukraine dwindle as its diesel reportedly goes unsold"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "b5359a06-b080-4757-82d3-d2f4e2569fc5",
-            "title": "China Blocks SoftBank's $5.4 Billion Robotics",
-            "keywords": [
-                "billion",
-                "block",
-                "china",
-                "deal",
-                "foreign",
-                "imped",
-                "robotic",
-                "softbank",
-                "takeover"
-            ],
-            "entity_signature": "CH:CN:JP:blocks:ch",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-05T17:32:48.112967+00:00",
-            "last_seen": "2026-11-06T18:57:15.146358+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "China Blocks SoftBank's $5.4 Billion Robotics Takeover, Impeding Foreign Deals"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "e6751403-ad0b-464c-bcfb-342df9ee65fc",
-            "title": "Delhi's toxic winter air is back - is the Indian",
-            "keywords": [
-                "air",
-                "back",
-                "capital",
-                "delhi",
-                "indian",
-                "pollu",
-                "prepar",
-                "toxic",
-                "winter"
-            ],
-            "entity_signature": "IN:- is the indian capital prepared:back:delhi's toxic winter air",
-            "category": "World",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-06T03:31:51.946987+00:00",
-            "last_seen": "2026-11-06T18:57:15.146358+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Delhi's toxic winter air is back - is the Indian capital prepared for pollution?"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "eaa07df6-4459-4b10-8946-933130ae3379",
-            "title": "Syria aids Saudi Arabia with military advice and",
-            "keywords": [
-                "advic",
-                "aid",
-                "amid",
-                "arabia",
-                "attack",
-                "houthi",
-                "militari",
-                "saudi",
-                "say",
-                "sourc"
-            ],
-            "entity_signature": "SA:SY:attacks:collective_faction:geopolitics",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-06T18:57:15.146358+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Syria aids Saudi Arabia with military advice and training amid Houthi attacks, sources say"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "01de9a59-fdce-43f8-9819-fde385826eca",
-            "title": "Call to end 'unjust' national security cases as",
-            "keywords": [
-                "attack",
-                "call",
-                "cas",
-                "end",
-                "hong",
-                "kong",
-                "maliciou",
-                "nate",
-                "secur",
-                "slam"
-            ],
-            "entity_signature": "activist:asia-pacific regional stakeholders:attacks",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-06T18:57:15.146358+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Call to end 'unjust' national security cases as Hong Kong slams 'malicious attacks'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "dbf2bfd9-14dd-4440-ae74-39ef9949a528",
-            "title": "Meghan's father Thomas Markle arrested in US on",
-            "keywords": [
-                "abus",
-                "arrest",
-                "charg",
-                "child",
-                "father",
-                "markl",
-                "material",
-                "meghan",
-                "sex",
-                "thoma"
-            ],
-            "entity_signature": "US:arrested:meghan's father thomas markle:syntactic_subject",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-06T18:57:15.146358+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Meghan's father Thomas Markle arrested in US on child sex abuse material charges"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "7122df4d-2c83-45ae-9a5e-442fb0690871",
-            "title": "Israeli settlers seize Palestinian homes in",
-            "keywords": [
-                "displac",
-                "dozen",
-                "hom",
-                "israeli",
-                "jericho",
-                "palestinian",
-                "seiz",
-                "settler"
-            ],
-            "entity_signature": "IL:PS:il:israel:israeli settlers",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-06T18:57:15.146358+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Israeli settlers seize Palestinian homes in Jericho, displacing dozens"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "7e74055e-d5bd-44a2-88cf-aeb223931a09",
-            "title": "Meta's Muse AI can create custom 'spaces' for the",
-            "keywords": [
-                "ai",
-                "app",
-                "creat",
-                "custom",
-                "meta",
-                "mus",
-                "need",
-                "now",
-                "right",
-                "spac"
-            ],
-            "entity_signature": "create:custom 'spaces:meta",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-06T18:57:15.146358+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Meta's Muse AI can create custom 'spaces' for the version of the app you need right now"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Verge"
             ]
         }
     ],
