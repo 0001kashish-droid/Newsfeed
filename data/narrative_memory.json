@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-08T18:57:44.358938+00:00",
+    "last_updated": "2026-11-08T22:44:19.937133+00:00",
     "arcs": [
         {
             "arc_id": "c98d8077-7123-4b4e-9710-4f90676991ca",
@@ -22,7 +22,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 12,
             "chapter_titles": [
                 "Bomb threats against European airlines force Warsaw airport closure, affect several flights",
@@ -70,7 +70,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-07T21:03:36.772174+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 6,
             "chapter_titles": [
                 "New Zealand faces weeks of uncertainty with election 'too close to call'",
@@ -107,7 +107,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-08T06:56:45.943463+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 4,
             "chapter_titles": [
                 "Houthis say at least 33 killed in Saudi air strike",
@@ -141,7 +141,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-08T14:09:23.239220+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 4,
             "chapter_titles": [
                 "Poland launches terrorism probe into mass shooting in Krakow",
@@ -154,6 +154,41 @@
             "sources_involved": [
                 "Al Jazeera",
                 "France 24"
+            ]
+        },
+        {
+            "arc_id": "1077e282-d982-47d4-94ef-687b0d0a2c87",
+            "title": "Europeans will join Ukraine talks in Abu Dhabi",
+            "keywords": [
+                "abu",
+                "dhabi",
+                "european",
+                "foreign",
+                "french",
+                "join",
+                "minister",
+                "talk",
+                "ukrain"
+            ],
+            "entity_signature": "FR:UA:diplomacy:europeans will join ukraine talks in abu dhabi, french foreign minister says:fr",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Europeans will join Ukraine talks in Abu Dhabi, French foreign minister says",
+                "Europe will take part in US-mediated Ukraine talks in Abu Dhabi, French FM says",
+                "Europe to join U.S.-brokered Ukraine talks in Abu Dhabi, defying Kremlin objections"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "France 24",
+                "NPR News",
+                "Reuters"
             ]
         },
         {
@@ -177,7 +212,7 @@
                 "Global"
             ],
             "first_seen": "2026-11-04T06:51:50.105125+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "ANC faces anger over poor services as South Africans vote in local elections",
@@ -206,7 +241,7 @@
                 "Global"
             ],
             "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "The leader of a Kenyan doomsday cult is sentenced to 200 years in prison",
@@ -239,7 +274,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-06T23:41:03.632589+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "China's Top Spy Agency Recruited Woman Who Targeted Jensen Huang",
@@ -271,7 +306,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-08T00:50:44.815855+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Gunmen kills six in Krakow, three more bodies found at his house",
@@ -284,36 +319,34 @@
             ]
         },
         {
-            "arc_id": "1077e282-d982-47d4-94ef-687b0d0a2c87",
-            "title": "Europeans will join Ukraine talks in Abu Dhabi",
+            "arc_id": "d9a388cf-db33-476b-8622-61bc79e2b246",
+            "title": "Rubio Warned Officials About Nvidia Chief's",
             "keywords": [
-                "abu",
-                "dhabi",
-                "european",
-                "foreign",
-                "french",
-                "join",
-                "minister",
-                "talk",
-                "ukrain"
+                "chief",
+                "chines",
+                "entangle",
+                "nvidia",
+                "official",
+                "rubio",
+                "spy"
             ],
-            "entity_signature": "FR:UA:diplomacy:europeans will join ukraine talks in abu dhabi, french foreign minister says:fr",
-            "category": "World",
+            "entity_signature": "CN:Huang:Jensen:china:cn",
+            "category": "Business",
             "regions": [
-                "Europe"
+                "Asia-Pacific"
             ],
             "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 2,
             "chapter_titles": [
-                "Europeans will join Ukraine talks in Abu Dhabi, French foreign minister says",
-                "Europe will take part in US-mediated Ukraine talks in Abu Dhabi, French FM says"
+                "Rubio Warned Officials About Nvidia Chief's Entanglement With Chinese Spy",
+                "Nvidia is investigating Jensen Huang's relationship with a Chinese spy"
             ],
             "importance_trend": "rising",
-            "peak_velocity": 0.4,
+            "peak_velocity": 0.25,
             "sources_involved": [
-                "France 24",
-                "Reuters"
+                "NYT Business",
+                "The Verge"
             ]
         },
         {
@@ -332,7 +365,7 @@
                 "North America"
             ],
             "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Trump says US 'won't be paying Israel' by end of year"
@@ -361,7 +394,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Man investigated for leaving 17-year-old on Germany's highest mountain"
@@ -391,7 +424,7 @@
                 "India"
             ],
             "first_seen": "2026-11-06T23:41:03.632589+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "An Indian film that nobody would release is finally a hit - 18 awards later"
@@ -422,7 +455,7 @@
                 "India"
             ],
             "first_seen": "2026-11-07T11:31:42.333087+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Indian markets surge as Sensex, nifty defy global tech turmoil"
@@ -451,7 +484,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-08T00:50:44.815855+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Wendy's Just Released a Video Game Where You Can Win Fast Food"
@@ -480,7 +513,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-08T06:56:45.943463+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Germans wrestle with what to do with Hitler's destroyed Eagle's Nest retreat"
@@ -511,7 +544,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-08T06:56:45.943463+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Uyghurs facing deportation by Thailand say they will be 'like slaves' in China"
@@ -543,7 +576,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-08T06:56:45.943463+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Samoan Chef Brings Flavors of Home to New Zealand's Fine-Dining Scene"
@@ -570,7 +603,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-08T14:09:23.239220+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "What we know so far after Krakow gun attack"
@@ -602,7 +635,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-08T14:09:23.239220+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Russian strikes wound nine and damage Ukraine's power network ahead of talks"
@@ -633,7 +666,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-08T14:09:23.239220+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "A wildfire killed their loved ones in Spain. These British families demand to know why"
@@ -663,7 +696,7 @@
                 "Global"
             ],
             "first_seen": "2026-11-08T14:09:23.239220+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "In Argentina, Pope Leo to Meet Church at Odds With President Milei"
@@ -690,7 +723,7 @@
                 "North America"
             ],
             "first_seen": "2026-11-08T14:09:23.239220+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Can My Company Force Me to Reveal My Personal Email?"
@@ -717,7 +750,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-08T14:09:23.239220+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "What to Know About the Mass Shooting in Krakow, Poland"
@@ -748,7 +781,7 @@
                 "India"
             ],
             "first_seen": "2026-11-08T14:09:23.239220+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Probe everyone's involvement on irregularities in Milma ghee supply to Sabarimala: HC to SIT"
@@ -780,7 +813,7 @@
                 "India"
             ],
             "first_seen": "2026-11-08T14:09:23.239220+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Diwali muhurat trading highlights: Sensex, Nifty snap winning streak, close in red; Sun Pharma gains"
@@ -812,7 +845,7 @@
                 "India"
             ],
             "first_seen": "2026-11-08T14:09:23.239220+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Assam Chief Secy chairs monthly review meeting, stresses time-bound reforms"
@@ -841,7 +874,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Collision of two trains in Egypt kills at least seven"
@@ -870,7 +903,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Trump says he is unlikely to order Iran attack if talks progress"
@@ -879,6 +912,628 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Reuters"
+            ]
+        },
+        {
+            "arc_id": "6399ad8c-fbe0-4866-b114-e0b4f26f1f04",
+            "title": "Media industry still has a problem with sexual",
+            "keywords": [
+                "abus",
+                "cultur",
+                "industri",
+                "media",
+                "minister",
+                "problem",
+                "sexual",
+                "still"
+            ],
+            "entity_signature": "UK:media industry still has a problem with sexual abuse, uk culture minister says:sovereign_stakeholder:uk",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Media industry still has a problem with sexual abuse, UK culture minister says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "4105c29c-5cc7-48ca-bc82-32ed05a8e047",
+            "title": "He spent $50,000 on Labubus but now the craze is",
+            "keywords": [
+                "craz",
+                "dying",
+                "labubu",
+                "now",
+                "spent"
+            ],
+            "entity_signature": "asia-pacific regional stakeholders:dying:he spent $50,000 on labubus but the craze",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "He spent $50,000 on Labubus but now the craze is dying"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "3dd59950-3ffe-4e19-a057-ca76aef6dc0d",
+            "title": "CCTV footage shows police shootout after Kraków",
+            "keywords": [
+                "attack",
+                "cctv",
+                "footag",
+                "polic",
+                "shootout",
+                "show"
+            ],
+            "entity_signature": "PL:attack:cctv footage shows police shootout after kraków:collective_faction",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "CCTV footage shows police shootout after Kraków attack – video"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "1b9f3276-209f-4acb-9269-3c21d1eee628",
+            "title": "Yemen's humanitarian crisis worsens",
+            "keywords": [
+                "crisi",
+                "humanitarian",
+                "worsen",
+                "yemen"
+            ],
+            "entity_signature": "IR:houthis:insurgent / rebel factions:insurgent / rebel factions (houthis)",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Yemen's humanitarian crisis worsens"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "40c9c06a-3027-4742-938f-a8096eb91abf",
+            "title": "Elvis and Eminem rights holders are suing Suno",
+            "keywords": [
+                "elvi",
+                "eminem",
+                "holder",
+                "right",
+                "suing",
+                "suno"
+            ],
+            "entity_signature": "elvis and eminem rights holders:north america regional stakeholders:suing",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Elvis and Eminem rights holders are suing Suno"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "2c8af6b1-679d-4f97-a434-cc6bad8d2854",
+            "title": "Trains Collide Near Cairo, Killing 4",
+            "keywords": [
+                "cairo",
+                "collid",
+                "kill",
+                "near",
+                "train"
+            ],
+            "entity_signature": "EG:4:civilians & impacted communities:civilians & impacted communities (passenger)",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trains Collide Near Cairo, Killing 4"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "0f442b7a-7532-403e-a3ca-77b7ddb0b3fc",
+            "title": "How a Duck Named Olivia Helped Pass D.C.'s Foie",
+            "keywords": [
+                "ban",
+                "duck",
+                "foi",
+                "gra",
+                "help",
+                "nam",
+                "olivia",
+                "pass"
+            ],
+            "entity_signature": "d.c.'s foie gras ban:how a duck named olivia helped:legislation",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "How a Duck Named Olivia Helped Pass D.C.'s Foie Gras Ban"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "1ab36d44-c4b6-4edc-8b21-d2c7d06bf448",
+            "title": "Russell Brand to learn sentence after being found",
+            "keywords": [
+                "assault",
+                "brand",
+                "found",
+                "guilti",
+                "learn",
+                "rap",
+                "russell",
+                "sentenc",
+                "sexual"
+            ],
+            "entity_signature": "UK:conflict:court:governance",
+            "category": "National",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russell Brand to learn sentence after being found guilty of rape and sexual assault"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "4d02dc2a-4c04-437f-9578-6279d636050e",
+            "title": "Habitual offender arrested for murdering",
+            "keywords": [
+                "arrest",
+                "bengaluru",
+                "habitual",
+                "murder",
+                "offender",
+                "old",
+                "woman"
+            ],
+            "entity_signature": "arrested:habitual offender:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Habitual offender arrested for murdering 65-year-old woman in Bengaluru"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "854a751d-d80c-457a-8df4-d35a31f620c3",
+            "title": "Delhi's air quality 'very poor' on Diwali",
+            "keywords": [
+                "air",
+                "delhi",
+                "diwali",
+                "expect",
+                "poor",
+                "qual",
+                "worsen"
+            ],
+            "entity_signature": "delhi's air quality 'very poor' on diwali, expected:india regional stakeholders:sovereign_stakeholder",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Delhi's air quality 'very poor' on Diwali, expected to worsen"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "38ae05e3-0de8-45ac-bfe7-64b124694acb",
+            "title": "Nvidia opens investigation after report CEO",
+            "keywords": [
+                "ceo",
+                "foreign",
+                "huang",
+                "intelligenc",
+                "investiga",
+                "jensen",
+                "nvidia",
+                "open",
+                "report",
+                "target"
+            ],
+            "entity_signature": "CN:Huang:Jensen:china:cn",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-08T22:44:19.572403+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Nvidia opens investigation after report CEO Jensen Huang was target of foreign intelligence"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "9a4d1e69-727d-41c1-8d66-705e2a56c7b8",
+            "title": "Surgeon having lunch near Krakow shooting",
+            "keywords": [
+                "colleagu",
+                "krakow",
+                "lif",
+                "lunch",
+                "near",
+                "officer",
+                "sav",
+                "shoot",
+                "surgeon",
+                "undoubt"
+            ],
+            "entity_signature": "PL:judicial & investigative bodies:judicial & investigative bodies (police):pl",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-08T22:44:19.572403+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Surgeon having lunch near Krakow shooting undoubtedly saved officer's life, colleague says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "d4250ef2-f029-453d-a8f6-60d74cf81756",
+            "title": "Iraq has reached understandings with US to allow",
+            "keywords": [
+                "allow",
+                "export",
+                "hormuz",
+                "iraq",
+                "minister",
+                "oil",
+                "reach",
+                "understand"
+            ],
+            "entity_signature": "US:iraq has reached understandings with us to allow oil exports through hormuz, minister says:sovereign_stakeholder:united states",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-08T22:44:19.572403+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Iraq has reached understandings with US to allow oil exports through Hormuz, minister says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "5921ff65-fb27-4c38-935e-6aa1039fd9fc",
+            "title": "US asks Iraq to shut most Iran border crossings",
+            "keywords": [
+                "ask",
+                "border",
+                "cross",
+                "foreign",
+                "iran",
+                "iraq",
+                "iraqi",
+                "minister",
+                "shut"
+            ],
+            "entity_signature": "IR:US:ir:iran:sovereign_stakeholder",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-08T22:44:19.572403+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US asks Iraq to shut most Iran border crossings, Iraqi foreign minister says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "0c5b6fcc-e835-4615-91eb-5fa451aba49c",
+            "title": "Attack on Iraq gas complex disrupts supply to",
+            "keywords": [
+                "attack",
+                "authoriti",
+                "complex",
+                "disrupt",
+                "gas",
+                "iraq",
+                "plant",
+                "power",
+                "region",
+                "say"
+            ],
+            "entity_signature": "asia-pacific regional stakeholders:attack:conflict",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-08T22:44:19.572403+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Attack on Iraq gas complex disrupts supply to region's power plants, authorities say"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "40103bf6-2ba5-4ed0-af71-ac5523158fa4",
+            "title": "Police make arrest in deadly shooting at North",
+            "keywords": [
+                "arrest",
+                "carolina",
+                "deadli",
+                "mak",
+                "north",
+                "polic",
+                "shoot",
+                "univers"
+            ],
+            "entity_signature": "arrest:asia-pacific regional stakeholders:collective_faction",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-08T22:44:19.572403+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Police make arrest in deadly shooting at North Carolina university"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "430cd570-b143-4348-963b-126b5cadae09",
+            "title": "Iran waiting to resume talks after US midterms",
+            "keywords": [
+                "foreign",
+                "iran",
+                "iranian",
+                "midterm",
+                "mini",
+                "resum",
+                "shock",
+                "talk",
+                "wait"
+            ],
+            "entity_signature": "IR:US:Abbas:Mahmoud:diplomacy",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-08T22:44:19.572403+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Iran waiting to resume talks after US midterms 'shock'Iranian Foreign Minis"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "65aacdd0-c7a5-4b16-a34a-0e1e79436a4c",
+            "title": "SS United States, a historic ship will be sunk to",
+            "keywords": [
+                "artificial",
+                "creat",
+                "historic",
+                "reef",
+                "ship",
+                "sunk",
+                "unit"
+            ],
+            "entity_signature": "US:artificial reef:create:diplomacy",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-08T22:44:19.572403+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "SS United States, a historic ship will be sunk to create an artificial reef"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "bf16506f-95be-4cf8-b42f-509e59fc218c",
+            "title": "Fire engulfs Jammu's Nehru Market, guts around 12",
+            "keywords": [
+                "around",
+                "engulf",
+                "fir",
+                "gut",
+                "jammu",
+                "market",
+                "nehru",
+                "shop"
+            ],
+            "entity_signature": "economics:economy:engulfs jammu's nehru market, guts around 12 shops",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-08T22:44:19.572403+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Fire engulfs Jammu's Nehru Market, guts around 12 shops"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "b41a3d83-8788-4f26-91a0-3dec03a3a50b",
+            "title": "Air pollution over 50 times WHO limit in parts of",
+            "keywords": [
+                "air",
+                "ban",
+                "deepavali",
+                "defi",
+                "delhi",
+                "firecracker",
+                "limit",
+                "part",
+                "peopl",
+                "pollu"
+            ],
+            "entity_signature": "air pollution over 50 times who limit in parts of delhi as people defy:ban:firecrackers",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-08T22:44:19.572403+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Air pollution over 50 times WHO limit in parts of Delhi as people defy ban on firecrackers on Deepavali"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "da10f253-dc33-4ba1-96cc-4ef1538469a2",
+            "title": "19 Indian seafarers stranded in Yemen evacuated",
+            "keywords": [
+                "embassi",
+                "evacuat",
+                "indian",
+                "seafarer",
+                "strand",
+                "yemen"
+            ],
+            "entity_signature": "IN:19 indian seafarers stranded in yemen evacuated, embassy says:in:india",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-08T22:44:19.572403+00:00",
+            "last_seen": "2026-11-08T22:44:19.572403+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "19 Indian seafarers stranded in Yemen evacuated, Embassy says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Hindu"
             ]
         },
         {
@@ -943,63 +1598,6 @@
             ]
         },
         {
-            "arc_id": "6399ad8c-fbe0-4866-b114-e0b4f26f1f04",
-            "title": "Media industry still has a problem with sexual",
-            "keywords": [
-                "abus",
-                "cultur",
-                "industri",
-                "media",
-                "minister",
-                "problem",
-                "sexual",
-                "still"
-            ],
-            "entity_signature": "UK:media industry still has a problem with sexual abuse, uk culture minister says:sovereign_stakeholder:uk",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Media industry still has a problem with sexual abuse, UK culture minister says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "4105c29c-5cc7-48ca-bc82-32ed05a8e047",
-            "title": "He spent $50,000 on Labubus but now the craze is",
-            "keywords": [
-                "craz",
-                "dying",
-                "labubu",
-                "now",
-                "spent"
-            ],
-            "entity_signature": "asia-pacific regional stakeholders:dying:he spent $50,000 on labubus but the craze",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "He spent $50,000 on Labubus but now the craze is dying"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
             "arc_id": "3123ae8a-b646-463e-add5-3e1ad398695f",
             "title": "Iran executes 3 more men over January protests",
             "keywords": [
@@ -1055,34 +1653,6 @@
             ]
         },
         {
-            "arc_id": "3dd59950-3ffe-4e19-a057-ca76aef6dc0d",
-            "title": "CCTV footage shows police shootout after Kraków",
-            "keywords": [
-                "attack",
-                "cctv",
-                "footag",
-                "polic",
-                "shootout",
-                "show"
-            ],
-            "entity_signature": "PL:attack:cctv footage shows police shootout after kraków:collective_faction",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "CCTV footage shows police shootout after Kraków attack – video"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "4a0d9ed2-79a2-4cbe-940f-968f66022673",
             "title": "Carlos Alcaraz beats Ben Shelton to win Paris",
             "keywords": [
@@ -1115,116 +1685,6 @@
             ]
         },
         {
-            "arc_id": "1b9f3276-209f-4acb-9269-3c21d1eee628",
-            "title": "Yemen's humanitarian crisis worsens",
-            "keywords": [
-                "crisi",
-                "humanitarian",
-                "worsen",
-                "yemen"
-            ],
-            "entity_signature": "IR:houthis:insurgent / rebel factions:insurgent / rebel factions (houthis)",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Yemen's humanitarian crisis worsens"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "d9a388cf-db33-476b-8622-61bc79e2b246",
-            "title": "Rubio Warned Officials About Nvidia Chief's",
-            "keywords": [
-                "chief",
-                "chines",
-                "entangle",
-                "nvidia",
-                "official",
-                "rubio",
-                "spy"
-            ],
-            "entity_signature": "CN:Huang:Jensen:china:cn",
-            "category": "Business",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Rubio Warned Officials About Nvidia Chief's Entanglement With Chinese Spy"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "40c9c06a-3027-4742-938f-a8096eb91abf",
-            "title": "Elvis and Eminem rights holders are suing Suno",
-            "keywords": [
-                "elvi",
-                "eminem",
-                "holder",
-                "right",
-                "suing",
-                "suno"
-            ],
-            "entity_signature": "elvis and eminem rights holders:north america regional stakeholders:suing",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Elvis and Eminem rights holders are suing Suno"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Verge"
-            ]
-        },
-        {
-            "arc_id": "2c8af6b1-679d-4f97-a434-cc6bad8d2854",
-            "title": "Trains Collide Near Cairo, Killing 4",
-            "keywords": [
-                "cairo",
-                "collid",
-                "kill",
-                "near",
-                "train"
-            ],
-            "entity_signature": "EG:4:civilians & impacted communities:civilians & impacted communities (passenger)",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trains Collide Near Cairo, Killing 4"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
             "arc_id": "7359f120-30bf-4806-9778-b7a12e6c0651",
             "title": "He arrested a hacker, then spent 18 months",
             "keywords": [
@@ -1251,67 +1711,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "0f442b7a-7532-403e-a3ca-77b7ddb0b3fc",
-            "title": "How a Duck Named Olivia Helped Pass D.C.'s Foie",
-            "keywords": [
-                "ban",
-                "duck",
-                "foi",
-                "gra",
-                "help",
-                "nam",
-                "olivia",
-                "pass"
-            ],
-            "entity_signature": "d.c.'s foie gras ban:how a duck named olivia helped:legislation",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "How a Duck Named Olivia Helped Pass D.C.'s Foie Gras Ban"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "1ab36d44-c4b6-4edc-8b21-d2c7d06bf448",
-            "title": "Russell Brand to learn sentence after being found",
-            "keywords": [
-                "assault",
-                "brand",
-                "found",
-                "guilti",
-                "learn",
-                "rap",
-                "russell",
-                "sentenc",
-                "sexual"
-            ],
-            "entity_signature": "UK:conflict:court:governance",
-            "category": "National",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Russell Brand to learn sentence after being found guilty of rape and sexual assault"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
             ]
         },
         {
@@ -1343,64 +1742,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "4d02dc2a-4c04-437f-9578-6279d636050e",
-            "title": "Habitual offender arrested for murdering",
-            "keywords": [
-                "arrest",
-                "bengaluru",
-                "habitual",
-                "murder",
-                "offender",
-                "old",
-                "woman"
-            ],
-            "entity_signature": "arrested:habitual offender:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Habitual offender arrested for murdering 65-year-old woman in Bengaluru"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "854a751d-d80c-457a-8df4-d35a31f620c3",
-            "title": "Delhi's air quality 'very poor' on Diwali",
-            "keywords": [
-                "air",
-                "delhi",
-                "diwali",
-                "expect",
-                "poor",
-                "qual",
-                "worsen"
-            ],
-            "entity_signature": "delhi's air quality 'very poor' on diwali, expected:india regional stakeholders:sovereign_stakeholder",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-08T18:57:44.079755+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Delhi's air quality 'very poor' on Diwali, expected to worsen"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
             ]
         },
         {
@@ -2777,326 +3118,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "fc1506f5-bbc2-43c5-9f41-8872542afb0d",
-            "title": "Woman hurt in flat fire suspected to have been",
-            "keywords": [
-                "aromatherapi",
-                "caus",
-                "fir",
-                "flat",
-                "hurt",
-                "item",
-                "suspect",
-                "woman"
-            ],
-            "entity_signature": "asia-pacific regional stakeholders:fire:justice",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-07T17:29:30.818640+00:00",
-            "last_seen": "2026-11-07T21:03:36.772174+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Woman hurt in flat fire suspected to have been caused by aromatherapy items"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "92546454-4906-4c5b-a3d3-767e72b88215",
-            "title": "Guatemalan lawmaker, 3 police officers killed in",
-            "keywords": [
-                "arm",
-                "attack",
-                "guatemalan",
-                "kill",
-                "lawmaker",
-                "officer",
-                "polic"
-            ],
-            "entity_signature": "armed attack:asia-pacific regional stakeholders:collective_faction",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-07T17:29:30.818640+00:00",
-            "last_seen": "2026-11-07T21:03:36.772174+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Guatemalan lawmaker, 3 police officers killed in armed attack"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "c033cd67-767b-48b3-9821-fb73df2cb6b9",
-            "title": "Democrats plan to widen their probes of fatal ICE",
-            "keywords": [
-                "democrat",
-                "fatal",
-                "ice",
-                "plan",
-                "prob",
-                "shoot",
-                "widen"
-            ],
-            "entity_signature": "democrats plan to widen their:economy:north america regional stakeholders",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-07T17:29:30.818640+00:00",
-            "last_seen": "2026-11-07T21:03:36.772174+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Democrats plan to widen their probes of fatal ICE shootings"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "5f5e346a-0110-489a-87e9-948fb3ef55be",
-            "title": "Poland in shock as six dead after mass shooting",
-            "keywords": [
-                "dead",
-                "krakow",
-                "mass",
-                "poland",
-                "shock",
-                "shoot",
-                "six"
-            ],
-            "entity_signature": "PL:krakow:pl:poland",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-07T21:03:36.772174+00:00",
-            "last_seen": "2026-11-07T21:03:36.772174+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Poland in shock as six dead after mass shooting in Krakow"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "e9bf983e-c672-4487-a315-2440fff749c7",
-            "title": "Gunman 'fascinated by far-right' kills 6 in",
-            "keywords": [
-                "far",
-                "fascinat",
-                "gunman",
-                "kill",
-                "krakow",
-                "poland",
-                "right"
-            ],
-            "entity_signature": "PL:6:gunman 'fascinated by far-right:kills",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-07T21:03:36.772174+00:00",
-            "last_seen": "2026-11-07T21:03:36.772174+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Gunman 'fascinated by far-right' kills 6 in Krakow, Poland"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "79cebbc7-a120-4751-adc4-cda68b5d4bc2",
-            "title": "Kraków shooting latest updates: six killed and",
-            "keywords": [
-                "dozen",
-                "injur",
-                "kill",
-                "latest",
-                "polic",
-                "say",
-                "shoot",
-                "six"
-            ],
-            "entity_signature": "PL:US:ambassador:diplomatic envoys:diplomatic envoys (ambassador)",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-07T21:03:36.772174+00:00",
-            "last_seen": "2026-11-07T21:03:36.772174+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Kraków shooting latest updates: six killed and more than a dozen injured, police say"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "2f45b949-3303-4434-b4bc-24a773fe6530",
-            "title": "Ukraine's Zaporizhzhia faces threat as Russian",
-            "keywords": [
-                "clos",
-                "dron",
-                "fac",
-                "russian",
-                "threat",
-                "ukrain",
-                "zaporizhzhia"
-            ],
-            "entity_signature": "RU:UA:conflict:faces:geopolitics",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-07T21:03:36.772174+00:00",
-            "last_seen": "2026-11-07T21:03:36.772174+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Ukraine's Zaporizhzhia faces threat as Russian drones close in"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "3a639baf-0b0b-4008-9fdd-0c9d2cd26be5",
-            "title": "Masked protesters set off firecrackers and block",
-            "keywords": [
-                "albania",
-                "block",
-                "firecracker",
-                "mask",
-                "protester",
-                "road",
-                "set"
-            ],
-            "entity_signature": "block:civic activists / protesters:civic activists / protesters (protesters)",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-07T21:03:36.772174+00:00",
-            "last_seen": "2026-11-07T21:03:36.772174+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Masked protesters set off firecrackers and block roads in Albania"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "f43bbfff-f6d3-4376-b325-68648650d15b",
-            "title": "Water released from Shenbagathoppu dam due to rain",
-            "keywords": [
-                "dam",
-                "due",
-                "rain",
-                "releas",
-                "shenbagathoppu",
-                "water"
-            ],
-            "entity_signature": "civilians & impacted communities:civilians & impacted communities (residents):impacted_community",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-07T21:03:36.772174+00:00",
-            "last_seen": "2026-11-07T21:03:36.772174+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Water released from Shenbagathoppu dam due to rain"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "ac581482-146c-416f-a671-d01c9d43267a",
-            "title": "Renovated bus terminus in Ranipet town opened for",
-            "keywords": [
-                "bus",
-                "open",
-                "public",
-                "ranipet",
-                "renovat",
-                "terminu",
-                "town",
-                "use"
-            ],
-            "entity_signature": "india regional stakeholders:opened:public use",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-07T21:03:36.772174+00:00",
-            "last_seen": "2026-11-07T21:03:36.772174+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Renovated bus terminus in Ranipet town opened for public use"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "149d8d5b-64f5-4f52-99ea-4ae7ab016813",
-            "title": "Two youths arrested for possessing narcotics in",
-            "keywords": [
-                "arrest",
-                "narcotic",
-                "possess",
-                "two",
-                "vellor",
-                "youth"
-            ],
-            "entity_signature": "arrested:india regional stakeholders:judicial & investigative bodies",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-07T21:03:36.772174+00:00",
-            "last_seen": "2026-11-07T21:03:36.772174+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Two youths arrested for possessing narcotics in Vellore"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
             ]
         }
     ],
