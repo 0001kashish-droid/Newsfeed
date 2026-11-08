@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-08T06:56:46.308800+00:00",
+    "last_updated": "2026-11-08T14:09:23.612421+00:00",
     "arcs": [
         {
             "arc_id": "4f5a538b-33d9-4738-8693-93fa691e9f66",
@@ -19,7 +19,7 @@
                 "North America"
             ],
             "first_seen": "2026-11-02T22:25:11.068910+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
             "chapter_count": 16,
             "chapter_titles": [
                 "Russian Strike on Ukraine Humanitarian Hub Kills Dozens",
@@ -71,7 +71,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
             "chapter_count": 12,
             "chapter_titles": [
                 "Bomb threats against European airlines force Warsaw airport closure, affect several flights",
@@ -99,6 +99,1120 @@
                 "Reuters",
                 "SCMP",
                 "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "63a3c456-3210-4d46-aaaf-fa896640ec01",
+            "title": "Six dead after gunman opens fire 'at random' in",
+            "keywords": [
+                "dead",
+                "fir",
+                "gunman",
+                "market",
+                "open",
+                "random",
+                "six",
+                "squar"
+            ],
+            "entity_signature": "PL:economics:economy:fire 'at random",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-07T17:29:30.818640+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 8,
+            "chapter_titles": [
+                "Six dead after gunman opens fire 'at random' in Kraków market square",
+                "What we know so far after Polish gunman opens fire in Krakow main square",
+                "At Least 6 Dead in Poland After Gunman Opens Fire in Krakow, Police Say",
+                "Briton among six killed in 'far-right' shooting in Krakow",
+                "Six dead after gunman opens fire in Kraków market square, with three more victims found at suspect's home",
+                "Gunman who killed at least six people in Krakow had 'far-right' views, Polish government says",
+                "Gunman who killed at least six in Krakow 'fascinated' by far-right ideologies, government says",
+                "Polish prosecutors open terrorism investigation into Kraków shooting"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC News",
+                "France 24",
+                "New York Times",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "36eccfa0-bf9a-494f-8fb7-f226b6d03ef9",
+            "title": "New Zealand faces weeks of uncertainty with",
+            "keywords": [
+                "call",
+                "clos",
+                "elec",
+                "fac",
+                "new",
+                "uncertainti",
+                "zealand"
+            ],
+            "entity_signature": "NZ:election:faces:new zealand",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-07T21:03:36.772174+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 5,
+            "chapter_titles": [
+                "New Zealand faces weeks of uncertainty with election 'too close to call'",
+                "New Zealand election 'too close to call' - so who will be next PM?",
+                "New Zealand's Election 'Too Close to Call' as Voters Turn to Minor Parties",
+                "Chris vs Chris: Who's running and what's at stake this New Zealand election",
+                "No clear winner after tight New Zealand general election"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "BBC Asia",
+                "New York Times",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "b7a1033f-3d11-45c9-a41e-b1098e78a58f",
+            "title": "Houthis say at least 33 killed in Saudi air strike",
+            "keywords": [
+                "air",
+                "houthi",
+                "kill",
+                "least",
+                "saudi",
+                "say",
+                "strik"
+            ],
+            "entity_signature": "SA:collective_faction:conflict:houthis",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-08T06:56:45.943463+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Houthis say at least 33 killed in Saudi air strike",
+                "Middle East live: Yemen's Houthis claim attack on Riyadh financial district",
+                "Saudi Aramco Tower Damaged as Yemen's Houthis Attack Riyadh"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Middle East",
+                "France 24",
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "57507d9f-2807-4ade-88f1-8ec36ef3b8b6",
+            "title": "ANC faces anger over poor services as South",
+            "keywords": [
+                "african",
+                "anc",
+                "anger",
+                "elec",
+                "fac",
+                "local",
+                "poor",
+                "servic",
+                "south",
+                "vot"
+            ],
+            "entity_signature": "ZA:anc:anger:congress",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "ANC faces anger over poor services as South Africans vote in local elections",
+                "ANC faces bruising defeat in South African local elections with 80% of ballots counted"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "834a329b-bd75-482d-9647-1ded69b30d74",
+            "title": "The leader of a Kenyan doomsday cult is sentenced",
+            "keywords": [
+                "cult",
+                "doomsday",
+                "kenyan",
+                "leader",
+                "prison",
+                "sentenc"
+            ],
+            "entity_signature": "KE:200 years:children:civilians & impacted communities",
+            "category": "National",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-06T18:57:15.146358+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "The leader of a Kenyan doomsday cult is sentenced to 200 years in prison",
+                "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "dad5866d-3dc8-407b-bfc0-6dafbae06e23",
+            "title": "China's Top Spy Agency Recruited Woman Who",
+            "keywords": [
+                "agenci",
+                "china",
+                "huang",
+                "jensen",
+                "recruit",
+                "spy",
+                "target",
+                "top",
+                "woman"
+            ],
+            "entity_signature": "CN:US:Huang:Jensen:china",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-06T23:41:03.632589+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "China's Top Spy Agency Recruited Woman Who Targeted Jensen Huang",
+                "China reportedly recruited AI exec to spy on Jensen Huang"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times",
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "2db9ca6f-93d3-4a9c-9aa0-09d44451afb1",
+            "title": "Yemeni gov't forces, Houthis trade blame for",
+            "keywords": [
+                "blam",
+                "deadli",
+                "forc",
+                "gov",
+                "houthi",
+                "market",
+                "strik",
+                "taiz",
+                "trad",
+                "yemeni"
+            ],
+            "entity_signature": "conflict:economics:economy",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-06T18:57:15.146358+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Yemeni gov't forces, Houthis trade blame for deadly strikes on Taiz market",
+                "Yemen: 30 dead in strikes on Taiz market"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "ce982317-95ab-4f12-b462-0459dbd391e9",
+            "title": "The US let Nvidia sell chips to an empty office",
+            "keywords": [
+                "china",
+                "chip",
+                "empti",
+                "nvidia",
+                "offic",
+                "sell"
+            ],
+            "entity_signature": "CN:US:china:chips:cn",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-07T17:29:30.818640+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "The US let Nvidia sell chips to an empty office in China",
+                "U.S. Cleared Nvidia Chips to Chinese Firms With Empty Offices and Troubling Ties"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business",
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "9b89f7fa-3c0e-4473-b1ff-2fec2d7ee2d2",
+            "title": "Gunmen kills six in Krakow, three more bodies",
+            "keywords": [
+                "bodi",
+                "found",
+                "gunmen",
+                "hous",
+                "kill",
+                "krakow",
+                "six",
+                "three"
+            ],
+            "entity_signature": "PL:gunmen:kills:pl",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-08T00:50:44.815855+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Gunmen kills six in Krakow, three more bodies found at his house",
+                "Gunman kills six in Krakow, three more bodies found at his house"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "67d9e8f1-50e3-4764-a271-c904b487a719",
+            "title": "Poland launches terrorism probe into mass",
+            "keywords": [
+                "krakow",
+                "launch",
+                "mass",
+                "poland",
+                "prob",
+                "shoot",
+                "terrorism"
+            ],
+            "entity_signature": "PL:justice:launches:pl",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-08T14:09:23.239220+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Poland launches terrorism probe into mass shooting in Krakow",
+                "Poland mourns six killed in attack as authorities launch 'terrorism' probe"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.6,
+            "sources_involved": [
+                "Al Jazeera",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "aeaabc5a-8d76-4752-8de5-ddcbf8fcfbb0",
+            "title": "Trump says US 'won't be paying Israel' by end of",
+            "keywords": [
+                "end",
+                "israel",
+                "pay",
+                "trump",
+                "won"
+            ],
+            "entity_signature": "IL:US:Donald:Donald Trump:conflict",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-04T00:06:15.530871+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump says US 'won't be paying Israel' by end of year"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "86843973-1a68-4619-b661-46f65cf48507",
+            "title": "Man investigated for leaving 17-year-old on",
+            "keywords": [
+                "germani",
+                "highest",
+                "investigat",
+                "leav",
+                "man",
+                "mountain",
+                "old"
+            ],
+            "entity_signature": "DE:de:germany:health",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-06T18:57:15.146358+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Man investigated for leaving 17-year-old on Germany's highest mountain"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "2d45f31d-0e47-4655-a687-b53e5779d4d1",
+            "title": "An Indian film that nobody would release is",
+            "keywords": [
+                "award",
+                "film",
+                "finalli",
+                "hit",
+                "indian",
+                "later",
+                "nobodi",
+                "releas"
+            ],
+            "entity_signature": "IN:in:india:indian film that nobody would",
+            "category": "World",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-06T23:41:03.632589+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "An Indian film that nobody would release is finally a hit - 18 awards later"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "84a71676-e2f9-45f7-8082-4cd9e917554e",
+            "title": "AI Data centres face growing backlash",
+            "keywords": [
+                "ai",
+                "backlash",
+                "centr",
+                "data",
+                "fac",
+                "grow"
+            ],
+            "entity_signature": "EU:NL:activists:ai data centres:civic activists / protesters",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-07T11:31:42.333087+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "AI Data centres face growing backlash"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "1f0b6150-fb3a-457b-a0c9-0e033482f8e2",
+            "title": "Indian markets surge as Sensex, nifty defy global",
+            "keywords": [
+                "defi",
+                "global",
+                "indian",
+                "market",
+                "nifti",
+                "sensex",
+                "surg",
+                "tech",
+                "turmoil"
+            ],
+            "entity_signature": "IN:analysts:as sensex, nifty defy global tech turmoil:economy",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-07T11:31:42.333087+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Indian markets surge as Sensex, nifty defy global tech turmoil"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "a5dbeeb5-4ee6-40a1-8ddf-02ae546e8843",
+            "title": "Wendy's Just Released a Video Game Where You Can",
+            "keywords": [
+                "fast",
+                "food",
+                "gam",
+                "just",
+                "releas",
+                "wendi",
+                "win"
+            ],
+            "entity_signature": "FR:fr:france:released",
+            "category": "Tech",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-08T00:50:44.815855+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Wendy's Just Released a Video Game Where You Can Win Fast Food"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "CNET"
+            ]
+        },
+        {
+            "arc_id": "f175e25a-bd22-4d3b-b8be-b59df910000d",
+            "title": "Labubu hype seemed unstoppable, now the fluffy",
+            "keywords": [
+                "dying",
+                "fluffi",
+                "hyp",
+                "labubu",
+                "mania",
+                "monster",
+                "now",
+                "seem",
+                "unstoppabl"
+            ],
+            "entity_signature": "asia-pacific regional stakeholders:dying:labubu hype seemed unstoppable, the fluffy monster mania",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-08T00:50:44.815855+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Labubu hype seemed unstoppable, now the fluffy monster mania is dying"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "1bcb1a29-8f27-4559-9132-a46043aa35ff",
+            "title": "Germans wrestle with what to do with Hitler's",
+            "keywords": [
+                "destroy",
+                "eagl",
+                "german",
+                "hitler",
+                "nest",
+                "retreat",
+                "wrestl"
+            ],
+            "entity_signature": "DE:de:germans wrestle with what to do with hitler's destroyed eagle's nest:germany",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-08T06:56:45.943463+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Germans wrestle with what to do with Hitler's destroyed Eagle's Nest retreat"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe",
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "1c090bd3-c903-479f-9be3-a1f1c7d25d19",
+            "title": "Uyghurs facing deportation by Thailand say they",
+            "keywords": [
+                "china",
+                "deporta",
+                "fac",
+                "lik",
+                "say",
+                "slav",
+                "thailand",
+                "uyghur"
+            ],
+            "entity_signature": "CN:TH:activists:china:civic activists / protesters",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-08T06:56:45.943463+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Uyghurs facing deportation by Thailand say they will be 'like slaves' in China"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "559868e0-3046-4850-a562-aa1665f1c879",
+            "title": "Samoan Chef Brings Flavors of Home to New",
+            "keywords": [
+                "bring",
+                "chef",
+                "din",
+                "fin",
+                "flavor",
+                "hom",
+                "new",
+                "samoan",
+                "scen",
+                "zealand"
+            ],
+            "entity_signature": "NZ:-dining scene:fine:new zealand",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-08T06:56:45.943463+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Samoan Chef Brings Flavors of Home to New Zealand's Fine-Dining Scene"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "f85d2858-ab12-4df8-bb14-d79c82a65a4f",
+            "title": "Poland mourns victims of Krakow mass shooting as",
+            "keywords": [
+                "fear",
+                "grow",
+                "krakow",
+                "mass",
+                "mourn",
+                "poland",
+                "secur",
+                "shoot",
+                "victim"
+            ],
+            "entity_signature": "PL:as security fears grow:pl:poland",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-08T14:09:23.239220+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Poland mourns victims of Krakow mass shooting as security fears grow"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "35f990b3-432d-4481-b0de-b8d7478a3011",
+            "title": "China orders statistics bureau to fight fake data",
+            "keywords": [
+                "china",
+                "data",
+                "fak",
+                "fight",
+                "modern",
+                "order",
+                "statistic",
+                "technologi"
+            ],
+            "entity_signature": "CN:china:china orders statistics bureau to fight fake data with modern technology:china sovereign authorities",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-08T14:09:23.239220+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "China orders statistics bureau to fight fake data with modern technology"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "2cd80320-e4f9-4cdf-90b7-d4a846bd29fe",
+            "title": "What we know so far after Krakow gun attack",
+            "keywords": [
+                "attack",
+                "far",
+                "gun",
+                "know",
+                "krakow"
+            ],
+            "entity_signature": "attack:conflict:europe regional stakeholders",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-08T14:09:23.239220+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "What we know so far after Krakow gun attack"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "3bb2b081-907a-4479-80ed-a752c0cea190",
+            "title": "Russian strikes wound nine and damage Ukraine's",
+            "keywords": [
+                "ahead",
+                "damag",
+                "network",
+                "nin",
+                "power",
+                "russian",
+                "strik",
+                "talk",
+                "ukrain",
+                "wound"
+            ],
+            "entity_signature": "RU:UA:delegations:diplomacy:diplomatic envoys",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-08T14:09:23.239220+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russian strikes wound nine and damage Ukraine's power network ahead of talks"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "4105dc09-f03b-4612-87f1-448ed436c16f",
+            "title": "A wildfire killed their loved ones in Spain",
+            "keywords": [
+                "british",
+                "demand",
+                "famili",
+                "kill",
+                "know",
+                "lov",
+                "one",
+                "spain",
+                "wildfir"
+            ],
+            "entity_signature": "ES:UK:civilians & impacted communities:civilians & impacted communities (families):crisis",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-08T14:09:23.239220+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "A wildfire killed their loved ones in Spain. These British families demand to know why"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "3b2e8210-52f0-4bd8-80cc-ef0355a4f523",
+            "title": "Spain win Padel World Cup in Qatar as sport's",
+            "keywords": [
+                "cup",
+                "padel",
+                "popular",
+                "qatar",
+                "soar",
+                "spain",
+                "sport",
+                "win",
+                "world"
+            ],
+            "entity_signature": "AR:ES:ar:argentina:es",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-08T14:09:23.239220+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Spain win Padel World Cup in Qatar as sport's popularity soars"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "6e62f7b2-daf6-45f0-bd87-47621eee30b6",
+            "title": "In Argentina, Pope Leo to Meet Church at Odds",
+            "keywords": [
+                "argentina",
+                "church",
+                "leo",
+                "meet",
+                "milei",
+                "odd",
+                "pop",
+                "president"
+            ],
+            "entity_signature": "AR:ar:argentina:church",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-08T14:09:23.239220+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "In Argentina, Pope Leo to Meet Church at Odds With President Milei"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "dd15791d-d7dc-433b-854d-da27dca47f67",
+            "title": "Can My Company Force Me to Reveal My Personal",
+            "keywords": [
+                "compani",
+                "email",
+                "forc",
+                "personal",
+                "reveal"
+            ],
+            "entity_signature": "can my company force me:my personal email?:north america regional stakeholders",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-08T14:09:23.239220+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Can My Company Force Me to Reveal My Personal Email?"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "09ad8fe2-02a1-448e-8d05-4bdffbdad5c3",
+            "title": "What to Know About the Mass Shooting in Krakow",
+            "keywords": [
+                "know",
+                "krakow",
+                "mass",
+                "poland",
+                "shoot"
+            ],
+            "entity_signature": "PL:judicial & investigative bodies:judicial & investigative bodies (police):krakow, poland",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-08T14:09:23.239220+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "What to Know About the Mass Shooting in Krakow, Poland"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "5cce936c-21b6-4e93-9555-8aa2e65232d9",
+            "title": "UFC's Dana White says he will meet with Trump",
+            "keywords": [
+                "dana",
+                "hous",
+                "meet",
+                "monday",
+                "offer",
+                "press",
+                "secretari",
+                "trump",
+                "ufc",
+                "whit"
+            ],
+            "entity_signature": "Donald:Donald Trump:leader:meet:north america regional stakeholders",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-08T14:09:23.239220+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "UFC's Dana White says he will meet with Trump Monday over offer to be White House press secretary"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "ea74f0c2-7f6a-4703-bd39-d6e33622e565",
+            "title": "Assam OIL facility fire: death toll rises to four",
+            "keywords": [
+                "another",
+                "assam",
+                "death",
+                "die",
+                "facil",
+                "fir",
+                "four",
+                "injur",
+                "oil",
+                "ris"
+            ],
+            "entity_signature": "assam oil facility:fire:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-08T14:09:23.239220+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Assam OIL facility fire: death toll rises to four as another injured dies; four suspended"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "8a27f9ba-9187-44fd-9b9c-ea543245bc8b",
+            "title": "Delhi's pollution woes worsen ahead of Diwali",
+            "keywords": [
+                "ahead",
+                "air",
+                "delhi",
+                "diwali",
+                "firecracker",
+                "pollu",
+                "poor",
+                "qual",
+                "woe",
+                "worsen"
+            ],
+            "entity_signature": "ahead of diwali firecrackers, air quality 'very poor:delhi's pollution woes:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-08T14:09:23.239220+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Delhi's pollution woes worsen ahead of Diwali firecrackers, air quality 'very poor'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "4f2090b0-35b1-42ae-b726-ed5197b3a4ec",
+            "title": "Probe everyone's involvement on irregularities in",
+            "keywords": [
+                "everyon",
+                "ghee",
+                "involve",
+                "irregulariti",
+                "milma",
+                "prob",
+                "sabarimala",
+                "sit",
+                "suppli"
+            ],
+            "entity_signature": "everyone's involvement:india regional stakeholders:justice",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-08T14:09:23.239220+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Probe everyone's involvement on irregularities in Milma ghee supply to Sabarimala: HC to SIT"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "f383aa8a-2721-4486-bb83-ff7c36afc91b",
+            "title": "Diwali muhurat trading highlights: Sensex, Nifty",
+            "keywords": [
+                "clos",
+                "diwali",
+                "gain",
+                "highlight",
+                "muhurat",
+                "nifti",
+                "pharma",
+                "red",
+                "sensex",
+                "snap"
+            ],
+            "entity_signature": "india regional stakeholders:sensex, nifty snap:streak, close",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-08T14:09:23.239220+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Diwali muhurat trading highlights: Sensex, Nifty snap winning streak, close in red; Sun Pharma gains"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "2342b52f-8210-4d69-a13a-e74a8352c554",
+            "title": "Assam Chief Secy chairs monthly review meeting",
+            "keywords": [
+                "assam",
+                "bound",
+                "chair",
+                "chief",
+                "meet",
+                "monthli",
+                "reform",
+                "review",
+                "seci",
+                "stress"
+            ],
+            "entity_signature": ", stresses time-bound reforms:assam chief secy chairs monthly review:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-08T14:09:23.239220+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Assam Chief Secy chairs monthly review meeting, stresses time-bound reforms"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "e0f24f3a-f732-4e66-8f7a-f2aadd158b5b",
+            "title": "Revanth sets target of making one crore women",
+            "keywords": [
+                "cror",
+                "mak",
+                "millionair",
+                "one",
+                "revanth",
+                "set",
+                "target",
+                "women"
+            ],
+            "entity_signature": "india regional stakeholders:of making one crore women millionaires:revanth sets",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-08T14:09:23.239220+00:00",
+            "last_seen": "2026-11-08T14:09:23.239220+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Revanth sets target of making one crore women millionaires by 2034"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
             ]
         },
         {
@@ -147,45 +1261,6 @@
             ]
         },
         {
-            "arc_id": "63a3c456-3210-4d46-aaaf-fa896640ec01",
-            "title": "Six dead after gunman opens fire 'at random' in",
-            "keywords": [
-                "dead",
-                "fir",
-                "gunman",
-                "market",
-                "open",
-                "random",
-                "six",
-                "squar"
-            ],
-            "entity_signature": "PL:economics:economy:fire 'at random",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-07T17:29:30.818640+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 7,
-            "chapter_titles": [
-                "Six dead after gunman opens fire 'at random' in Kraków market square",
-                "What we know so far after Polish gunman opens fire in Krakow main square",
-                "At Least 6 Dead in Poland After Gunman Opens Fire in Krakow, Police Say",
-                "Briton among six killed in 'far-right' shooting in Krakow",
-                "Six dead after gunman opens fire in Kraków market square, with three more victims found at suspect's home",
-                "Gunman who killed at least six people in Krakow had 'far-right' views, Polish government says",
-                "Gunman who killed at least six in Krakow 'fascinated' by far-right ideologies, government says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC News",
-                "France 24",
-                "New York Times",
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "91da3f54-0fcd-4624-86bf-b571b2c70274",
             "title": "Israel's President Herzog accepts certified",
             "keywords": [
@@ -224,104 +1299,6 @@
             ]
         },
         {
-            "arc_id": "36eccfa0-bf9a-494f-8fb7-f226b6d03ef9",
-            "title": "New Zealand faces weeks of uncertainty with",
-            "keywords": [
-                "call",
-                "clos",
-                "elec",
-                "fac",
-                "new",
-                "uncertainti",
-                "zealand"
-            ],
-            "entity_signature": "NZ:election:faces:new zealand",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-07T21:03:36.772174+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 5,
-            "chapter_titles": [
-                "New Zealand faces weeks of uncertainty with election 'too close to call'",
-                "New Zealand election 'too close to call' - so who will be next PM?",
-                "New Zealand's Election 'Too Close to Call' as Voters Turn to Minor Parties",
-                "Chris vs Chris: Who's running and what's at stake this New Zealand election",
-                "No clear winner after tight New Zealand general election"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "BBC Asia",
-                "New York Times",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "57507d9f-2807-4ade-88f1-8ec36ef3b8b6",
-            "title": "ANC faces anger over poor services as South",
-            "keywords": [
-                "african",
-                "anc",
-                "anger",
-                "elec",
-                "fac",
-                "local",
-                "poor",
-                "servic",
-                "south",
-                "vot"
-            ],
-            "entity_signature": "ZA:anc:anger:congress",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-04T06:51:50.105125+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "ANC faces anger over poor services as South Africans vote in local elections",
-                "ANC faces bruising defeat in South African local elections with 80% of ballots counted"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "834a329b-bd75-482d-9647-1ded69b30d74",
-            "title": "The leader of a Kenyan doomsday cult is sentenced",
-            "keywords": [
-                "cult",
-                "doomsday",
-                "kenyan",
-                "leader",
-                "prison",
-                "sentenc"
-            ],
-            "entity_signature": "KE:200 years:children:civilians & impacted communities",
-            "category": "National",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "The leader of a Kenyan doomsday cult is sentenced to 200 years in prison",
-                "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News",
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "acd1d7a3-dfce-4b25-ad1c-6e18505c7833",
             "title": "Bomb Threats in Europe Probably a Coordinated",
             "keywords": [
@@ -353,130 +1330,6 @@
             ]
         },
         {
-            "arc_id": "dad5866d-3dc8-407b-bfc0-6dafbae06e23",
-            "title": "China's Top Spy Agency Recruited Woman Who",
-            "keywords": [
-                "agenci",
-                "china",
-                "huang",
-                "jensen",
-                "recruit",
-                "spy",
-                "target",
-                "top",
-                "woman"
-            ],
-            "entity_signature": "CN:US:Huang:Jensen:china",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-06T23:41:03.632589+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "China's Top Spy Agency Recruited Woman Who Targeted Jensen Huang",
-                "China reportedly recruited AI exec to spy on Jensen Huang"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times",
-                "The Verge"
-            ]
-        },
-        {
-            "arc_id": "2db9ca6f-93d3-4a9c-9aa0-09d44451afb1",
-            "title": "Yemeni gov't forces, Houthis trade blame for",
-            "keywords": [
-                "blam",
-                "deadli",
-                "forc",
-                "gov",
-                "houthi",
-                "market",
-                "strik",
-                "taiz",
-                "trad",
-                "yemeni"
-            ],
-            "entity_signature": "conflict:economics:economy",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Yemeni gov't forces, Houthis trade blame for deadly strikes on Taiz market",
-                "Yemen: 30 dead in strikes on Taiz market"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera",
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "ce982317-95ab-4f12-b462-0459dbd391e9",
-            "title": "The US let Nvidia sell chips to an empty office",
-            "keywords": [
-                "china",
-                "chip",
-                "empti",
-                "nvidia",
-                "offic",
-                "sell"
-            ],
-            "entity_signature": "CN:US:china:chips:cn",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-07T17:29:30.818640+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "The US let Nvidia sell chips to an empty office in China",
-                "U.S. Cleared Nvidia Chips to Chinese Firms With Empty Offices and Troubling Ties"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NYT Business",
-                "The Verge"
-            ]
-        },
-        {
-            "arc_id": "aeaabc5a-8d76-4752-8de5-ddcbf8fcfbb0",
-            "title": "Trump says US 'won't be paying Israel' by end of",
-            "keywords": [
-                "end",
-                "israel",
-                "pay",
-                "trump",
-                "won"
-            ],
-            "entity_signature": "IL:US:Donald:Donald Trump:conflict",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-04T00:06:15.530871+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump says US 'won't be paying Israel' by end of year"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
             "arc_id": "4f95cc62-4611-443a-8ee3-03c29bfd586d",
             "title": "Russian extremist group denies sending hoax bomb",
             "keywords": [
@@ -499,35 +1352,6 @@
             "chapter_count": 1,
             "chapter_titles": [
                 "Russian extremist group denies sending hoax bomb threats"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "86843973-1a68-4619-b661-46f65cf48507",
-            "title": "Man investigated for leaving 17-year-old on",
-            "keywords": [
-                "germani",
-                "highest",
-                "investigat",
-                "leav",
-                "man",
-                "mountain",
-                "old"
-            ],
-            "entity_signature": "DE:de:germany:health",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Man investigated for leaving 17-year-old on Germany's highest mountain"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
@@ -595,36 +1419,6 @@
             ]
         },
         {
-            "arc_id": "2d45f31d-0e47-4655-a687-b53e5779d4d1",
-            "title": "An Indian film that nobody would release is",
-            "keywords": [
-                "award",
-                "film",
-                "finalli",
-                "hit",
-                "indian",
-                "later",
-                "nobodi",
-                "releas"
-            ],
-            "entity_signature": "IN:in:india:indian film that nobody would",
-            "category": "World",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-06T23:41:03.632589+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "An Indian film that nobody would release is finally a hit - 18 awards later"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
             "arc_id": "28d88f74-de92-459b-aa06-c48aeb1dedc9",
             "title": "Ousted Paraguay president under house arrest",
             "keywords": [
@@ -686,65 +1480,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "84a71676-e2f9-45f7-8082-4cd9e917554e",
-            "title": "AI Data centres face growing backlash",
-            "keywords": [
-                "ai",
-                "backlash",
-                "centr",
-                "data",
-                "fac",
-                "grow"
-            ],
-            "entity_signature": "EU:NL:activists:ai data centres:civic activists / protesters",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-07T11:31:42.333087+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "AI Data centres face growing backlash"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "1f0b6150-fb3a-457b-a0c9-0e033482f8e2",
-            "title": "Indian markets surge as Sensex, nifty defy global",
-            "keywords": [
-                "defi",
-                "global",
-                "indian",
-                "market",
-                "nifti",
-                "sensex",
-                "surg",
-                "tech",
-                "turmoil"
-            ],
-            "entity_signature": "IN:analysts:as sensex, nifty defy global tech turmoil:economy",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-07T11:31:42.333087+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Indian markets surge as Sensex, nifty defy global tech turmoil"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
             ]
         },
         {
@@ -862,35 +1597,6 @@
             ]
         },
         {
-            "arc_id": "a5dbeeb5-4ee6-40a1-8ddf-02ae546e8843",
-            "title": "Wendy's Just Released a Video Game Where You Can",
-            "keywords": [
-                "fast",
-                "food",
-                "gam",
-                "just",
-                "releas",
-                "wendi",
-                "win"
-            ],
-            "entity_signature": "FR:fr:france:released",
-            "category": "Tech",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-08T00:50:44.815855+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Wendy's Just Released a Video Game Where You Can Win Fast Food"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "CNET"
-            ]
-        },
-        {
             "arc_id": "fa56d51e-9725-42ea-8c9a-a296b471944f",
             "title": "US military says it disabled cargo vessel in Gulf",
             "keywords": [
@@ -916,158 +1622,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "f175e25a-bd22-4d3b-b8be-b59df910000d",
-            "title": "Labubu hype seemed unstoppable, now the fluffy",
-            "keywords": [
-                "dying",
-                "fluffi",
-                "hyp",
-                "labubu",
-                "mania",
-                "monster",
-                "now",
-                "seem",
-                "unstoppabl"
-            ],
-            "entity_signature": "asia-pacific regional stakeholders:dying:labubu hype seemed unstoppable, the fluffy monster mania",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-08T00:50:44.815855+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Labubu hype seemed unstoppable, now the fluffy monster mania is dying"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "9b89f7fa-3c0e-4473-b1ff-2fec2d7ee2d2",
-            "title": "Gunmen kills six in Krakow, three more bodies",
-            "keywords": [
-                "bodi",
-                "found",
-                "gunmen",
-                "hous",
-                "kill",
-                "krakow",
-                "six",
-                "three"
-            ],
-            "entity_signature": "PL:gunmen:kills:pl",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-08T00:50:44.815855+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Gunmen kills six in Krakow, three more bodies found at his house"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "1bcb1a29-8f27-4559-9132-a46043aa35ff",
-            "title": "Germans wrestle with what to do with Hitler's",
-            "keywords": [
-                "destroy",
-                "eagl",
-                "german",
-                "hitler",
-                "nest",
-                "retreat",
-                "wrestl"
-            ],
-            "entity_signature": "DE:de:germans wrestle with what to do with hitler's destroyed eagle's nest:germany",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-08T06:56:45.943463+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Germans wrestle with what to do with Hitler's destroyed Eagle's Nest retreat"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC News"
-            ]
-        },
-        {
-            "arc_id": "1c090bd3-c903-479f-9be3-a1f1c7d25d19",
-            "title": "Uyghurs facing deportation by Thailand say they",
-            "keywords": [
-                "china",
-                "deporta",
-                "fac",
-                "lik",
-                "say",
-                "slav",
-                "thailand",
-                "uyghur"
-            ],
-            "entity_signature": "CN:TH:activists:china:civic activists / protesters",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-08T06:56:45.943463+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Uyghurs facing deportation by Thailand say they will be 'like slaves' in China"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "559868e0-3046-4850-a562-aa1665f1c879",
-            "title": "Samoan Chef Brings Flavors of Home to New",
-            "keywords": [
-                "bring",
-                "chef",
-                "din",
-                "fin",
-                "flavor",
-                "hom",
-                "new",
-                "samoan",
-                "scen",
-                "zealand"
-            ],
-            "entity_signature": "NZ:-dining scene:fine:new zealand",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-08T06:56:45.943463+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Samoan Chef Brings Flavors of Home to New Zealand's Fine-Dining Scene"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
             ]
         },
         {
@@ -1131,35 +1685,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "b7a1033f-3d11-45c9-a41e-b1098e78a58f",
-            "title": "Houthis say at least 33 killed in Saudi air strike",
-            "keywords": [
-                "air",
-                "houthi",
-                "kill",
-                "least",
-                "saudi",
-                "say",
-                "strik"
-            ],
-            "entity_signature": "SA:collective_faction:conflict:houthis",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-08T06:56:45.943463+00:00",
-            "last_seen": "2026-11-08T06:56:45.943463+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Houthis say at least 33 killed in Saudi air strike"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Middle East"
             ]
         },
         {
@@ -2617,532 +3142,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "0c0ca1fc-bec4-4214-b718-8c4bfcd94c35",
-            "title": "Qatar says its mediation efforts between US and",
-            "keywords": [
-                "continu",
-                "effort",
-                "escala",
-                "iran",
-                "media",
-                "prevent",
-                "qatar"
-            ],
-            "entity_signature": "IR:US:ir:iran:qatar says its mediation efforts between us and iran continue to prevent escalation",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-07T11:31:42.333087+00:00",
-            "last_seen": "2026-11-07T11:31:42.333087+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Qatar says its mediation efforts between US and Iran continue to prevent escalation"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "30bb1f63-a9d8-432c-821a-1ee3aa44a4d9",
-            "title": "Manila weighs second South China Sea legal case",
-            "keywords": [
-                "analyst",
-                "beij",
-                "cas",
-                "china",
-                "legal",
-                "manila",
-                "sea",
-                "second",
-                "south",
-                "weigh"
-            ],
-            "entity_signature": "CN:PH:analyst:china:cn",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-07T11:31:42.333087+00:00",
-            "last_seen": "2026-11-07T11:31:42.333087+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Manila weighs second South China Sea legal case against Beijing: analyst"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "10aa9a1a-62a1-4169-9e74-7b1bc8c098cb",
-            "title": "China 'Goddess of Mercy' drone send-off reveals",
-            "keywords": [
-                "china",
-                "dron",
-                "funeral",
-                "goddess",
-                "merci",
-                "modern",
-                "reveal",
-                "send",
-                "servic",
-                "shift"
-            ],
-            "entity_signature": "CN:china:china 'goddess of mercy' drone send-off:china sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-07T11:31:42.333087+00:00",
-            "last_seen": "2026-11-07T11:31:42.333087+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "China 'Goddess of Mercy' drone send-off reveals modern shift in funeral services"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "0b8377c6-f6a0-4b46-9dac-d0ab5caf4c3c",
-            "title": "MTR Corporation orders halt to unauthorised work",
-            "keywords": [
-                "column",
-                "concern",
-                "corpora",
-                "halt",
-                "mtr",
-                "order",
-                "sta",
-                "unauthoris",
-                "work"
-            ],
-            "entity_signature": "asia-pacific regional stakeholders:mtr corporation orders halt to unauthorised work at station after column concerns:sovereign_stakeholder",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-07T11:31:42.333087+00:00",
-            "last_seen": "2026-11-07T11:31:42.333087+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "MTR Corporation orders halt to unauthorised work at station after column concerns"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "a62474a3-bac1-4437-9168-612650a65330",
-            "title": "Palestinian citizens of Israel put to 'loyalty",
-            "keywords": [
-                "citizen",
-                "elec",
-                "israel",
-                "loyalti",
-                "palestinian",
-                "put",
-                "test",
-                "win"
-            ],
-            "entity_signature": "IL:PS:citizens:civilians & impacted communities:civilians & impacted communities (citizens)",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-07T11:31:42.333087+00:00",
-            "last_seen": "2026-11-07T11:31:42.333087+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Palestinian citizens of Israel put to 'loyalty test' after election wins"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "c426bdbe-14a8-4f8c-a3f6-9b148a712fb8",
-            "title": "Uttarakhand SIT arrests minister Rekha Arya's",
-            "keywords": [
-                "arrest",
-                "arya",
-                "girdhari",
-                "husband",
-                "jhansi",
-                "lal",
-                "minister",
-                "rekha",
-                "sahu",
-                "sit"
-            ],
-            "entity_signature": "arrests:india regional stakeholders:judicial & investigative bodies",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-07T11:31:42.333087+00:00",
-            "last_seen": "2026-11-07T11:31:42.333087+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Uttarakhand SIT arrests minister Rekha Arya's husband Girdhari Lal Sahu from Jhansi"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "30dbf149-4760-460d-9396-c2d68adb6a41",
-            "title": "Arunachal govt releases 4 Siang dam protesters",
-            "keywords": [
-                "arunachal",
-                "dam",
-                "dialogu",
-                "fresh",
-                "govt",
-                "protester",
-                "releas",
-                "seek",
-                "siang"
-            ],
-            "entity_signature": "4 siang dam protesters, seeks fresh dialogue:arunachal govt:civic activists / protesters",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-07T11:31:42.333087+00:00",
-            "last_seen": "2026-11-07T11:31:42.333087+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Arunachal govt releases 4 Siang dam protesters, seeks fresh dialogue"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "d10b61a2-2394-4f4c-8b8d-d9859791c4c0",
-            "title": "Papa smiling, looking down proudly, says Rahul",
-            "keywords": [
-                "ahead",
-                "look",
-                "memoir",
-                "papa",
-                "proudli",
-                "rahul",
-                "releas",
-                "smil",
-                "sonia"
-            ],
-            "entity_signature": "india regional stakeholders:papa smiling, looking down proudly, says rahul ahead of sonia's memoir:release",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-07T11:31:42.333087+00:00",
-            "last_seen": "2026-11-07T11:31:42.333087+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Papa smiling, looking down proudly, says Rahul ahead of Sonia's memoir release"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "729f65c5-e916-4552-8825-53c07a8cca31",
-            "title": "Rajnath warns of complex security challenges",
-            "keywords": [
-                "border",
-                "challeng",
-                "complex",
-                "cross",
-                "fir",
-                "limit",
-                "longer",
-                "rajnath",
-                "secur",
-                "warfar"
-            ],
-            "entity_signature": "india regional stakeholders:of complex security challenges, says warfare no longer limited:rajnath",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-07T11:31:42.333087+00:00",
-            "last_seen": "2026-11-07T11:31:42.333087+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Rajnath warns of complex security challenges, says warfare no longer limited to cross-border firing"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "1763c742-c8ca-480f-b295-b20ea2ea6d90",
-            "title": "A.P.-SECM launches State-level Short Video",
-            "keywords": [
-                "conserva",
-                "contest",
-                "energi",
-                "launch",
-                "level",
-                "secm",
-                "short",
-                "stat",
-                "student"
-            ],
-            "entity_signature": "a.p.-secm:india regional stakeholders:launches",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-07T11:31:42.333087+00:00",
-            "last_seen": "2026-11-07T11:31:42.333087+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "A.P.-SECM launches State-level Short Video Contest on energy conservation for students"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "7fbcd765-6be9-46bd-8898-84582042885c",
-            "title": "Bengaluru's IT boom and a decades-old job quota",
-            "keywords": [
-                "activist",
-                "bengaluru",
-                "boom",
-                "decad",
-                "demand",
-                "firm",
-                "job",
-                "kannadiga",
-                "old",
-                "quota"
-            ],
-            "entity_signature": "activists:bengaluru's it boom and a decades-old job quota:civic activists / protesters",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-07T11:31:42.333087+00:00",
-            "last_seen": "2026-11-07T11:31:42.333087+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Bengaluru's IT boom and a decades-old job quota demand: Why Kannadiga activists are targeting firms"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "672a7f23-11a4-4fc1-b170-c8b6f4018f1a",
-            "title": "European leaders welcome Democrats' US midterms",
-            "keywords": [
-                "democrat",
-                "elec",
-                "european",
-                "leader",
-                "midterm",
-                "welcom",
-                "win"
-            ],
-            "entity_signature": "EU:FR:US:Donald:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-04T21:25:12.657701+00:00",
-            "last_seen": "2026-11-07T04:53:09.059440+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "European leaders welcome Democrats' US midterms election win",
-                "Europe's far right has a Trump problem after Republican US midterms wipeout",
-                "'Trump is a very dangerous person for the world': EU's former top diplomat Josep Borrell"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "bd475fa1-774f-45d0-a584-4212b18a8665",
-            "title": "Houthi missiles fired at Medina intercepted",
-            "keywords": [
-                "coali",
-                "fir",
-                "houthi",
-                "intercept",
-                "medina",
-                "missil",
-                "saudi"
-            ],
-            "entity_signature": "SA:collective_faction:conflict:fired",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-05T17:32:48.112967+00:00",
-            "last_seen": "2026-11-07T04:53:09.059440+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Houthi missiles fired at Medina intercepted, Saudi coalition says",
-                "Saudi coalition intercepts missile fired towards Medina"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Al Jazeera",
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "e0cec7f0-4754-4d2a-b556-dc0446f86836",
-            "title": "Saudi-Led Forces Bombed Yemeni Home, Killing Nine",
-            "keywords": [
-                "bomb",
-                "famili",
-                "forc",
-                "hom",
-                "kill",
-                "led",
-                "member",
-                "nin",
-                "relativ",
-                "saudi"
-            ],
-            "entity_signature": "SA:US:bombed:casualties:civilian",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-06T11:51:06.544845+00:00",
-            "last_seen": "2026-11-07T04:53:09.059440+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Saudi-Led Forces Bombed Yemeni Home, Killing Nine Family Members, Relatives Say"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "598d9f7d-b0db-40a1-96b9-0b5b5ddb7678",
-            "title": "Thailand's inflation accelerates past central",
-            "keywords": [
-                "accelerat",
-                "bank",
-                "central",
-                "infla",
-                "past",
-                "target",
-                "thailand"
-            ],
-            "entity_signature": "TH:central bank:economics:economy",
-            "category": "Business",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-06T11:51:06.544845+00:00",
-            "last_seen": "2026-11-07T04:53:09.059440+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Thailand's inflation accelerates past central bank's target"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "0824fbdc-3c7c-4acc-b267-5eae4baa025e",
-            "title": "Meta introduces Spaces, a new way to collaborate",
-            "keywords": [
-                "agent",
-                "collaborat",
-                "introduc",
-                "meta",
-                "mus",
-                "new",
-                "spac",
-                "way"
-            ],
-            "entity_signature": "introduces:meta:north america regional stakeholders",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-07T04:53:09.059440+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Meta introduces Spaces, a new way to collaborate with your Muse agent"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "28348994-8153-4f51-aa96-cd1477e961e0",
-            "title": "Activists break into building site of Microsoft",
-            "keywords": [
-                "activist",
-                "amsterdam",
-                "break",
-                "build",
-                "datacentr",
-                "microsoft",
-                "sit"
-            ],
-            "entity_signature": "EU:NL:activists:activists break into:building",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-06T23:41:03.632589+00:00",
-            "last_seen": "2026-11-07T04:53:09.059440+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Activists break into building site of Microsoft datacentre in Amsterdam"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "The Guardian"
             ]
         }
     ],
