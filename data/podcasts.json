@@ -1,30 +1,49 @@
 {
-  "lastUpdated": "2026-11-11T06:56:24.866819+00:00",
+  "lastUpdated": "2026-11-11T14:58:14.559251+00:00",
   "total": 30,
   "episodes": [
     {
       "id": "tp_2hJkprFnzhY",
-      "title": "Ukraine War: Putin, Zelenskyy, Trump, Drones and the Future of Warfare | Lex Fridman Podcast #504",
+      "title": "Russia-Ukraine War: Putin, Zelenskyy, Drones and the Future of Warfare | Lex Fridman Podcast #504",
       "podcast": "Lex Fridman Podcast",
       "channel": "Lex Fridman Podcast",
       "podcastLogo": "LF",
       "tier": "flagship",
-      "guest": "Ukraine War",
+      "guest": "",
       "topics": [
-        "Geopolitics & Defense",
-        "Artificial Intelligence"
+        "Artificial Intelligence",
+        "Geopolitics"
       ],
-      "theme": "European defense preparedness, the future of the NATO alliance, and transatlantic geopolitical alignment.",
+      "theme": "Explores strategic perspectives and key developments concerning russia.",
       "imageUrl": "https://i.ytimg.com/vi/2hJkprFnzhY/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/2hJkprFnzhY/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=2hJkprFnzhY",
       "youtube_url": "https://www.youtube.com/watch?v=2hJkprFnzhY",
-      "pubDate": "7h ago",
-      "date": "7h ago",
+      "pubDate": "15h ago",
+      "date": "15h ago",
       "duration": "2:53:49",
       "views": "",
       "category": "AI & Tech",
-      "resonant_news": []
+      "resonant_news": [
+        {
+          "id": "guardian-asia-0-4533",
+          "title": "Germany reportedly bans Chinese drones at military bases over security concerns",
+          "source": "The Guardian",
+          "link": "https://www.theguardian.com/world/2026/nov/11/germany-bans-chinese-drones-military-bases-spying-security",
+          "url": "https://www.theguardian.com/world/2026/nov/11/germany-bans-chinese-drones-military-bases-spying-security",
+          "relevance": 0.213,
+          "resonance_score": 0.213
+        },
+        {
+          "id": "nyt-world-5-9748",
+          "title": "US Soldier Is Arrested in UK on Suspicion of Spying for Russia",
+          "source": "New York Times",
+          "link": "https://www.nytimes.com/2026/11/10/world/europe/uk-us-army-arrest-espionage-russia.html",
+          "url": "https://www.nytimes.com/2026/11/10/world/europe/uk-us-army-arrest-espionage-russia.html",
+          "relevance": 0.3,
+          "resonance_score": 0.3
+        }
+      ]
     },
     {
       "id": "tp_ZAzWPE9CItg",
@@ -49,40 +68,31 @@
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "arstechnica-5-6823",
-          "title": "What happens to mathematics when AI becomes an oracle?",
+          "id": "the-hindu-1-4265",
+          "title": "Bengaluru police use AI to assess 112 emergency response",
+          "source": "The Hindu",
+          "link": "https://www.thehindu.com/news/national/karnataka/bengaluru-police-use-ai-to-assess-112-emergency-response/article71688885.ece",
+          "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-police-use-ai-to-assess-112-emergency-response/article71688885.ece",
+          "relevance": 0.153,
+          "resonance_score": 0.153
+        },
+        {
+          "id": "arstechnica-0-4643",
+          "title": "Google DeepMind just mathematically verified key parts of Signal",
           "source": "Ars Technica",
-          "link": "https://arstechnica.com/science/2026/11/what-happens-to-mathematics-when-ai-becames-an-oracle/",
-          "url": "https://arstechnica.com/science/2026/11/what-happens-to-mathematics-when-ai-becames-an-oracle/",
-          "relevance": 0.164,
-          "resonance_score": 0.164
+          "link": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/",
+          "url": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/",
+          "relevance": 0.165,
+          "resonance_score": 0.165
         },
         {
-          "id": "cnet-4-8360",
-          "title": "The New Adobe Firefly AI Is All About Video Editing",
-          "source": "CNET",
-          "link": "https://www.cnet.com/tech/services-and-software/new-adobe-firefly-ai-video-editing/",
-          "url": "https://www.cnet.com/tech/services-and-software/new-adobe-firefly-ai-video-editing/",
-          "relevance": 0.152,
-          "resonance_score": 0.152
-        },
-        {
-          "id": "ht-business-3-9659",
+          "id": "ht-business-5-7494",
           "title": "Lessons from a miserable month for hedge funds",
           "source": "HT Business",
           "link": "https://www.hindustantimes.com/business/lessons-from-a-miserable-month-for-hedge-funds-101794367169466.html",
           "url": "https://www.hindustantimes.com/business/lessons-from-a-miserable-month-for-hedge-funds-101794367169466.html",
           "relevance": 0.152,
           "resonance_score": 0.152
-        },
-        {
-          "id": "npr-national-3-8470",
-          "title": "Should you trust new AI agents with your money and data?",
-          "source": "NPR News",
-          "link": "https://www.npr.org/2026/11/10/nx-s1-6018588/should-you-trust-new-ai-agents-with-your-money-and-data",
-          "url": "https://www.npr.org/2026/11/10/nx-s1-6018588/should-you-trust-new-ai-agents-with-your-money-and-data",
-          "relevance": 0.15,
-          "resonance_score": 0.15
         }
       ]
     },
@@ -112,7 +122,7 @@
     },
     {
       "id": "tp_pTdvsfIMGes",
-      "title": "How People Are Using AI to Grieve, Love and Connect | Jennifer Cearns | TED",
+      "title": "Why People Fall in Love with AI Chatbots | Jennifer Cearns | TED",
       "podcast": "TED",
       "channel": "TED",
       "podcastLogo": "TED",
@@ -121,25 +131,34 @@
       "topics": [
         "Artificial Intelligence"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning how people are using ai to grieve, love and connect.",
+      "theme": "Explores strategic perspectives and key developments concerning why people fall in love with ai chatbots.",
       "imageUrl": "https://i.ytimg.com/vi/pTdvsfIMGes/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/pTdvsfIMGes/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=pTdvsfIMGes",
       "youtube_url": "https://www.youtube.com/watch?v=pTdvsfIMGes",
-      "pubDate": "14h ago",
-      "date": "14h ago",
+      "pubDate": "22h ago",
+      "date": "22h ago",
       "duration": "14:02",
       "views": "",
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "guardian-asia-3-3600",
+          "id": "nyt-business-1-666",
+          "title": "Anthropic's I.P.O. and the Clubby Business of A.I.",
+          "source": "NYT Business",
+          "link": "https://www.nytimes.com/2026/11/11/business/dealbook/anthropic-ipo-nvidia.html",
+          "url": "https://www.nytimes.com/2026/11/11/business/dealbook/anthropic-ipo-nvidia.html",
+          "relevance": 0.464,
+          "resonance_score": 0.464
+        },
+        {
+          "id": "guardian-asia-4-532",
           "title": "The Guardian view on Jensen Huang's affair: why did Trump ignore the warnings? | Editorial",
           "source": "The Guardian",
           "link": "https://www.theguardian.com/commentisfree/2026/nov/09/the-guardian-view-on-jensen-huangs-affair-why-did-trump-ignore-the-warnings",
           "url": "https://www.theguardian.com/commentisfree/2026/nov/09/the-guardian-view-on-jensen-huangs-affair-why-did-trump-ignore-the-warnings",
-          "relevance": 0.227,
-          "resonance_score": 0.227
+          "relevance": 0.242,
+          "resonance_score": 0.242
         }
       ]
     },
@@ -206,8 +225,8 @@
       "thumbnail": "https://i.ytimg.com/vi/wbJ_Q1xsDHg/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=wbJ_Q1xsDHg",
       "youtube_url": "https://www.youtube.com/watch?v=wbJ_Q1xsDHg",
-      "pubDate": "1d ago",
-      "date": "1d ago",
+      "pubDate": "2d ago",
+      "date": "2d ago",
       "duration": "2:16:51",
       "views": "",
       "category": "Ideas & Culture",
@@ -229,38 +248,20 @@
       "thumbnail": "https://i.ytimg.com/vi/yUdg7drjrZY/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=yUdg7drjrZY",
       "youtube_url": "https://www.youtube.com/watch?v=yUdg7drjrZY",
-      "pubDate": "5d ago",
-      "date": "5d ago",
+      "pubDate": "6d ago",
+      "date": "6d ago",
       "duration": "38:22",
       "views": "",
       "category": "Science & Health",
       "resonant_news": [
         {
-          "id": "bbc-mideast-1-7705",
+          "id": "bbc-mideast-3-3663",
           "title": "Israeli forces kill Palestinian boy in West Bank, health ministry says",
           "source": "BBC Middle East",
           "link": "https://www.bbc.co.uk/news/articles/cqpvgv318yyeo?at_medium=RSS&at_campaign=rss",
           "url": "https://www.bbc.co.uk/news/articles/cqpvgv318yyeo?at_medium=RSS&at_campaign=rss",
           "relevance": 0.218,
           "resonance_score": 0.218
-        },
-        {
-          "id": "theverge-2-7886",
-          "title": "Oura is acquiring medical AI chatbot startup Counsel Health",
-          "source": "The Verge",
-          "link": "https://www.theverge.com/gadgets/1031284/oura-counsel-health-acquisition",
-          "url": "https://www.theverge.com/gadgets/1031284/oura-counsel-health-acquisition",
-          "relevance": 0.217,
-          "resonance_score": 0.217
-        },
-        {
-          "id": "bbc-mideast-5-7632",
-          "title": "Four killed in Gaza after sand embankment collapses onto tents, health ministry says",
-          "source": "BBC Middle East",
-          "link": "https://www.bbc.co.uk/news/articles/cqd090ee8px5o?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/cqd090ee8px5o?at_medium=RSS&at_campaign=rss",
-          "relevance": 0.216,
-          "resonance_score": 0.216
         }
       ]
     },
@@ -280,8 +281,8 @@
       "thumbnail": "https://i.ytimg.com/vi/y-fRFiTrrg4/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=y-fRFiTrrg4",
       "youtube_url": "https://www.youtube.com/watch?v=y-fRFiTrrg4",
-      "pubDate": "8d ago",
-      "date": "8d ago",
+      "pubDate": "9d ago",
+      "date": "9d ago",
       "duration": "2:18:25",
       "views": "",
       "category": "Ideas & Culture",
@@ -303,8 +304,8 @@
       "thumbnail": "https://i.ytimg.com/vi/FS_XhSIBjDE/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=FS_XhSIBjDE",
       "youtube_url": "https://www.youtube.com/watch?v=FS_XhSIBjDE",
-      "pubDate": "6d ago",
-      "date": "6d ago",
+      "pubDate": "7d ago",
+      "date": "7d ago",
       "duration": "5:13",
       "views": "",
       "category": "Ideas & Culture",
@@ -326,41 +327,14 @@
       "thumbnail": "https://i.ytimg.com/vi/L8f9P3JRJf0/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=L8f9P3JRJf0",
       "youtube_url": "https://www.youtube.com/watch?v=L8f9P3JRJf0",
-      "pubDate": "7d ago",
-      "date": "7d ago",
+      "pubDate": "8d ago",
+      "date": "8d ago",
       "duration": "7:45",
       "views": "",
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "france24-eu-3-4083",
-          "title": "US soldier arrested in Britain on suspicion of assisting Russian intelligence",
-          "source": "France 24",
-          "link": "https://www.france24.com/en/europe/20261110-us-soldier-arrested-in-britain-on-suspicion-of-assisting-russian-intelligence",
-          "url": "https://www.france24.com/en/europe/20261110-us-soldier-arrested-in-britain-on-suspicion-of-assisting-russian-intelligence",
-          "relevance": 0.218,
-          "resonance_score": 0.218
-        },
-        {
-          "id": "nyt-world-0-4947",
-          "title": "US Soldier Is Arrested in UK on Suspicion of Spying for Russia",
-          "source": "New York Times",
-          "link": "https://www.nytimes.com/2026/11/10/world/europe/uk-us-army-arrest-espionage-russia.html",
-          "url": "https://www.nytimes.com/2026/11/10/world/europe/uk-us-army-arrest-espionage-russia.html",
-          "relevance": 0.219,
-          "resonance_score": 0.219
-        },
-        {
-          "id": "france24-eu-4-1229",
-          "title": "What the hack? Europeans face growing psyops and cyberattacks",
-          "source": "France 24",
-          "link": "https://www.france24.com/en/tv-shows/the-debate/20261110-what-the-hack-europeans-face-growing-psyops-and-cyberattacks",
-          "url": "https://www.france24.com/en/tv-shows/the-debate/20261110-what-the-hack-europeans-face-growing-psyops-and-cyberattacks",
-          "relevance": 0.215,
-          "resonance_score": 0.215
-        },
-        {
-          "id": "france24-eu-2-6842",
+          "id": "france24-me-3-9316",
           "title": "Asymmetric cyberwarfare: 'States increasingly use cyberattacks in support of their other objectives'",
           "source": "France 24",
           "link": "https://www.france24.com/en/asymmetric-cyberwarfare-states-increasingly-use-cyberattacks-in-support-of-their-other-objectives",
@@ -386,8 +360,8 @@
       "thumbnail": "https://i.ytimg.com/vi/5LMx2zhvxRY/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=5LMx2zhvxRY",
       "youtube_url": "https://www.youtube.com/watch?v=5LMx2zhvxRY",
-      "pubDate": "8d ago",
-      "date": "8d ago",
+      "pubDate": "9d ago",
+      "date": "9d ago",
       "duration": "5:43",
       "views": "",
       "category": "Ideas & Culture",
@@ -439,7 +413,7 @@
       "category": "Ideas & Culture",
       "resonant_news": [
         {
-          "id": "guardian-eu-5-8263",
+          "id": "guardian-eu-5-9095",
           "title": "Trump could be about to sell out Ukraine. Europe must get its act together, fast | Paul Taylor",
           "source": "The Guardian",
           "link": "https://www.theguardian.com/commentisfree/2026/nov/11/donald-trump-sell-out-ukraine-europe-leaders",
@@ -448,13 +422,13 @@
           "resonance_score": 0.226
         },
         {
-          "id": "npr-national-1-1465",
-          "title": "House votes to effectively end the impeachment effort against Pete Hegseth",
-          "source": "NPR News",
-          "link": "https://www.npr.org/2026/11/10/nx-s1-6036813/house-votes-to-effectively-end-the-impeachment-effort-against-pete-hegseth",
-          "url": "https://www.npr.org/2026/11/10/nx-s1-6036813/house-votes-to-effectively-end-the-impeachment-effort-against-pete-hegseth",
-          "relevance": 0.418,
-          "resonance_score": 0.418
+          "id": "reuters-world-1-1089",
+          "title": "Russian diplomat says Moscow could conclude non-aggression pacts with NATO member states",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOXp1YjFNMWVTN0dFYmJoQ0x6RFU1NjJJeGVCb0FDVlJRSENFRFpRYWxxMmQxTTN4ZUFCWjRGOGdPeDhIOW5SdkYzNUszLWQ2c1pxcXlLdGdjMEVJbWg5Ym1GWTd2al9velFmdUhCWXN0RkVqN3NLRnlKU3lPejRfbzZzRzkwQjVtakxGcXJUcEwzY251RlQxaWRFVnNUemJhdktiMFZsSnk0V01GOV9aT3dHcXlFS0VRSnRCcHRXU2I?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOXp1YjFNMWVTN0dFYmJoQ0x6RFU1NjJJeGVCb0FDVlJRSENFRFpRYWxxMmQxTTN4ZUFCWjRGOGdPeDhIOW5SdkYzNUszLWQ2c1pxcXlLdGdjMEVJbWg5Ym1GWTd2al9velFmdUhCWXN0RkVqN3NLRnlKU3lPejRfbzZzRzkwQjVtakxGcXJUcEwzY251RlQxaWRFVnNUemJhdktiMFZsSnk0V01GOV9aT3dHcXlFS0VRSnRCcHRXU2I?oc=5",
+          "relevance": 0.226,
+          "resonance_score": 0.226
         }
       ]
     },
@@ -481,22 +455,76 @@
       "category": "Geopolitics & Policy",
       "resonant_news": [
         {
-          "id": "nyt-world-4-2438",
-          "title": "Syria Weighs Sending Troops to Aid Saudi War With Houthis",
+          "id": "nyt-asia-0-7214",
+          "title": "Behind the Trump-Xi Bonhomie, a Fierce Spy War Rages",
           "source": "New York Times",
-          "link": "https://www.nytimes.com/2026/11/10/world/middleeast/syria-weighs-sending-troops-to-aid-saudi-war-with-houthis.html",
-          "url": "https://www.nytimes.com/2026/11/10/world/middleeast/syria-weighs-sending-troops-to-aid-saudi-war-with-houthis.html",
-          "relevance": 0.216,
-          "resonance_score": 0.216
+          "link": "https://www.nytimes.com/2026/11/11/world/asia/china-us-nvidia.html",
+          "url": "https://www.nytimes.com/2026/11/11/world/asia/china-us-nvidia.html",
+          "relevance": 0.229,
+          "resonance_score": 0.229
         },
         {
-          "id": "guardian-asia-0-6747",
+          "id": "nyt-world-4-466",
+          "title": "A Museum's 'Wanted' Poster Campaign Brings Looted Painting Back to France",
+          "source": "New York Times",
+          "link": "https://www.nytimes.com/2026/11/11/world/europe/france-art-wanted-poster.html",
+          "url": "https://www.nytimes.com/2026/11/11/world/europe/france-art-wanted-poster.html",
+          "relevance": 0.214,
+          "resonance_score": 0.214
+        },
+        {
+          "id": "scmp-asia-5-675",
+          "title": "Can China help end 'neither war nor peace' Iran deadlock before Xi-Trump summit?",
+          "source": "SCMP",
+          "link": "https://www.scmp.com/news/china/diplomacy/article/3374110/can-china-help-break-deadlock-irans-neither-war-nor-peace-xi-trump-summit",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3374110/can-china-help-break-deadlock-irans-neither-war-nor-peace-xi-trump-summit",
+          "relevance": 0.235,
+          "resonance_score": 0.235
+        },
+        {
+          "id": "bbc-world-3-5720",
+          "title": "UK falls silent to mark Armistice Day",
+          "source": "BBC News",
+          "link": "https://www.bbc.co.uk/news/videos/c6lymnz44gn4o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/videos/c6lymnz44gn4o?at_medium=RSS&at_campaign=rss",
+          "relevance": 0.215,
+          "resonance_score": 0.215
+        },
+        {
+          "id": "nyt-business-4-5257",
+          "title": "Heating Costs Will Rise 7% on Average This Winter",
+          "source": "NYT Business",
+          "link": "https://www.nytimes.com/2026/11/11/business/energy-environment/winter-heating-oil-costs.html",
+          "url": "https://www.nytimes.com/2026/11/11/business/energy-environment/winter-heating-oil-costs.html",
+          "relevance": 0.234,
+          "resonance_score": 0.234
+        },
+        {
+          "id": "guardian-asia-1-4583",
           "title": "Ukraine captures first Indonesian prisoner of war amid surge in Russian recruitment",
           "source": "The Guardian",
           "link": "https://www.theguardian.com/world/2026/nov/11/ukraine-indonesian-pow-prisoner-of-war-russia",
           "url": "https://www.theguardian.com/world/2026/nov/11/ukraine-indonesian-pow-prisoner-of-war-russia",
           "relevance": 0.214,
           "resonance_score": 0.214
+        },
+        {
+          "id": "scmp-asia-0-3961",
+          "title": "Russia, Ukraine agree on prisoner exchange as talks end without major breakthrough",
+          "source": "SCMP",
+          "link": "https://www.scmp.com/news/world/europe/article/3374117/russia-ukraine-agree-prisoner-exchange-talks-end-without-major-breakthrough",
+          "url": "https://www.scmp.com/news/world/europe/article/3374117/russia-ukraine-agree-prisoner-exchange-talks-end-without-major-breakthrough",
+          "relevance": 0.212,
+          "resonance_score": 0.212
+        },
+        {
+          "id": "npr-national-1-2972",
+          "title": "Russia and Ukraine agree to a large exchange of prisoners of war, officials say",
+          "source": "NPR News",
+          "link": "https://www.npr.org/2026/11/11/g-s1-152954/russia-ukraine-war-talks",
+          "url": "https://www.npr.org/2026/11/11/g-s1-152954/russia-ukraine-war-talks",
+          "relevance": 0.215,
+          "resonance_score": 0.215
         }
       ]
     },
@@ -516,8 +544,8 @@
       "thumbnail": "https://i.ytimg.com/vi/RXSQfcKBuAk/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=RXSQfcKBuAk",
       "youtube_url": "https://www.youtube.com/watch?v=RXSQfcKBuAk",
-      "pubDate": "11h ago",
-      "date": "11h ago",
+      "pubDate": "20h ago",
+      "date": "20h ago",
       "duration": "53:26",
       "views": "",
       "category": "Geopolitics & Policy",
@@ -539,8 +567,8 @@
       "thumbnail": "https://i.ytimg.com/vi/WxQwH0gS0Cg/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=WxQwH0gS0Cg",
       "youtube_url": "https://www.youtube.com/watch?v=WxQwH0gS0Cg",
-      "pubDate": "14h ago",
-      "date": "14h ago",
+      "pubDate": "22h ago",
+      "date": "22h ago",
       "duration": "30:00",
       "views": "",
       "category": "Ideas & Culture",
@@ -562,11 +590,34 @@
       "thumbnail": "https://i.ytimg.com/vi/zJqnI54PxKk/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=zJqnI54PxKk",
       "youtube_url": "https://www.youtube.com/watch?v=zJqnI54PxKk",
-      "pubDate": "16h ago",
-      "date": "16h ago",
+      "pubDate": "1d ago",
+      "date": "1d ago",
       "duration": "46:43",
       "views": "",
       "category": "Philosophy & Ideas",
+      "resonant_news": []
+    },
+    {
+      "id": "tp_d8PZHBfK39Y",
+      "title": "Victorian Bodybuilding | You're Dead to Me",
+      "podcast": "BBC Podcasts",
+      "channel": "BBC Podcasts",
+      "podcastLogo": "BBC",
+      "tier": "flagship",
+      "guest": "",
+      "topics": [
+        "Ideas & Culture"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning victorian bodybuilding.",
+      "imageUrl": "https://i.ytimg.com/vi/d8PZHBfK39Y/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/d8PZHBfK39Y/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=d8PZHBfK39Y",
+      "youtube_url": "https://www.youtube.com/watch?v=d8PZHBfK39Y",
+      "pubDate": "27 min ago",
+      "date": "27 min ago",
+      "duration": "54:46",
+      "views": "",
+      "category": "Ideas & Culture",
       "resonant_news": []
     },
     {
@@ -585,8 +636,8 @@
       "thumbnail": "https://i.ytimg.com/vi/JfnyRZBblno/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=JfnyRZBblno",
       "youtube_url": "https://www.youtube.com/watch?v=JfnyRZBblno",
-      "pubDate": "16h ago",
-      "date": "16h ago",
+      "pubDate": "1d ago",
+      "date": "1d ago",
       "duration": "41:54",
       "views": "",
       "category": "Ideas & Culture",
@@ -594,7 +645,7 @@
     },
     {
       "id": "tp_FXLGKek4IV4",
-      "title": "Was I then a MONSTER, a blot upon the earth? | Frankenstein Part 9 | The Haunted Library",
+      "title": "Of what a strange nature is knowledge? | Frankenstein read by Colin Morgan",
       "podcast": "BBC Podcasts",
       "channel": "BBC Podcasts",
       "podcastLogo": "BBC",
@@ -603,7 +654,7 @@
       "topics": [
         "Ideas & Culture"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning was i then a monster, a blot upon the earth?.",
+      "theme": "Explores strategic perspectives and key developments concerning of what a strange nature is knowledge?.",
       "imageUrl": "https://i.ytimg.com/vi/FXLGKek4IV4/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/FXLGKek4IV4/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=FXLGKek4IV4",
@@ -611,29 +662,6 @@
       "pubDate": "1d ago",
       "date": "1d ago",
       "duration": "39:07",
-      "views": "",
-      "category": "Ideas & Culture",
-      "resonant_news": []
-    },
-    {
-      "id": "tp_Zw_i5MKXeXE",
-      "title": "The Medici | In Our Time",
-      "podcast": "BBC Podcasts",
-      "channel": "BBC Podcasts",
-      "podcastLogo": "BBC",
-      "tier": "flagship",
-      "guest": "",
-      "topics": [
-        "Ideas & Culture"
-      ],
-      "theme": "Explores strategic perspectives and key developments concerning the medici.",
-      "imageUrl": "https://i.ytimg.com/vi/Zw_i5MKXeXE/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/Zw_i5MKXeXE/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=Zw_i5MKXeXE",
-      "youtube_url": "https://www.youtube.com/watch?v=Zw_i5MKXeXE",
-      "pubDate": "2d ago",
-      "date": "2d ago",
-      "duration": "41:57",
       "views": "",
       "category": "Ideas & Culture",
       "resonant_news": []
@@ -682,7 +710,35 @@
       "duration": "28:43",
       "views": "",
       "category": "Ideas & Culture",
-      "resonant_news": []
+      "resonant_news": [
+        {
+          "id": "nyt-world-2-7466",
+          "title": "Lebanon Faces Economic 'Catastrophe' After War and Years of Mismanagement",
+          "source": "New York Times",
+          "link": "https://www.nytimes.com/2026/11/11/world/middleeast/lebanon-economy-crisis-corruption-war.html",
+          "url": "https://www.nytimes.com/2026/11/11/world/middleeast/lebanon-economy-crisis-corruption-war.html",
+          "relevance": 0.231,
+          "resonance_score": 0.231
+        },
+        {
+          "id": "npr-national-2-9264",
+          "title": "House effectively ends Hegseth impeachment. And, 3 men accused of plotting U.K. attacks",
+          "source": "NPR News",
+          "link": "https://www.npr.org/2026/11/11/g-s1-152949/up-first-newsletter-pete-hegseth-jim-jordan-iran-backed-trio-us-bases",
+          "url": "https://www.npr.org/2026/11/11/g-s1-152949/up-first-newsletter-pete-hegseth-jim-jordan-iran-backed-trio-us-bases",
+          "relevance": 0.432,
+          "resonance_score": 0.432
+        },
+        {
+          "id": "npr-national-3-7912",
+          "title": "Iran-backed trio accused of plotting attacks on U.K. base hosting U.S. jets",
+          "source": "NPR News",
+          "link": "https://www.npr.org/2026/11/10/nx-s1-6036786/uk-iran-airbase-russia-spy",
+          "url": "https://www.npr.org/2026/11/10/nx-s1-6036786/uk-iran-airbase-russia-spy",
+          "relevance": 0.216,
+          "resonance_score": 0.216
+        }
+      ]
     },
     {
       "id": "tp_ZhcXfMScY3w",
@@ -723,8 +779,8 @@
       "thumbnail": "https://i.ytimg.com/vi/Rh1tKGIswZA/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=Rh1tKGIswZA",
       "youtube_url": "https://www.youtube.com/watch?v=Rh1tKGIswZA",
-      "pubDate": "6h ago",
-      "date": "6h ago",
+      "pubDate": "14h ago",
+      "date": "14h ago",
       "duration": "56:47",
       "views": "",
       "category": "Ideas & Culture",
@@ -746,8 +802,8 @@
       "thumbnail": "https://i.ytimg.com/vi/BK-ZvdmRRlo/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=BK-ZvdmRRlo",
       "youtube_url": "https://www.youtube.com/watch?v=BK-ZvdmRRlo",
-      "pubDate": "6h ago",
-      "date": "6h ago",
+      "pubDate": "14h ago",
+      "date": "14h ago",
       "duration": "7:13",
       "views": "",
       "category": "Business & Economy",
@@ -769,8 +825,8 @@
       "thumbnail": "https://i.ytimg.com/vi/ryizdIasN8k/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=ryizdIasN8k",
       "youtube_url": "https://www.youtube.com/watch?v=ryizdIasN8k",
-      "pubDate": "6h ago",
-      "date": "6h ago",
+      "pubDate": "14h ago",
+      "date": "14h ago",
       "duration": "5:46",
       "views": "",
       "category": "Ideas & Culture",
@@ -792,8 +848,8 @@
       "thumbnail": "https://i.ytimg.com/vi/DW0C8vWNebI/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=DW0C8vWNebI",
       "youtube_url": "https://www.youtube.com/watch?v=DW0C8vWNebI",
-      "pubDate": "2d ago",
-      "date": "2d ago",
+      "pubDate": "3d ago",
+      "date": "3d ago",
       "duration": "28:07",
       "views": "",
       "category": "Business & Economy",
@@ -838,8 +894,8 @@
       "thumbnail": "https://i.ytimg.com/vi/91g4i01pPCA/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=91g4i01pPCA",
       "youtube_url": "https://www.youtube.com/watch?v=91g4i01pPCA",
-      "pubDate": "8d ago",
-      "date": "8d ago",
+      "pubDate": "9d ago",
+      "date": "9d ago",
       "duration": "26:50",
       "views": "",
       "category": "Business & Economy",
