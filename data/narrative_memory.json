@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-11T00:11:10.652373+00:00",
+    "last_updated": "2026-11-11T06:56:24.642817+00:00",
     "arcs": [
         {
             "arc_id": "d9a388cf-db33-476b-8622-61bc79e2b246",
@@ -19,7 +19,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
             "chapter_count": 16,
             "chapter_titles": [
                 "Rubio Warned Officials About Nvidia Chief's Entanglement With Chinese Spy",
@@ -70,8 +70,8 @@
                 "Europe"
             ],
             "first_seen": "2026-11-09T20:57:26.689931+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 8,
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 9,
             "chapter_titles": [
                 "Russia and Ukraine showing flexibility on territory, US official says",
                 "What to expect as Russia, Ukraine and the US hold trilateral talks in Abu Dhabi",
@@ -80,7 +80,8 @@
                 "US officials seek 'final end' to Russia-Ukraine war as Abu Dhabi talks begin",
                 "U.S.-mediated talks on ending Russia-Ukraine war begin in Abu Dhabi",
                 "US-mediated talks on ending Russia-Ukraine war begin in Abu Dhabi",
-                "US officials seek 'final end' to Russia-Ukraine war, as Abu Dhabi talks set to continue"
+                "US officials seek 'final end' to Russia-Ukraine war, as Abu Dhabi talks set to continue",
+                "Ukraine, Russia hold second day of US-mediated talks in Abu Dhabi"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
@@ -89,6 +90,1795 @@
                 "NPR News",
                 "Reuters",
                 "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "be99fe91-bff8-4824-8c40-810bbaa0ad17",
+            "title": "Senior US soldier arrested by UK counter-terror",
+            "keywords": [
+                "arrest",
+                "counter",
+                "polic",
+                "senior",
+                "soldier",
+                "terror"
+            ],
+            "entity_signature": "RU:UK:US:arrested:collective_faction",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-10T19:23:38.577633+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 5,
+            "chapter_titles": [
+                "Senior US soldier arrested by UK counter-terror police",
+                "US Army soldier suspected of spying for Russia arrested in UK",
+                "US Army member arrested in UK for suspected 'espionage' for Russia",
+                "US soldier arrested in Britain on suspicion of assisting Russian intelligence",
+                "US Soldier Is Arrested in UK on Suspicion of Spying for Russia"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC News",
+                "France 24",
+                "New York Times",
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "e38708e6-85c3-4402-be1a-08c9c6d9de22",
+            "title": "France accuses Iran of cyber 'sabotage' in fridge",
+            "keywords": [
+                "accus",
+                "attack",
+                "cyber",
+                "franc",
+                "fridg",
+                "iran",
+                "sabotag"
+            ],
+            "entity_signature": "FR:IR:attacks:fr:france",
+            "category": "National",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-10T03:20:11.781101+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 4,
+            "chapter_titles": [
+                "France accuses Iran of cyber 'sabotage' in fridge attacks",
+                "France accuses Iran of supermarket fridge hacking",
+                "France summons Iran's ambassador over supermarket fridge 'sabotage'",
+                "Iran rejects French claims it was behind supermarket fridge hacking"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Al Jazeera",
+                "BBC Europe",
+                "BBC Middle East",
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "e01ffc84-d03a-4ed7-9bfd-8f7798d14d55",
+            "title": "Israel live: Netanyahu bloc targets Arab",
+            "keywords": [
+                "arab",
+                "bloc",
+                "israel",
+                "lawmaker",
+                "netanyahu",
+                "new",
+                "parlia",
+                "sworn",
+                "target"
+            ],
+            "entity_signature": "IL:Benjamin:Benjamin Netanyahu:arab lawmakers as new parliament is sworn in:governance",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-10T19:23:38.577633+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Israel live: Netanyahu bloc targets Arab lawmakers as new parliament is sworn in",
+                "Netanyahu bloc targets Arab lawmakers as Israel's new parliament is sworn in",
+                "Eisenkot pushes October 7 inquiry as Netanyahu targets Arab parties in tense new parliament"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "57507d9f-2807-4ade-88f1-8ec36ef3b8b6",
+            "title": "ANC faces anger over poor services as South",
+            "keywords": [
+                "african",
+                "anc",
+                "anger",
+                "elec",
+                "fac",
+                "local",
+                "poor",
+                "servic",
+                "south",
+                "vot"
+            ],
+            "entity_signature": "ZA:anc:anger:congress",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-04T06:51:50.105125+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "ANC faces anger over poor services as South Africans vote in local elections",
+                "ANC faces bruising defeat in South African local elections with 80% of ballots counted"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "834a329b-bd75-482d-9647-1ded69b30d74",
+            "title": "The leader of a Kenyan doomsday cult is sentenced",
+            "keywords": [
+                "cult",
+                "doomsday",
+                "kenyan",
+                "leader",
+                "prison",
+                "sentenc"
+            ],
+            "entity_signature": "KE:200 years:children:civilians & impacted communities",
+            "category": "National",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-06T18:57:15.146358+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "The leader of a Kenyan doomsday cult is sentenced to 200 years in prison",
+                "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "deefa4e8-43dd-4b5e-a1a5-54288801c2d8",
+            "title": "Trump says Iran war is 'effectively over'",
+            "keywords": [
+                "effectiveli",
+                "iran",
+                "militarili",
+                "strik",
+                "trump",
+                "unlikeli",
+                "war"
+            ],
+            "entity_signature": "IR:US:Donald:Donald Trump:conflict",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-10T03:20:11.781101+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Trump says Iran war is 'effectively over' militarily with further strikes unlikely",
+                "Trump says more US attacks on Iran 'highly unlikely'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Middle East",
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "9b90f80c-70e6-4612-bb57-fccec85d63f9",
+            "title": "Traces of Justice review – 'Chinese Shjerlock",
+            "keywords": [
+                "arrest",
+                "centr",
+                "chines",
+                "cop",
+                "forensic",
+                "holm",
+                "justic",
+                "review",
+                "shjerlock",
+                "thriller"
+            ],
+            "entity_signature": "CN:arresting:china:china sovereign authorities",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-10T11:32:09.785316+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Traces of Justice review – 'Chinese Shjerlock Holmes' at centre of arresting forensic cop thriller",
+                "Traces of Justice review – 'Chinese Sherlock Holmes' at centre of arresting forensic cop thriller"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "602ceaf9-ada0-47d1-befc-9774b9610151",
+            "title": "US again fails to show at UN for its human rights",
+            "keywords": [
+                "fail",
+                "human",
+                "review",
+                "right",
+                "show"
+            ],
+            "entity_signature": "US:Donald:Donald Trump:leader:rights",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-10T19:23:38.577633+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "US again fails to show at UN for its human rights review",
+                "U.S. boycotts U.N. human rights review for second year running"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "NPR News",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "19349a1a-aa03-46b8-97cb-9f77de535888",
+            "title": "Collision of two trains in Egypt kills at least",
+            "keywords": [
+                "collision",
+                "egypt",
+                "kill",
+                "least",
+                "seven",
+                "train",
+                "two"
+            ],
+            "entity_signature": "EG:collision of two trains in egypt:eg:egypt",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Collision of two trains in Egypt kills at least seven"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "38ff3cb9-0181-4ead-a473-2069c1a8a470",
+            "title": "Four killed in Gaza after sand embankment",
+            "keywords": [
+                "collaps",
+                "embank",
+                "four",
+                "gaza",
+                "health",
+                "kill",
+                "ministri",
+                "onto",
+                "sand",
+                "tent"
+            ],
+            "entity_signature": "PS:collective_faction:four:gaza",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-09T20:57:26.689931+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Four killed in Gaza after sand embankment collapses onto tents, health ministry says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "97931146-f94e-4cc8-a212-79d6e4506b68",
+            "title": "U.S. Forces in Europe Face Uncertainty as",
+            "keywords": [
+                "europ",
+                "fac",
+                "forc",
+                "level",
+                "pentagon",
+                "review",
+                "troop",
+                "uncertainti"
+            ],
+            "entity_signature": "DE:EU:US:collective_faction:de",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-10T11:32:09.785316+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "U.S. Forces in Europe Face Uncertainty as Pentagon Reviews Troop Levels"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "a6b2a184-9f8c-498e-b0f1-0727a9095096",
+            "title": "Polish unity on show as thousands join silent",
+            "keywords": [
+                "join",
+                "krakow",
+                "march",
+                "polish",
+                "shoot",
+                "show",
+                "silent",
+                "thousand",
+                "uniti",
+                "victim"
+            ],
+            "entity_signature": "PL:conflict:impacted_community:krakow shooting victims",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-10T11:32:09.785316+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Polish unity on show as thousands join silent march for Krakow shooting victims"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "7eb24c93-1719-4173-aaab-516cfefc7563",
+            "title": "Israeli forces kill Palestinian boy in West Bank",
+            "keywords": [
+                "bank",
+                "boy",
+                "forc",
+                "health",
+                "israeli",
+                "kill",
+                "ministri",
+                "palestinian",
+                "west"
+            ],
+            "entity_signature": "IL:PS:collective_faction:geopolitics:health ministry",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-10T11:32:09.785316+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Israeli forces kill Palestinian boy in West Bank, health ministry says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "fada51eb-aee2-4067-82ef-e98ca5137af7",
+            "title": "Falkland Islanders face 'devastating",
+            "keywords": [
+                "argentina",
+                "block",
+                "consequenc",
+                "devastat",
+                "fac",
+                "falkland",
+                "islander",
+                "oil",
+                "project"
+            ],
+            "entity_signature": "AR:UK:ar:argentina:devastating consequences' if argentina blocks oil project, says uk",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-10T19:23:38.577633+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Falkland Islanders face 'devastating consequences' if Argentina blocks oil project, says UK"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "2a7f8a8f-6291-46cb-9afe-e77c40d01008",
+            "title": "In Interview, Sonia Gandhi Recalls Love and Loss",
+            "keywords": [
+                "gandhi",
+                "india",
+                "interview",
+                "loss",
+                "lov",
+                "recall",
+                "sonia"
+            ],
+            "entity_signature": "IN:IT:, sonia gandhi recalls love and loss:in:india",
+            "category": "World",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-10T19:23:38.577633+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "In Interview, Sonia Gandhi Recalls Love and Loss in India"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "5dfaa3c5-36fe-4caf-ae4a-2479a337feaa",
+            "title": "Malaysia's disgraced former PM leaves jail for",
+            "keywords": [
+                "arrest",
+                "disgrac",
+                "embezzl",
+                "former",
+                "hous",
+                "jail",
+                "leav",
+                "malaysia",
+                "million"
+            ],
+            "entity_signature": "MY:arrest:justice:malaysia",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-10T19:23:38.577633+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Malaysia's disgraced former PM leaves jail for house arrest after embezzling millions"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "ec11d129-3f4a-4185-a93b-c3275e3bf2a5",
+            "title": "US and rest of world must follow China's lead on",
+            "keywords": [
+                "china",
+                "energi",
+                "follow",
+                "green",
+                "john",
+                "kerri",
+                "lead",
+                "must",
+                "rest",
+                "world"
+            ],
+            "entity_signature": "CN:US:china:climate:cn",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-10T19:23:38.577633+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US and rest of world must follow China's lead on green energy, says John Kerry"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "2aae4617-1151-432c-bd25-d6842d6cfd41",
+            "title": "Najib Razak, Ex-Prime Minister of Malaysia, Is",
+            "keywords": [
+                "arrest",
+                "hous",
+                "malaysia",
+                "minister",
+                "najib",
+                "prim",
+                "razak",
+                "releas"
+            ],
+            "entity_signature": "MY:house arrest:justice:malaysia",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-10T19:23:38.577633+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Najib Razak, Ex-Prime Minister of Malaysia, Is Released to House Arrest"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "ede0c2c0-ef97-4897-8bfc-f0318aafb0f4",
+            "title": "Kristallnacht' 88th anniversary: Merz says",
+            "keywords": [
+                "88th",
+                "anniversari",
+                "antisemitism",
+                "fac",
+                "germani",
+                "historic",
+                "kristallnacht",
+                "merz",
+                "test"
+            ],
+            "entity_signature": "AT:DE:EU:at:austria",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-10T19:23:38.577633+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Kristallnacht' 88th anniversary: Merz says Germany faces historic test over antisemitism"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "3d55cb49-a0d7-4373-9428-600b7ec4b99e",
+            "title": "Britain willing to discuss paying into EU to join",
+            "keywords": [
+                "britain",
+                "discuss",
+                "electric",
+                "join",
+                "market",
+                "minister",
+                "pay",
+                "will"
+            ],
+            "entity_signature": "EU:UK:britain willing to discuss paying into eu to join electricity market, says minister:economics:economy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-10T19:23:38.577633+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Britain willing to discuss paying into EU to join electricity market, says minister"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "ef137684-73dc-4548-81db-00f62aeae69a",
+            "title": "French wartime resistance heroine Solange",
+            "keywords": [
+                "aged",
+                "alexandr",
+                "die",
+                "french",
+                "heroin",
+                "resistanc",
+                "solang",
+                "wartim"
+            ],
+            "entity_signature": "DE:FR:aged 104:de:dies",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-10T19:23:38.577633+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "French wartime resistance heroine Solange Alexandre dies aged 104"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "2c21d3d9-c3cb-4e9c-bc15-39b7bdf52fb2",
+            "title": "Police officer dies and another injured after",
+            "keywords": [
+                "another",
+                "backpack",
+                "die",
+                "explosion",
+                "injur",
+                "northern",
+                "officer",
+                "polic",
+                "spain"
+            ],
+            "entity_signature": "ES:and another injured:collective_faction:dies",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-10T19:23:38.577633+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Police officer dies and another injured after backpack explosion in northern Spain"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "ef902ebf-8dbf-4321-bc75-561664c18c19",
+            "title": "Board of Peace says Israel's aid response after",
+            "keywords": [
+                "aid",
+                "board",
+                "flood",
+                "gaza",
+                "insufficent",
+                "israel",
+                "peac",
+                "respons"
+            ],
+            "entity_signature": "IL:PS:Donald:Donald Trump:board of peace says israel's aid response after gaza floods 'insufficent",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-10T19:23:38.577633+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Board of Peace says Israel's aid response after Gaza floods 'insufficent'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "6e021024-a6af-43d8-b835-58a3e490f5cb",
+            "title": "Testing the new generation of AI-enabled",
+            "keywords": [
+                "ai",
+                "dron",
+                "enabl",
+                "extinguish",
+                "fir",
+                "genera",
+                "new",
+                "test"
+            ],
+            "entity_signature": "new generation of ai-enabled fire-extinguishing drones:north america regional stakeholders:sovereign_stakeholder",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-10T19:23:38.577633+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Testing the new generation of AI-enabled fire-extinguishing drones"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "9c895511-c2af-4d94-bd80-809281c03960",
+            "title": "Syria Weighs Sending Troops to Aid Saudi War With",
+            "keywords": [
+                "aid",
+                "houthi",
+                "saudi",
+                "send",
+                "syria",
+                "troop",
+                "war",
+                "weigh"
+            ],
+            "entity_signature": "SA:SY:collective_faction:conflict:geopolitics",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-10T19:23:38.577633+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Syria Weighs Sending Troops to Aid Saudi War With Houthis"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "da4a46a9-93e6-4773-9927-e8e87b6fbcd7",
+            "title": "Gaza Floods Kill 4",
+            "keywords": [
+                "flood",
+                "gaza",
+                "kill"
+            ],
+            "entity_signature": "PS:4:gaza floods:kill",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-10T19:23:38.577633+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Gaza Floods Kill 4"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "37ab13bf-bbf1-4dcc-b141-29de71cbe5ba",
+            "title": "The US military seems to be getting nervous about",
+            "keywords": [
+                "crunch",
+                "gett",
+                "launch",
+                "militari",
+                "nervou",
+                "seem",
+                "suppli"
+            ],
+            "entity_signature": "US:collective_faction:geopolitics:launch",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-11T00:11:10.233333+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "The US military seems to be getting nervous about the launch supply crunch"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Ars Technica"
+            ]
+        },
+        {
+            "arc_id": "01113fe7-56f8-408b-919a-e4c24738ba78",
+            "title": "ICE Deportation Flight Carrying Iranians Turns",
+            "keywords": [
+                "arizona",
+                "back",
+                "carri",
+                "deporta",
+                "flight",
+                "ice",
+                "iranian",
+                "land",
+                "turn"
+            ],
+            "entity_signature": "IR:PK:and lands:back:ice deportation flight carrying iranians turns",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-11T00:11:10.233333+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "ICE Deportation Flight Carrying Iranians Turns Back and Lands in Arizona"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "1d9bd00e-2cd5-452b-8601-a7ee3ece9630",
+            "title": "Toyota Plans to Sell a Kei Pickup Truck in the U.S",
+            "keywords": [
+                "kei",
+                "pickup",
+                "plan",
+                "sell",
+                "toyota",
+                "truck"
+            ],
+            "entity_signature": "JP:US:Donald:Donald Trump:japan",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-11T00:11:10.233333+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Toyota Plans to Sell a Kei Pickup Truck in the U.S."
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "b51e7386-1ccf-461d-9ee0-dc52a666d062",
+            "title": "What the hack? Europeans face growing psyops and",
+            "keywords": [
+                "cyberattack",
+                "european",
+                "fac",
+                "grow",
+                "hack",
+                "psyop"
+            ],
+            "entity_signature": "FR:IR:RU:ambassador:diplomatic envoys",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-11T00:11:10.233333+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "What the hack? Europeans face growing psyops and cyberattacks"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "1fda9d48-fbd0-42d8-813d-9a661eff5b32",
+            "title": "OpenAI acquires Odessia, travel startup created",
+            "keywords": [
+                "acquir",
+                "creat",
+                "founder",
+                "odessia",
+                "openai",
+                "sonder",
+                "startup",
+                "travel"
+            ],
+            "entity_signature": "created:north america regional stakeholders:openai",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-11T00:11:10.233333+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "OpenAI acquires Odessia, travel startup created by Sonder founder"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "6d274fcf-dc3b-49fd-ab7b-8a9294257f6e",
+            "title": "OpenAI, Anthropic face new oversight as New",
+            "keywords": [
+                "ai",
+                "anthropic",
+                "effect",
+                "fac",
+                "law",
+                "new",
+                "openai",
+                "oversight",
+                "safeti",
+                "tak"
+            ],
+            "entity_signature": "anthropic:face:legislation",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-11T00:11:10.233333+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "OpenAI, Anthropic face new oversight as New York's AI safety law takes effect"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "4a71071a-6740-487c-a1a5-f8c161147ef6",
+            "title": "Proximal Ventures raises debut fund to back",
+            "keywords": [
+                "ai",
+                "back",
+                "bring",
+                "debut",
+                "develop",
+                "drug",
+                "fund",
+                "proximal",
+                "rais",
+                "startup"
+            ],
+            "entity_signature": "debut fund:health:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-11T00:11:10.233333+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Proximal Ventures raises debut fund to back startups bringing AI to drug development"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "037bb7d6-0e73-4912-8c3c-cbb410362624",
+            "title": "X-energy gets green light to build its first",
+            "keywords": [
+                "build",
+                "energi",
+                "first",
+                "get",
+                "green",
+                "light",
+                "modular",
+                "nuclear",
+                "reactor",
+                "small"
+            ],
+            "entity_signature": "US:build:commission:geopolitics",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-11T00:11:10.233333+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "X-energy gets green light to build its first small modular nuclear reactors"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "5c0ae7c9-d7bf-43a3-8bd3-939b0e97d5ed",
+            "title": "PLA-linked Chinese university bought Nvidia H200",
+            "keywords": [
+                "blacklist",
+                "bought",
+                "chines",
+                "chip",
+                "despit",
+                "h200",
+                "link",
+                "nvidia",
+                "pla",
+                "record"
+            ],
+            "entity_signature": "CN:US:bought:china:cn",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "PLA-linked Chinese university bought Nvidia H200 chips despite US blacklist, records show"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "be2afbc0-f6a2-4835-8895-5b4df5a9c25d",
+            "title": "Senior Republican on US Senate banking panel",
+            "keywords": [
+                "bank",
+                "call",
+                "ceo",
+                "huang",
+                "nvidia",
+                "panel",
+                "republican",
+                "resign",
+                "senat",
+                "senior"
+            ],
+            "entity_signature": "US:Huang:Jensen:congress:leader",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Senior Republican on US Senate banking panel calls on Nvidia CEO Huang to resign"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "a4a53d61-b0b6-407f-8021-2480e0ad33c2",
+            "title": "Three Iran-backed suspects plotted attacks",
+            "keywords": [
+                "attack",
+                "back",
+                "fairford",
+                "incident",
+                "includ",
+                "iran",
+                "plott",
+                "raf",
+                "suspect",
+                "three"
+            ],
+            "entity_signature": "IR:UK:US:armed forces:backed",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "4fe5fad9-4b17-458b-bc6a-f0917c2cf299",
+            "title": "Oil rebounds as Hormuz shipping attacks blunt",
+            "keywords": [
+                "attack",
+                "blunt",
+                "hop",
+                "hormuz",
+                "iran",
+                "oil",
+                "rebound",
+                "shipp",
+                "truc"
+            ],
+            "entity_signature": "IR:attacks:blunt hopes:ir",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Oil rebounds as Hormuz shipping attacks blunt hopes for Iran truce"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "66003b57-13c5-4e20-abd8-a26ccc5a250e",
+            "title": "Ukraine captures first Indonesian prisoner of war",
+            "keywords": [
+                "amid",
+                "captur",
+                "first",
+                "indonesian",
+                "prisoner",
+                "recruit",
+                "russian",
+                "surg",
+                "ukrain",
+                "war"
+            ],
+            "entity_signature": "ID:RU:UA:conflict:economy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ukraine captures first Indonesian prisoner of war amid surge in Russian recruitment"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "fa0821d7-f5c3-4387-b152-9d86c8994e93",
+            "title": "Indonesian VP resignation drama raises stakes for",
+            "keywords": [
+                "allianc",
+                "drama",
+                "indonesian",
+                "prabowo",
+                "rais",
+                "resigna",
+                "stak",
+                "strain"
+            ],
+            "entity_signature": "ID:analysts:id:indonesia",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Indonesian VP resignation drama raises stakes for Prabowo as alliances strain"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "82633d2b-a6d4-42af-a211-c100ccb1c292",
+            "title": "Cathay orders 14 more Airbus jets as investment",
+            "keywords": [
+                "airbu",
+                "billion",
+                "cathay",
+                "commit",
+                "invest",
+                "jet",
+                "order",
+                "top"
+            ],
+            "entity_signature": "US:cathay orders 14 more airbus jets as investment commitments top hk$150 billion:sovereign_stakeholder:united states",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Cathay orders 14 more Airbus jets as investment commitments top HK$150 billion"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "9acacaa3-3be9-413a-9f74-4f625063369b",
+            "title": "Singapore Airlines backs new business class seats",
+            "keywords": [
+                "airlin",
+                "amid",
+                "back",
+                "busi",
+                "chair",
+                "class",
+                "criticism",
+                "dental",
+                "new",
+                "seat"
+            ],
+            "entity_signature": "SG:backs:new business class seats:sg",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Singapore Airlines backs new business class seats amid 'dental chair' criticism"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "330d9054-b3d4-416e-88c1-ad9fb9a6229e",
+            "title": "Aldi cuts hundreds of UK head office and",
+            "keywords": [
+                "aldi",
+                "cost",
+                "cut",
+                "global",
+                "head",
+                "hundr",
+                "logistic",
+                "offic",
+                "part",
+                "rol"
+            ],
+            "entity_signature": "UK:aldi:cuts:hundreds of uk head office and logistics roles as part of global cost trimming",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Aldi cuts hundreds of UK head office and logistics roles as part of global cost trimming"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "094d3d40-4677-47b7-b67b-f90ba1ecd68c",
+            "title": "Trump could be about to sell out Ukraine. Europe",
+            "keywords": [
+                "act",
+                "europ",
+                "fast",
+                "get",
+                "must",
+                "paul",
+                "sell",
+                "taylor",
+                "together",
+                "trump"
+            ],
+            "entity_signature": "EU:RU:UA:Donald:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump could be about to sell out Ukraine. Europe must get its act together, fast | Paul Taylor"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "9dd20eb5-a2a5-42d7-b370-ca85e44d9078",
+            "title": "Egyptian journalist Lina Attalah faces prison as",
+            "keywords": [
+                "attalah",
+                "egyptian",
+                "fac",
+                "internate",
+                "journalist",
+                "lina",
+                "outcri",
+                "prison",
+                "spark",
+                "trial"
+            ],
+            "entity_signature": "EG:court:eg:egypt",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Egyptian journalist Lina Attalah faces prison as trial sparks international outcry"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "8745f13b-995e-424a-aac2-5eefec799d07",
+            "title": "Yemeni forces, Houthis exchange attacks, claim to",
+            "keywords": [
+                "attack",
+                "claim",
+                "exchang",
+                "forc",
+                "heavi",
+                "houthi",
+                "inflict",
+                "loss",
+                "yemeni"
+            ],
+            "entity_signature": ", claim:attacks:collective_faction",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Yemeni forces, Houthis exchange attacks, claim to inflict heavy losses"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "af56e667-5339-4be5-b7bd-ffa2e16ade89",
+            "title": "US charges three men for allegedly plotting",
+            "keywords": [
+                "alleg",
+                "attack",
+                "bas",
+                "charg",
+                "men",
+                "plott",
+                "three"
+            ],
+            "entity_signature": "UK:US:air force:attack:conflict",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US charges three men for allegedly plotting attack on UK base"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "22d5eefb-b6f9-4617-9305-86cf9c9bc7a1",
+            "title": "Malaysia's ex-PM transferred to house arrest for",
+            "keywords": [
+                "1mdb",
+                "arrest",
+                "graft",
+                "hous",
+                "malaysia",
+                "sentenc",
+                "transferr"
+            ],
+            "entity_signature": "MY:1mdb graft sentence:arrest:justice",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Malaysia's ex-PM transferred to house arrest for 1MDB graft sentence"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "284c8413-23f3-4156-bb08-a244a3c6ede0",
+            "title": "X launches its own clipping feature to spur",
+            "keywords": [
+                "clipp",
+                "engage",
+                "featur",
+                "influencer",
+                "launch",
+                "spur"
+            ],
+            "entity_signature": "its own clipping feature:launches:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "X launches its own clipping feature to spur influencer engagement"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "cd8604f4-b93f-492f-83d1-e04546a108ca",
+            "title": "Federal government failed to hold Epstein",
+            "keywords": [
+                "accountabl",
+                "committee",
+                "epstein",
+                "fail",
+                "federal",
+                "govern",
+                "hold",
+                "republican"
+            ],
+            "entity_signature": "federal government failed to hold epstein accountable, republican committee says:justice:north america regional stakeholders",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Federal government failed to hold Epstein accountable, Republican committee says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "8d38ade3-99a1-4743-bf2d-bba329444399",
+            "title": "US House blocks bid to impeach Defence Secretary",
+            "keywords": [
+                "bid",
+                "block",
+                "defenc",
+                "hegseth",
+                "hous",
+                "impeach",
+                "now",
+                "pet",
+                "secretari"
+            ],
+            "entity_signature": "US:Donald:Donald Trump:bid:blocks",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US House blocks bid to impeach Defence Secretary Pete Hegseth, for now"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC US"
+            ]
+        },
+        {
+            "arc_id": "aa14e4b6-0cda-479c-98ab-59656a7d90eb",
+            "title": "Supreme Court seems split over federal agencies'",
+            "keywords": [
+                "abil",
+                "agenci",
+                "court",
+                "federal",
+                "fin",
+                "law",
+                "seem",
+                "split",
+                "suprem",
+                "viola"
+            ],
+            "entity_signature": "collective_faction:fine:governance",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Supreme Court seems split over federal agencies' ability to fine for law violations"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "02ac51f1-e4e1-4982-bde3-48815c92e0ac",
+            "title": "Mother Dairy hikes milk prices by ₹2-4 per litre",
+            "keywords": [
+                "dairi",
+                "hik",
+                "litr",
+                "milk",
+                "mother",
+                "november",
+                "per",
+                "pric"
+            ],
+            "entity_signature": "economics:economy:hikes",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Mother Dairy hikes milk prices by ₹2-4 per litre from November 12"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "a34ee1cf-e166-40d2-ae8a-31b2c9db39bc",
+            "title": "BJP wins 77 seats of five Tripura civic bodies",
+            "keywords": [
+                "bjp",
+                "bodi",
+                "civic",
+                "elec",
+                "fiv",
+                "november",
+                "rest",
+                "seat",
+                "tripura",
+                "unoppos"
+            ],
+            "entity_signature": "77 seats of five tripura civic bodies unopposed:bjp:congress",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "BJP wins 77 seats of five Tripura civic bodies unopposed; elections for rest on November 27"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "48433e5d-72ac-4db7-b13f-0c7874f7194c",
+            "title": "4-year-old boy falls into open sewer manhole in",
+            "keywords": [
+                "boy",
+                "delhi",
+                "fall",
+                "manhol",
+                "old",
+                "open",
+                "opera",
+                "outer",
+                "ranhola",
+                "rescu"
+            ],
+            "entity_signature": "4-year-old boy falls into:india regional stakeholders:judicial & investigative bodies",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "4-year-old boy falls into open sewer manhole in outer Delhi's Ranhola, search-rescue operation on"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "5678bd03-2614-4dcc-96f2-d719c522d964",
+            "title": "17-year-old accused in Bengaluru family murders",
+            "keywords": [
+                "accus",
+                "adult",
+                "bengaluru",
+                "fac",
+                "famili",
+                "may",
+                "murder",
+                "old",
+                "trial"
+            ],
+            "entity_signature": "17-year-old accused in bengaluru family murders may:adult trial:children",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "17-year-old accused in Bengaluru family murders may face adult trial"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "5ca0ec51-19d7-40ab-a72c-051afdd791ec",
+            "title": "Vijay to meet TVK MLAs today as government",
+            "keywords": [
+                "amid",
+                "attack",
+                "complet",
+                "govern",
+                "meet",
+                "mla",
+                "opposi",
+                "tvk",
+                "vijay"
+            ],
+            "entity_signature": "conflict:india regional stakeholders:meet",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Vijay to meet TVK MLAs today as government completes 6 months amid Opposition attack"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "7db3111f-bb73-49ec-a5f7-aaf64991bebe",
+            "title": "Fake QR code to divert charity fund: Case filed",
+            "keywords": [
+                "cas",
+                "char",
+                "cod",
+                "divert",
+                "fak",
+                "fil",
+                "fund",
+                "keralam",
+                "trust"
+            ],
+            "entity_signature": "case:children:civilians & impacted communities",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-11T06:56:24.182952+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Fake QR code to divert charity fund: Case filed against trust in Keralam"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
             ]
         },
         {
@@ -134,172 +1924,6 @@
             ]
         },
         {
-            "arc_id": "be99fe91-bff8-4824-8c40-810bbaa0ad17",
-            "title": "Senior US soldier arrested by UK counter-terror",
-            "keywords": [
-                "arrest",
-                "counter",
-                "polic",
-                "senior",
-                "soldier",
-                "terror"
-            ],
-            "entity_signature": "RU:UK:US:arrested:collective_faction",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-10T19:23:38.577633+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 5,
-            "chapter_titles": [
-                "Senior US soldier arrested by UK counter-terror police",
-                "US Army soldier suspected of spying for Russia arrested in UK",
-                "US Army member arrested in UK for suspected 'espionage' for Russia",
-                "US soldier arrested in Britain on suspicion of assisting Russian intelligence",
-                "US Soldier Is Arrested in UK on Suspicion of Spying for Russia"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC News",
-                "France 24",
-                "New York Times",
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "e38708e6-85c3-4402-be1a-08c9c6d9de22",
-            "title": "France accuses Iran of cyber 'sabotage' in fridge",
-            "keywords": [
-                "accus",
-                "attack",
-                "cyber",
-                "franc",
-                "fridg",
-                "iran",
-                "sabotag"
-            ],
-            "entity_signature": "FR:IR:attacks:fr:france",
-            "category": "National",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-10T03:20:11.781101+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "France accuses Iran of cyber 'sabotage' in fridge attacks",
-                "France accuses Iran of supermarket fridge hacking",
-                "France summons Iran's ambassador over supermarket fridge 'sabotage'",
-                "Iran rejects French claims it was behind supermarket fridge hacking"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Al Jazeera",
-                "BBC Europe",
-                "BBC Middle East",
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "e01ffc84-d03a-4ed7-9bfd-8f7798d14d55",
-            "title": "Israel live: Netanyahu bloc targets Arab",
-            "keywords": [
-                "arab",
-                "bloc",
-                "israel",
-                "lawmaker",
-                "netanyahu",
-                "new",
-                "parlia",
-                "sworn",
-                "target"
-            ],
-            "entity_signature": "IL:Benjamin:Benjamin Netanyahu:arab lawmakers as new parliament is sworn in:governance",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-10T19:23:38.577633+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Israel live: Netanyahu bloc targets Arab lawmakers as new parliament is sworn in",
-                "Netanyahu bloc targets Arab lawmakers as Israel's new parliament is sworn in",
-                "Eisenkot pushes October 7 inquiry as Netanyahu targets Arab parties in tense new parliament"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "57507d9f-2807-4ade-88f1-8ec36ef3b8b6",
-            "title": "ANC faces anger over poor services as South",
-            "keywords": [
-                "african",
-                "anc",
-                "anger",
-                "elec",
-                "fac",
-                "local",
-                "poor",
-                "servic",
-                "south",
-                "vot"
-            ],
-            "entity_signature": "ZA:anc:anger:congress",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-04T06:51:50.105125+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "ANC faces anger over poor services as South Africans vote in local elections",
-                "ANC faces bruising defeat in South African local elections with 80% of ballots counted"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "834a329b-bd75-482d-9647-1ded69b30d74",
-            "title": "The leader of a Kenyan doomsday cult is sentenced",
-            "keywords": [
-                "cult",
-                "doomsday",
-                "kenyan",
-                "leader",
-                "prison",
-                "sentenc"
-            ],
-            "entity_signature": "KE:200 years:children:civilians & impacted communities",
-            "category": "National",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "The leader of a Kenyan doomsday cult is sentenced to 200 years in prison",
-                "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News",
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "610eba48-cd7c-4847-9da6-e82d22686833",
             "title": "Anthropic launches new AI models, Claude Fable",
             "keywords": [
@@ -330,99 +1954,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "HT Business"
-            ]
-        },
-        {
-            "arc_id": "deefa4e8-43dd-4b5e-a1a5-54288801c2d8",
-            "title": "Trump says Iran war is 'effectively over'",
-            "keywords": [
-                "effectiveli",
-                "iran",
-                "militarili",
-                "strik",
-                "trump",
-                "unlikeli",
-                "war"
-            ],
-            "entity_signature": "IR:US:Donald:Donald Trump:conflict",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-10T03:20:11.781101+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Trump says Iran war is 'effectively over' militarily with further strikes unlikely",
-                "Trump says more US attacks on Iran 'highly unlikely'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Middle East",
-                "BBC News"
-            ]
-        },
-        {
-            "arc_id": "9b90f80c-70e6-4612-bb57-fccec85d63f9",
-            "title": "Traces of Justice review – 'Chinese Shjerlock",
-            "keywords": [
-                "arrest",
-                "centr",
-                "chines",
-                "cop",
-                "forensic",
-                "holm",
-                "justic",
-                "review",
-                "shjerlock",
-                "thriller"
-            ],
-            "entity_signature": "CN:arresting:china:china sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Traces of Justice review – 'Chinese Shjerlock Holmes' at centre of arresting forensic cop thriller",
-                "Traces of Justice review – 'Chinese Sherlock Holmes' at centre of arresting forensic cop thriller"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "602ceaf9-ada0-47d1-befc-9774b9610151",
-            "title": "US again fails to show at UN for its human rights",
-            "keywords": [
-                "fail",
-                "human",
-                "review",
-                "right",
-                "show"
-            ],
-            "entity_signature": "US:Donald:Donald Trump:leader:rights",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-10T19:23:38.577633+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "US again fails to show at UN for its human rights review",
-                "U.S. boycotts U.N. human rights review for second year running"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "NPR News",
-                "SCMP"
             ]
         },
         {
@@ -458,435 +1989,6 @@
             ]
         },
         {
-            "arc_id": "19349a1a-aa03-46b8-97cb-9f77de535888",
-            "title": "Collision of two trains in Egypt kills at least",
-            "keywords": [
-                "collision",
-                "egypt",
-                "kill",
-                "least",
-                "seven",
-                "train",
-                "two"
-            ],
-            "entity_signature": "EG:collision of two trains in egypt:eg:egypt",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Collision of two trains in Egypt kills at least seven"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "38ff3cb9-0181-4ead-a473-2069c1a8a470",
-            "title": "Four killed in Gaza after sand embankment",
-            "keywords": [
-                "collaps",
-                "embank",
-                "four",
-                "gaza",
-                "health",
-                "kill",
-                "ministri",
-                "onto",
-                "sand",
-                "tent"
-            ],
-            "entity_signature": "PS:collective_faction:four:gaza",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-09T20:57:26.689931+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Four killed in Gaza after sand embankment collapses onto tents, health ministry says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "97931146-f94e-4cc8-a212-79d6e4506b68",
-            "title": "U.S. Forces in Europe Face Uncertainty as",
-            "keywords": [
-                "europ",
-                "fac",
-                "forc",
-                "level",
-                "pentagon",
-                "review",
-                "troop",
-                "uncertainti"
-            ],
-            "entity_signature": "DE:EU:US:collective_faction:de",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "U.S. Forces in Europe Face Uncertainty as Pentagon Reviews Troop Levels"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "a6b2a184-9f8c-498e-b0f1-0727a9095096",
-            "title": "Polish unity on show as thousands join silent",
-            "keywords": [
-                "join",
-                "krakow",
-                "march",
-                "polish",
-                "shoot",
-                "show",
-                "silent",
-                "thousand",
-                "uniti",
-                "victim"
-            ],
-            "entity_signature": "PL:conflict:impacted_community:krakow shooting victims",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Polish unity on show as thousands join silent march for Krakow shooting victims"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "7eb24c93-1719-4173-aaab-516cfefc7563",
-            "title": "Israeli forces kill Palestinian boy in West Bank",
-            "keywords": [
-                "bank",
-                "boy",
-                "forc",
-                "health",
-                "israeli",
-                "kill",
-                "ministri",
-                "palestinian",
-                "west"
-            ],
-            "entity_signature": "IL:PS:collective_faction:geopolitics:health ministry",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Israeli forces kill Palestinian boy in West Bank, health ministry says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "fada51eb-aee2-4067-82ef-e98ca5137af7",
-            "title": "Falkland Islanders face 'devastating",
-            "keywords": [
-                "argentina",
-                "block",
-                "consequenc",
-                "devastat",
-                "fac",
-                "falkland",
-                "islander",
-                "oil",
-                "project"
-            ],
-            "entity_signature": "AR:UK:ar:argentina:devastating consequences' if argentina blocks oil project, says uk",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-10T19:23:38.577633+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Falkland Islanders face 'devastating consequences' if Argentina blocks oil project, says UK"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "2a7f8a8f-6291-46cb-9afe-e77c40d01008",
-            "title": "In Interview, Sonia Gandhi Recalls Love and Loss",
-            "keywords": [
-                "gandhi",
-                "india",
-                "interview",
-                "loss",
-                "lov",
-                "recall",
-                "sonia"
-            ],
-            "entity_signature": "IN:IT:, sonia gandhi recalls love and loss:in:india",
-            "category": "World",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-10T19:23:38.577633+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "In Interview, Sonia Gandhi Recalls Love and Loss in India"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "5dfaa3c5-36fe-4caf-ae4a-2479a337feaa",
-            "title": "Malaysia's disgraced former PM leaves jail for",
-            "keywords": [
-                "arrest",
-                "disgrac",
-                "embezzl",
-                "former",
-                "hous",
-                "jail",
-                "leav",
-                "malaysia",
-                "million"
-            ],
-            "entity_signature": "MY:arrest:justice:malaysia",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-10T19:23:38.577633+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Malaysia's disgraced former PM leaves jail for house arrest after embezzling millions"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "ec11d129-3f4a-4185-a93b-c3275e3bf2a5",
-            "title": "US and rest of world must follow China's lead on",
-            "keywords": [
-                "china",
-                "energi",
-                "follow",
-                "green",
-                "john",
-                "kerri",
-                "lead",
-                "must",
-                "rest",
-                "world"
-            ],
-            "entity_signature": "CN:US:china:climate:cn",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-10T19:23:38.577633+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "US and rest of world must follow China's lead on green energy, says John Kerry"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "2aae4617-1151-432c-bd25-d6842d6cfd41",
-            "title": "Najib Razak, Ex-Prime Minister of Malaysia, Is",
-            "keywords": [
-                "arrest",
-                "hous",
-                "malaysia",
-                "minister",
-                "najib",
-                "prim",
-                "razak",
-                "releas"
-            ],
-            "entity_signature": "MY:house arrest:justice:malaysia",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-10T19:23:38.577633+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Najib Razak, Ex-Prime Minister of Malaysia, Is Released to House Arrest"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "ede0c2c0-ef97-4897-8bfc-f0318aafb0f4",
-            "title": "Kristallnacht' 88th anniversary: Merz says",
-            "keywords": [
-                "88th",
-                "anniversari",
-                "antisemitism",
-                "fac",
-                "germani",
-                "historic",
-                "kristallnacht",
-                "merz",
-                "test"
-            ],
-            "entity_signature": "AT:DE:EU:at:austria",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-10T19:23:38.577633+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Kristallnacht' 88th anniversary: Merz says Germany faces historic test over antisemitism"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "3d55cb49-a0d7-4373-9428-600b7ec4b99e",
-            "title": "Britain willing to discuss paying into EU to join",
-            "keywords": [
-                "britain",
-                "discuss",
-                "electric",
-                "join",
-                "market",
-                "minister",
-                "pay",
-                "will"
-            ],
-            "entity_signature": "EU:UK:britain willing to discuss paying into eu to join electricity market, says minister:economics:economy",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-10T19:23:38.577633+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Britain willing to discuss paying into EU to join electricity market, says minister"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "ef137684-73dc-4548-81db-00f62aeae69a",
-            "title": "French wartime resistance heroine Solange",
-            "keywords": [
-                "aged",
-                "alexandr",
-                "die",
-                "french",
-                "heroin",
-                "resistanc",
-                "solang",
-                "wartim"
-            ],
-            "entity_signature": "DE:FR:aged 104:de:dies",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-10T19:23:38.577633+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "French wartime resistance heroine Solange Alexandre dies aged 104"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "2c21d3d9-c3cb-4e9c-bc15-39b7bdf52fb2",
-            "title": "Police officer dies and another injured after",
-            "keywords": [
-                "another",
-                "backpack",
-                "die",
-                "explosion",
-                "injur",
-                "northern",
-                "officer",
-                "polic",
-                "spain"
-            ],
-            "entity_signature": "ES:and another injured:collective_faction:dies",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-10T19:23:38.577633+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Police officer dies and another injured after backpack explosion in northern Spain"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
             "arc_id": "0a9f7ea8-957f-49d3-99bc-fd3ca6548f34",
             "title": "France's response to protests is making",
             "keywords": [
@@ -916,66 +2018,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "ef902ebf-8dbf-4321-bc75-561664c18c19",
-            "title": "Board of Peace says Israel's aid response after",
-            "keywords": [
-                "aid",
-                "board",
-                "flood",
-                "gaza",
-                "insufficent",
-                "israel",
-                "peac",
-                "respons"
-            ],
-            "entity_signature": "IL:PS:Donald:Donald Trump:board of peace says israel's aid response after gaza floods 'insufficent",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-10T19:23:38.577633+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Board of Peace says Israel's aid response after Gaza floods 'insufficent'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "6e021024-a6af-43d8-b835-58a3e490f5cb",
-            "title": "Testing the new generation of AI-enabled",
-            "keywords": [
-                "ai",
-                "dron",
-                "enabl",
-                "extinguish",
-                "fir",
-                "genera",
-                "new",
-                "test"
-            ],
-            "entity_signature": "new generation of ai-enabled fire-extinguishing drones:north america regional stakeholders:sovereign_stakeholder",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-10T19:23:38.577633+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Testing the new generation of AI-enabled fire-extinguishing drones"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NPR News"
             ]
         },
         {
@@ -1037,36 +2079,6 @@
             ]
         },
         {
-            "arc_id": "9c895511-c2af-4d94-bd80-809281c03960",
-            "title": "Syria Weighs Sending Troops to Aid Saudi War With",
-            "keywords": [
-                "aid",
-                "houthi",
-                "saudi",
-                "send",
-                "syria",
-                "troop",
-                "war",
-                "weigh"
-            ],
-            "entity_signature": "SA:SY:collective_faction:conflict:geopolitics",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-10T19:23:38.577633+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Syria Weighs Sending Troops to Aid Saudi War With Houthis"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
             "arc_id": "094fdf83-09fa-451b-a5c8-988d41474f5d",
             "title": "Data Show Households Still Managing to Meet Their",
             "keywords": [
@@ -1094,31 +2106,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "da4a46a9-93e6-4773-9927-e8e87b6fbcd7",
-            "title": "Gaza Floods Kill 4",
-            "keywords": [
-                "flood",
-                "gaza",
-                "kill"
-            ],
-            "entity_signature": "PS:4:gaza floods:kill",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-10T19:23:38.577633+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Gaza Floods Kill 4"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
             ]
         },
         {
@@ -1154,94 +2141,6 @@
             ]
         },
         {
-            "arc_id": "37ab13bf-bbf1-4dcc-b141-29de71cbe5ba",
-            "title": "The US military seems to be getting nervous about",
-            "keywords": [
-                "crunch",
-                "gett",
-                "launch",
-                "militari",
-                "nervou",
-                "seem",
-                "suppli"
-            ],
-            "entity_signature": "US:collective_faction:geopolitics:launch",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-11T00:11:10.233333+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "The US military seems to be getting nervous about the launch supply crunch"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Ars Technica"
-            ]
-        },
-        {
-            "arc_id": "01113fe7-56f8-408b-919a-e4c24738ba78",
-            "title": "ICE Deportation Flight Carrying Iranians Turns",
-            "keywords": [
-                "arizona",
-                "back",
-                "carri",
-                "deporta",
-                "flight",
-                "ice",
-                "iranian",
-                "land",
-                "turn"
-            ],
-            "entity_signature": "IR:PK:and lands:back:ice deportation flight carrying iranians turns",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-11T00:11:10.233333+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "ICE Deportation Flight Carrying Iranians Turns Back and Lands in Arizona"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "1d9bd00e-2cd5-452b-8601-a7ee3ece9630",
-            "title": "Toyota Plans to Sell a Kei Pickup Truck in the U.S",
-            "keywords": [
-                "kei",
-                "pickup",
-                "plan",
-                "sell",
-                "toyota",
-                "truck"
-            ],
-            "entity_signature": "JP:US:Donald:Donald Trump:japan",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-11T00:11:10.233333+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Toyota Plans to Sell a Kei Pickup Truck in the U.S."
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
             "arc_id": "3a4375b2-01c4-4481-802a-fe15ed3d9314",
             "title": "China-Asean partnership is helping build common",
             "keywords": [
@@ -1270,34 +2169,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "b51e7386-1ccf-461d-9ee0-dc52a666d062",
-            "title": "What the hack? Europeans face growing psyops and",
-            "keywords": [
-                "cyberattack",
-                "european",
-                "fac",
-                "grow",
-                "hack",
-                "psyop"
-            ],
-            "entity_signature": "FR:IR:RU:ambassador:diplomatic envoys",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-11T00:11:10.233333+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "What the hack? Europeans face growing psyops and cyberattacks"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
             ]
         },
         {
@@ -1448,132 +2319,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "1fda9d48-fbd0-42d8-813d-9a661eff5b32",
-            "title": "OpenAI acquires Odessia, travel startup created",
-            "keywords": [
-                "acquir",
-                "creat",
-                "founder",
-                "odessia",
-                "openai",
-                "sonder",
-                "startup",
-                "travel"
-            ],
-            "entity_signature": "created:north america regional stakeholders:openai",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-11T00:11:10.233333+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "OpenAI acquires Odessia, travel startup created by Sonder founder"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "6d274fcf-dc3b-49fd-ab7b-8a9294257f6e",
-            "title": "OpenAI, Anthropic face new oversight as New",
-            "keywords": [
-                "ai",
-                "anthropic",
-                "effect",
-                "fac",
-                "law",
-                "new",
-                "openai",
-                "oversight",
-                "safeti",
-                "tak"
-            ],
-            "entity_signature": "anthropic:face:legislation",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-11T00:11:10.233333+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "OpenAI, Anthropic face new oversight as New York's AI safety law takes effect"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "4a71071a-6740-487c-a1a5-f8c161147ef6",
-            "title": "Proximal Ventures raises debut fund to back",
-            "keywords": [
-                "ai",
-                "back",
-                "bring",
-                "debut",
-                "develop",
-                "drug",
-                "fund",
-                "proximal",
-                "rais",
-                "startup"
-            ],
-            "entity_signature": "debut fund:health:north america regional stakeholders",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-11T00:11:10.233333+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Proximal Ventures raises debut fund to back startups bringing AI to drug development"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "037bb7d6-0e73-4912-8c3c-cbb410362624",
-            "title": "X-energy gets green light to build its first",
-            "keywords": [
-                "build",
-                "energi",
-                "first",
-                "get",
-                "green",
-                "light",
-                "modular",
-                "nuclear",
-                "reactor",
-                "small"
-            ],
-            "entity_signature": "US:build:commission:geopolitics",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-11T00:11:10.233333+00:00",
-            "last_seen": "2026-11-11T00:11:10.233333+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "X-energy gets green light to build its first small modular nuclear reactors"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "TechCrunch"
             ]
         },
         {
@@ -2350,720 +3095,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "70376dbc-09a1-4587-9d59-6ccb6969f0ea",
-            "title": "Krakow shooting suspect has died in hospital",
-            "keywords": [
-                "died",
-                "hospital",
-                "krakow",
-                "polic",
-                "say",
-                "shoot",
-                "suspect"
-            ],
-            "entity_signature": "europe regional stakeholders:health:krakow",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-09T20:57:26.689931+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Krakow shooting suspect has died in hospital, police say"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "90f1b73f-6088-494a-baad-da61a13148e5",
-            "title": "Iran 'has mistaken perception' of US midterm",
-            "keywords": [
-                "expert",
-                "iran",
-                "midterm",
-                "mistaken",
-                "percep",
-                "result"
-            ],
-            "entity_signature": "IR:US:diplomacy:ir:iran",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-09T20:57:26.689931+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Iran 'has mistaken perception' of US midterm result, expert says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "86e9eebf-f2cc-491d-8379-2da42ac728e8",
-            "title": "Man who lost $308,000 on sports bets sues Kalshi",
-            "keywords": [
-                "bet",
-                "gambl",
-                "illegal",
-                "kalshi",
-                "lost",
-                "man",
-                "offer",
-                "sport",
-                "sue"
-            ],
-            "entity_signature": "US:$308,000:lost:man who",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-10T03:20:11.781101+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Man who lost $308,000 on sports bets sues Kalshi for offering illegal gambling"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Ars Technica"
-            ]
-        },
-        {
-            "arc_id": "fcf53d8f-aa3f-4660-8a88-55f1d7a1c438",
-            "title": "China's Trade Surplus Passes $1 Trillion at",
-            "keywords": [
-                "china",
-                "pac",
-                "pass",
-                "record",
-                "surplu",
-                "trad",
-                "trillion"
-            ],
-            "entity_signature": "CN:$1 trillion:china:china sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-10T03:20:11.781101+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "China's Trade Surplus Passes $1 Trillion at Record Pace"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "9079208b-a766-4e4d-a777-6c7c8e4c4ad6",
-            "title": "Anthropic reportedly plans to move forward with",
-            "keywords": [
-                "anthropic",
-                "forward",
-                "ipo",
-                "mov",
-                "plan",
-                "report"
-            ],
-            "entity_signature": "anthropic:anthropic reportedly plans to move forward with ipo plans:north america regional stakeholders",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-10T03:20:11.781101+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Anthropic reportedly plans to move forward with IPO plans"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "66a1871c-4d97-4ece-a53e-15e5f7ed66a5",
-            "title": "David Ellison says AI could be the 'biggest",
-            "keywords": [
-                "ai",
-                "biggest",
-                "creativ",
-                "david",
-                "ellison",
-                "histori",
-                "modern",
-                "unlock"
-            ],
-            "entity_signature": "david ellison says ai could be the 'biggest creative unlock in modern history:north america regional stakeholders:sovereign_stakeholder",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-10T03:20:11.781101+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "David Ellison says AI could be the 'biggest creative unlock in modern history'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Verge"
-            ]
-        },
-        {
-            "arc_id": "66664d36-9751-42d9-9bbb-4f1820798ef5",
-            "title": "Everything we know so far about the Nvidia spy",
-            "keywords": [
-                "ceo",
-                "everyth",
-                "far",
-                "huang",
-                "jensen",
-                "know",
-                "nvidia",
-                "scandal",
-                "spy",
-                "target"
-            ],
-            "entity_signature": "Huang:Jensen:ceo jensen huang:everything we know so far about the nvidia spy scandal:justice",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-10T03:20:11.781101+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Everything we know so far about the Nvidia spy scandal targeting CEO Jensen Huang"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Verge"
-            ]
-        },
-        {
-            "arc_id": "68c710d0-e6d7-4cbd-b78b-15721d261e47",
-            "title": "France summons Iran envoy over supermarket fridge",
-            "keywords": [
-                "envoy",
-                "franc",
-                "fridg",
-                "hack",
-                "iran",
-                "respons",
-                "summon",
-                "supermarket"
-            ],
-            "entity_signature": "FR:IR:collective_faction:diplomatic envoys:diplomatic envoys (envoy)",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "France summons Iran envoy over supermarket fridge hack, warns of response"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.8999999999999999,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "32a5491e-39f3-4ae3-b308-284db5b8d2e5",
-            "title": "Hong Kong's Ocean Park urged to boost safety",
-            "keywords": [
-                "boost",
-                "failur",
-                "hong",
-                "kong",
-                "ocean",
-                "park",
-                "safeti",
-                "second",
-                "tower"
-            ],
-            "entity_signature": "asia-pacific regional stakeholders:boost safety:hong kong's ocean park",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Hong Kong's Ocean Park urged to boost safety after second tower failure in 2 years"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "846e8253-5ba2-48ca-8e4e-d6bf3aaf47c3",
-            "title": "Nobel-winning UK scientist launches programme to",
-            "keywords": [
-                "develop",
-                "hepatiti",
-                "hong",
-                "kong",
-                "launch",
-                "nobel",
-                "programm",
-                "scientist",
-                "vaccin",
-                "winn"
-            ],
-            "entity_signature": "CN:UK:china:cn:collective_faction",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Nobel-winning UK scientist launches programme to develop hepatitis C vaccine in Hong Kong"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "58151002-445c-4861-b12f-bdf683548ba5",
-            "title": "China warns against fake spy claims after jealous",
-            "keywords": [
-                "china",
-                "fak",
-                "fram",
-                "jealou",
-                "public",
-                "rival",
-                "servant",
-                "spy"
-            ],
-            "entity_signature": "CN:china:cn:fake spy claims",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "China warns against fake spy claims after jealous public servant frames rival"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "44654337-bbf9-44ea-b8a9-490a35a0bf32",
-            "title": "Asian-Americans rejected Trump's ICE raids, but",
-            "keywords": [
-                "american",
-                "anyth",
-                "asian",
-                "chang",
-                "ice",
-                "raid",
-                "reject",
-                "trump"
-            ],
-            "entity_signature": "US:Donald:Donald Trump:analysts:asian-americans",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Asian-Americans rejected Trump's ICE raids, but will anything change?"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "7cf60600-9b74-4338-a864-ea124df6fb76",
-            "title": "Viktor Orbán's brother detained in",
-            "keywords": [
-                "brother",
-                "detain",
-                "hungarian",
-                "investiga",
-                "peopl",
-                "smuggl",
-                "viktor"
-            ],
-            "entity_signature": "HU:hu:hungary:hungary sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Viktor Orbán's brother detained in people-smuggling investigation, Hungarian PM says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "7356c904-fa68-408f-ba6e-3b039b94ba48",
-            "title": "Police officer dies and another injured after",
-            "keywords": [
-                "another",
-                "backpack",
-                "die",
-                "explosion",
-                "injur",
-                "officer",
-                "oviedo",
-                "polic"
-            ],
-            "entity_signature": "and another injured:collective_faction:dies",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Police officer dies and another injured after backpack explosion in Oviedo"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "a0567179-016d-4418-8b29-1710cffc67da",
-            "title": "Author Jojo Moyes among UK travellers at risk of",
-            "keywords": [
-                "amid",
-                "among",
-                "author",
-                "ban",
-                "border",
-                "digital",
-                "glitch",
-                "jojo",
-                "moy",
-                "risk"
-            ],
-            "entity_signature": "EU:UK:author jojo moyes among uk travellers at risk of eu:ban:eu",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Author Jojo Moyes among UK travellers at risk of EU ban amid digital border system glitches"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "3a095d4c-1357-4173-b7ea-ff80980fca86",
-            "title": "EU manufacturers could give up on competing with",
-            "keywords": [
-                "chief",
-                "china",
-                "commerc",
-                "compet",
-                "giv",
-                "manufacturer"
-            ],
-            "entity_signature": "CN:EU:china:cn:commerce chief",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "EU manufacturers could give up on competing with China by 2030, warns commerce chief"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "c9a271f4-eeb6-4e14-bf13-faa1a84437d8",
-            "title": "Disruption warning amid huge security operation",
-            "keywords": [
-                "amid",
-                "disrup",
-                "dublin",
-                "hug",
-                "meet",
-                "opera",
-                "secur",
-                "warn"
-            ],
-            "entity_signature": "EU:IE:disruption:eu:european union",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Disruption warning amid huge security operation in Dublin for EU meetings"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "e850615f-ac6c-4d17-885d-6cccc21086a2",
-            "title": "The French fridge hacks were relatively",
-            "keywords": [
-                "ai",
-                "attack",
-                "enabl",
-                "french",
-                "fridg",
-                "hack",
-                "rais",
-                "relativeli",
-                "stak",
-                "unsophisticat"
-            ],
-            "entity_signature": "FR:IR:attack:conflict:fr",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "The French fridge hacks were relatively unsophisticated. An AI-enabled attack would raise the stakes"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "2cc34b64-9202-4947-94e1-568578e8822a",
-            "title": "Humanoid robot takes on Antarctic",
-            "keywords": [
-                "antarctic",
-                "fail",
-                "humanoid",
-                "marathon",
-                "robot",
-                "tak",
-                "ultra"
-            ],
-            "entity_signature": "humanoid robot takes on antarctic ultra-marathon... and fails:middle east regional stakeholders:sovereign_stakeholder",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Humanoid robot takes on Antarctic ultra-marathon... and fails"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "d12d725c-2402-4aac-bfc1-97a250506c3a",
-            "title": "Pakistan TV anchor allegedly shot dead at home by",
-            "keywords": [
-                "alleg",
-                "anchor",
-                "dead",
-                "hom",
-                "husband",
-                "pakistan",
-                "shot"
-            ],
-            "entity_signature": "PK:dead:judicial & investigative bodies:judicial & investigative bodies (police)",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Pakistan TV anchor allegedly shot dead at home by her husband"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "353a3e6d-06c8-49cc-a76b-889b0073bd64",
-            "title": "What is Hasina's game plan as she seeks a",
-            "keywords": [
-                "bangladesh",
-                "gam",
-                "hasina",
-                "passport",
-                "plan",
-                "return",
-                "seek"
-            ],
-            "entity_signature": "BD:bangladesh:bangladesh sovereign authorities:bd",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "What is Hasina's game plan as she seeks a passport to return to Bangladesh?"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "4eae9e06-6895-4774-abdc-6526beb672c6",
-            "title": "Saudi Arabia Sentences Mother to 100 Lashes for",
-            "keywords": [
-                "arabia",
-                "birth",
-                "lash",
-                "marriag",
-                "mother",
-                "outsid",
-                "saudi",
-                "sentenc"
-            ],
-            "entity_signature": "SA:mother:sa:saudi arabia",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Saudi Arabia Sentences Mother to 100 Lashes for Birth Outside Marriage"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "e03ae3dd-faca-4f71-9636-1d8b8d59ce7d",
-            "title": "California's proposed 'billionaire tax' fails to",
-            "keywords": [
-                "billionair",
-                "california",
-                "fail",
-                "pass",
-                "propos",
-                "tax"
-            ],
-            "entity_signature": "california's proposed 'billionaire tax' fails:legislation:north america regional stakeholders",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "California's proposed 'billionaire tax' fails to pass"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "937a4bde-1057-4f42-987b-878f15368acd",
-            "title": "Turkey Promotes Itself as a Climate Champion. Not",
-            "keywords": [
-                "agre",
-                "champion",
-                "climat",
-                "everyon",
-                "promot",
-                "turkey"
-            ],
-            "entity_signature": "TR:.:agrees:climate",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-10T11:32:09.785316+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Turkey Promotes Itself as a Climate Champion. Not Everyone Agrees."
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
             ]
         }
     ],
