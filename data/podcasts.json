@@ -1,7 +1,41 @@
 {
-  "lastUpdated": "2026-11-10T19:23:38.981457+00:00",
+  "lastUpdated": "2026-11-11T00:11:10.890956+00:00",
   "total": 30,
   "episodes": [
+    {
+      "id": "tp_2hJkprFnzhY",
+      "title": "Russia-Ukraine War: Putin, Zelenskyy, Drones and the Future of Warfare | Lex Fridman Podcast #504",
+      "podcast": "Lex Fridman Podcast",
+      "channel": "Lex Fridman Podcast",
+      "podcastLogo": "LF",
+      "tier": "flagship",
+      "guest": "",
+      "topics": [
+        "Artificial Intelligence",
+        "Geopolitics"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning russia.",
+      "imageUrl": "https://i.ytimg.com/vi/2hJkprFnzhY/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/2hJkprFnzhY/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=2hJkprFnzhY",
+      "youtube_url": "https://www.youtube.com/watch?v=2hJkprFnzhY",
+      "pubDate": "18 min ago",
+      "date": "18 min ago",
+      "duration": "2:53:49",
+      "views": "",
+      "category": "AI & Tech",
+      "resonant_news": [
+        {
+          "id": "nyt-world-0-858",
+          "title": "US Soldier Is Arrested in UK on Suspicion of Spying for Russia",
+          "source": "New York Times",
+          "link": "https://www.nytimes.com/2026/11/10/world/europe/uk-us-army-arrest-espionage-russia.html",
+          "url": "https://www.nytimes.com/2026/11/10/world/europe/uk-us-army-arrest-espionage-russia.html",
+          "relevance": 0.3,
+          "resonance_score": 0.3
+        }
+      ]
+    },
     {
       "id": "tp_ZAzWPE9CItg",
       "title": "AI Crisis in Math: Navier-Stokes, Riemann Hypothesis & Complexity Theory | Lex Fridman Podcast #503",
@@ -25,13 +59,76 @@
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "theverge-1-4824",
+          "id": "cnet-4-9941",
+          "title": "Google Expands Gemini 4 Carbon Availability",
+          "source": "CNET",
+          "link": "https://www.cnet.com/tech/services-and-software/google-expands-gemini-4-carbon-availability/",
+          "url": "https://www.cnet.com/tech/services-and-software/google-expands-gemini-4-carbon-availability/",
+          "relevance": 0.151,
+          "resonance_score": 0.151
+        },
+        {
+          "id": "theverge-5-1016",
           "title": "The US is winning the AI race. Jensen Huang could have blown it",
           "source": "The Verge",
           "link": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
           "url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
           "relevance": 0.15,
           "resonance_score": 0.15
+        },
+        {
+          "id": "reuters-world-2-2234",
+          "title": "CoreWeave raises revenue forecast as AI demand defies growing doubts",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNYW16c2FCODY2R0c2NmhNcXU4aldCVDlBZDNRR3l6M0hxNmI0WUd3VjZRdmwxZGx2bTlOQ2VVSUZrdTlQemxiY2I4b2tMdGs2Qm4xNEo4UDBlaDJ2S3VzZzNOZF9QTFZ3X1NuRDFwVWM4N0h1endtYVFJVUpiNHVGdmU0X19sTmhzR3c3bVdVdUJ2WTJIZURmYVlGUkRJWWsxM3hfLXp6YzB6dnQxbWhQSnR0bXhpbjFWTVdNbA?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNYW16c2FCODY2R0c2NmhNcXU4aldCVDlBZDNRR3l6M0hxNmI0WUd3VjZRdmwxZGx2bTlOQ2VVSUZrdTlQemxiY2I4b2tMdGs2Qm4xNEo4UDBlaDJ2S3VzZzNOZF9QTFZ3X1NuRDFwVWM4N0h1endtYVFJVUpiNHVGdmU0X19sTmhzR3c3bVdVdUJ2WTJIZURmYVlGUkRJWWsxM3hfLXp6YzB6dnQxbWhQSnR0bXhpbjFWTVdNbA?oc=5",
+          "relevance": 0.152,
+          "resonance_score": 0.152
+        },
+        {
+          "id": "ht-business-0-9362",
+          "title": "Nvidia-backed Nscale considers delaying $35 billion IPO: Report",
+          "source": "HT Business",
+          "link": "https://www.hindustantimes.com/business/nvidiabacked-nscale-considers-delaying-35-billion-ipo-report-101794344144519.html",
+          "url": "https://www.hindustantimes.com/business/nvidiabacked-nscale-considers-delaying-35-billion-ipo-report-101794344144519.html",
+          "relevance": 0.151,
+          "resonance_score": 0.151
+        },
+        {
+          "id": "cnet-1-2762",
+          "title": "The New Adobe Firefly AI Is All About Video Editing",
+          "source": "CNET",
+          "link": "https://www.cnet.com/tech/services-and-software/new-adobe-firefly-ai-video-editing/",
+          "url": "https://www.cnet.com/tech/services-and-software/new-adobe-firefly-ai-video-editing/",
+          "relevance": 0.152,
+          "resonance_score": 0.152
+        },
+        {
+          "id": "reuters-world-4-55",
+          "title": "Nvidia selloff deepens, adding to AI jitters",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOOG9OZzJuZm1xMUpsNTF6M2dFN2VIbG1PaTRBU25xdUNtRnk2ZDg2c05UdERqUHQwcjN6OGhuZUoxajU0aFNGVWhLekxITjdwV1BwUFNucUdMaHp1N1UwWmhVYXI1Q3ZQUUFjVTBGbG1IUXVHTWlTQUU5TUlJc1RMYWREUkhwaFpKWFNyMW83a0k5dw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOOG9OZzJuZm1xMUpsNTF6M2dFN2VIbG1PaTRBU25xdUNtRnk2ZDg2c05UdERqUHQwcjN6OGhuZUoxajU0aFNGVWhLekxITjdwV1BwUFNucUdMaHp1N1UwWmhVYXI1Q3ZQUUFjVTBGbG1IUXVHTWlTQUU5TUlJc1RMYWREUkhwaFpKWFNyMW83a0k5dw?oc=5",
+          "relevance": 0.154,
+          "resonance_score": 0.154
+        },
+        {
+          "id": "npr-national-1-3893",
+          "title": "Should you trust new AI agents with your money and data?",
+          "source": "NPR News",
+          "link": "https://www.npr.org/2026/11/10/nx-s1-6018588/should-you-trust-new-ai-agents-with-your-money-and-data",
+          "url": "https://www.npr.org/2026/11/10/nx-s1-6018588/should-you-trust-new-ai-agents-with-your-money-and-data",
+          "relevance": 0.15,
+          "resonance_score": 0.15
+        },
+        {
+          "id": "arstechnica-4-5392",
+          "title": "What happens to mathematics when AI becomes an oracle?",
+          "source": "Ars Technica",
+          "link": "https://arstechnica.com/science/2026/11/what-happens-to-mathematics-when-ai-becames-an-oracle/",
+          "url": "https://arstechnica.com/science/2026/11/what-happens-to-mathematics-when-ai-becames-an-oracle/",
+          "relevance": 0.164,
+          "resonance_score": 0.164
         }
       ]
     },
@@ -52,34 +149,11 @@
       "thumbnail": "https://i.ytimg.com/vi/FGCP2F_7rQk/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=FGCP2F_7rQk",
       "youtube_url": "https://www.youtube.com/watch?v=FGCP2F_7rQk",
-      "pubDate": "3w ago",
-      "date": "3w ago",
+      "pubDate": "4w ago",
+      "date": "4w ago",
       "duration": "1:30:18",
       "views": "",
       "category": "AI & Tech",
-      "resonant_news": []
-    },
-    {
-      "id": "tp_s7d2d8FhevU",
-      "title": "Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud & Jung | Lex Fridman Podcast #502",
-      "podcast": "Lex Fridman Podcast",
-      "channel": "Lex Fridman Podcast",
-      "podcastLogo": "LF",
-      "tier": "flagship",
-      "guest": "",
-      "topics": [
-        "Ideas & Culture"
-      ],
-      "theme": "Explores strategic perspectives and key developments concerning psychiatry, insane asylums, mental illness, ect, lobotomies, freud & jung.",
-      "imageUrl": "https://i.ytimg.com/vi/s7d2d8FhevU/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/s7d2d8FhevU/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=s7d2d8FhevU",
-      "youtube_url": "https://www.youtube.com/watch?v=s7d2d8FhevU",
-      "pubDate": "1mo ago",
-      "date": "1mo ago",
-      "duration": "3:36:56",
-      "views": "",
-      "category": "Science & Health",
       "resonant_news": []
     },
     {
@@ -98,14 +172,23 @@
       "thumbnail": "https://i.ytimg.com/vi/pTdvsfIMGes/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=pTdvsfIMGes",
       "youtube_url": "https://www.youtube.com/watch?v=pTdvsfIMGes",
-      "pubDate": "3h ago",
-      "date": "3h ago",
+      "pubDate": "8h ago",
+      "date": "8h ago",
       "duration": "14:02",
       "views": "",
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "guardian-asia-2-9936",
+          "id": "the-hindu-5-1545",
+          "title": "Andhra Pradesh Cabinet clears policy frameworks to attract investments in AI, electronics, renewable energy",
+          "source": "The Hindu",
+          "link": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-cabinet-clears-policy-frameworks-to-attract-investments-in-ai-electronics-renewable-energy/article71686342.ece",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-cabinet-clears-policy-frameworks-to-attract-investments-in-ai-electronics-renewable-energy/article71686342.ece",
+          "relevance": 0.226,
+          "resonance_score": 0.226
+        },
+        {
+          "id": "guardian-asia-2-8067",
           "title": "The Guardian view on Jensen Huang's affair: why did Trump ignore the warnings? | Editorial",
           "source": "The Guardian",
           "link": "https://www.theguardian.com/commentisfree/2026/nov/09/the-guardian-view-on-jensen-huangs-affair-why-did-trump-ignore-the-warnings",
@@ -141,16 +224,16 @@
     },
     {
       "id": "tp_on1L_jblaw8",
-      "title": "Does your Body Speak your Language? | Cara Hale Alter | TED",
+      "title": "Is Your Body Language Working Against You? | Cara Hale Alter | TED",
       "podcast": "TED",
       "channel": "TED",
       "podcastLogo": "TED",
       "tier": "flagship",
       "guest": "",
       "topics": [
-        "Ideas & Culture"
+        "Artificial Intelligence"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning does your body speak your language?.",
+      "theme": "Explores strategic perspectives and key developments concerning is your body language working against you?.",
       "imageUrl": "https://i.ytimg.com/vi/on1L_jblaw8/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/on1L_jblaw8/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=on1L_jblaw8",
@@ -159,7 +242,7 @@
       "date": "2d ago",
       "duration": "16:28",
       "views": "",
-      "category": "Ideas & Culture",
+      "category": "AI & Tech",
       "resonant_news": []
     },
     {
@@ -208,34 +291,34 @@
       "category": "Science & Health",
       "resonant_news": [
         {
-          "id": "scmp-asia-5-2765",
-          "title": "Chinese-French team celebrates 'borderless connections' at Shaw Prize ceremony",
-          "source": "SCMP",
-          "link": "https://www.scmp.com/news/hong-kong/society/article/3373988/chinese-french-team-celebrates-borderless-connections-shaw-prize-ceremony",
-          "url": "https://www.scmp.com/news/hong-kong/society/article/3373988/chinese-french-team-celebrates-borderless-connections-shaw-prize-ceremony",
-          "relevance": 0.214,
-          "resonance_score": 0.214
+          "id": "techcrunch-5-2934",
+          "title": "Oura to acquire AI-native primary care startup Counsel Health for $625M",
+          "source": "TechCrunch",
+          "link": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+          "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+          "relevance": 0.217,
+          "resonance_score": 0.217
         },
         {
-          "id": "reuters-world-2-9319",
-          "title": "Smart ring maker Oura to acquire Counsel Health for $625 million",
-          "source": "Reuters",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOT3Uyb1BfLU1aQmd6clB0ZlZnY1FtRDAySFEzVFNsM3ppeUhVdVFfc184RkhjamhndjJsZ2kzSTVabzk2NFQ3VnUxdWg2dUN5aUlVSk1RMnU3dDhQMmNLMmhUVWlxWTdpcUhfQXBSMFBmY2tUdDlGNGdFdjVBaXNwanYxcVJPdE5DUzJTME1XbkNfcHBneUNxUHhHU0gwbndsVGk4Tmh0ZjJmXzZrUTJYV0Zn?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOT3Uyb1BfLU1aQmd6clB0ZlZnY1FtRDAySFEzVFNsM3ppeUhVdVFfc184RkhjamhndjJsZ2kzSTVabzk2NFQ3VnUxdWg2dUN5aUlVSk1RMnU3dDhQMmNLMmhUVWlxWTdpcUhfQXBSMFBmY2tUdDlGNGdFdjVBaXNwanYxcVJPdE5DUzJTME1XbkNfcHBneUNxUHhHU0gwbndsVGk4Tmh0ZjJmXzZrUTJYV0Zn?oc=5",
-          "relevance": 0.225,
-          "resonance_score": 0.225
+          "id": "the-hindu-0-6958",
+          "title": "Bihar CM suspends 15 officers for negligence of duty",
+          "source": "The Hindu",
+          "link": "https://www.thehindu.com/news/national/bihar/bihar-cm-suspends-15-officers-for-negligence-of-duty/article71686309.ece",
+          "url": "https://www.thehindu.com/news/national/bihar/bihar-cm-suspends-15-officers-for-negligence-of-duty/article71686309.ece",
+          "relevance": 0.217,
+          "resonance_score": 0.217
         },
         {
-          "id": "scmp-asia-3-1655",
-          "title": "Over 3,000 already dead from cholera this year, says WHO",
-          "source": "SCMP",
-          "link": "https://www.scmp.com/news/world/africa/article/3373991/over-3000-already-dead-cholera-year-says-who",
-          "url": "https://www.scmp.com/news/world/africa/article/3373991/over-3000-already-dead-cholera-year-says-who",
-          "relevance": 0.216,
-          "resonance_score": 0.216
+          "id": "theverge-1-6306",
+          "title": "Oura is acquiring medical AI chatbot startup Counsel Health",
+          "source": "The Verge",
+          "link": "https://www.theverge.com/gadgets/1031284/oura-counsel-health-acquisition",
+          "url": "https://www.theverge.com/gadgets/1031284/oura-counsel-health-acquisition",
+          "relevance": 0.217,
+          "resonance_score": 0.217
         },
         {
-          "id": "bbc-mideast-1-1437",
+          "id": "bbc-mideast-1-1382",
           "title": "Israeli forces kill Palestinian boy in West Bank, health ministry says",
           "source": "BBC Middle East",
           "link": "https://www.bbc.co.uk/news/articles/cqpvgv318yyeo?at_medium=RSS&at_campaign=rss",
@@ -244,7 +327,7 @@
           "resonance_score": 0.218
         },
         {
-          "id": "bbc-mideast-5-7103",
+          "id": "bbc-mideast-5-5260",
           "title": "Four killed in Gaza after sand embankment collapses onto tents, health ministry says",
           "source": "BBC Middle East",
           "link": "https://www.bbc.co.uk/news/articles/cqd090ee8px5o?at_medium=RSS&at_campaign=rss",
@@ -321,7 +404,35 @@
       "duration": "7:45",
       "views": "",
       "category": "AI & Tech",
-      "resonant_news": []
+      "resonant_news": [
+        {
+          "id": "france24-eu-2-1840",
+          "title": "US soldier arrested in Britain on suspicion of assisting Russian intelligence",
+          "source": "France 24",
+          "link": "https://www.france24.com/en/europe/20261110-us-soldier-arrested-in-britain-on-suspicion-of-assisting-russian-intelligence",
+          "url": "https://www.france24.com/en/europe/20261110-us-soldier-arrested-in-britain-on-suspicion-of-assisting-russian-intelligence",
+          "relevance": 0.218,
+          "resonance_score": 0.218
+        },
+        {
+          "id": "france24-eu-1-2587",
+          "title": "Asymmetric cyberwarfare: 'States increasingly use cyberattacks in support of their other objectives'",
+          "source": "France 24",
+          "link": "https://www.france24.com/en/asymmetric-cyberwarfare-states-increasingly-use-cyberattacks-in-support-of-their-other-objectives",
+          "url": "https://www.france24.com/en/asymmetric-cyberwarfare-states-increasingly-use-cyberattacks-in-support-of-their-other-objectives",
+          "relevance": 0.216,
+          "resonance_score": 0.216
+        },
+        {
+          "id": "france24-eu-3-9307",
+          "title": "What the hack? Europeans face growing psyops and cyberattacks",
+          "source": "France 24",
+          "link": "https://www.france24.com/en/tv-shows/the-debate/20261110-what-the-hack-europeans-face-growing-psyops-and-cyberattacks",
+          "url": "https://www.france24.com/en/tv-shows/the-debate/20261110-what-the-hack-europeans-face-growing-psyops-and-cyberattacks",
+          "relevance": 0.215,
+          "resonance_score": 0.215
+        }
+      ]
     },
     {
       "id": "tp_5LMx2zhvxRY",
@@ -392,13 +503,40 @@
       "category": "Ideas & Culture",
       "resonant_news": [
         {
-          "id": "guardian-eu-1-6039",
+          "id": "guardian-eu-2-2067",
           "title": "Russian naval aggression prompts new defensive initiative with 'beer-drinking nations'",
           "source": "The Guardian",
           "link": "https://www.theguardian.com/uk-news/2026/nov/10/russian-naval-aggression-defensive-initiative-beer-drinking-nations",
           "url": "https://www.theguardian.com/uk-news/2026/nov/10/russian-naval-aggression-defensive-initiative-beer-drinking-nations",
           "relevance": 0.215,
           "resonance_score": 0.215
+        },
+        {
+          "id": "scmp-asia-2-1722",
+          "title": "What the future holds for M+ as the Hong Kong museum celebrates fifth anniversary",
+          "source": "SCMP",
+          "link": "https://www.scmp.com/lifestyle/arts/article/3373882/what-future-holds-m-hong-kong-museum-celebrates-5th-anniversary",
+          "url": "https://www.scmp.com/lifestyle/arts/article/3373882/what-future-holds-m-hong-kong-museum-celebrates-5th-anniversary",
+          "relevance": 0.232,
+          "resonance_score": 0.232
+        },
+        {
+          "id": "reuters-world-1-1105",
+          "title": "US House votes to derail impeachment of Defense Secretary Hegseth",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMk9rMEFNODI4aU13aTBQX0ZscVhJZEs5RW1OYUpnTzMtNmNjTjhMNnJveVhmWmhUdFYwVDlSbXVIdEZKcDBTcF9Sa1EzemRRamJ2Vl9lbW52VWN6QkZVVDNPR1Q4NlNpZ0ZTYkVGT1R5U1NHYnBkYUUxbVA1Y1dCTW1jdXItZ0RUeEc0dUk2M3dzLXg2c1IwWndIMzJjZVN6c1RLVXJ5bw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMk9rMEFNODI4aU13aTBQX0ZscVhJZEs5RW1OYUpnTzMtNmNjTjhMNnJveVhmWmhUdFYwVDlSbXVIdEZKcDBTcF9Sa1EzemRRamJ2Vl9lbW52VWN6QkZVVDNPR1Q4NlNpZ0ZTYkVGT1R5U1NHYnBkYUUxbVA1Y1dCTW1jdXItZ0RUeEc0dUk2M3dzLXg2c1IwWndIMzJjZVN6c1RLVXJ5bw?oc=5",
+          "relevance": 0.43,
+          "resonance_score": 0.43
+        },
+        {
+          "id": "npr-national-0-7751",
+          "title": "House votes to effectively end the impeachment effort against Pete Hegseth",
+          "source": "NPR News",
+          "link": "https://www.npr.org/2026/11/10/nx-s1-6036813/house-votes-to-effectively-end-the-impeachment-effort-against-pete-hegseth",
+          "url": "https://www.npr.org/2026/11/10/nx-s1-6036813/house-votes-to-effectively-end-the-impeachment-effort-against-pete-hegseth",
+          "relevance": 0.418,
+          "resonance_score": 0.418
         }
       ]
     },
@@ -425,7 +563,7 @@
       "category": "Geopolitics & Policy",
       "resonant_news": [
         {
-          "id": "nyt-world-3-3155",
+          "id": "nyt-world-4-4978",
           "title": "Syria Weighs Sending Troops to Aid Saudi War With Houthis",
           "source": "New York Times",
           "link": "https://www.nytimes.com/2026/11/10/world/middleeast/syria-weighs-sending-troops-to-aid-saudi-war-with-houthis.html",
@@ -434,7 +572,7 @@
           "resonance_score": 0.216
         },
         {
-          "id": "guardian-eu-3-1567",
+          "id": "guardian-eu-4-8223",
           "title": "US officials seek 'final end' to Russia-Ukraine war, as Abu Dhabi talks set to continue",
           "source": "The Guardian",
           "link": "https://www.theguardian.com/world/2026/nov/10/us-officials-russia-ukraine-war-abu-dhabi-talks",
@@ -443,22 +581,13 @@
           "resonance_score": 0.212
         },
         {
-          "id": "france24-eu-2-5835",
-          "title": "US-mediated talks on ending Russia-Ukraine war begin in Abu Dhabi",
-          "source": "France 24",
-          "link": "https://www.france24.com/en/video/20261110-us-mediated-talks-on-ending-russia-ukraine-war-begin-in-abu-dhabi",
-          "url": "https://www.france24.com/en/video/20261110-us-mediated-talks-on-ending-russia-ukraine-war-begin-in-abu-dhabi",
-          "relevance": 0.213,
-          "resonance_score": 0.213
-        },
-        {
-          "id": "scmp-asia-4-3385",
-          "title": "US Hegseth calls impeachment bid a 'farce' as he defends Iran war",
-          "source": "SCMP",
-          "link": "https://www.scmp.com/news/us/politics/article/3373990/hegseth-calls-impeachment-bid-farce-he-defends-iran-war",
-          "url": "https://www.scmp.com/news/us/politics/article/3373990/hegseth-calls-impeachment-bid-farce-he-defends-iran-war",
-          "relevance": 0.229,
-          "resonance_score": 0.229
+          "id": "aljazeera-4-1390",
+          "title": "US House Republicans reject effort to impeach Pentagon chief Pete Hegseth",
+          "source": "Al Jazeera",
+          "link": "https://www.aljazeera.com/news/2026/11/10/us-house-begins-vote-on-motion-to-advance-impeachment-of-pete-hegseth?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/11/10/us-house-begins-vote-on-motion-to-advance-impeachment-of-pete-hegseth?traffic_source=rss",
+          "relevance": 0.236,
+          "resonance_score": 0.236
         }
       ]
     },
@@ -478,31 +607,8 @@
       "thumbnail": "https://i.ytimg.com/vi/RXSQfcKBuAk/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=RXSQfcKBuAk",
       "youtube_url": "https://www.youtube.com/watch?v=RXSQfcKBuAk",
-      "pubDate": "25 min ago",
-      "date": "25 min ago",
-      "duration": "53:26",
-      "views": "",
-      "category": "Geopolitics & Policy",
-      "resonant_news": []
-    },
-    {
-      "id": "tp_0jKgzJaiLUc",
-      "title": "Can Nigeria’s 2027 Election Deliver Hope?",
-      "podcast": "CSIS",
-      "channel": "CSIS",
-      "podcastLogo": "CSIS",
-      "tier": "standard",
-      "guest": "",
-      "topics": [
-        "Ideas & Culture"
-      ],
-      "theme": "Explores strategic perspectives and key developments concerning can nigeria’s 2027 election deliver hope?.",
-      "imageUrl": "https://i.ytimg.com/vi/0jKgzJaiLUc/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/0jKgzJaiLUc/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=0jKgzJaiLUc",
-      "youtube_url": "https://www.youtube.com/watch?v=0jKgzJaiLUc",
-      "pubDate": "8 min ago",
-      "date": "8 min ago",
+      "pubDate": "5h ago",
+      "date": "5h ago",
       "duration": "53:26",
       "views": "",
       "category": "Geopolitics & Policy",
@@ -524,11 +630,34 @@
       "thumbnail": "https://i.ytimg.com/vi/WxQwH0gS0Cg/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=WxQwH0gS0Cg",
       "youtube_url": "https://www.youtube.com/watch?v=WxQwH0gS0Cg",
-      "pubDate": "3h ago",
-      "date": "3h ago",
+      "pubDate": "8h ago",
+      "date": "8h ago",
       "duration": "30:00",
       "views": "",
       "category": "Ideas & Culture",
+      "resonant_news": []
+    },
+    {
+      "id": "tp_zJqnI54PxKk",
+      "title": "Why Agriculture is Africa’s Superpower | The Opportunity Horizon",
+      "podcast": "CSIS",
+      "channel": "CSIS",
+      "podcastLogo": "CSIS",
+      "tier": "standard",
+      "guest": "",
+      "topics": [
+        "Ideas & Culture"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning why agriculture is africa’s superpower.",
+      "imageUrl": "https://i.ytimg.com/vi/zJqnI54PxKk/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/zJqnI54PxKk/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=zJqnI54PxKk",
+      "youtube_url": "https://www.youtube.com/watch?v=zJqnI54PxKk",
+      "pubDate": "10h ago",
+      "date": "10h ago",
+      "duration": "46:43",
+      "views": "",
+      "category": "Philosophy & Ideas",
       "resonant_news": []
     },
     {
@@ -547,8 +676,8 @@
       "thumbnail": "https://i.ytimg.com/vi/JfnyRZBblno/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=JfnyRZBblno",
       "youtube_url": "https://www.youtube.com/watch?v=JfnyRZBblno",
-      "pubDate": "4h ago",
-      "date": "4h ago",
+      "pubDate": "9h ago",
+      "date": "9h ago",
       "duration": "41:54",
       "views": "",
       "category": "Ideas & Culture",
@@ -616,8 +745,8 @@
       "thumbnail": "https://i.ytimg.com/vi/90mLpIGxhlc/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=90mLpIGxhlc",
       "youtube_url": "https://www.youtube.com/watch?v=90mLpIGxhlc",
-      "pubDate": "4d ago",
-      "date": "4d ago",
+      "pubDate": "5d ago",
+      "date": "5d ago",
       "duration": "31:24",
       "views": "",
       "category": "Ideas & Culture",
@@ -639,8 +768,8 @@
       "thumbnail": "https://i.ytimg.com/vi/dJns_ryO-Bc/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=dJns_ryO-Bc",
       "youtube_url": "https://www.youtube.com/watch?v=dJns_ryO-Bc",
-      "pubDate": "11d ago",
-      "date": "11d ago",
+      "pubDate": "12d ago",
+      "date": "12d ago",
       "duration": "28:43",
       "views": "",
       "category": "Ideas & Culture",
@@ -662,94 +791,94 @@
       "thumbnail": "https://i.ytimg.com/vi/ZhcXfMScY3w/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=ZhcXfMScY3w",
       "youtube_url": "https://www.youtube.com/watch?v=ZhcXfMScY3w",
-      "pubDate": "11d ago",
-      "date": "11d ago",
+      "pubDate": "12d ago",
+      "date": "12d ago",
       "duration": "3:05",
       "views": "",
       "category": "Geopolitics & Policy",
       "resonant_news": []
     },
     {
-      "id": "tp_dhKRUtYK7Tw",
-      "title": "WATCH: Rubio at G7 weighs in on Hegseth impeachment effort and more",
+      "id": "tp_BK-ZvdmRRlo",
+      "title": "'A Matter of Hope' shines light on social entrepreneurs tackling big issues",
       "podcast": "PBS NewsHour",
       "channel": "PBS NewsHour",
       "podcastLogo": "PBS",
       "tier": "standard",
-      "guest": "WATCH",
+      "guest": "",
       "topics": [
         "Ideas & Culture"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning watch: rubio at g7 weighs in on hegseth impeachment effort and more.",
-      "imageUrl": "https://i.ytimg.com/vi/dhKRUtYK7Tw/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/dhKRUtYK7Tw/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=dhKRUtYK7Tw",
-      "youtube_url": "https://www.youtube.com/watch?v=dhKRUtYK7Tw",
-      "pubDate": "2h ago",
-      "date": "2h ago",
-      "duration": "23:22",
+      "theme": "Explores strategic perspectives and key developments concerning 'a matter of hope' shines light on social entrepreneurs tackling big issues.",
+      "imageUrl": "https://i.ytimg.com/vi/BK-ZvdmRRlo/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/BK-ZvdmRRlo/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=BK-ZvdmRRlo",
+      "youtube_url": "https://www.youtube.com/watch?v=BK-ZvdmRRlo",
+      "pubDate": "8 min ago",
+      "date": "8 min ago",
+      "duration": "7:13",
+      "views": "",
+      "category": "Business & Economy",
+      "resonant_news": []
+    },
+    {
+      "id": "tp_ryizdIasN8k",
+      "title": "News Wrap: U.S. charges 3 with plotting attacks",
+      "podcast": "PBS NewsHour",
+      "channel": "PBS NewsHour",
+      "podcastLogo": "PBS",
+      "tier": "standard",
+      "guest": "News Wrap",
+      "topics": [
+        "Ideas & Culture"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning news wrap: u.s. charges 3 with plotting attacks.",
+      "imageUrl": "https://i.ytimg.com/vi/ryizdIasN8k/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/ryizdIasN8k/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=ryizdIasN8k",
+      "youtube_url": "https://www.youtube.com/watch?v=ryizdIasN8k",
+      "pubDate": "12 min ago",
+      "date": "12 min ago",
+      "duration": "5:46",
       "views": "",
       "category": "Ideas & Culture",
       "resonant_news": []
     },
     {
-      "id": "tp_KvJaFmGSBpY",
-      "title": "WATCH: Rep. Massie vs. Hegseth on House impeachment push, in their words",
+      "id": "tp_QNuMKHz2_P4",
+      "title": "Mississippi voters reflect on surprising Senate race as count continues",
       "podcast": "PBS NewsHour",
       "channel": "PBS NewsHour",
       "podcastLogo": "PBS",
       "tier": "standard",
-      "guest": "WATCH",
+      "guest": "",
       "topics": [
         "Ideas & Culture"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning watch: rep. massie vs. hegseth on house impeachment push, in their words.",
-      "imageUrl": "https://i.ytimg.com/vi/KvJaFmGSBpY/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/KvJaFmGSBpY/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=KvJaFmGSBpY",
-      "youtube_url": "https://www.youtube.com/watch?v=KvJaFmGSBpY",
-      "pubDate": "3h ago",
-      "date": "3h ago",
-      "duration": "3:43",
+      "theme": "Explores strategic perspectives and key developments concerning mississippi voters reflect on surprising senate race as count continues.",
+      "imageUrl": "https://i.ytimg.com/vi/QNuMKHz2_P4/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/QNuMKHz2_P4/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=QNuMKHz2_P4",
+      "youtube_url": "https://www.youtube.com/watch?v=QNuMKHz2_P4",
+      "pubDate": "21 min ago",
+      "date": "21 min ago",
+      "duration": "7:50",
       "views": "",
       "category": "Ideas & Culture",
-      "resonant_news": []
-    },
-    {
-      "id": "tp_UdYy4my9iZ8",
-      "title": "WATCH: Hegseth says House impeachment push is about ‘policy disagreements’ not high crimes",
-      "podcast": "PBS NewsHour",
-      "channel": "PBS NewsHour",
-      "podcastLogo": "PBS",
-      "tier": "standard",
-      "guest": "WATCH",
-      "topics": [
-        "Ideas & Culture"
-      ],
-      "theme": "Explores strategic perspectives and key developments concerning watch: hegseth says house impeachment push is about ‘policy disagreements’ not high crimes.",
-      "imageUrl": "https://i.ytimg.com/vi/UdYy4my9iZ8/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/UdYy4my9iZ8/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=UdYy4my9iZ8",
-      "youtube_url": "https://www.youtube.com/watch?v=UdYy4my9iZ8",
-      "pubDate": "5h ago",
-      "date": "5h ago",
-      "duration": "2:58",
-      "views": "",
-      "category": "Geopolitics & Policy",
       "resonant_news": []
     },
     {
       "id": "tp_DW0C8vWNebI",
-      "title": "What Happens When Everyday Investors Buy the Dip? | WSJ’s Take On the Week",
+      "title": "Can Everyday Investors Beat the Pros in an AI Selloff? | WSJ’s Take On the Week",
       "podcast": "WSJ Podcasts",
       "channel": "WSJ Podcasts",
       "podcastLogo": "WSJ",
       "tier": "flagship",
       "guest": "",
       "topics": [
-        "Ideas & Culture"
+        "Artificial Intelligence"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning what happens when everyday investors buy the dip?.",
+      "theme": "Explores strategic perspectives and key developments concerning can everyday investors beat the pros in an ai selloff?.",
       "imageUrl": "https://i.ytimg.com/vi/DW0C8vWNebI/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/DW0C8vWNebI/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=DW0C8vWNebI",
@@ -758,12 +887,12 @@
       "date": "2d ago",
       "duration": "28:07",
       "views": "",
-      "category": "Business & Economy",
+      "category": "AI & Tech",
       "resonant_news": []
     },
     {
       "id": "tp_ab_gjOyzDi8",
-      "title": "How North Korea Stole $6.3 Billion From Binance",
+      "title": "How North Korean Hackers Pulled Off a $6.3 Billion Crypto Heist",
       "podcast": "WSJ Podcasts",
       "channel": "WSJ Podcasts",
       "podcastLogo": "WSJ",
@@ -772,13 +901,13 @@
       "topics": [
         "Ideas & Culture"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning how north korea stole $6.3 billion from binance.",
+      "theme": "Explores strategic perspectives and key developments concerning how north korean hackers pulled off a $6.3 billion crypto heist.",
       "imageUrl": "https://i.ytimg.com/vi/ab_gjOyzDi8/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/ab_gjOyzDi8/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=ab_gjOyzDi8",
       "youtube_url": "https://www.youtube.com/watch?v=ab_gjOyzDi8",
-      "pubDate": "4d ago",
-      "date": "4d ago",
+      "pubDate": "5d ago",
+      "date": "5d ago",
       "duration": "13:51",
       "views": "",
       "category": "Business & Economy",
@@ -807,7 +936,7 @@
       "category": "Business & Economy",
       "resonant_news": [
         {
-          "id": "guardian-asia-5-6147",
+          "id": "guardian-asia-5-6321",
           "title": "Nvidia opens investigation after report CEO Jensen Huang was target of foreign intelligence",
           "source": "The Guardian",
           "link": "https://www.theguardian.com/us-news/2026/nov/08/nvidia-jensen-huang-investigation",
