@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-11-13T06:22:46.743640+00:00",
+  "lastUpdated": "2026-11-13T14:48:28.650706+00:00",
   "total": 30,
   "episodes": [
     {
       "id": "tp_2hJkprFnzhY",
-      "title": "Ukraine War: Putin, Zelenskyy, Trump, Drones and the Future of Warfare | Lex Fridman Podcast #504",
+      "title": "Russia-Ukraine War: Putin, Zelenskyy, Trump and the Future of Warfare | Lex Fridman Podcast #504",
       "podcast": "Lex Fridman Podcast",
       "channel": "Lex Fridman Podcast",
       "podcastLogo": "LF",
       "tier": "flagship",
-      "guest": "Ukraine War",
+      "guest": "",
       "topics": [
         "Geopolitics & Defense",
         "Artificial Intelligence"
@@ -49,7 +49,25 @@
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "ht-business-0-577",
+          "id": "reuters-world-1-5778",
+          "title": "Amazon's plan to own the world's product data and fight AI shopping agents",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQY2FJOXhDLWZqYzRxQ3BNVGRyeDNGWGZYU0VwNm5PV09tWGVwRklHdGFQaDRGWEQwM3pBZ1g2X0lYQVFGUU9RdHhyVk9kSnhrcWxob3o2ZUVNTE5SWW5OSWtkZEVlZm83ZUdrZHJ6X1N6bjhqT2F2WWxpWXVaUGhBZldsU0N5MEhjS19yR1pJcFlDN2N4ekpfWDZmR1FPT3k4eGY0bkdEQldjVnVZX21BYlVXX0h4d1JwbFVSaQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQY2FJOXhDLWZqYzRxQ3BNVGRyeDNGWGZYU0VwNm5PV09tWGVwRklHdGFQaDRGWEQwM3pBZ1g2X0lYQVFGUU9RdHhyVk9kSnhrcWxob3o2ZUVNTE5SWW5OSWtkZEVlZm83ZUdrZHJ6X1N6bjhqT2F2WWxpWXVaUGhBZldsU0N5MEhjS19yR1pJcFlDN2N4ekpfWDZmR1FPT3k4eGY0bkdEQldjVnVZX21BYlVXX0h4d1JwbFVSaQ?oc=5",
+          "relevance": 0.151,
+          "resonance_score": 0.151
+        },
+        {
+          "id": "aljazeera-3-710",
+          "title": "China warns against fresh US chip curbs",
+          "source": "Al Jazeera",
+          "link": "https://www.aljazeera.com/video/newsfeed/2026/11/13/china-warns-against-fresh-us-chip-curbs?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/china-warns-against-fresh-us-chip-curbs?traffic_source=rss",
+          "relevance": 0.15,
+          "resonance_score": 0.15
+        },
+        {
+          "id": "ht-business-3-7347",
           "title": "Google's Gemini Hydrogen is a considerable leap for lighter, workhorse AI models",
           "source": "HT Business",
           "link": "https://www.hindustantimes.com/business/googles-gemini-hydrogen-is-a-considerable-leap-for-lighter-workhorse-ai-models-101794548077704.html",
@@ -58,16 +76,16 @@
           "resonance_score": 0.442
         },
         {
-          "id": "arstechnica-3-816",
-          "title": "The Elder Scrolls' most obscure adventure gets a 4K PC makeover",
-          "source": "Ars Technica",
-          "link": "https://arstechnica.com/gaming/2026/11/the-elder-scrolls-most-obscure-adventure-gets-a-4k-pc-makeover/",
-          "url": "https://arstechnica.com/gaming/2026/11/the-elder-scrolls-most-obscure-adventure-gets-a-4k-pc-makeover/",
+          "id": "bbc-world-1-3998",
+          "title": "How a server outage took down Microsoft Teams and Outlook",
+          "source": "BBC News",
+          "link": "https://www.bbc.co.uk/news/videos/cqzjr903n01po?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/videos/cqzjr903n01po?at_medium=RSS&at_campaign=rss",
           "relevance": 0.15,
           "resonance_score": 0.15
         },
         {
-          "id": "techcrunch-1-5180",
+          "id": "techcrunch-5-7702",
           "title": "Muse can now place calls to US businesses — if you pay",
           "source": "TechCrunch",
           "link": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
@@ -79,16 +97,17 @@
     },
     {
       "id": "tp_FGCP2F_7rQk",
-      "title": "Jensen Huang & Lex Fridman in Taiwan",
+      "title": "Jensen Huang & Lex visit Taiwan's Night Markets and Computex",
       "podcast": "Lex Fridman Podcast",
       "channel": "Lex Fridman Podcast",
       "podcastLogo": "LF",
       "tier": "flagship",
       "guest": "",
       "topics": [
-        "Artificial Intelligence"
+        "Artificial Intelligence",
+        "Global Economy"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning jensen huang & lex fridman in taiwan.",
+      "theme": "Explores strategic perspectives and key developments concerning jensen huang & lex visit taiwan's night markets and computex.",
       "imageUrl": "https://i.ytimg.com/vi/FGCP2F_7rQk/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/FGCP2F_7rQk/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=FGCP2F_7rQk",
@@ -98,17 +117,7 @@
       "duration": "1:30:18",
       "views": "",
       "category": "AI & Tech",
-      "resonant_news": [
-        {
-          "id": "bbc-mideast-2-613",
-          "title": "Two men guilty of spying for Iran over plan to target journalists and lawyer",
-          "source": "BBC Middle East",
-          "link": "https://www.bbc.co.uk/news/articles/ck9q8g8209l2o?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/ck9q8g8209l2o?at_medium=RSS&at_campaign=rss",
-          "relevance": 0.221,
-          "resonance_score": 0.221
-        }
-      ]
+      "resonant_news": []
     },
     {
       "id": "tp_f5RqYHd2cBQ",
@@ -126,8 +135,8 @@
       "thumbnail": "https://i.ytimg.com/vi/f5RqYHd2cBQ/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=f5RqYHd2cBQ",
       "youtube_url": "https://www.youtube.com/watch?v=f5RqYHd2cBQ",
-      "pubDate": "14h ago",
-      "date": "14h ago",
+      "pubDate": "22h ago",
+      "date": "22h ago",
       "duration": "8:35",
       "views": "",
       "category": "Ideas & Culture",
@@ -196,8 +205,8 @@
       "thumbnail": "https://i.ytimg.com/vi/1rn_Clc-MM0/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=1rn_Clc-MM0",
       "youtube_url": "https://www.youtube.com/watch?v=1rn_Clc-MM0",
-      "pubDate": "17h ago",
-      "date": "17h ago",
+      "pubDate": "1d ago",
+      "date": "1d ago",
       "duration": "38:36",
       "views": "",
       "category": "Ideas & Culture",
@@ -219,8 +228,8 @@
       "thumbnail": "https://i.ytimg.com/vi/wbJ_Q1xsDHg/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=wbJ_Q1xsDHg",
       "youtube_url": "https://www.youtube.com/watch?v=wbJ_Q1xsDHg",
-      "pubDate": "3d ago",
-      "date": "3d ago",
+      "pubDate": "4d ago",
+      "date": "4d ago",
       "duration": "2:16:51",
       "views": "",
       "category": "Ideas & Culture",
@@ -242,14 +251,14 @@
       "thumbnail": "https://i.ytimg.com/vi/yUdg7drjrZY/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=yUdg7drjrZY",
       "youtube_url": "https://www.youtube.com/watch?v=yUdg7drjrZY",
-      "pubDate": "7d ago",
-      "date": "7d ago",
+      "pubDate": "8d ago",
+      "date": "8d ago",
       "duration": "38:22",
       "views": "",
       "category": "Science & Health",
       "resonant_news": [
         {
-          "id": "france24-me-0-4910",
+          "id": "france24-me-2-7257",
           "title": "Israeli strike on Gaza hospital kills six, including surgeon, medics say",
           "source": "France 24",
           "link": "https://www.france24.com/en/israeli-strike-on-gaza-hospital-kills-six-including-surgeon-medics-say",
@@ -258,25 +267,7 @@
           "resonance_score": 0.214
         },
         {
-          "id": "guardian-eu-0-9552",
-          "title": "Children's exposure to home wood-burning could be as significant as traffic exhaust, study suggests",
-          "source": "The Guardian",
-          "link": "https://www.theguardian.com/environment/2026/nov/13/wood-burning-stoves-pollution-traffic-exhaust-children",
-          "url": "https://www.theguardian.com/environment/2026/nov/13/wood-burning-stoves-pollution-traffic-exhaust-children",
-          "relevance": 0.215,
-          "resonance_score": 0.215
-        },
-        {
-          "id": "hindustan-times-0-2457",
-          "title": "Failed health check, elevated load, server restart: What led to the Microsoft outage",
-          "source": "Hindustan Times",
-          "link": "https://www.hindustantimes.com/india-news/failed-health-check-elevated-load-server-restart-what-led-to-the-microsoft-outage-101794548856802.html",
-          "url": "https://www.hindustantimes.com/india-news/failed-health-check-elevated-load-server-restart-what-led-to-the-microsoft-outage-101794548856802.html",
-          "relevance": 0.214,
-          "resonance_score": 0.214
-        },
-        {
-          "id": "bbc-mideast-0-6666",
+          "id": "bbc-mideast-1-4469",
           "title": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
           "source": "BBC Middle East",
           "link": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
@@ -326,8 +317,8 @@
       "thumbnail": "https://i.ytimg.com/vi/FS_XhSIBjDE/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=FS_XhSIBjDE",
       "youtube_url": "https://www.youtube.com/watch?v=FS_XhSIBjDE",
-      "pubDate": "8d ago",
-      "date": "8d ago",
+      "pubDate": "9d ago",
+      "date": "9d ago",
       "duration": "5:13",
       "views": "",
       "category": "Ideas & Culture",
@@ -349,8 +340,8 @@
       "thumbnail": "https://i.ytimg.com/vi/L8f9P3JRJf0/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=L8f9P3JRJf0",
       "youtube_url": "https://www.youtube.com/watch?v=L8f9P3JRJf0",
-      "pubDate": "9d ago",
-      "date": "9d ago",
+      "pubDate": "10d ago",
+      "date": "10d ago",
       "duration": "7:45",
       "views": "",
       "category": "AI & Tech",
@@ -358,26 +349,36 @@
     },
     {
       "id": "tp__4aXTGiiCp0",
-      "title": "Jensen Huang resigns as Nvidia CEO | The Economist",
+      "title": "Jensen Huang resigns as Nvidia CEO: what it means for the “AI bubble” | The Economist",
       "podcast": "The Economist",
       "channel": "The Economist",
       "podcastLogo": "TE",
       "tier": "flagship",
       "guest": "",
       "topics": [
-        "Ideas & Culture"
+        "Artificial Intelligence"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning jensen huang resigns as nvidia ceo.",
+      "theme": "Explores strategic perspectives and key developments concerning jensen huang resigns as nvidia ceo: what it means for the “ai bubble”.",
       "imageUrl": "https://i.ytimg.com/vi/_4aXTGiiCp0/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/_4aXTGiiCp0/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=_4aXTGiiCp0",
       "youtube_url": "https://www.youtube.com/watch?v=_4aXTGiiCp0",
-      "pubDate": "10h ago",
-      "date": "10h ago",
+      "pubDate": "19h ago",
+      "date": "19h ago",
       "duration": "9:02",
       "views": "",
-      "category": "Business & Economy",
-      "resonant_news": []
+      "category": "AI & Tech",
+      "resonant_news": [
+        {
+          "id": "nyt-business-3-6978",
+          "title": "Looking Past Nvidia Turmoil, Stocks Log Best Week in Months",
+          "source": "NYT Business",
+          "link": "https://www.nytimes.com/2026/11/13/business/nvidia-turmoil-stock-market.html",
+          "url": "https://www.nytimes.com/2026/11/13/business/nvidia-turmoil-stock-market.html",
+          "relevance": 0.45,
+          "resonance_score": 0.45
+        }
+      ]
     },
     {
       "id": "tp_vluYrFuJ6zY",
@@ -395,8 +396,8 @@
       "thumbnail": "https://i.ytimg.com/vi/vluYrFuJ6zY/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=vluYrFuJ6zY",
       "youtube_url": "https://www.youtube.com/watch?v=vluYrFuJ6zY",
-      "pubDate": "19h ago",
-      "date": "19h ago",
+      "pubDate": "1d ago",
+      "date": "1d ago",
       "duration": "10:52",
       "views": "",
       "category": "AI & Tech",
@@ -425,7 +426,7 @@
       "category": "Ideas & Culture",
       "resonant_news": [
         {
-          "id": "guardian-asia-3-9038",
+          "id": "guardian-asia-4-5085",
           "title": "Did Indonesia's vice-president just resign because he didn't have a high school diploma?",
           "source": "The Guardian",
           "link": "https://www.theguardian.com/world/2026/nov/13/indonesia-vice-president-diploma-resignation-explained",
@@ -434,31 +435,22 @@
           "resonance_score": 0.214
         },
         {
-          "id": "bbc-mideast-4-6164",
+          "id": "npr-national-5-5071",
+          "title": "Hegseth awards medal to soldier who chastised him",
+          "source": "NPR News",
+          "link": "https://www.npr.org/2026/11/13/nx-s1-6039845/hegseth-awards-medal-to-soldier-who-chastised-him",
+          "url": "https://www.npr.org/2026/11/13/nx-s1-6039845/hegseth-awards-medal-to-soldier-who-chastised-him",
+          "relevance": 0.42,
+          "resonance_score": 0.42
+        },
+        {
+          "id": "bbc-mideast-5-3198",
           "title": "US Treasury Secretary Scott Bessent relocated after alleged Iranian threats",
           "source": "BBC Middle East",
           "link": "https://www.bbc.co.uk/news/articles/cqr7gr0010r2o?at_medium=RSS&at_campaign=rss",
           "url": "https://www.bbc.co.uk/news/articles/cqr7gr0010r2o?at_medium=RSS&at_campaign=rss",
           "relevance": 0.219,
           "resonance_score": 0.219
-        },
-        {
-          "id": "bbc-asia-3-3692",
-          "title": "Indonesia's vice-president resigns amid signs ruling alliance is fraying",
-          "source": "BBC Asia",
-          "link": "https://www.bbc.co.uk/news/articles/cmvgxgz87qqro?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/cmvgxgz87qqro?at_medium=RSS&at_campaign=rss",
-          "relevance": 0.218,
-          "resonance_score": 0.218
-        },
-        {
-          "id": "nyt-world-1-4592",
-          "title": "A.I. Weapons Need Data for Their Training. Ukraine Has a Lot to Offer.",
-          "source": "New York Times",
-          "link": "https://www.nytimes.com/2026/11/12/world/europe/ukraine-ai-weapons.html",
-          "url": "https://www.nytimes.com/2026/11/12/world/europe/ukraine-ai-weapons.html",
-          "relevance": 0.418,
-          "resonance_score": 0.418
         }
       ]
     },
@@ -478,8 +470,8 @@
       "thumbnail": "https://i.ytimg.com/vi/svoy01Q_81E/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=svoy01Q_81E",
       "youtube_url": "https://www.youtube.com/watch?v=svoy01Q_81E",
-      "pubDate": "8h ago",
-      "date": "8h ago",
+      "pubDate": "17h ago",
+      "date": "17h ago",
       "duration": "36:59",
       "views": "",
       "category": "Geopolitics & Policy",
@@ -502,20 +494,29 @@
       "thumbnail": "https://i.ytimg.com/vi/AK0LO77Xw18/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=AK0LO77Xw18",
       "youtube_url": "https://www.youtube.com/watch?v=AK0LO77Xw18",
-      "pubDate": "13h ago",
-      "date": "13h ago",
+      "pubDate": "21h ago",
+      "date": "21h ago",
       "duration": "41:51",
       "views": "",
       "category": "Business & Economy",
       "resonant_news": [
         {
-          "id": "bbc-world-0-8927",
-          "title": "Firms help migrants pose as artists and tech experts for 'Global Talent' visas",
+          "id": "the-hindu-5-8787",
+          "title": "Experts place emphasis on 'resilient blue economy'",
+          "source": "The Hindu",
+          "link": "https://www.thehindu.com/news/cities/Thiruvananthapuram/experts-place-emphasis-on-resilient-blue-economy/article71697883.ece",
+          "url": "https://www.thehindu.com/news/cities/Thiruvananthapuram/experts-place-emphasis-on-resilient-blue-economy/article71697883.ece",
+          "relevance": 0.152,
+          "resonance_score": 0.152
+        },
+        {
+          "id": "bbc-world-0-4784",
+          "title": "What we know about the global outage",
           "source": "BBC News",
-          "link": "https://www.bbc.co.uk/news/articles/cmkgdw24l1kdo?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/cmkgdw24l1kdo?at_medium=RSS&at_campaign=rss",
-          "relevance": 0.15,
-          "resonance_score": 0.15
+          "link": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
+          "relevance": 0.155,
+          "resonance_score": 0.155
         }
       ]
     },
@@ -542,19 +543,97 @@
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "scmp-asia-2-3720",
-          "title": "China's SMIC sees AI computing crunch until 2028 as Nvidia heat risks tighter chip curbs",
+          "id": "scmp-asia-5-1144",
+          "title": "US-China AI safety talks face hurdle over how to define 'serious' incidents: analysts",
           "source": "SCMP",
-          "link": "https://www.scmp.com/tech/big-tech/article/3374305/chinas-smic-sees-ai-computing-crunch-until-2028-nvidia-heat-risks-tighter-chip-curbs",
-          "url": "https://www.scmp.com/tech/big-tech/article/3374305/chinas-smic-sees-ai-computing-crunch-until-2028-nvidia-heat-risks-tighter-chip-curbs",
-          "relevance": 0.457,
-          "resonance_score": 0.457
+          "link": "https://www.scmp.com/news/china/diplomacy/article/3374381/us-china-ai-safety-talks-face-hurdle-over-how-define-serious-incidents-analysts",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3374381/us-china-ai-safety-talks-face-hurdle-over-how-define-serious-incidents-analysts",
+          "relevance": 0.447,
+          "resonance_score": 0.447
+        },
+        {
+          "id": "bbc-mideast-3-1508",
+          "title": "Two men guilty of spying for Iran over plan to target journalists and lawyer",
+          "source": "BBC Middle East",
+          "link": "https://www.bbc.co.uk/news/articles/ck9q8g8209l2o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/ck9q8g8209l2o?at_medium=RSS&at_campaign=rss",
+          "relevance": 0.221,
+          "resonance_score": 0.221
         }
       ]
     },
     {
+      "id": "tp_n6bwbnhaV18",
+      "title": "The Same Old Arguments with Tim Shipman | Strong Message Here",
+      "podcast": "BBC Podcasts",
+      "channel": "BBC Podcasts",
+      "podcastLogo": "BBC",
+      "tier": "flagship",
+      "guest": "",
+      "topics": [
+        "Ideas & Culture"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning the same old arguments with tim shipman.",
+      "imageUrl": "https://i.ytimg.com/vi/n6bwbnhaV18/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/n6bwbnhaV18/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=n6bwbnhaV18",
+      "youtube_url": "https://www.youtube.com/watch?v=n6bwbnhaV18",
+      "pubDate": "17 min ago",
+      "date": "17 min ago",
+      "duration": "31:27",
+      "views": "",
+      "category": "Ideas & Culture",
+      "resonant_news": []
+    },
+    {
+      "id": "tp_5GD5627yu8U",
+      "title": "Who Are You? | Part 10 | Frankenstein",
+      "podcast": "BBC Podcasts",
+      "channel": "BBC Podcasts",
+      "podcastLogo": "BBC",
+      "tier": "flagship",
+      "guest": "",
+      "topics": [
+        "Ideas & Culture"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning who are you?.",
+      "imageUrl": "https://i.ytimg.com/vi/5GD5627yu8U/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/5GD5627yu8U/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=5GD5627yu8U",
+      "youtube_url": "https://www.youtube.com/watch?v=5GD5627yu8U",
+      "pubDate": "20h ago",
+      "date": "20h ago",
+      "duration": "35:22",
+      "views": "",
+      "category": "Ideas & Culture",
+      "resonant_news": []
+    },
+    {
+      "id": "tp_HA872eVPTS0",
+      "title": "How Lincoln's Emancipation Proclamation Changed America | The Battle of Antietam | In Our Time",
+      "podcast": "BBC Podcasts",
+      "channel": "BBC Podcasts",
+      "podcastLogo": "BBC",
+      "tier": "flagship",
+      "guest": "",
+      "topics": [
+        "Ideas & Culture"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning how lincoln's emancipation proclamation changed america.",
+      "imageUrl": "https://i.ytimg.com/vi/HA872eVPTS0/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/HA872eVPTS0/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=HA872eVPTS0",
+      "youtube_url": "https://www.youtube.com/watch?v=HA872eVPTS0",
+      "pubDate": "1d ago",
+      "date": "1d ago",
+      "duration": "59:16",
+      "views": "",
+      "category": "Ideas & Culture",
+      "resonant_news": []
+    },
+    {
       "id": "tp_Bpkl8PstNIE",
-      "title": "Spy scandal / Hegseth’s future / Are we still at war with Iran?",
+      "title": "Spy scandal / Hegseth’s future / Are we still at war with Iran? | Sources & Methods",
       "podcast": "NPR",
       "channel": "NPR",
       "podcastLogo": "NPR",
@@ -568,29 +647,92 @@
       "thumbnail": "https://i.ytimg.com/vi/Bpkl8PstNIE/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=Bpkl8PstNIE",
       "youtube_url": "https://www.youtube.com/watch?v=Bpkl8PstNIE",
-      "pubDate": "7h ago",
-      "date": "7h ago",
+      "pubDate": "15h ago",
+      "date": "15h ago",
       "duration": "32:18",
       "views": "",
       "category": "Geopolitics & Policy",
       "resonant_news": [
         {
-          "id": "aljazeera-4-9878",
-          "title": "Iranophobia: Netanyahu's bid to transform fear into political survival",
-          "source": "Al Jazeera",
-          "link": "https://www.aljazeera.com/news/2026/11/13/iranophobia-netanyahus-bid-to-transform-fear-into-political-survival?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/11/13/iranophobia-netanyahus-bid-to-transform-fear-into-political-survival?traffic_source=rss",
-          "relevance": 0.467,
-          "resonance_score": 0.467
+          "id": "bbc-mideast-0-7707",
+          "title": "UN watchdog 'increasingly concerned' over Iran nuclear site",
+          "source": "BBC Middle East",
+          "link": "https://www.bbc.co.uk/news/articles/cm75261e3pdko?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/cm75261e3pdko?at_medium=RSS&at_campaign=rss",
+          "relevance": 0.419,
+          "resonance_score": 0.419
         },
         {
-          "id": "france24-me-4-1008",
-          "title": "Israeli occupation in southern Lebanon: Displaced families struggle to cope",
+          "id": "france24-eu-3-5989",
+          "title": "Pro-Ukraine 'Coalition of the Willing' to hold Berlin summit on November 19",
           "source": "France 24",
-          "link": "https://www.france24.com/en/tv-shows/focus/20261112-israeli-occupation-in-southern-lebanon-displaced-families-struggle-to-cope",
-          "url": "https://www.france24.com/en/tv-shows/focus/20261112-israeli-occupation-in-southern-lebanon-displaced-families-struggle-to-cope",
-          "relevance": 0.44,
-          "resonance_score": 0.44
+          "link": "https://www.france24.com/en/europe/20261113-live-zelensky-and-kushner-confirm-that-europe-will-join-next-round-of-russia-ukraine-talks",
+          "url": "https://www.france24.com/en/europe/20261113-live-zelensky-and-kushner-confirm-that-europe-will-join-next-round-of-russia-ukraine-talks",
+          "relevance": 0.416,
+          "resonance_score": 0.416
+        },
+        {
+          "id": "france24-eu-1-610",
+          "title": "US, Ukraine say Europe to join peace talks as Putin sticks to hardline stance",
+          "source": "France 24",
+          "link": "https://www.france24.com/en/video/20261113-us-ukraine-say-europe-to-join-peace-talks-as-putin-sticks-to-hardline-stance",
+          "url": "https://www.france24.com/en/video/20261113-us-ukraine-say-europe-to-join-peace-talks-as-putin-sticks-to-hardline-stance",
+          "relevance": 0.413,
+          "resonance_score": 0.413
+        },
+        {
+          "id": "nyt-asia-1-5146",
+          "title": "After Xi Purges China's Generals, a Military Inquisitor Rises",
+          "source": "New York Times",
+          "link": "https://www.nytimes.com/2026/11/13/world/asia/china-military-purge-zhang-shengmin-taiwan.html",
+          "url": "https://www.nytimes.com/2026/11/13/world/asia/china-military-purge-zhang-shengmin-taiwan.html",
+          "relevance": 0.417,
+          "resonance_score": 0.417
+        },
+        {
+          "id": "france24-eu-2-7095",
+          "title": "Winter is coming: Putin seeks to 'hammer Ukrainians, their power grid, their water supplies'",
+          "source": "France 24",
+          "link": "https://www.france24.com/en/winter-is-coming-putin-seeks-to-hammer-ukrainians-their-power-grid-their-water-supplies",
+          "url": "https://www.france24.com/en/winter-is-coming-putin-seeks-to-hammer-ukrainians-their-power-grid-their-water-supplies",
+          "relevance": 0.412,
+          "resonance_score": 0.412
+        },
+        {
+          "id": "france24-me-1-6643",
+          "title": "'No war, no peace' situation between US and Iran 'cannot continue', Iraqi FM says",
+          "source": "France 24",
+          "link": "https://www.france24.com/en/tv-shows/t%C3%AAte-%C3%A0-t%C3%AAte/20261113-no-war-and-no-peace-between-the-us-and-iran-cannot-continue-iraqi-fm-says",
+          "url": "https://www.france24.com/en/tv-shows/t%C3%AAte-%C3%A0-t%C3%AAte/20261113-no-war-and-no-peace-between-the-us-and-iran-cannot-continue-iraqi-fm-says",
+          "relevance": 0.433,
+          "resonance_score": 0.433
+        },
+        {
+          "id": "aljazeera-1-5758",
+          "title": "Can Netanyahu launch a strike on Iran before he leaves?",
+          "source": "Al Jazeera",
+          "link": "https://www.aljazeera.com/news/2026/11/13/can-netanyahu-launch-a-strike-on-iran-before-he-leaves?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/11/13/can-netanyahu-launch-a-strike-on-iran-before-he-leaves?traffic_source=rss",
+          "relevance": 0.441,
+          "resonance_score": 0.441
+        },
+        {
+          "id": "aljazeera-2-9359",
+          "title": "Ukraine claims record 3,000 Russian casualties in one day as war drags on",
+          "source": "Al Jazeera",
+          "link": "https://www.aljazeera.com/news/2026/11/13/russias-demands-come-from-different-reality-as-war-efforts-stagnates?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/11/13/russias-demands-come-from-different-reality-as-war-efforts-stagnates?traffic_source=rss",
+          "relevance": 0.418,
+          "resonance_score": 0.418
+        },
+        {
+          "id": "nyt-world-3-3995",
+          "title": "Europe Haggles Over Who Will Represent It in Talks With Russia",
+          "source": "New York Times",
+          "link": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
+          "url": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
+          "relevance": 0.419,
+          "resonance_score": 0.419
         }
       ]
     },
@@ -610,8 +752,8 @@
       "thumbnail": "https://i.ytimg.com/vi/Kk9uii_GgBc/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=Kk9uii_GgBc",
       "youtube_url": "https://www.youtube.com/watch?v=Kk9uii_GgBc",
-      "pubDate": "20h ago",
-      "date": "20h ago",
+      "pubDate": "1d ago",
+      "date": "1d ago",
       "duration": "43:06",
       "views": "",
       "category": "Ideas & Culture",
@@ -656,8 +798,8 @@
       "thumbnail": "https://i.ytimg.com/vi/RTgmjLhrXVM/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=RTgmjLhrXVM",
       "youtube_url": "https://www.youtube.com/watch?v=RTgmjLhrXVM",
-      "pubDate": "5h ago",
-      "date": "5h ago",
+      "pubDate": "14h ago",
+      "date": "14h ago",
       "duration": "56:47",
       "views": "",
       "category": "Ideas & Culture",
@@ -679,8 +821,8 @@
       "thumbnail": "https://i.ytimg.com/vi/T_CdO91wShI/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=T_CdO91wShI",
       "youtube_url": "https://www.youtube.com/watch?v=T_CdO91wShI",
-      "pubDate": "5h ago",
-      "date": "5h ago",
+      "pubDate": "14h ago",
+      "date": "14h ago",
       "duration": "3:56",
       "views": "",
       "category": "Geopolitics & Policy",
@@ -702,8 +844,8 @@
       "thumbnail": "https://i.ytimg.com/vi/8wTzRNKxirY/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=8wTzRNKxirY",
       "youtube_url": "https://www.youtube.com/watch?v=8wTzRNKxirY",
-      "pubDate": "6h ago",
-      "date": "6h ago",
+      "pubDate": "14h ago",
+      "date": "14h ago",
       "duration": "10:23",
       "views": "",
       "category": "AI & Tech",
@@ -725,8 +867,8 @@
       "thumbnail": "https://i.ytimg.com/vi/DW0C8vWNebI/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=DW0C8vWNebI",
       "youtube_url": "https://www.youtube.com/watch?v=DW0C8vWNebI",
-      "pubDate": "4d ago",
-      "date": "4d ago",
+      "pubDate": "5d ago",
+      "date": "5d ago",
       "duration": "28:07",
       "views": "",
       "category": "Business & Economy",
@@ -771,128 +913,12 @@
       "thumbnail": "https://i.ytimg.com/vi/91g4i01pPCA/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=91g4i01pPCA",
       "youtube_url": "https://www.youtube.com/watch?v=91g4i01pPCA",
-      "pubDate": "10d ago",
-      "date": "10d ago",
+      "pubDate": "11d ago",
+      "date": "11d ago",
       "duration": "26:50",
       "views": "",
       "category": "Business & Economy",
-      "resonant_news": [
-        {
-          "id": "nyt-business-4-2651",
-          "title": "SpaceX Plans $74 Billion Investment to Build Data Centers in Texas and Arizona",
-          "source": "NYT Business",
-          "link": "https://www.nytimes.com/2026/11/12/business/spacex-data-center.html",
-          "url": "https://www.nytimes.com/2026/11/12/business/spacex-data-center.html",
-          "relevance": 0.444,
-          "resonance_score": 0.444
-        }
-      ]
-    },
-    {
-      "id": "tp_wOZaCUlha8w",
-      "title": "BYRON MAJOR",
-      "podcast": "Bloomberg Originals",
-      "channel": "Bloomberg Originals",
-      "podcastLogo": "BB",
-      "tier": "flagship",
-      "guest": "",
-      "topics": [
-        "Ideas & Culture"
-      ],
-      "theme": "Explores strategic perspectives and key developments concerning byron major.",
-      "imageUrl": "https://i.ytimg.com/vi/wOZaCUlha8w/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/wOZaCUlha8w/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=wOZaCUlha8w",
-      "youtube_url": "https://www.youtube.com/watch?v=wOZaCUlha8w",
-      "pubDate": "2y ago",
-      "date": "2y ago",
-      "duration": "15:00",
-      "views": "",
-      "category": "Ideas & Culture",
       "resonant_news": []
-    },
-    {
-      "id": "tp_43aPB8-NQRs",
-      "title": "BYRON MAJOR",
-      "podcast": "Bloomberg Originals",
-      "channel": "Bloomberg Originals",
-      "podcastLogo": "BB",
-      "tier": "flagship",
-      "guest": "",
-      "topics": [
-        "Ideas & Culture"
-      ],
-      "theme": "Explores strategic perspectives and key developments concerning byron major.",
-      "imageUrl": "https://i.ytimg.com/vi/43aPB8-NQRs/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/43aPB8-NQRs/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=43aPB8-NQRs",
-      "youtube_url": "https://www.youtube.com/watch?v=43aPB8-NQRs",
-      "pubDate": "2y ago",
-      "date": "2y ago",
-      "duration": "15:00",
-      "views": "",
-      "category": "Ideas & Culture",
-      "resonant_news": []
-    },
-    {
-      "id": "tp_XliQ1SthAbs",
-      "title": "WAR WORLD THREE",
-      "podcast": "Bloomberg Originals",
-      "channel": "Bloomberg Originals",
-      "podcastLogo": "BB",
-      "tier": "flagship",
-      "guest": "",
-      "topics": [
-        "Geopolitics"
-      ],
-      "theme": "Explores strategic perspectives and key developments concerning war world three.",
-      "imageUrl": "https://i.ytimg.com/vi/XliQ1SthAbs/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/XliQ1SthAbs/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=XliQ1SthAbs",
-      "youtube_url": "https://www.youtube.com/watch?v=XliQ1SthAbs",
-      "pubDate": "2y ago",
-      "date": "2y ago",
-      "duration": "15:00",
-      "views": "",
-      "category": "Geopolitics & Policy",
-      "resonant_news": [
-        {
-          "id": "aljazeera-3-2839",
-          "title": "UNRWA funding cuts deepen hardship for Palestinian refugees in Lebanon",
-          "source": "Al Jazeera",
-          "link": "https://www.aljazeera.com/features/2026/11/13/unrwa-funding-cuts-deepen-hardship-for-palestinian-refugees-in-lebanon?traffic_source=rss",
-          "url": "https://www.aljazeera.com/features/2026/11/13/unrwa-funding-cuts-deepen-hardship-for-palestinian-refugees-in-lebanon?traffic_source=rss",
-          "relevance": 0.425,
-          "resonance_score": 0.425
-        },
-        {
-          "id": "nyt-asia-5-3279",
-          "title": "Tourists Brave a Muddy Jungle Trek to See a Famed World War II Wreck",
-          "source": "New York Times",
-          "link": "https://www.nytimes.com/2026/11/12/world/asia/yamamoto-pearl-harbor-plane-bougainville-tourism.html",
-          "url": "https://www.nytimes.com/2026/11/12/world/asia/yamamoto-pearl-harbor-plane-bougainville-tourism.html",
-          "relevance": 0.433,
-          "resonance_score": 0.433
-        },
-        {
-          "id": "france24-eu-5-9480",
-          "title": "Russia's Vladimir Putin suggests no Ukraine compromise in meeting with US envoys",
-          "source": "France 24",
-          "link": "https://www.france24.com/en/video/20261112-russia-s-vladimir-putin-suggests-no-ukraine-compromise-in-meeting-with-us-envoys",
-          "url": "https://www.france24.com/en/video/20261112-russia-s-vladimir-putin-suggests-no-ukraine-compromise-in-meeting-with-us-envoys",
-          "relevance": 0.436,
-          "resonance_score": 0.436
-        },
-        {
-          "id": "guardian-eu-4-147",
-          "title": "Norway follows Finland in barring Russian athletes from entering country over Ukraine war",
-          "source": "The Guardian",
-          "link": "https://www.theguardian.com/sport/2026/nov/12/finland-bars-russian-athletes-ukraine",
-          "url": "https://www.theguardian.com/sport/2026/nov/12/finland-bars-russian-athletes-ukraine",
-          "relevance": 0.417,
-          "resonance_score": 0.417
-        }
-      ]
     }
   ]
 }
