@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-11-13T14:48:28.650706+00:00",
+  "lastUpdated": "2026-11-13T21:12:56.373665+00:00",
   "total": 30,
   "episodes": [
     {
       "id": "tp_2hJkprFnzhY",
-      "title": "Russia-Ukraine War: Putin, Zelenskyy, Trump and the Future of Warfare | Lex Fridman Podcast #504",
+      "title": "Ukraine War: Putin, Zelenskyy, Trump, Drones and the Future of Warfare | Lex Fridman Podcast #504",
       "podcast": "Lex Fridman Podcast",
       "channel": "Lex Fridman Podcast",
       "podcastLogo": "LF",
       "tier": "flagship",
-      "guest": "",
+      "guest": "Ukraine War",
       "topics": [
         "Geopolitics & Defense",
         "Artificial Intelligence"
@@ -49,65 +49,46 @@
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "reuters-world-1-5778",
-          "title": "Amazon's plan to own the world's product data and fight AI shopping agents",
-          "source": "Reuters",
-          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQY2FJOXhDLWZqYzRxQ3BNVGRyeDNGWGZYU0VwNm5PV09tWGVwRklHdGFQaDRGWEQwM3pBZ1g2X0lYQVFGUU9RdHhyVk9kSnhrcWxob3o2ZUVNTE5SWW5OSWtkZEVlZm83ZUdrZHJ6X1N6bjhqT2F2WWxpWXVaUGhBZldsU0N5MEhjS19yR1pJcFlDN2N4ekpfWDZmR1FPT3k4eGY0bkdEQldjVnVZX21BYlVXX0h4d1JwbFVSaQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQY2FJOXhDLWZqYzRxQ3BNVGRyeDNGWGZYU0VwNm5PV09tWGVwRklHdGFQaDRGWEQwM3pBZ1g2X0lYQVFGUU9RdHhyVk9kSnhrcWxob3o2ZUVNTE5SWW5OSWtkZEVlZm83ZUdrZHJ6X1N6bjhqT2F2WWxpWXVaUGhBZldsU0N5MEhjS19yR1pJcFlDN2N4ekpfWDZmR1FPT3k4eGY0bkdEQldjVnVZX21BYlVXX0h4d1JwbFVSaQ?oc=5",
-          "relevance": 0.151,
-          "resonance_score": 0.151
-        },
-        {
-          "id": "aljazeera-3-710",
-          "title": "China warns against fresh US chip curbs",
-          "source": "Al Jazeera",
-          "link": "https://www.aljazeera.com/video/newsfeed/2026/11/13/china-warns-against-fresh-us-chip-curbs?traffic_source=rss",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/china-warns-against-fresh-us-chip-curbs?traffic_source=rss",
+          "id": "techcrunch-2-4785",
+          "title": "Export-banned Nvidia chips are behind China's most powerful AI models — uh oh, Jensen!",
+          "source": "TechCrunch",
+          "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+          "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
           "relevance": 0.15,
           "resonance_score": 0.15
         },
         {
-          "id": "ht-business-3-7347",
+          "id": "reuters-world-4-7646",
+          "title": "OpenAI launches ChatGPT Wallet, letting AI agents pay for purchases",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdjVJaENIMTQ3V1hXQ3pSLUh4SmRkcTdoVEx5el9kTU1fTFBsVVFpaVF5WkpKNTBtX3NYMEE2UEF4V3hkbWhRNzdFREtLZFJtSGtMRTF6RWlfNVowTUktR25NWnRjUEVIUm5TSm9EbE50UWt6cnFIem5XcFBfQWMyUV8xR0w4RWJGalB1TW80OXNsOWJ6RlNGOElzbThzMmt2aDBSTnVaWVliMVNNYXc?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdjVJaENIMTQ3V1hXQ3pSLUh4SmRkcTdoVEx5el9kTU1fTFBsVVFpaVF5WkpKNTBtX3NYMEE2UEF4V3hkbWhRNzdFREtLZFJtSGtMRTF6RWlfNVowTUktR25NWnRjUEVIUm5TSm9EbE50UWt6cnFIem5XcFBfQWMyUV8xR0w4RWJGalB1TW80OXNsOWJ6RlNGOElzbThzMmt2aDBSTnVaWVliMVNNYXc?oc=5",
+          "relevance": 0.152,
+          "resonance_score": 0.152
+        },
+        {
+          "id": "ht-business-3-1870",
           "title": "Google's Gemini Hydrogen is a considerable leap for lighter, workhorse AI models",
           "source": "HT Business",
           "link": "https://www.hindustantimes.com/business/googles-gemini-hydrogen-is-a-considerable-leap-for-lighter-workhorse-ai-models-101794548077704.html",
           "url": "https://www.hindustantimes.com/business/googles-gemini-hydrogen-is-a-considerable-leap-for-lighter-workhorse-ai-models-101794548077704.html",
           "relevance": 0.442,
           "resonance_score": 0.442
-        },
-        {
-          "id": "bbc-world-1-3998",
-          "title": "How a server outage took down Microsoft Teams and Outlook",
-          "source": "BBC News",
-          "link": "https://www.bbc.co.uk/news/videos/cqzjr903n01po?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/videos/cqzjr903n01po?at_medium=RSS&at_campaign=rss",
-          "relevance": 0.15,
-          "resonance_score": 0.15
-        },
-        {
-          "id": "techcrunch-5-7702",
-          "title": "Muse can now place calls to US businesses — if you pay",
-          "source": "TechCrunch",
-          "link": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
-          "url": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
-          "relevance": 0.153,
-          "resonance_score": 0.153
         }
       ]
     },
     {
       "id": "tp_FGCP2F_7rQk",
-      "title": "Jensen Huang & Lex visit Taiwan's Night Markets and Computex",
+      "title": "Jensen Huang & Lex Fridman visit Taiwan",
       "podcast": "Lex Fridman Podcast",
       "channel": "Lex Fridman Podcast",
       "podcastLogo": "LF",
       "tier": "flagship",
       "guest": "",
       "topics": [
-        "Artificial Intelligence",
-        "Global Economy"
+        "Artificial Intelligence"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning jensen huang & lex visit taiwan's night markets and computex.",
+      "theme": "Explores strategic perspectives and key developments concerning jensen huang & lex fridman visit taiwan.",
       "imageUrl": "https://i.ytimg.com/vi/FGCP2F_7rQk/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/FGCP2F_7rQk/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=FGCP2F_7rQk",
@@ -115,6 +96,48 @@
       "pubDate": "4w ago",
       "date": "4w ago",
       "duration": "1:30:18",
+      "views": "",
+      "category": "AI & Tech",
+      "resonant_news": [
+        {
+          "id": "bbc-europe-1-522",
+          "title": "German spies handed new powers to tackle 'hybrid threats' from abroad",
+          "source": "BBC Europe",
+          "link": "https://www.bbc.co.uk/news/articles/c6jre3z03w4go?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/c6jre3z03w4go?at_medium=RSS&at_campaign=rss",
+          "relevance": 0.219,
+          "resonance_score": 0.219
+        },
+        {
+          "id": "bbc-mideast-3-5977",
+          "title": "Two men guilty of spying for Iran over plan to target journalists and lawyer",
+          "source": "BBC Middle East",
+          "link": "https://www.bbc.co.uk/news/articles/ck9q8g8209l2o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/ck9q8g8209l2o?at_medium=RSS&at_campaign=rss",
+          "relevance": 0.22,
+          "resonance_score": 0.22
+        }
+      ]
+    },
+    {
+      "id": "tp_pSbcJV_o_ko",
+      "title": "Inside Venezuela’s Uncertain Path to Freedom | Leopoldo López | TED",
+      "podcast": "TED",
+      "channel": "TED",
+      "podcastLogo": "TED",
+      "tier": "flagship",
+      "guest": "",
+      "topics": [
+        "Artificial Intelligence"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning inside venezuela’s uncertain path to freedom.",
+      "imageUrl": "https://i.ytimg.com/vi/pSbcJV_o_ko/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/pSbcJV_o_ko/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=pSbcJV_o_ko",
+      "youtube_url": "https://www.youtube.com/watch?v=pSbcJV_o_ko",
+      "pubDate": "5h ago",
+      "date": "5h ago",
+      "duration": "41:52",
       "views": "",
       "category": "AI & Tech",
       "resonant_news": []
@@ -135,8 +158,8 @@
       "thumbnail": "https://i.ytimg.com/vi/f5RqYHd2cBQ/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=f5RqYHd2cBQ",
       "youtube_url": "https://www.youtube.com/watch?v=f5RqYHd2cBQ",
-      "pubDate": "22h ago",
-      "date": "22h ago",
+      "pubDate": "1d ago",
+      "date": "1d ago",
       "duration": "8:35",
       "views": "",
       "category": "Ideas & Culture",
@@ -158,33 +181,9 @@
       "thumbnail": "https://i.ytimg.com/vi/pTdvsfIMGes/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=pTdvsfIMGes",
       "youtube_url": "https://www.youtube.com/watch?v=pTdvsfIMGes",
-      "pubDate": "2d ago",
-      "date": "2d ago",
-      "duration": "14:02",
-      "views": "",
-      "category": "AI & Tech",
-      "resonant_news": []
-    },
-    {
-      "id": "tp_g3_TqjSLyLk",
-      "title": "AI Brain Fry Is Real. Here’s What Leaders Can Do | Julie Bedard | TED",
-      "podcast": "TED",
-      "channel": "TED",
-      "podcastLogo": "TED",
-      "tier": "flagship",
-      "guest": "",
-      "topics": [
-        "Artificial Intelligence",
-        "Health & Medicine"
-      ],
-      "theme": "Explores strategic perspectives and key developments concerning ai brain fry is real. here’s what leaders can do.",
-      "imageUrl": "https://i.ytimg.com/vi/g3_TqjSLyLk/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/g3_TqjSLyLk/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=g3_TqjSLyLk",
-      "youtube_url": "https://www.youtube.com/watch?v=g3_TqjSLyLk",
       "pubDate": "3d ago",
       "date": "3d ago",
-      "duration": "9:03",
+      "duration": "14:02",
       "views": "",
       "category": "AI & Tech",
       "resonant_news": []
@@ -258,7 +257,7 @@
       "category": "Science & Health",
       "resonant_news": [
         {
-          "id": "france24-me-2-7257",
+          "id": "france24-me-5-1261",
           "title": "Israeli strike on Gaza hospital kills six, including surgeon, medics say",
           "source": "France 24",
           "link": "https://www.france24.com/en/israeli-strike-on-gaza-hospital-kills-six-including-surgeon-medics-say",
@@ -267,7 +266,16 @@
           "resonance_score": 0.214
         },
         {
-          "id": "bbc-mideast-1-4469",
+          "id": "npr-national-3-142",
+          "title": "How Sen. Chris Van Hollen plans to flex Democratic power on the foreign aid front",
+          "source": "NPR News",
+          "link": "https://www.npr.org/2026/11/13/g-s1-153350/senator-chris-van-hollen-global-health-development-aid",
+          "url": "https://www.npr.org/2026/11/13/g-s1-153350/senator-chris-van-hollen-global-health-development-aid",
+          "relevance": 0.215,
+          "resonance_score": 0.215
+        },
+        {
+          "id": "bbc-mideast-1-9191",
           "title": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
           "source": "BBC Middle East",
           "link": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
@@ -294,8 +302,8 @@
       "thumbnail": "https://i.ytimg.com/vi/f4r3aUiWpQY/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=f4r3aUiWpQY",
       "youtube_url": "https://www.youtube.com/watch?v=f4r3aUiWpQY",
-      "pubDate": "1d ago",
-      "date": "1d ago",
+      "pubDate": "2d ago",
+      "date": "2d ago",
       "duration": "1:13:15",
       "views": "",
       "category": "Science & Health",
@@ -363,20 +371,20 @@
       "thumbnail": "https://i.ytimg.com/vi/_4aXTGiiCp0/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=_4aXTGiiCp0",
       "youtube_url": "https://www.youtube.com/watch?v=_4aXTGiiCp0",
-      "pubDate": "19h ago",
-      "date": "19h ago",
+      "pubDate": "1d ago",
+      "date": "1d ago",
       "duration": "9:02",
       "views": "",
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "nyt-business-3-6978",
-          "title": "Looking Past Nvidia Turmoil, Stocks Log Best Week in Months",
+          "id": "nyt-business-0-9685",
+          "title": "Why Jensen Huang Was Essential to Nvidia's Rise",
           "source": "NYT Business",
-          "link": "https://www.nytimes.com/2026/11/13/business/nvidia-turmoil-stock-market.html",
-          "url": "https://www.nytimes.com/2026/11/13/business/nvidia-turmoil-stock-market.html",
-          "relevance": 0.45,
-          "resonance_score": 0.45
+          "link": "https://www.nytimes.com/video/business/100000011275611/why-jensen-huang-was-essential-to-nvidias-rise.html",
+          "url": "https://www.nytimes.com/video/business/100000011275611/why-jensen-huang-was-essential-to-nvidias-rise.html",
+          "relevance": 0.479,
+          "resonance_score": 0.479
         }
       ]
     },
@@ -419,32 +427,23 @@
       "thumbnail": "https://i.ytimg.com/vi/RSxXHunYyiw/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=RSxXHunYyiw",
       "youtube_url": "https://www.youtube.com/watch?v=RSxXHunYyiw",
-      "pubDate": "5d ago",
-      "date": "5d ago",
+      "pubDate": "6d ago",
+      "date": "6d ago",
       "duration": "7:23",
       "views": "",
       "category": "Ideas & Culture",
       "resonant_news": [
         {
-          "id": "guardian-asia-4-5085",
-          "title": "Did Indonesia's vice-president just resign because he didn't have a high school diploma?",
-          "source": "The Guardian",
-          "link": "https://www.theguardian.com/world/2026/nov/13/indonesia-vice-president-diploma-resignation-explained",
-          "url": "https://www.theguardian.com/world/2026/nov/13/indonesia-vice-president-diploma-resignation-explained",
-          "relevance": 0.214,
-          "resonance_score": 0.214
-        },
-        {
-          "id": "npr-national-5-5071",
-          "title": "Hegseth awards medal to soldier who chastised him",
+          "id": "npr-national-2-4565",
+          "title": "Does Europe regret its bet on U.S. defense?",
           "source": "NPR News",
-          "link": "https://www.npr.org/2026/11/13/nx-s1-6039845/hegseth-awards-medal-to-soldier-who-chastised-him",
-          "url": "https://www.npr.org/2026/11/13/nx-s1-6039845/hegseth-awards-medal-to-soldier-who-chastised-him",
-          "relevance": 0.42,
-          "resonance_score": 0.42
+          "link": "https://www.npr.org/sections/planet-money/2026/11/13/nx-s1-6039196/does-europe-regret-its-bet-on-u-s-defense",
+          "url": "https://www.npr.org/sections/planet-money/2026/11/13/nx-s1-6039196/does-europe-regret-its-bet-on-u-s-defense",
+          "relevance": 0.418,
+          "resonance_score": 0.418
         },
         {
-          "id": "bbc-mideast-5-3198",
+          "id": "bbc-mideast-5-4752",
           "title": "US Treasury Secretary Scott Bessent relocated after alleged Iranian threats",
           "source": "BBC Middle East",
           "link": "https://www.bbc.co.uk/news/articles/cqr7gr0010r2o?at_medium=RSS&at_campaign=rss",
@@ -455,8 +454,31 @@
       ]
     },
     {
-      "id": "tp_svoy01Q_81E",
-      "title": "What Do Swing-State Voters Think About Foreign Policy?",
+      "id": "tp_cXyO17ARamY",
+      "title": "Powering America: Connecting Regions, Strengthening the Grid",
+      "podcast": "CSIS",
+      "channel": "CSIS",
+      "podcastLogo": "CSIS",
+      "tier": "standard",
+      "guest": "Powering America",
+      "topics": [
+        "Ideas & Culture"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning powering america: connecting regions, strengthening the grid.",
+      "imageUrl": "https://i.ytimg.com/vi/cXyO17ARamY/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/cXyO17ARamY/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=cXyO17ARamY",
+      "youtube_url": "https://www.youtube.com/watch?v=cXyO17ARamY",
+      "pubDate": "3h ago",
+      "date": "3h ago",
+      "duration": "22:52",
+      "views": "",
+      "category": "Ideas & Culture",
+      "resonant_news": []
+    },
+    {
+      "id": "tp__yxsHCdJ1Fw",
+      "title": "Swing-state Voters' Foreign Policy Preferences",
       "podcast": "CSIS",
       "channel": "CSIS",
       "podcastLogo": "CSIS",
@@ -465,102 +487,40 @@
       "topics": [
         "Ideas & Culture"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning what do swing.",
-      "imageUrl": "https://i.ytimg.com/vi/svoy01Q_81E/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/svoy01Q_81E/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=svoy01Q_81E",
-      "youtube_url": "https://www.youtube.com/watch?v=svoy01Q_81E",
-      "pubDate": "17h ago",
-      "date": "17h ago",
-      "duration": "36:59",
+      "theme": "Explores strategic perspectives and key developments concerning swing.",
+      "imageUrl": "https://i.ytimg.com/vi/_yxsHCdJ1Fw/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/_yxsHCdJ1Fw/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=_yxsHCdJ1Fw",
+      "youtube_url": "https://www.youtube.com/watch?v=_yxsHCdJ1Fw",
+      "pubDate": "4h ago",
+      "date": "4h ago",
+      "duration": "6:31",
       "views": "",
       "category": "Geopolitics & Policy",
       "resonant_news": []
     },
     {
-      "id": "tp_AK0LO77Xw18",
-      "title": "What's Powering the Russian War Machine? | The Trade Off",
+      "id": "tp_oAgByEkzBrE",
+      "title": "Are Climate Summits Getting the Job Done? | Energy Shots",
       "podcast": "CSIS",
       "channel": "CSIS",
       "podcastLogo": "CSIS",
       "tier": "standard",
       "guest": "",
       "topics": [
-        "Global Economy",
-        "Geopolitics"
+        "Ideas & Culture"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning what's powering the russian war machine?.",
-      "imageUrl": "https://i.ytimg.com/vi/AK0LO77Xw18/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/AK0LO77Xw18/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=AK0LO77Xw18",
-      "youtube_url": "https://www.youtube.com/watch?v=AK0LO77Xw18",
-      "pubDate": "21h ago",
-      "date": "21h ago",
-      "duration": "41:51",
+      "theme": "Explores strategic perspectives and key developments concerning are climate summits getting the job done?.",
+      "imageUrl": "https://i.ytimg.com/vi/oAgByEkzBrE/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/oAgByEkzBrE/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=oAgByEkzBrE",
+      "youtube_url": "https://www.youtube.com/watch?v=oAgByEkzBrE",
+      "pubDate": "5h ago",
+      "date": "5h ago",
+      "duration": "19:26",
       "views": "",
-      "category": "Business & Economy",
-      "resonant_news": [
-        {
-          "id": "the-hindu-5-8787",
-          "title": "Experts place emphasis on 'resilient blue economy'",
-          "source": "The Hindu",
-          "link": "https://www.thehindu.com/news/cities/Thiruvananthapuram/experts-place-emphasis-on-resilient-blue-economy/article71697883.ece",
-          "url": "https://www.thehindu.com/news/cities/Thiruvananthapuram/experts-place-emphasis-on-resilient-blue-economy/article71697883.ece",
-          "relevance": 0.152,
-          "resonance_score": 0.152
-        },
-        {
-          "id": "bbc-world-0-4784",
-          "title": "What we know about the global outage",
-          "source": "BBC News",
-          "link": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
-          "relevance": 0.155,
-          "resonance_score": 0.155
-        }
-      ]
-    },
-    {
-      "id": "tp_09_e7yI3Z7g",
-      "title": "AI and Economic Security | Betting on America",
-      "podcast": "CSIS",
-      "channel": "CSIS",
-      "podcastLogo": "CSIS",
-      "tier": "standard",
-      "guest": "",
-      "topics": [
-        "Artificial Intelligence"
-      ],
-      "theme": "Explores strategic perspectives and key developments concerning ai and economic security.",
-      "imageUrl": "https://i.ytimg.com/vi/09_e7yI3Z7g/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/09_e7yI3Z7g/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=09_e7yI3Z7g",
-      "youtube_url": "https://www.youtube.com/watch?v=09_e7yI3Z7g",
-      "pubDate": "",
-      "date": "",
-      "duration": "",
-      "views": "",
-      "category": "AI & Tech",
-      "resonant_news": [
-        {
-          "id": "scmp-asia-5-1144",
-          "title": "US-China AI safety talks face hurdle over how to define 'serious' incidents: analysts",
-          "source": "SCMP",
-          "link": "https://www.scmp.com/news/china/diplomacy/article/3374381/us-china-ai-safety-talks-face-hurdle-over-how-define-serious-incidents-analysts",
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3374381/us-china-ai-safety-talks-face-hurdle-over-how-define-serious-incidents-analysts",
-          "relevance": 0.447,
-          "resonance_score": 0.447
-        },
-        {
-          "id": "bbc-mideast-3-1508",
-          "title": "Two men guilty of spying for Iran over plan to target journalists and lawyer",
-          "source": "BBC Middle East",
-          "link": "https://www.bbc.co.uk/news/articles/ck9q8g8209l2o?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/ck9q8g8209l2o?at_medium=RSS&at_campaign=rss",
-          "relevance": 0.221,
-          "resonance_score": 0.221
-        }
-      ]
+      "category": "Geopolitics & Policy",
+      "resonant_news": []
     },
     {
       "id": "tp_n6bwbnhaV18",
@@ -578,8 +538,8 @@
       "thumbnail": "https://i.ytimg.com/vi/n6bwbnhaV18/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=n6bwbnhaV18",
       "youtube_url": "https://www.youtube.com/watch?v=n6bwbnhaV18",
-      "pubDate": "17 min ago",
-      "date": "17 min ago",
+      "pubDate": "6h ago",
+      "date": "6h ago",
       "duration": "31:27",
       "views": "",
       "category": "Ideas & Culture",
@@ -601,8 +561,8 @@
       "thumbnail": "https://i.ytimg.com/vi/5GD5627yu8U/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=5GD5627yu8U",
       "youtube_url": "https://www.youtube.com/watch?v=5GD5627yu8U",
-      "pubDate": "20h ago",
-      "date": "20h ago",
+      "pubDate": "1d ago",
+      "date": "1d ago",
       "duration": "35:22",
       "views": "",
       "category": "Ideas & Culture",
@@ -647,41 +607,23 @@
       "thumbnail": "https://i.ytimg.com/vi/Bpkl8PstNIE/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=Bpkl8PstNIE",
       "youtube_url": "https://www.youtube.com/watch?v=Bpkl8PstNIE",
-      "pubDate": "15h ago",
-      "date": "15h ago",
+      "pubDate": "21h ago",
+      "date": "21h ago",
       "duration": "32:18",
       "views": "",
       "category": "Geopolitics & Policy",
       "resonant_news": [
         {
-          "id": "bbc-mideast-0-7707",
-          "title": "UN watchdog 'increasingly concerned' over Iran nuclear site",
-          "source": "BBC Middle East",
-          "link": "https://www.bbc.co.uk/news/articles/cm75261e3pdko?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/cm75261e3pdko?at_medium=RSS&at_campaign=rss",
-          "relevance": 0.419,
-          "resonance_score": 0.419
-        },
-        {
-          "id": "france24-eu-3-5989",
-          "title": "Pro-Ukraine 'Coalition of the Willing' to hold Berlin summit on November 19",
+          "id": "france24-me-2-4995",
+          "title": "UN refugee chief Barham Salih slams 'shameful' war in Sudan, urges 'political solution'",
           "source": "France 24",
-          "link": "https://www.france24.com/en/europe/20261113-live-zelensky-and-kushner-confirm-that-europe-will-join-next-round-of-russia-ukraine-talks",
-          "url": "https://www.france24.com/en/europe/20261113-live-zelensky-and-kushner-confirm-that-europe-will-join-next-round-of-russia-ukraine-talks",
-          "relevance": 0.416,
-          "resonance_score": 0.416
+          "link": "https://www.france24.com/en/tv-shows/t%C3%AAte-%C3%A0-t%C3%AAte/20261113-un-refugee-chief-barham-salih-slams-shameful-war-in-sudan-urges-political-solution",
+          "url": "https://www.france24.com/en/tv-shows/t%C3%AAte-%C3%A0-t%C3%AAte/20261113-un-refugee-chief-barham-salih-slams-shameful-war-in-sudan-urges-political-solution",
+          "relevance": 0.414,
+          "resonance_score": 0.414
         },
         {
-          "id": "france24-eu-1-610",
-          "title": "US, Ukraine say Europe to join peace talks as Putin sticks to hardline stance",
-          "source": "France 24",
-          "link": "https://www.france24.com/en/video/20261113-us-ukraine-say-europe-to-join-peace-talks-as-putin-sticks-to-hardline-stance",
-          "url": "https://www.france24.com/en/video/20261113-us-ukraine-say-europe-to-join-peace-talks-as-putin-sticks-to-hardline-stance",
-          "relevance": 0.413,
-          "resonance_score": 0.413
-        },
-        {
-          "id": "nyt-asia-1-5146",
+          "id": "nyt-asia-1-9837",
           "title": "After Xi Purges China's Generals, a Military Inquisitor Rises",
           "source": "New York Times",
           "link": "https://www.nytimes.com/2026/11/13/world/asia/china-military-purge-zhang-shengmin-taiwan.html",
@@ -690,16 +632,7 @@
           "resonance_score": 0.417
         },
         {
-          "id": "france24-eu-2-7095",
-          "title": "Winter is coming: Putin seeks to 'hammer Ukrainians, their power grid, their water supplies'",
-          "source": "France 24",
-          "link": "https://www.france24.com/en/winter-is-coming-putin-seeks-to-hammer-ukrainians-their-power-grid-their-water-supplies",
-          "url": "https://www.france24.com/en/winter-is-coming-putin-seeks-to-hammer-ukrainians-their-power-grid-their-water-supplies",
-          "relevance": 0.412,
-          "resonance_score": 0.412
-        },
-        {
-          "id": "france24-me-1-6643",
+          "id": "france24-me-4-2729",
           "title": "'No war, no peace' situation between US and Iran 'cannot continue', Iraqi FM says",
           "source": "France 24",
           "link": "https://www.france24.com/en/tv-shows/t%C3%AAte-%C3%A0-t%C3%AAte/20261113-no-war-and-no-peace-between-the-us-and-iran-cannot-continue-iraqi-fm-says",
@@ -708,31 +641,49 @@
           "resonance_score": 0.433
         },
         {
-          "id": "aljazeera-1-5758",
-          "title": "Can Netanyahu launch a strike on Iran before he leaves?",
-          "source": "Al Jazeera",
-          "link": "https://www.aljazeera.com/news/2026/11/13/can-netanyahu-launch-a-strike-on-iran-before-he-leaves?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/11/13/can-netanyahu-launch-a-strike-on-iran-before-he-leaves?traffic_source=rss",
-          "relevance": 0.441,
-          "resonance_score": 0.441
+          "id": "france24-eu-3-6399",
+          "title": "As EU grapples with fierce AI competition, summit overshadowed by elusive Ukraine-Russia peace deal",
+          "source": "France 24",
+          "link": "https://www.france24.com/en/video/20261113-as-eu-grapples-with-fierce-ai-competition-summit-overshadowed-by-elusive-ukraine-russia-peace-deal-1",
+          "url": "https://www.france24.com/en/video/20261113-as-eu-grapples-with-fierce-ai-competition-summit-overshadowed-by-elusive-ukraine-russia-peace-deal-1",
+          "relevance": 0.415,
+          "resonance_score": 0.415
         },
         {
-          "id": "aljazeera-2-9359",
-          "title": "Ukraine claims record 3,000 Russian casualties in one day as war drags on",
-          "source": "Al Jazeera",
-          "link": "https://www.aljazeera.com/news/2026/11/13/russias-demands-come-from-different-reality-as-war-efforts-stagnates?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/11/13/russias-demands-come-from-different-reality-as-war-efforts-stagnates?traffic_source=rss",
+          "id": "nyt-world-4-7762",
+          "title": "Europe Agrees on a Team to Represent It in Talks With Russia",
+          "source": "New York Times",
+          "link": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
+          "url": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
           "relevance": 0.418,
           "resonance_score": 0.418
         },
         {
-          "id": "nyt-world-3-3995",
-          "title": "Europe Haggles Over Who Will Represent It in Talks With Russia",
-          "source": "New York Times",
-          "link": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
-          "url": "https://www.nytimes.com/2026/11/13/world/europe/europe-ukraine-talks-russia.html",
-          "relevance": 0.419,
-          "resonance_score": 0.419
+          "id": "france24-eu-1-4236",
+          "title": "Hurry up and wait: Europe wants a place at the table, 'must make up its mind' over Ukraine",
+          "source": "France 24",
+          "link": "https://www.france24.com/en/tv-shows/spotlight/20261113-hurry-up-and-wait-europe-wants-a-place-at-the-table-must-make-up-its-mind-over-ukraine",
+          "url": "https://www.france24.com/en/tv-shows/spotlight/20261113-hurry-up-and-wait-europe-wants-a-place-at-the-table-must-make-up-its-mind-over-ukraine",
+          "relevance": 0.412,
+          "resonance_score": 0.412
+        },
+        {
+          "id": "npr-national-0-3080",
+          "title": "What's Trump's strategy now with Iran? To keep things as they are",
+          "source": "NPR News",
+          "link": "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are",
+          "url": "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are",
+          "relevance": 0.433,
+          "resonance_score": 0.433
+        },
+        {
+          "id": "bbc-mideast-0-5817",
+          "title": "UN watchdog 'increasingly concerned' over uninspected Iran nuclear site",
+          "source": "BBC Middle East",
+          "link": "https://www.bbc.co.uk/news/articles/cm75261e3pdko?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/cm75261e3pdko?at_medium=RSS&at_campaign=rss",
+          "relevance": 0.418,
+          "resonance_score": 0.418
         }
       ]
     },
@@ -783,6 +734,52 @@
       "resonant_news": []
     },
     {
+      "id": "tp_VopdF7R7sec",
+      "title": "WATCH: Van Hollen discusses his bid to replace Schumer as Senate Democratic leader",
+      "podcast": "PBS NewsHour",
+      "channel": "PBS NewsHour",
+      "podcastLogo": "PBS",
+      "tier": "standard",
+      "guest": "WATCH",
+      "topics": [
+        "Ideas & Culture"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning watch: van hollen discusses his bid to replace schumer as senate democratic leader.",
+      "imageUrl": "https://i.ytimg.com/vi/VopdF7R7sec/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/VopdF7R7sec/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=VopdF7R7sec",
+      "youtube_url": "https://www.youtube.com/watch?v=VopdF7R7sec",
+      "pubDate": "1h ago",
+      "date": "1h ago",
+      "duration": "16:02",
+      "views": "",
+      "category": "Ideas & Culture",
+      "resonant_news": []
+    },
+    {
+      "id": "tp_oyum0B3XtMg",
+      "title": "Once a global leader in containing measles, U.S. now struggles with surge",
+      "podcast": "PBS NewsHour",
+      "channel": "PBS NewsHour",
+      "podcastLogo": "PBS",
+      "tier": "standard",
+      "guest": "",
+      "topics": [
+        "Artificial Intelligence"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning once a global leader in containing measles, u.s. now struggles with surge.",
+      "imageUrl": "https://i.ytimg.com/vi/oyum0B3XtMg/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/oyum0B3XtMg/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=oyum0B3XtMg",
+      "youtube_url": "https://www.youtube.com/watch?v=oyum0B3XtMg",
+      "pubDate": "",
+      "date": "",
+      "duration": "",
+      "views": "",
+      "category": "AI & Tech",
+      "resonant_news": []
+    },
+    {
       "id": "tp_RTgmjLhrXVM",
       "title": "PBS News Hour full episode, Nov. 12, 2026",
       "podcast": "PBS NewsHour",
@@ -798,71 +795,48 @@
       "thumbnail": "https://i.ytimg.com/vi/RTgmjLhrXVM/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=RTgmjLhrXVM",
       "youtube_url": "https://www.youtube.com/watch?v=RTgmjLhrXVM",
-      "pubDate": "14h ago",
-      "date": "14h ago",
+      "pubDate": "20h ago",
+      "date": "20h ago",
       "duration": "56:47",
       "views": "",
       "category": "Ideas & Culture",
       "resonant_news": []
     },
     {
-      "id": "tp_T_CdO91wShI",
-      "title": "A Brief But Spectacular take on finding purpose after military service",
-      "podcast": "PBS NewsHour",
-      "channel": "PBS NewsHour",
-      "podcastLogo": "PBS",
-      "tier": "standard",
-      "guest": "",
-      "topics": [
-        "Ideas & Culture"
-      ],
-      "theme": "Explores strategic perspectives and key developments concerning a brief but spectacular take on finding purpose after military service.",
-      "imageUrl": "https://i.ytimg.com/vi/T_CdO91wShI/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/T_CdO91wShI/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=T_CdO91wShI",
-      "youtube_url": "https://www.youtube.com/watch?v=T_CdO91wShI",
-      "pubDate": "14h ago",
-      "date": "14h ago",
-      "duration": "3:56",
-      "views": "",
-      "category": "Geopolitics & Policy",
-      "resonant_news": []
-    },
-    {
-      "id": "tp_8wTzRNKxirY",
-      "title": "A look inside Somalia, where USAID cuts have life-or-death consequences",
-      "podcast": "PBS NewsHour",
-      "channel": "PBS NewsHour",
-      "podcastLogo": "PBS",
-      "tier": "standard",
-      "guest": "",
-      "topics": [
-        "Artificial Intelligence"
-      ],
-      "theme": "Explores strategic perspectives and key developments concerning a look inside somalia, where usaid cuts have life.",
-      "imageUrl": "https://i.ytimg.com/vi/8wTzRNKxirY/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/8wTzRNKxirY/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=8wTzRNKxirY",
-      "youtube_url": "https://www.youtube.com/watch?v=8wTzRNKxirY",
-      "pubDate": "14h ago",
-      "date": "14h ago",
-      "duration": "10:23",
-      "views": "",
-      "category": "AI & Tech",
-      "resonant_news": []
-    },
-    {
-      "id": "tp_DW0C8vWNebI",
-      "title": "What Happens When Everyday Investors Buy the Dip? | WSJ’s Take On the Week",
+      "id": "tp_EAuYMXHQBoM",
+      "title": "Nvidia Built Its AI Empire on Jensen Huang. What Happens Without Him? | WSJ Tech News Briefing",
       "podcast": "WSJ Podcasts",
       "channel": "WSJ Podcasts",
       "podcastLogo": "WSJ",
       "tier": "flagship",
       "guest": "",
       "topics": [
-        "Ideas & Culture"
+        "Artificial Intelligence"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning what happens when everyday investors buy the dip?.",
+      "theme": "Explores strategic perspectives and key developments concerning nvidia built its ai empire on jensen huang. what happens without him?.",
+      "imageUrl": "https://i.ytimg.com/vi/EAuYMXHQBoM/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/EAuYMXHQBoM/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=EAuYMXHQBoM",
+      "youtube_url": "https://www.youtube.com/watch?v=EAuYMXHQBoM",
+      "pubDate": "2h ago",
+      "date": "2h ago",
+      "duration": "21:43",
+      "views": "",
+      "category": "AI & Tech",
+      "resonant_news": []
+    },
+    {
+      "id": "tp_DW0C8vWNebI",
+      "title": "Can Everyday Investors Beat the Pros in an AI Selloff? | WSJ’s Take On the Week",
+      "podcast": "WSJ Podcasts",
+      "channel": "WSJ Podcasts",
+      "podcastLogo": "WSJ",
+      "tier": "flagship",
+      "guest": "",
+      "topics": [
+        "Artificial Intelligence"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning can everyday investors beat the pros in an ai selloff?.",
       "imageUrl": "https://i.ytimg.com/vi/DW0C8vWNebI/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/DW0C8vWNebI/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=DW0C8vWNebI",
@@ -871,7 +845,7 @@
       "date": "5d ago",
       "duration": "28:07",
       "views": "",
-      "category": "Business & Economy",
+      "category": "AI & Tech",
       "resonant_news": []
     },
     {
@@ -893,29 +867,6 @@
       "pubDate": "7d ago",
       "date": "7d ago",
       "duration": "13:51",
-      "views": "",
-      "category": "Business & Economy",
-      "resonant_news": []
-    },
-    {
-      "id": "tp_91g4i01pPCA",
-      "title": "Why Apollo’s CEO is Betting Billions on a 'Global Industrial Renaissance' | WSJ Leadership Institute",
-      "podcast": "WSJ Podcasts",
-      "channel": "WSJ Podcasts",
-      "podcastLogo": "WSJ",
-      "tier": "flagship",
-      "guest": "",
-      "topics": [
-        "Artificial Intelligence"
-      ],
-      "theme": "Explores strategic perspectives and key developments concerning why apollo’s ceo is betting billions on a 'global industrial renaissance'.",
-      "imageUrl": "https://i.ytimg.com/vi/91g4i01pPCA/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/91g4i01pPCA/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=91g4i01pPCA",
-      "youtube_url": "https://www.youtube.com/watch?v=91g4i01pPCA",
-      "pubDate": "11d ago",
-      "date": "11d ago",
-      "duration": "26:50",
       "views": "",
       "category": "Business & Economy",
       "resonant_news": []

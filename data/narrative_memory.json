@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-13T14:48:28.448694+00:00",
+    "last_updated": "2026-11-13T21:12:56.210905+00:00",
     "arcs": [
         {
             "arc_id": "d9a388cf-db33-476b-8622-61bc79e2b246",
@@ -19,7 +19,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
             "chapter_count": 29,
             "chapter_titles": [
                 "Rubio Warned Officials About Nvidia Chief's Entanglement With Chinese Spy",
@@ -68,6 +68,1324 @@
             ]
         },
         {
+            "arc_id": "22b116c5-92b8-4e68-ad4b-70881f48fb82",
+            "title": "Israel strikes intensive care at Gaza's Nasser",
+            "keywords": [
+                "car",
+                "gaza",
+                "hospital",
+                "intensiv",
+                "israel",
+                "nasser",
+                "strik"
+            ],
+            "entity_signature": "IL:PS:conflict:health:il",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-12T02:43:04.013069+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 7,
+            "chapter_titles": [
+                "Israel strikes intensive care at Gaza's Nasser Hospital",
+                "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
+                "Israeli strike on Gaza hospital kills 11 in deadliest attack since election",
+                "Al Jazeera reports from Gaza hospital attacked by Israel",
+                "Israel kills six in Gaza hospital strike as 9-month-old baby freezes to death",
+                "Jerusalem Daily: Gaza's Nasser Hospital hit by Israeli air strike",
+                "Israeli strike on Gaza hospital kills six, including surgeon, medics say"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera",
+                "BBC Middle East",
+                "BBC News",
+                "France 24",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "055946cf-e72e-4210-94f0-acccc5483a63",
+            "title": "Seeking to Broaden Ukraine Talks, U.S. Urges",
+            "keywords": [
+                "broaden",
+                "europ",
+                "includ",
+                "russia",
+                "seek",
+                "talk",
+                "ukrain"
+            ],
+            "entity_signature": "EU:RU:UA:Donald:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-11T21:50:10.790348+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 4,
+            "chapter_titles": [
+                "Seeking to Broaden Ukraine Talks, U.S. Urges Russia to Include Europe",
+                "Zelensky and Kushner confirm that Europe will join next round of Russia-Ukraine talks",
+                "Europe should not walk into Russia's 'traps' on Ukraine talks, EU's foreign policy chief Kallas says – Europe live",
+                "Russia is 'setting traps' in Ukraine talks, EU foreign policy chief warns"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "France 24",
+                "New York Times",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "d3f5b709-6cc8-4e2a-9df8-e6c952f64b9b",
+            "title": "Zelensky warns Europe over US-Russia talks on",
+            "keywords": [
+                "arrange",
+                "broader",
+                "europ",
+                "russia",
+                "secur",
+                "talk",
+                "zelenski"
+            ],
+            "entity_signature": "EU:RU:UA:Volodymyr:Volodymyr Zelenskyy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-12T23:58:40.984736+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 4,
+            "chapter_titles": [
+                "Zelensky warns Europe over US-Russia talks on broader security arrangements",
+                "Europe Haggles Over Who Will Represent It in Talks With Russia",
+                "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
+                "Europe Agrees on a Team to Represent It in Talks With Russia"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe",
+                "France 24",
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "834a329b-bd75-482d-9647-1ded69b30d74",
+            "title": "The leader of a Kenyan doomsday cult is sentenced",
+            "keywords": [
+                "cult",
+                "doomsday",
+                "kenyan",
+                "leader",
+                "prison",
+                "sentenc"
+            ],
+            "entity_signature": "KE:200 years:children:civilians & impacted communities",
+            "category": "National",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-06T18:57:15.146358+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "The leader of a Kenyan doomsday cult is sentenced to 200 years in prison",
+                "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "b236a06c-cbb5-45c5-bb1a-363ba67cf193",
+            "title": "Former Hamas bodyguard guilty of UK knife attack",
+            "keywords": [
+                "attack",
+                "bodyguard",
+                "former",
+                "guilti",
+                "hama",
+                "knif"
+            ],
+            "entity_signature": "PS:UK:attack:collective_faction:conflict",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-13T14:48:28.112432+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Former Hamas bodyguard guilty of UK knife attack",
+                "Former Hamas bodyguard convicted of Birmingham knife crime also wanted in Germany"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC News",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "fb0b447e-08c5-4d40-ab8c-67d6fe4f5828",
+            "title": "Manipur violence probe panel gets sixth",
+            "keywords": [
+                "deadlin",
+                "extension",
+                "get",
+                "manipur",
+                "may",
+                "panel",
+                "prob",
+                "push",
+                "sixth",
+                "violenc"
+            ],
+            "entity_signature": "commission:india regional stakeholders:justice",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T14:48:28.112432+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Manipur violence probe panel gets sixth extension, deadline pushed to May 20, 2027",
+                "Manipur probe panel gets sixth extension; no sign of report yet"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times",
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "19349a1a-aa03-46b8-97cb-9f77de535888",
+            "title": "Collision of two trains in Egypt kills at least",
+            "keywords": [
+                "collision",
+                "egypt",
+                "kill",
+                "least",
+                "seven",
+                "train",
+                "two"
+            ],
+            "entity_signature": "EG:collision of two trains in egypt:eg:egypt",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Collision of two trains in Egypt kills at least seven"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "8eb9d0c6-f21b-4aa7-a8d0-56b8007bf94c",
+            "title": "Fourteen dead after truck loses control in",
+            "keywords": [
+                "control",
+                "crash",
+                "dead",
+                "fourteen",
+                "los",
+                "truck",
+                "uae",
+                "vehicl"
+            ],
+            "entity_signature": "control:economy:fourteen dead after truck",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-12T18:42:51.910075+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Fourteen dead after truck loses control in 23-vehicle crash in UAE"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "9595f55a-67f8-419c-93ef-07005d8805b2",
+            "title": "Two men guilty of spying for Iran over plan to",
+            "keywords": [
+                "guilti",
+                "iran",
+                "journalist",
+                "lawyer",
+                "men",
+                "plan",
+                "spy",
+                "target",
+                "two"
+            ],
+            "entity_signature": "IR:ir:iran:iran sovereign authorities",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-12T18:42:51.910075+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Two men guilty of spying for Iran over plan to target journalists and lawyer"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "f1a7abce-eb7a-48ae-b30a-9f7e506d49b0",
+            "title": "Egyptian journalist's retrial adjourned as UN",
+            "keywords": [
+                "adjourn",
+                "assault",
+                "egyptian",
+                "freedom",
+                "journalist",
+                "press",
+                "retrial"
+            ],
+            "entity_signature": "EG:eg:egypt:egypt sovereign authorities",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-12T18:42:51.910075+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Egyptian journalist's retrial adjourned as UN warns of 'assaults on press freedom'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "3818ed89-9b82-4a2a-9aaa-506e17548bf8",
+            "title": "'El Niño turned off the taps': factors behind",
+            "keywords": [
+                "behind",
+                "factor",
+                "indonesia",
+                "reveal",
+                "tap",
+                "turn",
+                "wildfir"
+            ],
+            "entity_signature": "ID:climate:factors behind indonesia's wildfires:id",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'El Niño turned off the taps': factors behind Indonesia's wildfires revealed"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "db0fb56e-55e7-445e-ae86-a566d21e0586",
+            "title": "North Korean hackers used fake video calls in",
+            "keywords": [
+                "400m",
+                "call",
+                "crypto",
+                "fak",
+                "fbi",
+                "hack",
+                "hacker",
+                "korean",
+                "north",
+                "used"
+            ],
+            "entity_signature": "KP:collective_faction:fbi:judicial & investigative bodies",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "North Korean hackers used fake video calls in $400m crypto hack, says FBI"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "3a85fcef-f456-4cad-b3cd-5e8bd3acd759",
+            "title": "Sensex, Nifty open negative after gains as",
+            "keywords": [
+                "gain",
+                "market",
+                "negativ",
+                "nifti",
+                "open",
+                "recover",
+                "sensex",
+                "slump"
+            ],
+            "entity_signature": "india regional stakeholders:negative:open",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Sensex, Nifty open negative after gains as markets recover from 2-year slump"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "a3194699-a203-4d8a-875e-cc59a0e25f23",
+            "title": "Tea industry bodies back proposed MSP to offset",
+            "keywords": [
+                "back",
+                "bodi",
+                "cost",
+                "industri",
+                "msp",
+                "offset",
+                "propos",
+                "ris",
+                "tea"
+            ],
+            "entity_signature": "back:india regional stakeholders:proposed msp",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Tea industry bodies back proposed MSP to offset rising costs"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "afaffd29-9a58-4489-803d-70040aa4fd90",
+            "title": "Australian cricket's sandpapergate is back - and",
+            "keywords": [
+                "australian",
+                "back",
+                "cricket",
+                "cut",
+                "deep",
+                "good",
+                "nation",
+                "sandpapergat",
+                "sport"
+            ],
+            "entity_signature": "AU:- and it cuts deep:au:australia",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-13T14:48:28.112432+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Australian cricket's sandpapergate is back - and it cuts deep in a 'nation of good sports'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "3caa0b20-6f6b-4f2b-a9d4-14d45ac0c661",
+            "title": "Boy died from multiple injuries in Cyprus hotel",
+            "keywords": [
+                "boy",
+                "cypru",
+                "died",
+                "fall",
+                "hotel",
+                "injuri",
+                "multipl"
+            ],
+            "entity_signature": "boy:died:europe regional stakeholders",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-13T14:48:28.112432+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Boy died from multiple injuries in Cyprus hotel fall"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "dbca582e-5a04-471e-8818-f6e33fd56a77",
+            "title": "The truth about Douma: How Syria covered up a",
+            "keywords": [
+                "attack",
+                "chemical",
+                "cover",
+                "douma",
+                "syria",
+                "truth"
+            ],
+            "entity_signature": "SY:attack:conflict:how syria covered up a chemical",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-13T14:48:28.112432+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "The truth about Douma: How Syria covered up a chemical attack"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "c83256ef-e219-4395-b5e9-efb7b8a6dea8",
+            "title": "'No war, no peace' situation between US and Iran",
+            "keywords": [
+                "continu",
+                "iran",
+                "iraqi",
+                "peac",
+                "situa",
+                "war"
+            ],
+            "entity_signature": "FR:IR:US:conflict:diplomacy",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-13T14:48:28.112432+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'No war, no peace' situation between US and Iran 'cannot continue', Iraqi FM says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "c8481b19-b058-43db-9812-713729dea853",
+            "title": "Fiscal discipline has cut cost of capital to",
+            "keywords": [
+                "bank",
+                "build",
+                "busi",
+                "capital",
+                "cost",
+                "cut",
+                "disciplin",
+                "fiscal",
+                "htl",
+                "job"
+            ],
+            "entity_signature": "IN:cost of capital:cut:economics",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T14:48:28.112432+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Fiscal discipline has cut cost of capital to build businesses, jobs: World Bank's Neelkanth Mishra | HTLS 2026"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "78ca2c83-7a39-4c8b-95a3-c15fe42b55de",
+            "title": "Supreme Court will weigh Trump's asylum",
+            "keywords": [
+                "asylum",
+                "border",
+                "court",
+                "mexico",
+                "restric",
+                "suprem",
+                "trump",
+                "weigh"
+            ],
+            "entity_signature": "MX:US:Donald:Donald Trump:governance",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Supreme Court will weigh Trump's asylum restrictions at US-Mexico border"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "30c20b89-d1ab-46e4-95b3-d438a9e97fd7",
+            "title": "US Air Force says it responded to 'suspected",
+            "keywords": [
+                "air",
+                "dron",
+                "forc",
+                "lakenheath",
+                "raf",
+                "respond",
+                "suspect"
+            ],
+            "entity_signature": "US:air force:collective_faction:geopolitics",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US Air Force says it responded to 'suspected drones' over RAF Lakenheath"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "df6b2926-58c9-4b7c-bd33-d715d19c35e3",
+            "title": "Mexico's Sheinbaum says migrant caravan not",
+            "keywords": [
+                "caravan",
+                "mexico",
+                "migrant",
+                "mov",
+                "now",
+                "sheinbaum",
+                "tariff",
+                "threaten",
+                "toward",
+                "trump"
+            ],
+            "entity_signature": "MX:US:Donald:Donald Trump:civilians & impacted communities",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Mexico's Sheinbaum says migrant caravan not moving toward US now as Trump threatens tariffs"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "9394b76a-bf68-443a-b97e-e7c69b727586",
+            "title": "Microsoft 'deeply sorry' for global outage, says",
+            "keywords": [
+                "agent",
+                "ai",
+                "caus",
+                "cyber",
+                "deepli",
+                "global",
+                "issu",
+                "microsoft",
+                "outag",
+                "sorri"
+            ],
+            "entity_signature": "asia-pacific regional stakeholders:microsoft:microsoft 'deeply sorry' for global outage, says issue not caused by cyber or ai agents",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Microsoft 'deeply sorry' for global outage, says issue not caused by cyber or AI agents"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "ec30ef0a-5058-472a-8150-c62339dbbee1",
+            "title": "US-China Board of Trade holds first meeting days",
+            "keywords": [
+                "board",
+                "china",
+                "first",
+                "hold",
+                "meet",
+                "summit",
+                "trad",
+                "trump"
+            ],
+            "entity_signature": "CN:US:Donald:Donald Trump:china",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US-China Board of Trade holds first meeting days before Trump-Xi summit"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "66eab4b2-7c7e-47cf-9b3a-b7f057202281",
+            "title": "At least 24 killed after bus collides with truck",
+            "keywords": [
+                "bus",
+                "collid",
+                "east",
+                "india",
+                "kill",
+                "least",
+                "north",
+                "truck"
+            ],
+            "entity_signature": "IN:at least 24:in:india",
+            "category": "World",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "At least 24 killed after bus collides with truck in north-east India"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "c2bc99d0-29bf-46bc-8ac1-bfd0c7042c4a",
+            "title": "Rosenberg: Uncompromising Putin ups demands for",
+            "keywords": [
+                "demand",
+                "peac",
+                "putin",
+                "rosenberg",
+                "ukrain",
+                "uncompromis",
+                "ups"
+            ],
+            "entity_signature": "EU:RU:UA:Putin:Vladimir",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Rosenberg: Uncompromising Putin ups demands for peace with Ukraine"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "bbc708d8-6862-48e9-afde-eaa00714f797",
+            "title": "Aide to fugitive Ukrainian ex-PM wounded in",
+            "keywords": [
+                "aid",
+                "bomb",
+                "car",
+                "fugitiv",
+                "latest",
+                "moscow",
+                "ukrainian",
+                "wound"
+            ],
+            "entity_signature": "RU:UA:aide to fugitive ukrainian ex-pm wounded in latest moscow car:bombing:ru",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Aide to fugitive Ukrainian ex-PM wounded in latest Moscow car bombing"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "db0f7eeb-f239-4745-b2aa-33d5aaa27d65",
+            "title": "UK-EU deal will 'dissolve' £60m a year of costs",
+            "keywords": [
+                "60m",
+                "angela",
+                "cost",
+                "deal",
+                "dissolv",
+                "eagl",
+                "plant",
+                "trad"
+            ],
+            "entity_signature": "EU:UK:diplomacy:economics:economy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "UK-EU deal will 'dissolve' £60m a year of costs for plant trade, says Angela Eagle"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "5ccb7ee4-94d8-4e8a-b544-4a9884f97663",
+            "title": "November 13 Paris attacks: Eleven years later",
+            "keywords": [
+                "attack",
+                "eleven",
+                "franc",
+                "later",
+                "november",
+                "pari",
+                "pay",
+                "tribut",
+                "victim"
+            ],
+            "entity_signature": "FR:attacks:civilians & impacted communities:civilians & impacted communities (families)",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "November 13 Paris attacks: Eleven years later, France pays tribute to victims"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "7c53e9a0-04b5-47a5-b792-80dedd097449",
+            "title": "Turkey and Qatar pledge unified stance against",
+            "keywords": [
+                "attack",
+                "defenc",
+                "mutual",
+                "pact",
+                "pledg",
+                "qatar",
+                "stanc",
+                "turkey",
+                "unifi"
+            ],
+            "entity_signature": "TR:conflict:diplomacy:pledge",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Turkey and Qatar pledge unified stance against attacks in mutual defence pact"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "fa54243b-1440-4432-939f-be117e98a437",
+            "title": "UN refugee chief Barham Salih slams 'shameful'",
+            "keywords": [
+                "barham",
+                "chief",
+                "political",
+                "refugee",
+                "salih",
+                "shameful",
+                "slam",
+                "solu",
+                "sudan",
+                "war"
+            ],
+            "entity_signature": "FR:civilians & impacted communities:civilians & impacted communities (refugee):conflict",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "UN refugee chief Barham Salih slams 'shameful' war in Sudan, urges 'political solution'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "1fa768c5-8de2-4089-afef-b83d99115c57",
+            "title": "Paraguay's ex-president Pena faces new charge",
+            "keywords": [
+                "bank",
+                "charg",
+                "collaps",
+                "fac",
+                "new",
+                "paraguay",
+                "pena",
+                "president",
+                "ueno"
+            ],
+            "entity_signature": "crisis:faces:middle east regional stakeholders",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Paraguay's ex-president Pena faces new charge over Ueno bank collapse"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "f4989d55-618c-43d5-91e8-ad56c6f0a920",
+            "title": "Microsoft says services still returning amid",
+            "keywords": [
+                "amid",
+                "microsoft",
+                "outag",
+                "return",
+                "servic",
+                "still",
+                "widespread"
+            ],
+            "entity_signature": "microsoft:microsoft says services still returning amid widespread outage:middle east regional stakeholders",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Microsoft says services still returning amid widespread outage"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "c852db7b-342d-437e-bdec-0536b5913f80",
+            "title": "Here's how you can save on your GTA VI preorder",
+            "keywords": [
+                "ahead",
+                "gta",
+                "launch",
+                "preorder",
+                "sav"
+            ],
+            "entity_signature": "here's how you can save on your gta vi preorder ahead of:launch:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Here's how you can save on your GTA VI preorder ahead of launch"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "8a4eb6a3-d486-4173-9595-2c83c986be37",
+            "title": "Export-banned Nvidia chips are behind China's",
+            "keywords": [
+                "ai",
+                "bann",
+                "behind",
+                "china",
+                "chip",
+                "export",
+                "jensen",
+                "model",
+                "nvidia",
+                "powerful"
+            ],
+            "entity_signature": "CN:banned:china:cn",
+            "category": "Tech",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Export-banned Nvidia chips are behind China's most powerful AI models — uh oh, Jensen!"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "06640f1e-472e-4490-9f5a-86c836d92f39",
+            "title": "How Sen. Chris Van Hollen plans to flex",
+            "keywords": [
+                "aid",
+                "chri",
+                "democratic",
+                "flex",
+                "foreign",
+                "front",
+                "hollen",
+                "plan",
+                "power",
+                "sen"
+            ],
+            "entity_signature": "congress:how sen. chris van hollen plans to flex democratic power on the foreign aid front:north america regional stakeholders",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "How Sen. Chris Van Hollen plans to flex Democratic power on the foreign aid front"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "28a7bdcb-be9a-49b1-8132-5853cc2e2a5c",
+            "title": "Wall Street Loses a Powerful Dealmaker After",
+            "keywords": [
+                "ceo",
+                "dealmaker",
+                "los",
+                "nvidia",
+                "oust",
+                "powerful",
+                "street",
+                "wall"
+            ],
+            "entity_signature": "loses:north america regional stakeholders:nvidia",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Wall Street Loses a Powerful Dealmaker After Nvidia's CEO Is Ousted"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "100b6266-a6ac-4309-ba26-1490962b3082",
+            "title": "Comply with new prices of 137 anti-cancer drugs",
+            "keywords": [
+                "action",
+                "anti",
+                "cancer",
+                "compli",
+                "drug",
+                "fac",
+                "new",
+                "pric",
+                "regulator"
+            ],
+            "entity_signature": "action, says regulator:comply with new prices of 137 anti-cancer drugs or:face",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Comply with new prices of 137 anti-cancer drugs or face action, says regulator"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "a735a70c-6b02-49d4-a7ad-78340f13c38a",
+            "title": "President, PM condole Assam accident; Modi",
+            "keywords": [
+                "accident",
+                "assam",
+                "condol",
+                "deceas",
+                "gratia",
+                "lakh",
+                "modi",
+                "president"
+            ],
+            "entity_signature": "Modi:Narendra:announces:india regional stakeholders:leader",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "President, PM condole Assam accident; Modi announces ₹2 lakh ex-gratia for each deceased"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "d7afc37a-2504-4750-9c08-66caa5f38144",
+            "title": "Navy chief urges Agniveers to aim for full-term",
+            "keywords": [
+                "agniveer",
+                "aim",
+                "chief",
+                "full",
+                "navi",
+                "servic",
+                "term"
+            ],
+            "entity_signature": "agniveers:collective_faction:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Navy chief urges Agniveers to aim for full-term service"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "bdb279fe-08df-4996-936f-d82c94a26b6f",
+            "title": "Faridabad: Cop's son fires gunshots in road rage",
+            "keywords": [
+                "cop",
+                "faridabad",
+                "fir",
+                "gunshot",
+                "injur",
+                "rag",
+                "road",
+                "son",
+                "two"
+            ],
+            "entity_signature": "cop's son:fires:gunshots",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Faridabad: Cop's son fires gunshots in road rage; two injured"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "a74c419c-dd3b-40a7-b72c-480cd2772185",
+            "title": "Two Tamil Nadu traders arrested over alleged",
+            "keywords": [
+                "alleg",
+                "arrest",
+                "diversion",
+                "ghee",
+                "litr",
+                "nadu",
+                "sabarimala",
+                "tamil",
+                "trader",
+                "two"
+            ],
+            "entity_signature": "alleged diversion of 11,000 litres of sabarimala ghee:arrested:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Two Tamil Nadu traders arrested over alleged diversion of 11,000 litres of Sabarimala ghee"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "6d6c4f86-77bb-4895-9f10-11ecaa63b190",
+            "title": "Man held for setting house on fire in Vellore",
+            "keywords": [
+                "fir",
+                "held",
+                "hous",
+                "man",
+                "sett",
+                "vellor"
+            ],
+            "entity_signature": "fire:india regional stakeholders:man held for setting house on",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-13T21:12:55.958965+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Man held for setting house on fire in Vellore"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
             "arc_id": "273f7067-b376-49c3-b08c-9c6c03db4a1e",
             "title": "Hundreds of Italian schools hit by threats in",
             "keywords": [
@@ -108,45 +1426,6 @@
             ]
         },
         {
-            "arc_id": "22b116c5-92b8-4e68-ad4b-70881f48fb82",
-            "title": "Israel strikes intensive care at Gaza's Nasser",
-            "keywords": [
-                "car",
-                "gaza",
-                "hospital",
-                "intensiv",
-                "israel",
-                "nasser",
-                "strik"
-            ],
-            "entity_signature": "IL:PS:conflict:health:il",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T02:43:04.013069+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 7,
-            "chapter_titles": [
-                "Israel strikes intensive care at Gaza's Nasser Hospital",
-                "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
-                "Israeli strike on Gaza hospital kills 11 in deadliest attack since election",
-                "Al Jazeera reports from Gaza hospital attacked by Israel",
-                "Israel kills six in Gaza hospital strike as 9-month-old baby freezes to death",
-                "Jerusalem Daily: Gaza's Nasser Hospital hit by Israeli air strike",
-                "Israeli strike on Gaza hospital kills six, including surgeon, medics say"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera",
-                "BBC Middle East",
-                "BBC News",
-                "France 24",
-                "SCMP"
-            ]
-        },
-        {
             "arc_id": "4c0e4d6b-7419-4bfb-8f8e-8905b4406bd8",
             "title": "US envoys head to meet Zelensky after talks with",
             "keywords": [
@@ -183,70 +1462,6 @@
             ]
         },
         {
-            "arc_id": "055946cf-e72e-4210-94f0-acccc5483a63",
-            "title": "Seeking to Broaden Ukraine Talks, U.S. Urges",
-            "keywords": [
-                "broaden",
-                "europ",
-                "includ",
-                "russia",
-                "seek",
-                "talk",
-                "ukrain"
-            ],
-            "entity_signature": "EU:RU:UA:Donald:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-11T21:50:10.790348+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "Seeking to Broaden Ukraine Talks, U.S. Urges Russia to Include Europe",
-                "Zelensky and Kushner confirm that Europe will join next round of Russia-Ukraine talks",
-                "Europe should not walk into Russia's 'traps' on Ukraine talks, EU's foreign policy chief Kallas says – Europe live",
-                "Russia is 'setting traps' in Ukraine talks, EU foreign policy chief warns"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "France 24",
-                "New York Times",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "834a329b-bd75-482d-9647-1ded69b30d74",
-            "title": "The leader of a Kenyan doomsday cult is sentenced",
-            "keywords": [
-                "cult",
-                "doomsday",
-                "kenyan",
-                "leader",
-                "prison",
-                "sentenc"
-            ],
-            "entity_signature": "KE:200 years:children:civilians & impacted communities",
-            "category": "National",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "The leader of a Kenyan doomsday cult is sentenced to 200 years in prison",
-                "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News",
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "4cae0156-ad5b-45a3-968c-034340428a05",
             "title": "In reversal, American Cancer Society urges",
             "keywords": [
@@ -274,66 +1489,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Ars Technica"
-            ]
-        },
-        {
-            "arc_id": "d3f5b709-6cc8-4e2a-9df8-e6c952f64b9b",
-            "title": "Zelensky warns Europe over US-Russia talks on",
-            "keywords": [
-                "arrange",
-                "broader",
-                "europ",
-                "russia",
-                "secur",
-                "talk",
-                "zelenski"
-            ],
-            "entity_signature": "EU:RU:UA:Volodymyr:Volodymyr Zelenskyy",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Zelensky warns Europe over US-Russia talks on broader security arrangements",
-                "Europe Haggles Over Who Will Represent It in Talks With Russia"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24",
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "19349a1a-aa03-46b8-97cb-9f77de535888",
-            "title": "Collision of two trains in Egypt kills at least",
-            "keywords": [
-                "collision",
-                "egypt",
-                "kill",
-                "least",
-                "seven",
-                "train",
-                "two"
-            ],
-            "entity_signature": "EG:collision of two trains in egypt:eg:egypt",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Collision of two trains in Egypt kills at least seven"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
             ]
         },
         {
@@ -399,36 +1554,6 @@
             ]
         },
         {
-            "arc_id": "8eb9d0c6-f21b-4aa7-a8d0-56b8007bf94c",
-            "title": "Fourteen dead after truck loses control in",
-            "keywords": [
-                "control",
-                "crash",
-                "dead",
-                "fourteen",
-                "los",
-                "truck",
-                "uae",
-                "vehicl"
-            ],
-            "entity_signature": "control:economy:fourteen dead after truck",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Fourteen dead after truck loses control in 23-vehicle crash in UAE"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
             "arc_id": "08d874b1-7908-43b1-83fd-ff5fc223b26d",
             "title": "How FRANCE 24 traced Tehran-backed Afghan",
             "keywords": [
@@ -457,66 +1582,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "France 24"
-            ]
-        },
-        {
-            "arc_id": "9595f55a-67f8-419c-93ef-07005d8805b2",
-            "title": "Two men guilty of spying for Iran over plan to",
-            "keywords": [
-                "guilti",
-                "iran",
-                "journalist",
-                "lawyer",
-                "men",
-                "plan",
-                "spy",
-                "target",
-                "two"
-            ],
-            "entity_signature": "IR:ir:iran:iran sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Two men guilty of spying for Iran over plan to target journalists and lawyer"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "f1a7abce-eb7a-48ae-b30a-9f7e506d49b0",
-            "title": "Egyptian journalist's retrial adjourned as UN",
-            "keywords": [
-                "adjourn",
-                "assault",
-                "egyptian",
-                "freedom",
-                "journalist",
-                "press",
-                "retrial"
-            ],
-            "entity_signature": "EG:eg:egypt:egypt sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Egyptian journalist's retrial adjourned as UN warns of 'assaults on press freedom'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
             ]
         },
         {
@@ -611,128 +1676,6 @@
             ]
         },
         {
-            "arc_id": "3818ed89-9b82-4a2a-9aaa-506e17548bf8",
-            "title": "'El Niño turned off the taps': factors behind",
-            "keywords": [
-                "behind",
-                "factor",
-                "indonesia",
-                "reveal",
-                "tap",
-                "turn",
-                "wildfir"
-            ],
-            "entity_signature": "ID:climate:factors behind indonesia's wildfires:id",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-13T06:22:46.319925+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'El Niño turned off the taps': factors behind Indonesia's wildfires revealed"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "db0fb56e-55e7-445e-ae86-a566d21e0586",
-            "title": "North Korean hackers used fake video calls in",
-            "keywords": [
-                "400m",
-                "call",
-                "crypto",
-                "fak",
-                "fbi",
-                "hack",
-                "hacker",
-                "korean",
-                "north",
-                "used"
-            ],
-            "entity_signature": "KP:collective_faction:fbi:judicial & investigative bodies",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-13T06:22:46.319925+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "North Korean hackers used fake video calls in $400m crypto hack, says FBI"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "3a85fcef-f456-4cad-b3cd-5e8bd3acd759",
-            "title": "Sensex, Nifty open negative after gains as",
-            "keywords": [
-                "gain",
-                "market",
-                "negativ",
-                "nifti",
-                "open",
-                "recover",
-                "sensex",
-                "slump"
-            ],
-            "entity_signature": "india regional stakeholders:negative:open",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-13T06:22:46.319925+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Sensex, Nifty open negative after gains as markets recover from 2-year slump"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "a3194699-a203-4d8a-875e-cc59a0e25f23",
-            "title": "Tea industry bodies back proposed MSP to offset",
-            "keywords": [
-                "back",
-                "bodi",
-                "cost",
-                "industri",
-                "msp",
-                "offset",
-                "propos",
-                "ris",
-                "tea"
-            ],
-            "entity_signature": "back:india regional stakeholders:proposed msp",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-13T06:22:46.319925+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Tea industry bodies back proposed MSP to offset rising costs"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
             "arc_id": "aa311cdf-ed34-46fd-8e35-495b5afc937e",
             "title": "Democrats launch Nvidia investigation, write",
             "keywords": [
@@ -762,34 +1705,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "b236a06c-cbb5-45c5-bb1a-363ba67cf193",
-            "title": "Former Hamas bodyguard guilty of UK knife attack",
-            "keywords": [
-                "attack",
-                "bodyguard",
-                "former",
-                "guilti",
-                "hama",
-                "knif"
-            ],
-            "entity_signature": "PS:UK:attack:collective_faction:conflict",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-13T14:48:28.112432+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Former Hamas bodyguard guilty of UK knife attack"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC News"
             ]
         },
         {
@@ -850,37 +1765,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "afaffd29-9a58-4489-803d-70040aa4fd90",
-            "title": "Australian cricket's sandpapergate is back - and",
-            "keywords": [
-                "australian",
-                "back",
-                "cricket",
-                "cut",
-                "deep",
-                "good",
-                "nation",
-                "sandpapergat",
-                "sport"
-            ],
-            "entity_signature": "AU:- and it cuts deep:au:australia",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-13T14:48:28.112432+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Australian cricket's sandpapergate is back - and it cuts deep in a 'nation of good sports'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
             ]
         },
         {
@@ -1068,35 +1952,6 @@
             ]
         },
         {
-            "arc_id": "3caa0b20-6f6b-4f2b-a9d4-14d45ac0c661",
-            "title": "Boy died from multiple injuries in Cyprus hotel",
-            "keywords": [
-                "boy",
-                "cypru",
-                "died",
-                "fall",
-                "hotel",
-                "injuri",
-                "multipl"
-            ],
-            "entity_signature": "boy:died:europe regional stakeholders",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-13T14:48:28.112432+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Boy died from multiple injuries in Cyprus hotel fall"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
             "arc_id": "baa171cb-0639-4b25-8299-fba211c2ce3d",
             "title": "Winter is coming: Putin seeks to 'hammer",
             "keywords": [
@@ -1159,34 +2014,6 @@
             ]
         },
         {
-            "arc_id": "dbca582e-5a04-471e-8818-f6e33fd56a77",
-            "title": "The truth about Douma: How Syria covered up a",
-            "keywords": [
-                "attack",
-                "chemical",
-                "cover",
-                "douma",
-                "syria",
-                "truth"
-            ],
-            "entity_signature": "SY:attack:conflict:how syria covered up a chemical",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-13T14:48:28.112432+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "The truth about Douma: How Syria covered up a chemical attack"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
             "arc_id": "579bf168-11dc-4531-addf-95c084d201d5",
             "title": "Can Netanyahu launch a strike on Iran before he",
             "keywords": [
@@ -1211,34 +2038,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "c83256ef-e219-4395-b5e9-efb7b8a6dea8",
-            "title": "'No war, no peace' situation between US and Iran",
-            "keywords": [
-                "continu",
-                "iran",
-                "iraqi",
-                "peac",
-                "situa",
-                "war"
-            ],
-            "entity_signature": "FR:IR:US:conflict:diplomacy",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-13T14:48:28.112432+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'No war, no peace' situation between US and Iran 'cannot continue', Iraqi FM says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
             ]
         },
         {
@@ -1449,38 +2248,6 @@
             ]
         },
         {
-            "arc_id": "c8481b19-b058-43db-9812-713729dea853",
-            "title": "Fiscal discipline has cut cost of capital to",
-            "keywords": [
-                "bank",
-                "build",
-                "busi",
-                "capital",
-                "cost",
-                "cut",
-                "disciplin",
-                "fiscal",
-                "htl",
-                "job"
-            ],
-            "entity_signature": "IN:cost of capital:cut:economics",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-13T14:48:28.112432+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Fiscal discipline has cut cost of capital to build businesses, jobs: World Bank's Neelkanth Mishra | HTLS 2026"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
             "arc_id": "4949dffc-3600-4d8b-99c7-889f29004a33",
             "title": "CCPA fines Ola ₹10 lakh for pre-ride tips, calls",
             "keywords": [
@@ -1537,38 +2304,6 @@
             "chapter_count": 1,
             "chapter_titles": [
                 "Samajwadi Party chief Akhilesh Yadav hints at Ram Temple visit, says 'Brahmins' consulted on date"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "fb0b447e-08c5-4d40-ab8c-67d6fe4f5828",
-            "title": "Manipur violence probe panel gets sixth",
-            "keywords": [
-                "deadlin",
-                "extension",
-                "get",
-                "manipur",
-                "may",
-                "panel",
-                "prob",
-                "push",
-                "sixth",
-                "violenc"
-            ],
-            "entity_signature": "commission:india regional stakeholders:justice",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-13T14:48:28.112432+00:00",
-            "last_seen": "2026-11-13T14:48:28.112432+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Manipur violence probe panel gets sixth extension, deadline pushed to May 20, 2027"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
@@ -2353,753 +3088,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "e5a1bf15-afe9-40b8-ac2f-2c45fbf3a90e",
-            "title": "Odisha faces questions over reservoir management",
-            "keywords": [
-                "arnab",
-                "batter",
-                "cyclon",
-                "district",
-                "fac",
-                "ganjam",
-                "manage",
-                "odisha",
-                "ques",
-                "reservoir"
-            ],
-            "entity_signature": "faces:india regional stakeholders:odisha",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-13T06:22:46.319925+00:00",
-            "last_seen": "2026-11-13T06:22:46.319925+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Odisha faces questions over reservoir management weeks after Cyclone Arnab batters Ganjam district"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "2cb63f38-aa6b-4c11-ad02-dddd8b2c3f77",
-            "title": "Delhi defence firm founder receives ₹5 crore",
-            "keywords": [
-                "complaint",
-                "cror",
-                "death",
-                "defenc",
-                "delhi",
-                "demand",
-                "fil",
-                "firm",
-                "founder",
-                "gang"
-            ],
-            "entity_signature": "and death threat:delhi defence firm founder receives ₹5 crore:demand",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-13T06:22:46.319925+00:00",
-            "last_seen": "2026-11-13T06:22:46.319925+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Delhi defence firm founder receives ₹5 crore demand and death threat from Rohit Godara gang, complaint filed"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "bbfce9f3-904d-4e52-99bd-1e6618c6044d",
-            "title": "How a mason's son from Erode won a Medal of",
-            "keywords": [
-                "erod",
-                "excellenc",
-                "mason",
-                "medal",
-                "son",
-                "won",
-                "worldskill"
-            ],
-            "entity_signature": "CN:china:china sovereign authorities:cn",
-            "category": "National",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-13T06:22:46.319925+00:00",
-            "last_seen": "2026-11-13T06:22:46.319925+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "How a mason's son from Erode won a Medal of Excellence at WorldSkills 2026"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "e9965947-73c0-4960-b2c2-0b8498185ac7",
-            "title": "Ankita Bhandari's family should reject govt aid",
-            "keywords": [
-                "aid",
-                "ankita",
-                "bhandari",
-                "bjp",
-                "famili",
-                "govt",
-                "justic",
-                "mla",
-                "reject",
-                "seek"
-            ],
-            "entity_signature": "ankita bhandari's family should:congress:govt aid if they seeking only justice",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-13T06:22:46.319925+00:00",
-            "last_seen": "2026-11-13T06:22:46.319925+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Ankita Bhandari's family should reject govt aid if they seeking only justice: BJP MLA"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "410a14f8-691a-4dc2-bc2d-7789852e746b",
-            "title": "Suspect shoots himself after killing 1 and",
-            "keywords": [
-                "kill",
-                "shoot",
-                "suspect",
-                "washington",
-                "wound"
-            ],
-            "entity_signature": "US:himself:judicial & investigative bodies:judicial & investigative bodies (police)",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Suspect shoots himself after killing 1 and wounding 4 in Washington",
-                "Suspect turns gun on himself after deadly shooting in Washington DC",
-                "Deadly shooting in Washington DC"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Al Jazeera",
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "5dfaa3c5-36fe-4caf-ae4a-2479a337feaa",
-            "title": "Malaysia's disgraced former PM leaves jail for",
-            "keywords": [
-                "arrest",
-                "disgrac",
-                "embezzl",
-                "former",
-                "hous",
-                "jail",
-                "leav",
-                "malaysia",
-                "million"
-            ],
-            "entity_signature": "MY:arrest:justice:malaysia",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-10T19:23:38.577633+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Malaysia's disgraced former PM leaves jail for house arrest after embezzling millions"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "2250be2e-9129-4558-83ca-d4b9ed8ed83b",
-            "title": "The planet 'is being killed', Greta Thunberg",
-            "keywords": [
-                "climat",
-                "cop31",
-                "greta",
-                "kill",
-                "planet",
-                "summit",
-                "thunberg"
-            ],
-            "entity_signature": "SE:, greta thunberg tells cop31 climate summit:activist:civic activists / protesters",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "The planet 'is being killed', Greta Thunberg tells Cop31 climate summit"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "4bd9a8d4-8383-48c7-8042-5141bccdc5be",
-            "title": "Trump won't save Ukraine. But Marine Le Pen's",
-            "keywords": [
-                "betrayal",
-                "marin",
-                "mujtaba",
-                "pen",
-                "rahman",
-                "sav",
-                "trump",
-                "ukrain",
-                "won",
-                "wors"
-            ],
-            "entity_signature": "EU:FR:UA:Donald:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump won't save Ukraine. But Marine Le Pen's betrayal could be worse | Mujtaba Rahman"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "a143fd4a-f8b7-4a1e-9d8a-126579b131b8",
-            "title": "Casualties continue to rise after Brooklyn",
-            "keywords": [
-                "brooklyn",
-                "build",
-                "casualti",
-                "collaps",
-                "continu",
-                "ris"
-            ],
-            "entity_signature": "building:casualties:casualties continue to rise after brooklyn",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Casualties continue to rise after Brooklyn building collapses"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "726e8890-ce54-452a-848d-6673c534116c",
-            "title": "Supriya Sule rules out NCP merger talks, says 'no",
-            "keywords": [
-                "approach",
-                "merger",
-                "ncp",
-                "one",
-                "rul",
-                "sul",
-                "supriya",
-                "talk"
-            ],
-            "entity_signature": "diplomacy:india regional stakeholders:out ncp merger talks, says 'no one has approached me",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Supriya Sule rules out NCP merger talks, says 'no one has approached me'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "8d7e3c2a-1643-4fba-ac6c-4b56df09f63a",
-            "title": "US set to host Quad Leaders Summit in Manila next",
-            "keywords": [
-                "host",
-                "leader",
-                "manila",
-                "quad",
-                "set",
-                "summit"
-            ],
-            "entity_signature": "AU:IN:JP:au:australia",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "US set to host Quad Leaders Summit in Manila next week"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "c933616f-f26f-49cc-9107-a90199b650e8",
-            "title": "North Korean hackers steal more than $400 million",
-            "keywords": [
-                "fbi",
-                "hacker",
-                "imag",
-                "korean",
-                "million",
-                "north",
-                "steal",
-                "using"
-            ],
-            "entity_signature": "KP:collective_faction:fbi:judicial & investigative bodies",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "North Korean hackers steal more than $400 million using video images, FBI says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "11b358e6-6188-43ab-a779-4065e4616792",
-            "title": "Darth Vader's lightsaber used in 'I am your",
-            "keywords": [
-                "darth",
-                "duel",
-                "father",
-                "lightsaber",
-                "million",
-                "nearli",
-                "sell",
-                "used",
-                "vader"
-            ],
-            "entity_signature": "US:darth vader's lightsaber used in 'i am your father' duel:nearly us$5 million:sells",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Darth Vader's lightsaber used in 'I am your father' duel sells for nearly US$5 million"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "469bffc6-740c-49ee-8427-549a1ead851e",
-            "title": "Climate-vulnerable nations urge immediate action",
-            "keywords": [
-                "action",
-                "climat",
-                "cop31",
-                "immediat",
-                "nation",
-                "summit",
-                "urg",
-                "vulnerabl"
-            ],
-            "entity_signature": "TR:climate:climate-vulnerable nations:diplomacy",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Climate-vulnerable nations urge immediate action at UN Cop31 summit"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "0d4b1526-de92-4a54-820c-a24e7c52e654",
-            "title": "As Japan looks to strengthen defences and",
-            "keywords": [
-                "analyst",
-                "defenc",
-                "escala",
-                "japan",
-                "look",
-                "secur",
-                "strategi",
-                "strengthen",
-                "warn"
-            ],
-            "entity_signature": "CN:JP:analysts:as japan looks to strengthen defences and security strategy, analysts:china",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "As Japan looks to strengthen defences and security strategy, analysts warn of escalation"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "983f7c1f-2392-4b80-9711-8fc01c852bd3",
-            "title": "Pro-Palestinian group seeks ban on Israeli",
-            "keywords": [
-                "ban",
-                "fair",
-                "group",
-                "israeli",
-                "palestinian",
-                "pari",
-                "pro",
-                "properti",
-                "seek"
-            ],
-            "entity_signature": "FR:IL:PS:activists:ban",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Pro-Palestinian group seeks ban on Israeli property fair in Paris"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "7a8e6c32-29b2-4d5e-8b3c-5a513e04e04e",
-            "title": "US releases report on $12bn from Venezuelan oil",
-            "keywords": [
-                "12bn",
-                "mineral",
-                "oil",
-                "releas",
-                "report",
-                "resourc",
-                "venezuelan"
-            ],
-            "entity_signature": "US:VE:Donald:Donald Trump:leader",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "US releases report on $12bn from Venezuelan oil, mineral resources"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "727cc4da-df99-4b59-b8c8-9c4741eb4bd4",
-            "title": "Sukhbir Badal likely to meet Amit Shah on",
-            "keywords": [
-                "allianc",
-                "amit",
-                "badal",
-                "bjp",
-                "likeli",
-                "may",
-                "meet",
-                "november",
-                "sad",
-                "shah"
-            ],
-            "entity_signature": "IN:amit shah:diplomacy:economy",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Sukhbir Badal likely to meet Amit Shah on November 13, SAD-BJP alliance may be announced this month"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "15d74720-4687-4afc-a404-e18b3b50d459",
-            "title": "Bomb threat emails target BMC, Pune civic body",
-            "keywords": [
-                "bmc",
-                "bodi",
-                "bomb",
-                "branch",
-                "civic",
-                "email",
-                "find",
-                "noth",
-                "pnb",
-                "pun"
-            ],
-            "entity_signature": "bomb:conflict:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Bomb threat emails target BMC, Pune civic body, PNB branches; searches find nothing suspicious"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "667665e4-3993-4c74-a8cb-f47521d339c8",
-            "title": "TNPDCL seeks nod to procure 3,000 MW",
-            "keywords": [
-                "nod",
-                "procur",
-                "seek",
-                "tnpdcl"
-            ],
-            "entity_signature": "commission:india regional stakeholders:nod",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "TNPDCL seeks nod to procure 3,000 MW"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "d91d5059-224d-434f-b409-df73504a26e5",
-            "title": "Three of Malappuram family killed in Fujairah",
-            "keywords": [
-                "crash",
-                "famili",
-                "fujairah",
-                "kill",
-                "malappuram",
-                "road",
-                "three"
-            ],
-            "entity_signature": "economy:fujairah road crash:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Three of Malappuram family killed in Fujairah road crash"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "1b46d41e-5591-4d4e-921d-1ac8e5719105",
-            "title": "Russia and Ukraine showing flexibility on",
-            "keywords": [
-                "flexibil",
-                "official",
-                "russia",
-                "show",
-                "territori",
-                "ukrain"
-            ],
-            "entity_signature": "RU:UA:US:collective_faction:geopolitics",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-09T20:57:26.689931+00:00",
-            "last_seen": "2026-11-12T18:42:51.910075+00:00",
-            "chapter_count": 17,
-            "chapter_titles": [
-                "Russia and Ukraine showing flexibility on territory, US official says",
-                "What to expect as Russia, Ukraine and the US hold trilateral talks in Abu Dhabi",
-                "Russia launched deadly Ukraine attacks hours before start of Abu Dhabi talks – Europe live",
-                "US envoy urges new security framework to secure peace in Ukraine amid trilateral talks",
-                "US officials seek 'final end' to Russia-Ukraine war as Abu Dhabi talks begin",
-                "U.S.-mediated talks on ending Russia-Ukraine war begin in Abu Dhabi",
-                "US-mediated talks on ending Russia-Ukraine war begin in Abu Dhabi",
-                "US officials seek 'final end' to Russia-Ukraine war, as Abu Dhabi talks set to continue",
-                "Ukraine, Russia hold second day of US-mediated talks in Abu Dhabi",
-                "Russia, Ukraine agree on prisoner exchange as talks end without major breakthrough",
-                "Russia, Ukraine start second day of US-led talks: Kyiv lead negotiator",
-                "Russia and Ukraine agree to a large exchange of prisoners of war, officials say",
-                "Russia and Ukraine agree to major prisoner swap as peace talks end",
-                "Russia-Ukraine talks turn to post-war security but end without breakthrough",
-                "Ukraine talks in Abu Dhabi bring progress on prisoners but not on peace",
-                "Russia and Ukraine agree to a prisoner exchange as talks end with no big breakthrough",
-                "European leaders gather in Dublin to discuss Ukraine's security, and their own"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Europe",
-                "France 24",
-                "NPR News",
-                "Reuters",
-                "SCMP",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "89683c03-55bd-48b1-bd71-dfe4ac81998a",
-            "title": "United Airlines Blocks A.I. Agents From Booking",
-            "keywords": [
-                "agent",
-                "airlin",
-                "block",
-                "book",
-                "flight",
-                "unit"
-            ],
-            "entity_signature": "a.i. agents:blocks:north america regional stakeholders",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-12T02:43:04.013069+00:00",
-            "last_seen": "2026-11-12T18:42:51.910075+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "United Airlines Blocks A.I. Agents From Booking Flights",
-                "United Airlines blocks AI agents from booking flights, citing cybersecurity risks"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NYT Business",
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "03f64363-bad5-468c-8892-04ec824eeb47",
-            "title": "State to file fresh affidavit in High Court on",
-            "keywords": [
-                "affidavit",
-                "bar",
-                "court",
-                "excis",
-                "fil",
-                "fresh",
-                "high",
-                "licenc",
-                "minister",
-                "stat"
-            ],
-            "entity_signature": "collective_faction:court:file",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-12T10:42:06.136653+00:00",
-            "last_seen": "2026-11-12T18:42:51.910075+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "State to file fresh affidavit in High Court on bar licences: Excise Minister",
-                "State to file fresh affidavit in Kerala High Court on bar licences: Excise Minister"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times",
-                "The Hindu"
             ]
         }
     ],
