@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-12T23:58:41.390129+00:00",
+    "last_updated": "2026-11-13T06:22:46.583419+00:00",
     "arcs": [
         {
             "arc_id": "d9a388cf-db33-476b-8622-61bc79e2b246",
@@ -19,8 +19,8 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 25,
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 29,
             "chapter_titles": [
                 "Rubio Warned Officials About Nvidia Chief's Entanglement With Chinese Spy",
                 "Nvidia is investigating Jensen Huang's relationship with a Chinese spy",
@@ -46,7 +46,11 @@
                 "In China's Spy Operations, Romance Can Be a Long Game",
                 "Thursday briefing: What we do (and don't) know about Alice Huang and the Nvidia affair",
                 "Jensen Huang's Affairs That Upended Nvidia: Timeline of Events",
-                "Jensen Huang agrees to testify before Congress"
+                "Jensen Huang agrees to testify before Congress",
+                "A timeline of the affair scandal that sank Nvidia's Jensen Huang",
+                "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
+                "Donald Trump really wants Tim Cook to run Nvidia",
+                "What's a Honey Trap? The spy tactic that helped topple Jensen Huang"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
@@ -82,7 +86,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-11T14:58:13.836917+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
             "chapter_count": 8,
             "chapter_titles": [
                 "Hundreds of Italian schools hit by threats in suspected bomb hoax",
@@ -121,7 +125,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-12T02:43:04.013069+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
             "chapter_count": 7,
             "chapter_titles": [
                 "Israel strikes intensive care at Gaza's Nasser Hospital",
@@ -160,7 +164,7 @@
                 "North America"
             ],
             "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
             "chapter_count": 4,
             "chapter_titles": [
                 "US envoys head to meet Zelensky after talks with Putin in Moscow",
@@ -171,9 +175,1337 @@
             "importance_trend": "rising",
             "peak_velocity": 0.4,
             "sources_involved": [
+                "BBC Europe",
                 "BBC News",
                 "France 24",
                 "NPR News"
+            ]
+        },
+        {
+            "arc_id": "834a329b-bd75-482d-9647-1ded69b30d74",
+            "title": "The leader of a Kenyan doomsday cult is sentenced",
+            "keywords": [
+                "cult",
+                "doomsday",
+                "kenyan",
+                "leader",
+                "prison",
+                "sentenc"
+            ],
+            "entity_signature": "KE:200 years:children:civilians & impacted communities",
+            "category": "National",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-06T18:57:15.146358+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "The leader of a Kenyan doomsday cult is sentenced to 200 years in prison",
+                "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "055946cf-e72e-4210-94f0-acccc5483a63",
+            "title": "Seeking to Broaden Ukraine Talks, U.S. Urges",
+            "keywords": [
+                "broaden",
+                "europ",
+                "includ",
+                "russia",
+                "seek",
+                "talk",
+                "ukrain"
+            ],
+            "entity_signature": "EU:RU:UA:Donald:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-11T21:50:10.790348+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Seeking to Broaden Ukraine Talks, U.S. Urges Russia to Include Europe",
+                "Zelensky and Kushner confirm that Europe will join next round of Russia-Ukraine talks"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "France 24",
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "4cae0156-ad5b-45a3-968c-034340428a05",
+            "title": "In reversal, American Cancer Society urges",
+            "keywords": [
+                "american",
+                "cancer",
+                "men",
+                "prostat",
+                "reversal",
+                "societi",
+                "test"
+            ],
+            "entity_signature": "US:health:in reversal, american cancer society:prostate cancer tests",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-12T23:58:40.984736+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "In reversal, American Cancer Society urges prostate cancer tests for all men",
+                "In reversal, American Cancer Society urges routine prostate cancer screening"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Ars Technica"
+            ]
+        },
+        {
+            "arc_id": "19349a1a-aa03-46b8-97cb-9f77de535888",
+            "title": "Collision of two trains in Egypt kills at least",
+            "keywords": [
+                "collision",
+                "egypt",
+                "kill",
+                "least",
+                "seven",
+                "train",
+                "two"
+            ],
+            "entity_signature": "EG:collision of two trains in egypt:eg:egypt",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Collision of two trains in Egypt kills at least seven"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "a4a53d61-b0b6-407f-8021-2480e0ad33c2",
+            "title": "Three Iran-backed suspects plotted attacks",
+            "keywords": [
+                "attack",
+                "back",
+                "fairford",
+                "incident",
+                "includ",
+                "iran",
+                "plott",
+                "raf",
+                "suspect",
+                "three"
+            ],
+            "entity_signature": "IR:UK:US:armed forces:backed",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-11T06:56:24.182952+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East",
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "3ab84e1e-0e13-439f-bf3b-1381c0baccd6",
+            "title": "Clashes erupt in Barcelona after thousands join",
+            "keywords": [
+                "barcelona",
+                "clash",
+                "erupt",
+                "general",
+                "join",
+                "spain",
+                "strik",
+                "thousand"
+            ],
+            "entity_signature": "ES:clashes erupt in barcelona after thousands join spain general:collective_faction:conflict",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-11T21:50:10.790348+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Clashes erupt in Barcelona after thousands join Spain general strike"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.8999999999999999,
+            "sources_involved": [
+                "BBC Europe",
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "dfbf4082-000a-4efc-8c03-c4386ddf6f80",
+            "title": "Indonesia's vice president resigns amid signs",
+            "keywords": [
+                "allianc",
+                "amid",
+                "fray",
+                "indonesia",
+                "president",
+                "resign",
+                "rul",
+                "sign",
+                "vic"
+            ],
+            "entity_signature": "ID:geopolitics:governance:id",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-11T21:50:10.790348+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Indonesia's vice president resigns amid signs ruling alliance is fraying"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "bc475cb1-3ae6-40f3-bb13-eb04d0fcdb76",
+            "title": "Gadi Eisenkot unveils agenda to reverse",
+            "keywords": [
+                "agenda",
+                "eisenkot",
+                "gadi",
+                "netanyahu",
+                "polici",
+                "revers",
+                "unveil"
+            ],
+            "entity_signature": "IL:PS:Benjamin:Benjamin Netanyahu:agenda",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-12T02:43:04.013069+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Gadi Eisenkot unveils agenda to reverse Netanyahu's policies"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "923d662d-2617-4f87-a5ae-64236e63a350",
+            "title": "Indonesia's Vice President, Gibran, Resigns",
+            "keywords": [
+                "gibran",
+                "indonesia",
+                "president",
+                "resign",
+                "vic"
+            ],
+            "entity_signature": "ID:id:indonesia:indonesia sovereign authorities",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-12T10:42:06.136653+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Indonesia's Vice President, Gibran, Resigns"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "3f58ea60-c9f9-4a4e-b916-cd010751ef12",
+            "title": "They Left Iran, but Now the Regime Is Seizing",
+            "keywords": [
+                "asset",
+                "iran",
+                "left",
+                "now",
+                "regim",
+                "seiz",
+                "silenc"
+            ],
+            "entity_signature": "IR:civic activists / protesters:civic activists / protesters (dissidents):dissidents",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-12T10:42:06.136653+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "They Left Iran, but Now the Regime Is Seizing Their Assets to Silence Them"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "14f8722b-52d7-4a19-ac85-a1dfc5196a24",
+            "title": "Gold prices fall to one-week low as strong",
+            "keywords": [
+                "bet",
+                "dollar",
+                "fall",
+                "fed",
+                "gold",
+                "hik",
+                "low",
+                "one",
+                "pric",
+                "rat"
+            ],
+            "entity_signature": "US:bets weigh:economics:gold prices fall to one-week low as strong dollar, fed rate",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-12T10:42:06.136653+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Gold prices fall to one-week low as strong dollar, Fed rate hike bets weigh"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "6d85005e-3e58-4d38-aa69-1f9ca2cce202",
+            "title": "Israel to ban far-left French politician Jean-Luc",
+            "keywords": [
+                "ban",
+                "entri",
+                "far",
+                "french",
+                "israel",
+                "jean",
+                "left",
+                "luc",
+                "politician"
+            ],
+            "entity_signature": "FR:IL:PS:ban:far-left french politician jean-luc mélenchon",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-12T18:42:51.910075+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Israel to ban far-left French politician Jean-Luc Mélenchon from entry"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "8eb9d0c6-f21b-4aa7-a8d0-56b8007bf94c",
+            "title": "Fourteen dead after truck loses control in",
+            "keywords": [
+                "control",
+                "crash",
+                "dead",
+                "fourteen",
+                "los",
+                "truck",
+                "uae",
+                "vehicl"
+            ],
+            "entity_signature": "control:economy:fourteen dead after truck",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-12T18:42:51.910075+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Fourteen dead after truck loses control in 23-vehicle crash in UAE"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "08d874b1-7908-43b1-83fd-ff5fc223b26d",
+            "title": "How FRANCE 24 traced Tehran-backed Afghan",
+            "keywords": [
+                "afghan",
+                "back",
+                "fighter",
+                "franc",
+                "iran",
+                "southeastern",
+                "syria",
+                "tehran",
+                "trac"
+            ],
+            "entity_signature": "AF:FR:IR:Al-Assad:Bashar",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-12T18:42:51.910075+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "How FRANCE 24 traced Tehran-backed Afghan fighters from Syria to southeastern Iran"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "9595f55a-67f8-419c-93ef-07005d8805b2",
+            "title": "Two men guilty of spying for Iran over plan to",
+            "keywords": [
+                "guilti",
+                "iran",
+                "journalist",
+                "lawyer",
+                "men",
+                "plan",
+                "spy",
+                "target",
+                "two"
+            ],
+            "entity_signature": "IR:ir:iran:iran sovereign authorities",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-12T18:42:51.910075+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Two men guilty of spying for Iran over plan to target journalists and lawyer"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "f1a7abce-eb7a-48ae-b30a-9f7e506d49b0",
+            "title": "Egyptian journalist's retrial adjourned as UN",
+            "keywords": [
+                "adjourn",
+                "assault",
+                "egyptian",
+                "freedom",
+                "journalist",
+                "press",
+                "retrial"
+            ],
+            "entity_signature": "EG:eg:egypt:egypt sovereign authorities",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-12T18:42:51.910075+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Egyptian journalist's retrial adjourned as UN warns of 'assaults on press freedom'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "7793a2dd-1919-467c-9ab8-d44e9222d072",
+            "title": "Israel's Arrest of Journalist Abed Abu Shehadeh",
+            "keywords": [
+                "abed",
+                "abu",
+                "arrest",
+                "concern",
+                "israel",
+                "journalist",
+                "rais",
+                "shehadeh"
+            ],
+            "entity_signature": "IL:PS:arrest:citizen:civilians & impacted communities",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-12T18:42:51.910075+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Israel's Arrest of Journalist Abed Abu Shehadeh Raises Concerns"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "ed450c16-62db-4f2a-98bc-08c57a85076f",
+            "title": "Ukraine says it can't stop Russian strikes",
+            "keywords": [
+                "limit",
+                "russian",
+                "starshield",
+                "stop",
+                "strik",
+                "ukrain"
+            ],
+            "entity_signature": "RU:UA:diplomacy:ru:russia",
+            "category": "Tech",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-12T23:58:40.984736+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ukraine says it can't stop Russian strikes because Starshield is limited again"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Ars Technica"
+            ]
+        },
+        {
+            "arc_id": "e0bce091-3d5d-4a4e-ad56-4bb49babfcdb",
+            "title": "Did Indonesia's vice-president just resign",
+            "keywords": [
+                "didn",
+                "diploma",
+                "high",
+                "indonesia",
+                "just",
+                "president",
+                "resign",
+                "school",
+                "vic"
+            ],
+            "entity_signature": "ID:did indonesia's vice-president just:geopolitics:id",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-12T23:58:40.984736+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Did Indonesia's vice-president just resign because he didn't have a high school diploma?"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "1f89f9fa-41f4-46f8-8a46-da6aef21210e",
+            "title": "China rules out hosting Cop33 climate summit in",
+            "keywords": [
+                "china",
+                "climat",
+                "cop33",
+                "host",
+                "rul",
+                "summit"
+            ],
+            "entity_signature": "CN:china:climate:cn",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-12T23:58:40.984736+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "China rules out hosting Cop33 climate summit in 2028"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "563ca3aa-d6d7-485c-8535-0df269b1649b",
+            "title": "Russia using 'illegal and unethical means, knows",
+            "keywords": [
+                "back",
+                "europ",
+                "expert",
+                "illegal",
+                "know",
+                "mean",
+                "russia",
+                "unethical",
+                "use",
+                "using"
+            ],
+            "entity_signature": "EU:RU:election:eu:european union",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-12T23:58:40.984736+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russia using 'illegal and unethical means, knows Europe won't use same means back', expert says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "be09ae0d-ebce-4cea-b231-d9d1510528eb",
+            "title": "'Win-win' deal with EU could be done, Andy",
+            "keywords": [
+                "andi",
+                "burnham",
+                "deal",
+                "don",
+                "win"
+            ],
+            "entity_signature": "EU:-win' deal:diplomacy:eu",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-12T23:58:40.984736+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'Win-win' deal with EU could be done, Andy Burnham says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "96bdce4e-7fcb-4f2e-8445-bebae9b5685a",
+            "title": "Cindy Holscher wins in Kansas, holding governor's",
+            "keywords": [
+                "cindi",
+                "democrat",
+                "governor",
+                "hold",
+                "holscher",
+                "kansa",
+                "offic",
+                "win"
+            ],
+            "entity_signature": "Donald:Donald Trump:cindy holscher:kansas, holding governor's office:leader",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-12T23:58:40.984736+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Cindy Holscher wins in Kansas, holding governor's office for Democrats"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "b7a8db44-7930-41f2-b210-82f792efe705",
+            "title": "Whoop launched a social network where every user",
+            "keywords": [
+                "everi",
+                "heartbeat",
+                "launch",
+                "network",
+                "social",
+                "user",
+                "verifi",
+                "whoop"
+            ],
+            "entity_signature": "launched:north america regional stakeholders:social network",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-12T23:58:40.984736+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Whoop launched a social network where every user has a 'verified heartbeat'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "a358b97c-bd05-4fea-b1d1-8850c0220da6",
+            "title": "SpaceX Plans $74 Billion Investment to Build Data",
+            "keywords": [
+                "arizona",
+                "billion",
+                "build",
+                "center",
+                "data",
+                "invest",
+                "plan",
+                "spacex",
+                "texa"
+            ],
+            "entity_signature": "Elon:Elon Musk:build:data centers:leader",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-12T23:58:40.984736+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "SpaceX Plans $74 Billion Investment to Build Data Centers in Texas and Arizona"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "0245cbb1-af33-47a1-b9ef-260c0a9e4462",
+            "title": "Fed Will Not Hold Policy Vote at October 2027",
+            "keywords": [
+                "fed",
+                "hold",
+                "meet",
+                "october",
+                "polici",
+                "vot"
+            ],
+            "entity_signature": "central bank:election:fed will not hold policy vote at october 2027",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-12T23:58:40.984736+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Fed Will Not Hold Policy Vote at October 2027 Meeting"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "e0b3058d-2652-41bb-ac4d-853397deaad5",
+            "title": "Nebius tests the neocloud playbook with $40",
+            "keywords": [
+                "billion",
+                "nebiu",
+                "neocloud",
+                "plann",
+                "playbook",
+                "spend",
+                "test"
+            ],
+            "entity_signature": "microsoft:nebius:neocloud playbook",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-12T23:58:40.984736+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Nebius tests the neocloud playbook with $40 billion in planned spending"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "98a11ebf-6de1-4628-a104-94230f4d624c",
+            "title": "Iran's Guards say they targeted a US",
+            "keywords": [
+                "bahrain",
+                "earli",
+                "guard",
+                "iran",
+                "radar",
+                "say",
+                "target",
+                "warn"
+            ],
+            "entity_signature": "IR:US:ir:iran:iran's guards say they",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Iran's Guards say they targeted a US early-warning radar in Bahrain"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "3818ed89-9b82-4a2a-9aaa-506e17548bf8",
+            "title": "'El Niño turned off the taps': factors behind",
+            "keywords": [
+                "behind",
+                "factor",
+                "indonesia",
+                "reveal",
+                "tap",
+                "turn",
+                "wildfir"
+            ],
+            "entity_signature": "ID:climate:factors behind indonesia's wildfires:id",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'El Niño turned off the taps': factors behind Indonesia's wildfires revealed"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "db0fb56e-55e7-445e-ae86-a566d21e0586",
+            "title": "North Korean hackers used fake video calls in",
+            "keywords": [
+                "400m",
+                "call",
+                "crypto",
+                "fak",
+                "fbi",
+                "hack",
+                "hacker",
+                "korean",
+                "north",
+                "used"
+            ],
+            "entity_signature": "KP:collective_faction:fbi:judicial & investigative bodies",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "North Korean hackers used fake video calls in $400m crypto hack, says FBI"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "f7bda4f8-c492-4e7e-be15-4d9c547f0c02",
+            "title": "Billions lost and markets roiled by one man's",
+            "keywords": [
+                "aditya",
+                "billion",
+                "bro",
+                "chakrabortti",
+                "clear",
+                "indiscre",
+                "isn",
+                "lost",
+                "man",
+                "market"
+            ],
+            "entity_signature": "Huang:Jensen:and markets roiled:asia-pacific regional stakeholders:billions",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Billions lost and markets roiled by one man's indiscretion. Isn't it now clear that these tech bros are too powerful? | Aditya Chakrabortty"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "e4426149-9884-40b7-9475-7c4a14ab61c0",
+            "title": "Burkina Faso's rival armed groups turn on each",
+            "keywords": [
+                "arm",
+                "burkina",
+                "faso",
+                "ground",
+                "group",
+                "los",
+                "rival",
+                "stat",
+                "turn"
+            ],
+            "entity_signature": "burkina faso's rival armed groups turn on each other as state:geopolitics:ground",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Burkina Faso's rival armed groups turn on each other as state loses ground"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "fb60e4bc-7108-4f53-971a-7d85206c4f31",
+            "title": "Pope Leo meets clergy abuse survivors in Peru",
+            "keywords": [
+                "abus",
+                "amid",
+                "call",
+                "clergi",
+                "justic",
+                "leo",
+                "meet",
+                "peru",
+                "pop",
+                "survivor"
+            ],
+            "entity_signature": "PE:civilians & impacted communities:civilians & impacted communities (survivors):clergy abuse survivors",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Pope Leo meets clergy abuse survivors in Peru amid calls for justice"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "9c7fbba8-bc12-4fc2-8de3-8e29f5137a5d",
+            "title": "UNRWA funding cuts deepen hardship for",
+            "keywords": [
+                "cut",
+                "deepen",
+                "fund",
+                "hardship",
+                "lebanon",
+                "palestinian",
+                "refuge",
+                "unrwa"
+            ],
+            "entity_signature": "IL:LB:PS:civilians & impacted communities:civilians & impacted communities (refugees)",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "UNRWA funding cuts deepen hardship for Palestinian refugees in Lebanon"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "eaa10a02-3c98-405a-8a40-399528b66480",
+            "title": "Chris Van Hollen says he will challenge Chuck",
+            "keywords": [
+                "challeng",
+                "chri",
+                "chuck",
+                "hollen",
+                "leader",
+                "major",
+                "schumer",
+                "senat",
+                "van"
+            ],
+            "entity_signature": "chris van hollen says he will challenge chuck schumer for senate majority leader:collective_faction:congress",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Chris Van Hollen says he will challenge Chuck Schumer for Senate majority leader"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "62535de4-bbe1-4af9-862a-a61b6e12b126",
+            "title": "Xbox announces Wolfenstein 3",
+            "keywords": [
+                "wolfenstein",
+                "xbox"
+            ],
+            "entity_signature": "announces:north america regional stakeholders:syntactic_subject",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Xbox announces Wolfenstein 3"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "c6139db9-0eca-4c15-b587-be38568f6206",
+            "title": "Tamil Nadu government issues G.O. effecting",
+            "keywords": [
+                "colleg",
+                "effect",
+                "govern",
+                "guest",
+                "hik",
+                "issu",
+                "lecturer",
+                "nadu",
+                "salari",
+                "tamil"
+            ],
+            "entity_signature": "hike:india regional stakeholders:of guest lecturers",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Tamil Nadu government issues G.O. effecting salary hike of guest lecturers in colleges"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "3a85fcef-f456-4cad-b3cd-5e8bd3acd759",
+            "title": "Sensex, Nifty open negative after gains as",
+            "keywords": [
+                "gain",
+                "market",
+                "negativ",
+                "nifti",
+                "open",
+                "recover",
+                "sensex",
+                "slump"
+            ],
+            "entity_signature": "india regional stakeholders:negative:open",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Sensex, Nifty open negative after gains as markets recover from 2-year slump"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "c5a19a17-a5df-4cd4-8b02-79b5187807fb",
+            "title": "Centre extends ban on Zakir Naik's Islamic",
+            "keywords": [
+                "ban",
+                "centr",
+                "extend",
+                "founda",
+                "islamic",
+                "naik",
+                "research",
+                "zakir"
+            ],
+            "entity_signature": "ban:centre extends:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Centre extends ban on Zakir Naik's Islamic Research Foundation for 5 more years"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "a3194699-a203-4d8a-875e-cc59a0e25f23",
+            "title": "Tea industry bodies back proposed MSP to offset",
+            "keywords": [
+                "back",
+                "bodi",
+                "cost",
+                "industri",
+                "msp",
+                "offset",
+                "propos",
+                "ris",
+                "tea"
+            ],
+            "entity_signature": "back:india regional stakeholders:proposed msp",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Tea industry bodies back proposed MSP to offset rising costs"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "e5a1bf15-afe9-40b8-ac2f-2c45fbf3a90e",
+            "title": "Odisha faces questions over reservoir management",
+            "keywords": [
+                "arnab",
+                "batter",
+                "cyclon",
+                "district",
+                "fac",
+                "ganjam",
+                "manage",
+                "odisha",
+                "ques",
+                "reservoir"
+            ],
+            "entity_signature": "faces:india regional stakeholders:odisha",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Odisha faces questions over reservoir management weeks after Cyclone Arnab batters Ganjam district"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "2cb63f38-aa6b-4c11-ad02-dddd8b2c3f77",
+            "title": "Delhi defence firm founder receives ₹5 crore",
+            "keywords": [
+                "complaint",
+                "cror",
+                "death",
+                "defenc",
+                "delhi",
+                "demand",
+                "fil",
+                "firm",
+                "founder",
+                "gang"
+            ],
+            "entity_signature": "and death threat:delhi defence firm founder receives ₹5 crore:demand",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Delhi defence firm founder receives ₹5 crore demand and death threat from Rohit Godara gang, complaint filed"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "bbfce9f3-904d-4e52-99bd-1e6618c6044d",
+            "title": "How a mason's son from Erode won a Medal of",
+            "keywords": [
+                "erod",
+                "excellenc",
+                "mason",
+                "medal",
+                "son",
+                "won",
+                "worldskill"
+            ],
+            "entity_signature": "CN:china:china sovereign authorities:cn",
+            "category": "National",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "How a mason's son from Erode won a Medal of Excellence at WorldSkills 2026"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "e9965947-73c0-4960-b2c2-0b8498185ac7",
+            "title": "Ankita Bhandari's family should reject govt aid",
+            "keywords": [
+                "aid",
+                "ankita",
+                "bhandari",
+                "bjp",
+                "famili",
+                "govt",
+                "justic",
+                "mla",
+                "reject",
+                "seek"
+            ],
+            "entity_signature": "ankita bhandari's family should:congress:govt aid if they seeking only justice",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-13T06:22:46.319925+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ankita Bhandari's family should reject govt aid if they seeking only justice: BJP MLA"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
             ]
         },
         {
@@ -207,65 +1539,6 @@
             ]
         },
         {
-            "arc_id": "834a329b-bd75-482d-9647-1ded69b30d74",
-            "title": "The leader of a Kenyan doomsday cult is sentenced",
-            "keywords": [
-                "cult",
-                "doomsday",
-                "kenyan",
-                "leader",
-                "prison",
-                "sentenc"
-            ],
-            "entity_signature": "KE:200 years:children:civilians & impacted communities",
-            "category": "National",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "The leader of a Kenyan doomsday cult is sentenced to 200 years in prison",
-                "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "19349a1a-aa03-46b8-97cb-9f77de535888",
-            "title": "Collision of two trains in Egypt kills at least",
-            "keywords": [
-                "collision",
-                "egypt",
-                "kill",
-                "least",
-                "seven",
-                "train",
-                "two"
-            ],
-            "entity_signature": "EG:collision of two trains in egypt:eg:egypt",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Collision of two trains in Egypt kills at least seven"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "5dfaa3c5-36fe-4caf-ae4a-2479a337feaa",
             "title": "Malaysia's disgraced former PM leaves jail for",
             "keywords": [
@@ -294,247 +1567,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "a4a53d61-b0b6-407f-8021-2480e0ad33c2",
-            "title": "Three Iran-backed suspects plotted attacks",
-            "keywords": [
-                "attack",
-                "back",
-                "fairford",
-                "incident",
-                "includ",
-                "iran",
-                "plott",
-                "raf",
-                "suspect",
-                "three"
-            ],
-            "entity_signature": "IR:UK:US:armed forces:backed",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-11T06:56:24.182952+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East",
-                "BBC News"
-            ]
-        },
-        {
-            "arc_id": "3ab84e1e-0e13-439f-bf3b-1381c0baccd6",
-            "title": "Clashes erupt in Barcelona after thousands join",
-            "keywords": [
-                "barcelona",
-                "clash",
-                "erupt",
-                "general",
-                "join",
-                "spain",
-                "strik",
-                "thousand"
-            ],
-            "entity_signature": "ES:clashes erupt in barcelona after thousands join spain general:collective_faction:conflict",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-11T21:50:10.790348+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Clashes erupt in Barcelona after thousands join Spain general strike"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.8999999999999999,
-            "sources_involved": [
-                "BBC Europe",
-                "BBC News"
-            ]
-        },
-        {
-            "arc_id": "055946cf-e72e-4210-94f0-acccc5483a63",
-            "title": "Seeking to Broaden Ukraine Talks, U.S. Urges",
-            "keywords": [
-                "broaden",
-                "europ",
-                "includ",
-                "russia",
-                "seek",
-                "talk",
-                "ukrain"
-            ],
-            "entity_signature": "EU:RU:UA:Donald:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-11T21:50:10.790348+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Seeking to Broaden Ukraine Talks, U.S. Urges Russia to Include Europe"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "dfbf4082-000a-4efc-8c03-c4386ddf6f80",
-            "title": "Indonesia's vice president resigns amid signs",
-            "keywords": [
-                "allianc",
-                "amid",
-                "fray",
-                "indonesia",
-                "president",
-                "resign",
-                "rul",
-                "sign",
-                "vic"
-            ],
-            "entity_signature": "ID:geopolitics:governance:id",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-11T21:50:10.790348+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Indonesia's vice president resigns amid signs ruling alliance is fraying"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "bc475cb1-3ae6-40f3-bb13-eb04d0fcdb76",
-            "title": "Gadi Eisenkot unveils agenda to reverse",
-            "keywords": [
-                "agenda",
-                "eisenkot",
-                "gadi",
-                "netanyahu",
-                "polici",
-                "revers",
-                "unveil"
-            ],
-            "entity_signature": "IL:PS:Benjamin:Benjamin Netanyahu:agenda",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T02:43:04.013069+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Gadi Eisenkot unveils agenda to reverse Netanyahu's policies"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "923d662d-2617-4f87-a5ae-64236e63a350",
-            "title": "Indonesia's Vice President, Gibran, Resigns",
-            "keywords": [
-                "gibran",
-                "indonesia",
-                "president",
-                "resign",
-                "vic"
-            ],
-            "entity_signature": "ID:id:indonesia:indonesia sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-12T10:42:06.136653+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Indonesia's Vice President, Gibran, Resigns"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "3f58ea60-c9f9-4a4e-b916-cd010751ef12",
-            "title": "They Left Iran, but Now the Regime Is Seizing",
-            "keywords": [
-                "asset",
-                "iran",
-                "left",
-                "now",
-                "regim",
-                "seiz",
-                "silenc"
-            ],
-            "entity_signature": "IR:civic activists / protesters:civic activists / protesters (dissidents):dissidents",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T10:42:06.136653+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "They Left Iran, but Now the Regime Is Seizing Their Assets to Silence Them"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "14f8722b-52d7-4a19-ac85-a1dfc5196a24",
-            "title": "Gold prices fall to one-week low as strong",
-            "keywords": [
-                "bet",
-                "dollar",
-                "fall",
-                "fed",
-                "gold",
-                "hik",
-                "low",
-                "one",
-                "pric",
-                "rat"
-            ],
-            "entity_signature": "US:bets weigh:economics:gold prices fall to one-week low as strong dollar, fed rate",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-12T10:42:06.136653+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Gold prices fall to one-week low as strong dollar, Fed rate hike bets weigh"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
             ]
         },
         {
@@ -599,158 +1631,6 @@
             ]
         },
         {
-            "arc_id": "6d85005e-3e58-4d38-aa69-1f9ca2cce202",
-            "title": "Israel to ban far-left French politician Jean-Luc",
-            "keywords": [
-                "ban",
-                "entri",
-                "far",
-                "french",
-                "israel",
-                "jean",
-                "left",
-                "luc",
-                "politician"
-            ],
-            "entity_signature": "FR:IL:PS:ban:far-left french politician jean-luc mélenchon",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Israel to ban far-left French politician Jean-Luc Mélenchon from entry"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "8eb9d0c6-f21b-4aa7-a8d0-56b8007bf94c",
-            "title": "Fourteen dead after truck loses control in",
-            "keywords": [
-                "control",
-                "crash",
-                "dead",
-                "fourteen",
-                "los",
-                "truck",
-                "uae",
-                "vehicl"
-            ],
-            "entity_signature": "control:economy:fourteen dead after truck",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Fourteen dead after truck loses control in 23-vehicle crash in UAE"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "08d874b1-7908-43b1-83fd-ff5fc223b26d",
-            "title": "How FRANCE 24 traced Tehran-backed Afghan",
-            "keywords": [
-                "afghan",
-                "back",
-                "fighter",
-                "franc",
-                "iran",
-                "southeastern",
-                "syria",
-                "tehran",
-                "trac"
-            ],
-            "entity_signature": "AF:FR:IR:Al-Assad:Bashar",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "How FRANCE 24 traced Tehran-backed Afghan fighters from Syria to southeastern Iran"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "9595f55a-67f8-419c-93ef-07005d8805b2",
-            "title": "Two men guilty of spying for Iran over plan to",
-            "keywords": [
-                "guilti",
-                "iran",
-                "journalist",
-                "lawyer",
-                "men",
-                "plan",
-                "spy",
-                "target",
-                "two"
-            ],
-            "entity_signature": "IR:ir:iran:iran sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Two men guilty of spying for Iran over plan to target journalists and lawyer"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "f1a7abce-eb7a-48ae-b30a-9f7e506d49b0",
-            "title": "Egyptian journalist's retrial adjourned as UN",
-            "keywords": [
-                "adjourn",
-                "assault",
-                "egyptian",
-                "freedom",
-                "journalist",
-                "press",
-                "retrial"
-            ],
-            "entity_signature": "EG:eg:egypt:egypt sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Egyptian journalist's retrial adjourned as UN warns of 'assaults on press freedom'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
             "arc_id": "a143fd4a-f8b7-4a1e-9d8a-126579b131b8",
             "title": "Casualties continue to rise after Brooklyn",
             "keywords": [
@@ -776,36 +1656,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "NPR News"
-            ]
-        },
-        {
-            "arc_id": "7793a2dd-1919-467c-9ab8-d44e9222d072",
-            "title": "Israel's Arrest of Journalist Abed Abu Shehadeh",
-            "keywords": [
-                "abed",
-                "abu",
-                "arrest",
-                "concern",
-                "israel",
-                "journalist",
-                "rais",
-                "shehadeh"
-            ],
-            "entity_signature": "IL:PS:arrest:citizen:civilians & impacted communities",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Israel's Arrest of Journalist Abed Abu Shehadeh Raises Concerns"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
             ]
         },
         {
@@ -897,63 +1747,6 @@
             ]
         },
         {
-            "arc_id": "4cae0156-ad5b-45a3-968c-034340428a05",
-            "title": "In reversal, American Cancer Society urges",
-            "keywords": [
-                "american",
-                "cancer",
-                "men",
-                "prostat",
-                "reversal",
-                "societi",
-                "test"
-            ],
-            "entity_signature": "US:health:in reversal, american cancer society:prostate cancer tests",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "In reversal, American Cancer Society urges prostate cancer tests for all men"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Ars Technica"
-            ]
-        },
-        {
-            "arc_id": "ed450c16-62db-4f2a-98bc-08c57a85076f",
-            "title": "Ukraine says it can't stop Russian strikes",
-            "keywords": [
-                "limit",
-                "russian",
-                "starshield",
-                "stop",
-                "strik",
-                "ukrain"
-            ],
-            "entity_signature": "RU:UA:diplomacy:ru:russia",
-            "category": "Tech",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Ukraine says it can't stop Russian strikes because Starshield is limited again"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Ars Technica"
-            ]
-        },
-        {
             "arc_id": "11b358e6-6188-43ab-a779-4065e4616792",
             "title": "Darth Vader's lightsaber used in 'I am your",
             "keywords": [
@@ -985,37 +1778,6 @@
             ]
         },
         {
-            "arc_id": "e0bce091-3d5d-4a4e-ad56-4bb49babfcdb",
-            "title": "Did Indonesia's vice-president just resign",
-            "keywords": [
-                "didn",
-                "diploma",
-                "high",
-                "indonesia",
-                "just",
-                "president",
-                "resign",
-                "school",
-                "vic"
-            ],
-            "entity_signature": "ID:did indonesia's vice-president just:geopolitics:id",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Did Indonesia's vice-president just resign because he didn't have a high school diploma?"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "469bffc6-740c-49ee-8427-549a1ead851e",
             "title": "Climate-vulnerable nations urge immediate action",
             "keywords": [
@@ -1043,34 +1805,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "1f89f9fa-41f4-46f8-8a46-da6aef21210e",
-            "title": "China rules out hosting Cop33 climate summit in",
-            "keywords": [
-                "china",
-                "climat",
-                "cop33",
-                "host",
-                "rul",
-                "summit"
-            ],
-            "entity_signature": "CN:china:climate:cn",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "China rules out hosting Cop33 climate summit in 2028"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
             ]
         },
         {
@@ -1136,65 +1870,6 @@
             ]
         },
         {
-            "arc_id": "563ca3aa-d6d7-485c-8535-0df269b1649b",
-            "title": "Russia using 'illegal and unethical means, knows",
-            "keywords": [
-                "back",
-                "europ",
-                "expert",
-                "illegal",
-                "know",
-                "mean",
-                "russia",
-                "unethical",
-                "use",
-                "using"
-            ],
-            "entity_signature": "EU:RU:election:eu:european union",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Russia using 'illegal and unethical means, knows Europe won't use same means back', expert says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "be09ae0d-ebce-4cea-b231-d9d1510528eb",
-            "title": "'Win-win' deal with EU could be done, Andy",
-            "keywords": [
-                "andi",
-                "burnham",
-                "deal",
-                "don",
-                "win"
-            ],
-            "entity_signature": "EU:-win' deal:diplomacy:eu",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'Win-win' deal with EU could be done, Andy Burnham says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "d3f5b709-6cc8-4e2a-9df8-e6c952f64b9b",
             "title": "Zelensky warns Europe over US-Russia talks on",
             "keywords": [
@@ -1253,66 +1928,6 @@
             ]
         },
         {
-            "arc_id": "96bdce4e-7fcb-4f2e-8445-bebae9b5685a",
-            "title": "Cindy Holscher wins in Kansas, holding governor's",
-            "keywords": [
-                "cindi",
-                "democrat",
-                "governor",
-                "hold",
-                "holscher",
-                "kansa",
-                "offic",
-                "win"
-            ],
-            "entity_signature": "Donald:Donald Trump:cindy holscher:kansas, holding governor's office:leader",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Cindy Holscher wins in Kansas, holding governor's office for Democrats"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "b7a8db44-7930-41f2-b210-82f792efe705",
-            "title": "Whoop launched a social network where every user",
-            "keywords": [
-                "everi",
-                "heartbeat",
-                "launch",
-                "network",
-                "social",
-                "user",
-                "verifi",
-                "whoop"
-            ],
-            "entity_signature": "launched:north america regional stakeholders:social network",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Whoop launched a social network where every user has a 'verified heartbeat'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Verge"
-            ]
-        },
-        {
             "arc_id": "aa311cdf-ed34-46fd-8e35-495b5afc937e",
             "title": "Democrats launch Nvidia investigation, write",
             "keywords": [
@@ -1337,94 +1952,6 @@
             "chapter_count": 1,
             "chapter_titles": [
                 "Democrats launch Nvidia investigation, write scathing letter on Huang's 'scheme' with Trump"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "a358b97c-bd05-4fea-b1d1-8850c0220da6",
-            "title": "SpaceX Plans $74 Billion Investment to Build Data",
-            "keywords": [
-                "arizona",
-                "billion",
-                "build",
-                "center",
-                "data",
-                "invest",
-                "plan",
-                "spacex",
-                "texa"
-            ],
-            "entity_signature": "Elon:Elon Musk:build:data centers:leader",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "SpaceX Plans $74 Billion Investment to Build Data Centers in Texas and Arizona"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "0245cbb1-af33-47a1-b9ef-260c0a9e4462",
-            "title": "Fed Will Not Hold Policy Vote at October 2027",
-            "keywords": [
-                "fed",
-                "hold",
-                "meet",
-                "october",
-                "polici",
-                "vot"
-            ],
-            "entity_signature": "central bank:election:fed will not hold policy vote at october 2027",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Fed Will Not Hold Policy Vote at October 2027 Meeting"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "e0b3058d-2652-41bb-ac4d-853397deaad5",
-            "title": "Nebius tests the neocloud playbook with $40",
-            "keywords": [
-                "billion",
-                "nebiu",
-                "neocloud",
-                "plann",
-                "playbook",
-                "spend",
-                "test"
-            ],
-            "entity_signature": "microsoft:nebius:neocloud playbook",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-12T23:58:40.984736+00:00",
-            "last_seen": "2026-11-12T23:58:40.984736+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Nebius tests the neocloud playbook with $40 billion in planned spending"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
@@ -2587,545 +3114,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "dbe13d70-79da-4aa8-8092-2e0bc3158723",
-            "title": "Even Erdoğan backs the release of Turkey's",
-            "keywords": [
-                "back",
-                "brightest",
-                "even",
-                "jail",
-                "kaya",
-                "leader",
-                "opposi",
-                "releas",
-                "still",
-                "turkey"
-            ],
-            "entity_signature": "TR:backs:even erdoğan:release of turkey's brightest opposition leader. so why is he still",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T10:42:06.136653+00:00",
-            "last_seen": "2026-11-12T10:42:06.136653+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Even Erdoğan backs the release of Turkey's brightest opposition leader. So why is he still in jail? | Kaya Genç"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "8cecdd8d-81fe-40b4-987d-afcbc21c4e29",
-            "title": "India bypasses own rules to buy Israeli",
-            "keywords": [
-                "buy",
-                "bypass",
-                "hack",
-                "india",
-                "israeli",
-                "phon",
-                "rul",
-                "tech"
-            ],
-            "entity_signature": "IL:IN:buy israeli phone-hacking tech:il:in",
-            "category": "World",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-12T10:42:06.136653+00:00",
-            "last_seen": "2026-11-12T10:42:06.136653+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "India bypasses own rules to buy Israeli phone-hacking tech"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "947a35af-0ec1-4591-8b46-57b1830814b8",
-            "title": "Ten police officers, 18 fighters killed in",
-            "keywords": [
-                "attack",
-                "fighter",
-                "kill",
-                "northwest",
-                "officer",
-                "pakistan",
-                "polic",
-                "ten"
-            ],
-            "entity_signature": "PK:collective_faction:conflict:fighters",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T10:42:06.136653+00:00",
-            "last_seen": "2026-11-12T10:42:06.136653+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Ten police officers, 18 fighters killed in northwest Pakistan attack"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "973545ee-2c46-4202-b617-1c178a0d9d05",
-            "title": "Xi Jinping says Taiwan 'reunification' with China",
-            "keywords": [
-                "china",
-                "happen",
-                "jinp",
-                "must",
-                "reunifica",
-                "taiwan"
-            ],
-            "entity_signature": "CN:TW:Jinping:Xi Jinping:china",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-12T10:42:06.136653+00:00",
-            "last_seen": "2026-11-12T10:42:06.136653+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Xi Jinping says Taiwan 'reunification' with China must happen"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "a3db381d-7524-411b-bbe2-d42b9fdc47cd",
-            "title": "Data Centers Will Continue to Be Built, Despite",
-            "keywords": [
-                "built",
-                "center",
-                "continu",
-                "data",
-                "despit",
-                "elec",
-                "midterm"
-            ],
-            "entity_signature": ", despite midterm elections:built:data centers will continue to be",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-12T10:42:06.136653+00:00",
-            "last_seen": "2026-11-12T10:42:06.136653+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Data Centers Will Continue to Be Built, Despite Midterm Elections"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "3eff28ac-fd23-4019-8c04-4fee4c4f6bc3",
-            "title": "Help! A Broken Toilet Grounded My Plane, and the",
-            "keywords": [
-                "airlin",
-                "broken",
-                "cover",
-                "ground",
-                "help",
-                "hotel",
-                "plan",
-                "toilet",
-                "won"
-            ],
-            "entity_signature": "TR:civilians & impacted communities:civilians & impacted communities (passenger):help! a broken toilet grounded my plane, and the airline",
-            "category": "Business",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T10:42:06.136653+00:00",
-            "last_seen": "2026-11-12T10:42:06.136653+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Help! A Broken Toilet Grounded My Plane, and the Airline Won't Cover a Hotel."
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "7f874a45-3459-4430-968f-16a9d04f51d3",
-            "title": "Kennedy Center plans Ticketmaster switch, raising",
-            "keywords": [
-                "center",
-                "concern",
-                "conflict",
-                "interest",
-                "kennedi",
-                "plan",
-                "rais",
-                "switch",
-                "ticketmaster"
-            ],
-            "entity_signature": "conflict of interest concerns:geopolitics:kennedy center plans ticketmaster switch,",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-12T10:42:06.136653+00:00",
-            "last_seen": "2026-11-12T10:42:06.136653+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Kennedy Center plans Ticketmaster switch, raising conflict of interest concerns"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "da35c74e-ab5d-4111-8f08-826006326ecb",
-            "title": "Woman shot dead, man injured in gunfight between",
-            "keywords": [
-                "dead",
-                "gunfight",
-                "injur",
-                "man",
-                "manipur",
-                "militant",
-                "shot",
-                "suspect",
-                "woman"
-            ],
-            "entity_signature": "dead, man injured:india regional stakeholders:shot",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-12T10:42:06.136653+00:00",
-            "last_seen": "2026-11-12T10:42:06.136653+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Woman shot dead, man injured in gunfight between suspected militants in Manipur"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "c1e05a87-35c7-4e19-a399-5a801991a7ca",
-            "title": "At IAF commanders' meet, Rajnath calls for",
-            "keywords": [
-                "call",
-                "commander",
-                "ele",
-                "iaf",
-                "meet",
-                "rajnath",
-                "sharper",
-                "surpris",
-                "surveillanc"
-            ],
-            "entity_signature": ", rajnath calls:at iaf commanders:collective_faction",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-12T10:42:06.136653+00:00",
-            "last_seen": "2026-11-12T10:42:06.136653+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "At IAF commanders' meet, Rajnath calls for sharper surveillance, 'element of surprise'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "22fad1c9-2423-4e51-ae29-7b91fa1c1908",
-            "title": "Mumbai woman loses arm after alleged molestation",
-            "keywords": [
-                "alleg",
-                "arm",
-                "arrest",
-                "local",
-                "los",
-                "molesta",
-                "mumbai",
-                "push",
-                "suspect",
-                "train"
-            ],
-            "entity_signature": "arm:india regional stakeholders:loses",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-12T10:42:06.136653+00:00",
-            "last_seen": "2026-11-12T10:42:06.136653+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Mumbai woman loses arm after alleged molestation, push from local train; suspect arrested"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "a81e031c-a2ba-42b2-aad9-5381836531dd",
-            "title": "Kejriwal, his daughter get death threat from",
-            "keywords": [
-                "bishnoi",
-                "cas",
-                "daughter",
-                "death",
-                "fil",
-                "gang",
-                "get",
-                "kejriwal",
-                "member",
-                "punjab"
-            ],
-            "entity_signature": "case:filed:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-12T10:42:06.136653+00:00",
-            "last_seen": "2026-11-12T10:42:06.136653+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Kejriwal, his daughter get death threat from 'Bishnoi gang member'; case filed in Punjab"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "a43aa9b7-d35b-4628-9610-ce9d539129ba",
-            "title": "Sensex, Nifty open largely unchanged day after",
-            "keywords": [
-                "amid",
-                "crud",
-                "day",
-                "eas",
-                "largeli",
-                "nifti",
-                "oil",
-                "open",
-                "pric",
-                "ralli"
-            ],
-            "entity_signature": "economy:india regional stakeholders:largely unchanged day",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-12T10:42:06.136653+00:00",
-            "last_seen": "2026-11-12T10:42:06.136653+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Sensex, Nifty open largely unchanged day after sharp rally amid easing crude oil prices"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "1077e282-d982-47d4-94ef-687b0d0a2c87",
-            "title": "Europeans will join Ukraine talks in Abu Dhabi",
-            "keywords": [
-                "abu",
-                "dhabi",
-                "european",
-                "foreign",
-                "french",
-                "join",
-                "minister",
-                "talk",
-                "ukrain"
-            ],
-            "entity_signature": "FR:UA:diplomacy:europeans will join ukraine talks in abu dhabi, french foreign minister says:fr",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-12T02:43:04.013069+00:00",
-            "chapter_count": 7,
-            "chapter_titles": [
-                "Europeans will join Ukraine talks in Abu Dhabi, French foreign minister says",
-                "Europe will take part in US-mediated Ukraine talks in Abu Dhabi, French FM says",
-                "Europe to join U.S.-brokered Ukraine talks in Abu Dhabi, defying Kremlin objections",
-                "Ukraine Peace Talks Resume This Week in Abu Dhabi",
-                "Ahead of Abu Dhabi peace talks, Modi speaks to Zelenskyy; Jaishankar speaks to Lavrov",
-                "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
-                "First day of Ukraine peace talks constructive, Zelensky says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "BBC Europe",
-                "France 24",
-                "NPR News",
-                "New York Times",
-                "Reuters",
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "deefa4e8-43dd-4b5e-a1a5-54288801c2d8",
-            "title": "Trump says Iran war is 'effectively over'",
-            "keywords": [
-                "effectiveli",
-                "iran",
-                "militarili",
-                "strik",
-                "trump",
-                "unlikeli",
-                "war"
-            ],
-            "entity_signature": "IR:US:Donald:Donald Trump:conflict",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-10T03:20:11.781101+00:00",
-            "last_seen": "2026-11-12T02:43:04.013069+00:00",
-            "chapter_count": 5,
-            "chapter_titles": [
-                "Trump says Iran war is 'effectively over' militarily with further strikes unlikely",
-                "Trump says more US attacks on Iran 'highly unlikely'",
-                "Can China help end 'neither war nor peace' Iran deadlock before Xi-Trump summit?",
-                "Trump says 'we won' Iran war during Veterans Day service",
-                "Trump defends Iran war in Veterans Day speech"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Middle East",
-                "BBC News",
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "9b90f80c-70e6-4612-bb57-fccec85d63f9",
-            "title": "Traces of Justice review – 'Chinese Shjerlock",
-            "keywords": [
-                "arrest",
-                "centr",
-                "chines",
-                "cop",
-                "forensic",
-                "holm",
-                "justic",
-                "review",
-                "shjerlock",
-                "thriller"
-            ],
-            "entity_signature": "CN:arresting:china:china sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-10T11:32:09.785316+00:00",
-            "last_seen": "2026-11-12T02:43:04.013069+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Traces of Justice review – 'Chinese Shjerlock Holmes' at centre of arresting forensic cop thriller",
-                "Traces of Justice review – 'Chinese Sherlock Holmes' at centre of arresting forensic cop thriller"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "cf66ee1f-be17-48f4-a035-667adba2f74d",
-            "title": "Russia's ambassador to the US dies 'suddenly'",
-            "keywords": [
-                "ambassador",
-                "die",
-                "foreign",
-                "ministri",
-                "russia",
-                "suddenli"
-            ],
-            "entity_signature": "RU:US:ambassador:collective_faction:dies",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-11T21:50:10.790348+00:00",
-            "last_seen": "2026-11-12T02:43:04.013069+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Russia's ambassador to the US dies 'suddenly', foreign ministry says",
-                "Alexander Darchiev, Russia's Ambassador to the U.S., Dies at 66"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "New York Times",
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "e6140caf-a904-4256-a53f-6370cb4f58c5",
-            "title": "Tens of thousands attend Polish nationalist march",
-            "keywords": [
-                "attend",
-                "march",
-                "nationalist",
-                "polish",
-                "shoot",
-                "ten",
-                "thousand"
-            ],
-            "entity_signature": "PL:days:march:pl",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-11T21:50:10.790348+00:00",
-            "last_seen": "2026-11-12T02:43:04.013069+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Tens of thousands attend Polish nationalist march days after shootings",
-                "Tens of thousands attend Polish nationalist march days afer shootings"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "France 24"
             ]
         }
     ],
