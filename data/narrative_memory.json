@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-14T20:27:28.882407+00:00",
+    "last_updated": "2026-11-15T00:07:52.382590+00:00",
     "arcs": [
         {
             "arc_id": "d9a388cf-db33-476b-8622-61bc79e2b246",
@@ -19,7 +19,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
             "chapter_count": 30,
             "chapter_titles": [
                 "Rubio Warned Officials About Nvidia Chief's Entanglement With Chinese Spy",
@@ -86,7 +86,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-12T02:43:04.013069+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
             "chapter_count": 7,
             "chapter_titles": [
                 "Israel strikes intensive care at Gaza's Nasser Hospital",
@@ -105,6 +105,1535 @@
                 "BBC News",
                 "France 24",
                 "SCMP"
+            ]
+        },
+        {
+            "arc_id": "055946cf-e72e-4210-94f0-acccc5483a63",
+            "title": "Seeking to Broaden Ukraine Talks, U.S. Urges",
+            "keywords": [
+                "broaden",
+                "europ",
+                "includ",
+                "russia",
+                "seek",
+                "talk",
+                "ukrain"
+            ],
+            "entity_signature": "EU:RU:UA:Donald:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-11T21:50:10.790348+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 4,
+            "chapter_titles": [
+                "Seeking to Broaden Ukraine Talks, U.S. Urges Russia to Include Europe",
+                "Zelensky and Kushner confirm that Europe will join next round of Russia-Ukraine talks",
+                "Europe should not walk into Russia's 'traps' on Ukraine talks, EU's foreign policy chief Kallas says – Europe live",
+                "Russia is 'setting traps' in Ukraine talks, EU foreign policy chief warns"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "France 24",
+                "New York Times",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "834a329b-bd75-482d-9647-1ded69b30d74",
+            "title": "The leader of a Kenyan doomsday cult is sentenced",
+            "keywords": [
+                "cult",
+                "doomsday",
+                "kenyan",
+                "leader",
+                "prison",
+                "sentenc"
+            ],
+            "entity_signature": "KE:200 years:children:civilians & impacted communities",
+            "category": "National",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-06T18:57:15.146358+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "The leader of a Kenyan doomsday cult is sentenced to 200 years in prison",
+                "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "ff72938e-e915-42f3-a09e-871948e705a9",
+            "title": "Trump, Putin and Xi plan historic joint meeting",
+            "keywords": [
+                "china",
+                "historic",
+                "hous",
+                "joint",
+                "meet",
+                "plan",
+                "putin",
+                "trump",
+                "whit"
+            ],
+            "entity_signature": "CN:Donald:Donald Trump:china:china next week, white house says",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-14T08:39:54.210972+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+                "Trump to Meet With Putin and Xi in China, With Nuclear Proliferation on the Agenda"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Europe",
+                "BBC News",
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "ec30ef0a-5058-472a-8150-c62339dbbee1",
+            "title": "US-China Board of Trade holds first meeting days",
+            "keywords": [
+                "board",
+                "china",
+                "first",
+                "hold",
+                "meet",
+                "summit",
+                "trad",
+                "trump"
+            ],
+            "entity_signature": "CN:US:Donald:Donald Trump:china",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "US-China Board of Trade holds first meeting days before Trump-Xi summit",
+                "5 Big Questions as C.E.O.s Meet in China"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "c83256ef-e219-4395-b5e9-efb7b8a6dea8",
+            "title": "'No war, no peace' situation between US and Iran",
+            "keywords": [
+                "continu",
+                "iran",
+                "iraqi",
+                "peac",
+                "situa",
+                "war"
+            ],
+            "entity_signature": "FR:IR:US:conflict:diplomacy",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-13T14:48:28.112432+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "'No war, no peace' situation between US and Iran 'cannot continue', Iraqi FM says",
+                "Macron says limiting Ukraine aid would pave way to 'another war'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "b92432c9-d180-4d95-b6ab-6a42fd819103",
+            "title": "Italy fines Meta $887 million over Android users'",
+            "keywords": [
+                "access",
+                "android",
+                "data",
+                "fin",
+                "itali",
+                "meta",
+                "million",
+                "user"
+            ],
+            "entity_signature": "IT:fines:it:italy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-14T15:36:11.336746+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Italy fines Meta $887 million over Android users' data access",
+                "Italy fines Meta €805m over accessing users' photos"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Europe",
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "01d4b3c6-b4de-4dd2-b5dc-c19e0e508ebb",
+            "title": "Philippines' Carmelle wins first Eurovision",
+            "keywords": [
+                "asia",
+                "carmell",
+                "contest",
+                "eurovision",
+                "first",
+                "philippin",
+                "win"
+            ],
+            "entity_signature": "PH:TH:first eurovision contest:ph:philippines",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-14T20:27:28.467205+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Philippines' Carmelle wins first Eurovision contest in Asia",
+                "Philippines' Carmelle storms to victory in Eurovision Asia debut in Bangkok"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7999999999999999,
+            "sources_involved": [
+                "SCMP",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "c3e658b4-daec-4f32-a071-6e82fc30e115",
+            "title": "Ukraine's Starshield Access Is Being Restricted",
+            "keywords": [
+                "access",
+                "restrict",
+                "starshield",
+                "ukrain",
+                "zelenski"
+            ],
+            "entity_signature": "RU:UA:Volodymyr:Volodymyr Zelenskyy:geopolitics",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-14T15:36:11.336746+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Ukraine's Starshield Access Is Being Restricted Again, Zelensky Says",
+                "US proposed Ukraine cedes Donbas in exchange for joining NATO, Zelensky says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24",
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "1d3bc624-88f5-4576-9c2f-3abfd1a4e538",
+            "title": "Deadly car bomb blast kills two near Syria's",
+            "keywords": [
+                "blast",
+                "bomb",
+                "capital",
+                "car",
+                "deadli",
+                "kill",
+                "near",
+                "syria",
+                "two"
+            ],
+            "entity_signature": "SY:blast kills two near syria's capital:bomb:conflict",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-14T20:27:28.467205+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Deadly car bomb blast kills two near Syria's capital",
+                "Explosion near Syria's capital kills father and child"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "19349a1a-aa03-46b8-97cb-9f77de535888",
+            "title": "Collision of two trains in Egypt kills at least",
+            "keywords": [
+                "collision",
+                "egypt",
+                "kill",
+                "least",
+                "seven",
+                "train",
+                "two"
+            ],
+            "entity_signature": "EG:collision of two trains in egypt:eg:egypt",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-08T18:57:44.079755+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Collision of two trains in Egypt kills at least seven"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "8eb9d0c6-f21b-4aa7-a8d0-56b8007bf94c",
+            "title": "Fourteen dead after truck loses control in",
+            "keywords": [
+                "control",
+                "crash",
+                "dead",
+                "fourteen",
+                "los",
+                "truck",
+                "uae",
+                "vehicl"
+            ],
+            "entity_signature": "control:economy:fourteen dead after truck",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-12T18:42:51.910075+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Fourteen dead after truck loses control in 23-vehicle crash in UAE"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "9595f55a-67f8-419c-93ef-07005d8805b2",
+            "title": "Two men guilty of spying for Iran over plan to",
+            "keywords": [
+                "guilti",
+                "iran",
+                "journalist",
+                "lawyer",
+                "men",
+                "plan",
+                "spy",
+                "target",
+                "two"
+            ],
+            "entity_signature": "IR:ir:iran:iran sovereign authorities",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-12T18:42:51.910075+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Two men guilty of spying for Iran over plan to target journalists and lawyer"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "f1a7abce-eb7a-48ae-b30a-9f7e506d49b0",
+            "title": "Egyptian journalist's retrial adjourned as UN",
+            "keywords": [
+                "adjourn",
+                "assault",
+                "egyptian",
+                "freedom",
+                "journalist",
+                "press",
+                "retrial"
+            ],
+            "entity_signature": "EG:eg:egypt:egypt sovereign authorities",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-12T18:42:51.910075+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Egyptian journalist's retrial adjourned as UN warns of 'assaults on press freedom'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "db0fb56e-55e7-445e-ae86-a566d21e0586",
+            "title": "North Korean hackers used fake video calls in",
+            "keywords": [
+                "400m",
+                "call",
+                "crypto",
+                "fak",
+                "fbi",
+                "hack",
+                "hacker",
+                "korean",
+                "north",
+                "used"
+            ],
+            "entity_signature": "KP:collective_faction:fbi:judicial & investigative bodies",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-13T06:22:46.319925+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "North Korean hackers used fake video calls in $400m crypto hack, says FBI"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "afaffd29-9a58-4489-803d-70040aa4fd90",
+            "title": "Australian cricket's sandpapergate is back - and",
+            "keywords": [
+                "australian",
+                "back",
+                "cricket",
+                "cut",
+                "deep",
+                "good",
+                "nation",
+                "sandpapergat",
+                "sport"
+            ],
+            "entity_signature": "AU:- and it cuts deep:au:australia",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-13T14:48:28.112432+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Australian cricket's sandpapergate is back - and it cuts deep in a 'nation of good sports'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "dbca582e-5a04-471e-8818-f6e33fd56a77",
+            "title": "The truth about Douma: How Syria covered up a",
+            "keywords": [
+                "attack",
+                "chemical",
+                "cover",
+                "douma",
+                "syria",
+                "truth"
+            ],
+            "entity_signature": "SY:attack:conflict:how syria covered up a chemical",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-13T14:48:28.112432+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "The truth about Douma: How Syria covered up a chemical attack"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "c8481b19-b058-43db-9812-713729dea853",
+            "title": "Fiscal discipline has cut cost of capital to",
+            "keywords": [
+                "bank",
+                "build",
+                "busi",
+                "capital",
+                "cost",
+                "cut",
+                "disciplin",
+                "fiscal",
+                "htl",
+                "job"
+            ],
+            "entity_signature": "IN:cost of capital:cut:economics",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-13T14:48:28.112432+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Fiscal discipline has cut cost of capital to build businesses, jobs: World Bank's Neelkanth Mishra | HTLS 2026"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "7c53e9a0-04b5-47a5-b792-80dedd097449",
+            "title": "Turkey and Qatar pledge unified stance against",
+            "keywords": [
+                "attack",
+                "defenc",
+                "mutual",
+                "pact",
+                "pledg",
+                "qatar",
+                "stanc",
+                "turkey",
+                "unifi"
+            ],
+            "entity_signature": "TR:conflict:diplomacy:pledge",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Turkey and Qatar pledge unified stance against attacks in mutual defence pact"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "fa54243b-1440-4432-939f-be117e98a437",
+            "title": "UN refugee chief Barham Salih slams 'shameful'",
+            "keywords": [
+                "barham",
+                "chief",
+                "political",
+                "refugee",
+                "salih",
+                "shameful",
+                "slam",
+                "solu",
+                "sudan",
+                "war"
+            ],
+            "entity_signature": "FR:civilians & impacted communities:civilians & impacted communities (refugee):conflict",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-13T21:12:55.958965+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "UN refugee chief Barham Salih slams 'shameful' war in Sudan, urges 'political solution'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "5242b12b-3318-492d-8a2f-a6130e656854",
+            "title": "How the Jensen Huang scandal created a headache",
+            "keywords": [
+                "busi",
+                "creat",
+                "friendli",
+                "headach",
+                "huang",
+                "jensen",
+                "scandal",
+                "singapor"
+            ],
+            "entity_signature": "SG:Huang:Jensen:created:economics",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-14T01:35:43.317985+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "How the Jensen Huang scandal created a headache for business-friendly Singapore"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "51b3df7a-83fb-46d4-959d-3ef66eaa818e",
+            "title": "After a summer win, India's Gen Z protesters face",
+            "keywords": [
+                "fac",
+                "gen",
+                "india",
+                "protester",
+                "summer",
+                "uncertainti",
+                "win",
+                "winter"
+            ],
+            "entity_signature": "IN:, india's gen z protesters face a winter of uncertainty:after a summer:civic activists / protesters",
+            "category": "World",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-14T01:35:43.317985+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "After a summer win, India's Gen Z protesters face a winter of uncertainty"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "07f65cff-817e-422e-a197-e9d690f2006e",
+            "title": "Hungary seizes $19.5m in cash found buried in",
+            "keywords": [
+                "amid",
+                "buri",
+                "cash",
+                "forest",
+                "found",
+                "graft",
+                "hungari",
+                "inquiri",
+                "seiz"
+            ],
+            "entity_signature": "HU:$19.5m:hu:hungary",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-14T01:35:43.317985+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Hungary seizes $19.5m in cash found buried in forests amid graft inquiry"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "46468046-d714-4d1f-9d1e-ab8770516d45",
+            "title": "Estonia bans Russian athletes as backlash",
+            "keywords": [
+                "athlet",
+                "backlash",
+                "ban",
+                "estonia",
+                "intensifi",
+                "russian"
+            ],
+            "entity_signature": "RU:UA:bans:conflict:estonia",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-14T08:39:54.210972+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Estonia bans Russian athletes as backlash intensifies"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "939e51c8-7bc5-427a-b35e-04e76111c8e8",
+            "title": "Meet the Fans Who Traveled to Bangkok for",
+            "keywords": [
+                "asia",
+                "bangkok",
+                "eurovision",
+                "fan",
+                "meet",
+                "travel"
+            ],
+            "entity_signature": "TH:US:fans who traveled:meet:sovereign_stakeholder",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-14T15:36:11.336746+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Meet the Fans Who Traveled to Bangkok for Eurovision Asia"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "c00bce07-1ae3-427e-8e48-68d9aed8b822",
+            "title": "Asian love ballads test Eurovision's winning song",
+            "keywords": [
+                "asian",
+                "ballad",
+                "eurovision",
+                "formula",
+                "lov",
+                "song",
+                "test",
+                "winn"
+            ],
+            "entity_signature": "EU:asian love ballads:eu:european union",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-14T15:36:11.336746+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Asian love ballads test Eurovision's winning song formula."
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "65132551-7daa-40ef-84b9-1455c079f55a",
+            "title": "Hungarian authorities uncover $20m during probe",
+            "keywords": [
+                "20m",
+                "authoriti",
+                "era",
+                "hungarian",
+                "minister",
+                "prob",
+                "uncover"
+            ],
+            "entity_signature": "HU:hu:hungarian authorities uncover $20m during:hungary",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-14T15:36:11.336746+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Hungarian authorities uncover $20m during probe of Orbán-era minister"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "dc42cbd1-74d2-48f0-afc3-d87785ea0cb6",
+            "title": "'Get Focused on London': How Iran's Agents",
+            "keywords": [
+                "agent",
+                "attack",
+                "european",
+                "focus",
+                "get",
+                "iran",
+                "london",
+                "target"
+            ],
+            "entity_signature": "EU:IR:UK:attacked:eu",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-14T15:36:11.336746+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'Get Focused on London': How Iran's Agents Attacked European Targets"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "5f2f28fa-fc58-42f0-a12b-138b3d0a43f3",
+            "title": "The OpenAI board member who fired Sam Altman says",
+            "keywords": [
+                "ai",
+                "altman",
+                "board",
+                "ceo",
+                "fir",
+                "member",
+                "openai",
+                "sam",
+                "still",
+                "trust"
+            ],
+            "entity_signature": "Altman:Sam:fired:leader:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-14T15:36:11.336746+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "The OpenAI board member who fired Sam Altman says we still can't trust AI CEOs"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "7df7aa9d-0abb-4330-a68f-952c737d1529",
+            "title": "Tesla is inviting some people to buy a Cybercab",
+            "keywords": [
+                "buy",
+                "cybercab",
+                "fin",
+                "invit",
+                "peopl",
+                "personal",
+                "print",
+                "tesla",
+                "use"
+            ],
+            "entity_signature": "buy:cybercab 'for personal use:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-14T15:36:11.336746+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Tesla is inviting some people to buy a Cybercab 'for personal use' — but read the fine print"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "6bb4fddb-4cc1-48e4-8fd9-c094df06d9a3",
+            "title": "Trump's Oil Grab in Venezuela Is Testing the",
+            "keywords": [
+                "countri",
+                "grab",
+                "ident",
+                "nate",
+                "oil",
+                "test",
+                "trump",
+                "venezuela"
+            ],
+            "entity_signature": "US:VE:Donald:Donald Trump:country's national identity",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-14T15:36:11.336746+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump's Oil Grab in Venezuela Is Testing the Country's National Identity"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "45a93323-c1e4-4b76-b8c2-b0162e715cf9",
+            "title": "Two Celebrity Cases Put a Spotlight on British",
+            "keywords": [
+                "british",
+                "cas",
+                "celebr",
+                "court",
+                "gag",
+                "order",
+                "put",
+                "spotlight",
+                "two"
+            ],
+            "entity_signature": "UK:collective_faction:courts:judicial & investigative bodies",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-14T15:36:11.336746+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Two Celebrity Cases Put a Spotlight on British Courts' Gag Orders"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "39cd2397-d122-44d3-a76f-9830aab480f8",
+            "title": "Assam CM orders probe into crash that killed 26",
+            "keywords": [
+                "assam",
+                "crash",
+                "kill",
+                "order",
+                "prob",
+                "rul",
+                "stricter",
+                "traffic"
+            ],
+            "entity_signature": "assam cm orders:crash that killed 26, vows stricter traffic rules:economy",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-14T15:36:11.336746+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Assam CM orders probe into crash that killed 26, vows stricter traffic rules"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "644a8edd-0b6a-4910-b99c-9ba1bf8239af",
+            "title": "Manipur CM chairs security review meeting after",
+            "keywords": [
+                "chair",
+                "kangpokpi",
+                "kill",
+                "manipur",
+                "meet",
+                "review",
+                "secur",
+                "ukhrul"
+            ],
+            "entity_signature": "india regional stakeholders:manipur cm chairs security review:meeting",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-14T15:36:11.336746+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Manipur CM chairs security review meeting after killings in Kangpokpi, Ukhrul"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "89fe41d1-46bc-4539-bfa1-28048c66c22a",
+            "title": "Families of slain Special Police Officers seek",
+            "keywords": [
+                "accountabil",
+                "cbi",
+                "famili",
+                "kishtwar",
+                "laps",
+                "officer",
+                "polic",
+                "prob",
+                "secur",
+                "seek"
+            ],
+            "entity_signature": "cbi:cbi probe, accountability:civilians & impacted communities",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-14T15:36:11.336746+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Families of slain Special Police Officers seek CBI probe, accountability for security lapses in J&K's Kishtwar"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "9931dbba-58b4-438e-bab6-e0ea9cb36784",
+            "title": "Copper wire upgrade caused nationwide flight",
+            "keywords": [
+                "caus",
+                "copper",
+                "flight",
+                "nationwid",
+                "secretari",
+                "suspension",
+                "transport",
+                "upgrad",
+                "wir"
+            ],
+            "entity_signature": "US:copper wire upgrade caused nationwide flight suspension, us transport secretary says:sovereign_stakeholder:united states",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-14T20:27:28.467205+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Copper wire upgrade caused nationwide flight suspension, US transport secretary says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "b2740435-26d6-4f5c-a927-0a4d91f98b2e",
+            "title": "Philippines wins first Eurovision Song Contest",
+            "keywords": [
+                "asia",
+                "contest",
+                "eurovision",
+                "first",
+                "philippin",
+                "song",
+                "win"
+            ],
+            "entity_signature": "PH:first eurovision song contest asia:ph:philippines",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-14T20:27:28.467205+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Philippines wins first Eurovision Song Contest Asia"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7999999999999999,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "658ac2d6-d95f-42cb-b2b3-a1538505a72b",
+            "title": "Sotheby's auction of $180m Van Gogh challenged",
+            "keywords": [
+                "180m",
+                "auc",
+                "challeng",
+                "duress",
+                "gogh",
+                "sold",
+                "sothebi",
+                "van"
+            ],
+            "entity_signature": "duress:europe regional stakeholders:sold",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-14T20:27:28.467205+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Sotheby's auction of $180m Van Gogh challenged over claims it was 'sold under duress'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "4161ff08-f5d7-4efe-a2c2-9011076987fa",
+            "title": "Bomb found near ethanol plant in central Illinois",
+            "keywords": [
+                "bomb",
+                "central",
+                "ethanol",
+                "evacua",
+                "forc",
+                "found",
+                "illinoi",
+                "near",
+                "plant"
+            ],
+            "entity_signature": "bomb:conflict:fbi",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-14T20:27:28.467205+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Bomb found near ethanol plant in central Illinois forces evacuations"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "fb551693-7566-4561-8be5-3b6c9dccdefe",
+            "title": "Tesla opens Cybercab pre-orders 'for personal",
+            "keywords": [
+                "cybercab",
+                "fee",
+                "geo",
+                "monthli",
+                "open",
+                "order",
+                "personal",
+                "pre",
+                "restric",
+                "tesla"
+            ],
+            "entity_signature": "Elon:Elon Musk:cybercab pre-orders 'for personal use,:leader:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-14T20:27:28.467205+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Tesla opens Cybercab pre-orders 'for personal use,' with geo restrictions and a $299 monthly fee"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "c32f644a-5722-4e5e-abe1-8de04daef66f",
+            "title": "'We can't let them down' -- After midterm wins",
+            "keywords": [
+                "ahead",
+                "chart",
+                "democrat",
+                "midterm",
+                "path",
+                "turn",
+                "win"
+            ],
+            "entity_signature": ", democrats turn:north america regional stakeholders:sovereign_stakeholder",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-14T20:27:28.467205+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'We can't let them down' -- After midterm wins, Democrats turn to charting path ahead"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "fdc9231e-c1d1-4dc1-b422-23d09db3afd7",
+            "title": "Trump tells advisers he may hold off on Iran",
+            "keywords": [
+                "adviser",
+                "attack",
+                "barr",
+                "hold",
+                "iran",
+                "may",
+                "new",
+                "provoca",
+                "say",
+                "sourc"
+            ],
+            "entity_signature": "IR:Donald:Donald Trump:attacks:barring new provocations",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-14T15:36:11.336746+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump tells advisers he may hold off on Iran attacks barring new provocations, sources say"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "bbff8a69-d0bd-453e-838e-0f1eb0444877",
+            "title": "US flight shutdown exposes deepening air traffic",
+            "keywords": [
+                "air",
+                "crisi",
+                "deepen",
+                "expos",
+                "flight",
+                "network",
+                "shutdown",
+                "traffic"
+            ],
+            "entity_signature": "US:air traffic network crisis:deepening:syntactic_subject",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-14T08:39:54.210972+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US flight shutdown exposes deepening air traffic network crisis"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "9a93e1d4-c45f-4ff1-bef8-537053ec7aa7",
+            "title": "Hungary recovers $20 million cash in probe of",
+            "keywords": [
+                "cash",
+                "hungari",
+                "million",
+                "minister",
+                "orban",
+                "prob",
+                "recover"
+            ],
+            "entity_signature": "HU:Orban:Viktor:hu:hungary",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-15T00:07:51.947686+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Hungary recovers $20 million cash in probe of Orban minister"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "39e75af0-4d3b-4fb3-8616-1c45aa33e4e0",
+            "title": "Iraq PM targets powerful militia stronghold in",
+            "keywords": [
+                "30m",
+                "iraq",
+                "militia",
+                "oil",
+                "powerful",
+                "prob",
+                "smuggl",
+                "stronghold",
+                "target"
+            ],
+            "entity_signature": "collective_faction:insurgent / rebel factions:insurgent / rebel factions (militia)",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-15T00:07:51.947686+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Iraq PM targets powerful militia stronghold in $30m oil smuggling probe"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "ae6ca703-9ade-4dd8-953b-22d38394e5c5",
+            "title": "Netanyahu renews call for Israeli unity",
+            "keywords": [
+                "call",
+                "dismiss",
+                "eisenkot",
+                "govern",
+                "israeli",
+                "netanyahu",
+                "renew",
+                "trick",
+                "uniti"
+            ],
+            "entity_signature": "IL:Benjamin:Benjamin Netanyahu:call:il",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-15T00:07:51.947686+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Netanyahu renews call for Israeli unity government as Eisenkot dismisses 'tricks'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "4c9b7527-8c2f-41cf-b706-0a7eb6fba4a2",
+            "title": "US flights resume after ageing technology blamed",
+            "keywords": [
+                "age",
+                "blam",
+                "flight",
+                "outag",
+                "resum",
+                "technologi"
+            ],
+            "entity_signature": "US:resume:syntactic_subject:united states",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-15T00:07:51.947686+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US flights resume after ageing technology blamed for outage"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "2f60418a-e730-49bf-9cb5-f3ceb9783869",
+            "title": "Maintenance gone awry caused nation-wide ground",
+            "keywords": [
+                "awri",
+                "caus",
+                "gon",
+                "ground",
+                "maintenanc",
+                "nation",
+                "secretari",
+                "stop",
+                "transporta",
+                "wid"
+            ],
+            "entity_signature": "maintenance gone awry caused nation-wide ground stop, says transportation secretary:north america regional stakeholders:sovereign_stakeholder",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-15T00:07:51.947686+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Maintenance gone awry caused nation-wide ground stop, says Transportation Secretary"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "d031bf5b-3797-4f2a-a791-5d4a772a3055",
+            "title": "Elon Musk, other tech execs sign petition calling",
+            "keywords": [
+                "call",
+                "elon",
+                "exec",
+                "huang",
+                "jensen",
+                "musk",
+                "nvidia",
+                "peti",
+                "reinstat",
+                "sign"
+            ],
+            "entity_signature": "Elon:Elon Musk:elon musk, other tech execs:leader:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-15T00:07:51.947686+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "c61430f6-3477-4908-90d1-6918246a3a00",
+            "title": "US has lost measles elimination status, global",
+            "keywords": [
+                "authoriti",
+                "elimina",
+                "global",
+                "health",
+                "lost",
+                "measl",
+                "say",
+                "statu"
+            ],
+            "entity_signature": "US:lost:measles elimination status, global health authorities say:researchers",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-15T00:07:51.947686+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US has lost measles elimination status, global health authorities say"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "5a9dc2ff-3bd9-4ff0-9cf8-e3a71d8b0ad7",
+            "title": "Mumbai police announce traffic diversion ahead of",
+            "keywords": [
+                "ahead",
+                "announc",
+                "britain",
+                "diversion",
+                "mumbai",
+                "polic",
+                "princ",
+                "traffic",
+                "visit",
+                "william"
+            ],
+            "entity_signature": "UK:announce:collective_faction:judicial & investigative bodies",
+            "category": "National",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-15T00:07:51.947686+00:00",
+            "last_seen": "2026-11-15T00:07:51.947686+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Mumbai police announce traffic diversion ahead of Britain's Prince William visit"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
             ]
         },
         {
@@ -141,710 +1670,6 @@
                 "France 24",
                 "New York Times",
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "055946cf-e72e-4210-94f0-acccc5483a63",
-            "title": "Seeking to Broaden Ukraine Talks, U.S. Urges",
-            "keywords": [
-                "broaden",
-                "europ",
-                "includ",
-                "russia",
-                "seek",
-                "talk",
-                "ukrain"
-            ],
-            "entity_signature": "EU:RU:UA:Donald:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-11T21:50:10.790348+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "Seeking to Broaden Ukraine Talks, U.S. Urges Russia to Include Europe",
-                "Zelensky and Kushner confirm that Europe will join next round of Russia-Ukraine talks",
-                "Europe should not walk into Russia's 'traps' on Ukraine talks, EU's foreign policy chief Kallas says – Europe live",
-                "Russia is 'setting traps' in Ukraine talks, EU foreign policy chief warns"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "France 24",
-                "New York Times",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "834a329b-bd75-482d-9647-1ded69b30d74",
-            "title": "The leader of a Kenyan doomsday cult is sentenced",
-            "keywords": [
-                "cult",
-                "doomsday",
-                "kenyan",
-                "leader",
-                "prison",
-                "sentenc"
-            ],
-            "entity_signature": "KE:200 years:children:civilians & impacted communities",
-            "category": "National",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-06T18:57:15.146358+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "The leader of a Kenyan doomsday cult is sentenced to 200 years in prison",
-                "Kenyan doomsday sect leader jailed for 200 years for murder of 190 children"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "ff72938e-e915-42f3-a09e-871948e705a9",
-            "title": "Trump, Putin and Xi plan historic joint meeting",
-            "keywords": [
-                "china",
-                "historic",
-                "hous",
-                "joint",
-                "meet",
-                "plan",
-                "putin",
-                "trump",
-                "whit"
-            ],
-            "entity_signature": "CN:Donald:Donald Trump:china:china next week, white house says",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-14T08:39:54.210972+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
-                "Trump to Meet With Putin and Xi in China, With Nuclear Proliferation on the Agenda"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Europe",
-                "BBC News",
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "ec30ef0a-5058-472a-8150-c62339dbbee1",
-            "title": "US-China Board of Trade holds first meeting days",
-            "keywords": [
-                "board",
-                "china",
-                "first",
-                "hold",
-                "meet",
-                "summit",
-                "trad",
-                "trump"
-            ],
-            "entity_signature": "CN:US:Donald:Donald Trump:china",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-13T21:12:55.958965+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "US-China Board of Trade holds first meeting days before Trump-Xi summit",
-                "5 Big Questions as C.E.O.s Meet in China"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NYT Business",
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "c83256ef-e219-4395-b5e9-efb7b8a6dea8",
-            "title": "'No war, no peace' situation between US and Iran",
-            "keywords": [
-                "continu",
-                "iran",
-                "iraqi",
-                "peac",
-                "situa",
-                "war"
-            ],
-            "entity_signature": "FR:IR:US:conflict:diplomacy",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-13T14:48:28.112432+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "'No war, no peace' situation between US and Iran 'cannot continue', Iraqi FM says",
-                "Macron says limiting Ukraine aid would pave way to 'another war'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "b92432c9-d180-4d95-b6ab-6a42fd819103",
-            "title": "Italy fines Meta $887 million over Android users'",
-            "keywords": [
-                "access",
-                "android",
-                "data",
-                "fin",
-                "itali",
-                "meta",
-                "million",
-                "user"
-            ],
-            "entity_signature": "IT:fines:it:italy",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-14T15:36:11.336746+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Italy fines Meta $887 million over Android users' data access",
-                "Italy fines Meta €805m over accessing users' photos"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Europe",
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "01d4b3c6-b4de-4dd2-b5dc-c19e0e508ebb",
-            "title": "Philippines' Carmelle wins first Eurovision",
-            "keywords": [
-                "asia",
-                "carmell",
-                "contest",
-                "eurovision",
-                "first",
-                "philippin",
-                "win"
-            ],
-            "entity_signature": "PH:TH:first eurovision contest:ph:philippines",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-14T20:27:28.467205+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Philippines' Carmelle wins first Eurovision contest in Asia",
-                "Philippines' Carmelle storms to victory in Eurovision Asia debut in Bangkok"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.7999999999999999,
-            "sources_involved": [
-                "SCMP",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "19349a1a-aa03-46b8-97cb-9f77de535888",
-            "title": "Collision of two trains in Egypt kills at least",
-            "keywords": [
-                "collision",
-                "egypt",
-                "kill",
-                "least",
-                "seven",
-                "train",
-                "two"
-            ],
-            "entity_signature": "EG:collision of two trains in egypt:eg:egypt",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Collision of two trains in Egypt kills at least seven"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "8eb9d0c6-f21b-4aa7-a8d0-56b8007bf94c",
-            "title": "Fourteen dead after truck loses control in",
-            "keywords": [
-                "control",
-                "crash",
-                "dead",
-                "fourteen",
-                "los",
-                "truck",
-                "uae",
-                "vehicl"
-            ],
-            "entity_signature": "control:economy:fourteen dead after truck",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Fourteen dead after truck loses control in 23-vehicle crash in UAE"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "9595f55a-67f8-419c-93ef-07005d8805b2",
-            "title": "Two men guilty of spying for Iran over plan to",
-            "keywords": [
-                "guilti",
-                "iran",
-                "journalist",
-                "lawyer",
-                "men",
-                "plan",
-                "spy",
-                "target",
-                "two"
-            ],
-            "entity_signature": "IR:ir:iran:iran sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Two men guilty of spying for Iran over plan to target journalists and lawyer"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "f1a7abce-eb7a-48ae-b30a-9f7e506d49b0",
-            "title": "Egyptian journalist's retrial adjourned as UN",
-            "keywords": [
-                "adjourn",
-                "assault",
-                "egyptian",
-                "freedom",
-                "journalist",
-                "press",
-                "retrial"
-            ],
-            "entity_signature": "EG:eg:egypt:egypt sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-12T18:42:51.910075+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Egyptian journalist's retrial adjourned as UN warns of 'assaults on press freedom'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "db0fb56e-55e7-445e-ae86-a566d21e0586",
-            "title": "North Korean hackers used fake video calls in",
-            "keywords": [
-                "400m",
-                "call",
-                "crypto",
-                "fak",
-                "fbi",
-                "hack",
-                "hacker",
-                "korean",
-                "north",
-                "used"
-            ],
-            "entity_signature": "KP:collective_faction:fbi:judicial & investigative bodies",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-13T06:22:46.319925+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "North Korean hackers used fake video calls in $400m crypto hack, says FBI"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "afaffd29-9a58-4489-803d-70040aa4fd90",
-            "title": "Australian cricket's sandpapergate is back - and",
-            "keywords": [
-                "australian",
-                "back",
-                "cricket",
-                "cut",
-                "deep",
-                "good",
-                "nation",
-                "sandpapergat",
-                "sport"
-            ],
-            "entity_signature": "AU:- and it cuts deep:au:australia",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-13T14:48:28.112432+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Australian cricket's sandpapergate is back - and it cuts deep in a 'nation of good sports'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "dbca582e-5a04-471e-8818-f6e33fd56a77",
-            "title": "The truth about Douma: How Syria covered up a",
-            "keywords": [
-                "attack",
-                "chemical",
-                "cover",
-                "douma",
-                "syria",
-                "truth"
-            ],
-            "entity_signature": "SY:attack:conflict:how syria covered up a chemical",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-13T14:48:28.112432+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "The truth about Douma: How Syria covered up a chemical attack"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "c8481b19-b058-43db-9812-713729dea853",
-            "title": "Fiscal discipline has cut cost of capital to",
-            "keywords": [
-                "bank",
-                "build",
-                "busi",
-                "capital",
-                "cost",
-                "cut",
-                "disciplin",
-                "fiscal",
-                "htl",
-                "job"
-            ],
-            "entity_signature": "IN:cost of capital:cut:economics",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-13T14:48:28.112432+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Fiscal discipline has cut cost of capital to build businesses, jobs: World Bank's Neelkanth Mishra | HTLS 2026"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "7c53e9a0-04b5-47a5-b792-80dedd097449",
-            "title": "Turkey and Qatar pledge unified stance against",
-            "keywords": [
-                "attack",
-                "defenc",
-                "mutual",
-                "pact",
-                "pledg",
-                "qatar",
-                "stanc",
-                "turkey",
-                "unifi"
-            ],
-            "entity_signature": "TR:conflict:diplomacy:pledge",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-13T21:12:55.958965+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Turkey and Qatar pledge unified stance against attacks in mutual defence pact"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "fa54243b-1440-4432-939f-be117e98a437",
-            "title": "UN refugee chief Barham Salih slams 'shameful'",
-            "keywords": [
-                "barham",
-                "chief",
-                "political",
-                "refugee",
-                "salih",
-                "shameful",
-                "slam",
-                "solu",
-                "sudan",
-                "war"
-            ],
-            "entity_signature": "FR:civilians & impacted communities:civilians & impacted communities (refugee):conflict",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-13T21:12:55.958965+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "UN refugee chief Barham Salih slams 'shameful' war in Sudan, urges 'political solution'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "5242b12b-3318-492d-8a2f-a6130e656854",
-            "title": "How the Jensen Huang scandal created a headache",
-            "keywords": [
-                "busi",
-                "creat",
-                "friendli",
-                "headach",
-                "huang",
-                "jensen",
-                "scandal",
-                "singapor"
-            ],
-            "entity_signature": "SG:Huang:Jensen:created:economics",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-14T01:35:43.317985+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "How the Jensen Huang scandal created a headache for business-friendly Singapore"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "51b3df7a-83fb-46d4-959d-3ef66eaa818e",
-            "title": "After a summer win, India's Gen Z protesters face",
-            "keywords": [
-                "fac",
-                "gen",
-                "india",
-                "protester",
-                "summer",
-                "uncertainti",
-                "win",
-                "winter"
-            ],
-            "entity_signature": "IN:, india's gen z protesters face a winter of uncertainty:after a summer:civic activists / protesters",
-            "category": "World",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-14T01:35:43.317985+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "After a summer win, India's Gen Z protesters face a winter of uncertainty"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "07f65cff-817e-422e-a197-e9d690f2006e",
-            "title": "Hungary seizes $19.5m in cash found buried in",
-            "keywords": [
-                "amid",
-                "buri",
-                "cash",
-                "forest",
-                "found",
-                "graft",
-                "hungari",
-                "inquiri",
-                "seiz"
-            ],
-            "entity_signature": "HU:$19.5m:hu:hungary",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-14T01:35:43.317985+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Hungary seizes $19.5m in cash found buried in forests amid graft inquiry"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "46468046-d714-4d1f-9d1e-ab8770516d45",
-            "title": "Estonia bans Russian athletes as backlash",
-            "keywords": [
-                "athlet",
-                "backlash",
-                "ban",
-                "estonia",
-                "intensifi",
-                "russian"
-            ],
-            "entity_signature": "RU:UA:bans:conflict:estonia",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-14T08:39:54.210972+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Estonia bans Russian athletes as backlash intensifies"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "939e51c8-7bc5-427a-b35e-04e76111c8e8",
-            "title": "Meet the Fans Who Traveled to Bangkok for",
-            "keywords": [
-                "asia",
-                "bangkok",
-                "eurovision",
-                "fan",
-                "meet",
-                "travel"
-            ],
-            "entity_signature": "TH:US:fans who traveled:meet:sovereign_stakeholder",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-14T15:36:11.336746+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Meet the Fans Who Traveled to Bangkok for Eurovision Asia"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "c00bce07-1ae3-427e-8e48-68d9aed8b822",
-            "title": "Asian love ballads test Eurovision's winning song",
-            "keywords": [
-                "asian",
-                "ballad",
-                "eurovision",
-                "formula",
-                "lov",
-                "song",
-                "test",
-                "winn"
-            ],
-            "entity_signature": "EU:asian love ballads:eu:european union",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-14T15:36:11.336746+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Asian love ballads test Eurovision's winning song formula."
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
             ]
         },
         {
@@ -908,308 +1733,6 @@
             ]
         },
         {
-            "arc_id": "65132551-7daa-40ef-84b9-1455c079f55a",
-            "title": "Hungarian authorities uncover $20m during probe",
-            "keywords": [
-                "20m",
-                "authoriti",
-                "era",
-                "hungarian",
-                "minister",
-                "prob",
-                "uncover"
-            ],
-            "entity_signature": "HU:hu:hungarian authorities uncover $20m during:hungary",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-14T15:36:11.336746+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Hungarian authorities uncover $20m during probe of Orbán-era minister"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "dc42cbd1-74d2-48f0-afc3-d87785ea0cb6",
-            "title": "'Get Focused on London': How Iran's Agents",
-            "keywords": [
-                "agent",
-                "attack",
-                "european",
-                "focus",
-                "get",
-                "iran",
-                "london",
-                "target"
-            ],
-            "entity_signature": "EU:IR:UK:attacked:eu",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-14T15:36:11.336746+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'Get Focused on London': How Iran's Agents Attacked European Targets"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "5f2f28fa-fc58-42f0-a12b-138b3d0a43f3",
-            "title": "The OpenAI board member who fired Sam Altman says",
-            "keywords": [
-                "ai",
-                "altman",
-                "board",
-                "ceo",
-                "fir",
-                "member",
-                "openai",
-                "sam",
-                "still",
-                "trust"
-            ],
-            "entity_signature": "Altman:Sam:fired:leader:north america regional stakeholders",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-14T15:36:11.336746+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "The OpenAI board member who fired Sam Altman says we still can't trust AI CEOs"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Verge"
-            ]
-        },
-        {
-            "arc_id": "c3e658b4-daec-4f32-a071-6e82fc30e115",
-            "title": "Ukraine's Starshield Access Is Being Restricted",
-            "keywords": [
-                "access",
-                "restrict",
-                "starshield",
-                "ukrain",
-                "zelenski"
-            ],
-            "entity_signature": "RU:UA:Volodymyr:Volodymyr Zelenskyy:geopolitics",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-14T15:36:11.336746+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Ukraine's Starshield Access Is Being Restricted Again, Zelensky Says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "7df7aa9d-0abb-4330-a68f-952c737d1529",
-            "title": "Tesla is inviting some people to buy a Cybercab",
-            "keywords": [
-                "buy",
-                "cybercab",
-                "fin",
-                "invit",
-                "peopl",
-                "personal",
-                "print",
-                "tesla",
-                "use"
-            ],
-            "entity_signature": "buy:cybercab 'for personal use:north america regional stakeholders",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-14T15:36:11.336746+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Tesla is inviting some people to buy a Cybercab 'for personal use' — but read the fine print"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Verge"
-            ]
-        },
-        {
-            "arc_id": "6bb4fddb-4cc1-48e4-8fd9-c094df06d9a3",
-            "title": "Trump's Oil Grab in Venezuela Is Testing the",
-            "keywords": [
-                "countri",
-                "grab",
-                "ident",
-                "nate",
-                "oil",
-                "test",
-                "trump",
-                "venezuela"
-            ],
-            "entity_signature": "US:VE:Donald:Donald Trump:country's national identity",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-14T15:36:11.336746+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump's Oil Grab in Venezuela Is Testing the Country's National Identity"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "45a93323-c1e4-4b76-b8c2-b0162e715cf9",
-            "title": "Two Celebrity Cases Put a Spotlight on British",
-            "keywords": [
-                "british",
-                "cas",
-                "celebr",
-                "court",
-                "gag",
-                "order",
-                "put",
-                "spotlight",
-                "two"
-            ],
-            "entity_signature": "UK:collective_faction:courts:judicial & investigative bodies",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-14T15:36:11.336746+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Two Celebrity Cases Put a Spotlight on British Courts' Gag Orders"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "39cd2397-d122-44d3-a76f-9830aab480f8",
-            "title": "Assam CM orders probe into crash that killed 26",
-            "keywords": [
-                "assam",
-                "crash",
-                "kill",
-                "order",
-                "prob",
-                "rul",
-                "stricter",
-                "traffic"
-            ],
-            "entity_signature": "assam cm orders:crash that killed 26, vows stricter traffic rules:economy",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-14T15:36:11.336746+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Assam CM orders probe into crash that killed 26, vows stricter traffic rules"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "644a8edd-0b6a-4910-b99c-9ba1bf8239af",
-            "title": "Manipur CM chairs security review meeting after",
-            "keywords": [
-                "chair",
-                "kangpokpi",
-                "kill",
-                "manipur",
-                "meet",
-                "review",
-                "secur",
-                "ukhrul"
-            ],
-            "entity_signature": "india regional stakeholders:manipur cm chairs security review:meeting",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-14T15:36:11.336746+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Manipur CM chairs security review meeting after killings in Kangpokpi, Ukhrul"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "89fe41d1-46bc-4539-bfa1-28048c66c22a",
-            "title": "Families of slain Special Police Officers seek",
-            "keywords": [
-                "accountabil",
-                "cbi",
-                "famili",
-                "kishtwar",
-                "laps",
-                "officer",
-                "polic",
-                "prob",
-                "secur",
-                "seek"
-            ],
-            "entity_signature": "cbi:cbi probe, accountability:civilians & impacted communities",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-14T15:36:11.336746+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Families of slain Special Police Officers seek CBI probe, accountability for security lapses in J&K's Kishtwar"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
             "arc_id": "a9c58054-bc44-4215-898a-db70174e6766",
             "title": "Ukraine's Zelenskiy escalates criticism of SpaceX",
             "keywords": [
@@ -1236,127 +1759,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "9931dbba-58b4-438e-bab6-e0ea9cb36784",
-            "title": "Copper wire upgrade caused nationwide flight",
-            "keywords": [
-                "caus",
-                "copper",
-                "flight",
-                "nationwid",
-                "secretari",
-                "suspension",
-                "transport",
-                "upgrad",
-                "wir"
-            ],
-            "entity_signature": "US:copper wire upgrade caused nationwide flight suspension, us transport secretary says:sovereign_stakeholder:united states",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-14T20:27:28.467205+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Copper wire upgrade caused nationwide flight suspension, US transport secretary says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC News"
-            ]
-        },
-        {
-            "arc_id": "b2740435-26d6-4f5c-a927-0a4d91f98b2e",
-            "title": "Philippines wins first Eurovision Song Contest",
-            "keywords": [
-                "asia",
-                "contest",
-                "eurovision",
-                "first",
-                "philippin",
-                "song",
-                "win"
-            ],
-            "entity_signature": "PH:first eurovision song contest asia:ph:philippines",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-14T20:27:28.467205+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Philippines wins first Eurovision Song Contest Asia"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.7999999999999999,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "658ac2d6-d95f-42cb-b2b3-a1538505a72b",
-            "title": "Sotheby's auction of $180m Van Gogh challenged",
-            "keywords": [
-                "180m",
-                "auc",
-                "challeng",
-                "duress",
-                "gogh",
-                "sold",
-                "sothebi",
-                "van"
-            ],
-            "entity_signature": "duress:europe regional stakeholders:sold",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-14T20:27:28.467205+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Sotheby's auction of $180m Van Gogh challenged over claims it was 'sold under duress'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "1d3bc624-88f5-4576-9c2f-3abfd1a4e538",
-            "title": "Deadly car bomb blast kills two near Syria's",
-            "keywords": [
-                "blast",
-                "bomb",
-                "capital",
-                "car",
-                "deadli",
-                "kill",
-                "near",
-                "syria",
-                "two"
-            ],
-            "entity_signature": "SY:blast kills two near syria's capital:bomb:conflict",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-14T20:27:28.467205+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Deadly car bomb blast kills two near Syria's capital"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
             ]
         },
         {
@@ -1417,98 +1819,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "4161ff08-f5d7-4efe-a2c2-9011076987fa",
-            "title": "Bomb found near ethanol plant in central Illinois",
-            "keywords": [
-                "bomb",
-                "central",
-                "ethanol",
-                "evacua",
-                "forc",
-                "found",
-                "illinoi",
-                "near",
-                "plant"
-            ],
-            "entity_signature": "bomb:conflict:fbi",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-14T20:27:28.467205+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Bomb found near ethanol plant in central Illinois forces evacuations"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "fb551693-7566-4561-8be5-3b6c9dccdefe",
-            "title": "Tesla opens Cybercab pre-orders 'for personal",
-            "keywords": [
-                "cybercab",
-                "fee",
-                "geo",
-                "monthli",
-                "open",
-                "order",
-                "personal",
-                "pre",
-                "restric",
-                "tesla"
-            ],
-            "entity_signature": "Elon:Elon Musk:cybercab pre-orders 'for personal use,:leader:north america regional stakeholders",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-14T20:27:28.467205+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Tesla opens Cybercab pre-orders 'for personal use,' with geo restrictions and a $299 monthly fee"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "c32f644a-5722-4e5e-abe1-8de04daef66f",
-            "title": "'We can't let them down' -- After midterm wins",
-            "keywords": [
-                "ahead",
-                "chart",
-                "democrat",
-                "midterm",
-                "path",
-                "turn",
-                "win"
-            ],
-            "entity_signature": ", democrats turn:north america regional stakeholders:sovereign_stakeholder",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-14T20:27:28.467205+00:00",
-            "last_seen": "2026-11-14T20:27:28.467205+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'We can't let them down' -- After midterm wins, Democrats turn to charting path ahead"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NPR News"
             ]
         },
         {
@@ -1724,38 +2034,6 @@
             ],
             "importance_trend": "rising",
             "peak_velocity": 1.0,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "fdc9231e-c1d1-4dc1-b422-23d09db3afd7",
-            "title": "Trump tells advisers he may hold off on Iran",
-            "keywords": [
-                "adviser",
-                "attack",
-                "barr",
-                "hold",
-                "iran",
-                "may",
-                "new",
-                "provoca",
-                "say",
-                "sourc"
-            ],
-            "entity_signature": "IR:Donald:Donald Trump:attacks:barring new provocations",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-14T15:36:11.336746+00:00",
-            "last_seen": "2026-11-14T15:36:11.336746+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump tells advisers he may hold off on Iran attacks barring new provocations, sources say"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
             "sources_involved": [
                 "Reuters"
             ]
@@ -2262,36 +2540,6 @@
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "bbff8a69-d0bd-453e-838e-0f1eb0444877",
-            "title": "US flight shutdown exposes deepening air traffic",
-            "keywords": [
-                "air",
-                "crisi",
-                "deepen",
-                "expos",
-                "flight",
-                "network",
-                "shutdown",
-                "traffic"
-            ],
-            "entity_signature": "US:air traffic network crisis:deepening:syntactic_subject",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-14T08:39:54.210972+00:00",
-            "last_seen": "2026-11-14T08:39:54.210972+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "US flight shutdown exposes deepening air traffic network crisis"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
             "sources_involved": [
                 "Reuters"
             ]
@@ -2851,251 +3099,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "5de882fc-a690-4d7f-94f0-8c5a19097d76",
-            "title": "Why Japanese DJ who survived spiked-drink ordeal",
-            "keywords": [
-                "apologis",
-                "drink",
-                "hong",
-                "japanes",
-                "keep",
-                "kong",
-                "ordeal",
-                "spik",
-                "surviv"
-            ],
-            "entity_signature": "JP:japan:japan sovereign authorities:jp",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-14T01:35:43.317985+00:00",
-            "last_seen": "2026-11-14T01:35:43.317985+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Why Japanese DJ who survived spiked-drink ordeal in Hong Kong keeps apologising"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "53754c41-2ad0-4f61-ac4c-cf1526206d1e",
-            "title": "China holds 80% of world's underwater data centre",
-            "keywords": [
-                "centr",
-                "china",
-                "comput",
-                "data",
-                "demand",
-                "energi",
-                "grow",
-                "hold",
-                "patent",
-                "underwater"
-            ],
-            "entity_signature": "CN:china:china holds 80% of world's underwater data centre patents as computing energy:china sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-14T01:35:43.317985+00:00",
-            "last_seen": "2026-11-14T01:35:43.317985+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "China holds 80% of world's underwater data centre patents as computing energy demands grow"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "7449e9e5-98d2-4016-a875-4da8b1ce3e94",
-            "title": "UK police open sex offence probe into comedian",
-            "keywords": [
-                "author",
-                "comedian",
-                "david",
-                "offenc",
-                "open",
-                "polic",
-                "prob",
-                "sex",
-                "walliam"
-            ],
-            "entity_signature": "UK:collective_faction:conflict:judicial & investigative bodies",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-14T01:35:43.317985+00:00",
-            "last_seen": "2026-11-14T01:35:43.317985+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "UK police open sex offence probe into comedian and author David Walliams"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "d27b0e1b-3ba7-482b-96bd-9cfc1b408ff0",
-            "title": "Iran war live: Fighting grips Yemen as Qatar",
-            "keywords": [
-                "deal",
-                "defenc",
-                "fight",
-                "grip",
-                "iran",
-                "qatar",
-                "sign",
-                "turkiy",
-                "war",
-                "yemen"
-            ],
-            "entity_signature": "IR:TR:civilians:civilians & impacted communities:civilians & impacted communities (civilians)",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-14T01:35:43.317985+00:00",
-            "last_seen": "2026-11-14T01:35:43.317985+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Iran war live: Fighting grips Yemen as Qatar, Turkiye sign defence deal"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "cab7b934-5a0d-4b36-8a9c-c2c9c776ad91",
-            "title": "The government says it will close a beloved D.C",
-            "keywords": [
-                "belov",
-                "clos",
-                "govern",
-                "judg",
-                "park",
-                "step",
-                "sunday"
-            ],
-            "entity_signature": "Donald:Donald Trump:government says it will close a beloved d.c. park sunday. will a judge step in?:judge:judicial & investigative bodies",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-14T01:35:43.317985+00:00",
-            "last_seen": "2026-11-14T01:35:43.317985+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "The government says it will close a beloved D.C. park Sunday. Will a judge step in?"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "02eac778-8918-4e91-930a-50a39b7b6d9f",
-            "title": "Calcutta High Court halts demolition of ex-TMC",
-            "keywords": [
-                "calcutta",
-                "court",
-                "demoli",
-                "falta",
-                "halt",
-                "high",
-                "hous",
-                "jahangir",
-                "khan",
-                "strongman"
-            ],
-            "entity_signature": "calcutta high court:calcutta high court halts demolition of ex-tmc strongman jahangir khan's falta house:collective_faction",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-14T01:35:43.317985+00:00",
-            "last_seen": "2026-11-14T01:35:43.317985+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Calcutta High Court halts demolition of ex-TMC strongman Jahangir Khan's Falta house"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "28be8cfa-3ad8-4cba-a13d-90daf45a02cd",
-            "title": "After CBI, ED arrests Mahadev betting app scam",
-            "keywords": [
-                "accus",
-                "app",
-                "arrest",
-                "bett",
-                "cbi",
-                "mahadev",
-                "scam"
-            ],
-            "entity_signature": "after cbi, ed:arrests:cbi",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-14T01:35:43.317985+00:00",
-            "last_seen": "2026-11-14T01:35:43.317985+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "After CBI, ED arrests Mahadev betting app scam accused"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "fed03a0c-ec0a-4ab5-bcd3-16eed7e7a18e",
-            "title": "Two-year-old dies after firecracker explodes",
-            "keywords": [
-                "die",
-                "explod",
-                "firecracker",
-                "insid",
-                "mouth",
-                "old",
-                "two"
-            ],
-            "entity_signature": "dies:india regional stakeholders:syntactic_subject",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-14T01:35:43.317985+00:00",
-            "last_seen": "2026-11-14T01:35:43.317985+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Two-year-old dies after firecracker explodes inside his mouth"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
             ]
         }
     ],
