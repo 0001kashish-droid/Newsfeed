@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-15T14:38:26.566773+00:00",
+  "lastUpdated": "2026-11-15T20:10:12.344551+00:00",
   "total": 30,
   "episodes": [
     {
@@ -26,22 +26,13 @@
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "france24-eu-3-3441",
-          "title": "Will Ukraine make territorial concessions for NATO membership?",
-          "source": "France 24",
-          "link": "https://www.france24.com/en/will-ukraine-make-territorial-concessions-for-nato-membership",
-          "url": "https://www.france24.com/en/will-ukraine-make-territorial-concessions-for-nato-membership",
-          "relevance": 0.231,
-          "resonance_score": 0.231
-        },
-        {
-          "id": "aljazeera-5-4865",
-          "title": "Starshield restrictions help Russia's energy attacks on Ukraine: Zelenskyy",
-          "source": "Al Jazeera",
-          "link": "https://www.aljazeera.com/news/2026/11/15/starshield-restrictions-help-russias-energy-attacks-on-ukraine-zelenskyy?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/11/15/starshield-restrictions-help-russias-energy-attacks-on-ukraine-zelenskyy?traffic_source=rss",
-          "relevance": 0.249,
-          "resonance_score": 0.249
+          "id": "scmp-asia-3-3036",
+          "title": "Estonia to close Russia border after 'sabotage' bid, foreign minister says",
+          "source": "SCMP",
+          "link": "https://www.scmp.com/news/world/russia-central-asia/article/3374514/estonia-close-russia-border-after-sabotage-bid-foreign-minister-says",
+          "url": "https://www.scmp.com/news/world/russia-central-asia/article/3374514/estonia-close-russia-border-after-sabotage-bid-foreign-minister-says",
+          "relevance": 0.299,
+          "resonance_score": 0.299
         }
       ]
     },
@@ -66,31 +57,20 @@
       "duration": "3:34:27",
       "views": "",
       "category": "AI & Tech",
-      "resonant_news": [
-        {
-          "id": "the-hindu-4-2304",
-          "title": "Rajnath Singh calls for AI, robotics in Non-Destructive Testing to strengthen defence sector",
-          "source": "The Hindu",
-          "link": "https://www.thehindu.com/news/cities/Hyderabad/rajnath-singh-calls-for-ai-robotics-in-non-destructive-testing-to-strengthen-defence-sector/article71704991.ece",
-          "url": "https://www.thehindu.com/news/cities/Hyderabad/rajnath-singh-calls-for-ai-robotics-in-non-destructive-testing-to-strengthen-defence-sector/article71704991.ece",
-          "relevance": 0.152,
-          "resonance_score": 0.152
-        }
-      ]
+      "resonant_news": []
     },
     {
       "id": "tp_FGCP2F_7rQk",
-      "title": "Jensen Huang & Lex visit Taiwan's Night Markets and Computex",
+      "title": "Jensen Huang visits Taiwan w/ Lex Fridman",
       "podcast": "Lex Fridman Podcast",
       "channel": "Lex Fridman Podcast",
       "podcastLogo": "LF",
       "tier": "flagship",
       "guest": "",
       "topics": [
-        "Artificial Intelligence",
-        "Global Economy"
+        "Artificial Intelligence"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning jensen huang & lex visit taiwan's night markets and computex.",
+      "theme": "Explores strategic perspectives and key developments concerning jensen huang visits taiwan w/ lex fridman.",
       "imageUrl": "https://i.ytimg.com/vi/FGCP2F_7rQk/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/FGCP2F_7rQk/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=FGCP2F_7rQk",
@@ -100,11 +80,21 @@
       "duration": "1:30:18",
       "views": "",
       "category": "AI & Tech",
-      "resonant_news": []
+      "resonant_news": [
+        {
+          "id": "bbc-mideast-3-8151",
+          "title": "Two men guilty of spying for Iran over plan to target journalists and lawyer",
+          "source": "BBC Middle East",
+          "link": "https://www.bbc.co.uk/news/articles/ck9q8g8209l2o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/ck9q8g8209l2o?at_medium=RSS&at_campaign=rss",
+          "relevance": 0.22,
+          "resonance_score": 0.22
+        }
+      ]
     },
     {
-      "id": "tp_pSbcJV_o_ko",
-      "title": "What People Living in Democracies Take for Granted | Leopoldo López | TED",
+      "id": "tp_4qxROUatTzk",
+      "title": "The Science of Learning New Things | Tania Lombrozo | TED",
       "podcast": "TED",
       "channel": "TED",
       "podcastLogo": "TED",
@@ -113,16 +103,39 @@
       "topics": [
         "Ideas & Culture"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning what people living in democracies take for granted.",
+      "theme": "Explores strategic perspectives and key developments concerning the science of learning new things.",
+      "imageUrl": "https://i.ytimg.com/vi/4qxROUatTzk/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/4qxROUatTzk/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=4qxROUatTzk",
+      "youtube_url": "https://www.youtube.com/watch?v=4qxROUatTzk",
+      "pubDate": "4h ago",
+      "date": "4h ago",
+      "duration": "15:38",
+      "views": "",
+      "category": "Science & Health",
+      "resonant_news": []
+    },
+    {
+      "id": "tp_pSbcJV_o_ko",
+      "title": "Inside Venezuela’s Uncertain Path to Freedom | Leopoldo López | TED",
+      "podcast": "TED",
+      "channel": "TED",
+      "podcastLogo": "TED",
+      "tier": "flagship",
+      "guest": "",
+      "topics": [
+        "Artificial Intelligence"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning inside venezuela’s uncertain path to freedom.",
       "imageUrl": "https://i.ytimg.com/vi/pSbcJV_o_ko/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/pSbcJV_o_ko/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=pSbcJV_o_ko",
       "youtube_url": "https://www.youtube.com/watch?v=pSbcJV_o_ko",
-      "pubDate": "1d ago",
-      "date": "1d ago",
+      "pubDate": "2d ago",
+      "date": "2d ago",
       "duration": "41:52",
       "views": "",
-      "category": "Ideas & Culture",
+      "category": "AI & Tech",
       "resonant_news": []
     },
     {
@@ -141,45 +154,12 @@
       "thumbnail": "https://i.ytimg.com/vi/f5RqYHd2cBQ/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=f5RqYHd2cBQ",
       "youtube_url": "https://www.youtube.com/watch?v=f5RqYHd2cBQ",
-      "pubDate": "2d ago",
-      "date": "2d ago",
+      "pubDate": "3d ago",
+      "date": "3d ago",
       "duration": "8:35",
       "views": "",
       "category": "Ideas & Culture",
       "resonant_news": []
-    },
-    {
-      "id": "tp_pTdvsfIMGes",
-      "title": "How People Are Using AI to Grieve, Love and Connect | Jennifer Cearns | TED",
-      "podcast": "TED",
-      "channel": "TED",
-      "podcastLogo": "TED",
-      "tier": "flagship",
-      "guest": "",
-      "topics": [
-        "Artificial Intelligence"
-      ],
-      "theme": "Explores strategic perspectives and key developments concerning how people are using ai to grieve, love and connect.",
-      "imageUrl": "https://i.ytimg.com/vi/pTdvsfIMGes/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/pTdvsfIMGes/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=pTdvsfIMGes",
-      "youtube_url": "https://www.youtube.com/watch?v=pTdvsfIMGes",
-      "pubDate": "4d ago",
-      "date": "4d ago",
-      "duration": "14:02",
-      "views": "",
-      "category": "AI & Tech",
-      "resonant_news": [
-        {
-          "id": "nyt-business-5-3998",
-          "title": "In a Sloppified A.I. World, Only Humans Can Build 'Ecosystems'",
-          "source": "NYT Business",
-          "link": "https://www.nytimes.com/2026/11/15/business/tech-jobs-ai-ecosystem.html",
-          "url": "https://www.nytimes.com/2026/11/15/business/tech-jobs-ai-ecosystem.html",
-          "relevance": 0.475,
-          "resonance_score": 0.475
-        }
-      ]
     },
     {
       "id": "tp_1rn_Clc-MM0",
@@ -250,7 +230,16 @@
       "category": "Science & Health",
       "resonant_news": [
         {
-          "id": "npr-national-1-922",
+          "id": "npr-national-1-3027",
+          "title": "Laws limiting coal miners' exposure to toxic dust are in danger of being rolled back",
+          "source": "NPR News",
+          "link": "https://www.npr.org/2026/11/15/nx-s1-6039311/laws-limiting-coal-miners-exposure-to-toxic-dust-are-in-danger-of-being-rolled-back",
+          "url": "https://www.npr.org/2026/11/15/nx-s1-6039311/laws-limiting-coal-miners-exposure-to-toxic-dust-are-in-danger-of-being-rolled-back",
+          "relevance": 0.216,
+          "resonance_score": 0.216
+        },
+        {
+          "id": "npr-national-2-6941",
           "title": "Midterm voters ended the long-running GOP dominance in state legislatures",
           "source": "NPR News",
           "link": "https://www.npr.org/2026/11/15/nx-s1-6039175/midterms-legislatures-states-democrats-gop",
@@ -259,7 +248,7 @@
           "resonance_score": 0.215
         },
         {
-          "id": "bbc-mideast-1-2812",
+          "id": "bbc-mideast-1-9270",
           "title": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
           "source": "BBC Middle East",
           "link": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
@@ -286,8 +275,8 @@
       "thumbnail": "https://i.ytimg.com/vi/f4r3aUiWpQY/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=f4r3aUiWpQY",
       "youtube_url": "https://www.youtube.com/watch?v=f4r3aUiWpQY",
-      "pubDate": "3d ago",
-      "date": "3d ago",
+      "pubDate": "4d ago",
+      "date": "4d ago",
       "duration": "1:13:15",
       "views": "",
       "category": "Science & Health",
@@ -337,17 +326,7 @@
       "duration": "7:45",
       "views": "",
       "category": "AI & Tech",
-      "resonant_news": [
-        {
-          "id": "bbc-mideast-3-6032",
-          "title": "Two men guilty of spying for Iran over plan to target journalists and lawyer",
-          "source": "BBC Middle East",
-          "link": "https://www.bbc.co.uk/news/articles/ck9q8g8209l2o?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/ck9q8g8209l2o?at_medium=RSS&at_campaign=rss",
-          "relevance": 0.219,
-          "resonance_score": 0.219
-        }
-      ]
+      "resonant_news": []
     },
     {
       "id": "tp__4aXTGiiCp0",
@@ -365,14 +344,14 @@
       "thumbnail": "https://i.ytimg.com/vi/_4aXTGiiCp0/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=_4aXTGiiCp0",
       "youtube_url": "https://www.youtube.com/watch?v=_4aXTGiiCp0",
-      "pubDate": "2d ago",
-      "date": "2d ago",
+      "pubDate": "3d ago",
+      "date": "3d ago",
       "duration": "9:02",
       "views": "",
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "techcrunch-0-7145",
+          "id": "techcrunch-3-6730",
           "title": "Where was Nvidia's security team?",
           "source": "TechCrunch",
           "link": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
@@ -403,7 +382,17 @@
       "duration": "10:52",
       "views": "",
       "category": "AI & Tech",
-      "resonant_news": []
+      "resonant_news": [
+        {
+          "id": "guardian-eu-0-8086",
+          "title": "Estonia to close all border crossings with Russia after attack on drone maker",
+          "source": "The Guardian",
+          "link": "https://www.theguardian.com/world/2026/nov/15/estonia-to-close-all-border-crossings-with-russia-after-attack-on-drone-maker",
+          "url": "https://www.theguardian.com/world/2026/nov/15/estonia-to-close-all-border-crossings-with-russia-after-attack-on-drone-maker",
+          "relevance": 0.231,
+          "resonance_score": 0.231
+        }
+      ]
     },
     {
       "id": "tp_RSxXHunYyiw",
@@ -421,18 +410,27 @@
       "thumbnail": "https://i.ytimg.com/vi/RSxXHunYyiw/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=RSxXHunYyiw",
       "youtube_url": "https://www.youtube.com/watch?v=RSxXHunYyiw",
-      "pubDate": "7d ago",
-      "date": "7d ago",
+      "pubDate": "8d ago",
+      "date": "8d ago",
       "duration": "7:23",
       "views": "",
       "category": "Ideas & Culture",
       "resonant_news": [
         {
-          "id": "bbc-europe-1-1726",
+          "id": "bbc-europe-2-4091",
           "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
           "source": "BBC Europe",
           "link": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
           "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
+          "relevance": 0.219,
+          "resonance_score": 0.219
+        },
+        {
+          "id": "bbc-mideast-5-9260",
+          "title": "US Treasury Secretary Scott Bessent relocated after alleged Iranian threats",
+          "source": "BBC Middle East",
+          "link": "https://www.bbc.co.uk/news/articles/cqr7gr0010r2o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/cqr7gr0010r2o?at_medium=RSS&at_campaign=rss",
           "relevance": 0.219,
           "resonance_score": 0.219
         }
@@ -477,8 +475,8 @@
       "thumbnail": "https://i.ytimg.com/vi/cXyO17ARamY/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=cXyO17ARamY",
       "youtube_url": "https://www.youtube.com/watch?v=cXyO17ARamY",
-      "pubDate": "1d ago",
-      "date": "1d ago",
+      "pubDate": "2d ago",
+      "date": "2d ago",
       "duration": "22:52",
       "views": "",
       "category": "Ideas & Culture",
@@ -500,8 +498,8 @@
       "thumbnail": "https://i.ytimg.com/vi/_yxsHCdJ1Fw/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=_yxsHCdJ1Fw",
       "youtube_url": "https://www.youtube.com/watch?v=_yxsHCdJ1Fw",
-      "pubDate": "1d ago",
-      "date": "1d ago",
+      "pubDate": "2d ago",
+      "date": "2d ago",
       "duration": "6:31",
       "views": "",
       "category": "Geopolitics & Policy",
@@ -523,8 +521,8 @@
       "thumbnail": "https://i.ytimg.com/vi/MW8LedHwoOU/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=MW8LedHwoOU",
       "youtube_url": "https://www.youtube.com/watch?v=MW8LedHwoOU",
-      "pubDate": "14h ago",
-      "date": "14h ago",
+      "pubDate": "20h ago",
+      "date": "20h ago",
       "duration": "46:55",
       "views": "",
       "category": "Ideas & Culture",
@@ -546,8 +544,8 @@
       "thumbnail": "https://i.ytimg.com/vi/R6g9UddqeK8/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=R6g9UddqeK8",
       "youtube_url": "https://www.youtube.com/watch?v=R6g9UddqeK8",
-      "pubDate": "23h ago",
-      "date": "23h ago",
+      "pubDate": "1d ago",
+      "date": "1d ago",
       "duration": "55:08",
       "views": "",
       "category": "Ideas & Culture",
@@ -599,34 +597,34 @@
       "category": "Geopolitics & Policy",
       "resonant_news": [
         {
-          "id": "scmp-asia-4-6458",
-          "title": "A disastrous Iran war? The US is now a mover and shaker of oil markets",
+          "id": "scmp-asia-0-753",
+          "title": "Nato to skip leaders' summit in Albania next year as high-level meetings are scaled back",
           "source": "SCMP",
-          "link": "https://www.scmp.com/opinion/world-opinion/article/3374247/disastrous-iran-war-us-now-mover-and-shaker-oil-markets",
-          "url": "https://www.scmp.com/opinion/world-opinion/article/3374247/disastrous-iran-war-us-now-mover-and-shaker-oil-markets",
-          "relevance": 0.442,
-          "resonance_score": 0.442
+          "link": "https://www.scmp.com/news/world/europe/article/3374517/nato-skip-leaders-summit-albania-next-year-high-level-meetings-are-scaled-back",
+          "url": "https://www.scmp.com/news/world/europe/article/3374517/nato-skip-leaders-summit-albania-next-year-high-level-meetings-are-scaled-back",
+          "relevance": 0.432,
+          "resonance_score": 0.432
         },
         {
-          "id": "france24-eu-4-3696",
-          "title": "Macron says limiting Ukraine aid would pave way to 'another war'",
+          "id": "france24-me-2-5217",
+          "title": "Iran claims drone attack on US military base in Bahrain",
           "source": "France 24",
-          "link": "https://www.france24.com/en/europe/20261114-macron-says-limiting-ukraine-aid-would-pave-way-to-another-war",
-          "url": "https://www.france24.com/en/europe/20261114-macron-says-limiting-ukraine-aid-would-pave-way-to-another-war",
-          "relevance": 0.414,
-          "resonance_score": 0.414
+          "link": "https://www.france24.com/en/iran-claims-drone-attack-on-us-military-base-in-bahrain",
+          "url": "https://www.france24.com/en/iran-claims-drone-attack-on-us-military-base-in-bahrain",
+          "relevance": 0.416,
+          "resonance_score": 0.416
         },
         {
-          "id": "bbc-europe-5-9528",
-          "title": "Estonia bans Russian athletes as backlash intensifies",
-          "source": "BBC Europe",
-          "link": "https://www.bbc.co.uk/sport/articles/cm4gn9lvlgy2o?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/sport/articles/cm4gn9lvlgy2o?at_medium=RSS&at_campaign=rss",
-          "relevance": 0.419,
-          "resonance_score": 0.419
+          "id": "nyt-world-3-4308",
+          "title": "Saudi-Backed Forces in Yemen Retreat From Red Sea as Houthis Advance",
+          "source": "New York Times",
+          "link": "https://www.nytimes.com/2026/11/15/world/middleeast/saudi-houthis-yemen-red-sea.html",
+          "url": "https://www.nytimes.com/2026/11/15/world/middleeast/saudi-houthis-yemen-red-sea.html",
+          "relevance": 0.429,
+          "resonance_score": 0.429
         },
         {
-          "id": "france24-me-1-3315",
+          "id": "france24-me-4-1663",
           "title": "Global diesel prices ease as winter approaches",
           "source": "France 24",
           "link": "https://www.france24.com/en/global-diesel-prices-ease-as-winter-approaches",
@@ -635,8 +633,8 @@
           "resonance_score": 0.427
         },
         {
-          "id": "france24-me-2-7627",
-          "title": "Iran claims attack on US military airbase in Bahrain",
+          "id": "france24-me-5-8529",
+          "title": "Iran claims drone attack on US military airbase in Bahrain",
           "source": "France 24",
           "link": "https://www.france24.com/en/middle-east/20261115-iran-claims-attack-on-us-military-airbase-in-bahrain",
           "url": "https://www.france24.com/en/middle-east/20261115-iran-claims-attack-on-us-military-airbase-in-bahrain",
@@ -644,25 +642,16 @@
           "resonance_score": 0.418
         },
         {
-          "id": "scmp-asia-1-8257",
-          "title": "US, China seek common ground on military crisis pact as Washington weighs terms: sources",
-          "source": "SCMP",
-          "link": "https://www.scmp.com/news/china/military/article/3374503/us-china-seek-common-ground-military-crisis-pact-washington-weighs-terms-sources",
-          "url": "https://www.scmp.com/news/china/military/article/3374503/us-china-seek-common-ground-military-crisis-pact-washington-weighs-terms-sources",
-          "relevance": 0.414,
-          "resonance_score": 0.414
+          "id": "france24-me-0-28",
+          "title": "Yemen's Houthis advance on Aden as government forces retreat to defend their capital",
+          "source": "France 24",
+          "link": "https://www.france24.com/en/middle-east/20261115-yemen-houthis-advance-to-within-60-kilometres-of-aden-military-sources-say",
+          "url": "https://www.france24.com/en/middle-east/20261115-yemen-houthis-advance-to-within-60-kilometres-of-aden-military-sources-say",
+          "relevance": 0.416,
+          "resonance_score": 0.416
         },
         {
-          "id": "bbc-world-4-6089",
-          "title": "Iran targets US military base in Bahrain with drone attack",
-          "source": "BBC News",
-          "link": "https://www.bbc.co.uk/news/articles/cqn4e2py48kwo?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/cqn4e2py48kwo?at_medium=RSS&at_campaign=rss",
-          "relevance": 0.418,
-          "resonance_score": 0.418
-        },
-        {
-          "id": "france24-me-0-4489",
+          "id": "france24-me-3-1621",
           "title": "Bahrain says air defences destroyed several Iranian drones attacking US base",
           "source": "France 24",
           "link": "https://www.france24.com/en/bahrain-says-air-defences-destroyed-several-iranian-drones-attacking-us-base",
@@ -671,7 +660,7 @@
           "resonance_score": 0.413
         },
         {
-          "id": "nyt-asia-3-7978",
+          "id": "nyt-asia-3-8371",
           "title": "Geopolitics Looms Over Eurovision, but Not Its Asian Edition",
           "source": "New York Times",
           "link": "https://www.nytimes.com/2026/11/14/world/asia/eurovision-asia-politics.html",
@@ -680,7 +669,7 @@
           "resonance_score": 0.421
         },
         {
-          "id": "bbc-mideast-0-2545",
+          "id": "bbc-mideast-0-754",
           "title": "UN watchdog 'increasingly concerned' over uninspected Iran nuclear site",
           "source": "BBC Middle East",
           "link": "https://www.bbc.co.uk/news/articles/cm75261e3pdko?at_medium=RSS&at_campaign=rss",
@@ -821,8 +810,8 @@
       "thumbnail": "https://i.ytimg.com/vi/3RqNnfgf8Lg/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=3RqNnfgf8Lg",
       "youtube_url": "https://www.youtube.com/watch?v=3RqNnfgf8Lg",
-      "pubDate": "3h ago",
-      "date": "3h ago",
+      "pubDate": "9h ago",
+      "date": "9h ago",
       "duration": "33:07",
       "views": "",
       "category": "AI & Tech",
@@ -844,8 +833,8 @@
       "thumbnail": "https://i.ytimg.com/vi/EAuYMXHQBoM/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=EAuYMXHQBoM",
       "youtube_url": "https://www.youtube.com/watch?v=EAuYMXHQBoM",
-      "pubDate": "1d ago",
-      "date": "1d ago",
+      "pubDate": "2d ago",
+      "date": "2d ago",
       "duration": "21:43",
       "views": "",
       "category": "AI & Tech",
