@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-16T00:10:55.667483+00:00",
+  "lastUpdated": "2026-11-16T07:03:32.737737+00:00",
   "total": 30,
   "episodes": [
     {
@@ -47,21 +47,39 @@
       "duration": "3:34:27",
       "views": "",
       "category": "AI & Tech",
-      "resonant_news": []
+      "resonant_news": [
+        {
+          "id": "reuters-world-0-5287",
+          "title": "Trump administration to name Nvidia, other AI firms as US 'national champions'",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbzFERGNkd2ZLODdReVZtV3pnNVdJT3RyNDdpbUZQRXZHUEgzbVYtZTBwelhfV1hRbVVfOGsxeDJURWd2bEJubFlFUjFXZC1HM2Z4U3l2TXVhTXR3OTFPZ2xUaDhOVlBDWF93dDE0V2lsOEI3bGFGWXlmbnVldjNCQkJKQlFNbDVfaWR6cGpJdktZWlJXcEdNQkZnWWsxSlZGX19tQTIxYW5NVWQxb2NQclEza1JHaHBma3lmaFNzQWRtQld0UkRwT01IZEY0eUk?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbzFERGNkd2ZLODdReVZtV3pnNVdJT3RyNDdpbUZQRXZHUEgzbVYtZTBwelhfV1hRbVVfOGsxeDJURWd2bEJubFlFUjFXZC1HM2Z4U3l2TXVhTXR3OTFPZ2xUaDhOVlBDWF93dDE0V2lsOEI3bGFGWXlmbnVldjNCQkJKQlFNbDVfaWR6cGpJdktZWlJXcEdNQkZnWWsxSlZGX19tQTIxYW5NVWQxb2NQclEza1JHaHBma3lmaFNzQWRtQld0UkRwT01IZEY0eUk?oc=5",
+          "relevance": 0.151,
+          "resonance_score": 0.151
+        },
+        {
+          "id": "reuters-world-5-573",
+          "title": "Morning Bid: AI selloff resumes as Nvidia earnings loom",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcFRFLTFjUUlGa0plMjBTUHVpcVFwMXkzbWR2MWs3TnBjSE9tLUJWb2Z1Szg3MV9ON010RmN1VXJMMTRaMG51Ynp3ZEJBRTdnRXB6MzF6b2RzXzhDQlZIMXFZZ3BOTWIyN1ZyRi1xQ2dCbVVMNWliS1lubWVkb2plalJGWQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcFRFLTFjUUlGa0plMjBTUHVpcVFwMXkzbWR2MWs3TnBjSE9tLUJWb2Z1Szg3MV9ON010RmN1VXJMMTRaMG51Ynp3ZEJBRTdnRXB6MzF6b2RzXzhDQlZIMXFZZ3BOTWIyN1ZyRi1xQ2dCbVVMNWliS1lubWVkb2plalJGWQ?oc=5",
+          "relevance": 0.153,
+          "resonance_score": 0.153
+        }
+      ]
     },
     {
       "id": "tp_FGCP2F_7rQk",
-      "title": "Jensen Huang & Lex Fridman visit Taiwan's Night Markets and Computex",
+      "title": "Jensen & Lex in Taiwan",
       "podcast": "Lex Fridman Podcast",
       "channel": "Lex Fridman Podcast",
       "podcastLogo": "LF",
       "tier": "flagship",
       "guest": "",
       "topics": [
-        "Artificial Intelligence",
-        "Global Economy"
+        "Artificial Intelligence"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning jensen huang & lex fridman visit taiwan's night markets and computex.",
+      "theme": "Explores strategic perspectives and key developments concerning jensen & lex in taiwan.",
       "imageUrl": "https://i.ytimg.com/vi/FGCP2F_7rQk/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/FGCP2F_7rQk/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=FGCP2F_7rQk",
@@ -73,28 +91,19 @@
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "techcrunch-0-507",
-          "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
-          "source": "TechCrunch",
-          "link": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
-          "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
-          "relevance": 0.215,
-          "resonance_score": 0.215
-        },
-        {
-          "id": "the-hindu-5-4953",
-          "title": "Rebalancing India's Rice economy: exports, virtual water, emissions and the groundwater challenge",
-          "source": "The Hindu",
-          "link": "https://www.thehindu.com/news/national/rebalancing-indias-rice-economy-exports-virtual-water-emissions-and-the-groundwater-challenge/article71704600.ece",
-          "url": "https://www.thehindu.com/news/national/rebalancing-indias-rice-economy-exports-virtual-water-emissions-and-the-groundwater-challenge/article71704600.ece",
-          "relevance": 0.239,
-          "resonance_score": 0.239
+          "id": "bbc-mideast-3-6330",
+          "title": "Two men guilty of spying for Iran over plan to target journalists and lawyer",
+          "source": "BBC Middle East",
+          "link": "https://www.bbc.co.uk/news/articles/ck9q8g8209l2o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/ck9q8g8209l2o?at_medium=RSS&at_campaign=rss",
+          "relevance": 0.222,
+          "resonance_score": 0.222
         }
       ]
     },
     {
       "id": "tp_4qxROUatTzk",
-      "title": "The Science of Learning New Things | Tania Lombrozo | TED",
+      "title": "Why the Best Learners Talk to Themselves | Tania Lombrozo | TED",
       "podcast": "TED",
       "channel": "TED",
       "podcastLogo": "TED",
@@ -103,30 +112,30 @@
       "topics": [
         "Ideas & Culture"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning the science of learning new things.",
+      "theme": "Explores strategic perspectives and key developments concerning why the best learners talk to themselves.",
       "imageUrl": "https://i.ytimg.com/vi/4qxROUatTzk/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/4qxROUatTzk/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=4qxROUatTzk",
       "youtube_url": "https://www.youtube.com/watch?v=4qxROUatTzk",
-      "pubDate": "8h ago",
-      "date": "8h ago",
+      "pubDate": "15h ago",
+      "date": "15h ago",
       "duration": "15:38",
       "views": "",
-      "category": "Science & Health",
+      "category": "Ideas & Culture",
       "resonant_news": []
     },
     {
       "id": "tp_pSbcJV_o_ko",
-      "title": "Inside Venezuela’s Uncertain Path to Freedom | Leopoldo López | TED",
+      "title": "What People Living in Democracies Take for Granted | Leopoldo López | TED",
       "podcast": "TED",
       "channel": "TED",
       "podcastLogo": "TED",
       "tier": "flagship",
       "guest": "",
       "topics": [
-        "Artificial Intelligence"
+        "Ideas & Culture"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning inside venezuela’s uncertain path to freedom.",
+      "theme": "Explores strategic perspectives and key developments concerning what people living in democracies take for granted.",
       "imageUrl": "https://i.ytimg.com/vi/pSbcJV_o_ko/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/pSbcJV_o_ko/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=pSbcJV_o_ko",
@@ -135,7 +144,7 @@
       "date": "2d ago",
       "duration": "41:52",
       "views": "",
-      "category": "AI & Tech",
+      "category": "Ideas & Culture",
       "resonant_news": []
     },
     {
@@ -230,7 +239,16 @@
       "category": "Science & Health",
       "resonant_news": [
         {
-          "id": "npr-national-3-5727",
+          "id": "cnet-0-3229",
+          "title": "Apple Launches New App to Study How People Use AI for Health",
+          "source": "CNET",
+          "link": "https://www.cnet.com/health/apple-launches-ai-health-app-study/",
+          "url": "https://www.cnet.com/health/apple-launches-ai-health-app-study/",
+          "relevance": 0.22,
+          "resonance_score": 0.22
+        },
+        {
+          "id": "npr-national-4-2994",
           "title": "Laws limiting coal miners' exposure to toxic dust are in danger of being rolled back",
           "source": "NPR News",
           "link": "https://www.npr.org/2026/11/15/nx-s1-6039311/laws-limiting-coal-miners-exposure-to-toxic-dust-are-in-danger-of-being-rolled-back",
@@ -239,22 +257,22 @@
           "resonance_score": 0.216
         },
         {
-          "id": "bbc-mideast-1-1979",
+          "id": "theverge-0-5804",
+          "title": "Apple's new study looks to improve the effectiveness of AI health tools",
+          "source": "The Verge",
+          "link": "https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools",
+          "url": "https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools",
+          "relevance": 0.217,
+          "resonance_score": 0.217
+        },
+        {
+          "id": "bbc-mideast-1-1014",
           "title": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
           "source": "BBC Middle East",
           "link": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
           "url": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
           "relevance": 0.216,
           "resonance_score": 0.216
-        },
-        {
-          "id": "npr-national-4-1268",
-          "title": "Midterm voters ended the long-running GOP dominance in state legislatures",
-          "source": "NPR News",
-          "link": "https://www.npr.org/2026/11/15/nx-s1-6039175/midterms-legislatures-states-democrats-gop",
-          "url": "https://www.npr.org/2026/11/15/nx-s1-6039175/midterms-legislatures-states-democrats-gop",
-          "relevance": 0.215,
-          "resonance_score": 0.215
         }
       ]
     },
@@ -326,17 +344,7 @@
       "duration": "7:45",
       "views": "",
       "category": "AI & Tech",
-      "resonant_news": [
-        {
-          "id": "bbc-mideast-3-3208",
-          "title": "Two men guilty of spying for Iran over plan to target journalists and lawyer",
-          "source": "BBC Middle East",
-          "link": "https://www.bbc.co.uk/news/articles/ck9q8g8209l2o?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/ck9q8g8209l2o?at_medium=RSS&at_campaign=rss",
-          "relevance": 0.219,
-          "resonance_score": 0.219
-        }
-      ]
+      "resonant_news": []
     },
     {
       "id": "tp__4aXTGiiCp0",
@@ -384,7 +392,7 @@
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "guardian-eu-0-9517",
+          "id": "guardian-eu-2-6408",
           "title": "Estonia to close all border crossings with Russia after attack on drone maker",
           "source": "The Guardian",
           "link": "https://www.theguardian.com/world/2026/nov/15/estonia-to-close-all-border-crossings-with-russia-after-attack-on-drone-maker",
@@ -417,7 +425,7 @@
       "category": "Ideas & Culture",
       "resonant_news": [
         {
-          "id": "bbc-europe-4-9159",
+          "id": "bbc-europe-5-2073",
           "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
           "source": "BBC Europe",
           "link": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
@@ -426,16 +434,7 @@
           "resonance_score": 0.219
         },
         {
-          "id": "arstechnica-0-3616",
-          "title": "Vulcan rocket fails during launch, dealing major blow to SpaceX competitors",
-          "source": "Ars Technica",
-          "link": "https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors/",
-          "url": "https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors/",
-          "relevance": 0.219,
-          "resonance_score": 0.219
-        },
-        {
-          "id": "theverge-1-3352",
+          "id": "theverge-2-517",
           "title": "Vulcan rocket fails, destroying 40 Amazon Leo satellites",
           "source": "The Verge",
           "link": "https://www.theverge.com/science/1034006/vulcan-rocket-fails-destroying-40-amazon-leo-satellites",
@@ -444,7 +443,16 @@
           "resonance_score": 0.218
         },
         {
-          "id": "bbc-mideast-5-542",
+          "id": "arstechnica-0-2018",
+          "title": "Vulcan rocket fails during launch, dealing major blow to SpaceX competitors",
+          "source": "Ars Technica",
+          "link": "https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors/",
+          "url": "https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors/",
+          "relevance": 0.219,
+          "resonance_score": 0.219
+        },
+        {
+          "id": "bbc-mideast-5-7200",
           "title": "US Treasury Secretary Scott Bessent relocated after alleged Iranian threats",
           "source": "BBC Middle East",
           "link": "https://www.bbc.co.uk/news/articles/cqr7gr0010r2o?at_medium=RSS&at_campaign=rss",
@@ -615,7 +623,7 @@
       "category": "Geopolitics & Policy",
       "resonant_news": [
         {
-          "id": "nyt-world-4-6470",
+          "id": "nyt-world-4-9716",
           "title": "Saudi-Backed Forces Retreat in Yemen, Leaving Key Strait in Houthi Control",
           "source": "New York Times",
           "link": "https://www.nytimes.com/2026/11/15/world/middleeast/saudi-houthis-yemen-red-sea.html",
@@ -624,52 +632,7 @@
           "resonance_score": 0.449
         },
         {
-          "id": "scmp-asia-1-4659",
-          "title": "Prince Harry salutes wounded Ukrainian veterans as 'role models' on surprise Ukraine visit",
-          "source": "SCMP",
-          "link": "https://www.scmp.com/news/world/europe/article/3374521/prince-harry-salutes-wounded-ukrainian-veterans-role-models-surprise-ukraine-visit",
-          "url": "https://www.scmp.com/news/world/europe/article/3374521/prince-harry-salutes-wounded-ukrainian-veterans-role-models-surprise-ukraine-visit",
-          "relevance": 0.414,
-          "resonance_score": 0.414
-        },
-        {
-          "id": "scmp-asia-2-6489",
-          "title": "Geopolitics a threat to shipping but Hong Kong can tap mainland China's potential: experts",
-          "source": "SCMP",
-          "link": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3374474/geopolitics-still-threat-shipping-hong-kong-can-tap-chinas-potential-experts",
-          "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3374474/geopolitics-still-threat-shipping-hong-kong-can-tap-chinas-potential-experts",
-          "relevance": 0.426,
-          "resonance_score": 0.426
-        },
-        {
-          "id": "france24-me-2-6080",
-          "title": "Iran claims drone attack on US military base in Bahrain",
-          "source": "France 24",
-          "link": "https://www.france24.com/en/iran-claims-drone-attack-on-us-military-base-in-bahrain",
-          "url": "https://www.france24.com/en/iran-claims-drone-attack-on-us-military-base-in-bahrain",
-          "relevance": 0.416,
-          "resonance_score": 0.416
-        },
-        {
-          "id": "aljazeera-4-1581",
-          "title": "Yemen's Houthis unilaterally release 600 war detainees",
-          "source": "Al Jazeera",
-          "link": "https://www.aljazeera.com/video/newsfeed/2026/11/15/yemens-houthis-unilaterally-release-600-war-detainees?traffic_source=rss",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/yemens-houthis-unilaterally-release-600-war-detainees?traffic_source=rss",
-          "relevance": 0.421,
-          "resonance_score": 0.421
-        },
-        {
-          "id": "france24-me-0-9615",
-          "title": "Yemen's Houthis advance on Aden as government forces retreat to defend their capital",
-          "source": "France 24",
-          "link": "https://www.france24.com/en/middle-east/20261115-yemen-houthis-advance-to-within-60-kilometres-of-aden-military-sources-say",
-          "url": "https://www.france24.com/en/middle-east/20261115-yemen-houthis-advance-to-within-60-kilometres-of-aden-military-sources-say",
-          "relevance": 0.416,
-          "resonance_score": 0.416
-        },
-        {
-          "id": "guardian-eu-1-8457",
+          "id": "guardian-eu-3-764",
           "title": "Prince Harry tells Ukrainians they are 'going to win war' on surprise trip to Lviv",
           "source": "The Guardian",
           "link": "https://www.theguardian.com/uk-news/2026/nov/15/prince-harry-ukraine-war-surprise-trip-invictus-games",
@@ -678,16 +641,16 @@
           "resonance_score": 0.413
         },
         {
-          "id": "bbc-world-2-2474",
-          "title": "Prince Harry praises war veterans on surprise visit to Ukraine",
-          "source": "BBC News",
-          "link": "https://www.bbc.co.uk/news/articles/c60evn992jq8o?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/c60evn992jq8o?at_medium=RSS&at_campaign=rss",
-          "relevance": 0.421,
-          "resonance_score": 0.421
+          "id": "france24-me-1-5303",
+          "title": "Yemen's Houthis advance on Aden as government forces retreat to defend their capital",
+          "source": "France 24",
+          "link": "https://www.france24.com/en/middle-east/20261115-yemen-houthis-advance-to-within-60-kilometres-of-aden-military-sources-say",
+          "url": "https://www.france24.com/en/middle-east/20261115-yemen-houthis-advance-to-within-60-kilometres-of-aden-military-sources-say",
+          "relevance": 0.416,
+          "resonance_score": 0.416
         },
         {
-          "id": "france24-me-4-3493",
+          "id": "france24-me-5-6375",
           "title": "Global diesel prices ease as winter approaches",
           "source": "France 24",
           "link": "https://www.france24.com/en/global-diesel-prices-ease-as-winter-approaches",
@@ -696,16 +659,16 @@
           "resonance_score": 0.427
         },
         {
-          "id": "france24-me-5-4497",
-          "title": "Iran claims drone attack on US military airbase in Bahrain",
+          "id": "france24-me-3-5589",
+          "title": "Iran claims drone attack on US military base in Bahrain",
           "source": "France 24",
-          "link": "https://www.france24.com/en/middle-east/20261115-iran-claims-attack-on-us-military-airbase-in-bahrain",
-          "url": "https://www.france24.com/en/middle-east/20261115-iran-claims-attack-on-us-military-airbase-in-bahrain",
-          "relevance": 0.418,
-          "resonance_score": 0.418
+          "link": "https://www.france24.com/en/iran-claims-drone-attack-on-us-military-base-in-bahrain",
+          "url": "https://www.france24.com/en/iran-claims-drone-attack-on-us-military-base-in-bahrain",
+          "relevance": 0.416,
+          "resonance_score": 0.416
         },
         {
-          "id": "france24-me-3-7314",
+          "id": "france24-me-4-1604",
           "title": "Bahrain says air defences destroyed several Iranian drones attacking US base",
           "source": "France 24",
           "link": "https://www.france24.com/en/bahrain-says-air-defences-destroyed-several-iranian-drones-attacking-us-base",
@@ -714,7 +677,16 @@
           "resonance_score": 0.413
         },
         {
-          "id": "bbc-mideast-0-970",
+          "id": "the-hindu-5-5555",
+          "title": "Seminar at MCEME-Secunderabad explores indigenous space capabilities for military applications",
+          "source": "The Hindu",
+          "link": "https://www.thehindu.com/news/cities/Hyderabad/seminar-at-mceme-secunderabad-explores-indigenous-space-capabilities-for-military-applications/article71705081.ece",
+          "url": "https://www.thehindu.com/news/cities/Hyderabad/seminar-at-mceme-secunderabad-explores-indigenous-space-capabilities-for-military-applications/article71705081.ece",
+          "relevance": 0.425,
+          "resonance_score": 0.425
+        },
+        {
+          "id": "bbc-mideast-0-8601",
           "title": "UN watchdog 'increasingly concerned' over uninspected Iran nuclear site",
           "source": "BBC Middle East",
           "link": "https://www.bbc.co.uk/news/articles/cm75261e3pdko?at_medium=RSS&at_campaign=rss",
@@ -723,7 +695,7 @@
           "resonance_score": 0.418
         },
         {
-          "id": "nyt-asia-4-7865",
+          "id": "nyt-asia-5-3500",
           "title": "Geopolitics Looms Over Eurovision, but Not Its Asian Edition",
           "source": "New York Times",
           "link": "https://www.nytimes.com/2026/11/14/world/asia/eurovision-asia-politics.html",
@@ -795,8 +767,8 @@
       "thumbnail": "https://i.ytimg.com/vi/OIMDUqVi3TQ/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=OIMDUqVi3TQ",
       "youtube_url": "https://www.youtube.com/watch?v=OIMDUqVi3TQ",
-      "pubDate": "1d ago",
-      "date": "1d ago",
+      "pubDate": "2d ago",
+      "date": "2d ago",
       "duration": "26:47",
       "views": "",
       "category": "Geopolitics & Policy",
@@ -818,8 +790,8 @@
       "thumbnail": "https://i.ytimg.com/vi/mkCF59W4A4g/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=mkCF59W4A4g",
       "youtube_url": "https://www.youtube.com/watch?v=mkCF59W4A4g",
-      "pubDate": "1d ago",
-      "date": "1d ago",
+      "pubDate": "2d ago",
+      "date": "2d ago",
       "duration": "56:47",
       "views": "",
       "category": "Ideas & Culture",
@@ -864,8 +836,8 @@
       "thumbnail": "https://i.ytimg.com/vi/3RqNnfgf8Lg/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=3RqNnfgf8Lg",
       "youtube_url": "https://www.youtube.com/watch?v=3RqNnfgf8Lg",
-      "pubDate": "13h ago",
-      "date": "13h ago",
+      "pubDate": "20h ago",
+      "date": "20h ago",
       "duration": "33:07",
       "views": "",
       "category": "AI & Tech",
@@ -873,7 +845,7 @@
     },
     {
       "id": "tp_EAuYMXHQBoM",
-      "title": "Nvidia Built Its AI Empire on Jensen Huang. What Happens Without Him? | WSJ Tech News Briefing",
+      "title": "How Jensen Huang’s Resignation Upends the AI Chip Race | WSJ Tech News Briefing",
       "podcast": "WSJ Podcasts",
       "channel": "WSJ Podcasts",
       "podcastLogo": "WSJ",
@@ -882,7 +854,7 @@
       "topics": [
         "Artificial Intelligence"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning nvidia built its ai empire on jensen huang. what happens without him?.",
+      "theme": "Explores strategic perspectives and key developments concerning how jensen huang’s resignation upends the ai chip race.",
       "imageUrl": "https://i.ytimg.com/vi/EAuYMXHQBoM/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/EAuYMXHQBoM/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=EAuYMXHQBoM",
