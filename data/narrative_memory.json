@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-16T17:17:49.933076+00:00",
+    "last_updated": "2026-11-17T00:57:30.521440+00:00",
     "arcs": [
         {
             "arc_id": "d9a388cf-db33-476b-8622-61bc79e2b246",
@@ -19,7 +19,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
             "chapter_count": 35,
             "chapter_titles": [
                 "Rubio Warned Officials About Nvidia Chief's Entanglement With Chinese Spy",
@@ -95,7 +95,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-15T06:57:50.265882+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
             "chapter_count": 7,
             "chapter_titles": [
                 "Bahrain issues first threat alerts since September as Iran says it attacked US base",
@@ -132,15 +132,16 @@
                 "Europe"
             ],
             "first_seen": "2026-11-14T15:36:11.336746+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 6,
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 7,
             "chapter_titles": [
                 "Ukraine's Starshield Access Is Being Restricted Again, Zelensky Says",
                 "US proposed Ukraine cedes Donbas in exchange for joining NATO, Zelensky says",
                 "Will Ukraine make territorial concessions for NATO membership?",
                 "Starshield restrictions help Russia's energy attacks on Ukraine: Zelenskyy",
                 "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
-                "Zelensky warns Starshield restrictions threaten Ukraine's winter energy defences"
+                "Zelensky warns Starshield restrictions threaten Ukraine's winter energy defences",
+                "Should Ukraine trade Donbas for NATO membership?"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
@@ -151,6 +152,1339 @@
                 "France 24",
                 "New York Times",
                 "SCMP"
+            ]
+        },
+        {
+            "arc_id": "62b58299-1ae7-44ed-b133-dcd1e82f7616",
+            "title": "Prince William, Princess Kate to meet Modi in New",
+            "keywords": [
+                "delhi",
+                "kat",
+                "meet",
+                "modi",
+                "new",
+                "princ",
+                "princess",
+                "william"
+            ],
+            "entity_signature": "IN:Modi:Narendra:in:india",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-15T20:10:11.770405+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Prince William, Princess Kate to meet Modi in New Delhi this week",
+                "Prince William, Princess Kate to meet PM Modi in New Delhi this week",
+                "Prince and Princess of Wales arrive in India ahead of meeting with Modi"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Asia",
+                "BBC News",
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "05faeaee-ba1a-4cd2-b611-ce4fa2f65a05",
+            "title": "Five EU countries to announce Rwanda deportation",
+            "keywords": [
+                "announc",
+                "countri",
+                "deporta",
+                "fiv",
+                "hub",
+                "rwanda",
+                "schem"
+            ],
+            "entity_signature": "EU:announce:eu:european union",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-16T07:03:32.294798+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Five EU countries to announce Rwanda deportation hub scheme",
+                "Five EU states announce plans for immigration 'return hubs' in Rwanda",
+                "Five EU countries announce migrant deportation centre in Rwanda"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Europe",
+                "Reuters",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "845e341a-174f-4172-b587-22490a9afd3c",
+            "title": "Australia, UK, Canada and Italy urge Israel to",
+            "keywords": [
+                "access",
+                "aid",
+                "allow",
+                "australia",
+                "canada",
+                "gaza",
+                "israel",
+                "itali",
+                "rapid",
+                "urg"
+            ],
+            "entity_signature": "AU:CA:IL:au:australia",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-16T00:10:55.084624+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Australia, UK, Canada and Italy urge Israel to allow 'rapid' Gaza aid access",
+                "Australia, Canada, Italy and the UK urge Israel to allow aid into Gaza",
+                "UK and allies urge Israel to allow rapid humanitarian access to Gaza"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "Al Jazeera",
+                "BBC Middle East",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "ae6ca703-9ade-4dd8-953b-22d38394e5c5",
+            "title": "Netanyahu renews call for Israeli unity",
+            "keywords": [
+                "call",
+                "dismiss",
+                "eisenkot",
+                "govern",
+                "israeli",
+                "netanyahu",
+                "renew",
+                "trick",
+                "uniti"
+            ],
+            "entity_signature": "IL:Benjamin:Benjamin Netanyahu:call:il",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-15T00:07:51.947686+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Netanyahu renews call for Israeli unity government as Eisenkot dismisses 'tricks'",
+                "Eisenkot says Netanyahu 'cannot remain' after alleged election interference by aide"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "bbbcad7f-32fb-4430-bc30-1805148dfb91",
+            "title": "Yemen's Houthis advance on Aden as government",
+            "keywords": [
+                "aden",
+                "advanc",
+                "capital",
+                "defend",
+                "forc",
+                "govern",
+                "houthi",
+                "retreat",
+                "yemen"
+            ],
+            "entity_signature": "aden as government forces retreat:advance:collective_faction",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-15T20:10:11.770405+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Yemen's Houthis advance on Aden as government forces retreat to defend their capital",
+                "Yemeni forces retreat to defend port city from Houthis"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "BBC Middle East",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "7857ba14-cebc-4912-9810-dfe54aa5b974",
+            "title": "Israel kills senior member of Hamas's military",
+            "keywords": [
+                "gaza",
+                "hama",
+                "israel",
+                "kill",
+                "member",
+                "militari",
+                "senior",
+                "strik",
+                "wing"
+            ],
+            "entity_signature": "IL:PS:collective_faction:conflict:geopolitics",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-15T20:10:11.770405+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Israel kills senior member of Hamas's military wing in Gaza strike",
+                "Israel kills Hamas commander in strike on Gaza camp, officials say"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "db3e5b19-a0e2-442b-b66d-9846029322e6",
+            "title": "Jordan Sentences 3 to Death Over Greek Orthodox",
+            "keywords": [
+                "attack",
+                "church",
+                "death",
+                "greek",
+                "jordan",
+                "orthodox",
+                "sentenc"
+            ],
+            "entity_signature": "GR:3:conflict:geopolitics",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-16T00:10:55.084624+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Jordan Sentences 3 to Death Over Greek Orthodox Church Attack",
+                "Three men sentenced to death in Jordan over fatal church mass shooting"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Middle East",
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "a02841f4-a52e-4e41-bc33-7ca55e86bc16",
+            "title": "Landmark Crimea bridge hit as Russia reports",
+            "keywords": [
+                "attack",
+                "biggest",
+                "bridg",
+                "crimea",
+                "dron",
+                "hit",
+                "landmark",
+                "russia",
+                "ukrainian",
+                "war"
+            ],
+            "entity_signature": "RU:UA:attack:conflict:geopolitics",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-16T17:17:49.602228+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Landmark Crimea bridge hit as Russia reports biggest Ukrainian drone attack of war",
+                "Ukraine hits Kerch bridge between Russia and occupied Crimea"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "BBC Europe",
+                "BBC News",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "7ff548bb-4c42-47c5-afc4-478ab0c9d55b",
+            "title": "US judge sets March retrial for Lindsay Clancy",
+            "keywords": [
+                "accus",
+                "children",
+                "clanci",
+                "judg",
+                "kill",
+                "lindsay",
+                "march",
+                "retrial",
+                "set"
+            ],
+            "entity_signature": "US:children:civilians & impacted communities:civilians & impacted communities (children)",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-16T17:17:49.602228+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "US judge sets March retrial for Lindsay Clancy, accused of killing her 3 children",
+                "Lindsay Clancy to face a new trial in spring of 2027 over children's killing"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "783d549b-795e-4ca8-bd9d-2aad3c1360a1",
+            "title": "EU nations unveil Rwanda deal for migrant return",
+            "keywords": [
+                "deal",
+                "hub",
+                "migrant",
+                "nation",
+                "return",
+                "rwanda",
+                "unveil"
+            ],
+            "entity_signature": "DE:DK:EU:civilians & impacted communities:civilians & impacted communities (migrant)",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "EU nations unveil Rwanda deal for migrant return hub",
+                "Five European Countries Plan to Deport Migrants to Rwanda"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24",
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "17cc0767-c267-4dea-a234-be7e0a8870be",
+            "title": "California sues OpenAI over rogue AI hacking",
+            "keywords": [
+                "ai",
+                "california",
+                "hack",
+                "incident",
+                "openai",
+                "rogu",
+                "sue"
+            ],
+            "entity_signature": "california:north america regional stakeholders:openai",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "California sues OpenAI over rogue AI hacking incidents",
+                "California state AG sues OpenAI over rogue agent incidents"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "TechCrunch",
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "e75c8f23-8a11-4eb4-8f5f-560c23e40146",
+            "title": "Suspected China spy linked to Nvidia's ex-boss",
+            "keywords": [
+                "boss",
+                "china",
+                "left",
+                "link",
+                "megaspe",
+                "nvidia",
+                "spy",
+                "suspect"
+            ],
+            "entity_signature": "CN:US:china:china sovereign authorities:cn",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-15T20:10:11.770405+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "054c178e-a46e-4239-9026-43e2fff5567c",
+            "title": "Clothing factories shut in Bangladesh as workers",
+            "keywords": [
+                "bangladesh",
+                "cloth",
+                "factori",
+                "pay",
+                "shut",
+                "strik",
+                "worker"
+            ],
+            "entity_signature": "BD:bangladesh:bangladesh sovereign authorities:bd",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-15T20:10:11.770405+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Clothing factories shut in Bangladesh as workers strike over pay"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "7702ed13-c536-4d93-b1bc-20c7a39ced9d",
+            "title": "Australian MP 'full of gratitude' upon leaving",
+            "keywords": [
+                "alleg",
+                "attack",
+                "australian",
+                "car",
+                "full",
+                "gratitud",
+                "hospital",
+                "leav",
+                "upon"
+            ],
+            "entity_signature": "AU:attack:au:australia",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-16T07:03:32.294798+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Australian MP 'full of gratitude' upon leaving hospital after alleged car attack"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "34159ccc-f441-47cf-b933-5a2e707bfc0b",
+            "title": "Canada could work with Chinese automakers if US",
+            "keywords": [
+                "automaker",
+                "canada",
+                "carney",
+                "chines",
+                "fail",
+                "talk",
+                "trad",
+                "work"
+            ],
+            "entity_signature": "CA:CN:US:ca:canada",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-16T07:03:32.294798+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Canada could work with Chinese automakers if US trade talks fail, says Carney"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "58a1e209-53a2-4d10-a417-eb03977cbfbe",
+            "title": "Anthropic vows to work for benefit of humanity",
+            "keywords": [
+                "ahead",
+                "anthropic",
+                "benefit",
+                "fil",
+                "human",
+                "ipo",
+                "major",
+                "work"
+            ],
+            "entity_signature": "anthropic:india regional stakeholders:syntactic_subject",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-16T07:03:32.294798+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Anthropic vows to work for benefit of humanity ahead of major IPO filing this month"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "361c9edf-234e-4cdd-81f8-efe60cea58c2",
+            "title": "US basketball player arrested with 75lb of",
+            "keywords": [
+                "75lb",
+                "airport",
+                "arrest",
+                "authoriti",
+                "basketball",
+                "marijuana",
+                "nigerian",
+                "player",
+                "say"
+            ],
+            "entity_signature": "NG:US:75lb of marijuana:arrested:health",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-16T17:17:49.602228+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US basketball player arrested with 75lb of marijuana at Nigerian airport, say authorities"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "fa0338d3-ce2e-414d-b8ea-5af65c6c22b3",
+            "title": "Bahrain court sentences dozens of Shia Muslims to",
+            "keywords": [
+                "activist",
+                "bahrain",
+                "court",
+                "dozen",
+                "lif",
+                "muslim",
+                "prison",
+                "say",
+                "sentenc",
+                "shia"
+            ],
+            "entity_signature": "IR:UK:activists:bahrain court:civic activists / protesters",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-16T17:17:49.602228+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Bahrain court sentences dozens of Shia Muslims to life in prison, activists say"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "6ea1d3df-84d6-40d8-baab-e6adf72c1cb2",
+            "title": "FAA ground stop still affecting thousands of",
+            "keywords": [
+                "affect",
+                "asia",
+                "faa",
+                "flight",
+                "ground",
+                "meet",
+                "putin",
+                "still",
+                "stop",
+                "thousand"
+            ],
+            "entity_signature": "US:Donald:Donald Trump:diplomacy:faa",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-16T17:17:49.602228+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "FAA ground stop still affecting thousands of flights. And, Trump meets Xi, Putin in Asia"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "e52c8c18-f037-48ea-9100-d6e8ee272b80",
+            "title": "Finance minister Nirmala Sitharaman holds first",
+            "keywords": [
+                "budget",
+                "economist",
+                "financ",
+                "first",
+                "hold",
+                "meet",
+                "minister",
+                "nirmala",
+                "pre",
+                "sitharaman"
+            ],
+            "entity_signature": "economists:finance minister nirmala sitharaman holds first pre-budget:india regional stakeholders",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-16T17:17:49.602228+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Finance minister Nirmala Sitharaman holds first pre-budget meeting with economists"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "0c5a157b-7da2-46d8-abb4-f67bdaefb1f1",
+            "title": "Ajit Pawar plane crash: Rohit Pawar alleges VSR",
+            "keywords": [
+                "ajit",
+                "alleg",
+                "cbi",
+                "crash",
+                "link",
+                "owner",
+                "pawar",
+                "plan",
+                "political",
+                "prob"
+            ],
+            "entity_signature": "cbi:cbi probe:collective_faction",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-16T17:17:49.602228+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ajit Pawar plane crash: Rohit Pawar alleges VSR owner has political links, seeks CBI probe"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "d1942d6a-0abd-4d93-87ea-4f377830ae6a",
+            "title": "'My father belonged to her': Rahul Gandhi's",
+            "keywords": [
+                "belong",
+                "father",
+                "gandhi",
+                "heartfelt",
+                "launch",
+                "memoir",
+                "rahul",
+                "sonia",
+                "tribut"
+            ],
+            "entity_signature": "india regional stakeholders:launch:rahul gandhi's heartfelt tribute to sonia gandhi at memoir",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-16T17:17:49.602228+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'My father belonged to her': Rahul Gandhi's heartfelt tribute to Sonia Gandhi at memoir launch"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "bff9134e-fce8-4c6b-8734-6e1e65309181",
+            "title": "Probe into boy's head injury ongoing as officers",
+            "keywords": [
+                "boy",
+                "cctv",
+                "collect",
+                "footag",
+                "head",
+                "injuri",
+                "nurseri",
+                "officer",
+                "ongo",
+                "prob"
+            ],
+            "entity_signature": "asia-pacific regional stakeholders:boy's head injury ongoing as officers collect nursery cctv footage:impacted_community",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Probe into boy's head injury ongoing as officers collect nursery CCTV footage"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "804502e9-07d7-4859-ad45-6f6a3048dda3",
+            "title": "Europe hunts for Palantir alternatives as",
+            "keywords": [
+                "alternativ",
+                "dependenc",
+                "europ",
+                "hunt",
+                "limit",
+                "militari",
+                "palantir",
+                "seek"
+            ],
+            "entity_signature": "EU:US:eu:europe hunts for palantir alternatives as militaries:european union",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Europe hunts for Palantir alternatives as militaries seek to limit US dependence"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "1ba37dec-3b02-4fad-9097-24211b70ddef",
+            "title": "Czech mass protests: Media is the first casualty",
+            "keywords": [
+                "attack",
+                "casualti",
+                "czech",
+                "democraci",
+                "first",
+                "mass",
+                "media",
+                "protest",
+                "want"
+            ],
+            "entity_signature": "CZ:attack:conflict:cz",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Czech mass protests: Media is the first casualty 'when you want to attack democracy'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "75af992b-f53c-4de7-8836-07c65fc5f785",
+            "title": "Ukraine holds peace talks with US, Europe as",
+            "keywords": [
+                "conflict",
+                "escalat",
+                "europ",
+                "hold",
+                "peac",
+                "talk",
+                "ukrain"
+            ],
+            "entity_signature": "EU:RU:UA:diplomacy:escalates",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ukraine holds peace talks with US, Europe as conflict escalates"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "6b7eeeb3-0fbd-4b9f-9b4a-66f40c898ec8",
+            "title": "Houthi rebel advance in Yemen may further",
+            "keywords": [
+                "advanc",
+                "destabilis",
+                "economi",
+                "global",
+                "houthi",
+                "may",
+                "rebel",
+                "yemen"
+            ],
+            "entity_signature": "IR:advance:collective_faction:houthi",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Houthi rebel advance in Yemen may further destabilise global economy"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "57444d44-09c2-4ef1-8697-350447ff7cad",
+            "title": "UK seeks closer ties with EU after Brexit fail",
+            "keywords": [
+                "brexit",
+                "closer",
+                "fail",
+                "seek",
+                "tie"
+            ],
+            "entity_signature": "EU:UK:closer ties:eu:european union",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "UK seeks closer ties with EU after Brexit fail"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "7fabe6fd-61e1-4bc5-9b9c-5b2297610aeb",
+            "title": "Ethiopia Moyale clashes disrupt livelihoods as",
+            "keywords": [
+                "clash",
+                "deepen",
+                "disput",
+                "disrupt",
+                "ethiopia",
+                "livelihood",
+                "moyal",
+                "territorial"
+            ],
+            "entity_signature": "ET:deepens:et:ethiopia",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Ethiopia Moyale clashes disrupt livelihoods as territorial dispute deepens"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "4305b3e8-70bf-4f77-a55d-1dfe396b0b0c",
+            "title": "Houthis advance in Yemen as tankers hit sea mines",
+            "keywords": [
+                "advanc",
+                "hit",
+                "hormuz",
+                "houthi",
+                "min",
+                "sea",
+                "strait",
+                "tanker",
+                "yemen"
+            ],
+            "entity_signature": "IR:advance:collective_faction:houthis",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Houthis advance in Yemen as tankers hit sea mines in Strait of Hormuz"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "5a70df06-98f3-4dbb-9023-d7392fca4515",
+            "title": "California sues OpenAI over hacking risks",
+            "keywords": [
+                "california",
+                "hack",
+                "openai",
+                "risk",
+                "sue"
+            ],
+            "entity_signature": "california:conflict:general",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "California sues OpenAI over hacking risks"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "a9b24888-d97e-4ed2-9ca2-aa2ea7a1213b",
+            "title": "Appeals Court Weighs Pentagon's Media Restrictions",
+            "keywords": [
+                "appeal",
+                "court",
+                "media",
+                "pentagon",
+                "restric",
+                "weigh"
+            ],
+            "entity_signature": "appeals court:collective_faction:court",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Appeals Court Weighs Pentagon's Media Restrictions"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "885fde93-4852-4ce9-a680-ad9cb965b8cd",
+            "title": "U.N. talks seek to rein in 'killer robots' as",
+            "keywords": [
+                "ai",
+                "fear",
+                "grow",
+                "killer",
+                "rein",
+                "robot",
+                "seek",
+                "talk",
+                "weapon"
+            ],
+            "entity_signature": "CH:IL:RU:ch:diplomacy",
+            "category": "National",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "U.N. talks seek to rein in 'killer robots' as fears over AI weapons grow"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "99472c3e-5db8-4da4-9805-e776bfd7bcb3",
+            "title": "All the questions Nvidia should answer on Tuesday",
+            "keywords": [
+                "answer",
+                "nvidia",
+                "probabli",
+                "ques",
+                "tuesday",
+                "won"
+            ],
+            "entity_signature": "but probably:north america regional stakeholders:nvidia",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "All the questions Nvidia should answer on Tuesday — but probably won't"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "5bb86426-cca8-4dac-9608-4c9afb23c46b",
+            "title": "United Airlines Flights Resume After 'Widespread",
+            "keywords": [
+                "airlin",
+                "flight",
+                "outag",
+                "resum",
+                "system",
+                "unit",
+                "widespread"
+            ],
+            "entity_signature": "north america regional stakeholders:resume:syntactic_subject",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "United Airlines Flights Resume After 'Widespread System Outage'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "eb663bad-b780-4682-a97c-e3e341cf9b15",
+            "title": "Apple reveals new Mac security controls as AI",
+            "keywords": [
+                "agent",
+                "ai",
+                "appl",
+                "control",
+                "mac",
+                "new",
+                "privaci",
+                "rais",
+                "reveal",
+                "risk"
+            ],
+            "entity_signature": "apple:new mac security controls as ai agents raise privacy risks:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Apple reveals new Mac security controls as AI agents raise privacy risks"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "1e390a92-a80f-4633-92fd-c4a316e5c5b1",
+            "title": "Sam Altman says he wants everyone 'to have a lot",
+            "keywords": [
+                "altman",
+                "everyon",
+                "lot",
+                "ram",
+                "sam",
+                "want"
+            ],
+            "entity_signature": "Altman:Sam:leader:north america regional stakeholders:openai",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Sam Altman says he wants everyone 'to have a lot of RAM'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "bd444661-d403-4ae5-bb87-b44231fd7b31",
+            "title": "Uber says hackers stole information on close to",
+            "keywords": [
+                "breach",
+                "clos",
+                "data",
+                "driver",
+                "hacker",
+                "informa",
+                "licens",
+                "stol",
+                "uber"
+            ],
+            "entity_signature": "north america regional stakeholders:sovereign_stakeholder:technology",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Uber says hackers stole information on close to 150,000 driver's licenses during data breach"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "bfec0058-1962-4a08-b41e-70f2fbadad30",
+            "title": "Udaipur auto-rickshaw driver makes obscene",
+            "keywords": [
+                "arrest",
+                "auto",
+                "driver",
+                "livestream",
+                "mak",
+                "obscen",
+                "remark",
+                "rickshaw",
+                "thai",
+                "udaipur"
+            ],
+            "entity_signature": "TH:arrested:judicial & investigative bodies:judicial & investigative bodies (police)",
+            "category": "National",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Udaipur auto-rickshaw driver makes obscene remarks during Thai YouTuber's livestream, arrested"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "55bfeeac-cac4-436c-a86e-58eb6c748968",
+            "title": "BJP holds key party meeting in Mathura for",
+            "keywords": [
+                "assembli",
+                "bjp",
+                "hold",
+                "key",
+                "mathura",
+                "meet",
+                "parti",
+                "poll"
+            ],
+            "entity_signature": "bjp holds key party:india regional stakeholders:mathura",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "BJP holds key party meeting in Mathura for Assembly polls"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "2e357636-f02f-43f3-ba7a-bf4b214bf947",
+            "title": "Tribute to Kartar Singh Sarabha, Punjab free from",
+            "keywords": [
+                "drug",
+                "free",
+                "kartar",
+                "mann",
+                "punjab",
+                "sarabha",
+                "singh",
+                "tribut",
+                "unemploy"
+            ],
+            "entity_signature": "india regional stakeholders:sovereign_stakeholder:tribute to kartar singh sarabha, punjab free from drugs and unemployment, says cm mann",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Tribute to Kartar Singh Sarabha, Punjab free from drugs and unemployment, says CM Mann"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "05670ce2-7516-48da-8182-2952cf1aa573",
+            "title": "Christian community seeks West Bengal CM's",
+            "keywords": [
+                "ahead",
+                "attack",
+                "bengal",
+                "christian",
+                "christma",
+                "commun",
+                "interven",
+                "seek",
+                "target",
+                "west"
+            ],
+            "entity_signature": "IN:christian community:in:india",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Christian community seeks West Bengal CM's intervention over targeted attacks ahead of Christmas"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "a9d7a588-a2c9-4cab-aa38-1fa600c6786c",
+            "title": "West Bengal BJP supporters beating up own party",
+            "keywords": [
+                "beat",
+                "bengal",
+                "bjp",
+                "feud",
+                "member",
+                "minister",
+                "parti",
+                "ris",
+                "supporter",
+                "union"
+            ],
+            "entity_signature": "india regional stakeholders:judicial & investigative bodies:judicial & investigative bodies (police)",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-17T00:57:30.207078+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "West Bengal BJP supporters beating up own party members, says Union Minister as feuds rise in party"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Hindu"
             ]
         },
         {
@@ -222,238 +1556,6 @@
             ]
         },
         {
-            "arc_id": "62b58299-1ae7-44ed-b133-dcd1e82f7616",
-            "title": "Prince William, Princess Kate to meet Modi in New",
-            "keywords": [
-                "delhi",
-                "kat",
-                "meet",
-                "modi",
-                "new",
-                "princ",
-                "princess",
-                "william"
-            ],
-            "entity_signature": "IN:Modi:Narendra:in:india",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-15T20:10:11.770405+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Prince William, Princess Kate to meet Modi in New Delhi this week",
-                "Prince William, Princess Kate to meet PM Modi in New Delhi this week",
-                "Prince and Princess of Wales arrive in India ahead of meeting with Modi"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Asia",
-                "BBC News",
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "05faeaee-ba1a-4cd2-b611-ce4fa2f65a05",
-            "title": "Five EU countries to announce Rwanda deportation",
-            "keywords": [
-                "announc",
-                "countri",
-                "deporta",
-                "fiv",
-                "hub",
-                "rwanda",
-                "schem"
-            ],
-            "entity_signature": "EU:announce:eu:european union",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-16T07:03:32.294798+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Five EU countries to announce Rwanda deportation hub scheme",
-                "Five EU states announce plans for immigration 'return hubs' in Rwanda",
-                "Five EU countries announce migrant deportation centre in Rwanda"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Europe",
-                "Reuters",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "845e341a-174f-4172-b587-22490a9afd3c",
-            "title": "Australia, UK, Canada and Italy urge Israel to",
-            "keywords": [
-                "access",
-                "aid",
-                "allow",
-                "australia",
-                "canada",
-                "gaza",
-                "israel",
-                "itali",
-                "rapid",
-                "urg"
-            ],
-            "entity_signature": "AU:CA:IL:au:australia",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-16T00:10:55.084624+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Australia, UK, Canada and Italy urge Israel to allow 'rapid' Gaza aid access",
-                "Australia, Canada, Italy and the UK urge Israel to allow aid into Gaza",
-                "UK and allies urge Israel to allow rapid humanitarian access to Gaza"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "Al Jazeera",
-                "BBC Middle East",
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "ae6ca703-9ade-4dd8-953b-22d38394e5c5",
-            "title": "Netanyahu renews call for Israeli unity",
-            "keywords": [
-                "call",
-                "dismiss",
-                "eisenkot",
-                "govern",
-                "israeli",
-                "netanyahu",
-                "renew",
-                "trick",
-                "uniti"
-            ],
-            "entity_signature": "IL:Benjamin:Benjamin Netanyahu:call:il",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-15T00:07:51.947686+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Netanyahu renews call for Israeli unity government as Eisenkot dismisses 'tricks'",
-                "Eisenkot says Netanyahu 'cannot remain' after alleged election interference by aide"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "bbbcad7f-32fb-4430-bc30-1805148dfb91",
-            "title": "Yemen's Houthis advance on Aden as government",
-            "keywords": [
-                "aden",
-                "advanc",
-                "capital",
-                "defend",
-                "forc",
-                "govern",
-                "houthi",
-                "retreat",
-                "yemen"
-            ],
-            "entity_signature": "aden as government forces retreat:advance:collective_faction",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-15T20:10:11.770405+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Yemen's Houthis advance on Aden as government forces retreat to defend their capital",
-                "Yemeni forces retreat to defend port city from Houthis"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "BBC Middle East",
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "7857ba14-cebc-4912-9810-dfe54aa5b974",
-            "title": "Israel kills senior member of Hamas's military",
-            "keywords": [
-                "gaza",
-                "hama",
-                "israel",
-                "kill",
-                "member",
-                "militari",
-                "senior",
-                "strik",
-                "wing"
-            ],
-            "entity_signature": "IL:PS:collective_faction:conflict:geopolitics",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-15T20:10:11.770405+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Israel kills senior member of Hamas's military wing in Gaza strike",
-                "Israel kills Hamas commander in strike on Gaza camp, officials say"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East",
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "db3e5b19-a0e2-442b-b66d-9846029322e6",
-            "title": "Jordan Sentences 3 to Death Over Greek Orthodox",
-            "keywords": [
-                "attack",
-                "church",
-                "death",
-                "greek",
-                "jordan",
-                "orthodox",
-                "sentenc"
-            ],
-            "entity_signature": "GR:3:conflict:geopolitics",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-16T00:10:55.084624+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Jordan Sentences 3 to Death Over Greek Orthodox Church Attack",
-                "Three men sentenced to death in Jordan over fatal church mass shooting"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Middle East",
-                "New York Times"
-            ]
-        },
-        {
             "arc_id": "b2ef43d9-34a2-4555-a399-3a6c5a006a62",
             "title": "Trump says he might meet with North Korea's Kim",
             "keywords": [
@@ -482,73 +1584,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Reuters",
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "a02841f4-a52e-4e41-bc33-7ca55e86bc16",
-            "title": "Landmark Crimea bridge hit as Russia reports",
-            "keywords": [
-                "attack",
-                "biggest",
-                "bridg",
-                "crimea",
-                "dron",
-                "hit",
-                "landmark",
-                "russia",
-                "ukrainian",
-                "war"
-            ],
-            "entity_signature": "RU:UA:attack:conflict:geopolitics",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-16T17:17:49.602228+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Landmark Crimea bridge hit as Russia reports biggest Ukrainian drone attack of war",
-                "Ukraine hits Kerch bridge between Russia and occupied Crimea"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "BBC News",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "7ff548bb-4c42-47c5-afc4-478ab0c9d55b",
-            "title": "US judge sets March retrial for Lindsay Clancy",
-            "keywords": [
-                "accus",
-                "children",
-                "clanci",
-                "judg",
-                "kill",
-                "lindsay",
-                "march",
-                "retrial",
-                "set"
-            ],
-            "entity_signature": "US:children:civilians & impacted communities:civilians & impacted communities (children)",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-16T17:17:49.602228+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "US judge sets March retrial for Lindsay Clancy, accused of killing her 3 children",
-                "Lindsay Clancy to face a new trial in spring of 2027 over children's killing"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NPR News",
                 "SCMP"
             ]
         },
@@ -583,65 +1618,6 @@
             "sources_involved": [
                 "NYT Business",
                 "The Verge"
-            ]
-        },
-        {
-            "arc_id": "e75c8f23-8a11-4eb4-8f5f-560c23e40146",
-            "title": "Suspected China spy linked to Nvidia's ex-boss",
-            "keywords": [
-                "boss",
-                "china",
-                "left",
-                "link",
-                "megaspe",
-                "nvidia",
-                "spy",
-                "suspect"
-            ],
-            "entity_signature": "CN:US:china:china sovereign authorities:cn",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-15T20:10:11.770405+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "054c178e-a46e-4239-9026-43e2fff5567c",
-            "title": "Clothing factories shut in Bangladesh as workers",
-            "keywords": [
-                "bangladesh",
-                "cloth",
-                "factori",
-                "pay",
-                "shut",
-                "strik",
-                "worker"
-            ],
-            "entity_signature": "BD:bangladesh:bangladesh sovereign authorities:bd",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-15T20:10:11.770405+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Clothing factories shut in Bangladesh as workers strike over pay"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
             ]
         },
         {
@@ -703,67 +1679,6 @@
             ]
         },
         {
-            "arc_id": "7702ed13-c536-4d93-b1bc-20c7a39ced9d",
-            "title": "Australian MP 'full of gratitude' upon leaving",
-            "keywords": [
-                "alleg",
-                "attack",
-                "australian",
-                "car",
-                "full",
-                "gratitud",
-                "hospital",
-                "leav",
-                "upon"
-            ],
-            "entity_signature": "AU:attack:au:australia",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-16T07:03:32.294798+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Australian MP 'full of gratitude' upon leaving hospital after alleged car attack"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "34159ccc-f441-47cf-b933-5a2e707bfc0b",
-            "title": "Canada could work with Chinese automakers if US",
-            "keywords": [
-                "automaker",
-                "canada",
-                "carney",
-                "chines",
-                "fail",
-                "talk",
-                "trad",
-                "work"
-            ],
-            "entity_signature": "CA:CN:US:ca:canada",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-16T07:03:32.294798+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Canada could work with Chinese automakers if US trade talks fail, says Carney"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "d352fb94-0da1-4514-8b8e-7d2b1e9430fb",
             "title": "600 Ukrainian drones target Moscow, Crimea bridge",
             "keywords": [
@@ -795,36 +1710,6 @@
             ]
         },
         {
-            "arc_id": "58a1e209-53a2-4d10-a417-eb03977cbfbe",
-            "title": "Anthropic vows to work for benefit of humanity",
-            "keywords": [
-                "ahead",
-                "anthropic",
-                "benefit",
-                "fil",
-                "human",
-                "ipo",
-                "major",
-                "work"
-            ],
-            "entity_signature": "anthropic:india regional stakeholders:syntactic_subject",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-16T07:03:32.294798+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Anthropic vows to work for benefit of humanity ahead of major IPO filing this month"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
             "arc_id": "39865cf2-592b-4766-89a3-b193ca8cac6a",
             "title": "US now \"comfortable\" with children dying of",
             "keywords": [
@@ -852,37 +1737,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Ars Technica"
-            ]
-        },
-        {
-            "arc_id": "361c9edf-234e-4cdd-81f8-efe60cea58c2",
-            "title": "US basketball player arrested with 75lb of",
-            "keywords": [
-                "75lb",
-                "airport",
-                "arrest",
-                "authoriti",
-                "basketball",
-                "marijuana",
-                "nigerian",
-                "player",
-                "say"
-            ],
-            "entity_signature": "NG:US:75lb of marijuana:arrested:health",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-16T17:17:49.602228+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "US basketball player arrested with 75lb of marijuana at Nigerian airport, say authorities"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
             ]
         },
         {
@@ -1065,38 +1919,6 @@
             ]
         },
         {
-            "arc_id": "fa0338d3-ce2e-414d-b8ea-5af65c6c22b3",
-            "title": "Bahrain court sentences dozens of Shia Muslims to",
-            "keywords": [
-                "activist",
-                "bahrain",
-                "court",
-                "dozen",
-                "lif",
-                "muslim",
-                "prison",
-                "say",
-                "sentenc",
-                "shia"
-            ],
-            "entity_signature": "IR:UK:activists:bahrain court:civic activists / protesters",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-16T17:17:49.602228+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Bahrain court sentences dozens of Shia Muslims to life in prison, activists say"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
             "arc_id": "b094e398-134f-46e0-a55c-33ad8b37a755",
             "title": "UEFA backs France's Philippe Diallo to challenge",
             "keywords": [
@@ -1245,38 +2067,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "6ea1d3df-84d6-40d8-baab-e6adf72c1cb2",
-            "title": "FAA ground stop still affecting thousands of",
-            "keywords": [
-                "affect",
-                "asia",
-                "faa",
-                "flight",
-                "ground",
-                "meet",
-                "putin",
-                "still",
-                "stop",
-                "thousand"
-            ],
-            "entity_signature": "US:Donald:Donald Trump:diplomacy:faa",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-16T17:17:49.602228+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "FAA ground stop still affecting thousands of flights. And, Trump meets Xi, Putin in Asia"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
             ]
         },
         {
@@ -1456,38 +2246,6 @@
             ]
         },
         {
-            "arc_id": "e52c8c18-f037-48ea-9100-d6e8ee272b80",
-            "title": "Finance minister Nirmala Sitharaman holds first",
-            "keywords": [
-                "budget",
-                "economist",
-                "financ",
-                "first",
-                "hold",
-                "meet",
-                "minister",
-                "nirmala",
-                "pre",
-                "sitharaman"
-            ],
-            "entity_signature": "economists:finance minister nirmala sitharaman holds first pre-budget:india regional stakeholders",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-16T17:17:49.602228+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Finance minister Nirmala Sitharaman holds first pre-budget meeting with economists"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
             "arc_id": "c94e43b6-eb2c-4710-be64-8cad1d89a62f",
             "title": "Man arrested, house bulldozed for alleged rape of",
             "keywords": [
@@ -1517,69 +2275,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "0c5a157b-7da2-46d8-abb4-f67bdaefb1f1",
-            "title": "Ajit Pawar plane crash: Rohit Pawar alleges VSR",
-            "keywords": [
-                "ajit",
-                "alleg",
-                "cbi",
-                "crash",
-                "link",
-                "owner",
-                "pawar",
-                "plan",
-                "political",
-                "prob"
-            ],
-            "entity_signature": "cbi:cbi probe:collective_faction",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-16T17:17:49.602228+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Ajit Pawar plane crash: Rohit Pawar alleges VSR owner has political links, seeks CBI probe"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "d1942d6a-0abd-4d93-87ea-4f377830ae6a",
-            "title": "'My father belonged to her': Rahul Gandhi's",
-            "keywords": [
-                "belong",
-                "father",
-                "gandhi",
-                "heartfelt",
-                "launch",
-                "memoir",
-                "rahul",
-                "sonia",
-                "tribut"
-            ],
-            "entity_signature": "india regional stakeholders:launch:rahul gandhi's heartfelt tribute to sonia gandhi at memoir",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-16T17:17:49.602228+00:00",
-            "last_seen": "2026-11-16T17:17:49.602228+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'My father belonged to her': Rahul Gandhi's heartfelt tribute to Sonia Gandhi at memoir launch"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
             ]
         },
         {
@@ -2442,709 +3137,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "f4924c02-944c-49db-87c4-2c998fe0d0df",
-            "title": "Four months after launch, Kochi's third Ro-Ro",
-            "keywords": [
-                "four",
-                "idl",
-                "kochi",
-                "launch",
-                "remain",
-                "third",
-                "vessel"
-            ],
-            "entity_signature": ", kochi's third ro-ro vessel remains idle:four months after:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-16T07:03:32.294798+00:00",
-            "last_seen": "2026-11-16T07:03:32.294798+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Four months after launch, Kochi's third Ro-Ro vessel remains idle"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "3f2d1445-1d33-42eb-a7ab-a21a8d8591b3",
-            "title": "Jio begins talks with Isro, Skyroot Aerospace and",
-            "keywords": [
-                "aerospac",
-                "amid",
-                "begin",
-                "compani",
-                "homegrown",
-                "isro",
-                "jio",
-                "launch",
-                "prep",
-                "satellit"
-            ],
-            "entity_signature": "IN:diplomacy:in:india",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-16T07:03:32.294798+00:00",
-            "last_seen": "2026-11-16T07:03:32.294798+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Jio begins talks with Isro, Skyroot Aerospace and other homegrown companies amid satellite launch prep"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "c687b16b-7609-4ec4-a14f-7169078cadfa",
-            "title": "Seminar at MCEME-Secunderabad explores indigenous",
-            "keywords": [
-                "applica",
-                "capabiliti",
-                "explor",
-                "indigenou",
-                "mcem",
-                "militari",
-                "secunderabad",
-                "seminar",
-                "spac"
-            ],
-            "entity_signature": "capabilities for military:collective_faction:explores",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-16T07:03:32.294798+00:00",
-            "last_seen": "2026-11-16T07:03:32.294798+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Seminar at MCEME-Secunderabad explores indigenous space capabilities for military applications"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "b92432c9-d180-4d95-b6ab-6a42fd819103",
-            "title": "Italy fines Meta $887 million over Android users'",
-            "keywords": [
-                "access",
-                "android",
-                "data",
-                "fin",
-                "itali",
-                "meta",
-                "million",
-                "user"
-            ],
-            "entity_signature": "IT:fines:it:italy",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-14T15:36:11.336746+00:00",
-            "last_seen": "2026-11-16T00:10:55.084624+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Italy fines Meta $887 million over Android users' data access",
-                "Italy fines Meta €805m over accessing users' photos"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Europe",
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "01d4b3c6-b4de-4dd2-b5dc-c19e0e508ebb",
-            "title": "Philippines' Carmelle wins first Eurovision",
-            "keywords": [
-                "asia",
-                "carmell",
-                "contest",
-                "eurovision",
-                "first",
-                "philippin",
-                "win"
-            ],
-            "entity_signature": "PH:TH:first eurovision contest:ph:philippines",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-14T20:27:28.467205+00:00",
-            "last_seen": "2026-11-16T00:10:55.084624+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Philippines' Carmelle wins first Eurovision contest in Asia",
-                "Philippines' Carmelle storms to victory in Eurovision Asia debut in Bangkok"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.7999999999999999,
-            "sources_involved": [
-                "SCMP",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "afaffd29-9a58-4489-803d-70040aa4fd90",
-            "title": "Australian cricket's sandpapergate is back - and",
-            "keywords": [
-                "australian",
-                "back",
-                "cricket",
-                "cut",
-                "deep",
-                "good",
-                "nation",
-                "sandpapergat",
-                "sport"
-            ],
-            "entity_signature": "AU:- and it cuts deep:au:australia",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-13T14:48:28.112432+00:00",
-            "last_seen": "2026-11-16T00:10:55.084624+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Australian cricket's sandpapergate is back - and it cuts deep in a 'nation of good sports'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "51b3df7a-83fb-46d4-959d-3ef66eaa818e",
-            "title": "After a summer win, India's Gen Z protesters face",
-            "keywords": [
-                "fac",
-                "gen",
-                "india",
-                "protester",
-                "summer",
-                "uncertainti",
-                "win",
-                "winter"
-            ],
-            "entity_signature": "IN:, india's gen z protesters face a winter of uncertainty:after a summer:civic activists / protesters",
-            "category": "World",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-14T01:35:43.317985+00:00",
-            "last_seen": "2026-11-16T00:10:55.084624+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "After a summer win, India's Gen Z protesters face a winter of uncertainty"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "b2740435-26d6-4f5c-a927-0a4d91f98b2e",
-            "title": "Philippines wins first Eurovision Song Contest",
-            "keywords": [
-                "asia",
-                "contest",
-                "eurovision",
-                "first",
-                "philippin",
-                "song",
-                "win"
-            ],
-            "entity_signature": "PH:first eurovision song contest asia:ph:philippines",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-14T20:27:28.467205+00:00",
-            "last_seen": "2026-11-16T00:10:55.084624+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Philippines wins first Eurovision Song Contest Asia"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.7999999999999999,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "052a4869-eb8a-473f-be03-f41b9eeb279b",
-            "title": "Boy electrocuted by snapped stay wire in",
-            "keywords": [
-                "boy",
-                "electrocut",
-                "malappuram",
-                "minister",
-                "order",
-                "prob",
-                "snapp",
-                "stay",
-                "wir"
-            ],
-            "entity_signature": "india regional stakeholders:justice:minister orders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-15T20:10:11.770405+00:00",
-            "last_seen": "2026-11-16T00:10:55.084624+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Boy electrocuted by snapped stay wire in Malappuram; Minister orders probe"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "5a882b27-539f-40c8-8412-a568b193e071",
-            "title": "Uttarakhand MLA loses temper, vandalises stage",
-            "keywords": [
-                "book",
-                "chanc",
-                "deni",
-                "event",
-                "los",
-                "mla",
-                "speak",
-                "stag",
-                "temper",
-                "uttarakhand"
-            ],
-            "entity_signature": "congress:india regional stakeholders:loses",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-15T20:10:11.770405+00:00",
-            "last_seen": "2026-11-16T00:10:55.084624+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Uttarakhand MLA loses temper, vandalises stage after he was denied chance to speak at event; booked"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "34ce79f4-d80f-4865-bee1-81ae2a193c30",
-            "title": "'Magnifying smaller identities': Mohan Bhagwat",
-            "keywords": [
-                "bhagwat",
-                "british",
-                "divid",
-                "effort",
-                "era",
-                "identiti",
-                "india",
-                "magnifi",
-                "mohan",
-                "smaller"
-            ],
-            "entity_signature": "IN:UK:in:india:magnifying smaller identities",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-15T20:10:11.770405+00:00",
-            "last_seen": "2026-11-16T00:10:55.084624+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'Magnifying smaller identities': Mohan Bhagwat says efforts on to divide India using British-era tactics"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "8f178245-3a46-4600-9850-d204c2ab7f12",
-            "title": "Punjab woman, accomplice held in Rajasthan train",
-            "keywords": [
-                "accomplic",
-                "blast",
-                "held",
-                "isi",
-                "polic",
-                "punjab",
-                "rajasthan",
-                "recruit",
-                "romanc",
-                "strategi"
-            ],
-            "entity_signature": "collective_faction:health:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-15T20:10:11.770405+00:00",
-            "last_seen": "2026-11-16T00:10:55.084624+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Punjab woman, accomplice held in Rajasthan train track blast; police suspect ISI's 'romance' strategy to recruit women"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "cc05df00-0c45-4c19-8245-3f95c25273e5",
-            "title": "Rajasthan teacher arrested after refusing to",
-            "keywords": [
-                "app",
-                "arrest",
-                "canadian",
-                "dat",
-                "marri",
-                "met",
-                "old",
-                "rajasthan",
-                "refus",
-                "teacher"
-            ],
-            "entity_signature": "CA:arrested:ca:canada",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-15T20:10:11.770405+00:00",
-            "last_seen": "2026-11-16T00:10:55.084624+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Rajasthan teacher arrested after refusing to marry 61-year-old Canadian woman he met on dating app"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "f5ab8bb3-2c53-4b4e-afd9-f29a884ce780",
-            "title": "Mexico's Guadalajara cartel founder dies in",
-            "keywords": [
-                "aged",
-                "cartel",
-                "die",
-                "founder",
-                "guadalajara",
-                "hospital",
-                "mexico"
-            ],
-            "entity_signature": "MX:dies:health:hospital aged 80",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-16T00:10:55.084624+00:00",
-            "last_seen": "2026-11-16T00:10:55.084624+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Mexico's Guadalajara cartel founder dies in hospital aged 80"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "1e165bf0-560e-4143-a85f-1df602025e22",
-            "title": "UK will have 'voice' but no vote on EU food rules",
-            "keywords": [
-                "brexit",
-                "food",
-                "reset",
-                "rul",
-                "voic",
-                "vot"
-            ],
-            "entity_signature": "EU:UK:brexit reset:diplomacy:election",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-16T00:10:55.084624+00:00",
-            "last_seen": "2026-11-16T00:10:55.084624+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "UK will have 'voice' but no vote on EU food rules in Brexit reset"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC News"
-            ]
-        },
-        {
-            "arc_id": "8fb7cc45-c975-4ea4-ab52-c6427657306b",
-            "title": "As foreigners in Thailand lose homes, Malaysia",
-            "keywords": [
-                "buyer",
-                "court",
-                "foreigner",
-                "hom",
-                "los",
-                "malaysia",
-                "thailand",
-                "wealthi"
-            ],
-            "entity_signature": "MY:TH:as foreigners in thailand:collective_faction:courts",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-16T00:10:55.084624+00:00",
-            "last_seen": "2026-11-16T00:10:55.084624+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "As foreigners in Thailand lose homes, Malaysia courts wealthy buyers"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "0f1d3073-901d-40f3-b2c4-cc35a7dbd9c4",
-            "title": "Yemen's Houthis unilaterally release 600 war",
-            "keywords": [
-                "detaine",
-                "houthi",
-                "releas",
-                "unilateralli",
-                "war",
-                "yemen"
-            ],
-            "entity_signature": "600 war detainees:civilians & impacted communities:civilians & impacted communities (detainees)",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-16T00:10:55.084624+00:00",
-            "last_seen": "2026-11-16T00:10:55.084624+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Yemen's Houthis unilaterally release 600 war detainees"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "45a439d0-cf88-4fdc-aab5-7c6fd0f2fd9b",
-            "title": "13-year-old boy identified as fourth Indian",
-            "keywords": [
-                "accident",
-                "boy",
-                "fourth",
-                "identifi",
-                "indian",
-                "kill",
-                "old",
-                "road",
-                "uae"
-            ],
-            "entity_signature": "IN:13-year-old boy:as fourth indian killed:identified",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-16T00:10:55.084624+00:00",
-            "last_seen": "2026-11-16T00:10:55.084624+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "13-year-old boy identified as fourth Indian killed in UAE road accident"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "ed187a83-e8e4-45aa-bc3c-f6cbdcd8a919",
-            "title": "Panchkula school attack: Ringing the school bell",
-            "keywords": [
-                "alarm",
-                "attack",
-                "bell",
-                "panchkula",
-                "rais",
-                "ring",
-                "safeti",
-                "school"
-            ],
-            "entity_signature": "attack:children:civilians & impacted communities",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-16T00:10:55.084624+00:00",
-            "last_seen": "2026-11-16T00:10:55.084624+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Panchkula school attack: Ringing the school bell, raising a safety alarm"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "65132551-7daa-40ef-84b9-1455c079f55a",
-            "title": "Hungarian authorities uncover $20m during probe",
-            "keywords": [
-                "20m",
-                "authoriti",
-                "era",
-                "hungarian",
-                "minister",
-                "prob",
-                "uncover"
-            ],
-            "entity_signature": "HU:hu:hungarian authorities uncover $20m during:hungary",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-14T15:36:11.336746+00:00",
-            "last_seen": "2026-11-15T20:10:11.770405+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Hungarian authorities uncover $20m during probe of Orbán-era minister"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "658ac2d6-d95f-42cb-b2b3-a1538505a72b",
-            "title": "Sotheby's auction of $180m Van Gogh challenged",
-            "keywords": [
-                "180m",
-                "auc",
-                "challeng",
-                "duress",
-                "gogh",
-                "sold",
-                "sothebi",
-                "van"
-            ],
-            "entity_signature": "duress:europe regional stakeholders:sold",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-14T20:27:28.467205+00:00",
-            "last_seen": "2026-11-15T20:10:11.770405+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Sotheby's auction of $180m Van Gogh challenged over claims it was 'sold under duress'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "fb551693-7566-4561-8be5-3b6c9dccdefe",
-            "title": "Tesla opens Cybercab pre-orders 'for personal",
-            "keywords": [
-                "cybercab",
-                "fee",
-                "geo",
-                "monthli",
-                "open",
-                "order",
-                "personal",
-                "pre",
-                "restric",
-                "tesla"
-            ],
-            "entity_signature": "Elon:Elon Musk:cybercab pre-orders 'for personal use,:leader:north america regional stakeholders",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-14T20:27:28.467205+00:00",
-            "last_seen": "2026-11-15T20:10:11.770405+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Tesla opens Cybercab pre-orders 'for personal use,' with geo restrictions and a $299 monthly fee"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "d031bf5b-3797-4f2a-a791-5d4a772a3055",
-            "title": "Elon Musk, other tech execs sign petition calling",
-            "keywords": [
-                "call",
-                "elon",
-                "exec",
-                "huang",
-                "jensen",
-                "musk",
-                "nvidia",
-                "peti",
-                "reinstat",
-                "sign"
-            ],
-            "entity_signature": "Elon:Elon Musk:elon musk, other tech execs:leader:north america regional stakeholders",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-15T00:07:51.947686+00:00",
-            "last_seen": "2026-11-15T20:10:11.770405+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "TechCrunch"
             ]
         }
     ],
