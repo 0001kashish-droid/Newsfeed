@@ -1,6 +1,1541 @@
 {
-    "last_updated": "2026-11-19T23:09:15.379503+00:00",
+    "last_updated": "2026-11-20T04:09:42.275043+00:00",
     "arcs": [
+        {
+            "arc_id": "b2ef43d9-34a2-4555-a399-3a6c5a006a62",
+            "title": "Trump says he might meet with North Korea's Kim",
+            "keywords": [
+                "china",
+                "jong",
+                "kim",
+                "korea",
+                "meet",
+                "might",
+                "north",
+                "trump"
+            ],
+            "entity_signature": "CN:KP:Donald:Donald Trump:china",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-16T17:17:49.602228+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 20,
+            "chapter_titles": [
+                "Trump says he might meet with North Korea's Kim Jong Un in China",
+                "Trump floats Kim meeting in China, says he'll discuss Ukraine with Xi and Putin",
+                "Planes, trains and automobiles: what we know about Kim Jong-un's foreign travels",
+                "Putin Is Open to Meeting With North Korea's Leader in China, Kremlin Says",
+                "Will a Spy Scandal, Trade Friction and a Surprise Guest Ruin Xi's Big Moment?",
+                "Will President Trump meet Kim Jong Un?",
+                "A Visual Tour of President Trump's Visits to Asia",
+                "Putin arrives in China ahead of trilateral Trump-Xi summit",
+                "Trump's Whirlwind Asia Trip Begins in the Philippines",
+                "Apec summit live: Xi and Putin start talks as Trump arrives in China",
+                "The Shadow of Yalta Hangs Over Trump's Summit in China",
+                "Apec summit live: Xi welcomes Trump on China visit as Putin claims Europe in 'humiliating decline'",
+                "Xi Greets Trump With a Hug as He Arrives in China",
+                "Crowds gather as Trump arrives in China ahead of talks with Xi and Putin",
+                "Trump shakes hands with Putin and Xi ahead of historic talks in China",
+                "Carney and Trump Hold Unscheduled Trade Meeting at Asia Summit",
+                "Xi Greets Trump on the Tarmac as He Lands in China for APEC Summit",
+                "How to Decode the Xi-Trump Hug",
+                "Trump accused of falling asleep during Xi Jinping speech at Apec summit in China",
+                "Why the ball is in Kim Jong-un's court on a meeting with Donald Trump"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera",
+                "BBC Asia",
+                "BBC Europe",
+                "BBC US",
+                "France 24",
+                "New York Times",
+                "Reuters",
+                "SCMP",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "2ae65718-3f5b-4353-b037-7d0a5a6160a3",
+            "title": "Myanmar faces historic genocide verdict at UN",
+            "keywords": [
+                "court",
+                "fac",
+                "genocid",
+                "historic",
+                "massacr",
+                "myanmar",
+                "rohingya",
+                "verdict"
+            ],
+            "entity_signature": "MM:at un court:collective_faction:court",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-18T23:56:22.525816+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 6,
+            "chapter_titles": [
+                "Myanmar faces historic genocide verdict at UN court over Rohingya massacres",
+                "Top U.N. court rules Myanmar committed genocide against the Rohingya",
+                "Myanmar Genocide Ruling Sets Up Court Fight Over Israel and Gaza",
+                "Myanmar committed genocide against Rohingya minority, top UN court rules",
+                "Myanmar Committed Genocide Against the Rohingya, Top Global Court Finds",
+                "The U.N.'s top court rules Myanmar committed genocide against the Rohingya"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Asia",
+                "NPR News",
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "2f4ca07f-f282-4414-9c51-9f7f62a4f6c1",
+            "title": "Gazans flee shelters as Israeli army launches",
+            "keywords": [
+                "armi",
+                "beyond",
+                "flee",
+                "gazan",
+                "ground",
+                "israeli",
+                "launch",
+                "lin",
+                "opera",
+                "shelter"
+            ],
+            "entity_signature": "IL:PS:army:as israeli army:collective_faction",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-18T17:49:43.685542+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 4,
+            "chapter_titles": [
+                "Gazans flee shelters as Israeli army launches ground operation beyond Yellow Line",
+                "Israeli army launches ground operation in Hamas-controlled area of Gaza",
+                "Israeli military launches rare ground operation in Gaza beyond Yellow Line",
+                "Israeli military completes ground operation in Gaza beyond Yellow Line"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Middle East",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "53d499bf-7c47-4a96-8fab-2dffd5c58148",
+            "title": "Far from Trump-Putin meeting, Europe to count",
+            "keywords": [
+                "cost",
+                "count",
+                "defenc",
+                "europ",
+                "far",
+                "meet",
+                "putin",
+                "trump",
+                "ukrain"
+            ],
+            "entity_signature": "DE:EU:UA:Donald:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-19T06:32:16.650047+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 4,
+            "chapter_titles": [
+                "Far from Trump-Putin meeting, Europe to count cost of Ukraine's defence",
+                "Ukraine's allies meet in Berlin with air defence, energy and financial support on the agenda – Europe live",
+                "Ukraine's European allies meet in Berlin in show of support",
+                "Is Europe now in the shadow of a Trump, Putin and Xi alliance? – podcast"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera",
+                "France 24",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "05faeaee-ba1a-4cd2-b611-ce4fa2f65a05",
+            "title": "Five EU countries to announce Rwanda deportation",
+            "keywords": [
+                "announc",
+                "countri",
+                "deporta",
+                "fiv",
+                "hub",
+                "rwanda",
+                "schem"
+            ],
+            "entity_signature": "EU:announce:eu:european union",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-16T07:03:32.294798+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Five EU countries to announce Rwanda deportation hub scheme",
+                "Five EU states announce plans for immigration 'return hubs' in Rwanda",
+                "Five EU countries announce migrant deportation centre in Rwanda"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Europe",
+                "Reuters",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "223d6159-66ed-453a-9a03-268b31e26554",
+            "title": "Putin renews his warm bond with Xi",
+            "keywords": [
+                "bond",
+                "putin",
+                "renew",
+                "warm"
+            ],
+            "entity_signature": "RU:UA:Jinping:Putin:conflict",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-18T17:49:43.685542+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Putin renews his warm bond with Xi.",
+                "Steve Rosenberg: Historic talks with Xi and Trump are a coup for Putin",
+                "Trump Flaunts Camaraderie With Xi and Putin but Has Little to Show for It"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe",
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "df3460a3-feaa-43ef-8a8d-bcfa33b4f547",
+            "title": "Kuwait says it repelled first Iranian attack in",
+            "keywords": [
+                "attack",
+                "first",
+                "iranian",
+                "island",
+                "kuwait",
+                "repell",
+                "strik",
+                "two"
+            ],
+            "entity_signature": "IR:US:attack:conflict:ir",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-18T17:49:43.685542+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Kuwait says it repelled first Iranian attack in two months after US strikes island",
+                "Kuwait, Bahrain face new Iran attacks after US strike on Qeshm Island"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Al Jazeera",
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "959272c1-d948-4738-ade7-e792a56f5498",
+            "title": "Fears grow that US will impose sanctions on ICJ",
+            "keywords": [
+                "ahead",
+                "fear",
+                "genocid",
+                "grow",
+                "icj",
+                "impos",
+                "judg",
+                "myanmar",
+                "rul",
+                "sanc"
+            ],
+            "entity_signature": "IL:MM:US:collective_faction:diplomacy",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-18T17:49:43.685542+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Fears grow that US will impose sanctions on ICJ judges ahead of Myanmar genocide ruling",
+                "Fears grow that US will put Nobel-winning judge under sanctions after Myanmar genocide ruling"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "29d846d3-2ed3-4ec1-b4ed-8531960deaf8",
+            "title": "Gaza: Israel launched new offensive on Nuseirat",
+            "keywords": [
+                "gaza",
+                "israel",
+                "launch",
+                "new",
+                "nuseirat",
+                "offensiv"
+            ],
+            "entity_signature": "IL:PS:civilians & impacted communities:civilians & impacted communities (refugee):geopolitics",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-19T16:20:44.688783+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Gaza: Israel launched new offensive on Nuseirat",
+                "Jerusalem Daily: Israel launches ground offensive in Gaza"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Al Jazeera",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "6b7eeeb3-0fbd-4b9f-9b4a-66f40c898ec8",
+            "title": "Houthi rebel advance in Yemen may further",
+            "keywords": [
+                "advanc",
+                "destabilis",
+                "economi",
+                "global",
+                "houthi",
+                "may",
+                "rebel",
+                "yemen"
+            ],
+            "entity_signature": "IR:advance:collective_faction:houthi",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-17T00:57:30.207078+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Houthi rebel advance in Yemen may further destabilise global economy"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "c4bbcef4-c0b3-478f-af64-23d920be18a3",
+            "title": "Palestinian woman, 72, shot dead by Israeli",
+            "keywords": [
+                "bank",
+                "dead",
+                "health",
+                "israeli",
+                "ministri",
+                "palestinian",
+                "settler",
+                "shot",
+                "west",
+                "woman"
+            ],
+            "entity_signature": "IL:PS:collective_faction:conflict:dead",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-17T18:18:36.087370+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "961cb5f0-74b5-4f04-abf6-be5a3af094b4",
+            "title": "European Commission accused of sugarcoating",
+            "keywords": [
+                "accus",
+                "commission",
+                "egypt",
+                "european",
+                "figur",
+                "fund",
+                "releas",
+                "sugarcoat"
+            ],
+            "entity_signature": "EG:EU:collective_faction:commission:diplomacy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-18T08:54:08.950645+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "European Commission accused of sugarcoating figures to release funds to Egypt"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "d7ec1764-fbc1-4e4c-9b60-62f5b509c630",
+            "title": "Trump says US taking 'very seriously' any Iranian",
+            "keywords": [
+                "iranian",
+                "plot",
+                "seriousli",
+                "tak",
+                "trump",
+                "washington"
+            ],
+            "entity_signature": "IR:US:Donald:Donald Trump:conflict",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-18T08:54:08.950645+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump says US taking 'very seriously' any Iranian plot against Washington"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "4920701b-cae0-4327-9fa9-6c27fd63843f",
+            "title": "Middle East crisis poses 'largest threat' to",
+            "keywords": [
+                "crisi",
+                "east",
+                "energi",
+                "histori",
+                "iea",
+                "largest",
+                "middl",
+                "pos",
+                "secur",
+                "threat"
+            ],
+            "entity_signature": "IL:IR:US:iea:il",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-19T06:32:16.650047+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Middle East crisis poses 'largest threat' to energy security in history, warns IEA"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "50ac7780-7a40-4015-b270-3395b03463d5",
+            "title": "Race to replant five South African baobabs after",
+            "keywords": [
+                "african",
+                "baobab",
+                "block",
+                "export",
+                "fiv",
+                "rac",
+                "replant",
+                "south"
+            ],
+            "entity_signature": "ZA:blocked:race to replant five south african baobabs after export:south africa",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-19T16:20:44.688783+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Race to replant five South African baobabs after export blocked"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "acd0fa79-37b4-4abe-9df7-ea394539faf1",
+            "title": "Putin vows 'far more painful' response to",
+            "keywords": [
+                "bridg",
+                "crimean",
+                "far",
+                "painful",
+                "putin",
+                "respons",
+                "strik",
+                "ukrain"
+            ],
+            "entity_signature": "RU:UA:Putin:Vladimir:conflict",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-19T16:20:44.688783+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Putin vows 'far more painful' response to Ukraine's strikes on Crimean Bridge"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "8e69715b-7063-4435-9593-2d2f9a2e5330",
+            "title": "China, Russia and US agree peace declaration with",
+            "keywords": [
+                "agree",
+                "china",
+                "declara",
+                "iran",
+                "men",
+                "peac",
+                "russia",
+                "ukrain",
+                "war"
+            ],
+            "entity_signature": "CN:IR:RU:Donald:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-19T16:20:44.688783+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "China, Russia and US agree peace declaration with no mention of Ukraine and Iran wars"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "c20d8ce3-3fc5-4016-aa66-6ca6bb55acbc",
+            "title": "Van Gogh painting sells for record $190.4m after",
+            "keywords": [
+                "gogh",
+                "histori",
+                "nazi",
+                "paint",
+                "record",
+                "row",
+                "sell",
+                "van"
+            ],
+            "entity_signature": "europe regional stakeholders:record $190.4m:sells",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-19T16:20:44.688783+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Van Gogh painting sells for record $190.4m after row over its Nazi history"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "8a8e12ab-ec7c-4224-afc9-11c6efdff3d6",
+            "title": "Russian arrested for spying on US defence company",
+            "keywords": [
+                "arrest",
+                "compani",
+                "defenc",
+                "palantir",
+                "russian",
+                "spy",
+                "support",
+                "ukrain"
+            ],
+            "entity_signature": "RU:UA:US:arrested:judicial & investigative bodies",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-19T16:20:44.688783+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russian arrested for spying on US defence company Palantir over Ukraine support"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "63a4b3dc-b582-471f-999a-e5e6acb5cd37",
+            "title": "Skyscraper in Riyadh damaged as Saudi Arabia",
+            "keywords": [
+                "arabia",
+                "attack",
+                "damag",
+                "houthi",
+                "new",
+                "riyadh",
+                "saudi",
+                "skyscraper",
+                "surg"
+            ],
+            "entity_signature": "SA:economy:houthi:insurgent / rebel factions",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-19T16:20:44.688783+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Skyscraper in Riyadh damaged as Saudi Arabia reports surge in new Houthi attacks"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "635de2e0-afd3-4079-9367-8781910f73bb",
+            "title": "The midterms were the largest win for either",
+            "keywords": [
+                "either",
+                "largest",
+                "midterm",
+                "parti",
+                "win"
+            ],
+            "entity_signature": "either party:midterms were the largest:north america regional stakeholders",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-19T16:20:44.688783+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "The midterms were the largest win for either party in 50 years"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "c597aa20-5819-4922-9e5d-170a66a656ba",
+            "title": "Razorpay set to file for India IPO next week",
+            "keywords": [
+                "februari",
+                "fil",
+                "follow",
+                "india",
+                "ipo",
+                "list",
+                "razorpay",
+                "roadshow",
+                "set",
+                "sight"
+            ],
+            "entity_signature": "IN:file:in:india",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-19T16:20:44.688783+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Razorpay set to file for India IPO next week, roadshows to follow; February listing in sight"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "8e83db3d-ad76-4650-8a94-32499eefc688",
+            "title": "At APEC Summit, U.S., China and Russia Vow to",
+            "keywords": [
+                "amid",
+                "apec",
+                "china",
+                "energi",
+                "global",
+                "increas",
+                "oil",
+                "russia",
+                "summit",
+                "suppli"
+            ],
+            "entity_signature": "CN:IR:RU:at apec summit, u.s., china and russia:china",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-19T23:09:15.010597+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "At APEC Summit, U.S., China and Russia Vow to Increase Oil Supply Amid Global Energy Transition"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "97e39eca-0964-4381-9ee1-0c705313e867",
+            "title": "Indian driver wins $1.3m in life-changing lottery",
+            "keywords": [
+                "chang",
+                "driver",
+                "indian",
+                "lif",
+                "lotteri",
+                "priz",
+                "win"
+            ],
+            "entity_signature": "IN:$1.3m:in:india",
+            "category": "World",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-19T23:09:15.010597+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Indian driver wins $1.3m in life-changing lottery prize"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "8abad2b9-4101-4bde-a27e-44203298b8f6",
+            "title": "Russian strikes on Kyiv kill one, damage Dutch",
+            "keywords": [
+                "austrian",
+                "damag",
+                "dutch",
+                "embassi",
+                "kill",
+                "kyiv",
+                "one",
+                "russian",
+                "strik"
+            ],
+            "entity_signature": "AT:NL:RU:at:austria",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-19T23:09:15.010597+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russian strikes on Kyiv kill one, damage Dutch and Austrian embassies"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "0d0f750d-4b61-454b-8425-354d0884238c",
+            "title": "Kushner says Trump 'open' to extend NATO mutual",
+            "keywords": [
+                "claus",
+                "defens",
+                "extend",
+                "kushner",
+                "mutual",
+                "nato",
+                "open",
+                "trump",
+                "typ",
+                "ukrain"
+            ],
+            "entity_signature": "UA:US:Donald:Donald Trump:diplomatic envoys",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-19T23:09:15.010597+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Kushner says Trump 'open' to extend NATO mutual defense-type clause to Ukraine"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "ce42f2c9-8dde-488d-9b26-811ddf7200c8",
+            "title": "Macron urges Ukraine's allies to 'reopen the",
+            "keywords": [
+                "alli",
+                "macron",
+                "membership",
+                "nato",
+                "ques",
+                "reopen",
+                "ukrain"
+            ],
+            "entity_signature": "DE:EU:FR:Emmanuel:Emmanuel Macron",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-19T23:09:15.010597+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Macron urges Ukraine's allies to 'reopen the question' of NATO membership"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "8e27f240-24fe-40fd-a3a9-ec3a098909c4",
+            "title": "Three of a kind? Xi hosts Trump and Putin as",
+            "keywords": [
+                "grind",
+                "host",
+                "kind",
+                "putin",
+                "three",
+                "trump",
+                "ukrain",
+                "war"
+            ],
+            "entity_signature": "UA:Donald:Donald Trump:conflict:diplomacy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-19T23:09:15.010597+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Three of a kind? Xi hosts Trump and Putin as Ukraine war grinds on"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "56402745-7c94-4926-a925-b85510b36320",
+            "title": "Apple is hiring engineers to build its own AI",
+            "keywords": [
+                "agent",
+                "ai",
+                "appl",
+                "build",
+                "engineer",
+                "hir"
+            ],
+            "entity_signature": "apple:apple is hiring engineers:build",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-19T23:09:15.010597+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Apple is hiring engineers to build its own AI agent"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "9b2a0bb5-8242-4ee9-9b40-6d29ce67df2f",
+            "title": "Nvidia Asked to Sell Chips to Companies Tied to",
+            "keywords": [
+                "ask",
+                "chines",
+                "chip",
+                "compani",
+                "megaspe",
+                "militari",
+                "nvidia",
+                "sell",
+                "tied"
+            ],
+            "entity_signature": "CN:china:chips:cn",
+            "category": "Business",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-19T23:09:15.010597+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Nvidia Asked to Sell Chips to Companies Tied to Chinese Military and Megaspeed"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "3527a09e-85f8-460d-8386-d74d06ba5c14",
+            "title": "Meta now sells 3D movies on Quest VR headsets",
+            "keywords": [
+                "headset",
+                "meta",
+                "movi",
+                "now",
+                "quest",
+                "sell"
+            ],
+            "entity_signature": "3d movies:meta:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-19T23:09:15.010597+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Meta now sells 3D movies on Quest VR headsets"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "2ce79db1-eceb-4fcc-a99b-4ae7e8437c65",
+            "title": "After Bridge Attack, Putin Says He Will 'Not Be",
+            "keywords": [
+                "attack",
+                "bridg",
+                "ceas",
+                "fir",
+                "negotiat",
+                "putin",
+                "ukrain"
+            ],
+            "entity_signature": "EU:RU:UA:Putin:Vladimir",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-19T23:09:15.010597+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "After Bridge Attack, Putin Says He Will 'Not Be Negotiating' Ukraine Cease-Fire"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "3d5e7faa-f7da-4738-9b00-dc71c6c0735f",
+            "title": "FCC greenlights rule allowing prisons to jam",
+            "keywords": [
+                "allow",
+                "cellphon",
+                "fcc",
+                "greenlight",
+                "jam",
+                "prison",
+                "rul",
+                "signal"
+            ],
+            "entity_signature": "allowing prisons:collective_faction:fcc",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-19T23:09:15.010597+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "FCC greenlights rule allowing prisons to jam cellphone signals"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "710ba0ae-c69f-4011-95b2-5616d6517fc8",
+            "title": "Oil prices edge higher as Houthi attacks on",
+            "keywords": [
+                "attack",
+                "concern",
+                "edg",
+                "higher",
+                "houthi",
+                "oil",
+                "pric",
+                "rais",
+                "riyadh",
+                "suppli"
+            ],
+            "entity_signature": "SA:attacks:houthi:insurgent / rebel factions",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-20T04:09:42.028250+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Oil prices edge higher as Houthi attacks on Riyadh raise supply concerns"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "e96f4b1b-30fe-4d77-b1f9-17730f249f52",
+            "title": "Debate erupts over China university's US$4.6m",
+            "keywords": [
+                "china",
+                "debat",
+                "erupt",
+                "head",
+                "rais",
+                "rat",
+                "smart",
+                "system",
+                "track",
+                "univers"
+            ],
+            "entity_signature": "CN:US:china:china sovereign authorities:cn",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-20T04:09:42.028250+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Debate erupts over China university's US$4.6m smart system tracking 'head-raising rates'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "19cfdced-d826-4ccb-940a-3c18e2f24845",
+            "title": "White House fires cyber chief after tech chaos",
+            "keywords": [
+                "chao",
+                "chief",
+                "cyber",
+                "fir",
+                "hous",
+                "rattl",
+                "tech",
+                "whit"
+            ],
+            "entity_signature": "US:cyber chief:fires:syntactic_subject",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-20T04:09:42.028250+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "White House fires cyber chief after tech chaos rattles US"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "b1fe9248-aa3c-4c2f-8bce-45648716f4bc",
+            "title": "Thousands protest Colombia's tax plans amid row",
+            "keywords": [
+                "amid",
+                "colombia",
+                "militari",
+                "plan",
+                "protest",
+                "rol",
+                "row",
+                "tax",
+                "thousand"
+            ],
+            "entity_signature": "CO:US:co:colombia:colombia sovereign authorities",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-20T04:09:42.028250+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Thousands protest Colombia's tax plans amid row over US military role"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "f3a229e6-e35a-4f81-bc77-ba02dbb263f4",
+            "title": "Asia's stock markets dive as Anthropic debut",
+            "keywords": [
+                "ai",
+                "allay",
+                "anthropic",
+                "asia",
+                "bubbl",
+                "debut",
+                "div",
+                "fail",
+                "fear",
+                "market"
+            ],
+            "entity_signature": "JP:KR:TW:anthropic:asia's stock markets dive as anthropic debut fails to allay ai bubble fears",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-20T04:09:42.028250+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Asia's stock markets dive as Anthropic debut fails to allay AI bubble fears"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "b5cb8c9b-6610-48b3-a49f-e93c18982443",
+            "title": "Hippo Fiona dies days after swallowing visitor's",
+            "keywords": [
+                "die",
+                "fiona",
+                "hat",
+                "hippo",
+                "swallow",
+                "visitor"
+            ],
+            "entity_signature": "days:dies:hippo fiona",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-20T04:09:42.028250+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Hippo Fiona dies days after swallowing visitor's hat"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "06082542-3bd2-4163-91ae-8ca30c1a9b01",
+            "title": "Trump nominee refuses to call Jan 6 an 'attack'",
+            "keywords": [
+                "attack",
+                "call",
+                "hear",
+                "jan",
+                "nominee",
+                "refus",
+                "senat",
+                "trump"
+            ],
+            "entity_signature": "US:Donald:Donald Trump:attack:conflict",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-20T04:09:42.028250+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump nominee refuses to call Jan 6 an 'attack' at Senate hearing"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "6c101af9-ca08-4151-82bc-97b40e970bc2",
+            "title": "Delaware Regulator Says It Was 'Misled' About",
+            "keywords": [
+                "asset",
+                "delawar",
+                "insuranc",
+                "mark",
+                "misl",
+                "regulator",
+                "walter"
+            ],
+            "entity_signature": "collective_faction:delaware regulator:delaware regulator says it was 'misled' about mark walter's insurance assets",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-20T04:09:42.028250+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Delaware Regulator Says It Was 'Misled' About Mark Walter's Insurance Assets"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "5f63e41a-f1e1-44fe-bf71-e826f587a8cd",
+            "title": "Apple may be developing its own AI agent that",
+            "keywords": [
+                "agent",
+                "ai",
+                "appl",
+                "develop",
+                "mac",
+                "may",
+                "run"
+            ],
+            "entity_signature": "apple:apple may be:developing",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-20T04:09:42.028250+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Apple may be developing its own AI agent that runs your Mac"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "ea3b59c6-8336-448c-ba8c-2d0be7871138",
+            "title": "Anthropic rival says companies can (mostly) skip",
+            "keywords": [
+                "anthropic",
+                "compani",
+                "model",
+                "mostli",
+                "pricey",
+                "rival",
+                "skip"
+            ],
+            "entity_signature": "anthropic:anthropic rival says companies can (mostly) skip the pricey models:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-20T04:09:42.028250+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Anthropic rival says companies can (mostly) skip the pricey models"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "fe770313-8995-453e-966d-8c053f4725b6",
+            "title": "Elon Musk says SpaceX has a plan to eliminate",
+            "keywords": [
+                "cell",
+                "dead",
+                "eliminat",
+                "elon",
+                "musk",
+                "phon",
+                "plan",
+                "spacex",
+                "zon"
+            ],
+            "entity_signature": "Elon:Elon Musk:elon musk says spacex has a plan to eliminate cell phone dead zones:leader:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-20T04:09:42.028250+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Elon Musk says SpaceX has a plan to eliminate cell phone dead zones"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "245f66d9-22d9-4783-8f99-1cabed442997",
+            "title": "South Korean shares hit 10-month low as US tech",
+            "keywords": [
+                "asian",
+                "hit",
+                "korean",
+                "low",
+                "market",
+                "rattl",
+                "sell",
+                "shar",
+                "south",
+                "tech"
+            ],
+            "entity_signature": "KR:US:-off rattles asian markets:kr:sell",
+            "category": "Business",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-20T04:09:42.028250+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "South Korean shares hit 10-month low as US tech sell-off rattles Asian markets"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "7c8b2309-bfdc-452c-9518-f0f41cc9cac1",
+            "title": "HT Morning News Brief Nov 20: Cyclone Akvan's",
+            "keywords": [
+                "akvan",
+                "brief",
+                "cyclon",
+                "fresh",
+                "hold",
+                "iran",
+                "landfall",
+                "morn",
+                "nov",
+                "process"
+            ],
+            "entity_signature": "IR:Donald:Donald Trump:cyclone akvan's landfall process underway, trump puts fresh iran:hold' and more",
+            "category": "National",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-20T04:09:42.028250+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "HT Morning News Brief Nov 20: Cyclone Akvan's landfall process underway, Trump puts fresh Iran strikes 'on hold' and more"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "446a7672-3d10-4db7-a401-69ce3bee459c",
+            "title": "Nvidia and AMD cleared for massive AI chip",
+            "keywords": [
+                "ai",
+                "amd",
+                "china",
+                "chip",
+                "clear",
+                "disclosur",
+                "export",
+                "massiv",
+                "nvidia",
+                "reveal"
+            ],
+            "entity_signature": "CN:US:china:china sovereign authorities:cn",
+            "category": "Business",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-20T04:09:42.028250+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Nvidia and AMD cleared for massive AI chip exports to China, disclosure reveals"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "239a08c3-76de-4968-914b-c2cc50959c34",
+            "title": "Trump-Xi-Putin trilateral: Compromised PM can",
+            "keywords": [
+                "compromis",
+                "gandhi",
+                "never",
+                "putin",
+                "rahul",
+                "sit",
+                "tabl",
+                "trilateral",
+                "trump"
+            ],
+            "entity_signature": "Donald:Donald Trump:diplomacy:india regional stakeholders:leader",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-20T04:09:42.028250+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump-Xi-Putin trilateral: Compromised PM can never sit at this table, says Rahul Gandhi"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "6e0545b5-d12f-4788-9eb6-a40b5bd8ac3e",
+            "title": "Keralam: Key ganja smuggling accused arrested in",
+            "keywords": [
+                "accus",
+                "arrest",
+                "bengal",
+                "ganja",
+                "keralam",
+                "key",
+                "smuggl",
+                "west"
+            ],
+            "entity_signature": "arrested:india regional stakeholders:key ganja smuggling accused",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-20T04:09:42.028250+00:00",
+            "last_seen": "2026-11-20T04:09:42.028250+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Keralam: Key ganja smuggling accused arrested in West Bengal"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
         {
             "arc_id": "d9a388cf-db33-476b-8622-61bc79e2b246",
             "title": "Rubio Warned Officials About Nvidia Chief's",
@@ -80,62 +1615,6 @@
             ]
         },
         {
-            "arc_id": "b2ef43d9-34a2-4555-a399-3a6c5a006a62",
-            "title": "Trump says he might meet with North Korea's Kim",
-            "keywords": [
-                "china",
-                "jong",
-                "kim",
-                "korea",
-                "meet",
-                "might",
-                "north",
-                "trump"
-            ],
-            "entity_signature": "CN:KP:Donald:Donald Trump:china",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-16T17:17:49.602228+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 19,
-            "chapter_titles": [
-                "Trump says he might meet with North Korea's Kim Jong Un in China",
-                "Trump floats Kim meeting in China, says he'll discuss Ukraine with Xi and Putin",
-                "Planes, trains and automobiles: what we know about Kim Jong-un's foreign travels",
-                "Putin Is Open to Meeting With North Korea's Leader in China, Kremlin Says",
-                "Will a Spy Scandal, Trade Friction and a Surprise Guest Ruin Xi's Big Moment?",
-                "Will President Trump meet Kim Jong Un?",
-                "A Visual Tour of President Trump's Visits to Asia",
-                "Putin arrives in China ahead of trilateral Trump-Xi summit",
-                "Trump's Whirlwind Asia Trip Begins in the Philippines",
-                "Apec summit live: Xi and Putin start talks as Trump arrives in China",
-                "The Shadow of Yalta Hangs Over Trump's Summit in China",
-                "Apec summit live: Xi welcomes Trump on China visit as Putin claims Europe in 'humiliating decline'",
-                "Xi Greets Trump With a Hug as He Arrives in China",
-                "Crowds gather as Trump arrives in China ahead of talks with Xi and Putin",
-                "Trump shakes hands with Putin and Xi ahead of historic talks in China",
-                "Carney and Trump Hold Unscheduled Trade Meeting at Asia Summit",
-                "Xi Greets Trump on the Tarmac as He Lands in China for APEC Summit",
-                "How to Decode the Xi-Trump Hug",
-                "Trump accused of falling asleep during Xi Jinping speech at Apec summit in China"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera",
-                "BBC Asia",
-                "BBC Europe",
-                "BBC US",
-                "France 24",
-                "New York Times",
-                "Reuters",
-                "SCMP",
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "a02841f4-a52e-4e41-bc33-7ca55e86bc16",
             "title": "Landmark Crimea bridge hit as Russia reports",
             "keywords": [
@@ -186,148 +1665,6 @@
             ]
         },
         {
-            "arc_id": "2ae65718-3f5b-4353-b037-7d0a5a6160a3",
-            "title": "Myanmar faces historic genocide verdict at UN",
-            "keywords": [
-                "court",
-                "fac",
-                "genocid",
-                "historic",
-                "massacr",
-                "myanmar",
-                "rohingya",
-                "verdict"
-            ],
-            "entity_signature": "MM:at un court:collective_faction:court",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-18T23:56:22.525816+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 6,
-            "chapter_titles": [
-                "Myanmar faces historic genocide verdict at UN court over Rohingya massacres",
-                "Top U.N. court rules Myanmar committed genocide against the Rohingya",
-                "Myanmar Genocide Ruling Sets Up Court Fight Over Israel and Gaza",
-                "Myanmar committed genocide against Rohingya minority, top UN court rules",
-                "Myanmar Committed Genocide Against the Rohingya, Top Global Court Finds",
-                "The U.N.'s top court rules Myanmar committed genocide against the Rohingya"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Asia",
-                "NPR News",
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "2f4ca07f-f282-4414-9c51-9f7f62a4f6c1",
-            "title": "Gazans flee shelters as Israeli army launches",
-            "keywords": [
-                "armi",
-                "beyond",
-                "flee",
-                "gazan",
-                "ground",
-                "israeli",
-                "launch",
-                "lin",
-                "opera",
-                "shelter"
-            ],
-            "entity_signature": "IL:PS:army:as israeli army:collective_faction",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-18T17:49:43.685542+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "Gazans flee shelters as Israeli army launches ground operation beyond Yellow Line",
-                "Israeli army launches ground operation in Hamas-controlled area of Gaza",
-                "Israeli military launches rare ground operation in Gaza beyond Yellow Line",
-                "Israeli military completes ground operation in Gaza beyond Yellow Line"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Middle East",
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "53d499bf-7c47-4a96-8fab-2dffd5c58148",
-            "title": "Far from Trump-Putin meeting, Europe to count",
-            "keywords": [
-                "cost",
-                "count",
-                "defenc",
-                "europ",
-                "far",
-                "meet",
-                "putin",
-                "trump",
-                "ukrain"
-            ],
-            "entity_signature": "DE:EU:UA:Donald:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-19T06:32:16.650047+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "Far from Trump-Putin meeting, Europe to count cost of Ukraine's defence",
-                "Ukraine's allies meet in Berlin with air defence, energy and financial support on the agenda – Europe live",
-                "Ukraine's European allies meet in Berlin in show of support",
-                "Is Europe now in the shadow of a Trump, Putin and Xi alliance? – podcast"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera",
-                "France 24",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "05faeaee-ba1a-4cd2-b611-ce4fa2f65a05",
-            "title": "Five EU countries to announce Rwanda deportation",
-            "keywords": [
-                "announc",
-                "countri",
-                "deporta",
-                "fiv",
-                "hub",
-                "rwanda",
-                "schem"
-            ],
-            "entity_signature": "EU:announce:eu:european union",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-16T07:03:32.294798+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Five EU countries to announce Rwanda deportation hub scheme",
-                "Five EU states announce plans for immigration 'return hubs' in Rwanda",
-                "Five EU countries announce migrant deportation centre in Rwanda"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Europe",
-                "Reuters",
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "a6c06b77-8abb-46db-aa30-21d4f5f0566c",
             "title": "Prince William, Kate meet PM Modi in Delhi on",
             "keywords": [
@@ -360,130 +1697,6 @@
             "sources_involved": [
                 "BBC Asia",
                 "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "223d6159-66ed-453a-9a03-268b31e26554",
-            "title": "Putin renews his warm bond with Xi",
-            "keywords": [
-                "bond",
-                "putin",
-                "renew",
-                "warm"
-            ],
-            "entity_signature": "RU:UA:Jinping:Putin:conflict",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-18T17:49:43.685542+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Putin renews his warm bond with Xi.",
-                "Steve Rosenberg: Historic talks with Xi and Trump are a coup for Putin",
-                "Trump Flaunts Camaraderie With Xi and Putin but Has Little to Show for It"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe",
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "df3460a3-feaa-43ef-8a8d-bcfa33b4f547",
-            "title": "Kuwait says it repelled first Iranian attack in",
-            "keywords": [
-                "attack",
-                "first",
-                "iranian",
-                "island",
-                "kuwait",
-                "repell",
-                "strik",
-                "two"
-            ],
-            "entity_signature": "IR:US:attack:conflict:ir",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-18T17:49:43.685542+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Kuwait says it repelled first Iranian attack in two months after US strikes island",
-                "Kuwait, Bahrain face new Iran attacks after US strike on Qeshm Island"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Al Jazeera",
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "959272c1-d948-4738-ade7-e792a56f5498",
-            "title": "Fears grow that US will impose sanctions on ICJ",
-            "keywords": [
-                "ahead",
-                "fear",
-                "genocid",
-                "grow",
-                "icj",
-                "impos",
-                "judg",
-                "myanmar",
-                "rul",
-                "sanc"
-            ],
-            "entity_signature": "IL:MM:US:collective_faction:diplomacy",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-18T17:49:43.685542+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Fears grow that US will impose sanctions on ICJ judges ahead of Myanmar genocide ruling",
-                "Fears grow that US will put Nobel-winning judge under sanctions after Myanmar genocide ruling"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "29d846d3-2ed3-4ec1-b4ed-8531960deaf8",
-            "title": "Gaza: Israel launched new offensive on Nuseirat",
-            "keywords": [
-                "gaza",
-                "israel",
-                "launch",
-                "new",
-                "nuseirat",
-                "offensiv"
-            ],
-            "entity_signature": "IL:PS:civilians & impacted communities:civilians & impacted communities (refugee):geopolitics",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-19T16:20:44.688783+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Gaza: Israel launched new offensive on Nuseirat",
-                "Jerusalem Daily: Israel launches ground offensive in Gaza"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Al Jazeera",
-                "France 24"
             ]
         },
         {
@@ -552,158 +1765,6 @@
             ]
         },
         {
-            "arc_id": "6b7eeeb3-0fbd-4b9f-9b4a-66f40c898ec8",
-            "title": "Houthi rebel advance in Yemen may further",
-            "keywords": [
-                "advanc",
-                "destabilis",
-                "economi",
-                "global",
-                "houthi",
-                "may",
-                "rebel",
-                "yemen"
-            ],
-            "entity_signature": "IR:advance:collective_faction:houthi",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-17T00:57:30.207078+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Houthi rebel advance in Yemen may further destabilise global economy"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "c4bbcef4-c0b3-478f-af64-23d920be18a3",
-            "title": "Palestinian woman, 72, shot dead by Israeli",
-            "keywords": [
-                "bank",
-                "dead",
-                "health",
-                "israeli",
-                "ministri",
-                "palestinian",
-                "settler",
-                "shot",
-                "west",
-                "woman"
-            ],
-            "entity_signature": "IL:PS:collective_faction:conflict:dead",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-17T18:18:36.087370+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "961cb5f0-74b5-4f04-abf6-be5a3af094b4",
-            "title": "European Commission accused of sugarcoating",
-            "keywords": [
-                "accus",
-                "commission",
-                "egypt",
-                "european",
-                "figur",
-                "fund",
-                "releas",
-                "sugarcoat"
-            ],
-            "entity_signature": "EG:EU:collective_faction:commission:diplomacy",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-18T08:54:08.950645+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "European Commission accused of sugarcoating figures to release funds to Egypt"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "d7ec1764-fbc1-4e4c-9b60-62f5b509c630",
-            "title": "Trump says US taking 'very seriously' any Iranian",
-            "keywords": [
-                "iranian",
-                "plot",
-                "seriousli",
-                "tak",
-                "trump",
-                "washington"
-            ],
-            "entity_signature": "IR:US:Donald:Donald Trump:conflict",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-18T08:54:08.950645+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump says US taking 'very seriously' any Iranian plot against Washington"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "4920701b-cae0-4327-9fa9-6c27fd63843f",
-            "title": "Middle East crisis poses 'largest threat' to",
-            "keywords": [
-                "crisi",
-                "east",
-                "energi",
-                "histori",
-                "iea",
-                "largest",
-                "middl",
-                "pos",
-                "secur",
-                "threat"
-            ],
-            "entity_signature": "IL:IR:US:iea:il",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-19T06:32:16.650047+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Middle East crisis poses 'largest threat' to energy security in history, warns IEA"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
             "arc_id": "b127ddcd-6b49-462d-9d8c-3242067263f0",
             "title": "Stock market opens flat; Sensex down over 150",
             "keywords": [
@@ -731,97 +1792,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "HT Business"
-            ]
-        },
-        {
-            "arc_id": "50ac7780-7a40-4015-b270-3395b03463d5",
-            "title": "Race to replant five South African baobabs after",
-            "keywords": [
-                "african",
-                "baobab",
-                "block",
-                "export",
-                "fiv",
-                "rac",
-                "replant",
-                "south"
-            ],
-            "entity_signature": "ZA:blocked:race to replant five south african baobabs after export:south africa",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-19T16:20:44.688783+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Race to replant five South African baobabs after export blocked"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "acd0fa79-37b4-4abe-9df7-ea394539faf1",
-            "title": "Putin vows 'far more painful' response to",
-            "keywords": [
-                "bridg",
-                "crimean",
-                "far",
-                "painful",
-                "putin",
-                "respons",
-                "strik",
-                "ukrain"
-            ],
-            "entity_signature": "RU:UA:Putin:Vladimir:conflict",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-19T16:20:44.688783+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Putin vows 'far more painful' response to Ukraine's strikes on Crimean Bridge"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "8e69715b-7063-4435-9593-2d2f9a2e5330",
-            "title": "China, Russia and US agree peace declaration with",
-            "keywords": [
-                "agree",
-                "china",
-                "declara",
-                "iran",
-                "men",
-                "peac",
-                "russia",
-                "ukrain",
-                "war"
-            ],
-            "entity_signature": "CN:IR:RU:Donald:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-19T16:20:44.688783+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "China, Russia and US agree peace declaration with no mention of Ukraine and Iran wars"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "The Guardian"
             ]
         },
         {
@@ -853,156 +1823,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "France 24"
-            ]
-        },
-        {
-            "arc_id": "c20d8ce3-3fc5-4016-aa66-6ca6bb55acbc",
-            "title": "Van Gogh painting sells for record $190.4m after",
-            "keywords": [
-                "gogh",
-                "histori",
-                "nazi",
-                "paint",
-                "record",
-                "row",
-                "sell",
-                "van"
-            ],
-            "entity_signature": "europe regional stakeholders:record $190.4m:sells",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-19T16:20:44.688783+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Van Gogh painting sells for record $190.4m after row over its Nazi history"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "8a8e12ab-ec7c-4224-afc9-11c6efdff3d6",
-            "title": "Russian arrested for spying on US defence company",
-            "keywords": [
-                "arrest",
-                "compani",
-                "defenc",
-                "palantir",
-                "russian",
-                "spy",
-                "support",
-                "ukrain"
-            ],
-            "entity_signature": "RU:UA:US:arrested:judicial & investigative bodies",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-19T16:20:44.688783+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Russian arrested for spying on US defence company Palantir over Ukraine support"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "63a4b3dc-b582-471f-999a-e5e6acb5cd37",
-            "title": "Skyscraper in Riyadh damaged as Saudi Arabia",
-            "keywords": [
-                "arabia",
-                "attack",
-                "damag",
-                "houthi",
-                "new",
-                "riyadh",
-                "saudi",
-                "skyscraper",
-                "surg"
-            ],
-            "entity_signature": "SA:economy:houthi:insurgent / rebel factions",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-19T16:20:44.688783+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Skyscraper in Riyadh damaged as Saudi Arabia reports surge in new Houthi attacks"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "635de2e0-afd3-4079-9367-8781910f73bb",
-            "title": "The midterms were the largest win for either",
-            "keywords": [
-                "either",
-                "largest",
-                "midterm",
-                "parti",
-                "win"
-            ],
-            "entity_signature": "either party:midterms were the largest:north america regional stakeholders",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-19T16:20:44.688783+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "The midterms were the largest win for either party in 50 years"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "c597aa20-5819-4922-9e5d-170a66a656ba",
-            "title": "Razorpay set to file for India IPO next week",
-            "keywords": [
-                "februari",
-                "fil",
-                "follow",
-                "india",
-                "ipo",
-                "list",
-                "razorpay",
-                "roadshow",
-                "set",
-                "sight"
-            ],
-            "entity_signature": "IN:file:in:india",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-19T16:20:44.688783+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Razorpay set to file for India IPO next week, roadshows to follow; February listing in sight"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
             ]
         },
         {
@@ -1066,67 +1886,6 @@
             ]
         },
         {
-            "arc_id": "8e83db3d-ad76-4650-8a94-32499eefc688",
-            "title": "At APEC Summit, U.S., China and Russia Vow to",
-            "keywords": [
-                "amid",
-                "apec",
-                "china",
-                "energi",
-                "global",
-                "increas",
-                "oil",
-                "russia",
-                "summit",
-                "suppli"
-            ],
-            "entity_signature": "CN:IR:RU:at apec summit, u.s., china and russia:china",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-19T23:09:15.010597+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "At APEC Summit, U.S., China and Russia Vow to Increase Oil Supply Amid Global Energy Transition"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "97e39eca-0964-4381-9ee1-0c705313e867",
-            "title": "Indian driver wins $1.3m in life-changing lottery",
-            "keywords": [
-                "chang",
-                "driver",
-                "indian",
-                "lif",
-                "lotteri",
-                "priz",
-                "win"
-            ],
-            "entity_signature": "IN:$1.3m:in:india",
-            "category": "World",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-19T23:09:15.010597+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Indian driver wins $1.3m in life-changing lottery prize"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
             "arc_id": "7ecb7735-1649-44f3-a217-82dc17037c80",
             "title": "India's religious make-up - what a new Pew study",
             "keywords": [
@@ -1183,128 +1942,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "8abad2b9-4101-4bde-a27e-44203298b8f6",
-            "title": "Russian strikes on Kyiv kill one, damage Dutch",
-            "keywords": [
-                "austrian",
-                "damag",
-                "dutch",
-                "embassi",
-                "kill",
-                "kyiv",
-                "one",
-                "russian",
-                "strik"
-            ],
-            "entity_signature": "AT:NL:RU:at:austria",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-19T23:09:15.010597+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Russian strikes on Kyiv kill one, damage Dutch and Austrian embassies"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "0d0f750d-4b61-454b-8425-354d0884238c",
-            "title": "Kushner says Trump 'open' to extend NATO mutual",
-            "keywords": [
-                "claus",
-                "defens",
-                "extend",
-                "kushner",
-                "mutual",
-                "nato",
-                "open",
-                "trump",
-                "typ",
-                "ukrain"
-            ],
-            "entity_signature": "UA:US:Donald:Donald Trump:diplomatic envoys",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-19T23:09:15.010597+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Kushner says Trump 'open' to extend NATO mutual defense-type clause to Ukraine"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "ce42f2c9-8dde-488d-9b26-811ddf7200c8",
-            "title": "Macron urges Ukraine's allies to 'reopen the",
-            "keywords": [
-                "alli",
-                "macron",
-                "membership",
-                "nato",
-                "ques",
-                "reopen",
-                "ukrain"
-            ],
-            "entity_signature": "DE:EU:FR:Emmanuel:Emmanuel Macron",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-19T23:09:15.010597+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Macron urges Ukraine's allies to 'reopen the question' of NATO membership"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "8e27f240-24fe-40fd-a3a9-ec3a098909c4",
-            "title": "Three of a kind? Xi hosts Trump and Putin as",
-            "keywords": [
-                "grind",
-                "host",
-                "kind",
-                "putin",
-                "three",
-                "trump",
-                "ukrain",
-                "war"
-            ],
-            "entity_signature": "UA:Donald:Donald Trump:conflict:diplomacy",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-19T23:09:15.010597+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Three of a kind? Xi hosts Trump and Putin as Ukraine war grinds on"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
             ]
         },
         {
@@ -1397,93 +2034,6 @@
             ]
         },
         {
-            "arc_id": "56402745-7c94-4926-a925-b85510b36320",
-            "title": "Apple is hiring engineers to build its own AI",
-            "keywords": [
-                "agent",
-                "ai",
-                "appl",
-                "build",
-                "engineer",
-                "hir"
-            ],
-            "entity_signature": "apple:apple is hiring engineers:build",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-19T23:09:15.010597+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Apple is hiring engineers to build its own AI agent"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Verge"
-            ]
-        },
-        {
-            "arc_id": "9b2a0bb5-8242-4ee9-9b40-6d29ce67df2f",
-            "title": "Nvidia Asked to Sell Chips to Companies Tied to",
-            "keywords": [
-                "ask",
-                "chines",
-                "chip",
-                "compani",
-                "megaspe",
-                "militari",
-                "nvidia",
-                "sell",
-                "tied"
-            ],
-            "entity_signature": "CN:china:chips:cn",
-            "category": "Business",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-19T23:09:15.010597+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Nvidia Asked to Sell Chips to Companies Tied to Chinese Military and Megaspeed"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "3527a09e-85f8-460d-8386-d74d06ba5c14",
-            "title": "Meta now sells 3D movies on Quest VR headsets",
-            "keywords": [
-                "headset",
-                "meta",
-                "movi",
-                "now",
-                "quest",
-                "sell"
-            ],
-            "entity_signature": "3d movies:meta:north america regional stakeholders",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-19T23:09:15.010597+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Meta now sells 3D movies on Quest VR headsets"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Verge"
-            ]
-        },
-        {
             "arc_id": "d6efc2dd-2ef2-4063-81c2-5cea1cc469f8",
             "title": "Uber tests rides for kids as young as 10, with",
             "keywords": [
@@ -1511,65 +2061,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "2ce79db1-eceb-4fcc-a99b-4ae7e8437c65",
-            "title": "After Bridge Attack, Putin Says He Will 'Not Be",
-            "keywords": [
-                "attack",
-                "bridg",
-                "ceas",
-                "fir",
-                "negotiat",
-                "putin",
-                "ukrain"
-            ],
-            "entity_signature": "EU:RU:UA:Putin:Vladimir",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-19T23:09:15.010597+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "After Bridge Attack, Putin Says He Will 'Not Be Negotiating' Ukraine Cease-Fire"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "3d5e7faa-f7da-4738-9b00-dc71c6c0735f",
-            "title": "FCC greenlights rule allowing prisons to jam",
-            "keywords": [
-                "allow",
-                "cellphon",
-                "fcc",
-                "greenlight",
-                "jam",
-                "prison",
-                "rul",
-                "signal"
-            ],
-            "entity_signature": "allowing prisons:collective_faction:fcc",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-19T23:09:15.010597+00:00",
-            "last_seen": "2026-11-19T23:09:15.010597+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "FCC greenlights rule allowing prisons to jam cellphone signals"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Verge"
             ]
         },
         {
@@ -2675,487 +3166,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "5a4a4b18-899d-4645-9d1b-bbb9f4d7dfcf",
-            "title": "Elon Musk says ousting Jensen Huang is like",
-            "keywords": [
-                "elon",
-                "huang",
-                "jensen",
-                "jordan",
-                "kick",
-                "lik",
-                "michael",
-                "musk",
-                "oust",
-                "team"
-            ],
-            "entity_signature": "US:Elon:Elon Musk:elon musk says ousting jensen huang is like 'kicking michael jordan off your team:leader",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-18T23:56:22.525816+00:00",
-            "last_seen": "2026-11-19T06:32:16.650047+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Elon Musk says ousting Jensen Huang is like 'kicking Michael Jordan off your team'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "b5f82557-df07-48e3-a85a-10ace29b47b7",
-            "title": "Israeli Tanks Advance Across Gaza Cease-Fire Line",
-            "keywords": [
-                "across",
-                "advanc",
-                "ceas",
-                "fir",
-                "gaza",
-                "incursion",
-                "israeli",
-                "lin",
-                "rar",
-                "tank"
-            ],
-            "entity_signature": "IL:PS:across gaza cease-fire line:advance:geopolitics",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-18T23:56:22.525816+00:00",
-            "last_seen": "2026-11-19T06:32:16.650047+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Israeli Tanks Advance Across Gaza Cease-Fire Line in Rare Incursion"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "b91b7287-de53-42fc-9b14-9c75c25055cf",
-            "title": "Russia Vows to Rebuild Destroyed Crimea Bridge",
-            "keywords": [
-                "bridg",
-                "crimea",
-                "destroy",
-                "rebuild",
-                "russia",
-                "tak"
-            ],
-            "entity_signature": "RU:rebuild destroyed crimea bridge. it could take years.:ru:russia",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-18T23:56:22.525816+00:00",
-            "last_seen": "2026-11-19T06:32:16.650047+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Russia Vows to Rebuild Destroyed Crimea Bridge. It Could Take Years."
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "22882467-56a4-4b3b-abc7-1cd755975024",
-            "title": "A Village Burned, Its People Killed or Exiled",
-            "keywords": [
-                "burn",
-                "exil",
-                "genocid",
-                "kill",
-                "peopl",
-                "villag"
-            ],
-            "entity_signature": "MM:court:election:governance",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-19T06:32:16.650047+00:00",
-            "last_seen": "2026-11-19T06:32:16.650047+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "A Village Burned, Its People Killed or Exiled. Was It Genocide?"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "60e04ae2-94e4-4dce-94d0-aacf840404a4",
-            "title": "South Korea's top law exam scorer found in",
-            "keywords": [
-                "ai",
-                "amid",
-                "arrest",
-                "cardiac",
-                "exam",
-                "found",
-                "fraud",
-                "korea",
-                "law",
-                "scandal"
-            ],
-            "entity_signature": "KR:arrest:judicial & investigative bodies:judicial & investigative bodies (police)",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-19T06:32:16.650047+00:00",
-            "last_seen": "2026-11-19T06:32:16.650047+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "South Korea's top law exam scorer found in cardiac arrest amid AI fraud scandal"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "b41c3870-37ac-4585-a9fa-37c49bef9c22",
-            "title": "Van Gogh painting sells for record US$190.4",
-            "keywords": [
-                "disput",
-                "gogh",
-                "million",
-                "paint",
-                "record",
-                "sell",
-                "van"
-            ],
-            "entity_signature": "US:record us$190.4 million:sells:syntactic_subject",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-19T06:32:16.650047+00:00",
-            "last_seen": "2026-11-19T06:32:16.650047+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Van Gogh painting sells for record US$190.4 million after dispute"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "74bbe4da-4aee-48b0-a0f0-4bbb1b515181",
-            "title": "Crimea bridge has been attacked again, says",
-            "keywords": [
-                "attack",
-                "bridg",
-                "crimea",
-                "governor",
-                "install",
-                "russian"
-            ],
-            "entity_signature": "RU:again, says russian-installed governor:attacked:crimea bridge has been",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-19T06:32:16.650047+00:00",
-            "last_seen": "2026-11-19T06:32:16.650047+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Crimea bridge has been attacked again, says Russian-installed governor"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "0a469a75-6847-489c-84e1-e69874c3a6b2",
-            "title": "Andy Burnham is in danger of over-selling his big",
-            "keywords": [
-                "andi",
-                "big",
-                "brussel",
-                "burnham",
-                "danger",
-                "deliver",
-                "happen",
-                "reland",
-                "sell",
-                "summit"
-            ],
-            "entity_signature": "BE:EU:UK:andy burnham is in danger of over-:be",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-19T06:32:16.650047+00:00",
-            "last_seen": "2026-11-19T06:32:16.650047+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Andy Burnham is in danger of over-selling his big Brussels summit. What happens if he under-delivers? | Joël Reland"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "49c66013-bf71-453a-b453-6a36832a9285",
-            "title": "Ecuadorian footballer gets eight-year ban for",
-            "keywords": [
-                "ban",
-                "ecuadorian",
-                "eight",
-                "footballer",
-                "get",
-                "referee",
-                "rock",
-                "throw"
-            ],
-            "entity_signature": "ban:ecuadorian footballer gets eight-year:legislation",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-19T06:32:16.650047+00:00",
-            "last_seen": "2026-11-19T06:32:16.650047+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Ecuadorian footballer gets eight-year ban for throwing rock at referee"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "5d86f9c8-ae15-4741-a62f-5f8ba804acdb",
-            "title": "Win a trip to go behind the news with",
-            "keywords": [
-                "behind",
-                "trip",
-                "win"
-            ],
-            "entity_signature": "north america regional stakeholders:sovereign_stakeholder:trip",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-19T06:32:16.650047+00:00",
-            "last_seen": "2026-11-19T06:32:16.650047+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Win a trip to go behind the news with"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "6e4c9567-e01c-4cee-a284-f4088d0208f3",
-            "title": "Anthropic IPO raises record $81.3 billion on",
-            "keywords": [
-                "ai",
-                "anthropic",
-                "billion",
-                "demand",
-                "ipo",
-                "rais",
-                "record",
-                "strong"
-            ],
-            "entity_signature": "anthropic:anthropic ipo:economics",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-19T06:32:16.650047+00:00",
-            "last_seen": "2026-11-19T06:32:16.650047+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Anthropic IPO raises record $81.3 billion on strong AI demand"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "7d1ac359-1c0d-4d8d-9e56-69d2c8824a78",
-            "title": "The law releasing the Epstein files passed one",
-            "keywords": [
-                "ago",
-                "epstein",
-                "fil",
-                "law",
-                "one",
-                "pass",
-                "releas",
-                "say",
-                "victim"
-            ],
-            "entity_signature": "epstein files passed one year ago. what do his victims say?:impacted_community:law",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-19T06:32:16.650047+00:00",
-            "last_seen": "2026-11-19T06:32:16.650047+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "The law releasing the Epstein files passed one year ago. What do his victims say?"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "5eeb1a71-2487-48b3-8d7e-00fca27e7387",
-            "title": "Delhi drug lab posing as computer shop busted",
-            "keywords": [
-                "alprazolam",
-                "arrest",
-                "bust",
-                "computer",
-                "delhi",
-                "drug",
-                "intermediat",
-                "lab",
-                "pos",
-                "seiz"
-            ],
-            "entity_signature": ", 1 arrested:148 kg alprazolam intermediate:health",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-19T06:32:16.650047+00:00",
-            "last_seen": "2026-11-19T06:32:16.650047+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Delhi drug lab posing as computer shop busted; 148 kg alprazolam intermediate seized, 1 arrested"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "d21033fa-4880-4d89-96a2-cc0d8f521c30",
-            "title": "Noted journalist, classical vocalist Sakuntala",
-            "keywords": [
-                "classical",
-                "die",
-                "journalist",
-                "narasimhan",
-                "not",
-                "sakuntala",
-                "vocalist"
-            ],
-            "entity_signature": "86:activist:civic activists / protesters",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-19T06:32:16.650047+00:00",
-            "last_seen": "2026-11-19T06:32:16.650047+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Noted journalist, classical vocalist Sakuntala Narasimhan dies at 86"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "ef5ebba4-28e8-4c82-9f65-e263776c5c0b",
-            "title": "IIM Calcutta introduces AI-powered product",
-            "keywords": [
-                "ai",
-                "calcutta",
-                "cours",
-                "iim",
-                "introduc",
-                "manage",
-                "power",
-                "product",
-                "professional",
-                "work"
-            ],
-            "entity_signature": "ai-powered product management course:iim calcutta:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-19T06:32:16.650047+00:00",
-            "last_seen": "2026-11-19T06:32:16.650047+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "IIM Calcutta introduces AI-powered product management course for working professionals"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Indian Express"
-            ]
-        },
-        {
-            "arc_id": "ce115ce9-1929-4876-8b04-e3ad664b5ee0",
-            "title": "Wall Street Pledged to Mobilize $500 Billion for",
-            "keywords": [
-                "billion",
-                "dim",
-                "hasn",
-                "mobiliz",
-                "nvidia",
-                "pledg",
-                "put",
-                "street",
-                "wall"
-            ],
-            "entity_signature": "india regional stakeholders:mobilize $500 billion:nvidia",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-19T06:32:16.650047+00:00",
-            "last_seen": "2026-11-19T06:32:16.650047+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Wall Street Pledged to Mobilize $500 Billion for Nvidia—But Hasn't Put Up a Dime"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
             ]
         }
     ],
