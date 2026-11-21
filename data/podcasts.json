@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-11-20T21:26:12.731392+00:00",
+  "lastUpdated": "2026-11-21T02:41:46.406644+00:00",
   "total": 30,
   "episodes": [
     {
       "id": "tp_v1X9Fqs5a14",
-      "title": "GTA 6, Crime, Jewel Heists, Prison, Corrupt Cops, Mafia, Miami & Money | Lex Fridman Podcast #505",
+      "title": "GTA 6, Crime, Jewel Heists, Mafia, Gangs, Prison, Corrupt Cops & Money | Lex Fridman Podcast #505",
       "podcast": "Lex Fridman Podcast",
       "channel": "Lex Fridman Podcast",
       "podcastLogo": "LF",
@@ -13,7 +13,7 @@
       "topics": [
         "Ideas & Culture"
       ],
-      "theme": "Explores strategic perspectives and key developments concerning gta 6, crime, jewel heists, prison, corrupt cops, mafia, miami & money.",
+      "theme": "Explores strategic perspectives and key developments concerning gta 6, crime, jewel heists, mafia, gangs, prison, corrupt cops & money.",
       "imageUrl": "https://i.ytimg.com/vi/v1X9Fqs5a14/maxresdefault.jpg",
       "thumbnail": "https://i.ytimg.com/vi/v1X9Fqs5a14/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=v1X9Fqs5a14",
@@ -42,20 +42,29 @@
       "thumbnail": "https://i.ytimg.com/vi/2hJkprFnzhY/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=2hJkprFnzhY",
       "youtube_url": "https://www.youtube.com/watch?v=2hJkprFnzhY",
-      "pubDate": "9d ago",
-      "date": "9d ago",
+      "pubDate": "10d ago",
+      "date": "10d ago",
       "duration": "2:53:49",
       "views": "",
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "nyt-world-3-6509",
+          "id": "nyt-world-3-1405",
           "title": "'Russian Objects' Crashed in Poland, Officials Say. Here's What We Can See.",
           "source": "New York Times",
           "link": "https://www.nytimes.com/2026/11/20/world/europe/poland-russia-airspace-missile.html",
           "url": "https://www.nytimes.com/2026/11/20/world/europe/poland-russia-airspace-missile.html",
           "relevance": 0.227,
           "resonance_score": 0.227
+        },
+        {
+          "id": "arstechnica-1-5761",
+          "title": "SpaceX's Starshield troubles in Ukraine could threaten its broader military business",
+          "source": "Ars Technica",
+          "link": "https://arstechnica.com/space/2026/11/incoming-house-chair-threatens-spacex-funding-over-ukraine-controversy/",
+          "url": "https://arstechnica.com/space/2026/11/incoming-house-chair-threatens-spacex-funding-over-ukraine-controversy/",
+          "relevance": 0.218,
+          "resonance_score": 0.218
         }
       ]
     },
@@ -82,17 +91,26 @@
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "scmp-asia-4-1494",
-          "title": "Anthropic researcher says Claude AI has solved maths' greatest riddle: Riemann Hypothesis",
-          "source": "SCMP",
-          "link": "https://www.scmp.com/news/world/united-states-canada/article/3375294/anthropic-researcher-says-claude-has-solved-maths-greatest-riddle",
-          "url": "https://www.scmp.com/news/world/united-states-canada/article/3375294/anthropic-researcher-says-claude-has-solved-maths-greatest-riddle",
-          "relevance": 0.176,
-          "resonance_score": 0.176
+          "id": "arstechnica-3-1956",
+          "title": "Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers",
+          "source": "Ars Technica",
+          "link": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/",
+          "url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/",
+          "relevance": 0.166,
+          "resonance_score": 0.166
         },
         {
-          "id": "techcrunch-2-2524",
-          "title": "AI claimed a solution to the 167-year-old Riemann Hypothesis — and a human did, too",
+          "id": "cnet-0-1419",
+          "title": "Even the Iconic Google Home Page Can't Survive the Push for More AI",
+          "source": "CNET",
+          "link": "https://www.cnet.com/tech/services-and-software/google-home-page-new-ai-features/",
+          "url": "https://www.cnet.com/tech/services-and-software/google-home-page-new-ai-features/",
+          "relevance": 0.15,
+          "resonance_score": 0.15
+        },
+        {
+          "id": "techcrunch-2-8709",
+          "title": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
           "source": "TechCrunch",
           "link": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
           "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
@@ -100,22 +118,13 @@
           "resonance_score": 0.178
         },
         {
-          "id": "cnet-4-1571",
-          "title": "Signal Is Blocking Screenshots to Protect Your Messages from AI Agents",
-          "source": "CNET",
-          "link": "https://www.cnet.com/tech/services-and-software/signal-text-message-screenshots/",
-          "url": "https://www.cnet.com/tech/services-and-software/signal-text-message-screenshots/",
-          "relevance": 0.151,
-          "resonance_score": 0.151
-        },
-        {
-          "id": "reuters-world-5-1786",
-          "title": "Gold's slide deepens as AI rout, rate hike bets hurt bullion",
-          "source": "Reuters",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMFFjdnZJUDZiUXhKNUdPUWMtQ2tkd0ZKdmN4TTZ3bnQyb09SQ3cxSS1hNVYtcmF5WGpNSlJzS1dWYkdBUzBJZ2s5TnhLQ29mNWNIUy10MGJkN294UndsTmRmOF9GelkyVkdWRl8wcVJQNnRaRGp0a3NIMWNHT1dJSHhZRk1BT3FRV2pFcHVGa3ozS1ZCdjJXenJvSXlBOEdxLUp2MVVVTVBDY0NGX3ZRRUN3?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMFFjdnZJUDZiUXhKNUdPUWMtQ2tkd0ZKdmN4TTZ3bnQyb09SQ3cxSS1hNVYtcmF5WGpNSlJzS1dWYkdBUzBJZ2s5TnhLQ29mNWNIUy10MGJkN294UndsTmRmOF9GelkyVkdWRl8wcVJQNnRaRGp0a3NIMWNHT1dJSHhZRk1BT3FRV2pFcHVGa3ozS1ZCdjJXenJvSXlBOEdxLUp2MVVVTVBDY0NGX3ZRRUN3?oc=5",
-          "relevance": 0.152,
-          "resonance_score": 0.152
+          "id": "arstechnica-2-2114",
+          "title": "Google rolls out new search homepage with AI chat history and no search button",
+          "source": "Ars Technica",
+          "link": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/",
+          "url": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/",
+          "relevance": 0.15,
+          "resonance_score": 0.15
         }
       ]
     },
@@ -135,8 +144,8 @@
       "thumbnail": "https://i.ytimg.com/vi/VgOm8nqPlD4/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=VgOm8nqPlD4",
       "youtube_url": "https://www.youtube.com/watch?v=VgOm8nqPlD4",
-      "pubDate": "5h ago",
-      "date": "5h ago",
+      "pubDate": "10h ago",
+      "date": "10h ago",
       "duration": "6:05",
       "views": "",
       "category": "Ideas & Culture",
@@ -275,8 +284,8 @@
       "thumbnail": "https://i.ytimg.com/vi/URwlV0URyH0/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=URwlV0URyH0",
       "youtube_url": "https://www.youtube.com/watch?v=URwlV0URyH0",
-      "pubDate": "3h ago",
-      "date": "3h ago",
+      "pubDate": "9h ago",
+      "date": "9h ago",
       "duration": "34:10",
       "views": "",
       "category": "Ideas & Culture",
@@ -350,26 +359,7 @@
       "duration": "7:47",
       "views": "",
       "category": "Ideas & Culture",
-      "resonant_news": [
-        {
-          "id": "scmp-asia-2-6821",
-          "title": "Trump says China agreed to trilateral despite reluctance, notes nuclear gap",
-          "source": "SCMP",
-          "link": "https://www.scmp.com/news/us/diplomacy/article/3375296/trump-says-china-agreed-trilateral-despite-reluctance-notes-nuclear-gap",
-          "url": "https://www.scmp.com/news/us/diplomacy/article/3375296/trump-says-china-agreed-trilateral-despite-reluctance-notes-nuclear-gap",
-          "relevance": 0.214,
-          "resonance_score": 0.214
-        },
-        {
-          "id": "france24-eu-4-5457",
-          "title": "Poland's Tusk denounces Russian 'provocation' after Warsaw says missile hit territory",
-          "source": "France 24",
-          "link": "https://www.france24.com/en/europe/20261120-poland-says-russian-missile-hit-its-territory-during-attack-on-ukraine",
-          "url": "https://www.france24.com/en/europe/20261120-poland-says-russian-missile-hit-its-territory-during-attack-on-ukraine",
-          "relevance": 0.213,
-          "resonance_score": 0.213
-        }
-      ]
+      "resonant_news": []
     },
     {
       "id": "tp_rE-sazAVQVU",
@@ -394,7 +384,7 @@
       "category": "AI & Tech",
       "resonant_news": [
         {
-          "id": "guardian-eu-1-2700",
+          "id": "guardian-eu-3-2975",
           "title": "Denmark to expel Russian diplomat over alleged Moscow link to attempted killing of rapper",
           "source": "The Guardian",
           "link": "https://www.theguardian.com/world/2026/nov/20/denmark-russian-diplomat-us-ukrainian-rapper-attempted-killing",
@@ -403,7 +393,16 @@
           "resonance_score": 0.214
         },
         {
-          "id": "nyt-business-1-8529",
+          "id": "scmp-asia-3-1816",
+          "title": "China's top intelligence agency touts 'common international security' after summit",
+          "source": "SCMP",
+          "link": "https://www.scmp.com/news/china/politics/article/3375207/chinas-top-intelligence-agency-touts-common-international-security-after-summit",
+          "url": "https://www.scmp.com/news/china/politics/article/3375207/chinas-top-intelligence-agency-touts-common-international-security-after-summit",
+          "relevance": 0.216,
+          "resonance_score": 0.216
+        },
+        {
+          "id": "nyt-business-2-2201",
           "title": "Many Etsy Sellers Close Up Shop Over Site's New A.I. Policy",
           "source": "NYT Business",
           "link": "https://www.nytimes.com/2026/11/20/arts/etsy-ai-policy.html",
@@ -437,6 +436,62 @@
       "resonant_news": []
     },
     {
+      "id": "tp_NrSQdcoZDcI",
+      "title": "Battlefield Update: Ukraine, Abu Dhabi, and the Winter Ahead",
+      "podcast": "CSIS",
+      "channel": "CSIS",
+      "podcastLogo": "CSIS",
+      "tier": "standard",
+      "guest": "Battlefield Update",
+      "topics": [
+        "Artificial Intelligence"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning battlefield update: ukraine, abu dhabi, and the winter ahead.",
+      "imageUrl": "https://i.ytimg.com/vi/NrSQdcoZDcI/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/NrSQdcoZDcI/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=NrSQdcoZDcI",
+      "youtube_url": "https://www.youtube.com/watch?v=NrSQdcoZDcI",
+      "pubDate": "4h ago",
+      "date": "4h ago",
+      "duration": "44:56",
+      "views": "",
+      "category": "AI & Tech",
+      "resonant_news": []
+    },
+    {
+      "id": "tp_TwuqMZz4v5k",
+      "title": "South Korea: Export Nation or Ecosystem Power? | Country Economic Security and Technology Assessment",
+      "podcast": "CSIS",
+      "channel": "CSIS",
+      "podcastLogo": "CSIS",
+      "tier": "standard",
+      "guest": "South Korea",
+      "topics": [
+        "Ideas & Culture"
+      ],
+      "theme": "Explores strategic perspectives and key developments concerning south korea: export nation or ecosystem power?.",
+      "imageUrl": "https://i.ytimg.com/vi/TwuqMZz4v5k/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/TwuqMZz4v5k/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=TwuqMZz4v5k",
+      "youtube_url": "https://www.youtube.com/watch?v=TwuqMZz4v5k",
+      "pubDate": "5h ago",
+      "date": "5h ago",
+      "duration": "3:10",
+      "views": "",
+      "category": "AI & Tech",
+      "resonant_news": [
+        {
+          "id": "hindustan-times-4-335",
+          "title": "Culture play key role in fostering dialogue: Pakistan minister Malik",
+          "source": "Hindustan Times",
+          "link": "https://www.hindustantimes.com/india-news/culture-play-key-role-in-fostering-dialogue-pakistan-minister-malik-101795222929535.html",
+          "url": "https://www.hindustantimes.com/india-news/culture-play-key-role-in-fostering-dialogue-pakistan-minister-malik-101795222929535.html",
+          "relevance": 0.25,
+          "resonance_score": 0.25
+        }
+      ]
+    },
+    {
       "id": "tp_gsNJhU7phCk",
       "title": "The Next Energy Order: Featuring Dr. Sarah Kapnick | Betting on America",
       "podcast": "CSIS",
@@ -452,57 +507,11 @@
       "thumbnail": "https://i.ytimg.com/vi/gsNJhU7phCk/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=gsNJhU7phCk",
       "youtube_url": "https://www.youtube.com/watch?v=gsNJhU7phCk",
-      "pubDate": "6h ago",
-      "date": "6h ago",
+      "pubDate": "11h ago",
+      "date": "11h ago",
       "duration": "38:29",
       "views": "",
       "category": "Geopolitics & Policy",
-      "resonant_news": []
-    },
-    {
-      "id": "tp_4HYwUno9s94",
-      "title": "Trump, Xi, and Putin in Shenzhen: A Conversation with Andrea Kendall-Taylor",
-      "podcast": "CSIS",
-      "channel": "CSIS",
-      "podcastLogo": "CSIS",
-      "tier": "standard",
-      "guest": "",
-      "topics": [
-        "Geopolitics & Defense"
-      ],
-      "theme": "European defense preparedness, the future of the NATO alliance, and transatlantic geopolitical alignment.",
-      "imageUrl": "https://i.ytimg.com/vi/4HYwUno9s94/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/4HYwUno9s94/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=4HYwUno9s94",
-      "youtube_url": "https://www.youtube.com/watch?v=4HYwUno9s94",
-      "pubDate": "1d ago",
-      "date": "1d ago",
-      "duration": "39:02",
-      "views": "",
-      "category": "Ideas & Culture",
-      "resonant_news": []
-    },
-    {
-      "id": "tp_Tu4lQam11Io",
-      "title": "Jensen Resigns as Nvidia CEO + BIS Cracks Down on Remote Access",
-      "podcast": "CSIS",
-      "channel": "CSIS",
-      "podcastLogo": "CSIS",
-      "tier": "standard",
-      "guest": "",
-      "topics": [
-        "Ideas & Culture"
-      ],
-      "theme": "Explores strategic perspectives and key developments concerning jensen resigns as nvidia ceo + bis cracks down on remote access.",
-      "imageUrl": "https://i.ytimg.com/vi/Tu4lQam11Io/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/Tu4lQam11Io/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=Tu4lQam11Io",
-      "youtube_url": "https://www.youtube.com/watch?v=Tu4lQam11Io",
-      "pubDate": "1d ago",
-      "date": "1d ago",
-      "duration": "56:21",
-      "views": "",
-      "category": "Business & Economy",
       "resonant_news": []
     },
     {
@@ -521,8 +530,8 @@
       "thumbnail": "https://i.ytimg.com/vi/W8wMWmH6B18/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=W8wMWmH6B18",
       "youtube_url": "https://www.youtube.com/watch?v=W8wMWmH6B18",
-      "pubDate": "6h ago",
-      "date": "6h ago",
+      "pubDate": "12h ago",
+      "date": "12h ago",
       "duration": "25:34",
       "views": "",
       "category": "AI & Tech",
@@ -613,14 +622,14 @@
       "thumbnail": "https://i.ytimg.com/vi/Bpkl8PstNIE/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=Bpkl8PstNIE",
       "youtube_url": "https://www.youtube.com/watch?v=Bpkl8PstNIE",
-      "pubDate": "7d ago",
-      "date": "7d ago",
+      "pubDate": "8d ago",
+      "date": "8d ago",
       "duration": "32:18",
       "views": "",
       "category": "Geopolitics & Policy",
       "resonant_news": [
         {
-          "id": "nyt-asia-3-3401",
+          "id": "nyt-asia-3-3188",
           "title": "What Trump, Putin and Xi Left on the Table",
           "source": "New York Times",
           "link": "https://www.nytimes.com/2026/11/20/podcasts/the-daily/trump-putin-xi-summit-ai.html",
@@ -629,34 +638,34 @@
           "resonance_score": 0.417
         },
         {
-          "id": "hindustan-times-1-2255",
-          "title": "Lufthansa to cut 1,000 jobs as Iran war fuel costs, losses mount",
-          "source": "Hindustan Times",
-          "link": "https://www.hindustantimes.com/india-news/lufthansa-to-cut-1-000-jobs-as-iran-war-fuel-costs-losses-mount-101795189854159.html",
-          "url": "https://www.hindustantimes.com/india-news/lufthansa-to-cut-1-000-jobs-as-iran-war-fuel-costs-losses-mount-101795189854159.html",
-          "relevance": 0.446,
-          "resonance_score": 0.446
+          "id": "reuters-world-1-1563",
+          "title": "US Defense Secretary Hegseth restricts military ties with Canada",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZ19DTDNqa18wN2l3QWdvckc3UXYwZWhlRlpFaUVpRFBtdlBWRjY2WC1mTEdSbHIwbmxTcnNTQ2tkci04ZFoyRjlxTjQtdHh1a3lETGN2TGtWYmY3Ty1ibFZOQk1zUXJNcHE4ZWVXNkRSdDFwY21WNC1BSE1GeWdQMkxpRHQ0Yjd1cFVXNmNuRmFveUIwOW9iTDA4Z3BLc3lVMnVXMkpoSEllVEswZncxZEJVZ3N2ODhYOUs1YlkwZmVnNnhDUWVUSmdNVQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZ19DTDNqa18wN2l3QWdvckc3UXYwZWhlRlpFaUVpRFBtdlBWRjY2WC1mTEdSbHIwbmxTcnNTQ2tkci04ZFoyRjlxTjQtdHh1a3lETGN2TGtWYmY3Ty1ibFZOQk1zUXJNcHE4ZWVXNkRSdDFwY21WNC1BSE1GeWdQMkxpRHQ0Yjd1cFVXNmNuRmFveUIwOW9iTDA4Z3BLc3lVMnVXMkpoSEllVEswZncxZEJVZ3N2ODhYOUs1YlkwZmVnNnhDUWVUSmdNVQ?oc=5",
+          "relevance": 0.423,
+          "resonance_score": 0.423
         },
         {
-          "id": "aljazeera-3-7207",
-          "title": "Sudan's war leaves disabled children missing out on education",
+          "id": "aljazeera-5-9566",
+          "title": "Iran war live: Saudi-led coalition downs Houthi missiles",
           "source": "Al Jazeera",
-          "link": "https://www.aljazeera.com/news/2026/11/20/sudans-war-leaves-disabled-children-missing-out-on-education?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/11/20/sudans-war-leaves-disabled-children-missing-out-on-education?traffic_source=rss",
-          "relevance": 0.419,
-          "resonance_score": 0.419
+          "link": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-saudi-led-coalition-repels-houthi-missiles?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-saudi-led-coalition-repels-houthi-missiles?traffic_source=rss",
+          "relevance": 0.439,
+          "resonance_score": 0.439
         },
         {
-          "id": "npr-national-5-25",
-          "title": "Dems aim to block Iran war funding. And, Army delays lead azide detonation in Iowa",
-          "source": "NPR News",
-          "link": "https://www.npr.org/2026/11/20/g-s1-154582/up-first-newsletter-democrats-iran-war-trump-xi-jinping-iowa-army",
-          "url": "https://www.npr.org/2026/11/20/g-s1-154582/up-first-newsletter-democrats-iran-war-trump-xi-jinping-iowa-army",
-          "relevance": 0.429,
-          "resonance_score": 0.429
+          "id": "nyt-world-2-3775",
+          "title": "Iraqi Forces Enter Stronghold of Powerful Iran-Backed Militia",
+          "source": "New York Times",
+          "link": "https://www.nytimes.com/2026/11/20/world/middleeast/iraq-militia-iran-kataib-hezbollah.html",
+          "url": "https://www.nytimes.com/2026/11/20/world/middleeast/iraq-militia-iran-kataib-hezbollah.html",
+          "relevance": 0.416,
+          "resonance_score": 0.416
         },
         {
-          "id": "nyt-world-1-7043",
+          "id": "nyt-world-1-3725",
           "title": "The War Is Ravaging Ukraine's Wildlife, Too",
           "source": "New York Times",
           "link": "https://www.nytimes.com/2026/11/20/world/europe/ukraine-wildlife-war.html",
@@ -665,13 +674,13 @@
           "resonance_score": 0.415
         },
         {
-          "id": "nyt-world-2-6467",
-          "title": "Iraqi Forces Enter Stronghold of Powerful Iran-Backed Militia",
+          "id": "nyt-asia-2-2663",
+          "title": "Alice Huang, Accused of Spying on Nvidia's CEO, Is Linked to Firms With Ties to China's Military",
           "source": "New York Times",
-          "link": "https://www.nytimes.com/2026/11/20/world/middleeast/iraq-militia-iran-kataib-hezbollah.html",
-          "url": "https://www.nytimes.com/2026/11/20/world/middleeast/iraq-militia-iran-kataib-hezbollah.html",
-          "relevance": 0.416,
-          "resonance_score": 0.416
+          "link": "https://www.nytimes.com/2026/11/20/us/politics/nvidia-alice-huang-chips-china.html",
+          "url": "https://www.nytimes.com/2026/11/20/us/politics/nvidia-alice-huang-chips-china.html",
+          "relevance": 0.415,
+          "resonance_score": 0.415
         }
       ]
     },
@@ -699,91 +708,91 @@
       "resonant_news": []
     },
     {
-      "id": "tp_x7OxGYRmFP0",
-      "title": "WATCH: Cascade of tech outages ‘separate events’ and ‘under control,’ Trump says",
+      "id": "tp_y3WfO4cu5f0",
+      "title": "What the historic Trump, Xi and Putin summit signals to the world",
       "podcast": "PBS NewsHour",
       "channel": "PBS NewsHour",
       "podcastLogo": "PBS",
       "tier": "standard",
-      "guest": "WATCH",
+      "guest": "",
       "topics": [
         "Geopolitics & Defense"
       ],
       "theme": "European defense preparedness, the future of the NATO alliance, and transatlantic geopolitical alignment.",
-      "imageUrl": "https://i.ytimg.com/vi/x7OxGYRmFP0/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/x7OxGYRmFP0/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=x7OxGYRmFP0",
-      "youtube_url": "https://www.youtube.com/watch?v=x7OxGYRmFP0",
-      "pubDate": "1h ago",
-      "date": "1h ago",
-      "duration": "6:10",
+      "imageUrl": "https://i.ytimg.com/vi/y3WfO4cu5f0/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/y3WfO4cu5f0/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=y3WfO4cu5f0",
+      "youtube_url": "https://www.youtube.com/watch?v=y3WfO4cu5f0",
+      "pubDate": "2h ago",
+      "date": "2h ago",
+      "duration": "26:47",
       "views": "",
-      "category": "AI & Tech",
+      "category": "Ideas & Culture",
       "resonant_news": [
         {
-          "id": "nyt-asia-2-110",
-          "title": "Alice Huang, Accused of Spying on Nvidia's CEO, Is Linked to Firms With Ties to China's Military",
-          "source": "New York Times",
-          "link": "https://www.nytimes.com/2026/11/20/us/politics/nvidia-alice-huang-chips-china.html",
-          "url": "https://www.nytimes.com/2026/11/20/us/politics/nvidia-alice-huang-chips-china.html",
-          "relevance": 0.429,
-          "resonance_score": 0.429
+          "id": "hindustan-times-1-7455",
+          "title": "SP seat pact must be in place by December 20: Cong UP in-charge Rajendra Pal Gautam",
+          "source": "Hindustan Times",
+          "link": "https://www.hindustantimes.com/india-news/sp-seat-pact-must-be-in-place-by-december-20-cong-up-in-charge-rajendra-pal-gautam-101795201477719.html",
+          "url": "https://www.hindustantimes.com/india-news/sp-seat-pact-must-be-in-place-by-december-20-cong-up-in-charge-rajendra-pal-gautam-101795201477719.html",
+          "relevance": 0.214,
+          "resonance_score": 0.214
         },
         {
-          "id": "guardian-world-3-8633",
-          "title": "Fears grow that US will put Nobel-winning judge under sanctions after Myanmar genocide ruling",
-          "source": "The Guardian",
-          "link": "https://www.theguardian.com/world/2026/nov/18/us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court",
-          "url": "https://www.theguardian.com/world/2026/nov/18/us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court",
-          "relevance": 0.212,
-          "resonance_score": 0.212
+          "id": "france24-eu-4-3010",
+          "title": "Poland slams Russian 'provocation' as missiles land near European military drills",
+          "source": "France 24",
+          "link": "https://www.france24.com/en/europe/20261120-poland-says-russian-missile-hit-its-territory-during-attack-on-ukraine",
+          "url": "https://www.france24.com/en/europe/20261120-poland-says-russian-missile-hit-its-territory-during-attack-on-ukraine",
+          "relevance": 0.213,
+          "resonance_score": 0.213
         }
       ]
     },
     {
-      "id": "tp_h9P1JTOJNoQ",
-      "title": "WATCH: After calling Putin his friend, Trump ‘can’t speak to’ whether Putin is a friend to America",
+      "id": "tp_bcxbRdcUeFo",
+      "title": "PBS News Hour full episode, Nov. 20, 2026",
       "podcast": "PBS NewsHour",
       "channel": "PBS NewsHour",
       "podcastLogo": "PBS",
       "tier": "standard",
-      "guest": "WATCH",
+      "guest": "",
       "topics": [
-        "Geopolitics & Defense"
+        "Ideas & Culture"
       ],
-      "theme": "European defense preparedness, the future of the NATO alliance, and transatlantic geopolitical alignment.",
-      "imageUrl": "https://i.ytimg.com/vi/h9P1JTOJNoQ/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/h9P1JTOJNoQ/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=h9P1JTOJNoQ",
-      "youtube_url": "https://www.youtube.com/watch?v=h9P1JTOJNoQ",
+      "theme": "Explores strategic perspectives and key developments concerning pbs news hour full episode, nov. 20, 2026.",
+      "imageUrl": "https://i.ytimg.com/vi/bcxbRdcUeFo/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/bcxbRdcUeFo/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=bcxbRdcUeFo",
+      "youtube_url": "https://www.youtube.com/watch?v=bcxbRdcUeFo",
       "pubDate": "2h ago",
       "date": "2h ago",
-      "duration": "2:30",
+      "duration": "56:47",
       "views": "",
       "category": "Ideas & Culture",
       "resonant_news": []
     },
     {
-      "id": "tp_gZvDGkiD9hc",
-      "title": "WATCH: Trump calls Vance’s post blaming Iran war for GOP midterm losses a ‘very accurate statement’",
+      "id": "tp_U-UP7Xlq2s4",
+      "title": "Inside the museum preserving the story of JFK's assassination",
       "podcast": "PBS NewsHour",
       "channel": "PBS NewsHour",
       "podcastLogo": "PBS",
       "tier": "standard",
-      "guest": "WATCH",
+      "guest": "",
       "topics": [
-        "Geopolitics & Defense"
+        "Ideas & Culture"
       ],
-      "theme": "European defense preparedness, the future of the NATO alliance, and transatlantic geopolitical alignment.",
-      "imageUrl": "https://i.ytimg.com/vi/gZvDGkiD9hc/maxresdefault.jpg",
-      "thumbnail": "https://i.ytimg.com/vi/gZvDGkiD9hc/maxresdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=gZvDGkiD9hc",
-      "youtube_url": "https://www.youtube.com/watch?v=gZvDGkiD9hc",
+      "theme": "Explores strategic perspectives and key developments concerning inside the museum preserving the story of jfk's assassination.",
+      "imageUrl": "https://i.ytimg.com/vi/U-UP7Xlq2s4/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/U-UP7Xlq2s4/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=U-UP7Xlq2s4",
+      "youtube_url": "https://www.youtube.com/watch?v=U-UP7Xlq2s4",
       "pubDate": "2h ago",
       "date": "2h ago",
-      "duration": "2:13",
+      "duration": "7:54",
       "views": "",
-      "category": "Geopolitics & Policy",
+      "category": "Ideas & Culture",
       "resonant_news": []
     },
     {
