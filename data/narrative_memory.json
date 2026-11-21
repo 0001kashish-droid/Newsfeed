@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-21T17:53:01.067714+00:00",
+    "last_updated": "2026-11-21T22:49:53.671700+00:00",
     "arcs": [
         {
             "arc_id": "d9a388cf-db33-476b-8622-61bc79e2b246",
@@ -19,7 +19,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 42,
             "chapter_titles": [
                 "Rubio Warned Officials About Nvidia Chief's Entanglement With Chinese Spy",
@@ -100,7 +100,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 5,
             "chapter_titles": [
                 "Denmark expels Russian diplomat over plot to kill Ukraine rapper",
@@ -135,7 +135,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-21T10:41:13.079469+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 5,
             "chapter_titles": [
                 "Deal with EU not dependent on tuition fees agreement, Miliband says",
@@ -173,7 +173,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-18T17:49:43.685542+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 4,
             "chapter_titles": [
                 "Gazans flee shelters as Israeli army launches ground operation beyond Yellow Line",
@@ -208,7 +208,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-19T16:20:44.688783+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 4,
             "chapter_titles": [
                 "Skyscraper in Riyadh damaged as Saudi Arabia reports surge in new Houthi attacks",
@@ -243,7 +243,7 @@
                 "North America"
             ],
             "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 3,
             "chapter_titles": [
                 "Trump Threatens to Bar U.S. Tech Firms From Building Data Centers Abroad",
@@ -257,6 +257,107 @@
                 "BBC US",
                 "NYT Business",
                 "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "f0f42d70-34de-4d21-9381-2ae14172ff9a",
+            "title": "What we know about the latest Russian missile",
+            "keywords": [
+                "know",
+                "latest",
+                "missil",
+                "russian",
+                "strik",
+                "ukrain"
+            ],
+            "entity_signature": "RU:UA:conflict:ru:russia",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-20T21:26:11.940713+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "What we know about the latest Russian missile strikes on Ukraine",
+                "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
+                "Russia launches ballistic missile attack on Zelensky's hometown in central Ukraine"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "BBC Europe",
+                "BBC News",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "0c03009a-105d-4434-b622-db61335f3e2b",
+            "title": "French police officers sentenced for beating of",
+            "keywords": [
+                "beat",
+                "french",
+                "michel",
+                "music",
+                "officer",
+                "polic",
+                "producer",
+                "sentenc",
+                "zecler"
+            ],
+            "entity_signature": "FR:beating of music producer michel zecler:collective_faction:fr",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-21T02:41:45.634855+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "French police officers sentenced for beating of music producer Michel Zecler",
+                "French police officers found guilty of racist assault on black music producer",
+                "French police officers jailed for racist violence against black man in landmark ruling"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "BBC Europe",
+                "SCMP",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "84c0a492-1512-499c-995b-51cad534fc25",
+            "title": "Bahrain says Iranian attack hits industrial",
+            "keywords": [
+                "air",
+                "attack",
+                "bahrain",
+                "defenc",
+                "facil",
+                "hit",
+                "industrial",
+                "intercept",
+                "iranian"
+            ],
+            "entity_signature": "IR:attack:bahrain says iranian:conflict",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-21T22:49:53.215579+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Bahrain says Iranian attack hits industrial facility as air defences intercept attacks",
+                "Bahrain says Iranian attack hits industrial facility",
+                "Bahrain says Iranian attack causes fire at industrial facility"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7,
+            "sources_involved": [
+                "Al Jazeera",
+                "Reuters"
             ]
         },
         {
@@ -278,7 +379,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-18T17:49:43.685542+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Kuwait says it repelled first Iranian attack in two months after US strikes island",
@@ -312,7 +413,7 @@
                 "North America"
             ],
             "first_seen": "2026-11-18T17:49:43.685542+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Fears grow that US will impose sanctions on ICJ judges ahead of Myanmar genocide ruling",
@@ -322,36 +423,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "29d846d3-2ed3-4ec1-b4ed-8531960deaf8",
-            "title": "Gaza: Israel launched new offensive on Nuseirat",
-            "keywords": [
-                "gaza",
-                "israel",
-                "launch",
-                "new",
-                "nuseirat",
-                "offensiv"
-            ],
-            "entity_signature": "IL:PS:civilians & impacted communities:civilians & impacted communities (refugee):geopolitics",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-19T16:20:44.688783+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Gaza: Israel launched new offensive on Nuseirat",
-                "Jerusalem Daily: Israel launches ground offensive in Gaza"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Al Jazeera",
-                "France 24"
             ]
         },
         {
@@ -373,7 +444,7 @@
                 "India"
             ],
             "first_seen": "2026-11-19T06:32:16.650047+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Stock market opens flat; Sensex down over 150 points, Nifty drops more than 60 points",
@@ -383,36 +454,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "HT Business"
-            ]
-        },
-        {
-            "arc_id": "f0f42d70-34de-4d21-9381-2ae14172ff9a",
-            "title": "What we know about the latest Russian missile",
-            "keywords": [
-                "know",
-                "latest",
-                "missil",
-                "russian",
-                "strik",
-                "ukrain"
-            ],
-            "entity_signature": "RU:UA:conflict:ru:russia",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "What we know about the latest Russian missile strikes on Ukraine",
-                "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "BBC Europe",
-                "BBC News"
             ]
         },
         {
@@ -436,7 +477,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Anthropic shares slump on second day of trading as markets reel from AI sell-off",
@@ -467,7 +508,7 @@
                 "India"
             ],
             "first_seen": "2026-11-21T02:41:45.634855+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "A new Nepal, an old neighbour - Balendra Shah's India test",
@@ -477,39 +518,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "0c03009a-105d-4434-b622-db61335f3e2b",
-            "title": "French police officers sentenced for beating of",
-            "keywords": [
-                "beat",
-                "french",
-                "michel",
-                "music",
-                "officer",
-                "polic",
-                "producer",
-                "sentenc",
-                "zecler"
-            ],
-            "entity_signature": "FR:beating of music producer michel zecler:collective_faction:fr",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-21T02:41:45.634855+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "French police officers sentenced for beating of music producer Michel Zecler",
-                "French police officers found guilty of racist assault on black music producer"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "BBC Europe",
-                "The Guardian"
             ]
         },
         {
@@ -529,7 +537,7 @@
                 "North America"
             ],
             "first_seen": "2026-11-21T10:41:13.079469+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Anthropic says it will put humanity first. Will its IPO change that?",
@@ -540,6 +548,168 @@
             "sources_involved": [
                 "NPR News",
                 "The Verge"
+            ]
+        },
+        {
+            "arc_id": "472c09fd-5b80-4a21-9c20-391e4f26cfe4",
+            "title": "Zelensky says Crimean Bridge strikes 'fair",
+            "keywords": [
+                "bridg",
+                "crimean",
+                "fair",
+                "meet",
+                "respons",
+                "street",
+                "strik",
+                "zelenski"
+            ],
+            "entity_signature": "RU:UA:UK:Volodymyr:Volodymyr Zelenskyy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+                "Zelensky says Crimean Bridge strikes 'fair response' as he meets Wes Streeting"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "BBC Europe",
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "9b606202-5f75-4453-9300-621106de7339",
+            "title": "Drone attack sets Russian cargo ship ablaze in",
+            "keywords": [
+                "ablaz",
+                "attack",
+                "cargo",
+                "dron",
+                "finland",
+                "gulf",
+                "russian",
+                "set",
+                "ship"
+            ],
+            "entity_signature": "FI:RU:attack:conflict:drone",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Drone attack sets Russian cargo ship ablaze in Gulf of Finland",
+                "Russia-bound ship attacked in Gulf of Finland"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe",
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "a1dada73-8608-4215-99de-aff07feac61b",
+            "title": "FBI reportedly investigating apparent hack of its",
+            "keywords": [
+                "apparent",
+                "criminal",
+                "databas",
+                "fbi",
+                "hack",
+                "investigat",
+                "report"
+            ],
+            "entity_signature": "apparent hack of its criminal database:collective_faction:fbi",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "FBI reportedly investigating apparent hack of its criminal database",
+                "The FBI and USDA were reportedly hacked"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC US",
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "afb4009e-1297-494a-b59e-13c3cb64c61e",
+            "title": "Croatians rally in Zagreb demanding justice over",
+            "keywords": [
+                "croatian",
+                "death",
+                "demand",
+                "hospital",
+                "justic",
+                "psychiatric",
+                "ralli",
+                "zagreb"
+            ],
+            "entity_signature": "HR:croatia:croatia sovereign authorities:croatians rally in zagreb",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-21T22:49:53.215579+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Croatians rally in Zagreb demanding justice over psychiatric hospital death",
+                "Croatians demand justice over psychiatric hospital death after brutal video surfaces"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.5,
+            "sources_involved": [
+                "Reuters",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "4af4e979-82ab-41f2-8551-993e18e0ccc6",
+            "title": "Alleged Mexican drug cartel boss 'El Chapo",
+            "keywords": [
+                "alleg",
+                "arrest",
+                "boss",
+                "cartel",
+                "chapo",
+                "drug",
+                "forc",
+                "isidro",
+                "mexican",
+                "raid"
+            ],
+            "entity_signature": "MX:alleged mexican drug cartel boss 'el chapo isidro:arrested:fbi",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-21T22:49:53.215579+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Alleged Mexican drug cartel boss 'El Chapo Isidro' arrested in special forces raid",
+                "Mexico detains top cartel boss 'El Chapo Isidro,' setting off violence"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News",
+                "The Guardian"
             ]
         },
         {
@@ -563,7 +733,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-17T18:18:36.087370+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says"
@@ -593,7 +763,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-18T08:54:08.950645+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "European Commission accused of sugarcoating figures to release funds to Egypt"
@@ -621,7 +791,7 @@
                 "North America"
             ],
             "first_seen": "2026-11-18T08:54:08.950645+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Trump says US taking 'very seriously' any Iranian plot against Washington"
@@ -651,7 +821,7 @@
                 "Global"
             ],
             "first_seen": "2026-11-19T16:20:44.688783+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Race to replant five South African baobabs after export blocked"
@@ -682,7 +852,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-19T16:20:44.688783+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "China, Russia and US agree peace declaration with no mention of Ukraine and Iran wars"
@@ -712,7 +882,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-20T13:26:21.035583+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "California investigates Nvidia over whether chip exports ended up in China"
@@ -744,7 +914,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-20T13:26:21.035583+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "China issues Mount Fuji warning as family of missing climber offers reward"
@@ -774,7 +944,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-20T13:26:21.035583+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Russia targets Kyiv crossings days after Ukraine hits Crimean Bridge"
@@ -806,7 +976,7 @@
                 "India"
             ],
             "first_seen": "2026-11-20T13:26:21.035583+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "SpaceX seeks at least $32 billion in debt sale to finance Nvidia's latest AI chips"
@@ -837,7 +1007,7 @@
                 "India"
             ],
             "first_seen": "2026-11-20T13:26:21.035583+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Gold set for worst week since March on hawkish Fed, AI selloff"
@@ -846,6 +1016,608 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "HT Business"
+            ]
+        },
+        {
+            "arc_id": "6c034987-1fae-4f5d-88b4-0a0d97719311",
+            "title": "On the Trail With Spain's Prime Minister, as He",
+            "keywords": [
+                "minister",
+                "prim",
+                "pull",
+                "spain",
+                "trail",
+                "tri",
+                "win"
+            ],
+            "entity_signature": "ES:EU:election:es:eu",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-21T10:41:13.079469+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "On the Trail With Spain's Prime Minister, as He Tries to Pull Out a Win"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "e2224485-0271-4424-831b-1c985ea76938",
+            "title": "The Faces of the 2026 DealBook Summit",
+            "keywords": [
+                "dealbook",
+                "fac",
+                "summit"
+            ],
+            "entity_signature": "Nadella:Satya:diplomacy:faces:leader",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-21T10:41:13.079469+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "The Faces of the 2026 DealBook Summit"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "5e80c84e-8618-47ca-9d39-cfbb61fc6e32",
+            "title": "Streeting calls Putin a 'cold-blooded killer' as",
+            "keywords": [
+                "blood",
+                "call",
+                "cold",
+                "killer",
+                "kyiv",
+                "meet",
+                "putin",
+                "street",
+                "zelenski"
+            ],
+            "entity_signature": "UA:UK:Putin:Vladimir:leader",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Streeting calls Putin a 'cold-blooded killer' as he meets Zelensky in Kyiv"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "758c6f14-155f-4c07-82af-36a5e2e48065",
+            "title": "Hong Kong flight makes emergency landing in",
+            "keywords": [
+                "alert",
+                "emergenci",
+                "engin",
+                "fir",
+                "flight",
+                "hong",
+                "kong",
+                "land",
+                "mak",
+                "philippin"
+            ],
+            "entity_signature": "PH:alert:civilians & impacted communities:civilians & impacted communities (passengers)",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Hong Kong flight makes emergency landing in Philippines after engine fire alert"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "e55ca63a-331b-4322-badc-098fb36701d0",
+            "title": "Killer robots: U.N. talks fall short of hopes for",
+            "keywords": [
+                "bind",
+                "fall",
+                "hop",
+                "killer",
+                "legalli",
+                "robot",
+                "rul",
+                "short",
+                "talk"
+            ],
+            "entity_signature": "CH:ch:diplomacy:geopolitics",
+            "category": "National",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Killer robots: U.N. talks fall short of hopes for legally binding rules"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "6348e9e2-907b-4967-bbe5-06472794ae8c",
+            "title": "Federal jury convicts man of starting the deadly",
+            "keywords": [
+                "angel",
+                "convict",
+                "deadli",
+                "federal",
+                "fir",
+                "juri",
+                "los",
+                "man",
+                "palisad",
+                "start"
+            ],
+            "entity_signature": "federal jury convicts man of starting the deadly 2025 palisades:fire:judicial & investigative bodies",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "94b0db18-3819-4a98-a620-d0d236d4fea2",
+            "title": "Is selling an AI version of your face to this",
+            "keywords": [
+                "ai",
+                "fac",
+                "futur",
+                "hollywood",
+                "microdrama",
+                "sell",
+                "startup",
+                "version"
+            ],
+            "entity_signature": "CN:ai version of your face:china:china sovereign authorities",
+            "category": "Tech",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Is selling an AI version of your face to this microdrama startup the future of Hollywood?"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "24dd146a-1a41-457b-b7ce-34400ec30d9c",
+            "title": "Jailed MP Amritpal Singh's party says his visit",
+            "keywords": [
+                "ahead",
+                "amritpal",
+                "boost",
+                "campaign",
+                "get",
+                "hop",
+                "jail",
+                "parol",
+                "parti",
+                "poll"
+            ],
+            "entity_signature": "conflict:india regional stakeholders:jailed mp amritpal singh's party says his visit boost ahead of punjab polls, hopes he gets parole for campaigning",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Jailed MP Amritpal Singh's party says his visit boost ahead of Punjab polls, hopes he gets parole for campaigning"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "8c3a547f-a32a-4c4e-847c-58c662f48784",
+            "title": "Amid cold wave, students' indefinite strike",
+            "keywords": [
+                "amid",
+                "board",
+                "cold",
+                "gather",
+                "indefinit",
+                "recruit",
+                "scam",
+                "steam",
+                "strik",
+                "student"
+            ],
+            "entity_signature": "amid cold wave, students' indefinite:conflict:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Amid cold wave, students' indefinite strike against J&K recruitment board scam gathers steam"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "6cd9d69d-4b95-41ef-8ced-7f7f2e2be01e",
+            "title": "Thousands march in Lisbon as living costs fuel",
+            "keywords": [
+                "anger",
+                "cost",
+                "fuel",
+                "lisbon",
+                "liv",
+                "march",
+                "thousand"
+            ],
+            "entity_signature": "PT:lisbon as living costs fuel anger:march:portugal",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-21T22:49:53.215579+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Thousands march in Lisbon as living costs fuel anger"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "728a3186-5bf8-4ecb-a265-1ab95b76aaad",
+            "title": "Mexico captures top drug lord 'El Chapo Isidro,'",
+            "keywords": [
+                "arrest",
+                "captur",
+                "chapo",
+                "drug",
+                "isidro",
+                "latest",
+                "lord",
+                "mexico",
+                "str",
+                "top"
+            ],
+            "entity_signature": "MX:arrests:health:mexico",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-21T22:49:53.215579+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Mexico captures top drug lord 'El Chapo Isidro,' latest in string of arrests"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "403935f3-8c7c-4de0-b0da-d6a56d94b128",
+            "title": "Former Italian police chief De Gennaro takes own",
+            "keywords": [
+                "amid",
+                "chief",
+                "former",
+                "gennaro",
+                "italian",
+                "lif",
+                "mafia",
+                "polic",
+                "prob",
+                "tak"
+            ],
+            "entity_signature": "IT:collective_faction:former italian police:former italian police chief de gennaro takes own life amid mafia",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-21T22:49:53.215579+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Former Italian police chief De Gennaro takes own life amid mafia probe"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "c4ff482f-b4c8-41ab-bc2f-fe2bde6a93c6",
+            "title": "Impunity fuels surge in settler violence across",
+            "keywords": [
+                "across",
+                "bank",
+                "fuel",
+                "impun",
+                "occupi",
+                "settler",
+                "surg",
+                "violenc",
+                "west"
+            ],
+            "entity_signature": "PS:economy:impunity fuels:palestine",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-21T22:49:53.215579+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Impunity fuels surge in settler violence across occupied West Bank"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "d44bd0dc-7867-4eab-8ae7-959d99ab263a",
+            "title": "Indian man jailed over plot to kill Sikh",
+            "keywords": [
+                "indian",
+                "jail",
+                "kill",
+                "man",
+                "plot",
+                "separatist",
+                "sikh"
+            ],
+            "entity_signature": "IN:US:collective_faction:in:india",
+            "category": "World",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-21T22:49:53.215579+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Indian man jailed over plot to kill Sikh separatist in US"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "9c4358fa-6421-471b-8a41-176151a0236b",
+            "title": "Iran says held talks with Qatari mediators, urges",
+            "keywords": [
+                "accept",
+                "condi",
+                "held",
+                "iran",
+                "mediator",
+                "qatari",
+                "talk"
+            ],
+            "entity_signature": "IR:US:diplomacy:diplomatic envoys:diplomatic envoys (mediators)",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-21T22:49:53.215579+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Iran says held talks with Qatari mediators, urges US to accept conditions"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "f5804c68-8275-42fc-9b27-2d5caedf46be",
+            "title": "The UN fails to agree on rules regulating 'killer",
+            "keywords": [
+                "agree",
+                "fail",
+                "killer",
+                "regulat",
+                "robot",
+                "rul"
+            ],
+            "entity_signature": "CH:agree:ch:diplomatic envoys",
+            "category": "Tech",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-21T22:49:53.215579+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "The UN fails to agree on rules regulating 'killer robots'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "7ce4a47b-eb59-4197-9e0e-03024b0ee5b2",
+            "title": "Trump says reported FBI database hack is 'not",
+            "keywords": [
+                "databas",
+                "fbi",
+                "good",
+                "hack",
+                "trump"
+            ],
+            "entity_signature": "Donald:Donald Trump:fbi:judicial & investigative bodies:judicial & investigative bodies (fbi)",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-21T22:49:53.215579+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump says reported FBI database hack is 'not good'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "be8042cb-eb21-48ab-bef3-9392b8c75aab",
+            "title": "Vasan urges political parties to fight for",
+            "keywords": [
+                "cauveri",
+                "fight",
+                "parti",
+                "political",
+                "right",
+                "vasan",
+                "water"
+            ],
+            "entity_signature": "india regional stakeholders:political parties:syntactic_subject",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-21T22:49:53.215579+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Vasan urges political parties to fight for Cauvery water rights"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "16df113b-8d8c-4f2b-9ff1-fb93f1046586",
+            "title": "'India not a rogue state': Wangchuk slams",
+            "keywords": [
+                "administra",
+                "arrest",
+                "court",
+                "deploy",
+                "hom",
+                "hous",
+                "india",
+                "outsid",
+                "plea",
+                "polic"
+            ],
+            "entity_signature": "IN:, says police deployment outside home withdrawn:arrest:collective_faction",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-21T22:49:53.215579+00:00",
+            "last_seen": "2026-11-21T22:49:53.215579+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'India not a rogue state': Wangchuk slams administration over 'house arrest', says police deployment outside home withdrawn after court plea"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "29d846d3-2ed3-4ec1-b4ed-8531960deaf8",
+            "title": "Gaza: Israel launched new offensive on Nuseirat",
+            "keywords": [
+                "gaza",
+                "israel",
+                "launch",
+                "new",
+                "nuseirat",
+                "offensiv"
+            ],
+            "entity_signature": "IL:PS:civilians & impacted communities:civilians & impacted communities (refugee):geopolitics",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-19T16:20:44.688783+00:00",
+            "last_seen": "2026-11-21T17:53:00.717170+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Gaza: Israel launched new offensive on Nuseirat",
+                "Jerusalem Daily: Israel launches ground offensive in Gaza"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Al Jazeera",
+                "France 24"
             ]
         },
         {
@@ -941,90 +1713,6 @@
             ]
         },
         {
-            "arc_id": "6c034987-1fae-4f5d-88b4-0a0d97719311",
-            "title": "On the Trail With Spain's Prime Minister, as He",
-            "keywords": [
-                "minister",
-                "prim",
-                "pull",
-                "spain",
-                "trail",
-                "tri",
-                "win"
-            ],
-            "entity_signature": "ES:EU:election:es:eu",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-21T10:41:13.079469+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "On the Trail With Spain's Prime Minister, as He Tries to Pull Out a Win"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "e2224485-0271-4424-831b-1c985ea76938",
-            "title": "The Faces of the 2026 DealBook Summit",
-            "keywords": [
-                "dealbook",
-                "fac",
-                "summit"
-            ],
-            "entity_signature": "Nadella:Satya:diplomacy:faces:leader",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-21T10:41:13.079469+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "The Faces of the 2026 DealBook Summit"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "472c09fd-5b80-4a21-9c20-391e4f26cfe4",
-            "title": "Zelensky says Crimean Bridge strikes 'fair",
-            "keywords": [
-                "bridg",
-                "crimean",
-                "fair",
-                "meet",
-                "respons",
-                "street",
-                "strik",
-                "zelenski"
-            ],
-            "entity_signature": "RU:UA:UK:Volodymyr:Volodymyr Zelenskyy",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "BBC News"
-            ]
-        },
-        {
             "arc_id": "5082cbdd-4520-4928-bc95-7a066c990f3a",
             "title": "Trump told European leaders they were spending a",
             "keywords": [
@@ -1051,37 +1739,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "5e80c84e-8618-47ca-9d39-cfbb61fc6e32",
-            "title": "Streeting calls Putin a 'cold-blooded killer' as",
-            "keywords": [
-                "blood",
-                "call",
-                "cold",
-                "killer",
-                "kyiv",
-                "meet",
-                "putin",
-                "street",
-                "zelenski"
-            ],
-            "entity_signature": "UA:UK:Putin:Vladimir:leader",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Streeting calls Putin a 'cold-blooded killer' as he meets Zelensky in Kyiv"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC News"
             ]
         },
         {
@@ -1174,38 +1831,6 @@
             ]
         },
         {
-            "arc_id": "758c6f14-155f-4c07-82af-36a5e2e48065",
-            "title": "Hong Kong flight makes emergency landing in",
-            "keywords": [
-                "alert",
-                "emergenci",
-                "engin",
-                "fir",
-                "flight",
-                "hong",
-                "kong",
-                "land",
-                "mak",
-                "philippin"
-            ],
-            "entity_signature": "PH:alert:civilians & impacted communities:civilians & impacted communities (passengers)",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Hong Kong flight makes emergency landing in Philippines after engine fire alert"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
             "arc_id": "80cf3d10-3639-428c-8120-1bdfcbfbcfe4",
             "title": "Hong Kong pledges extra US$20m to AIIB special",
             "keywords": [
@@ -1265,37 +1890,6 @@
             ]
         },
         {
-            "arc_id": "9b606202-5f75-4453-9300-621106de7339",
-            "title": "Drone attack sets Russian cargo ship ablaze in",
-            "keywords": [
-                "ablaz",
-                "attack",
-                "cargo",
-                "dron",
-                "finland",
-                "gulf",
-                "russian",
-                "set",
-                "ship"
-            ],
-            "entity_signature": "FI:RU:attack:conflict:drone",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Drone attack sets Russian cargo ship ablaze in Gulf of Finland"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
             "arc_id": "09b3fc64-dbfb-44fd-82d1-883519fa7419",
             "title": "Russian strike kills two, wounds 60, in",
             "keywords": [
@@ -1325,128 +1919,6 @@
             ]
         },
         {
-            "arc_id": "e55ca63a-331b-4322-badc-098fb36701d0",
-            "title": "Killer robots: U.N. talks fall short of hopes for",
-            "keywords": [
-                "bind",
-                "fall",
-                "hop",
-                "killer",
-                "legalli",
-                "robot",
-                "rul",
-                "short",
-                "talk"
-            ],
-            "entity_signature": "CH:ch:diplomacy:geopolitics",
-            "category": "National",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Killer robots: U.N. talks fall short of hopes for legally binding rules"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "6348e9e2-907b-4967-bbe5-06472794ae8c",
-            "title": "Federal jury convicts man of starting the deadly",
-            "keywords": [
-                "angel",
-                "convict",
-                "deadli",
-                "federal",
-                "fir",
-                "juri",
-                "los",
-                "man",
-                "palisad",
-                "start"
-            ],
-            "entity_signature": "federal jury convicts man of starting the deadly 2025 palisades:fire:judicial & investigative bodies",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "a1dada73-8608-4215-99de-aff07feac61b",
-            "title": "FBI reportedly investigating apparent hack of its",
-            "keywords": [
-                "apparent",
-                "criminal",
-                "databas",
-                "fbi",
-                "hack",
-                "investigat",
-                "report"
-            ],
-            "entity_signature": "apparent hack of its criminal database:collective_faction:fbi",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "FBI reportedly investigating apparent hack of its criminal database"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC US"
-            ]
-        },
-        {
-            "arc_id": "94b0db18-3819-4a98-a620-d0d236d4fea2",
-            "title": "Is selling an AI version of your face to this",
-            "keywords": [
-                "ai",
-                "fac",
-                "futur",
-                "hollywood",
-                "microdrama",
-                "sell",
-                "startup",
-                "version"
-            ],
-            "entity_signature": "CN:ai version of your face:china:china sovereign authorities",
-            "category": "Tech",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Is selling an AI version of your face to this microdrama startup the future of Hollywood?"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
             "arc_id": "6b7e522c-c18b-4b9e-8791-9636bfd74e7c",
             "title": "U.N. Fails to Regulate Lethal Autonomous Weapons",
             "keywords": [
@@ -1473,38 +1945,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "New York Times"
-            ]
-        },
-        {
-            "arc_id": "24dd146a-1a41-457b-b7ce-34400ec30d9c",
-            "title": "Jailed MP Amritpal Singh's party says his visit",
-            "keywords": [
-                "ahead",
-                "amritpal",
-                "boost",
-                "campaign",
-                "get",
-                "hop",
-                "jail",
-                "parol",
-                "parti",
-                "poll"
-            ],
-            "entity_signature": "conflict:india regional stakeholders:jailed mp amritpal singh's party says his visit boost ahead of punjab polls, hopes he gets parole for campaigning",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Jailed MP Amritpal Singh's party says his visit boost ahead of Punjab polls, hopes he gets parole for campaigning"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
             ]
         },
         {
@@ -1599,38 +2039,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Indian Express"
-            ]
-        },
-        {
-            "arc_id": "8c3a547f-a32a-4c4e-847c-58c662f48784",
-            "title": "Amid cold wave, students' indefinite strike",
-            "keywords": [
-                "amid",
-                "board",
-                "cold",
-                "gather",
-                "indefinit",
-                "recruit",
-                "scam",
-                "steam",
-                "strik",
-                "student"
-            ],
-            "entity_signature": "amid cold wave, students' indefinite:conflict:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Amid cold wave, students' indefinite strike against J&K recruitment board scam gathers steam"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
             ]
         },
         {
@@ -2764,399 +3172,6 @@
                 "BBC News",
                 "France 24",
                 "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "a679a27f-62d4-4474-a69b-1ffeb78883a5",
-            "title": "Faisal Islam: This cost-cutting UK-EU deal",
-            "keywords": [
-                "cost",
-                "cutt",
-                "deal",
-                "doesn",
-                "faisal",
-                "follow",
-                "islam",
-                "lower",
-                "mean",
-                "pric"
-            ],
-            "entity_signature": "EU:UK:cutting:diplomacy:economics",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-21T02:41:45.634855+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Faisal Islam: This cost-cutting UK-EU deal doesn't mean lower prices will follow"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC News"
-            ]
-        },
-        {
-            "arc_id": "404a0233-66ac-4eea-b97d-901decd18acb",
-            "title": "Spain frees wealthy US-sought activist on bail as",
-            "keywords": [
-                "activist",
-                "bail",
-                "dublin",
-                "fre",
-                "hom",
-                "irish",
-                "polic",
-                "raid",
-                "sought",
-                "spain"
-            ],
-            "entity_signature": "ES:IE:PS:Donald:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-21T02:41:45.634855+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Spain frees wealthy US-sought activist on bail as Irish police raid Dublin home"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "5bab1e1c-ea53-43e8-b74a-6fb25844e986",
-            "title": "EU wants 'closest possible relationship' with UK",
-            "keywords": [
-                "agree",
-                "brexit",
-                "closest",
-                "deal",
-                "possibl",
-                "relationship",
-                "reset",
-                "want"
-            ],
-            "entity_signature": "EU:UK:agreeing:brexit reset deal:citizens",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-21T02:41:45.634855+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "EU wants 'closest possible relationship' with UK after agreeing Brexit reset deal – live"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "25789d81-defe-4ddf-8c90-62b09641437b",
-            "title": "A second judge blocks Trump's arch, saying it's",
-            "keywords": [
-                "arch",
-                "block",
-                "court",
-                "judg",
-                "say",
-                "second",
-                "succe",
-                "trump",
-                "unlikeli"
-            ],
-            "entity_signature": "Donald:Donald Trump:blocks:court:governance",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-21T02:41:45.634855+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "A second judge blocks Trump's arch, saying it's unlikely to succeed in court"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "c348cbff-5540-46f7-8d6d-b930991fbd68",
-            "title": "Bending Spoons buys Mailchimp for $3.68B",
-            "keywords": [
-                "68b",
-                "bend",
-                "buy",
-                "mailchimp",
-                "spoon"
-            ],
-            "entity_signature": "bending spoons:buys:mailchimp",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-21T02:41:45.634855+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Bending Spoons buys Mailchimp for $3.68B"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "99a3f11d-3ed0-4279-b923-c9bf090057f7",
-            "title": "Congress proposes four-point formula for",
-            "keywords": [
-                "bloc",
-                "board",
-                "congress",
-                "delimita",
-                "formula",
-                "four",
-                "india",
-                "point",
-                "propos"
-            ],
-            "entity_signature": "IN:collective_faction:congress:congress proposes four-point formula for delimitation, says india bloc on board",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-21T02:41:45.634855+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Congress proposes four-point formula for delimitation, says INDIA bloc on board"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "3997434b-0a0a-4820-bc6e-61e262f42359",
-            "title": "China pet 'memorial diamond' industry charging",
-            "keywords": [
-                "ash",
-                "charg",
-                "china",
-                "diamond",
-                "fac",
-                "gem",
-                "industri",
-                "memorial",
-                "pet",
-                "scrutini"
-            ],
-            "entity_signature": "CN:US:china:china pet 'memorial diamond' industry charging us$15,000 for ash gems:china sovereign authorities",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-21T02:41:45.634855+00:00",
-            "last_seen": "2026-11-21T02:41:45.634855+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "China pet 'memorial diamond' industry charging US$15,000 for ash gems faces scrutiny"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "0f4d5947-4d2a-4b0a-98eb-c7b9914536ce",
-            "title": "Japan wants an Asian energy agency. Will the",
-            "keywords": [
-                "agenci",
-                "asian",
-                "buy",
-                "energi",
-                "japan",
-                "region",
-                "want"
-            ],
-            "entity_signature": "JP:buy:in?:japan",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-21T02:41:45.634855+00:00",
-            "last_seen": "2026-11-21T02:41:45.634855+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Japan wants an Asian energy agency. Will the region buy in?"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "3cf54af7-22cb-4dcf-aec7-2cf657c3d5fb",
-            "title": "Nvidia faces further blow after shock US export",
-            "keywords": [
-                "analyst",
-                "blow",
-                "data",
-                "export",
-                "fac",
-                "nvidia",
-                "permit",
-                "releas",
-                "shock"
-            ],
-            "entity_signature": "CN:US:analysts:china:cn",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-21T02:41:45.634855+00:00",
-            "last_seen": "2026-11-21T02:41:45.634855+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Nvidia faces further blow after shock US export permit data release: analysts"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "58a27eca-a0a2-4eca-96f4-b8a750d5dfb9",
-            "title": "COP31 deal stalls as nations struggle to agree on",
-            "keywords": [
-                "agree",
-                "climat",
-                "cop31",
-                "deal",
-                "nation",
-                "plan",
-                "stall",
-                "struggl"
-            ],
-            "entity_signature": "agree:climate:climate plan",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-21T02:41:45.634855+00:00",
-            "last_seen": "2026-11-21T02:41:45.634855+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "COP31 deal stalls as nations struggle to agree on climate plan"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "73fb9fc1-145a-4c71-9a51-878ce17bcf3e",
-            "title": "Nvidia Said to Face S.E.C. Probe Into Its",
-            "keywords": [
-                "account",
-                "fac",
-                "nvidia",
-                "practic",
-                "prob"
-            ],
-            "entity_signature": "face:justice:north america regional stakeholders",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-21T02:41:45.634855+00:00",
-            "last_seen": "2026-11-21T02:41:45.634855+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Nvidia Said to Face S.E.C. Probe Into Its Accounting Practices"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "6bba3d40-e27f-42ae-a481-5af61a394eed",
-            "title": "Supreme Court seeks Centre's response on plea to",
-            "keywords": [
-                "aware",
-                "blood",
-                "centr",
-                "court",
-                "effect",
-                "marriag",
-                "plea",
-                "rais",
-                "relativ",
-                "respons"
-            ],
-            "entity_signature": "centre's response:collective_faction:governance",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-21T02:41:45.634855+00:00",
-            "last_seen": "2026-11-21T02:41:45.634855+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Supreme Court seeks Centre's response on plea to raise awareness on effects of marriage between blood relatives"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "e7b27c39-d86d-4c98-bc48-5ca40dbc9b32",
-            "title": "After strong El Niño, La Niña may boost India's",
-            "keywords": [
-                "boost",
-                "forecast",
-                "incoi",
-                "india",
-                "may",
-                "monsoon",
-                "strong"
-            ],
-            "entity_signature": "IN:after strong el niño, la niña may boost india's 2027 monsoon, says incois forecast:in:india",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-21T02:41:45.634855+00:00",
-            "last_seen": "2026-11-21T02:41:45.634855+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "After strong El Niño, La Niña may boost India's 2027 monsoon, says INCOIS forecast"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
             ]
         }
     ],
