@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-22T10:46:32.854435+00:00",
+    "last_updated": "2026-11-22T18:15:11.440081+00:00",
     "arcs": [
         {
             "arc_id": "f0f42d70-34de-4d21-9381-2ae14172ff9a",
@@ -18,14 +18,15 @@
                 "Europe"
             ],
             "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
-            "chapter_count": 5,
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 6,
             "chapter_titles": [
                 "What we know about the latest Russian missile strikes on Ukraine",
                 "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
                 "Russia launches ballistic missile attack on Zelensky's hometown in central Ukraine",
                 "At least 14 feared trapped after Russian strike in Kyiv region, Zelensky says",
-                "Dashcam captures Russian missile strike on Lviv, Ukraine"
+                "Dashcam captures Russian missile strike on Lviv, Ukraine",
+                "Ukrainian rescuers search for survivors in rubble after Russian attack"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.3,
@@ -57,7 +58,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-18T17:49:43.685542+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
             "chapter_count": 4,
             "chapter_titles": [
                 "Gazans flee shelters as Israeli army launches ground operation beyond Yellow Line",
@@ -92,7 +93,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-19T16:20:44.688783+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
             "chapter_count": 4,
             "chapter_titles": [
                 "Skyscraper in Riyadh damaged as Saudi Arabia reports surge in new Houthi attacks",
@@ -103,6 +104,42 @@
             "importance_trend": "rising",
             "peak_velocity": 0.15,
             "sources_involved": [
+                "France 24",
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "9b606202-5f75-4453-9300-621106de7339",
+            "title": "Drone attack sets Russian cargo ship ablaze in",
+            "keywords": [
+                "ablaz",
+                "attack",
+                "cargo",
+                "dron",
+                "finland",
+                "gulf",
+                "russian",
+                "set",
+                "ship"
+            ],
+            "entity_signature": "FI:RU:attack:conflict:drone",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 4,
+            "chapter_titles": [
+                "Drone attack sets Russian cargo ship ablaze in Gulf of Finland",
+                "Russia-bound ship attacked in Gulf of Finland",
+                "Russian cargo ship still on fire off Finland after attack",
+                "Russia-bound ship towed away after it was attacked in Gulf of Finland"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe",
                 "France 24",
                 "Reuters"
             ]
@@ -127,7 +164,7 @@
                 "North America"
             ],
             "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
             "chapter_count": 3,
             "chapter_titles": [
                 "Trump Threatens to Bar U.S. Tech Firms From Building Data Centers Abroad",
@@ -163,7 +200,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-21T02:41:45.634855+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
             "chapter_count": 3,
             "chapter_titles": [
                 "French police officers sentenced for beating of music producer Michel Zecler",
@@ -179,38 +216,109 @@
             ]
         },
         {
-            "arc_id": "9b606202-5f75-4453-9300-621106de7339",
-            "title": "Drone attack sets Russian cargo ship ablaze in",
+            "arc_id": "f415feff-456f-4c45-a606-25ab9cf87f00",
+            "title": "Seven body bags recovered, 50 missing after",
             "keywords": [
-                "ablaz",
-                "attack",
-                "cargo",
-                "dron",
-                "finland",
-                "gulf",
-                "russian",
-                "set",
-                "ship"
+                "bag",
+                "bodi",
+                "factori",
+                "fir",
+                "indonesian",
+                "miss",
+                "recover",
+                "seven"
             ],
-            "entity_signature": "FI:RU:attack:conflict:drone",
+            "entity_signature": "ID:fire:id:indonesia",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-22T10:46:32.429362+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Seven body bags recovered, 50 missing after Indonesian factory fire",
+                "Indonesia searches for 50, recovers 7 body bags after factory fire",
+                "Fire at confectionery factory in Indonesia leaves at least three dead and dozens missing"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7999999999999999,
+            "sources_involved": [
+                "Reuters",
+                "SCMP",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "c4bbcef4-c0b3-478f-af64-23d920be18a3",
+            "title": "Palestinian woman, 72, shot dead by Israeli",
+            "keywords": [
+                "bank",
+                "dead",
+                "health",
+                "israeli",
+                "ministri",
+                "palestinian",
+                "settler",
+                "shot",
+                "west",
+                "woman"
+            ],
+            "entity_signature": "IL:PS:collective_faction:conflict:dead",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-17T18:18:36.087370+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says",
+                "Israel investigates West Bank fires blamed on Israeli settlers",
+                "Israel investigates West Bank fires"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Middle East",
+                "France 24",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "1c90a1f6-75df-45e4-bbdd-b6fd653d0b7e",
+            "title": "Blast on Russian ship in Benghazi a suspected",
+            "keywords": [
+                "attack",
+                "authoriti",
+                "benghazi",
+                "blast",
+                "dron",
+                "libyan",
+                "russian",
+                "say",
+                "ship",
+                "suspect"
+            ],
+            "entity_signature": "RU:, say libyan authorities:attack:blast on russian ship in benghazi a suspected drone",
             "category": "World",
             "regions": [
                 "Europe"
             ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
             "chapter_count": 3,
             "chapter_titles": [
-                "Drone attack sets Russian cargo ship ablaze in Gulf of Finland",
-                "Russia-bound ship attacked in Gulf of Finland",
-                "Russian cargo ship still on fire off Finland after attack"
+                "Blast on Russian ship in Benghazi a suspected drone attack, say Libyan authorities",
+                "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+                "Libya's eastern government suspects drone attack caused explosion on Russian ship"
             ],
             "importance_trend": "rising",
-            "peak_velocity": 0.15,
+            "peak_velocity": 0.6,
             "sources_involved": [
-                "BBC Europe",
-                "France 24",
-                "Reuters"
+                "BBC News",
+                "Reuters",
+                "The Guardian"
             ]
         },
         {
@@ -232,7 +340,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-18T17:49:43.685542+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Kuwait says it repelled first Iranian attack in two months after US strikes island",
@@ -266,7 +374,7 @@
                 "North America"
             ],
             "first_seen": "2026-11-18T17:49:43.685542+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Fears grow that US will impose sanctions on ICJ judges ahead of Myanmar genocide ruling",
@@ -299,7 +407,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Anthropic shares slump on second day of trading as markets reel from AI sell-off",
@@ -330,7 +438,7 @@
                 "India"
             ],
             "first_seen": "2026-11-21T02:41:45.634855+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "A new Nepal, an old neighbour - Balendra Shah's India test",
@@ -340,6 +448,1097 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "472c09fd-5b80-4a21-9c20-391e4f26cfe4",
+            "title": "Zelensky says Crimean Bridge strikes 'fair",
+            "keywords": [
+                "bridg",
+                "crimean",
+                "fair",
+                "meet",
+                "respons",
+                "street",
+                "strik",
+                "zelenski"
+            ],
+            "entity_signature": "RU:UA:UK:Volodymyr:Volodymyr Zelenskyy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-21T17:53:00.717170+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+                "Zelensky says Crimean Bridge strikes 'fair response' as he meets Wes Streeting"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "BBC Europe",
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "ec15276a-02ad-4758-8c93-1e16568fe9f7",
+            "title": "South Korea's Education Minister Resigns Over",
+            "keywords": [
+                "anti",
+                "cheat",
+                "educa",
+                "korea",
+                "minister",
+                "resign",
+                "rul",
+                "south"
+            ],
+            "entity_signature": "KR:anti-a.i. cheating rules:kr:resigns",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-22T10:46:32.429362+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "South Korea's Education Minister Resigns Over Anti-A.I. Cheating Rules",
+                "South Korea education minister resigns after AI cheating scandal engulfs university exams"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7,
+            "sources_involved": [
+                "New York Times",
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "d7ec1764-fbc1-4e4c-9b60-62f5b509c630",
+            "title": "Trump says US taking 'very seriously' any Iranian",
+            "keywords": [
+                "iranian",
+                "plot",
+                "seriousli",
+                "tak",
+                "trump",
+                "washington"
+            ],
+            "entity_signature": "IR:US:Donald:Donald Trump:conflict",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-18T08:54:08.950645+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump says US taking 'very seriously' any Iranian plot against Washington"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "50ac7780-7a40-4015-b270-3395b03463d5",
+            "title": "Race to replant five South African baobabs after",
+            "keywords": [
+                "african",
+                "baobab",
+                "block",
+                "export",
+                "fiv",
+                "rac",
+                "replant",
+                "south"
+            ],
+            "entity_signature": "ZA:blocked:race to replant five south african baobabs after export:south africa",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-19T16:20:44.688783+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Race to replant five South African baobabs after export blocked"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "45556b54-a412-4069-bde1-f1c582f32f17",
+            "title": "California investigates Nvidia over whether chip",
+            "keywords": [
+                "california",
+                "china",
+                "chip",
+                "end",
+                "export",
+                "investigat",
+                "nvidia",
+                "whether"
+            ],
+            "entity_signature": "CN:california:china:cn",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-20T13:26:21.035583+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "California investigates Nvidia over whether chip exports ended up in China"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "697c7ee8-bc85-4613-a885-c64f48bd554e",
+            "title": "Russia targets Kyiv crossings days after Ukraine",
+            "keywords": [
+                "bridg",
+                "crimean",
+                "cross",
+                "hit",
+                "kyiv",
+                "russia",
+                "target",
+                "ukrain"
+            ],
+            "entity_signature": "RU:UA:kyiv crossings days:ru:russia",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-20T13:26:21.035583+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Russia targets Kyiv crossings days after Ukraine hits Crimean Bridge"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "7ce4a47b-eb59-4197-9e0e-03024b0ee5b2",
+            "title": "Trump says reported FBI database hack is 'not",
+            "keywords": [
+                "databas",
+                "fbi",
+                "good",
+                "hack",
+                "trump"
+            ],
+            "entity_signature": "Donald:Donald Trump:fbi:judicial & investigative bodies:judicial & investigative bodies (fbi)",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-21T22:49:53.215579+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Trump says reported FBI database hack is 'not good'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "fcf94ac2-be42-4a21-b3bc-8700b455dd3d",
+            "title": "Three killed and dozens missing after fire at",
+            "keywords": [
+                "dozen",
+                "factori",
+                "fir",
+                "indonesian",
+                "kill",
+                "miss",
+                "three"
+            ],
+            "entity_signature": "ID:and dozens missing:id:indonesia",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-22T10:46:32.429362+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Three killed and dozens missing after fire at Indonesian factory"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7999999999999999,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "0c55eb12-e831-4584-b369-3b85f5428d2e",
+            "title": "Taiwanese Comedian Targeted for Mocking Xi",
+            "keywords": [
+                "comedian",
+                "crowd",
+                "draw",
+                "jinp",
+                "mock",
+                "sellout",
+                "taiwanes",
+                "target"
+            ],
+            "entity_signature": "TW:Huang:Jensen:economy:leader",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-22T10:46:32.429362+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Taiwanese Comedian Targeted for Mocking Xi Jinping Is Drawing Sellout Crowds"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "f2c5af6b-1260-4cb8-90d5-7801fed7ea6e",
+            "title": "Bahrain accuses Iran of striking industrial site",
+            "keywords": [
+                "accus",
+                "bahrain",
+                "hit",
+                "hormuz",
+                "industrial",
+                "iran",
+                "sit",
+                "strik",
+                "tanker"
+            ],
+            "entity_signature": "IR:US:bahrain accuses iran of:civilian:civilians & impacted communities",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-22T10:46:32.429362+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Bahrain accuses Iran of striking industrial site as tankers hit in Hormuz"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "f198096b-cbc6-4fe1-83ed-e3d0c507b6f3",
+            "title": "Procter & Gamble to Increase Factory Shifts",
+            "keywords": [
+                "cost",
+                "cut",
+                "factori",
+                "gambl",
+                "human",
+                "increas",
+                "procter",
+                "shift",
+                "without"
+            ],
+            "entity_signature": "costs:cut:north america regional stakeholders",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-22T10:46:32.429362+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Procter & Gamble to Increase Factory Shifts Without Humans to Cut Costs"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "69940c5a-191d-432c-8d98-f8a3ca2162af",
+            "title": "India needs 15-fold rise in financial assets to",
+            "keywords": [
+                "asset",
+                "back",
+                "cii",
+                "economi",
+                "financial",
+                "fold",
+                "india",
+                "need",
+                "ris",
+                "trillion"
+            ],
+            "entity_signature": "IN:$26.5 trillion economy:back:climate",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-22T10:46:32.429362+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "India needs 15-fold rise in financial assets to back $26.5 trillion economy by 2047: CII"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "d9d0f9fe-a1aa-407b-b1eb-269085b41665",
+            "title": "US intelligence chief says Putin is 'not",
+            "keywords": [
+                "america",
+                "chief",
+                "friend",
+                "intelligenc",
+                "putin",
+                "ukrain"
+            ],
+            "entity_signature": "UA:US:Putin:Vladimir:leader",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US intelligence chief says Putin is 'not America's friend in Ukraine'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "f75b922d-3d16-4afe-8b67-ef6a1785aa16",
+            "title": "'Danger seems greater all the time': Ukrainians",
+            "keywords": [
+                "danger",
+                "greater",
+                "miss",
+                "russian",
+                "search",
+                "seem",
+                "strik",
+                "ukrainian"
+            ],
+            "entity_signature": "RU:UA:ru:russia:sovereign_stakeholder",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'Danger seems greater all the time': Ukrainians search for missing after Russian strikes"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "a989de5b-f8b4-4e83-a560-638d81fd22c4",
+            "title": "RAF's next fighter jet could be last crewed",
+            "keywords": [
+                "air",
+                "chief",
+                "combat",
+                "crew",
+                "fighter",
+                "jet",
+                "plan",
+                "raf"
+            ],
+            "entity_signature": "UK:collective_faction:fighter:insurgent / rebel factions",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "RAF's next fighter jet could be last crewed combat plane, air chief says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "e9702ec8-0242-4194-b46c-dcb93a1810c8",
+            "title": "German army starts testing kamikaze drones and AI",
+            "keywords": [
+                "ai",
+                "armi",
+                "dron",
+                "german",
+                "kamikaz",
+                "lithuania",
+                "start",
+                "target",
+                "test",
+                "tool"
+            ],
+            "entity_signature": "DE:army:collective_faction:de",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "German army starts testing kamikaze drones and AI targeting tool in Lithuania"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "774a8d66-78ef-4460-9768-eab3e4acffb9",
+            "title": "French activists demand tear gas suspension after",
+            "keywords": [
+                "activist",
+                "chang",
+                "cycl",
+                "demand",
+                "french",
+                "gas",
+                "menstrual",
+                "suspension",
+                "tear"
+            ],
+            "entity_signature": "FR:activists:civic activists / protesters:civic activists / protesters (activists)",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "French activists demand tear gas suspension after reported changes to menstrual cycles"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "cf9cd559-54bc-4dcf-b16b-fa96e9b082b7",
+            "title": "Man arrested in Hong Kong over dog found hanging",
+            "keywords": [
+                "arrest",
+                "dog",
+                "found",
+                "hang",
+                "hong",
+                "kong",
+                "man",
+                "tai",
+                "trail",
+                "tree"
+            ],
+            "entity_signature": "CN:arrested:china:cn",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Man arrested in Hong Kong over dog found hanging from tree on Tai Po trail"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "d266222a-1f19-4186-aed7-ee6b730f0331",
+            "title": "Cop31 climate talks break down as key deal",
+            "keywords": [
+                "break",
+                "climat",
+                "cop31",
+                "deal",
+                "key",
+                "reject",
+                "talk"
+            ],
+            "entity_signature": "EU:UK:climate:cop31 climate talks break down as key deal:diplomacy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Cop31 climate talks break down as key deal rejected"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "83edc48f-f7b6-4e68-9781-ffcc9e491818",
+            "title": "West Bank attacks: Opposition leader Eisenkot",
+            "keywords": [
+                "attack",
+                "bank",
+                "decri",
+                "eisenkot",
+                "jewish",
+                "leader",
+                "opposi",
+                "terrorism",
+                "west"
+            ],
+            "entity_signature": "IL:PS:attacks:il:israel",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "West Bank attacks: Opposition leader Eisenkot decries \"Jewish terrorism\""
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "135b6b1a-39e5-48c0-baa5-0a1c1c5740fc",
+            "title": "Israeli settlers attack multiple Palestinian",
+            "keywords": [
+                "attack",
+                "israeli",
+                "multipl",
+                "palestinian",
+                "pogrom",
+                "settler",
+                "surg",
+                "villag"
+            ],
+            "entity_signature": "IL:PS:attack:conflict:economy",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Israeli settlers attack multiple Palestinian villages as pogroms surge"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "6d5d0b20-06d4-485f-a532-acd10d910310",
+            "title": "Can we build a more ethical AI future?",
+            "keywords": [
+                "ai",
+                "build",
+                "ethical",
+                "futur"
+            ],
+            "entity_signature": "build:can we:middle east regional stakeholders",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Can we build a more ethical AI future?"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "150143d0-9484-4e00-9384-c53a10d96474",
+            "title": "Lebanese villagers return to wrecked homes as the",
+            "keywords": [
+                "armi",
+                "back",
+                "hom",
+                "israeli",
+                "lebanes",
+                "pull",
+                "return",
+                "villager",
+                "wreck"
+            ],
+            "entity_signature": "IL:LB:army:back:civilians & impacted communities",
+            "category": "National",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Lebanese villagers return to wrecked homes as the Israeli army pulls back"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "01007626-345b-4c2c-8544-b4b5aba0ef73",
+            "title": "Meet the young authors! A literacy program",
+            "keywords": [
+                "africa",
+                "author",
+                "inspir",
+                "kid",
+                "literaci",
+                "meet",
+                "program",
+                "south",
+                "young"
+            ],
+            "entity_signature": "ZA:children:civilians & impacted communities:civilians & impacted communities (children)",
+            "category": "National",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Meet the young authors! A literacy program inspires kids in South Africa"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "f77a526a-c059-4003-989f-38cd71d561f4",
+            "title": "TechCrunch Mobility: A/B testing robots vs. humans",
+            "keywords": [
+                "human",
+                "mobil",
+                "robot",
+                "techcrunch",
+                "test"
+            ],
+            "entity_signature": "a/b:north america regional stakeholders:robots vs. humans",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "TechCrunch Mobility: A/B testing robots vs. humans"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "1afe6817-b52e-404d-8e30-e764732e7817",
+            "title": "Medicare looks a bit different in 2027, so don't",
+            "keywords": [
+                "bit",
+                "different",
+                "don",
+                "enroll",
+                "look",
+                "medicar",
+                "miss",
+                "open"
+            ],
+            "entity_signature": "enrollment:health:medicare looks a bit different in 2027, so don't miss",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Medicare looks a bit different in 2027, so don't miss open enrollment"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "7b0f50de-6b2c-41e6-a7d9-b871bf78d0eb",
+            "title": "Eight killed as speeding minivan rams into",
+            "keywords": [
+                "eight",
+                "kill",
+                "minivan",
+                "nadu",
+                "ram",
+                "roadsid",
+                "speed",
+                "tamil",
+                "tiruchirappalli",
+                "tree"
+            ],
+            "entity_signature": "as speeding minivan rams:eight:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Eight killed as speeding minivan rams into roadside tree in Tamil Nadu's Tiruchirappalli"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "5a0e8104-3398-4d44-9699-59fff3c5c08e",
+            "title": "Activists rally on Vizag Beach Road against data",
+            "keywords": [
+                "activist",
+                "beach",
+                "cancella",
+                "centr",
+                "data",
+                "demand",
+                "permission",
+                "ralli",
+                "road",
+                "vizag"
+            ],
+            "entity_signature": "activists:activists rally on vizag beach road st data centres,:cancellation of permissions",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Activists rally on Vizag Beach Road against data centres, demand cancellation of permissions"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "1833754f-a3f1-406b-892a-7756d010fcdf",
+            "title": "'CJP here to stay': Dipke vows to fight for Goa's",
+            "keywords": [
+                "39a",
+                "cjp",
+                "dipk",
+                "fight",
+                "goa",
+                "ident",
+                "land",
+                "scrapp",
+                "sec",
+                "seek"
+            ],
+            "entity_signature": "dipke:fight:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'CJP here to stay': Dipke vows to fight for Goa's land, identity; seeks scrapping of Section 39A"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "5ef18c55-138b-41e4-93d2-a9deaa9e6835",
+            "title": "West Bengal BJP president Samik Bhattacharya",
+            "keywords": [
+                "attack",
+                "bangladesh",
+                "bengal",
+                "bhattacharya",
+                "bjp",
+                "call",
+                "hindu",
+                "president",
+                "protest",
+                "samik"
+            ],
+            "entity_signature": "BD:attacks:bangladesh:bangladesh sovereign authorities",
+            "category": "National",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "West Bengal BJP president Samik Bhattacharya calls for protest over attacks on Hindus in Bangladesh"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "7524830d-6e95-4887-9c58-c8557eccf9f7",
+            "title": "Congress factional rift deepens in Keralam",
+            "keywords": [
+                "congress",
+                "deepen",
+                "delhi",
+                "dissent",
+                "factional",
+                "grievanc",
+                "keralam",
+                "kharg",
+                "leader",
+                "rift"
+            ],
+            "entity_signature": "collective_faction:congress:congress factional rift",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Congress factional rift deepens in Keralam, dissenting leaders take grievances to Kharge in Delhi"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "f5873ce0-e1a7-4ed3-8ca1-58a6c8e73958",
+            "title": "From recruiting Russian girls to chasing Putin",
+            "keywords": [
+                "chas",
+                "disturb",
+                "epstein",
+                "girl",
+                "link",
+                "putin",
+                "recruit",
+                "russia",
+                "russian"
+            ],
+            "entity_signature": "RU:Putin:Vladimir:from:impacted_community",
+            "category": "National",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "From recruiting Russian girls to chasing Putin: Epstein's disturbing Russia links"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Indian Express"
+            ]
+        },
+        {
+            "arc_id": "0f3a881d-5289-4575-b7fb-8398a9680292",
+            "title": "T.M. Krishna, Chinmayi back minors 'sexually",
+            "keywords": [
+                "assault",
+                "back",
+                "bhaskar",
+                "chinmayi",
+                "krishna",
+                "minor",
+                "sexualli",
+                "violinist"
+            ],
+            "entity_signature": "US:back:minors 'sexually assaulted:syntactic_subject",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "T.M. Krishna, Chinmayi back minors 'sexually assaulted' by violinist Bhaskar in the U.S."
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "543a2550-2b6f-434b-985f-860f76a3b031",
+            "title": "Preparation meets intuition as Gukesh faces",
+            "keywords": [
+                "chess",
+                "crown",
+                "fac",
+                "gukesh",
+                "intui",
+                "meet",
+                "prepara",
+                "sindarov",
+                "world"
+            ],
+            "entity_signature": "india regional stakeholders:intuition as gukesh faces sindarov:meets",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Preparation meets intuition as Gukesh faces Sindarov for world chess crown"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Indian Express"
+            ]
+        },
+        {
+            "arc_id": "f0c5d927-c3b4-43b1-9cb5-00dd0e3b56df",
+            "title": "Outfit seeks moving of DKV community from SC to",
+            "keywords": [
+                "commun",
+                "dkv",
+                "list",
+                "mov",
+                "outfit",
+                "seek"
+            ],
+            "entity_signature": "india regional stakeholders:moving of dkv community:outfit",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Outfit seeks moving of DKV community from SC to BC list"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "c10c72fe-b94d-45e7-baa7-5eacaebd7c09",
+            "title": "In Goa, CJP's Dipke slams CM: 'You are the one",
+            "keywords": [
+                "cjp",
+                "dipk",
+                "friend",
+                "goa",
+                "one",
+                "outsid",
+                "sell",
+                "slam",
+                "stat"
+            ],
+            "entity_signature": "india regional stakeholders:selling:sovereign_stakeholder",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-22T18:15:11.150555+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "In Goa, CJP's Dipke slams CM: 'You are the one selling state to friends from outside'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Indian Express"
             ]
         },
         {
@@ -370,38 +1569,6 @@
             "sources_involved": [
                 "NPR News",
                 "The Verge"
-            ]
-        },
-        {
-            "arc_id": "472c09fd-5b80-4a21-9c20-391e4f26cfe4",
-            "title": "Zelensky says Crimean Bridge strikes 'fair",
-            "keywords": [
-                "bridg",
-                "crimean",
-                "fair",
-                "meet",
-                "respons",
-                "street",
-                "strik",
-                "zelenski"
-            ],
-            "entity_signature": "RU:UA:UK:Volodymyr:Volodymyr Zelenskyy",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
-                "Zelensky says Crimean Bridge strikes 'fair response' as he meets Wes Streeting"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "BBC Europe",
-                "BBC News"
             ]
         },
         {
@@ -498,102 +1665,6 @@
             ]
         },
         {
-            "arc_id": "f415feff-456f-4c45-a606-25ab9cf87f00",
-            "title": "Seven body bags recovered, 50 missing after",
-            "keywords": [
-                "bag",
-                "bodi",
-                "factori",
-                "fir",
-                "indonesian",
-                "miss",
-                "recover",
-                "seven"
-            ],
-            "entity_signature": "ID:fire:id:indonesia",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-22T10:46:32.429362+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Seven body bags recovered, 50 missing after Indonesian factory fire",
-                "Indonesia searches for 50, recovers 7 body bags after factory fire"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.7999999999999999,
-            "sources_involved": [
-                "Reuters",
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "ec15276a-02ad-4758-8c93-1e16568fe9f7",
-            "title": "South Korea's Education Minister Resigns Over",
-            "keywords": [
-                "anti",
-                "cheat",
-                "educa",
-                "korea",
-                "minister",
-                "resign",
-                "rul",
-                "south"
-            ],
-            "entity_signature": "KR:anti-a.i. cheating rules:kr:resigns",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-22T10:46:32.429362+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "South Korea's Education Minister Resigns Over Anti-A.I. Cheating Rules",
-                "South Korea education minister resigns after AI cheating scandal engulfs university exams"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.7,
-            "sources_involved": [
-                "New York Times",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "c4bbcef4-c0b3-478f-af64-23d920be18a3",
-            "title": "Palestinian woman, 72, shot dead by Israeli",
-            "keywords": [
-                "bank",
-                "dead",
-                "health",
-                "israeli",
-                "ministri",
-                "palestinian",
-                "settler",
-                "shot",
-                "west",
-                "woman"
-            ],
-            "entity_signature": "IL:PS:collective_faction:conflict:dead",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-17T18:18:36.087370+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
             "arc_id": "961cb5f0-74b5-4f04-abf6-be5a3af094b4",
             "title": "European Commission accused of sugarcoating",
             "keywords": [
@@ -621,124 +1692,6 @@
             "peak_velocity": 0.3,
             "sources_involved": [
                 "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "d7ec1764-fbc1-4e4c-9b60-62f5b509c630",
-            "title": "Trump says US taking 'very seriously' any Iranian",
-            "keywords": [
-                "iranian",
-                "plot",
-                "seriousli",
-                "tak",
-                "trump",
-                "washington"
-            ],
-            "entity_signature": "IR:US:Donald:Donald Trump:conflict",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-18T08:54:08.950645+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump says US taking 'very seriously' any Iranian plot against Washington"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "50ac7780-7a40-4015-b270-3395b03463d5",
-            "title": "Race to replant five South African baobabs after",
-            "keywords": [
-                "african",
-                "baobab",
-                "block",
-                "export",
-                "fiv",
-                "rac",
-                "replant",
-                "south"
-            ],
-            "entity_signature": "ZA:blocked:race to replant five south african baobabs after export:south africa",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-19T16:20:44.688783+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Race to replant five South African baobabs after export blocked"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "45556b54-a412-4069-bde1-f1c582f32f17",
-            "title": "California investigates Nvidia over whether chip",
-            "keywords": [
-                "california",
-                "china",
-                "chip",
-                "end",
-                "export",
-                "investigat",
-                "nvidia",
-                "whether"
-            ],
-            "entity_signature": "CN:california:china:cn",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-20T13:26:21.035583+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "California investigates Nvidia over whether chip exports ended up in China"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "697c7ee8-bc85-4613-a885-c64f48bd554e",
-            "title": "Russia targets Kyiv crossings days after Ukraine",
-            "keywords": [
-                "bridg",
-                "crimean",
-                "cross",
-                "hit",
-                "kyiv",
-                "russia",
-                "target",
-                "ukrain"
-            ],
-            "entity_signature": "RU:UA:kyiv crossings days:ru:russia",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-20T13:26:21.035583+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Russia targets Kyiv crossings days after Ukraine hits Crimean Bridge"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Europe"
             ]
         },
         {
@@ -797,33 +1750,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "The Verge"
-            ]
-        },
-        {
-            "arc_id": "7ce4a47b-eb59-4197-9e0e-03024b0ee5b2",
-            "title": "Trump says reported FBI database hack is 'not",
-            "keywords": [
-                "databas",
-                "fbi",
-                "good",
-                "hack",
-                "trump"
-            ],
-            "entity_signature": "Donald:Donald Trump:fbi:judicial & investigative bodies:judicial & investigative bodies (fbi)",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-21T22:49:53.215579+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump says reported FBI database hack is 'not good'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "TechCrunch"
             ]
         },
         {
@@ -952,35 +1878,6 @@
             ]
         },
         {
-            "arc_id": "fcf94ac2-be42-4a21-b3bc-8700b455dd3d",
-            "title": "Three killed and dozens missing after fire at",
-            "keywords": [
-                "dozen",
-                "factori",
-                "fir",
-                "indonesian",
-                "kill",
-                "miss",
-                "three"
-            ],
-            "entity_signature": "ID:and dozens missing:id:indonesia",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-22T10:46:32.429362+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Three killed and dozens missing after fire at Indonesian factory"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.7999999999999999,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
             "arc_id": "d4a42e48-b742-4f30-a55e-45b0639e4437",
             "title": "Welfare chief pledges long-term social worker",
             "keywords": [
@@ -1045,67 +1942,6 @@
             ]
         },
         {
-            "arc_id": "0c55eb12-e831-4584-b369-3b85f5428d2e",
-            "title": "Taiwanese Comedian Targeted for Mocking Xi",
-            "keywords": [
-                "comedian",
-                "crowd",
-                "draw",
-                "jinp",
-                "mock",
-                "sellout",
-                "taiwanes",
-                "target"
-            ],
-            "entity_signature": "TW:Huang:Jensen:economy:leader",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-22T10:46:32.429362+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Taiwanese Comedian Targeted for Mocking Xi Jinping Is Drawing Sellout Crowds"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "f2c5af6b-1260-4cb8-90d5-7801fed7ea6e",
-            "title": "Bahrain accuses Iran of striking industrial site",
-            "keywords": [
-                "accus",
-                "bahrain",
-                "hit",
-                "hormuz",
-                "industrial",
-                "iran",
-                "sit",
-                "strik",
-                "tanker"
-            ],
-            "entity_signature": "IR:US:bahrain accuses iran of:civilian:civilians & impacted communities",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-22T10:46:32.429362+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Bahrain accuses Iran of striking industrial site as tankers hit in Hormuz"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
             "arc_id": "20046b74-e093-4da1-9482-21c73ccd0056",
             "title": "Iraqi bodybuilding champion Sajad Jawad dies days",
             "keywords": [
@@ -1137,37 +1973,6 @@
             ]
         },
         {
-            "arc_id": "f198096b-cbc6-4fe1-83ed-e3d0c507b6f3",
-            "title": "Procter & Gamble to Increase Factory Shifts",
-            "keywords": [
-                "cost",
-                "cut",
-                "factori",
-                "gambl",
-                "human",
-                "increas",
-                "procter",
-                "shift",
-                "without"
-            ],
-            "entity_signature": "costs:cut:north america regional stakeholders",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-22T10:46:32.429362+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Procter & Gamble to Increase Factory Shifts Without Humans to Cut Costs"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
             "arc_id": "30bc959c-f859-46c5-906e-19f2a3f3e0f7",
             "title": "Rather Than Sell Their House, They Became",
             "keywords": [
@@ -1193,38 +1998,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "69940c5a-191d-432c-8d98-f8a3ca2162af",
-            "title": "India needs 15-fold rise in financial assets to",
-            "keywords": [
-                "asset",
-                "back",
-                "cii",
-                "economi",
-                "financial",
-                "fold",
-                "india",
-                "need",
-                "ris",
-                "trillion"
-            ],
-            "entity_signature": "IN:$26.5 trillion economy:back:climate",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-22T10:46:32.429362+00:00",
-            "last_seen": "2026-11-22T10:46:32.429362+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "India needs 15-fold rise in financial assets to back $26.5 trillion economy by 2047: CII"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "HT Business"
             ]
         },
         {
@@ -2392,769 +3165,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "e55ca63a-331b-4322-badc-098fb36701d0",
-            "title": "Killer robots: U.N. talks fall short of hopes for",
-            "keywords": [
-                "bind",
-                "fall",
-                "hop",
-                "killer",
-                "legalli",
-                "robot",
-                "rul",
-                "short",
-                "talk"
-            ],
-            "entity_signature": "CH:ch:diplomacy:geopolitics",
-            "category": "National",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T22:49:53.215579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Killer robots: U.N. talks fall short of hopes for legally binding rules"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "6348e9e2-907b-4967-bbe5-06472794ae8c",
-            "title": "Federal jury convicts man of starting the deadly",
-            "keywords": [
-                "angel",
-                "convict",
-                "deadli",
-                "federal",
-                "fir",
-                "juri",
-                "los",
-                "man",
-                "palisad",
-                "start"
-            ],
-            "entity_signature": "federal jury convicts man of starting the deadly 2025 palisades:fire:judicial & investigative bodies",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T22:49:53.215579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "24dd146a-1a41-457b-b7ce-34400ec30d9c",
-            "title": "Jailed MP Amritpal Singh's party says his visit",
-            "keywords": [
-                "ahead",
-                "amritpal",
-                "boost",
-                "campaign",
-                "get",
-                "hop",
-                "jail",
-                "parol",
-                "parti",
-                "poll"
-            ],
-            "entity_signature": "conflict:india regional stakeholders:jailed mp amritpal singh's party says his visit boost ahead of punjab polls, hopes he gets parole for campaigning",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T22:49:53.215579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Jailed MP Amritpal Singh's party says his visit boost ahead of Punjab polls, hopes he gets parole for campaigning"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "8c3a547f-a32a-4c4e-847c-58c662f48784",
-            "title": "Amid cold wave, students' indefinite strike",
-            "keywords": [
-                "amid",
-                "board",
-                "cold",
-                "gather",
-                "indefinit",
-                "recruit",
-                "scam",
-                "steam",
-                "strik",
-                "student"
-            ],
-            "entity_signature": "amid cold wave, students' indefinite:conflict:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T22:49:53.215579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Amid cold wave, students' indefinite strike against J&K recruitment board scam gathers steam"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "728a3186-5bf8-4ecb-a265-1ab95b76aaad",
-            "title": "Mexico captures top drug lord 'El Chapo Isidro,'",
-            "keywords": [
-                "arrest",
-                "captur",
-                "chapo",
-                "drug",
-                "isidro",
-                "latest",
-                "lord",
-                "mexico",
-                "str",
-                "top"
-            ],
-            "entity_signature": "MX:arrests:health:mexico",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-21T22:49:53.215579+00:00",
-            "last_seen": "2026-11-21T22:49:53.215579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Mexico captures top drug lord 'El Chapo Isidro,' latest in string of arrests"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "403935f3-8c7c-4de0-b0da-d6a56d94b128",
-            "title": "Former Italian police chief De Gennaro takes own",
-            "keywords": [
-                "amid",
-                "chief",
-                "former",
-                "gennaro",
-                "italian",
-                "lif",
-                "mafia",
-                "polic",
-                "prob",
-                "tak"
-            ],
-            "entity_signature": "IT:collective_faction:former italian police:former italian police chief de gennaro takes own life amid mafia",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-21T22:49:53.215579+00:00",
-            "last_seen": "2026-11-21T22:49:53.215579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Former Italian police chief De Gennaro takes own life amid mafia probe"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "c4ff482f-b4c8-41ab-bc2f-fe2bde6a93c6",
-            "title": "Impunity fuels surge in settler violence across",
-            "keywords": [
-                "across",
-                "bank",
-                "fuel",
-                "impun",
-                "occupi",
-                "settler",
-                "surg",
-                "violenc",
-                "west"
-            ],
-            "entity_signature": "PS:economy:impunity fuels:palestine",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-21T22:49:53.215579+00:00",
-            "last_seen": "2026-11-21T22:49:53.215579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Impunity fuels surge in settler violence across occupied West Bank"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "d44bd0dc-7867-4eab-8ae7-959d99ab263a",
-            "title": "Indian man jailed over plot to kill Sikh",
-            "keywords": [
-                "indian",
-                "jail",
-                "kill",
-                "man",
-                "plot",
-                "separatist",
-                "sikh"
-            ],
-            "entity_signature": "IN:US:collective_faction:in:india",
-            "category": "World",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-21T22:49:53.215579+00:00",
-            "last_seen": "2026-11-21T22:49:53.215579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Indian man jailed over plot to kill Sikh separatist in US"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "9c4358fa-6421-471b-8a41-176151a0236b",
-            "title": "Iran says held talks with Qatari mediators, urges",
-            "keywords": [
-                "accept",
-                "condi",
-                "held",
-                "iran",
-                "mediator",
-                "qatari",
-                "talk"
-            ],
-            "entity_signature": "IR:US:diplomacy:diplomatic envoys:diplomatic envoys (mediators)",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-21T22:49:53.215579+00:00",
-            "last_seen": "2026-11-21T22:49:53.215579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Iran says held talks with Qatari mediators, urges US to accept conditions"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "be8042cb-eb21-48ab-bef3-9392b8c75aab",
-            "title": "Vasan urges political parties to fight for",
-            "keywords": [
-                "cauveri",
-                "fight",
-                "parti",
-                "political",
-                "right",
-                "vasan",
-                "water"
-            ],
-            "entity_signature": "india regional stakeholders:political parties:syntactic_subject",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-21T22:49:53.215579+00:00",
-            "last_seen": "2026-11-21T22:49:53.215579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Vasan urges political parties to fight for Cauvery water rights"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "16df113b-8d8c-4f2b-9ff1-fb93f1046586",
-            "title": "'India not a rogue state': Wangchuk slams",
-            "keywords": [
-                "administra",
-                "arrest",
-                "court",
-                "deploy",
-                "hom",
-                "hous",
-                "india",
-                "outsid",
-                "plea",
-                "polic"
-            ],
-            "entity_signature": "IN:, says police deployment outside home withdrawn:arrest:collective_faction",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-21T22:49:53.215579+00:00",
-            "last_seen": "2026-11-21T22:49:53.215579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'India not a rogue state': Wangchuk slams administration over 'house arrest', says police deployment outside home withdrawn after court plea"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "29d846d3-2ed3-4ec1-b4ed-8531960deaf8",
-            "title": "Gaza: Israel launched new offensive on Nuseirat",
-            "keywords": [
-                "gaza",
-                "israel",
-                "launch",
-                "new",
-                "nuseirat",
-                "offensiv"
-            ],
-            "entity_signature": "IL:PS:civilians & impacted communities:civilians & impacted communities (refugee):geopolitics",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-19T16:20:44.688783+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Gaza: Israel launched new offensive on Nuseirat",
-                "Jerusalem Daily: Israel launches ground offensive in Gaza"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Al Jazeera",
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "10e716ca-0041-4da5-bd21-53a12104acc8",
-            "title": "Experts warn: nearly everyone in AI is",
-            "keywords": [
-                "ai",
-                "everyon",
-                "expert",
-                "honey",
-                "nearli",
-                "now",
-                "right",
-                "schem",
-                "susceptibl",
-                "trap"
-            ],
-            "entity_signature": "experts:north america regional stakeholders:syntactic_subject",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Experts warn: nearly everyone in AI is susceptible to a honey trap scheme right now"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "7cda1134-9f75-4749-8a27-0fe39f543451",
-            "title": "Daniel Ek backs AI researcher's fusion power",
-            "keywords": [
-                "ai",
-                "back",
-                "build",
-                "daniel",
-                "fusion",
-                "power",
-                "researcher",
-                "startup"
-            ],
-            "entity_signature": "ai researcher's fusion power startup. here's what they're building.:backs:backs ai researcher",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Daniel Ek backs AI researcher's fusion power startup. Here's what they're building."
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "08c2154e-e764-44b0-bb23-8ea1d099957f",
-            "title": "Startup sues Apple in India over tap-to-share",
-            "keywords": [
-                "appl",
-                "contact",
-                "featur",
-                "india",
-                "shar",
-                "startup",
-                "sue",
-                "tap"
-            ],
-            "entity_signature": "IN:US:apple:in:india",
-            "category": "Tech",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-21T10:41:13.079469+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Startup sues Apple in India over tap-to-share contacts feature"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "TechCrunch"
-            ]
-        },
-        {
-            "arc_id": "76b2eb7d-4083-4447-864d-8826836ef01c",
-            "title": "NATO will defend every inch of Polish territory",
-            "keywords": [
-                "defend",
-                "everi",
-                "inch",
-                "nato",
-                "polish",
-                "rutt",
-                "territori"
-            ],
-            "entity_signature": "PL:Mark:Mark Rutte:geopolitics:leader",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "NATO will defend every inch of Polish territory, Rutte says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "f0e9013e-28f3-40de-9d34-389a2df4dcfd",
-            "title": "Canada defense minister says no shift in US",
-            "keywords": [
-                "canada",
-                "defens",
-                "militari",
-                "minister",
-                "shift",
-                "tie"
-            ],
-            "entity_signature": "CA:US:ca:canada:canada defense minister says no shift in us military ties",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Canada defense minister says no shift in US military ties"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "78e2587a-2588-489b-8f71-79d9262bd71c",
-            "title": "Israeli strike kills three in vehicle",
-            "keywords": [
-                "aid",
-                "distribut",
-                "gaza",
-                "israeli",
-                "kill",
-                "say",
-                "strik",
-                "three",
-                "vehicl",
-                "wit"
-            ],
-            "entity_signature": "IL:PS:conflict:il:israel",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Israeli strike kills three in vehicle distributing aid in Gaza, witnesses say"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "80cf3d10-3639-428c-8120-1bdfcbfbcfe4",
-            "title": "Hong Kong pledges extra US$20m to AIIB special",
-            "keywords": [
-                "20m",
-                "aiib",
-                "bank",
-                "citi",
-                "extra",
-                "fund",
-                "hong",
-                "kong",
-                "offic",
-                "pledg"
-            ],
-            "entity_signature": "US:diplomacy:extra us$20m:hong kong",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Hong Kong pledges extra US$20m to AIIB special fund as bank sets up city office"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "428946a4-eeac-4e60-bba0-b70bc7afb314",
-            "title": "Indonesia, EU sign 'ambitious' trade deal",
-            "keywords": [
-                "ambitiou",
-                "deal",
-                "indonesia",
-                "sign",
-                "trad"
-            ],
-            "entity_signature": "BE:EU:ID:ambitious' trade deal:be",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Indonesia, EU sign 'ambitious' trade deal"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "09b3fc64-dbfb-44fd-82d1-883519fa7419",
-            "title": "Russian strike kills two, wounds 60, in",
-            "keywords": [
-                "hometown",
-                "kill",
-                "russian",
-                "strik",
-                "two",
-                "wound",
-                "zelenskyi"
-            ],
-            "entity_signature": "PL:RU:US:Volodymyr:Volodymyr Zelenskyy",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Russian strike kills two, wounds 60, in Zelenskyy's hometown"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "6b7e522c-c18b-4b9e-8791-9636bfd74e7c",
-            "title": "U.N. Fails to Regulate Lethal Autonomous Weapons",
-            "keywords": [
-                "autonomou",
-                "fail",
-                "lethal",
-                "plan",
-                "regulat",
-                "try",
-                "weapon"
-            ],
-            "entity_signature": "RU:US:geopolitics:legislation:military",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "U.N. Fails to Regulate Lethal Autonomous Weapons, but Plans to Try Again"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "6577ed07-a1ad-4181-bfbf-89d2dfa6d0a2",
-            "title": "Odisha government orders inquiry into foreign",
-            "keywords": [
-                "aid",
-                "foreign",
-                "former",
-                "govern",
-                "inquiri",
-                "naveen",
-                "odisha",
-                "order",
-                "pandian",
-                "patnaik"
-            ],
-            "entity_signature": "IT:JP:activists:civic activists / protesters:civic activists / protesters (activists)",
-            "category": "National",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Odisha government orders inquiry into foreign visits by former CM Naveen Patnaik, aide Pandian"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "783a100c-b05b-4c29-8355-528318690f88",
-            "title": "'China working to suppress India's rise, backed",
-            "keywords": [
-                "back",
-                "china",
-                "india",
-                "opera",
-                "pakistan",
-                "panel",
-                "report",
-                "ris",
-                "sindoor",
-                "suppress"
-            ],
-            "entity_signature": "CN:IN:PK:backed:china",
-            "category": "National",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'China working to suppress India's rise, backed Pakistan after Operation Sindoor': US panel's report"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "43dfbf7a-22a7-4996-b9e6-228026fbb79c",
-            "title": "Boy,11, electrocuted while playing hide-and-seek",
-            "keywords": [
-                "boy",
-                "delhi",
-                "electrocut",
-                "fil",
-                "fir",
-                "hid",
-                "play",
-                "seek"
-            ],
-            "entity_signature": "boy,11, electrocuted while playing hide-and-:delhi, fir filed:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-21T17:53:00.717170+00:00",
-            "last_seen": "2026-11-21T17:53:00.717170+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Boy,11, electrocuted while playing hide-and-seek in Delhi, FIR filed"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Indian Express"
             ]
         }
     ],
