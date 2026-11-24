@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-24T15:07:19.000973+00:00",
+    "last_updated": "2026-11-24T23:59:51.935793+00:00",
     "arcs": [
         {
             "arc_id": "d9a388cf-db33-476b-8622-61bc79e2b246",
@@ -19,8 +19,8 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
-            "chapter_count": 48,
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 50,
             "chapter_titles": [
                 "Rubio Warned Officials About Nvidia Chief's Entanglement With Chinese Spy",
                 "Nvidia is investigating Jensen Huang's relationship with a Chinese spy",
@@ -69,7 +69,9 @@
                 "A timeline of Jensen Huang's affair scandal, from quitting Nvidia to his return",
                 "What Jensen Huang's return teaches China's Xi about Trump",
                 "How Jensen Huang's Nvidia return could deepen US rift over China chip curbs",
-                "From Chinese Factory Town to the Nvidia Scandal: The Rise of Alice Huang"
+                "From Chinese Factory Town to the Nvidia Scandal: The Rise of Alice Huang",
+                "Jensen Huang's return to Nvidia is elite impunity | Moira Donegan",
+                "For China, Jensen Huang's Return to Nvidia Is a Mixed Blessing"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
@@ -104,7 +106,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
             "chapter_count": 24,
             "chapter_titles": [
                 "What we know about the latest Russian missile strikes on Ukraine",
@@ -164,7 +166,7 @@
                 "North America"
             ],
             "first_seen": "2026-11-23T18:36:49.785998+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
             "chapter_count": 7,
             "chapter_titles": [
                 "Jensen Huang Is Back as Nvidia CEO With the US Government's Blessing",
@@ -204,7 +206,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-23T18:36:49.785998+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
             "chapter_count": 5,
             "chapter_titles": [
                 "Israeli strikes kill at least three, including UNRWA worker, in Gaza",
@@ -220,6 +222,1236 @@
                 "BBC Middle East",
                 "France 24",
                 "SCMP"
+            ]
+        },
+        {
+            "arc_id": "c4bbcef4-c0b3-478f-af64-23d920be18a3",
+            "title": "Palestinian woman, 72, shot dead by Israeli",
+            "keywords": [
+                "bank",
+                "dead",
+                "health",
+                "israeli",
+                "ministri",
+                "palestinian",
+                "settler",
+                "shot",
+                "west",
+                "woman"
+            ],
+            "entity_signature": "IL:PS:collective_faction:conflict:dead",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-17T18:18:36.087370+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says",
+                "Israel investigates West Bank fires blamed on Israeli settlers",
+                "Israel investigates West Bank fires"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Middle East",
+                "France 24",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "38add99c-5eee-48d3-9716-91a058536fd7",
+            "title": "Nato vows space defence after Russia nuclear",
+            "keywords": [
+                "defenc",
+                "nato",
+                "nuclear",
+                "report",
+                "russia",
+                "satellit",
+                "spac"
+            ],
+            "entity_signature": "DE:RU:Mark:Mark Rutte:de",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-23T18:36:49.785998+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 3,
+            "chapter_titles": [
+                "Nato vows space defence after Russia nuclear satellite report",
+                "Nato chief vows defence against space threat after Russian nuclear satellite reports",
+                "Russian nuclear satellites plan 'foolhardy', expert says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Europe",
+                "France 24",
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "83edc48f-f7b6-4e68-9781-ffcc9e491818",
+            "title": "West Bank attacks: Opposition leader Eisenkot",
+            "keywords": [
+                "attack",
+                "bank",
+                "decri",
+                "eisenkot",
+                "jewish",
+                "leader",
+                "opposi",
+                "terrorism",
+                "west"
+            ],
+            "entity_signature": "IL:PS:attacks:il:israel",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-22T18:15:11.150555+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "West Bank attacks: Opposition leader Eisenkot decries \"Jewish terrorism\"",
+                "Israel's Eisenkot slams 'Jewish terrorism' after attacks by settlers in West Bank"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "4ce85710-3349-4911-9e82-605b8b7e505b",
+            "title": "A.I.-Powered Fake Personas Target Taiwan's",
+            "keywords": [
+                "elec",
+                "fak",
+                "persona",
+                "power",
+                "taiwan",
+                "target"
+            ],
+            "entity_signature": "CN:TW:a.i.-powered fake personas:china:cn",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-23T18:36:49.785998+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "A.I.-Powered Fake Personas Target Taiwan's Elections",
+                "Fake Personas Aligned With China Are Targeting Taiwan's Election, Researchers Say"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "699a5f62-371a-45a9-81e9-3e3012744e8f",
+            "title": "Nuclear test veterans will get full truth, says",
+            "keywords": [
+                "burnham",
+                "confirm",
+                "full",
+                "get",
+                "independent",
+                "nuclear",
+                "panel",
+                "test",
+                "truth",
+                "veteran"
+            ],
+            "entity_signature": "UK:conflict:geopolitics:nuclear",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Nuclear test veterans will get full truth, says Burnham, as he confirms independent panel",
+                "Nuclear test veterans speak to BBC about search for justice"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "50ac7780-7a40-4015-b270-3395b03463d5",
+            "title": "Race to replant five South African baobabs after",
+            "keywords": [
+                "african",
+                "baobab",
+                "block",
+                "export",
+                "fiv",
+                "rac",
+                "replant",
+                "south"
+            ],
+            "entity_signature": "ZA:blocked:race to replant five south african baobabs after export:south africa",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-19T16:20:44.688783+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Race to replant five South African baobabs after export blocked"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "7079f382-ea2f-4632-897e-722e27873677",
+            "title": "Israeli attacks have turned Gaza into 'toxic",
+            "keywords": [
+                "attack",
+                "gaza",
+                "israeli",
+                "oxfam",
+                "toxic",
+                "turn",
+                "wasteland"
+            ],
+            "entity_signature": "IL:PS:attacks:have turned gaza:il",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-23T18:36:49.785998+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Israeli attacks have turned Gaza into 'toxic wasteland', Oxfam says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "BBC Middle East",
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "21ed262b-ec6d-4fc1-b3bb-e8859d9709d2",
+            "title": "Zelensky urges four-way peace talks with Russia",
+            "keywords": [
+                "europ",
+                "four",
+                "peac",
+                "possibl",
+                "russia",
+                "soon",
+                "talk",
+                "way",
+                "zelenski"
+            ],
+            "entity_signature": "EU:RU:UA:Volodymyr:Volodymyr Zelenskyy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-24T04:11:33.891104+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Zelensky urges four-way peace talks with Russia, Europe and US 'as soon as possible'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "cba0e171-9e6c-4a69-8241-84710b6c7a03",
+            "title": "Death Toll From Indonesia Factory Fire Rises to",
+            "keywords": [
+                "death",
+                "dozen",
+                "factori",
+                "fir",
+                "indonesia",
+                "ris",
+                "toll",
+                "unaccount"
+            ],
+            "entity_signature": "ID:death toll from indonesia factory:fire:id",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-24T15:07:18.598971+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Death Toll From Indonesia Factory Fire Rises to 26 With Dozens Unaccounted for"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "2c406abb-1e2f-4627-af49-877ce02ddbe4",
+            "title": "Bangladesh's ex-PM Sheikh Hasina says she plans",
+            "keywords": [
+                "bangladesh",
+                "december",
+                "hasina",
+                "plan",
+                "return",
+                "sheikh"
+            ],
+            "entity_signature": "BD:bangladesh:bangladesh sovereign authorities:bangladesh's ex-pm sheikh hasina says she plans to return on 16 december",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-24T15:07:18.598971+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Bangladesh's ex-PM Sheikh Hasina says she plans to return on 16 December"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "1776ddd2-36df-4906-a8ec-3be1742c3fc2",
+            "title": "China Investigates Chen Jining, Shanghai's Party",
+            "keywords": [
+                "chen",
+                "china",
+                "expand",
+                "investigat",
+                "jin",
+                "leader",
+                "parti",
+                "purg",
+                "shanghai"
+            ],
+            "entity_signature": "CN:Jinping:Xi Jinping:chen jining, shanghai's party leader, as xi's purges expand:china",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-24T15:07:18.598971+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "China Investigates Chen Jining, Shanghai's Party Leader, as Xi's Purges Expand"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.7,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "e7b40155-8f2a-49da-88df-1c71a66b1315",
+            "title": "'Produce a good result by any means': how AI is",
+            "keywords": [
+                "ai",
+                "exam",
+                "good",
+                "korea",
+                "mean",
+                "obsession",
+                "produc",
+                "result",
+                "south",
+                "test"
+            ],
+            "entity_signature": "KR:how ai:kr:legislation",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-24T15:07:18.598971+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'Produce a good result by any means': how AI is testing South Korea's exam obsession"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "f0fa91ca-4040-409a-8bc3-c62a14e21db6",
+            "title": "'I cried for hours after losing UK university",
+            "keywords": [
+                "cri",
+                "los",
+                "plac",
+                "univers"
+            ],
+            "entity_signature": "UK:i cried for hours after:losing:sovereign_stakeholder",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-24T15:07:18.598971+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "'I cried for hours after losing UK university place'"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "7a94b813-20f2-421c-96a8-3fb903b8715e",
+            "title": "Pope Francis' diary reveals claims he saw the",
+            "keywords": [
+                "devil",
+                "diari",
+                "franci",
+                "pop",
+                "reveal",
+                "saw",
+                "three",
+                "tim"
+            ],
+            "entity_signature": "claims he saw the devil three times:europe regional stakeholders:pope francis' diary",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-24T15:07:18.598971+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Pope Francis' diary reveals claims he saw the devil three times"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "8a2b5f24-81e7-4506-8ab4-5ef0c3ac237d",
+            "title": "Audi India to hike vehicle prices by 2% in second",
+            "keywords": [
+                "audi",
+                "effectiv",
+                "hik",
+                "india",
+                "jan",
+                "new",
+                "pric",
+                "revision",
+                "second",
+                "vehicl"
+            ],
+            "entity_signature": "IN:audi india:hike:in",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-24T15:07:18.598971+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Audi India to hike vehicle prices by 2% in second revision this year, new prices effective from Jan 1, 2027"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "ce177f8b-5890-4b08-8139-efada8b2165f",
+            "title": "More than 300 Russians killed as Moscow props up",
+            "keywords": [
+                "data",
+                "junta",
+                "kill",
+                "leak",
+                "mali",
+                "moscow",
+                "prop",
+                "reveal",
+                "russian"
+            ],
+            "entity_signature": "RU:as moscow props up mali's junta, leaked data reveals:collective_faction:conflict",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "More than 300 Russians killed as Moscow props up Mali's junta, leaked data reveals"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "48c80a37-5d15-4c0a-8af8-2a1f61427e64",
+            "title": "Thomas Markle indicted by federal grand jury in",
+            "keywords": [
+                "abus",
+                "child",
+                "federal",
+                "grand",
+                "imag",
+                "indict",
+                "juri",
+                "markl",
+                "possess",
+                "sex"
+            ],
+            "entity_signature": "US:by federal grand jury:collective_faction:fbi",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Thomas Markle indicted by federal grand jury in US for possessing child sex abuse images"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "a6acffc9-ece7-4740-934e-11d81783422a",
+            "title": "US CIA, ODNI suffer cybersecurity breach of some",
+            "keywords": [
+                "breach",
+                "cia",
+                "cybersecur",
+                "informa",
+                "odni",
+                "sourc",
+                "suffer",
+                "unclassifi"
+            ],
+            "entity_signature": "US:cia:sovereign_stakeholder:united states",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US CIA, ODNI suffer cybersecurity breach of some unclassified information, source says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "0d217a46-4219-458e-8f52-cc16a846cb8f",
+            "title": "Back-to-back measles deaths is our new reality",
+            "keywords": [
+                "back",
+                "death",
+                "measl",
+                "new",
+                "now",
+                "real",
+                "talli"
+            ],
+            "entity_signature": "US:-to-back measles deaths is our new reality:back:sovereign_stakeholder",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Back-to-back measles deaths is our new reality; US tally now at 14"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Ars Technica"
+            ]
+        },
+        {
+            "arc_id": "c292e9c0-2d0a-49b7-a55c-5eb813e6bab1",
+            "title": "US soldier Jian Zhao admits selling military",
+            "keywords": [
+                "admit",
+                "buyer",
+                "chines",
+                "informa",
+                "jian",
+                "militari",
+                "sell",
+                "soldier",
+                "zhao"
+            ],
+            "entity_signature": "CN:US:china:cn:collective_faction",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US soldier Jian Zhao admits selling military information to Chinese buyers"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "fc0af9a0-0caf-4178-a2c8-a5bd167f1cef",
+            "title": "Nvidia's Jensen Huang says he is in therapy, as",
+            "keywords": [
+                "comeback",
+                "fad",
+                "huang",
+                "jensen",
+                "nvidia",
+                "ralli",
+                "therapi"
+            ],
+            "entity_signature": "Huang:Jensen:asia-pacific regional stakeholders:economy:leader",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Nvidia's Jensen Huang says he is in therapy, as comeback rally fades"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "84d430ea-d278-45b2-a9fb-a3ba0b51acb0",
+            "title": "Why Asia's AI rally faces a tougher road even",
+            "keywords": [
+                "ai",
+                "asia",
+                "comeback",
+                "even",
+                "fac",
+                "huang",
+                "jensen",
+                "ralli",
+                "road",
+                "tougher"
+            ],
+            "entity_signature": "US:Huang:Jensen:analysts:economics",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Why Asia's AI rally faces a tougher road even after Jensen Huang's comeback"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "83e95444-2acd-4732-857d-2c7767569478",
+            "title": "Indian government has 'lost the plot', says",
+            "keywords": [
+                "barr",
+                "cockroach",
+                "flight",
+                "govern",
+                "indian",
+                "leader",
+                "lost",
+                "plot"
+            ],
+            "entity_signature": "IN:UK:in:india:indian government has",
+            "category": "World",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Indian government has 'lost the plot', says 'cockroach' leader barred from UK flight"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "e8a2c8cc-65fa-4c8e-b16b-0d2ddbc3bcd9",
+            "title": "French ex-President Sarkozy and wife Carla Bruni",
+            "keywords": [
+                "bruni",
+                "carla",
+                "fac",
+                "french",
+                "president",
+                "sarkozi",
+                "trial",
+                "wif"
+            ],
+            "entity_signature": "FR:face:fr:france",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "French ex-President Sarkozy and wife Carla Bruni to face trial"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "33b17419-51d4-453c-87b0-9d4d0f78cbb7",
+            "title": "Putin says Ukraine still hits Russian oil plants",
+            "keywords": [
+                "despit",
+                "hit",
+                "oil",
+                "plant",
+                "putin",
+                "request",
+                "russian",
+                "still",
+                "stop",
+                "trump"
+            ],
+            "entity_signature": "RU:UA:US:Donald:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Putin says Ukraine still hits Russian oil plants despite Trump's requests to stop"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "23a02dcf-0556-4bae-8768-5cee2e89b464",
+            "title": "Yemen's army says Houthi fighters closing in on",
+            "keywords": [
+                "aden",
+                "armi",
+                "clos",
+                "fighter",
+                "govern",
+                "houthi",
+                "stronghold",
+                "yemen"
+            ],
+            "entity_signature": "army:army says houthi fighters:collective_faction",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Yemen's army says Houthi fighters closing in on government stronghold of Aden"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "afcfda19-de26-434e-ac8b-af28869d65f2",
+            "title": "Colombian president blames ex-FARC rebels for car",
+            "keywords": [
+                "blam",
+                "blast",
+                "bomb",
+                "car",
+                "colombian",
+                "farc",
+                "president",
+                "rebel"
+            ],
+            "entity_signature": "CO:blames ex-farc rebels:blast:bomb",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Colombian president blames ex-FARC rebels for car bomb blast"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "62dff26d-58c1-4e4a-8664-4e60d8357b23",
+            "title": "Jensen Huang still thinks a succession plan",
+            "keywords": [
+                "creat",
+                "hierarchi",
+                "huang",
+                "jensen",
+                "plan",
+                "still",
+                "succession",
+                "think",
+                "unnecessari"
+            ],
+            "entity_signature": "Huang:Jensen:creates:jensen huang thinks a succession plan:leader",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Jensen Huang still thinks a succession plan creates unnecessary hierarchy"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "e8d539e8-5086-44de-a8b5-8b68c202fd04",
+            "title": "The U.S. government is investigating Iranian ties",
+            "keywords": [
+                "commercial",
+                "govern",
+                "hack",
+                "investigat",
+                "iranian",
+                "mani",
+                "tie",
+                "vessel"
+            ],
+            "entity_signature": "IR:US:conflict:geopolitics:investigating",
+            "category": "National",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "The U.S. government is investigating Iranian ties to as many as 50 hacked commercial vessels"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "NPR News"
+            ]
+        },
+        {
+            "arc_id": "d2732661-c324-4358-9e8b-ec0a3d18afe6",
+            "title": "In all-hands meeting, Jensen Huang thanks White",
+            "keywords": [
+                "hand",
+                "hous",
+                "huang",
+                "jensen",
+                "meet",
+                "thank",
+                "therapi",
+                "whit"
+            ],
+            "entity_signature": "Huang:Jensen:, jensen huang thanks white house and says he's:in all-hands:leader",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "In all-hands meeting, Jensen Huang thanks White House and says he's in therapy"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "0855bada-d148-4abe-915b-8647cc8f411a",
+            "title": "Houthi Attack on Skyscraper in Saudi Capital",
+            "keywords": [
+                "attack",
+                "capital",
+                "houthi",
+                "official",
+                "saudi",
+                "say",
+                "skyscraper",
+                "wound"
+            ],
+            "entity_signature": "IR:SA:attack:collective_faction:conflict",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Houthi Attack on Skyscraper in Saudi Capital Wounds 11, Officials Say"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "7154c11d-dc2f-43ab-9b4b-57477fc3c979",
+            "title": "Maple raises $5.3M to build AI products that",
+            "keywords": [
+                "ai",
+                "build",
+                "data",
+                "even",
+                "mapl",
+                "product",
+                "protect",
+                "rais"
+            ],
+            "entity_signature": "$5.3m:maple:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Maple raises $5.3M to build AI products that protect your data, even from itself"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "TechCrunch"
+            ]
+        },
+        {
+            "arc_id": "6872cf8e-3439-4901-94f5-4fe0e0ad87ea",
+            "title": "Murder Charge Reinstated for French Police",
+            "keywords": [
+                "charg",
+                "french",
+                "murder",
+                "officer",
+                "polic",
+                "reinstat",
+                "shoot",
+                "teen"
+            ],
+            "entity_signature": "FR:collective_faction:for french police:fr",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Murder Charge Reinstated for French Police Officer in Teen's Shooting"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "New York Times"
+            ]
+        },
+        {
+            "arc_id": "84fc41a2-0334-49e1-81a3-748e3b0ad102",
+            "title": "Meity revises 'Made in India' rules for govt IT",
+            "keywords": [
+                "govt",
+                "hardwar",
+                "india",
+                "mad",
+                "meiti",
+                "purchas",
+                "revis",
+                "rul"
+            ],
+            "entity_signature": "IN:govt it hardware purchases:in:india",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Meity revises 'Made in India' rules for govt IT hardware purchases"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "bbab30d2-3b73-4009-8563-f1068dbb6b76",
+            "title": "Tesla merger could make Elon Musk's SpaceX",
+            "keywords": [
+                "buy",
+                "eligibl",
+                "elon",
+                "mak",
+                "merger",
+                "morgan",
+                "musk",
+                "passiv",
+                "spacex",
+                "tesla"
+            ],
+            "entity_signature": "Elon:Elon Musk:buying:india regional stakeholders:leader",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Tesla merger could make Elon Musk's SpaceX eligible for S&P 500, trigger passive buying: JP Morgan"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "bcc69a4d-cdb5-4572-96d9-858d81bce473",
+            "title": "SP releases first list of 5 candidates for UP",
+            "keywords": [
+                "amid",
+                "assembli",
+                "candidat",
+                "first",
+                "list",
+                "poll",
+                "releas",
+                "seat",
+                "shar",
+                "talk"
+            ],
+            "entity_signature": "diplomacy:first list of 5 candidates:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "SP releases first list of 5 candidates for UP Assembly polls amid seat-sharing talks"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "7598f979-1259-43ad-9067-1075d1db37f9",
+            "title": "Under Nishant's leadership, the future of the",
+            "keywords": [
+                "bright",
+                "futur",
+                "jha",
+                "leadership",
+                "nishant",
+                "parti",
+                "remain",
+                "sanjay"
+            ],
+            "entity_signature": "india regional stakeholders:sovereign_stakeholder:under nishant's leadership, the future of the party remains bright for next 30 years, says sanjay jha",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Under Nishant's leadership, the future of the party remains bright for next 30 years, says Sanjay Jha"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "1eae1cca-15f8-4844-abdf-93496fb1cc3b",
+            "title": "Bengal film fraternity members meet CM Suvendu",
+            "keywords": [
+                "adhikari",
+                "bengal",
+                "bengali",
+                "demand",
+                "film",
+                "fratern",
+                "meet",
+                "member",
+                "screen",
+                "suvendu"
+            ],
+            "entity_signature": "bengal film fraternity members:cm suvendu adhikari:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Bengal film fraternity members meet CM Suvendu Adhikari; demand more Bengali film screening"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "ad4bf463-1362-470e-9e68-7bf3570f8cfa",
+            "title": "Court rejects PG operator's bail in Satya Niketan",
+            "keywords": [
+                "bail",
+                "build",
+                "cas",
+                "collaps",
+                "court",
+                "liv",
+                "niketan",
+                "operator",
+                "profit",
+                "put"
+            ],
+            "entity_signature": "collective_faction:court:crisis",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Court rejects PG operator's bail in Satya Niketan building collapse case, says he put profits above students' lives"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "32dfcd58-3243-4624-b2e5-2308a68d025c",
+            "title": "Indians among 13 killed in UAE bus-truck",
+            "keywords": [
+                "accident",
+                "among",
+                "assistanc",
+                "assur",
+                "bus",
+                "consulat",
+                "indian",
+                "kill",
+                "possibl",
+                "truck"
+            ],
+            "entity_signature": "IN:in:india:indians among 13",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-24T23:59:51.607416+00:00",
+            "last_seen": "2026-11-24T23:59:51.607416+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Indians among 13 killed in UAE bus-truck accident; Indian consulate assures all possible assistance"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Hindustan Times"
             ]
         },
         {
@@ -259,74 +1491,6 @@
             ]
         },
         {
-            "arc_id": "c4bbcef4-c0b3-478f-af64-23d920be18a3",
-            "title": "Palestinian woman, 72, shot dead by Israeli",
-            "keywords": [
-                "bank",
-                "dead",
-                "health",
-                "israeli",
-                "ministri",
-                "palestinian",
-                "settler",
-                "shot",
-                "west",
-                "woman"
-            ],
-            "entity_signature": "IL:PS:collective_faction:conflict:dead",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-17T18:18:36.087370+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says",
-                "Israel investigates West Bank fires blamed on Israeli settlers",
-                "Israel investigates West Bank fires"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Middle East",
-                "France 24",
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "83edc48f-f7b6-4e68-9781-ffcc9e491818",
-            "title": "West Bank attacks: Opposition leader Eisenkot",
-            "keywords": [
-                "attack",
-                "bank",
-                "decri",
-                "eisenkot",
-                "jewish",
-                "leader",
-                "opposi",
-                "terrorism",
-                "west"
-            ],
-            "entity_signature": "IL:PS:attacks:il:israel",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-22T18:15:11.150555+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "West Bank attacks: Opposition leader Eisenkot decries \"Jewish terrorism\"",
-                "Israel's Eisenkot slams 'Jewish terrorism' after attacks by settlers in West Bank"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
             "arc_id": "afa1869e-a241-4ef3-972b-800500007fbb",
             "title": "Why Jensen Huang proved too big to fire",
             "keywords": [
@@ -353,35 +1517,6 @@
             "sources_involved": [
                 "BBC US",
                 "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "4ce85710-3349-4911-9e82-605b8b7e505b",
-            "title": "A.I.-Powered Fake Personas Target Taiwan's",
-            "keywords": [
-                "elec",
-                "fak",
-                "persona",
-                "power",
-                "taiwan",
-                "target"
-            ],
-            "entity_signature": "CN:TW:a.i.-powered fake personas:china:cn",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-23T18:36:49.785998+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "A.I.-Powered Fake Personas Target Taiwan's Elections",
-                "Fake Personas Aligned With China Are Targeting Taiwan's Election, Researchers Say"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "New York Times"
             ]
         },
         {
@@ -446,38 +1581,6 @@
             ]
         },
         {
-            "arc_id": "38add99c-5eee-48d3-9716-91a058536fd7",
-            "title": "Nato vows space defence after Russia nuclear",
-            "keywords": [
-                "defenc",
-                "nato",
-                "nuclear",
-                "report",
-                "russia",
-                "satellit",
-                "spac"
-            ],
-            "entity_signature": "DE:RU:Mark:Mark Rutte:de",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-23T18:36:49.785998+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Nato vows space defence after Russia nuclear satellite report",
-                "Nato chief vows defence against space threat after Russian nuclear satellite reports"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Europe",
-                "France 24",
-                "SCMP"
-            ]
-        },
-        {
             "arc_id": "df92cf52-ad37-4a58-9823-576769465796",
             "title": "Two arrested after break-in at country home of",
             "keywords": [
@@ -512,36 +1615,6 @@
             ]
         },
         {
-            "arc_id": "50ac7780-7a40-4015-b270-3395b03463d5",
-            "title": "Race to replant five South African baobabs after",
-            "keywords": [
-                "african",
-                "baobab",
-                "block",
-                "export",
-                "fiv",
-                "rac",
-                "replant",
-                "south"
-            ],
-            "entity_signature": "ZA:blocked:race to replant five south african baobabs after export:south africa",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-19T16:20:44.688783+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Race to replant five South African baobabs after export blocked"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "f2c5af6b-1260-4cb8-90d5-7801fed7ea6e",
             "title": "Bahrain accuses Iran of striking industrial site",
             "keywords": [
@@ -573,36 +1646,6 @@
             ]
         },
         {
-            "arc_id": "7079f382-ea2f-4632-897e-722e27873677",
-            "title": "Israeli attacks have turned Gaza into 'toxic",
-            "keywords": [
-                "attack",
-                "gaza",
-                "israeli",
-                "oxfam",
-                "toxic",
-                "turn",
-                "wasteland"
-            ],
-            "entity_signature": "IL:PS:attacks:have turned gaza:il",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-23T18:36:49.785998+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Israeli attacks have turned Gaza into 'toxic wasteland', Oxfam says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "BBC Middle East",
-                "BBC News"
-            ]
-        },
-        {
             "arc_id": "701fe87e-0420-4f2f-9ca7-d0e68d9c2327",
             "title": "Flights cancelled in Belgium due to",
             "keywords": [
@@ -629,37 +1672,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "21ed262b-ec6d-4fc1-b3bb-e8859d9709d2",
-            "title": "Zelensky urges four-way peace talks with Russia",
-            "keywords": [
-                "europ",
-                "four",
-                "peac",
-                "possibl",
-                "russia",
-                "soon",
-                "talk",
-                "way",
-                "zelenski"
-            ],
-            "entity_signature": "EU:RU:UA:Volodymyr:Volodymyr Zelenskyy",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-24T04:11:33.891104+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Zelensky urges four-way peace talks with Russia, Europe and US 'as soon as possible'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
             ]
         },
         {
@@ -904,95 +1916,6 @@
             ]
         },
         {
-            "arc_id": "cba0e171-9e6c-4a69-8241-84710b6c7a03",
-            "title": "Death Toll From Indonesia Factory Fire Rises to",
-            "keywords": [
-                "death",
-                "dozen",
-                "factori",
-                "fir",
-                "indonesia",
-                "ris",
-                "toll",
-                "unaccount"
-            ],
-            "entity_signature": "ID:death toll from indonesia factory:fire:id",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-24T15:07:18.598971+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Death Toll From Indonesia Factory Fire Rises to 26 With Dozens Unaccounted for"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
-            "arc_id": "2c406abb-1e2f-4627-af49-877ce02ddbe4",
-            "title": "Bangladesh's ex-PM Sheikh Hasina says she plans",
-            "keywords": [
-                "bangladesh",
-                "december",
-                "hasina",
-                "plan",
-                "return",
-                "sheikh"
-            ],
-            "entity_signature": "BD:bangladesh:bangladesh sovereign authorities:bangladesh's ex-pm sheikh hasina says she plans to return on 16 december",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-24T15:07:18.598971+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Bangladesh's ex-PM Sheikh Hasina says she plans to return on 16 December"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "1776ddd2-36df-4906-a8ec-3be1742c3fc2",
-            "title": "China Investigates Chen Jining, Shanghai's Party",
-            "keywords": [
-                "chen",
-                "china",
-                "expand",
-                "investigat",
-                "jin",
-                "leader",
-                "parti",
-                "purg",
-                "shanghai"
-            ],
-            "entity_signature": "CN:Jinping:Xi Jinping:chen jining, shanghai's party leader, as xi's purges expand:china",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-24T15:07:18.598971+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "China Investigates Chen Jining, Shanghai's Party Leader, as Xi's Purges Expand"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.7,
-            "sources_involved": [
-                "New York Times"
-            ]
-        },
-        {
             "arc_id": "294b187b-0ff9-48ba-a7f5-cad365a8edc1",
             "title": "India's 'cockroach' party leader says he was",
             "keywords": [
@@ -1013,64 +1936,6 @@
             "chapter_count": 1,
             "chapter_titles": [
                 "India's 'cockroach' party leader says he was stopped from flying to UK"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "e7b40155-8f2a-49da-88df-1c71a66b1315",
-            "title": "'Produce a good result by any means': how AI is",
-            "keywords": [
-                "ai",
-                "exam",
-                "good",
-                "korea",
-                "mean",
-                "obsession",
-                "produc",
-                "result",
-                "south",
-                "test"
-            ],
-            "entity_signature": "KR:how ai:kr:legislation",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-24T15:07:18.598971+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'Produce a good result by any means': how AI is testing South Korea's exam obsession"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "f0fa91ca-4040-409a-8bc3-c62a14e21db6",
-            "title": "'I cried for hours after losing UK university",
-            "keywords": [
-                "cri",
-                "los",
-                "plac",
-                "univers"
-            ],
-            "entity_signature": "UK:i cried for hours after:losing:sovereign_stakeholder",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-24T15:07:18.598971+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'I cried for hours after losing UK university place'"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
@@ -1165,36 +2030,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "7a94b813-20f2-421c-96a8-3fb903b8715e",
-            "title": "Pope Francis' diary reveals claims he saw the",
-            "keywords": [
-                "devil",
-                "diari",
-                "franci",
-                "pop",
-                "reveal",
-                "saw",
-                "three",
-                "tim"
-            ],
-            "entity_signature": "claims he saw the devil three times:europe regional stakeholders:pope francis' diary",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-24T15:07:18.598971+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Pope Francis' diary reveals claims he saw the devil three times"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
             ]
         },
         {
@@ -1493,38 +2328,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "8a2b5f24-81e7-4506-8ab4-5ef0c3ac237d",
-            "title": "Audi India to hike vehicle prices by 2% in second",
-            "keywords": [
-                "audi",
-                "effectiv",
-                "hik",
-                "india",
-                "jan",
-                "new",
-                "pric",
-                "revision",
-                "second",
-                "vehicl"
-            ],
-            "entity_signature": "IN:audi india:hike:in",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-24T15:07:18.598971+00:00",
-            "last_seen": "2026-11-24T15:07:18.598971+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Audi India to hike vehicle prices by 2% in second revision this year, new prices effective from Jan 1, 2027"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
             ]
         },
         {
@@ -2343,819 +3146,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "2ee95619-bfd8-4808-aebf-0ed22c5c58c5",
-            "title": "UN chief calls for world to agree on AI oversight",
-            "keywords": [
-                "agree",
-                "ai",
-                "call",
-                "chief",
-                "oversight",
-                "within",
-                "world"
-            ],
-            "entity_signature": "António:António Guterres:agree:ai oversight within a year:antonio guterres",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-24T04:11:33.891104+00:00",
-            "last_seen": "2026-11-24T04:11:33.891104+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "UN chief calls for world to agree on AI oversight within a year"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "be1deda8-2d61-4b6f-b663-4fa49462d449",
-            "title": "Qatar PM looks to revive US-Iran talks after",
-            "keywords": [
-                "iran",
-                "look",
-                "meet",
-                "qatar",
-                "reviv",
-                "rubio",
-                "talk"
-            ],
-            "entity_signature": "IR:US:diplomacy:ir:iran",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-24T04:11:33.891104+00:00",
-            "last_seen": "2026-11-24T04:11:33.891104+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Qatar PM looks to revive US-Iran talks after meeting Rubio"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "7ca5b353-0df7-4798-9b50-41c00961d471",
-            "title": "Appeals court renews Trump bid for federal",
-            "keywords": [
-                "appeal",
-                "bid",
-                "cas",
-                "court",
-                "federal",
-                "hush",
-                "jurisdic",
-                "money",
-                "renew",
-                "trump"
-            ],
-            "entity_signature": "Donald:Donald Trump:appeals court:court:governance",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-24T04:11:33.891104+00:00",
-            "last_seen": "2026-11-24T04:11:33.891104+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Appeals court renews Trump bid for federal jurisdiction in hush-money case"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "b29cf13d-ec01-415b-8827-c0b3b460faf9",
-            "title": "California Democrat Rep. Gomez resigns following",
-            "keywords": [
-                "allega",
-                "california",
-                "democrat",
-                "ethic",
-                "follow",
-                "gomez",
-                "misconduct",
-                "rep",
-                "report",
-                "resign"
-            ],
-            "entity_signature": "california democrat rep. gomez:following ethics report:north america regional stakeholders",
-            "category": "National",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-24T04:11:33.891104+00:00",
-            "last_seen": "2026-11-24T04:11:33.891104+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "California Democrat Rep. Gomez resigns following ethics report on sexual misconduct allegations"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "63fc2bbb-ff5c-438b-8a7c-6b51054dea1d",
-            "title": "Trump Administration Imposes Sanctions on",
-            "keywords": [
-                "administra",
-                "center",
-                "firm",
-                "impos",
-                "megaspe",
-                "nvidia",
-                "sanc",
-                "scandal",
-                "singaporean",
-                "trump"
-            ],
-            "entity_signature": "SG:Donald:Donald Trump:economics:economy",
-            "category": "Business",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-24T04:11:33.891104+00:00",
-            "last_seen": "2026-11-24T04:11:33.891104+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "NYT Business"
-            ]
-        },
-        {
-            "arc_id": "f5333855-66fb-4b72-a6a3-bf8d9a7b76e6",
-            "title": "Ladybird, the first new browser engine in years",
-            "keywords": [
-                "availabl",
-                "browser",
-                "engin",
-                "first",
-                "ladybird",
-                "new",
-                "now",
-                "test"
-            ],
-            "entity_signature": "ladybird, the first new browser engine in years, is available:north america regional stakeholders:sovereign_stakeholder",
-            "category": "Tech",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-24T04:11:33.891104+00:00",
-            "last_seen": "2026-11-24T04:11:33.891104+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Ladybird, the first new browser engine in years, is now available to test"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Verge"
-            ]
-        },
-        {
-            "arc_id": "2b02bdd7-dd60-48bb-bf95-42361d5fe7bb",
-            "title": "Collector files complaint against Kallakurichi",
-            "keywords": [
-                "collector",
-                "complaint",
-                "fil",
-                "kallakurichi",
-                "mla",
-                "tvk"
-            ],
-            "entity_signature": "collector:complaint:files",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-24T04:11:33.891104+00:00",
-            "last_seen": "2026-11-24T04:11:33.891104+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Collector files complaint against Kallakurichi TVK MLA"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "dafaf4be-56e8-4328-969c-84a9208245a9",
-            "title": "Keralam to roll out 'Avalkkoppam' initiative",
-            "keywords": [
-                "avalkkoppam",
-                "cyber",
-                "domestic",
-                "initiativ",
-                "keralam",
-                "roll",
-                "target",
-                "violenc",
-                "women"
-            ],
-            "entity_signature": "india regional stakeholders:keralam to roll out 'avalkkoppam' initiative st domestic, cyber violence:sovereign_stakeholder",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-24T04:11:33.891104+00:00",
-            "last_seen": "2026-11-24T04:11:33.891104+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Keralam to roll out 'Avalkkoppam' initiative against domestic, cyber violence targeting women"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "9210d791-f652-4109-8f81-c4420f52ceac",
-            "title": "Stalin urges Tamil Nadu government to act against",
-            "keywords": [
-                "act",
-                "collector",
-                "govern",
-                "kallakurichi",
-                "messag",
-                "mla",
-                "nadu",
-                "stalin",
-                "tamil",
-                "tvk"
-            ],
-            "entity_signature": "india regional stakeholders:legislation:stalin",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-24T04:11:33.891104+00:00",
-            "last_seen": "2026-11-24T04:11:33.891104+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Stalin urges Tamil Nadu government to act against Kallakurichi TVK MLA over messages to Collector"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "eee4301e-e498-4d21-b1f2-1ffa93dc86ef",
-            "title": "The world's back office aims to become a",
-            "keywords": [
-                "aim",
-                "back",
-                "becom",
-                "deep",
-                "offic",
-                "powerhous",
-                "tech",
-                "world"
-            ],
-            "entity_signature": "back:india regional stakeholders:office aims",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-24T04:11:33.891104+00:00",
-            "last_seen": "2026-11-24T04:11:33.891104+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "The world's back office aims to become a \"deep-tech\" powerhouse"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "ae67290f-957b-486d-94d3-6379f0966e63",
-            "title": "Gopal Ratna Puraskar winner says dairy farming",
-            "keywords": [
-                "dairi",
-                "farm",
-                "gopal",
-                "need",
-                "patienc",
-                "plann",
-                "puraskar",
-                "ratna",
-                "scientific",
-                "winner"
-            ],
-            "entity_signature": "gopal ratna puraskar winner says dairy farming needs patience, scientific planning:india regional stakeholders:sovereign_stakeholder",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-24T04:11:33.891104+00:00",
-            "last_seen": "2026-11-24T04:11:33.891104+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Gopal Ratna Puraskar winner says dairy farming needs patience, scientific planning"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "8355c6c7-10b8-4d54-a0f0-83f77ca93201",
-            "title": "Tata Sons board meeting deferred to Nov 30 after",
-            "keywords": [
-                "board",
-                "concern",
-                "deferr",
-                "meet",
-                "noel",
-                "notic",
-                "nov",
-                "rais",
-                "son",
-                "tata"
-            ],
-            "entity_signature": "deferred:india regional stakeholders:meeting",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-24T04:11:33.891104+00:00",
-            "last_seen": "2026-11-24T04:11:33.891104+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Tata Sons board meeting deferred to Nov 30 after Noel Tata raises notice concerns"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "9f8e5b46-688d-43f6-bcea-f3004e79d00a",
-            "title": "Four children killed, 24 injured as truck rams",
-            "keywords": [
-                "agra",
-                "bus",
-                "children",
-                "expressway",
-                "four",
-                "injur",
-                "kill",
-                "lucknow",
-                "ram",
-                "school"
-            ],
-            "entity_signature": ", 24 injured as truck rams school bus:children:civilians & impacted communities",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-24T04:11:33.891104+00:00",
-            "last_seen": "2026-11-24T04:11:33.891104+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Four children killed, 24 injured as truck rams school bus on UP's Agra-Lucknow expressway"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "ad245b9f-4d70-45ae-87ca-728f29c1ab4d",
-            "title": "Google rejects rumours of 'huge layoffs' in",
-            "keywords": [
-                "eliminat",
-                "googl",
-                "hug",
-                "india",
-                "layoff",
-                "reject",
-                "rol",
-                "rumour"
-            ],
-            "entity_signature": "IN:google:in:india",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-24T04:11:33.891104+00:00",
-            "last_seen": "2026-11-24T04:11:33.891104+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Google rejects rumours of 'huge layoffs' in India, says 30 roles were eliminated"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "b11a8b17-2839-4d2c-a57a-323c53c68dbb",
-            "title": "DMK approaches Guv seeking prior nod over alleged",
-            "keywords": [
-                "alleg",
-                "approach",
-                "brib",
-                "dmk",
-                "guv",
-                "minister",
-                "nod",
-                "offer",
-                "prior",
-                "seek"
-            ],
-            "entity_signature": "dmk approaches guv:india regional stakeholders:prior nod",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-24T04:11:33.891104+00:00",
-            "last_seen": "2026-11-24T04:11:33.891104+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "DMK approaches Guv seeking prior nod over alleged bribe offer to TVK minister"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "f415feff-456f-4c45-a606-25ab9cf87f00",
-            "title": "Seven body bags recovered, 50 missing after",
-            "keywords": [
-                "bag",
-                "bodi",
-                "factori",
-                "fir",
-                "indonesian",
-                "miss",
-                "recover",
-                "seven"
-            ],
-            "entity_signature": "ID:fire:id:indonesia",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-22T10:46:32.429362+00:00",
-            "last_seen": "2026-11-23T18:36:49.785998+00:00",
-            "chapter_count": 4,
-            "chapter_titles": [
-                "Seven body bags recovered, 50 missing after Indonesian factory fire",
-                "Indonesia searches for 50, recovers 7 body bags after factory fire",
-                "Fire at confectionery factory in Indonesia leaves at least three dead and dozens missing",
-                "Deadly Fire Rips Through Candy Factory in Indonesia"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.7999999999999999,
-            "sources_involved": [
-                "New York Times",
-                "Reuters",
-                "SCMP",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "8cffbdd8-0e6d-4352-ba7b-cb483453cafd",
-            "title": "Trump Threatens to Bar U.S. Tech Firms From",
-            "keywords": [
-                "abroad",
-                "bar",
-                "build",
-                "center",
-                "data",
-                "firm",
-                "tech",
-                "threaten",
-                "trump"
-            ],
-            "entity_signature": "US:Donald:Donald Trump:building:data centers abroad",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-23T18:36:49.785998+00:00",
-            "chapter_count": 3,
-            "chapter_titles": [
-                "Trump Threatens to Bar U.S. Tech Firms From Building Data Centers Abroad",
-                "Trump threatens 'tremendous penalties' for US tech firms that build datacenters abroad",
-                "Trump threatens ban on US firms building AI data centres overseas"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC News",
-                "BBC US",
-                "NYT Business",
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "0f43cb5a-2943-4214-8cf2-31d1d27c740d",
-            "title": "Anthropic shares slump on second day of trading",
-            "keywords": [
-                "ai",
-                "anthropic",
-                "day",
-                "market",
-                "reel",
-                "second",
-                "sell",
-                "shar",
-                "slump",
-                "trad"
-            ],
-            "entity_signature": "anthropic:anthropic shares:asia-pacific regional stakeholders",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-20T21:26:11.940713+00:00",
-            "last_seen": "2026-11-23T18:36:49.785998+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Anthropic shares slump on second day of trading as markets reel from AI sell-off",
-                "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic's second day of trading"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "a140408c-1e48-4d0c-9058-952ae82471bc",
-            "title": "A new Nepal, an old neighbour - Balendra Shah's",
-            "keywords": [
-                "balendra",
-                "india",
-                "neighbour",
-                "nepal",
-                "new",
-                "old",
-                "shah",
-                "test"
-            ],
-            "entity_signature": "IN:economics:economy:in",
-            "category": "World",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-21T02:41:45.634855+00:00",
-            "last_seen": "2026-11-23T18:36:49.785998+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "A new Nepal, an old neighbour - Balendra Shah's India test",
-                "A new Nepal, an old neighbour - Balendra Shah's India test on first visit"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "a37459b2-48a0-41f4-a4a5-4fefeca14cea",
-            "title": "Democrats win largest House majority since 1992",
-            "keywords": [
-                "carolina",
-                "democrat",
-                "hous",
-                "largest",
-                "major",
-                "north",
-                "seat",
-                "sinc",
-                "win"
-            ],
-            "entity_signature": "US:democrats:largest house majority since 1992:syntactic_subject",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-22T23:43:45.668272+00:00",
-            "last_seen": "2026-11-23T18:36:49.785998+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Democrats win largest House majority since 1992 with North Carolina seat",
-                "Democrats win House by largest margin in 50 years. And, COP31 ends with no deal"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.5,
-            "sources_involved": [
-                "Al Jazeera",
-                "NPR News"
-            ]
-        },
-        {
-            "arc_id": "567aae33-75b7-47b8-8746-b9a0486d0566",
-            "title": "Sensex, Nifty 50 open higher as foreign inflows",
-            "keywords": [
-                "eas",
-                "foreign",
-                "higher",
-                "inflow",
-                "lift",
-                "nifti",
-                "oil",
-                "open",
-                "pric",
-                "sensex"
-            ],
-            "entity_signature": "higher as foreign inflows, easing oil prices lift sentiment:india regional stakeholders:open",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-23T06:00:42.963545+00:00",
-            "last_seen": "2026-11-23T18:36:49.785998+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Sensex, Nifty 50 open higher as foreign inflows, easing oil prices lift sentiment"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "fcf24a11-89a1-41b5-8d5d-91f2b19c6150",
-            "title": "Tata Sons lists EGM proposal on November 26 board",
-            "keywords": [
-                "agenda",
-                "board",
-                "egm",
-                "list",
-                "meet",
-                "november",
-                "proposal",
-                "son",
-                "tata"
-            ],
-            "entity_signature": "agenda:india regional stakeholders:meeting",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-23T06:00:42.963545+00:00",
-            "last_seen": "2026-11-23T18:36:49.785998+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Tata Sons lists EGM proposal on November 26 board meeting agenda"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
-            ]
-        },
-        {
-            "arc_id": "fd55c132-d632-4fb5-a26d-ce0215923b49",
-            "title": "EU Commission proposes ban on Russian athletes",
-            "keywords": [
-                "athlet",
-                "ban",
-                "commission",
-                "fighter",
-                "new",
-                "packag",
-                "propos",
-                "russia",
-                "russian",
-                "sanc"
-            ],
-            "entity_signature": "EU:RU:ban:collective_faction:commission",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-23T18:36:49.785998+00:00",
-            "last_seen": "2026-11-23T18:36:49.785998+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "EU Commission proposes ban on Russian athletes, ex-fighters in new Russia sanctions package"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "a58b3133-c025-4880-97ef-001580574f38",
-            "title": "Moscow accuses Estonia of hostile actions on",
-            "keywords": [
-                "accus",
-                "action",
-                "estonia",
-                "hostil",
-                "moscow",
-                "open",
-                "trigger",
-                "verg",
-                "war"
-            ],
-            "entity_signature": "RU:conflict:geopolitics:moscow accuses estonia of hostile actions on 'verge of triggering",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-23T18:36:49.785998+00:00",
-            "last_seen": "2026-11-23T18:36:49.785998+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Moscow accuses Estonia of hostile actions on 'verge of triggering open war'"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "b03aea4d-b0f4-49b9-bdc0-11c0baf53046",
-            "title": "UK to host 2035 Women's World Cup, Fifa confirms",
-            "keywords": [
-                "confirm",
-                "cup",
-                "fifa",
-                "host",
-                "women",
-                "world"
-            ],
-            "entity_signature": "UK:2035 women's world cup, fifa confirms:host:syntactic_subject",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-23T18:36:49.785998+00:00",
-            "last_seen": "2026-11-23T18:36:49.785998+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "UK to host 2035 Women's World Cup, Fifa confirms"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC News"
-            ]
-        },
-        {
-            "arc_id": "4668fe6f-c0a2-4f8f-9bb7-3fe7e6708850",
-            "title": "What failure of COP31 reveals about a divided",
-            "keywords": [
-                "cop31",
-                "divid",
-                "failur",
-                "reveal",
-                "world"
-            ],
-            "entity_signature": "US:about a divided world:climate:diplomacy",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-23T18:36:49.785998+00:00",
-            "last_seen": "2026-11-23T18:36:49.785998+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "What failure of COP31 reveals about a divided world"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC News"
             ]
         }
     ],
