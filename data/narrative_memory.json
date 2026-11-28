@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-11-27T21:51:15.220814+00:00",
+    "last_updated": "2026-11-28T03:43:57.220136+00:00",
     "arcs": [
         {
             "arc_id": "d9a388cf-db33-476b-8622-61bc79e2b246",
@@ -19,7 +19,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-08T18:57:44.079755+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
             "chapter_count": 53,
             "chapter_titles": [
                 "Rubio Warned Officials About Nvidia Chief's Entanglement With Chinese Spy",
@@ -112,7 +112,7 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-23T18:36:49.785998+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
             "chapter_count": 8,
             "chapter_titles": [
                 "Israeli strikes kill at least three, including UNRWA worker, in Gaza",
@@ -153,7 +153,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-26T20:23:09.497579+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
             "chapter_count": 5,
             "chapter_titles": [
                 "Two Italians killed in attack on Kuwait site, Iran denies involvement",
@@ -170,38 +170,6 @@
                 "New York Times",
                 "Reuters",
                 "SCMP"
-            ]
-        },
-        {
-            "arc_id": "12f6c565-455c-4f4a-8dcd-a71a5c67c77b",
-            "title": "Trump tariff threat 'unacceptable', says Brazil",
-            "keywords": [
-                "baseless",
-                "brazil",
-                "china",
-                "denounc",
-                "levi",
-                "tariff",
-                "threat",
-                "trump",
-                "unacceptabl"
-            ],
-            "entity_signature": "BR:CN:US:Donald:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-26T11:18:26.665015+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "Trump tariff threat 'unacceptable', says Brazil, as China denounces levies as baseless",
-                "China reserves right to take 'necessary measures' after Trump's new tariff proposals"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
             ]
         },
         {
@@ -223,7 +191,7 @@
                 "Asia-Pacific"
             ],
             "first_seen": "2026-11-26T20:23:09.497579+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Nvidia Halts Sales to Southeast Asia as U.S. Tightens China Restrictions",
@@ -257,7 +225,7 @@
                 "Global"
             ],
             "first_seen": "2026-11-27T03:03:59.410946+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
             "chapter_count": 2,
             "chapter_titles": [
                 "Death-sentenced Sheikh Hasina's planned return puts Bangladesh on edge - and India in a bind",
@@ -267,6 +235,39 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "5bbe0de5-f512-4583-b7ca-5041c4ea4f93",
+            "title": "Thirupparankundram row highlights: Supreme Court",
+            "keywords": [
+                "court",
+                "deepam",
+                "deepathoon",
+                "highlight",
+                "lit",
+                "november",
+                "order",
+                "row",
+                "suprem",
+                "thirupparankundram"
+            ],
+            "entity_signature": "governance:india regional stakeholders:judicial & investigative bodies",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-27T12:56:59.746047+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Thirupparankundram row highlights: Supreme Court orders deepam to be lit at 'deepathoon' on November 28",
+                "Thirupparankundram row: Supreme Court finds wilful disobedience of Deepam order, directs lighting of pillar today"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
             ]
         },
         {
@@ -288,7 +289,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-25T18:45:34.294581+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Swiss tourist killed and British and Americans injured by elephants in Cameroon"
@@ -317,7 +318,7 @@
                 "Europe"
             ],
             "first_seen": "2026-11-25T18:45:34.294581+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "Sri Lankan asylum seeker killed himself after being sent by UK to Eswatini"
@@ -349,13 +350,968 @@
                 "Middle East"
             ],
             "first_seen": "2026-11-26T02:02:33.891526+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
             "chapter_count": 1,
             "chapter_titles": [
                 "At least 31 killed as fuel tanker crash ignites large fire on Cairo highway"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "3c7762d8-1868-4f4c-8001-37262cc508c6",
+            "title": "Iraqi court sentences 8 French nationals to life",
+            "keywords": [
+                "court",
+                "french",
+                "group",
+                "iraqi",
+                "lif",
+                "membership",
+                "nate",
+                "prison",
+                "sentenc"
+            ],
+            "entity_signature": "FR:SY:8 french nationals:collective_faction:court",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-26T11:18:26.665015+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Iraqi court sentences 8 French nationals to life in prison for IS group membership"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "366e0e0d-8379-4a33-adde-46c38c0813f3",
+            "title": "Thirty-one killed in massive fire as fuel tanker",
+            "keywords": [
+                "cairo",
+                "crash",
+                "fir",
+                "fuel",
+                "highway",
+                "kill",
+                "massiv",
+                "one",
+                "tanker",
+                "thirti"
+            ],
+            "entity_signature": "EG:eg:egypt:killed",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-26T11:18:26.665015+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Thirty-one killed in massive fire as fuel tanker crashes on Cairo highway"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.4,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "ae68e718-784f-42f9-8757-94c95c0e6627",
+            "title": "New Zealand's ruling coalition falls short of",
+            "keywords": [
+                "coali",
+                "fall",
+                "major",
+                "new",
+                "one",
+                "parliamentari",
+                "rul",
+                "seat",
+                "short",
+                "zealand"
+            ],
+            "entity_signature": "NZ:coalition falls short of parliamentary majority:governance:new zealand",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-27T03:03:59.410946+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "New Zealand's ruling coalition falls short of parliamentary majority by one seat"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "BBC Asia"
+            ]
+        },
+        {
+            "arc_id": "a1d16c76-d40f-4ac4-8e08-8181c5830bec",
+            "title": "New Zealand election: final results show ruling",
+            "keywords": [
+                "coali",
+                "elec",
+                "final",
+                "govern",
+                "minor",
+                "need",
+                "new",
+                "parti",
+                "result",
+                "rul"
+            ],
+            "entity_signature": "NZ:coalition needs minor party:election:final results show",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-27T03:03:59.410946+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "New Zealand election: final results show ruling coalition needs minor party to govern"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "dfa4745c-7a58-4cc8-80d1-0bca0681a02d",
+            "title": "Hamas weighs response after Israel kills 10",
+            "keywords": [
+                "gaza",
+                "hama",
+                "israel",
+                "kill",
+                "peopl",
+                "respons",
+                "weigh"
+            ],
+            "entity_signature": "IL:PS:collective_faction:hamas:il",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-27T03:03:59.410946+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Hamas weighs response after Israel kills 10 people in Gaza"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "e0adbdd2-df55-445a-925c-8d587a728780",
+            "title": "Zelensky criticises 'strange' Trump-Putin",
+            "keywords": [
+                "criticis",
+                "friendship",
+                "interview",
+                "putin",
+                "strang",
+                "trump",
+                "zelenski"
+            ],
+            "entity_signature": "RU:UA:US:Donald:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-27T12:56:59.746047+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "BBC Europe",
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "b3db5e18-6f1b-402b-8cbd-296c22daa3b3",
+            "title": "Italy's former police chief rejected mafia",
+            "keywords": [
+                "allega",
+                "chief",
+                "death",
+                "former",
+                "inquiri",
+                "itali",
+                "mafia",
+                "polic",
+                "reject"
+            ],
+            "entity_signature": "IT:collective_faction:it:italy",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-27T12:56:59.746047+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Italy's former police chief rejected mafia inquiry allegations before death"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Europe"
+            ]
+        },
+        {
+            "arc_id": "a77f965a-1a04-401a-9320-ed56892c1a69",
+            "title": "Inside Saudi Arabia, Houthi attacks test",
+            "keywords": [
+                "arabia",
+                "attack",
+                "houthi",
+                "imag",
+                "insid",
+                "kingdom",
+                "saudi",
+                "secur",
+                "test"
+            ],
+            "entity_signature": "SA:attacks:collective_faction:houthi",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-27T12:56:59.746047+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Inside Saudi Arabia, Houthi attacks test kingdom's image of security"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "935d886e-56f0-4ada-a0ed-6b6c07ec1ba3",
+            "title": "Israel's Eisenkot agrees to coalition deal with",
+            "keywords": [
+                "agre",
+                "coali",
+                "deal",
+                "democrat",
+                "eisenkot",
+                "israel",
+                "left",
+                "wing"
+            ],
+            "entity_signature": "IL:agrees:coalition deal:diplomacy",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-27T12:56:59.746047+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Israel's Eisenkot agrees to coalition deal with left-wing Democrats"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "28bc841f-5a65-4859-87ef-10f30235d056",
+            "title": "Egyptian authorities arrest motorist over tanker",
+            "keywords": [
+                "arrest",
+                "authoriti",
+                "crash",
+                "egyptian",
+                "kill",
+                "motorist",
+                "tanker"
+            ],
+            "entity_signature": "EG:arrest:economy:eg",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-27T12:56:59.746047+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Egyptian authorities arrest motorist over tanker crash that killed 31"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "BBC Middle East"
+            ]
+        },
+        {
+            "arc_id": "7414e79a-8cf2-43f0-8791-117b36504231",
+            "title": "WhatsApp to let users buy eSIMs when travelling",
+            "keywords": [
+                "abroad",
+                "buy",
+                "contact",
+                "esim",
+                "keep",
+                "number",
+                "travell",
+                "user",
+                "whatsapp"
+            ],
+            "entity_signature": "buy:esims:india regional stakeholders",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-27T12:56:59.746047+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "WhatsApp to let users buy eSIMs when travelling abroad, keep same contact number"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "2e386637-fc76-40e1-96e0-dfc52806d405",
+            "title": "Weary of war but with no sign of backing down",
+            "keywords": [
+                "another",
+                "back",
+                "fac",
+                "kyiv",
+                "punish",
+                "sign",
+                "war",
+                "weari",
+                "winter"
+            ],
+            "entity_signature": "UA:conflict:geopolitics:of backing down, kyiv faces another punishing winter",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-27T21:51:14.993017+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Weary of war but with no sign of backing down, Kyiv faces another punishing winter"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.3,
+            "sources_involved": [
+                "BBC Europe",
+                "BBC News"
+            ]
+        },
+        {
+            "arc_id": "43aff7c2-f7af-48d6-ae43-c302a996538c",
+            "title": "Big EU defence projects under threat from",
+            "keywords": [
+                "andriu",
+                "big",
+                "budget",
+                "commissioner",
+                "cut",
+                "defenc",
+                "kubiliu",
+                "project",
+                "propos",
+                "threat"
+            ],
+            "entity_signature": "EU:RU:big eu defence projects under threat from proposed budget:cuts:eu",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-27T21:51:14.993017+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Big EU defence projects under threat from proposed budget cuts: Commissioner Andrius Kubilius"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "France 24"
+            ]
+        },
+        {
+            "arc_id": "b5608e1b-1427-4b05-abd4-1a712d4abf56",
+            "title": "Norse Atlantic Airways files for bankruptcy and",
+            "keywords": [
+                "airway",
+                "atlantic",
+                "bankruptci",
+                "cancel",
+                "fil",
+                "flight",
+                "futur",
+                "nors"
+            ],
+            "entity_signature": "IR:NO:bankruptcy and cancels all future flights:conflict:files",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-27T21:51:14.993017+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Norse Atlantic Airways files for bankruptcy and cancels all future flights"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "ba171e0a-fb49-4b26-8141-4f47e1a95d47",
+            "title": "Jared Kushner's 70-minute interview reveals naive",
+            "keywords": [
+                "aggression",
+                "bia",
+                "handl",
+                "interview",
+                "jar",
+                "kushner",
+                "minut",
+                "naiv",
+                "putin",
+                "reveal"
+            ],
+            "entity_signature": "IR:PS:RU:Donald:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-27T21:51:14.993017+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Jared Kushner's 70-minute interview reveals naive bias in handling of Putin's aggression"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "787c321e-9dc9-404e-bd68-64d7ca8ac9cc",
+            "title": "Climate Talks Imploded, but the 'Age of",
+            "keywords": [
+                "age",
+                "chief",
+                "climat",
+                "electric",
+                "energi",
+                "implod",
+                "roll",
+                "talk"
+            ],
+            "entity_signature": "climate:climate talks imploded, but the 'age of electricity' rolls on, energy chief says:diplomacy",
+            "category": "Business",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-27T21:51:14.993017+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Climate Talks Imploded, but the 'Age of Electricity' Rolls On, Energy Chief Says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "NYT Business"
+            ]
+        },
+        {
+            "arc_id": "9de68048-b7f7-491c-a440-ec51ea975783",
+            "title": "Centre proposes freeze on Lok Sabha seat",
+            "keywords": [
+                "centr",
+                "freez",
+                "lok",
+                "propor",
+                "propos",
+                "sabha",
+                "seat"
+            ],
+            "entity_signature": "centre proposes freeze on lok sabha seat proportions for states until 2051:governance:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-27T21:51:14.993017+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Centre proposes freeze on Lok Sabha seat proportions for States until 2051"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "7c5d3ed1-ce0f-4065-811e-894aaafd13f1",
+            "title": "China's premium puffer jacket push meets consumer",
+            "keywords": [
+                "china",
+                "consumer",
+                "jacket",
+                "meet",
+                "premium",
+                "puffer",
+                "push",
+                "resistanc"
+            ],
+            "entity_signature": "CN:china:china's premium puffer jacket push:cn",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-28T03:43:56.998582+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "China's premium puffer jacket push meets consumer resistance"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "b875096f-5909-4718-886c-b3cae2d2a1f5",
+            "title": "US Black Friday online sales to cross $13",
+            "keywords": [
+                "adob",
+                "billion",
+                "black",
+                "cross",
+                "friday",
+                "onlin",
+                "sal"
+            ],
+            "entity_signature": "US:sovereign_stakeholder:united states:united states sovereign authorities",
+            "category": "World",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-28T03:43:56.998582+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "US Black Friday online sales to cross $13 billion, Adobe says"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
+            "sources_involved": [
+                "Reuters"
+            ]
+        },
+        {
+            "arc_id": "f56458fb-7b92-4ce0-b77f-61ce3ecd380c",
+            "title": "Could New Zealand head back to the polls? The new",
+            "keywords": [
+                "back",
+                "block",
+                "centrist",
+                "greav",
+                "head",
+                "hold",
+                "lara",
+                "new",
+                "parti",
+                "poll"
+            ],
+            "entity_signature": "NZ:block:could new zealand head back to the polls? the new centrist party on the:election",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-28T03:43:56.998582+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Could New Zealand head back to the polls? The new centrist party on the block holds the power| Lara Greaves"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Guardian"
+            ]
+        },
+        {
+            "arc_id": "b584653d-5cca-4576-9f14-13d6148705fe",
+            "title": "Chinese wife asks online gamers to repeatedly",
+            "keywords": [
+                "ask",
+                "chines",
+                "curb",
+                "gam",
+                "gamer",
+                "habit",
+                "husband",
+                "kill",
+                "lat",
+                "night"
+            ],
+            "entity_signature": "CN:china:china sovereign authorities:chinese wife asks online gamers to repeatedly",
+            "category": "World",
+            "regions": [
+                "Asia-Pacific"
+            ],
+            "first_seen": "2026-11-28T03:43:56.998582+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Chinese wife asks online gamers to repeatedly 'kill' husband to curb late-night gaming habit"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "SCMP"
+            ]
+        },
+        {
+            "arc_id": "c3e2ca52-2ece-4f8a-a393-1595df59f0db",
+            "title": "Bulgarians demand action by French after",
+            "keywords": [
+                "action",
+                "bulgarian",
+                "demand",
+                "french",
+                "marseill",
+                "match",
+                "violenc"
+            ],
+            "entity_signature": "BG:FR:action:bg:bulgaria",
+            "category": "World",
+            "regions": [
+                "Europe"
+            ],
+            "first_seen": "2026-11-28T03:43:56.998582+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Bulgarians demand action by French after Marseille match violence"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "166d0530-100d-4e21-b33a-874b3edfd190",
+            "title": "Israel kills two MSF staff in targeted strike on",
+            "keywords": [
+                "clinic",
+                "gaza",
+                "israel",
+                "kill",
+                "msf",
+                "strik",
+                "target",
+                "two"
+            ],
+            "entity_signature": "IL:PS:conflict:il:israel",
+            "category": "World",
+            "regions": [
+                "Middle East"
+            ],
+            "first_seen": "2026-11-28T03:43:56.998582+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Israel kills two MSF staff in targeted strike on Gaza clinic"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Al Jazeera"
+            ]
+        },
+        {
+            "arc_id": "511f824c-03b8-4f84-9243-174a89b72cb7",
+            "title": "The M5 MacBook Air just got its biggest discount",
+            "keywords": [
+                "air",
+                "appl",
+                "biggest",
+                "discount",
+                "got",
+                "just",
+                "macbook",
+                "pric",
+                "rais",
+                "sinc"
+            ],
+            "entity_signature": "apple:m5 macbook air just got its biggest discount since apple:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-28T03:43:56.998582+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "The M5 MacBook Air just got its biggest discount since Apple raised the price"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "3e770feb-d02f-4b56-b0bc-1ae2d0f5d436",
+            "title": "The best robot vacuums we've tested are up to 60",
+            "keywords": [
+                "best",
+                "black",
+                "friday",
+                "percent",
+                "robot",
+                "test",
+                "vacuum"
+            ],
+            "entity_signature": "are up:best robot vacuums we've:north america regional stakeholders",
+            "category": "Tech",
+            "regions": [
+                "North America"
+            ],
+            "first_seen": "2026-11-28T03:43:56.998582+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "The best robot vacuums we've tested are up to 60 percent off for Black Friday"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Verge"
+            ]
+        },
+        {
+            "arc_id": "a87edb0a-9a48-4d3a-abe3-634056617515",
+            "title": "Adani Group seeks government nod to invest in",
+            "keywords": [
+                "adani",
+                "airlin",
+                "govern",
+                "group",
+                "invest",
+                "nod",
+                "seek"
+            ],
+            "entity_signature": "adani group:government nod:india regional stakeholders",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-28T03:43:56.998582+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Adani Group seeks government nod to invest in airlines"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "abf8c6b3-3236-4a4c-a8e1-13992869386b",
+            "title": "Bombay High Court allows Tata Sons meet, says",
+            "keywords": [
+                "allow",
+                "bombay",
+                "court",
+                "final",
+                "high",
+                "meet",
+                "order",
+                "outcom",
+                "son",
+                "subject"
+            ],
+            "entity_signature": ", says outcome subject:bombay high court:bombay high court allows tata sons",
+            "category": "Business",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-28T03:43:56.998582+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Bombay High Court allows Tata Sons meet, says outcome subject to final orders"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "HT Business"
+            ]
+        },
+        {
+            "arc_id": "dd6daaeb-ed22-456f-9252-78a5fa1cb1ed",
+            "title": "Why the Supreme Court wants red warning labels on",
+            "keywords": [
+                "court",
+                "explain",
+                "food",
+                "label",
+                "packag",
+                "red",
+                "suprem",
+                "unhealthi",
+                "want",
+                "warn"
+            ],
+            "entity_signature": "collective_faction:governance:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-28T03:43:56.998582+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Why the Supreme Court wants red warning labels on unhealthy packaged foods | Explained"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "The Hindu"
+            ]
+        },
+        {
+            "arc_id": "64f598d8-b215-4061-b993-ce7b98f15801",
+            "title": "Bihar minister Ashok Choudhary resigns as",
+            "keywords": [
+                "ashok",
+                "assistant",
+                "bihar",
+                "choudhari",
+                "minister",
+                "offic",
+                "professor",
+                "profit",
+                "resign",
+                "row"
+            ],
+            "entity_signature": "as assistant professor:bihar minister ashok choudhary:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-28T03:43:56.998582+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "Bihar minister Ashok Choudhary resigns as assistant professor after 'office of profit' row"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "f74410dc-4dd4-40af-87f2-fa881d530f90",
+            "title": "BJP steps up Opposition outreach as it seeks",
+            "keywords": [
+                "bill",
+                "bjp",
+                "delimita",
+                "opposi",
+                "outreach",
+                "passag",
+                "quota",
+                "seek",
+                "step",
+                "women"
+            ],
+            "entity_signature": "bjp steps up opposition outreach as it:governance:india regional stakeholders",
+            "category": "National",
+            "regions": [
+                "India"
+            ],
+            "first_seen": "2026-11-28T03:43:56.998582+00:00",
+            "last_seen": "2026-11-28T03:43:56.998582+00:00",
+            "chapter_count": 1,
+            "chapter_titles": [
+                "BJP steps up Opposition outreach as it seeks passage of delimitation, women's quota bills"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.25,
+            "sources_involved": [
+                "Hindustan Times"
+            ]
+        },
+        {
+            "arc_id": "12f6c565-455c-4f4a-8dcd-a71a5c67c77b",
+            "title": "Trump tariff threat 'unacceptable', says Brazil",
+            "keywords": [
+                "baseless",
+                "brazil",
+                "china",
+                "denounc",
+                "levi",
+                "tariff",
+                "threat",
+                "trump",
+                "unacceptabl"
+            ],
+            "entity_signature": "BR:CN:US:Donald:Donald Trump",
+            "category": "World",
+            "regions": [
+                "Global"
+            ],
+            "first_seen": "2026-11-26T11:18:26.665015+00:00",
+            "last_seen": "2026-11-27T21:51:14.993017+00:00",
+            "chapter_count": 2,
+            "chapter_titles": [
+                "Trump tariff threat 'unacceptable', says Brazil, as China denounces levies as baseless",
+                "China reserves right to take 'necessary measures' after Trump's new tariff proposals"
+            ],
+            "importance_trend": "rising",
+            "peak_velocity": 0.15,
             "sources_involved": [
                 "The Guardian"
             ]
@@ -392,69 +1348,6 @@
             ]
         },
         {
-            "arc_id": "3c7762d8-1868-4f4c-8001-37262cc508c6",
-            "title": "Iraqi court sentences 8 French nationals to life",
-            "keywords": [
-                "court",
-                "french",
-                "group",
-                "iraqi",
-                "lif",
-                "membership",
-                "nate",
-                "prison",
-                "sentenc"
-            ],
-            "entity_signature": "FR:SY:8 french nationals:collective_faction:court",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-26T11:18:26.665015+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Iraqi court sentences 8 French nationals to life in prison for IS group membership"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "366e0e0d-8379-4a33-adde-46c38c0813f3",
-            "title": "Thirty-one killed in massive fire as fuel tanker",
-            "keywords": [
-                "cairo",
-                "crash",
-                "fir",
-                "fuel",
-                "highway",
-                "kill",
-                "massiv",
-                "one",
-                "tanker",
-                "thirti"
-            ],
-            "entity_signature": "EG:eg:egypt:killed",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-26T11:18:26.665015+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Thirty-one killed in massive fire as fuel tanker crashes on Cairo highway"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.4,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
             "arc_id": "2f69a149-b5ec-4e34-b135-421a31044a74",
             "title": "Huge flames rise from fire at Bangkok oil",
             "keywords": [
@@ -479,70 +1372,6 @@
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "ae68e718-784f-42f9-8757-94c95c0e6627",
-            "title": "New Zealand's ruling coalition falls short of",
-            "keywords": [
-                "coali",
-                "fall",
-                "major",
-                "new",
-                "one",
-                "parliamentari",
-                "rul",
-                "seat",
-                "short",
-                "zealand"
-            ],
-            "entity_signature": "NZ:coalition falls short of parliamentary majority:governance:new zealand",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-27T03:03:59.410946+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "New Zealand's ruling coalition falls short of parliamentary majority by one seat"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "a1d16c76-d40f-4ac4-8e08-8181c5830bec",
-            "title": "New Zealand election: final results show ruling",
-            "keywords": [
-                "coali",
-                "elec",
-                "final",
-                "govern",
-                "minor",
-                "need",
-                "new",
-                "parti",
-                "result",
-                "rul"
-            ],
-            "entity_signature": "NZ:coalition needs minor party:election:final results show",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-27T03:03:59.410946+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "New Zealand election: final results show ruling coalition needs minor party to govern"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
             "sources_involved": [
                 "The Guardian"
             ]
@@ -577,217 +1406,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "dfa4745c-7a58-4cc8-80d1-0bca0681a02d",
-            "title": "Hamas weighs response after Israel kills 10",
-            "keywords": [
-                "gaza",
-                "hama",
-                "israel",
-                "kill",
-                "peopl",
-                "respons",
-                "weigh"
-            ],
-            "entity_signature": "IL:PS:collective_faction:hamas:il",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-27T03:03:59.410946+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Hamas weighs response after Israel kills 10 people in Gaza"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "e0adbdd2-df55-445a-925c-8d587a728780",
-            "title": "Zelensky criticises 'strange' Trump-Putin",
-            "keywords": [
-                "criticis",
-                "friendship",
-                "interview",
-                "putin",
-                "strang",
-                "trump",
-                "zelenski"
-            ],
-            "entity_signature": "RU:UA:US:Donald:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-27T12:56:59.746047+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "BBC Europe",
-                "BBC News"
-            ]
-        },
-        {
-            "arc_id": "b3db5e18-6f1b-402b-8cbd-296c22daa3b3",
-            "title": "Italy's former police chief rejected mafia",
-            "keywords": [
-                "allega",
-                "chief",
-                "death",
-                "former",
-                "inquiri",
-                "itali",
-                "mafia",
-                "polic",
-                "reject"
-            ],
-            "entity_signature": "IT:collective_faction:it:italy",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-27T12:56:59.746047+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Italy's former police chief rejected mafia inquiry allegations before death"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Europe"
-            ]
-        },
-        {
-            "arc_id": "a77f965a-1a04-401a-9320-ed56892c1a69",
-            "title": "Inside Saudi Arabia, Houthi attacks test",
-            "keywords": [
-                "arabia",
-                "attack",
-                "houthi",
-                "imag",
-                "insid",
-                "kingdom",
-                "saudi",
-                "secur",
-                "test"
-            ],
-            "entity_signature": "SA:attacks:collective_faction:houthi",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-27T12:56:59.746047+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Inside Saudi Arabia, Houthi attacks test kingdom's image of security"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "935d886e-56f0-4ada-a0ed-6b6c07ec1ba3",
-            "title": "Israel's Eisenkot agrees to coalition deal with",
-            "keywords": [
-                "agre",
-                "coali",
-                "deal",
-                "democrat",
-                "eisenkot",
-                "israel",
-                "left",
-                "wing"
-            ],
-            "entity_signature": "IL:agrees:coalition deal:diplomacy",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-27T12:56:59.746047+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Israel's Eisenkot agrees to coalition deal with left-wing Democrats"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "28bc841f-5a65-4859-87ef-10f30235d056",
-            "title": "Egyptian authorities arrest motorist over tanker",
-            "keywords": [
-                "arrest",
-                "authoriti",
-                "crash",
-                "egyptian",
-                "kill",
-                "motorist",
-                "tanker"
-            ],
-            "entity_signature": "EG:arrest:economy:eg",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-27T12:56:59.746047+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Egyptian authorities arrest motorist over tanker crash that killed 31"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Middle East"
-            ]
-        },
-        {
-            "arc_id": "7414e79a-8cf2-43f0-8791-117b36504231",
-            "title": "WhatsApp to let users buy eSIMs when travelling",
-            "keywords": [
-                "abroad",
-                "buy",
-                "contact",
-                "esim",
-                "keep",
-                "number",
-                "travell",
-                "user",
-                "whatsapp"
-            ],
-            "entity_signature": "buy:esims:india regional stakeholders",
-            "category": "Business",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-27T12:56:59.746047+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "WhatsApp to let users buy eSIMs when travelling abroad, keep same contact number"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "HT Business"
             ]
         },
         {
@@ -876,37 +1494,6 @@
             "peak_velocity": 0.15,
             "sources_involved": [
                 "Reuters"
-            ]
-        },
-        {
-            "arc_id": "2e386637-fc76-40e1-96e0-dfc52806d405",
-            "title": "Weary of war but with no sign of backing down",
-            "keywords": [
-                "another",
-                "back",
-                "fac",
-                "kyiv",
-                "punish",
-                "sign",
-                "war",
-                "weari",
-                "winter"
-            ],
-            "entity_signature": "UA:conflict:geopolitics:of backing down, kyiv faces another punishing winter",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-27T21:51:14.993017+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Weary of war but with no sign of backing down, Kyiv faces another punishing winter"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.3,
-            "sources_involved": [
-                "BBC News"
             ]
         },
         {
@@ -1032,100 +1619,6 @@
             ]
         },
         {
-            "arc_id": "43aff7c2-f7af-48d6-ae43-c302a996538c",
-            "title": "Big EU defence projects under threat from",
-            "keywords": [
-                "andriu",
-                "big",
-                "budget",
-                "commissioner",
-                "cut",
-                "defenc",
-                "kubiliu",
-                "project",
-                "propos",
-                "threat"
-            ],
-            "entity_signature": "EU:RU:big eu defence projects under threat from proposed budget:cuts:eu",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-27T21:51:14.993017+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Big EU defence projects under threat from proposed budget cuts: Commissioner Andrius Kubilius"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "b5608e1b-1427-4b05-abd4-1a712d4abf56",
-            "title": "Norse Atlantic Airways files for bankruptcy and",
-            "keywords": [
-                "airway",
-                "atlantic",
-                "bankruptci",
-                "cancel",
-                "fil",
-                "flight",
-                "futur",
-                "nors"
-            ],
-            "entity_signature": "IR:NO:bankruptcy and cancels all future flights:conflict:files",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-27T21:51:14.993017+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Norse Atlantic Airways files for bankruptcy and cancels all future flights"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "ba171e0a-fb49-4b26-8141-4f47e1a95d47",
-            "title": "Jared Kushner's 70-minute interview reveals naive",
-            "keywords": [
-                "aggression",
-                "bia",
-                "handl",
-                "interview",
-                "jar",
-                "kushner",
-                "minut",
-                "naiv",
-                "putin",
-                "reveal"
-            ],
-            "entity_signature": "IR:PS:RU:Donald:Donald Trump",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-27T21:51:14.993017+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Jared Kushner's 70-minute interview reveals naive bias in handling of Putin's aggression"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
             "arc_id": "7060fab5-3da9-4e8e-9a0f-bc935ef0db8d",
             "title": "Venezuela to repeal law that bans opposition",
             "keywords": [
@@ -1183,36 +1676,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "787c321e-9dc9-404e-bd68-64d7ca8ac9cc",
-            "title": "Climate Talks Imploded, but the 'Age of",
-            "keywords": [
-                "age",
-                "chief",
-                "climat",
-                "electric",
-                "energi",
-                "implod",
-                "roll",
-                "talk"
-            ],
-            "entity_signature": "climate:climate talks imploded, but the 'age of electricity' rolls on, energy chief says:diplomacy",
-            "category": "Business",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-27T21:51:14.993017+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Climate Talks Imploded, but the 'Age of Electricity' Rolls On, Energy Chief Says"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "NYT Business"
             ]
         },
         {
@@ -1367,35 +1830,6 @@
             "chapter_count": 1,
             "chapter_titles": [
                 "Kallakurichi TVK MLA Arul Vignesh arrested on charges of harassing IAS officer"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "9de68048-b7f7-491c-a440-ec51ea975783",
-            "title": "Centre proposes freeze on Lok Sabha seat",
-            "keywords": [
-                "centr",
-                "freez",
-                "lok",
-                "propor",
-                "propos",
-                "sabha",
-                "seat"
-            ],
-            "entity_signature": "centre proposes freeze on lok sabha seat proportions for states until 2051:governance:india regional stakeholders",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-27T21:51:14.993017+00:00",
-            "last_seen": "2026-11-27T21:51:14.993017+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Centre proposes freeze on Lok Sabha seat proportions for States until 2051"
             ],
             "importance_trend": "rising",
             "peak_velocity": 0.25,
@@ -1925,38 +2359,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "Indian Express"
-            ]
-        },
-        {
-            "arc_id": "5bbe0de5-f512-4583-b7ca-5041c4ea4f93",
-            "title": "Thirupparankundram row highlights: Supreme Court",
-            "keywords": [
-                "court",
-                "deepam",
-                "deepathoon",
-                "highlight",
-                "lit",
-                "november",
-                "order",
-                "row",
-                "suprem",
-                "thirupparankundram"
-            ],
-            "entity_signature": "governance:india regional stakeholders:judicial & investigative bodies",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-27T12:56:59.746047+00:00",
-            "last_seen": "2026-11-27T12:56:59.746047+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Thirupparankundram row highlights: Supreme Court orders deepam to be lit at 'deepathoon' on November 28"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "The Hindu"
             ]
         },
         {
@@ -2793,396 +3195,6 @@
             "peak_velocity": 0.25,
             "sources_involved": [
                 "The Hindu"
-            ]
-        },
-        {
-            "arc_id": "2a475f28-492d-4ee2-9fb4-05e1ef0788a5",
-            "title": "Cong blocking women quota implementation: Shah",
-            "keywords": [
-                "block",
-                "cong",
-                "implementa",
-                "quota",
-                "shah",
-                "women"
-            ],
-            "entity_signature": "blocking:cong:governance",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-27T03:03:59.410946+00:00",
-            "last_seen": "2026-11-27T03:03:59.410946+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Cong blocking women quota implementation: Shah"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Hindustan Times"
-            ]
-        },
-        {
-            "arc_id": "8d134d62-0776-42bc-b3ee-32bcebeac1ef",
-            "title": "40 years ago November 27, 1986: Rajiv and",
-            "keywords": [
-                "ago",
-                "gorbachev",
-                "kill",
-                "november",
-                "punjab",
-                "push",
-                "rajiv",
-                "scienc",
-                "terrorist",
-                "tie"
-            ],
-            "entity_signature": "2:india regional stakeholders:kill",
-            "category": "National",
-            "regions": [
-                "India"
-            ],
-            "first_seen": "2026-11-27T03:03:59.410946+00:00",
-            "last_seen": "2026-11-27T03:03:59.410946+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "40 years ago November 27, 1986: Rajiv and Gorbachev push science ties, terrorists kill 2 in Punjab"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Indian Express"
-            ]
-        },
-        {
-            "arc_id": "dc0abc73-af68-422d-be4d-4ee3407a2884",
-            "title": "US announces new tariff proposals on EU, China",
-            "keywords": [
-                "china",
-                "new",
-                "partner",
-                "proposal",
-                "tariff",
-                "trad"
-            ],
-            "entity_signature": "CN:EU:US:announces:china",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-25T18:45:34.294581+00:00",
-            "last_seen": "2026-11-26T20:23:09.497579+00:00",
-            "chapter_count": 2,
-            "chapter_titles": [
-                "US announces new tariff proposals on EU, China, and other trade partners",
-                "US announces new tariffs on host of countries including China"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "BBC Asia",
-                "BBC News"
-            ]
-        },
-        {
-            "arc_id": "727082c1-6477-4814-8e44-a2b1bf8d8580",
-            "title": "UK embassy in Japan warns of rise in drink",
-            "keywords": [
-                "bar",
-                "card",
-                "credit",
-                "drink",
-                "embassi",
-                "fraud",
-                "japan",
-                "ris",
-                "spik",
-                "tokyo"
-            ],
-            "entity_signature": "JP:UK:election:japan:jp",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-25T18:45:34.294581+00:00",
-            "last_seen": "2026-11-26T20:23:09.497579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "UK embassy in Japan warns of rise in drink spiking and credit card fraud at Tokyo bars"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "d79b71f4-482d-4a71-8500-025e381d3963",
-            "title": "Israeli MPs advance bill for inquiry into",
-            "keywords": [
-                "advanc",
-                "attack",
-                "bill",
-                "fail",
-                "hama",
-                "inquiri",
-                "israeli",
-                "led",
-                "mps",
-                "october"
-            ],
-            "entity_signature": "IL:PS:advance:bill:collective_faction",
-            "category": "World",
-            "regions": [
-                "Middle East"
-            ],
-            "first_seen": "2026-11-25T18:45:34.294581+00:00",
-            "last_seen": "2026-11-26T20:23:09.497579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Israeli MPs advance bill for inquiry into security failings that led to October 7 Hamas attack"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "d5feb027-bf36-4ea0-afe8-fdfbe0140c99",
-            "title": "'Trapped in grief': wife of Japanese journalist",
-            "keywords": [
-                "detain",
-                "grief",
-                "japanes",
-                "journalist",
-                "plead",
-                "releas",
-                "russia",
-                "trapp",
-                "wif"
-            ],
-            "entity_signature": "JP:RU:japan:japan sovereign authorities:jp",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-26T11:18:26.665015+00:00",
-            "last_seen": "2026-11-26T20:23:09.497579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "'Trapped in grief': wife of Japanese journalist detained by Russia pleads for his release"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "The Guardian"
-            ]
-        },
-        {
-            "arc_id": "c2771437-458c-45b7-8a72-223cee2d6b13",
-            "title": "I still send WhatsApp messages to my husband who",
-            "keywords": [
-                "died",
-                "fir",
-                "husband",
-                "messag",
-                "send",
-                "still",
-                "whatsapp"
-            ],
-            "entity_signature": "asia-pacific regional stakeholders:children:civilians & impacted communities",
-            "category": "World",
-            "regions": [
-                "Asia-Pacific"
-            ],
-            "first_seen": "2026-11-26T11:18:26.665015+00:00",
-            "last_seen": "2026-11-26T20:23:09.497579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "I still send WhatsApp messages to my husband who died in the fire"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "BBC Asia"
-            ]
-        },
-        {
-            "arc_id": "a7941056-095d-4a68-81c3-b9aabcc4b34f",
-            "title": "Bank of England to cut capital requirements for",
-            "keywords": [
-                "bank",
-                "capital",
-                "cut",
-                "england",
-                "focus",
-                "lender",
-                "require"
-            ],
-            "entity_signature": "UK:bank of england:capital requirements:cut",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-26T20:23:09.497579+00:00",
-            "last_seen": "2026-11-26T20:23:09.497579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Bank of England to cut capital requirements for UK-focused lenders"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Reuters"
-            ]
-        },
-        {
-            "arc_id": "e425bb62-1467-4d3d-97ea-eb5187d05f4f",
-            "title": "Trump calls GDP figures 'fake', demands probe of",
-            "keywords": [
-                "call",
-                "commerc",
-                "demand",
-                "depart",
-                "fak",
-                "figur",
-                "gdp",
-                "prob",
-                "trump"
-            ],
-            "entity_signature": "US:Donald:Donald Trump:demands:economics",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-26T20:23:09.497579+00:00",
-            "last_seen": "2026-11-26T20:23:09.497579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Trump calls GDP figures 'fake', demands probe of his own Commerce Department"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "7ea3b17e-35c4-46c5-a1af-512d0db07c67",
-            "title": "More than 50% of Americans believe China is",
-            "keywords": [
-                "american",
-                "believ",
-                "china",
-                "rest",
-                "winn",
-                "world"
-            ],
-            "entity_signature": "CN:US:. so does the rest of the world:china:cn",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-26T20:23:09.497579+00:00",
-            "last_seen": "2026-11-26T20:23:09.497579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "More than 50% of Americans believe China is winning. So does the rest of the world"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "SCMP"
-            ]
-        },
-        {
-            "arc_id": "48cac90a-52bc-4dad-a388-7da83be02af8",
-            "title": "How far-right Vox is winning over young voters",
-            "keywords": [
-                "ahead",
-                "elec",
-                "far",
-                "right",
-                "snap",
-                "spain",
-                "voter",
-                "vox",
-                "winn",
-                "young"
-            ],
-            "entity_signature": "ES:election:es:how far-right vox",
-            "category": "World",
-            "regions": [
-                "Europe"
-            ],
-            "first_seen": "2026-11-26T20:23:09.497579+00:00",
-            "last_seen": "2026-11-26T20:23:09.497579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "How far-right Vox is winning over young voters ahead of Spain's snap election"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.15,
-            "sources_involved": [
-                "France 24"
-            ]
-        },
-        {
-            "arc_id": "28b72aaa-1005-4eca-9f62-674413f3db18",
-            "title": "Peru burns more than 10 tonnes of seized drugs",
-            "keywords": [
-                "burn",
-                "drug",
-                "peru",
-                "seiz",
-                "tonn"
-            ],
-            "entity_signature": "PE:drugs:health:pe",
-            "category": "World",
-            "regions": [
-                "Global"
-            ],
-            "first_seen": "2026-11-26T20:23:09.497579+00:00",
-            "last_seen": "2026-11-26T20:23:09.497579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Peru burns more than 10 tonnes of seized drugs"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
-            ]
-        },
-        {
-            "arc_id": "73481e54-d8eb-4209-a8b4-65f9679766ad",
-            "title": "Judge strikes down Trump's latest restrictions on",
-            "keywords": [
-                "birthright",
-                "citizenship",
-                "judg",
-                "latest",
-                "restric",
-                "strik",
-                "trump"
-            ],
-            "entity_signature": "US:Donald:Donald Trump:down trump's latest restrictions:governance",
-            "category": "World",
-            "regions": [
-                "North America"
-            ],
-            "first_seen": "2026-11-26T20:23:09.497579+00:00",
-            "last_seen": "2026-11-26T20:23:09.497579+00:00",
-            "chapter_count": 1,
-            "chapter_titles": [
-                "Judge strikes down Trump's latest restrictions on US birthright citizenship"
-            ],
-            "importance_trend": "rising",
-            "peak_velocity": 0.25,
-            "sources_involved": [
-                "Al Jazeera"
             ]
         }
     ],
